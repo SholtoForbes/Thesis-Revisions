@@ -1,0 +1,8 @@
+TPS will almost certainly nee dto be an active cooling system..
+	Will estimating the heat transfer be useful at all? maybe I should just make a note of the above?
+Or maybe I should just attempt to estimate a rate of cooling (from us thesis?)
+
+Heat transfer in combustor has found to be greater than that on the leading edge (and I am not sure how to estimate combustor heat transfer)
+
+leading edge should be good enough for now, because shock structures can create additional heating areas which may need to be optimised for in the future
+

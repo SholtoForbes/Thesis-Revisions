@@ -1,0 +1,37 @@
+% thesis.tex
+
+\documentclass[twoside, openright, 12pt, a4paper]{book}
+
+
+%\singlespacing
+
+
+\input{packages}
+%\input{results}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\begin{document}
+
+  \frontmatter
+    \input{frontmatter}
+
+  \mainmatter
+    \input{1_introduction}
+    \input{2_literature-review}
+    \input{3_vehicle-design}
+    \input{4_LODESTAR}
+    \input{5_Ascent}
+    \input{6_Flyback}
+    \input{9_conclusions}
+    \input{10_references}
+
+
+  \appendix
+    \input{A1_details-of-test-conditions}
+
+
+\end{document}
+

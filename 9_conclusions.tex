@@ -1,0 +1,106 @@
+% conclusions.tex
+
+\cleardoublepage
+\chapter{Conclusions}
+
+
+The purpose of this work was to design and investigate the launch trajectory of a partially-reusable, rocket-scramjet-rocket, small satellite launch system. 
+The trajectory of this launch system was optimised for maximum payload-to-orbit, and characterised in order to determine the key performance parameters of the launch system. 
+This aim was achieved through the completion of the set of objectives detailed as follows:
+
+\vspace{10pt}
+	\emph{Development of a detailed design and aerodynamic simulation for a rocket-scramjet-rocket launch system.}
+	
+	In order to create a representative model for a trajectory simulation, the design of a rocket-scramjet-rocket launch system was developed. This launch system was designed around the SPARTAN scramjet-powered accelerator, which is in development at The University of Queensland. A first stage rocket was designed, to accelerate the SPARTAN to its minimum operating speed of Mach 5. This first stage was based upon the Falcon-1e, scaled down lengthwise to 8.5m and throttled down to a constant 70\% to assist in pitching.
+	A third stage rocket was designed, based around the Kestrel upper stage rocket motor for cost effectiveness. This third stage was sized to fit within the fuselage of the SPARTAN, to be 9m long, and 1.5m wide. The heat shield necessary for atmospheric flight, and the internal fuel tanks of the third stage were sized, resulting in a total mass of 3300kg. The fuel tanks of the SPARTAN were resized, to accommodate this redesigned third stage. 
+
+The aerodynamics of the first stage and the SPARTAN were calculated using Cart3D, an inviscid CFD package, and the aerodynamics of the SPARTAN were modified using a viscous correction for accuracy. The aerodynamics of the launch system were calculated across the operable regimes of the vehicles, which for the SPARTAN included both engine-on and engine-off conditions, across a range of Mach numbers from 0.2 to 10. The control surfaces of the SPARTAN were modelled, and the aerodynamics of the SPARTAN simulated with flaps deployed. A variable centre of gravity model was created for the SPARTAN, to model the changes in the vehicle dynamics during flight. The aerodynamics of the SPARTAN were calculated at multiple centre of gravity positions, and a trimmed aerodynamic database was created. 
+The aerodynamics of the third stage were modelled using Missile Datcom, a partially empirical tool for estimating the aerodynamics of missile and rocket vehicles, with the aerodynamic control of the third stage attained through thrust vectoring. 
+
+	\vspace{10pt}
+\emph{Calculation of the maximum payload-to-orbit trajectory for a rocket-scramjet-rocket launch system using optimal control, with and without fly-back.}
+
+In order to calculate the maximum payload-to-orbit trajectory of the launch system, a software package was created to simulate and optimise launch system trajectories, designated LODESTAR. LODESTAR utilises GPOPS-2, a pseudospectral method optimal control solver, and simulates the trajectory of each stage of the launch system in a geodetic rotational reference frame. 
+LODESTAR optimises the entire trajectory of the launch system simultaneously, so that the performance trade-offs between the stages are captured accurately.
+
+A mission profile has been developed for the SPARTAN-based rocket-scramjet-rocket launch system, launching a satellite to sun synchronous orbit from the Northern Territory, Australia. 
+Initially, the trajectory of the launch system was developed with the assumption that the SPARTAN lands at a location downrange.
+A mission case was developed in which the scramjet stage of the launch vehicle was constrained to flight at its maximum dynamic pressure, providing a baseline trajectory case for comparison. This constant dynamic pressure trajectory was found to be capable of delivering \PayloadToOrbitConstqNoReturn kg to sun synchronous orbit. 
+The maximum payload-to-orbit trajectory of the launch system was then calculated. It was found that, when flying the payload-optimised trajectory, the launch system is capable of delivering \PayloadToOrbitStandardNoReturn kg of payload to sun synchronous orbit, an increase of 19.5\% over the simulation with the SPARTAN constrained to constant dynamic pressure. 
+Three key features were observed in the trajectory; a higher first stage-SPARTAN separation point, an altitude raising manoeuvre in the centre of the SPARTAN's trajectory, and a pull-up before SPARTAN-third stage separation.
+The altitude raising manoeuvre in the centre of the SPARTAN's trajectory was observed occur in a region of homogeneity in the performance of the SPARTAN, increasing the efficiency of the SPARTAN by +0.53\%. 
+The improvement in payload-to-orbit was found to result primarily from the stage separation conditions, as a consequence of favourable trade-offs between the efficiencies of the stages of the launch system.
+The higher first stage-SPARTAN separation point was found to decrease the amount of turning which the first stage must perform, allowing the first stage to launch with more fuel while maintaining manoeuvrability. This larger amount of fuel was found to increase the total energy imparted to the SPARTAN, as well as increasing the acceleration, and consequently the propulsive efficiency of the first stage. Similarly, a pull-up before the SPARTAN-third stage separation decreases the amount of turning which the third stage must perform, and enables the third stage to gain altitude much more rapidly, causing it to spend significantly less flight time at high dynamic pressure. 
+This reduced exposure to high dynamic pressure reduces the energy losses due to the aerodynamic drag of the third stage, as well as reducing the amount of energy imparted upon the heat shield, by allowing it to be jettisoned earlier. 
+The altitude increasing manoeuvres at the stage separations were found to result in the exergy efficiency of the SPARTAN decreasing by -0.508\%$\eta$ (-9.7\%). However, this reduction in the efficiency of the SPARTAN is a trade-off for increases in the exergy efficiencies of the first and third stages, of +0.148\%$\eta$ (+2.4\%) and +3.286\%$\eta$ (+21.3\%) respectively, resulting in a significantly higher overall efficiency.
+
+
+The mission definition was adjusted, to include a constraint of the SPARTAN flying back to the initial launch site after the separation of the third stage. 
+The optimised maximum payload-to-orbit trajectory profile was calculated, and it was found that the launch system is capable of delivering \PayloadToOrbitStandard kg of payload to sun synchronous orbit, while returning the SPARTAN to the initial launch site. This result shows that it is feasible to return a scramjet-powered accelerator to its initial launch site, with only a -19kg (-10.0\%) reduction in the payload mass-to-orbit.
+	The inclusion of the fly-back of the SPARTAN was found to alter the shape of the ascent trajectory significantly. When the fly-back was included, the first stage was found to initially pitch towards the east, exhibiting a significantly higher first stage-SPARTAN separation point than the optimised trajectory with no fly-back. The SPARTAN was then observed to bank heavily, executing a heading angle change manoeuvre during its acceleration. No altitude raising manoeuvre was observed during this banking acceleration, due to the higher angles of attack while banking resulting in flight at the SPARTAN's maximum dynamic pressure being optimal. 
+When the fly-back was included, the SPARTAN was still observed to perform a pull-up manoeuvre before third stage separation, of a similar magnitude to the pull-up manoeuvre performed with no fly-back. 
+The optimal fly-back of the SPARTAN was found to require the ignition of the scramjet engines, and was observed to exhibit three distinct phases, an initial turn, a boost-skip, and an approach. 
+During the initial turn, the bank angle of the SPARTAN is increased rapidly, in order to manoeuvre the heading angle of the SPARTAN back towards its initial launch site. 
+After this initial turn, the boost-skip phase is initiated, consisting of multiple skipping manoeuvres. These skipping manoeuvres serve both to increase the range of the SPARTAN during its return, minimising the fuel necessary for the fly-back, as well as to improve the specific impulse of the scramjet engines.
+ The scramjet engines were observed to be ignited at the trough of each skip, as soon as the SPARTAN accelerates above the minimum operable Mach number of the C-REST engines. At this point of the skipping manoeuvres, the specific impulse of the scramjet engines is highest, so that igniting the scramjet engines at this point minimises the fuel necessary for the return flight. 
+ After the scramjets were ignited a total of three times, three unpowered skips were performed, decreasing in size sequentially. Finally, the skips ceased entirely, beginning a steady descent and approach to the landing site. 
+ In total, \returnFuelStandard kg of fuel was used during the fly-back, 17.2\% of the SPARTAN's total fuel mass.
+	
+	These maximum payload-to-orbit trajectory profiles, which have been calculated using LODESTAR, are non-intuitive, and involve complex trade-offs between the efficiencies of each stage of the launch system, as well as the fly-back of the SPARTAN. The design of these optimised flight paths is made possible through the use of the pseudospectral method of optimal control, coupled with accurate propulsion and aerodynamic modelling.  
+	These trajectory profiles improve the performance of the launch system, and can assist in directing future design decisions for partially-airbreathing, multi-stage launch systems. Particularly of interest is the optimal pull-up of the SPARTAN, before the release of the third stage. This pull-up, as well as increasing payload-to-orbit, significantly lowers the dynamic pressures experienced by the third stage rocket, an important factor when designing the thermal protection and structure of the third stage. 
+	
+	\vspace{10pt}
+	\emph{Analysis of the sensitivity of the maximum payload-to-orbit trajectory to variations in key design parameters of the launch system.}
+	
+Eight key design parameters of the launch system were modified, and the sensitivities of the maximum payload-to-orbit trajectory were studied.
+The parameters varied were: the maximum dynamic pressure of the SPARTAN, the fuel mass within the SPARTAN, the drag of the SPARTAN , the specific impulse of the SPARTAN, the mass of the SPARTAN, the drag of the third stage, the specific impulse of the third stage, and the mass of the third stage. 
+These parameters were varied for trajectories both with, and without, SPARTAN fly-back. 
+It was found that in the cases with no fly-back, the ability of the first stage to pitch, determined by the acceleration of the launch system, is the primary driver of the first stage-SPARTAN separation conditions. The first stage-SPARTAN separation altitude was observed to decrease when the first stage accelerated more slowly, due to the better pitching ability of the first stage. However, this trend was not generally observed when the fly-back of the SPARTAN was included. The disappearance of this trend indicates that when the fly-back of the SPARTAN is included, the first stage-SPARTAN separation point is determined by a more complex trade-off, involving the banking and manoeuvrability of the SPARTAN. 
+When the efficiency of the SPARTAN was increased, the efficiency of the third stage was also observed to increase. This increased efficiency trend was due to the increased velocity at the SPARTAN-third stage separation point, which improves the propulsive efficiency of the third stage rocket. 
+Variations in the efficiency of the third stage were found to produce no significant variation in the trajectory of the SPARTAN. 
+
+Out of the modified design parameters, it was found that the specific impulse of the third stage had by far the largest effect on the performance of the launch system, varying the payload-to-orbit by 4.6kg for each percent of additional specific impulse. This large sensitivity is due to the particular importance of the specific impulse during the Hohmann transfer, which is significant in determining the final payload mass. 
+The sensitivities of all significantly coupled design parameters were compared, and their relative quantities assessed to provide meaningful insights into the design of the launch system. Of these comparisons, the relationship between the maximum dynamic pressure and the structural mass of the SPARTAN was found to be of particular interest. 
+It was found that the sensitivity of the launch system to the maximum dynamic pressure of the SPARTAN is relatively low, indicating that it may be advantageous to fly the SPARTAN at a lower maximum dynamic pressure, in order to reduce heat shielding and structural mass. It was found that if the mass of the SPARTAN can be reduced by greater than -26.5kg per -1kPa reduction in maximum dynamic pressure (or -28.4kg per 1kPa when fly-back is included) then a larger payload-to-orbit will be achieved.
+ 
+
+This investigation into the sensitivity of the optimised trajectory to variations in the design parameters of the launch system has provided insights into the shape of the optimised trajectory, and allowed the effects of the modified design parameters to be quantified. These findings can be used to predict the maximum payload-to-orbit trajectories of future launch systems, as well as how design changes may affect the performance of the launch system utilised in this study. 
+
+  \chapter{Recommendations for future work}
+ This work on the calculation of a maximum payload-to-orbit trajectory for a rocket-scramjet-rocket launch system was carried out to determine the behaviour and sensitivities of such a launch system, in order to inform future launch vehicle designs. 
+ In addition to improvements in the design of the launch system, a number of outstanding research questions were identified during the course of this work.
+ In order to build upon this work and advance our knowledge of reusable, partially-airbreathing launch systems, the following research directions are suggested:
+
+%\begin{itemize}
+\vspace{10pt}
+\textit{Controllability studies of all three vehicles of the launch system.}
+
+ \noindent
+During this work, the controls of the vehicles within the launch system were constrained to values which were estimated to represent the realistic control limits of each vehicle. 
+A controllability study of all three stages would improve the accuracy of the vehicle simulation models, and introduce more realistic control limits to the trajectory optimisation. 
+
+\vspace{10pt}
+ \textit{Design of a fly-back first stage booster.}
+ 
+ \noindent
+ During this work, the first stage booster is assumed to be expendable, to enable a simple design process. However, in the future it is likely that the first stage of the launch system will be required to be reusable for the launch system to be economically feasible. As such, a first stage booster must be designed and sized which is capable of accelerating the SPARTAN to operational speeds, as well as returning to the initial launch site after separation at Mach 5. 
+
+\vspace{10pt}
+ \textit{Cost analysis of the launch system.}
+
+ \noindent
+A primary driver for a realistic launch system is its overall performance, as a function of payload-to-orbit, launch flexibility, and launch cost. In order for a new style of launch system to be properly characterised, a bottom-up cost model estimate is necessary. A bottom-up cost model estimate would allow for the primary cost drivers to be identified, down to a subsystem level. This should include an in-depth analysis of the operational needs and economics of running a launch service provider.
+
+\vspace{10pt}
+ \textit{Multi-disciplinary design optimisation sizing of the launch system.}
+
+ \noindent
+During this work, the first and third stages of the launch system were designed around the previously sized SPARTAN vehicle, and the dimensions and performance of the SPARTAN were kept fixed (apart from during sensitivity studies).
+The development and characterisation of the maximum payload-to-orbit trajectory of the rocket-scramjet-rocket launch system paves the way for a multi-disciplinary design optimisation, of all three stages concurrently. A multi-disciplinary design optimisation of the system would allow the sizing, design, and relative performance of the three stages to be optimised, taking into account the variation in the maximum payload-to-orbit trajectory path.  
+%\end{itemize}
+
+
+
+
+
+

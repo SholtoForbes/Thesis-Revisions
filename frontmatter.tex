@@ -1,0 +1,180 @@
+% frontmatter.tex
+
+
+
+
+
+\thispagestyle{empty}
+\begin{center}
+	\centering
+  \includegraphics{figures/uq_logo}
+
+  \vspace{50pt}
+
+  \textbf{\Large Trajectory Optimisation of a Partially-Reusable Rocket-Scramjet-Rocket Small Satellite Launch System}
+
+  \vspace{25pt}
+
+  {\large Sholto O. Forbes-Spyratos }
+    
+    \vspace{5pt}
+
+  {\large B.Eng. (Mechanical and Aerospace) (Hons. I) \& B.Sc. (Physics)}
+
+
+  \vspace{60pt}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+  \vfill
+
+  {\large A thesis submitted for the degree of Doctor of Philosophy at\\ The University of Queensland in 2018}
+
+  \vspace{20pt}
+
+  School of Mechanical Engineering
+  
+  \textit{Centre for Hypersonics}
+
+  \vfill
+\end{center}
+
+\cleardoublepage
+
+\section*{Abstract}
+
+ The small satellite industry is expanding rapidly, driving a need for dedicated and cost effective small satellite launchers.  
+ For this reason, work is ongoing at The University of Queensland to develop a three stage, partially-reusable small satellite launch system. This launch system consists of two rocket stages, along with a scramjet-powered accelerator for cost-efficient reusability and launch flexibility.
+During the launch of this system, there are complex trade-offs between the performance of each stage that must be accounted for. The rocket stages perform significantly better at high altitudes due to diminished drag losses, while the airbreathing stage will generally perform better at low altitudes due to the high density operation of the scramjet engines. 
+ This work develops an optimal trajectory profile for a rocket-scramjet-rocket, three stage launch system, determining the flight path which maximises the payload-to-orbit capabilities of the launch system. 
+ 
+ Significant work has previously been carried out on the design of the scramjet-powered accelerator, designated the SPARTAN, as well as the third stage rocket. 
+ However, the first stage has not been designed, and the third stage previously used a costly, pump-fed motor. 
+ In this study, a first stage rocket is designed, based on a Falcon-1e scaled down lengthwise to 8.5m, and the third stage rocket is redesigned to be powered by a cost effective pressure-fed engine. 
+ The aerodynamics of the first stage and the SPARTAN are simulated using computational fluid dynamics, to produce accurate aerodynamic databases. 
+ The aerodynamics of the third stage are modelled using Missile Datcom, and propulsion models are developed for all three stages. The aerodynamic and performance models are used to create a trimmed three degree of freedom simulation of the launch system. 
+ 
+ A package is developed to calculate the maximum payload-to-orbit trajectory of the rocket-scramjet-rocket launch system, designated LODESTAR, which uses optimal control theory to design flight paths. LODESTAR utilises GPOPS-2, a pseudospectral method optimal control software, configured to calculate maximum payload-to-orbit trajectory profiles. Along with the configuration of GPOPS-2, LODESTAR provides a dynamic simulation of each vehicle, and tools to verify and examine the optimised solutions produced by GPOPS-2. 
+ 
+Launch trajectories are initially simulated assuming that the SPARTAN lands at some position downrange. A launch trajectory is simulated in which the SPARTAN flies at maximum dynamic pressure as a reference and verification case. This trajectory achieves a payload-to-orbit of \PayloadToOrbitConstqNoReturn kg, launching to sun synchronous orbit.  
+The maximum payload-to-orbit trajectory of the launch system is calculated, and is found to differ significantly from the trajectory in which the SPARTAN is constrained to constant dynamic pressure. 
+ The SPARTAN is found to deviate from its maximum dynamic pressure at both stage separation points, and for a segment in the middle of its trajectory.
+ The higher separation points result in the efficiency of the SPARTAN reducing, but increase the efficiency of the rocket stages, improving the overall efficiency of the system. 
+  Additionally, an altitude raising manoeuvre is performed in a region where the specific impulse of the scramjet engines is relatively homogeneous with varied flight conditions, resulting in a very small performance increase. Overall, flying an optimal trajectory increases the payload-to-orbit of the system launching to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg, an increase of 19.5\% compared to a trajectory in which the SPARTAN flies at maximum dynamic pressure.  
+ 
+ 
+ The fly-back of the SPARTAN is included within the trajectory optimisation, and a maximum payload-to-orbit flight path to sun synchronous orbit is simulated. 
+ It is found that the SPARTAN must ignite its scramjet engines during its return flight, causing the fly-back to become an important consideration in the optimal trajectory design. When the fly-back is included, the first stage pitches easterly, rather than northerly. The SPARTAN banks heavily throughout its acceleration to manoeuvre to polar inclination, decreasing the performance of the SPARTAN, but also reducing the amount of fuel used during fly-back, for a net performance gain. 
+The fly-back is found to exhibit multiple `skipping' manoeuvres, which serve to increase the range of the SPARTAN, minimising the fuel necessary during the return flight. In addition, the scramjet engines are powered on at the troughs of the first three skips, corresponding to the points of highest possible specific impulse. The launch system is able to deliver \PayloadToOrbitStandard kg of payload to sun synchronous orbit while successfully returning the SPARTAN to its initial launch site.  
+
+A study is conducted to quantify the sensitivity of the launch system to variations in key design parameters. The behaviour of the maximum payload-to-orbit trajectory is investigated as the physical characteristics of the launch system are modified. 
+The sensitivities of coupled design parameters are compared, to quantify their relative impacts on the performance of the launch system. The magnitudes of these relative impacts are assessed, to indicate the design trade-offs which will produce an increase in the launch system performance. 
+
+ 
+
+\clearpage
+\section*{Declaration by author}
+
+  This thesis is composed of my original work, and contains no material previously published or written by another person except where due reference has been made in the text. I have clearly stated the contribution by others to jointly-authored works that I have included in my thesis.
+
+  I have clearly stated the contribution of others to my thesis as a whole, including statistical assistance, survey design, data analysis, significant technical procedures, professional editorial advice, and any other original research work used or reported in my thesis. The content of my thesis is the result of work I have carried out since the commencement of my research higher degree candidature and does not include a substantial part of work that has been submitted to qualify for the award of any other degree or diploma in any university or other tertiary institution. I have clearly stated which parts of my thesis, if any, have been submitted to qualify for another award.
+
+  I acknowledge that an electronic copy of my thesis must be lodged with the University Library and, subject to the policy and procedures of The University of Queensland, the thesis be made available for research and study in accordance with the Copyright Act 1968 unless a period of embargo has been approved by the Dean of the Graduate School.
+
+  I acknowledge that copyright of all material contained in my thesis resides with the copyright holder(s) of that material. Where appropriate I have obtained copyright permission from the copyright holder to reproduce material in this thesis.
+
+\clearpage
+\section*{Publications During Candidature}
+
+\subsection*{Journal papers}
+
+\noindent\AtNextCite{\defcounter{maxnames}{99}}\fullcite{ForbesSpyratos2018}\\
+
+
+\subsection*{Conference papers}
+
+\noindent\AtNextCite{\defcounter{maxnames}{99}}\fullcite{ForbesSpyratos2017}\\
+
+\noindent\AtNextCite{\defcounter{maxnames}{99}}\fullcite{Forbes2018a}\\
+
+\noindent\AtNextCite{\defcounter{maxnames}{99}}\fullcite{chai2017}\\
+
+\section*{Publications Included in This Thesis}
+
+This thesis comprises partly of publications, as allowed by University of Queensland Policy PPL 4.60.07. The papers that have been included have all been published in peer reviewed journals at the time of submission. 
+
+\vspace{\baselineskip}
+\AtNextCite{\defcounter{maxnames}{99}}\fullcite{ForbesSpyratos2018}
+
+\begin{center}
+  \begin{tabular}{ll}
+    \toprule
+    Contributor   & Contribution \\
+    \midrule
+    Sholto O. Forbes-Spyratos             
+                                  & Conception and Design (85\%)\\
+                                  & Performed simulations (100\%)\\
+                                  & Analysis of results (90\%)\\
+                                  & Wrote and edited paper (85\%)\\
+    \midrule
+    Ingo H. Jahn            
+                                  & Conception and Design (5\%)\\
+                                  & Analysis of results (5\%)\\
+                                  & Wrote and edited paper (7.5\%)\\
+                                  
+        \midrule
+        Michael P. Kearney            
+								      & Conception and Design (5\%)\\
+								      & Wrote and edited paper (7.5\%)\\                       
+
+    \midrule
+    Michael K. Smart              
+                                  & Conception and Design (5\%)\\
+                                  & Analysis of results (5\%)\\
+                                  & Wrote and edited paper (5\%)\\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+
+
+\section*{Contributions by Others to the Thesis}
+
+The model of the Baseline SPARTAN was provided for this work by Dr. Dawid Preller and Mr. Joseph Chai, including mass properties, dimensions, and CAD models. The CRESTM10 scramjet engine database was provided for this study by Prof. Michael Smart, consisting of tabulated performance data over a range of inlet conditions. The viscous correction incorporated into the SPARTAN's aerodynamic calculations was performed by Mr. Alexander Ward, and provided for this study in the form of a tabulated aerodynamic database. 
+
+\section*{Statement of Parts of the Thesis Submitted to Qualify for the Award of Another Degree}
+
+None.
+
+\clearpage
+
+\section*{} 
+  For Kaitlin, with love to my family and friends and utmost gratitude to my advisors: Ingo Jahn, Michael Kearney, and Michael Smart. 
+
+      \vspace*{\fill}
+\begin{flushright}
+	\textit{I'm trying to find a way off this planet.}
+	
+Rocket Raccoon
+\end{flushright}
+\clearpage
+\subsection*{Keywords}
+  airbreathing propulsion, scramjets, hypersonics, access-to-space, small satellite launchers, airbreathing launch systems
+
+\subsection*{Australian and New Zealand Standard Research Classification (ANZSRC)}
+
+  ANZSRC code: 090107 Hypersonic Propulsion and Hypersonic Aerodynamics, 20\% \newline
+ ANZSRC code: 090106 Flight Dynamics, 10\% \newline
+ ANZSRC code: 090108, Satellite, Space Vehicle and Missile Design and Testing, 25\% \newline
+ANZSRC code: 090104 Aircraft Performance and Flight Control Systems, 15\% \newline
+ANZSRC code: 010303 Optimisation, 30\% \newline
+
+\subsection*{Fields of Research (FoR) Classification}
+
+  FoR code: 0901, Aerospace Engineering, 100\%
+
+\tableofcontents
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of tables}
+\printnomenclature
