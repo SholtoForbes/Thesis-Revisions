@@ -1263,6 +1263,32 @@
     \field{year}{2011}
   \endentry
 
+  \entry{BlueOrigin}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Lewin},
+         familyi={L\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Space.com}
+    \field{title}{{Blue Origin Announces Big 'New Glenn' Rocket for Satellite
+  \& Crew Launches}}
+    \verb{url}
+    \verb https://www.space.com/34034-blue-origin-new-glenn-rocket-for-satellit
+    \verb es-people.html
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
   \entry{Kendall2010}{misc}{}
     \name{author}{2}{}{%
       {{hash=KR}{%
@@ -1289,6 +1315,31 @@
     \verb n-and-now-50-years-of-evolution/
     \endverb
     \field{year}{2010}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{FalconHeavy}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PH}{%
+         family={Pettit},
+         familyi={P\bibinitperiod},
+         given={Harry},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PH1}
+    \strng{fullhash}{PH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Daily Mail}
+    \field{title}{{The galaxy's fastest car}}
+    \verb{url}
+    \verb http://www.dailymail.co.uk/sciencetech/article-5361789/Ride-Elon-Musk
+    \verb s-Starman-travels-space.html
+    \endverb
+    \field{year}{2018}
     \field{urlday}{21}
     \field{urlmonth}{06}
     \field{urlyear}{2018}
@@ -1412,57 +1463,8 @@
     \verb dule-for-2020-maiden-flight/
     \endverb
     \field{year}{2016}
-    \warn{\item Invalid format of field 'urldate'}
-  \endentry
-
-  \entry{BlueOrigin}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=LS}{%
-         family={Lewin},
-         familyi={L\bibinitperiod},
-         given={Sarah},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LS1}
-    \strng{fullhash}{LS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Space.com}
-    \field{title}{{Blue Origin Announces Big 'New Glenn' Rocket for Satellite
-  \& Crew Launches}}
-    \verb{url}
-    \verb https://www.space.com/34034-blue-origin-new-glenn-rocket-for-satellit
-    \verb es-people.html
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{FalconHeavy}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=PH}{%
-         family={Pettit},
-         familyi={P\bibinitperiod},
-         given={Harry},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PH1}
-    \strng{fullhash}{PH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Daily Mail}
-    \field{title}{{The galaxy's fastest car}}
-    \verb{url}
-    \verb http://www.dailymail.co.uk/sciencetech/article-5361789/Ride-Elon-Musk
-    \verb s-Starman-travels-space.html
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
     \field{urlyear}{2018}
   \endentry
 
@@ -1658,7 +1660,9 @@
     \verb http://www.spacelaunchreport.com/kz.html
     \endverb
     \field{year}{2018}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Vector}{misc}{}
@@ -5349,7 +5353,9 @@
     \verb http://hmf.enseeiht.fr/travaux/CD0102/travaux/optmfn/micp/reports/s19
     \verb cfx2/pages/frame2.htm
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{05}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{comsol}{misc}{}
@@ -5367,7 +5373,9 @@
     \verb{url}
     \verb https://www.comsol.com/cfd-module\#cfd-software
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{05}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Schwamborn2006}{article}{}
@@ -5437,7 +5445,9 @@
     \verb{url}
     \verb https://openfoam.org/
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Segal2009}{book}{}
@@ -6220,6 +6230,29 @@
     \field{year}{2008}
   \endentry
 
+  \entry{Norris2011}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=NG}{%
+         family={Norris},
+         familyi={N\bibinitperiod},
+         given={Guy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NG1}
+    \strng{fullhash}{NG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Aviation Week}
+    \field{title}{{SpaceX Unveils Plans To Be World’s Top Rocket Maker}}
+    \verb{url}
+    \verb https://web.archive.org/web/20150621134912/http://aviationweek.com/aw
+    \verb in/spacex-unveils-plans-be-world-s-top-rocket-maker
+    \endverb
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{RPE}{book}{}
     \name{author}{2}{}{%
       {{hash=SG}{%
@@ -6252,6 +6285,68 @@
     \field{year}{2010}
   \endentry
 
+  \entry{Magee}{report}{}
+    \name{author}{1}{}{%
+      {{hash=MJW}{%
+         family={{Magee Bruno, T.J., Friend, D. G., Huber, M.L., Laesecke, A.,
+  Lemmon, E.W., McLinden, M.O., Perkins, R.A., Baranski, J., Widegren, J.A.}},
+         familyi={M\bibinitperiod},
+         given={J\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJW2}
+    \strng{fullhash}{MJW2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Thermophysical Properties Measurements and Models for Rocket
+  Propellant RP-1: Phase I, NIST- IR 6644, National Institute of Standards and
+  Technology (U.S.)}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Magee.pdf:pdf
+    \endverb
+    \field{type}{techreport}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Huzel1967}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HD}{%
+         family={Huzel},
+         familyi={H\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=HD}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {American Institute of Aeronautics}%
+      {Astronautics}%
+    }
+    \strng{namehash}{HDHD1}
+    \strng{fullhash}{HDHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Liquid propellant rocket engine conference proceedings and parameters for
+  design of rocket engines and systems%
+    }
+    \field{booktitle}{Nasa Sp-125}
+    \field{isbn}{1563470136}
+    \field{pages}{1\bibrangedash 472}
+    \field{title}{{Design of Liquid Propellant Rocket Engines}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASArocketDesign.pd
+    \verb f:pdf
+    \endverb
+    \field{year}{1992}
+  \endentry
+
   \entry{tungsten}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -6268,7 +6363,9 @@
     \verb{url}
     \verb https://www.itia.info/tungsten-properties.html
     \endverb
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{05}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Fitzer}{book}{}
@@ -6329,30 +6426,6 @@
     \endverb
     \field{type}{techreport}
     \field{year}{2018}
-  \endentry
-
-  \entry{Magee}{report}{}
-    \name{author}{1}{}{%
-      {{hash=MJW}{%
-         family={{Magee Bruno, T.J., Friend, D. G., Huber, M.L., Laesecke, A.,
-  Lemmon, E.W., McLinden, M.O., Perkins, R.A., Baranski, J., Widegren, J.A.}},
-         familyi={M\bibinitperiod},
-         given={J\bibnamedelima W},
-         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MJW2}
-    \strng{fullhash}{MJW2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Thermophysical Properties Measurements and Models for Rocket
-  Propellant RP-1: Phase I, NIST- IR 6644, National Institute of Standards and
-  Technology (U.S.)}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Magee.pdf:pdf
-    \endverb
-    \field{type}{techreport}
-    \field{year}{2006}
   \endentry
 
   \entry{Patterson2015}{report}{}
@@ -6505,7 +6578,9 @@
     \verb 5b39e04fd31302e8b1056e3ab
     \endverb
     \field{year}{2017}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{05}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Betts2009}{book}{}
@@ -6831,7 +6906,9 @@
     \verb rt - October 2017.pdf:pdf
     \endverb
     \field{year}{2017}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
   \endentry
 \endsortlist
 \endinput

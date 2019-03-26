@@ -122,6 +122,7 @@ The rocket-scramjet-rocket system launches vertically, flying a fixed vertical t
 After pitchover the angle of attack stays constant at 0$^\circ$ for 49.1s, as shown in Figure \ref{fig:FirstStageConstq}. At this point, the angle of attack is reduced, reaching a minimum of -4.89$^\circ$, before increasing back up to 0$^\circ$ for stage separation. 
 The SPARTAN is separated at a trajectory angle of \firstsecondSeparationgammaConstqNoReturn$^\circ$ at an altitude of \firstsecondSeparationAltConstqNoReturn km, a total flight time of 120.9s, with a total ground distance of \FirstStageDistStandardNoReturn km covered under power of the first stage rocket. 
  In order to reach optimal first stage-SPARTAN separation conditions, the first stage must launch with a lower-than-maximum fuel mass, to allow it to pitch in the correct manner. To achieve an optimal constant dynamic pressure trajectory, the first stage launches with a fuel mass of 17010kg, significantly lower than the full amount of allowable fuel mass, 17934kg. 
+ \textcolor{red}{XXX I should make it clear here that this is significant, and that additional fuel mass in the first stage does not necessarily mean additional payload for a system of this type (without optimisation of the other stages masses as well), there appears to be an optimal spartan\&third stage / first stage ratio?}
 The first stage rocket achieves an exergy efficiency of \firstExergyEffConstqNoReturn\%$\eta$ when separating the SPARTAN onto a constant dynamic pressure trajectory. 
 
 
@@ -432,8 +433,12 @@ These lowered propulsion losses are due to the SPARTAN's scramjet engines utilis
   
 
 \section{Sensitivity Analysis}\label{sec:sensitivityNoReturn}
+\textcolor{red}{XXX I need more justification and estimation of variance (can maybe look at dawids and other shape optimisation papers to get an idea?) I also need to focus this partly in terms of uncertainties}
 
+\textcolor{red}{XXX I need to make it clear that the sensitivity study is an important contribution, that gives useful insights into the interplay between the stages}
 
+\textcolor{red}{The launch system studied in this work is intended to be representative of a three stage, rocket-scramjet-rocket, small satellite launch system, to be used to inform future vehicle designs. It is anticipated that the design of the launch system will change significantly before a optimal, or even practically feasible, iteration is reached. Additionally, this study models the launch system using medium and low fidelity methods, which may be significant sources of error on the final optimised trajectory.  
+	To quantify how variations in a the design of a stage or variations in the performance of a stage due to modelling error may affect the performance of the launch system, it is useful to conduct a sensitivity analysis on the launch system.}
 A sensitivity analysis is conducted, in which selected design parameters of the launch system are varied, and the effects on the optimised maximum payload-to-orbit trajectory of the launch system are investigated. Appendix \ref{sec:Appendix_trajectorycomparisons} shows comparison plots of the SPARTAN and third stage trajectories for each parameter variation study, however, the first stage rocket trajectories are very similar and are not compared graphically. Key results including performance factors of each stage and separation conditions are summarised within this section.
 This study is performed in order to determine the relative importance of the design parameters on the efficiency of the system, as well as investigating changes in the maximum payload-to-orbit trajectory as the performance of the launch system is varied. The investigation of the key design parameters of the launch system provides a comparative metric, which is used to quantify the relative impact of the vehicle design on the performance of the launch system. The performance trade-offs between the stages are investigated by studying the variation in the optimised trajectory, particularly the stage separation conditions, as the parameters of the launch system design are changed. 
 Trends are developed for each parameter study, quantifying how much the performance factors of the launch system vary per percentage of variation of each design parameter ($\Delta$/$\Delta$\%). This percentage variation gives a general metric for how much each design parameter effects the performance factors of the launch system. However, the relative magnitude of one percent variation of each individual design parameter must be taken into account when making comparisons. 
@@ -603,7 +608,7 @@ All optimised trajectories within this section use the full amount of fuel avail
 
 
 To investigate the sensitivity of the vehicle to changes in $q_{max}$, the maximum permissible dynamic pressure is varied by $\pm$10kPa in 5kPa increments, and the flight trajectory optimised, with results shown in Table \ref{tab:qvarnoreturn}, and comparison plots shown in Appendix \ref{sec:app_comparison20}.
-The variation in maximum dynamic pressure has only a small effect on the total exergy efficiency of the system, and hence only a small effect on the payload mass delivered to sun synchronous orbit.  Varying the maximum dynamic pressure by $\pm20\%$ causes a variation of only +0.064\%$\eta$ or -0.069\%$\eta$ in the exergy efficiency of th launch system and a corresponding +7.2kg (+3.82\%) or -7.8kg (-4.11\%) variation in the payload to orbit.  
+The variation in maximum dynamic pressure has only a small effect on the total exergy efficiency of the system, and hence only a small effect on the payload mass delivered to sun synchronous orbit.  Varying the maximum dynamic pressure by $\pm20\%$ causes a variation of only +0.064\%$\eta$ or -0.069\%$\eta$ in the exergy efficiency of the launch system and a corresponding +7.2kg (+3.82\%) or -7.8kg (-4.11\%) variation in the payload to orbit.  
 The SPARTAN pull-up manoeuvres of all cases are similar, with a slight trend of decreasing altitude as the maximum dynamic pressure is increased. Altitudes of \secondthirdSeparationAltqFortyNoReturn km and \secondthirdSeparationAltqSixtyNoReturn km are reached for the 40kPa and 60kPa limited cases respectively, with separation velocities of \secondthirdSeparationvqFortyNoReturn m/s and \secondthirdSeparationvqSixtyNoReturn m/s. The 40kPa limited case flies for 612.1s, significantly longer than the 60kPa limited case, which flies for 468.1s.
 As the dynamic pressure decreases, the size of the altitude raising manoeuvre in the middle of the trajectory decreases. This is due to the increased altitude and angle of attack moving the flight conditions into a region where the specific impulse of the C-REST engines is not homogeneous, so that it is beneficial to fly at maximum dynamic pressure.  
 All trajectories pull-up to similar altitudes, with a relatively small variation in separation velocity of +33m/s (+1.2\%) and -30m/s (-1.1\%).
@@ -1774,7 +1779,7 @@ The SPARTAN exhibits a slightly higher pull-up as the drag of the third stage is
 Increasing the drag of the third stage by 20\% causes a decrease in the exergy efficiency of the SPARTAN of -0.036\%$\eta$ (-0.76\%), and a decrease in the efficiency of the third stage of -0.068\%$\eta$ (-0.36\%), while decreasing the drag of the third stage by 20\% causes an increase in the exergy efficiency of the SPARTAN of +0.060\%$\eta$ (+1.27\%), and an increase in the third stage efficiency of +0.082\%$\eta$ (+0.44\%). 
 As the drag of the third stage increases, the SPARTAN pulls-up to a higher altitude so that the third stage spends less time in a high dynamic pressure environment, where the increased drag has a significant effect, mitigating the energy loss due to the increased drag. The higher pull-up of the SPARTAN with the third stage drag increased by 20\%, decreases the time that the third stage spends above 5kPa dynamic pressure by -2.4s (-16.9\%), resulting in drag losses of \WDthreeCdThreeOneHundredTwentyNoReturn\% (0.19 GJ), while the lower pull-up of the SPARTAN when the third stage drag is decreased by 20\% increases the time spent at greater than 5kPa dynamic pressure by +2.5s (+17.6\%), resulting in drag losses of \WDthreeCdThreeEightyNoReturn\% (0.22 GJ). This indicates that as the drag of the third stage is increased, the optimal pull-up manoeuvre is increased so as to more than compensate for the additional energy losses, trading off the efficiency of the SPARTAN to do so. 
 
-
+\textcolor{red}{\subsection{Thermal Analysis} XXX Maybe I should make integrate this into all trajectories? probably not...}
 
 \section{Comparison of Design Parameters}\label{sec:comparisonNoReturn}
 
@@ -1784,6 +1789,8 @@ As the drag of the third stage increases, the SPARTAN pulls-up to a higher altit
 	\caption{The sensitivity of the key design parameters of the launch system.}
 	\label{fig:BarChartRelativePayloadChange}
 \end{figure}
+
+\textcolor{red}{XXX I should be clear about why I am doing this - to inform future design decisions}
 
 The preceding sections calculate the relative sensitivity of the launch system performance to a variety of design parameters. 
 Comparing and contrasting the sensitivity of the launch system to each design parameter allows for the relative impact of each design parameter to be assessed. 

@@ -6,3 +6,5 @@ Heat transfer in combustor has found to be greater than that on the leading edge
 
 leading edge should be good enough for now, because shock structures can create additional heating areas which may need to be optimised for in the future
 
+
+

@@ -4,10 +4,10 @@
 \chapter{LODESTAR}\label{chapter:LODESTAR}
 
 
-This chapter presents the package LODESTAR (Launch Optimisation and Data Evaluation for Scramjet Trajectory Analysis Research), which has been developed to calculate the optimal trajectories of partially airbreathing satellite launch systems, as a general tool for this purpose is not currently widely available. LODESTAR has the capability to calculate optimal mission profiles for systems consisting of various combinations of rocket and airbreathing stages, using accurate and robust optimisation techniques. 
+This chapter presents the package LODESTAR (Launch Optimisation and Data Evaluation for Scramjet Trajectory Analysis Research), which has been developed to calculate the optimal trajectories of partially airbreathing satellite launch systems, as a general tool for this purpose is not currently widely available. LODESTAR has the capability to calculate optimal mission profiles for systems consisting of various combinations of rocket and airbreathing stages, using \textcolor{red}{accurate and robust} optimisation techniques. 
 LODESTAR optimises a trajectory towards a user-defined objective function, such as maximum payload-to-orbit, subject to constraints that ensure that the launch system does not exceed its aerodynamic or structural limitations.
 LODESTAR calculates an optimal trajectory by simulating the dynamics of the launch system, and configuring an optimal control solver to define the launch trajectory optimisation problem being solved. 
-The dynamics of the launch system are calculated in three degrees of freedom, with the performance of each vehicle calculated from aerodynamic and propulsion databases using precalculated interpolations, as described in Chapter \ref{chapter:Design}. These interpolations are designed to be smooth and continuous in order to improve the robustness of the optimal control solver.
+The dynamics of the launch system are calculated in \textcolor{red}{three} degrees of freedom, with the performance of each vehicle calculated from aerodynamic and propulsion databases using precalculated interpolations, as described in Chapter \ref{chapter:Design}. These interpolations are designed to be smooth and continuous in order to improve the robustness of the optimal control solver.
 LODESTAR separates a launch trajectory into multiple segments, to assist the solution process within the optimal control solver, improving robustness and accuracy. The segments with variable controls are solved within the optimal control solver, while the segments without control, or with prescribed control laws, are simulated directly in LODESTAR.
 The segments which are simulated directly in LODESTAR are evaluated during the solution process, and the information necessary for the optimisation is passed to the optimal control solver.
 Once the solution has been calculated, LODESTAR possesses the capability to verify the optimal control solution, an integral step when calculating an optimised trajectory with complex vehicle dynamics. 
@@ -57,9 +57,9 @@ If there are large discontinuities or inaccurate extrapolation effects within th
 Discontinuities within the aerodynamics or engine properties of a particular vehicle must be mitigated through the careful application of interpolation techniques. Discontinuities that are unable to be mitigated, such as stage separations, must be separated into distinct phases within the optimal control solution and connected by linkage constraints \cite{Betts1998}, as discussed further in Section \ref{sec:optstruct}. 
 
 \subsection{Equations of Motion}
+\textcolor{red}{Can I integrate WGS84 into this?}
 
-
-The dynamics of the launch system are calculated in three degrees of freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, velocity $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Josselyn2002a}:
+The dynamics of the launch system are calculated in \textcolor{red}{three} degrees of freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, velocity $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Josselyn2002a}:
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/4_LODESTAR/global}
@@ -219,7 +219,7 @@ LODESTAR optimises the ascent of the first stage rocket in two segments; pre and
   
  The pre-pitchover phase is the segment of flight immediately after vertical launch. During this phase, the launch system continues vertically for a short time in order to clear the launch tower and stabilise the vehicle.        
 The pre-pitchover section is prescribed, and is simulated externally to the optimisation to allow the dynamics of the system to behave appropriately during the pitching ascent. During vertical flight, the heading angle (Equation \ref{eq:heading}) is meaningless, and vertical flight is allowed during the pitching ascent, the heading angle change rate can tend towards infinity, causing mathematical and scaling errors. Simulating this segment after the optimisation has been completed makes the starting mass and altitude of the first stage slightly variable, but this variation is negligible. 
-The pitchover is defined to occur at 90m altitude and 15m/s velocity.
+The pitchover is defined to occur at 30m altitude and 15m/s velocity.
 During the vertical launch the rocket is assumed to need no control, and is held at 0$^\circ$ angle of attack. 
 
 \subsection{\textcolor{red}{\rom{2}.} First Stage Pitching Ascent}
@@ -228,7 +228,7 @@ During the vertical launch the rocket is assumed to need no control, and is held
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline \textbf{Variable Group}  & \textbf{Associated Variables} & \textbf{Value/Range}\\
-		\hline Initial Constraints  & Velocity (v) & 30m/s\\ & Altitude (z)& 90m \\ & Latitude ($\phi$)  & $-12.16^\circ$ \\& Longitude ($\xi$) & 136.75$^\circ$\\ & Trajectory Angle ($\gamma$) & 89.9$^\circ$\\ & Angle of Attack ($\alpha$)& 0$^\circ$\\
+		\hline Initial Constraints  & Velocity (v) & 30m/s\\ & Altitude (z)& 30m \\ & Latitude ($\phi$)  & $-12.16^\circ$ \\& Longitude ($\xi$) & 136.75$^\circ$\\ & Trajectory Angle ($\gamma$) & 89.9$^\circ$\\ & Angle of Attack ($\alpha$)& 0$^\circ$\\
 		\hline Terminal Constraints & $\textbf{x}_{f,\textrm{\rom{2}}} - \textbf{x}_{0,\textrm{\rom{3}}}$ & 0\\ & $t_{f,\textrm{\rom{2}}} - t_{0,\textrm{\rom{3}}}$ & 0\\
 		\hline Path Constraints & Dynamic Pressure ($q$) & 0kPa - 50kPa\\ 
 		\hline Control Variables & $\ddot{\alpha}$ & $\pm0.029^\circ/s^2$\\ 
@@ -241,7 +241,7 @@ During the vertical launch the rocket is assumed to need no control, and is held
 \end{table}
 
 
-At 90m altitude and 15m/s velocity, pitchover occurs. The pitchover is a very minor amount of instantaneous pitching (0.01$^\circ$) which is introduced in order to begin the pitching ascent, allowing the heading angle of the vehicle to resolve correctly. 
+At 30m altitude and 15m/s velocity, pitchover occurs. The pitchover is a very minor amount of instantaneous pitching (0.01$^\circ$) which is introduced in order to begin the pitching ascent, allowing the heading angle of the vehicle to resolve correctly. 
 The first stage pitching ascent trajectory is an angle of attack controlled phase in the optimisation routine, which is simulated from pitchover until second stage separation. Table \ref{tab:1ststagesetup} shows the optimisation setup of this phase. During this phase, the launch system is allowed to fly at negative angles of attack, to assist in pitching. The control for this phase is the second derivative of angle of attack, which is chosen as the control variable to assist in mitigating the first stage's sensitivity to angle of attack, ie. when the trajectory angle is near 90$^\circ$ and at low velocities, the effects of changes in angle of attack on the dynamics of the system are very large. This sensitivity can cause convergence issues, which are mitigated by using the second derivative of angle of attack as the control variable. 
 The initial fuel mass of the first stage rocket is not fixed, as variations in the initial fuel mass can have an important effect on the capabilities of the first stage. The fuel mass can influence the velocity achievable at first to second stage separation, as well as the rate at which the rocket is able to pitch, and consequentially, the altitude and flight path angle range of the first stage.
 Allowing the initial fuel mass to vary increases the flexibility of the optimal control solver, and enables the optimal sizing of the first stage to be investigated. 
@@ -271,7 +271,7 @@ Allowing the initial fuel mass to vary increases the flexibility of the optimal 
 
 The second stage ascent phase consists of the acceleration of the SPARTAN scramjet-powered vehicle, controlled using the SPARTAN's angle of attack and bank angle. The optimisation setup of this phase is detailed in Table \ref{tab:SPARTANascentsetup}.
 The propulsion, lift, and drag of the vehicle are obtained from interpolation of the C-RESTM10 and trimmed aerodynamics databases described in Sections \ref{sec:propulsion}, \ref{sec:trimmedongineon}, and \ref{sec:trimmedongineoff}. 
-During the ascent, the engines are assumed to be operating at the maximum thrust, corresponding to the maximum equivalence ratio at all times. This equivalence ratio is 1 in most sections of the trajectory, except at low Mach numbers where the possibility of unstart and choking necessitates a reduction in equivalence ratio. This trajectory is constrained to a maximum dynamic pressure of 50kPa, corresponding to the maximum structural limits of the vehicle. 
+During the ascent, the engines are assumed to be operating at the maximum thrust, corresponding to the maximum equivalence ratio at all times. This equivalence ratio is 1 in most sections of the trajectory, except at low Mach numbers where the possibility of unstart and choking necessitates a reduction in equivalence ratio. This trajectory is constrained by a maximum dynamic pressure of 50kPa, corresponding to the maximum structural limits of the vehicle. 
 The control variables are set as the rate of change of angle of attack, and the rate of change of bank angle. Using the derivatives of the angle of attack and bank angle as the control variables serves to smooth the angle of attack and bank angle by constraining the change rates. The angle of attack is constrained to 10$^\circ$, approximated as a reasonable upper bound to the angle of attack, and the limit to which the aerodynamic characteristics of the SPARTAN are modelled. The bank angle is constrained to a maximum of 90$^\circ$, as it is assumed that the SPARTAN is not able to invert. The bank angle is also constrained to positive values only (ie. the heading angle may only increase) as the SPARTAN is launched from the ELA launch site at Nhulunbuy, and it is preferable to launch to the northeast or east to avoid overflying populated areas. 
 
 A cost function can be included during this phase, shown in Table \ref{tab:SPARTANascentsetup}, when flying a constant dynamic pressure trajectory is desired. This cost function is smooth and approaches 0 at the target dynamic pressure, allowing the third stage cost function of payload mass to still be active, while prioritising flying at constant dynamic pressure. 
