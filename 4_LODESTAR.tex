@@ -57,7 +57,12 @@ If there are large discontinuities or inaccurate extrapolation effects within th
 Discontinuities within the aerodynamics or engine properties of a particular vehicle must be mitigated through the careful application of interpolation techniques. Discontinuities that are unable to be mitigated, such as stage separations, must be separated into distinct phases within the optimal control solution and connected by linkage constraints \cite{Betts1998}, as discussed further in Section \ref{sec:optstruct}. 
 
 \subsection{Equations of Motion}
-\textcolor{red}{Can I integrate WGS84 into this?}
+\textcolor{red}{XXX Can I integrate WGS84 into this? I may be able to just modify the calculated altitude and gravity?}
+\textcolor{red}{XXX I need to make sure that descrbing this as geodetic is correct if I am not using a high accuracy earth model... but may need to be defined as a geographic coordinate system instead?}
+\textcolor{red}{XXX reference clearly lays out motion for a spherical rotating earth. Can look up motion over an oblate earth. %www.ingaero.uniroma1.it/attachments/1978_AvanziniEDLA.pdf  
+	}
+\textcolor{red}{The difference between the radius at the equator and poles is very small... is not likely to make any difference...I definitely can use a spherical approximation}
+\textcolor{red}{also, lots of the papers in the optimal trajectories folder of my menderley use this model..}
 
 The dynamics of the launch system are calculated in \textcolor{red}{three} degrees of freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, velocity $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Josselyn2002a}:
 \begin{figure}[ht]
@@ -90,6 +95,7 @@ The dynamics of the launch system are calculated in \textcolor{red}{three} degre
 \begin{equation}\label{eq:heading}
 \dot{\zeta} = \frac{T\sin\alpha \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta +2\omega_E\cos\phi\tan\gamma\sin\zeta - \frac{\omega_E^2 r}{v\cos\gamma}\sin\phi\cos\phi\cos\zeta-2\omega_E\sin\phi 
 \end{equation}
+\textcolor{red}{XXX $\omega_E$ not defined?}
 These dynamics are used as the dynamic constraints of the launch system, as shown in Equation \ref{eq:states}, with each dynamic parameter implemented as a state variable ($\mathbf{x}$). The lift ($L$) and drag ($D$) forces are interpolated from the aerodynamic databases, described in Chapter \ref{chapter:Design}.
 
 \section{Optimal Control Problem Structure}\label{sec:optstruct}
@@ -265,7 +271,7 @@ Allowing the initial fuel mass to vary increases the flexibility of the optimal 
 		\hline State Variables & Altitude (z) & 0 - 50km\\ & Velocity (v)& 10 - 3000m/s\\ & Trajectory Angle ($\gamma$)& $-28.6^\circ$ - $15^\circ$\\   & Latitude ($\phi$) &$\pm28.6^\circ$ \\  & Longitude ($\xi$)& $114.6^\circ$ - $171.9^\circ$\\   & Heading Angle ($\zeta$)& $-240^\circ$ - $360^\circ$ \\  & Fuel Mass ($m_F$)& 0 - 1562kg \\  & Angle of Attack ($\alpha$)&  0$^\circ$ - $10^\circ$ \\  & Bank Angle $\eta$& $-1^\circ$ - $90^\circ$ \\  
 		\hline 
 	\end{tabular} 
-	\caption{Optimisation setup of the second stage ascent. $^*$ This is only used in the constant dynamic pressure simulation.}
+	\caption{Optimisation setup of the second stage ascent. $^*$ This is only used in the constant dynamic pressure simulation. \textcolor{red}{XXX Check these, particularly traj angle}}
 	\label{tab:SPARTANascentsetup}
 \end{table}
 
@@ -431,7 +437,7 @@ Splitting the forward simulation allows the forward simulation of the return sta
 		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.98\linewidth]{"figures/4_LODESTAR/Ascent Flowchart"}
-			\caption{The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.}
+			\caption{\textcolor{red}{XXX Change 6DOF in this image! }The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.}
 			\label{fig:AscentFlowchart}
 		\end{figure} 
 	\end{landscape}

@@ -1,6 +1,93 @@
 % details-of-test-conditions.tex
 \chapter{Modelling and Simulation}\label{Appendix:sim}
 
+
+
+\section{Major Sources of Uncertainty and Modelling Simplifications}
+The medium and low fidelity modelling techniques used in this work have been chosen for their fitness-for-purpose for optimal trajectory analysis, taking into account computational efficiency as well as accuracy.
+In addition, the vehicle model in this study is a simplified vehicle model, intended to be representative of a cost effective rocket-scramjet-rocket launch system.
+
+\begin{tabular}{|c|c|}
+	\hline Source of Uncertainty & Estimated Error  \\ 
+	\hline  Aerodynamic Modelling & \\ 
+	\hline  Aerodynamic Modelling< Mach 2 &  \\ 
+	\hline  Viscous Effects - Control Surfaces &  \\ 
+	\hline  &  \\ 
+	\hline 
+\end{tabular} 
+\subsection{Staging}
+-remember first-second stage here too
+
+The third stage in this study is designed to be situated within the main body of the SPARTAN during the ascent phase. necessitating a release mechanism such as retractable panels or a hinged fuselage section.
+
+-liable to act as a hard limit
+
+\subsection{Aerodynamic Coefficients}
+-aerodynamic coefficients (for third stage also)
+
+-aerocoeffs below Mach 2 - inviscid aero below mach 2 treat with caution Abenayake paper has error estimates,so does alexs paper
+
+\subsubsection{The First and Second Stages}
+-add A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver and maybe others?
+%\textcolor{red}{XXX I need to make sure this isnt contradicting my lit review at all, and should repeat some of this in my lit review.}
+The aerodynamic coefficients of the first and second stages in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously investigated the error margins associated with Cart3D for a number of geometries, at various flight conditions. 
+
+%\textcolor{red}{XXX be really careful here, the reviewer will know this paper inside out}
+Abeynayake \& Agon assess two missile geometries; a conventional missile, and a non-conventional missile that has a cruise missile profile and includes small wings\cite{Abeynayake2013a}. It is found that when compared to experimental results, Cart3D has an averaged relative error of 23\% for subsonic, 15\% for supersonic, and 38\% for transonic cases\cite{Abeynayake2013a} when compared to wind tunnel data for angle of attack values between -10$^\circ$ and 10$^\circ$ in the subsonic regime, and 0$^\circ$ to 10$^\circ$ in the transonic and supersonic regimes. In this comparison study Cart3D was not able to match experimental trends closely in the subsonic and transonic regimes. Errors of up to 80.2\% in drag are observed in the subsonic regime for an unconventional missile geometry\cite{Abeynayake2013a}, although it should be noted that the drag error diminishes significantly at angle of attack values between -5$^\circ$ and 5$^\circ$. In the supersonic regime, Cart3D appears to closely match the experimental lift and drag trends, with an underprediction in the magnitude of the drag forces due to the absence of shear stress. 
+Cart3D had mixed results when computing pitching moment, matching experimental pitching moment values more closely than the Navier-Stokes solver CFD++ for the non-conventional missile, but not performing well for the conventional missile geometry\cite{Abeynayake2013a}. For both vehicles, Cart3D was not able to match the experimental pitching moment trends\cite{Abeynayake2013a}. The work by Abeynayake \& Agon indicates that the errors associated with Cart3D are significant, and are particularly large at angle of attack values greater than 5 in the subsonic and transonic regimes, and that it does not estimate pitching moment trends well. However, some of the errors are associated with the inviscid nature of Cart3D, particularly in drag forces in the supersonic regime.
+
+A study by Ward et al.\cite{Ward2018} compares Cart3D results to experimental results for a blunt body at hypersonic speeds, a lifting body vehicle at subsonic and supersonic speeds, and a hypersonic accelerator test geometry at hypersonic speeds. Ward et al. provide a method for viscous correction of the Cart3D results, and also compare this with experimental results. In this study Cart3d was found to predict trends in lift and drag coefficients well for all tested cases both subsonic and supersonic, although with a consistent underprediction of 15-25\% in drag coefficient due to a lack of viscous effects. When corrected for viscous effects, the drag coefficient was found to agree closely with the experimental results, with error reducing to less than 10\% for the hypersonic accelerator test vehicle at hypersonic speeds, and less than 11\% for the lifting body at supersonic speed. Error at high angles of attack at subsonic speeds was still found to be large, at 38\%, however, at angles of attack under 5$^\circ$ the error reduces significantly, matching the experimental results very closely (to within experimental uncertainty). 
+
+These results indicate that Cart3D provides an acceptable margin of error in the supersonic and hypersonic regimes, and also in the subsonic and transonic regimes provided that angle of attack is low. As the majority of the flight of the launch vehicle investigated in this study is in the supersonic and hypersonic regimes, and the drag forces are highest when flying in these regimes, the error in Cart3D in these regimes will be the largest contributor to the aerodynamic modelling error. It is noted that the pitching moment coefficient is not well predicted in Cart3D, which will lead to error in the calculated flap deflection necessary for trim. 
+The Euclidean correction method outlined by A. Ward was utilised to correct the inviscid aerodynamic coefficients in this study, with viscous aerodynamics provided by A. Ward for use in this study. 
+
+
+\subsubsection{the Third Stage}
+and low fidelity methods for the third stage, due to its simple geometry and the relatively small impact of its aerodynamics on the overall trajectory result.  
+
+
+\subsection{Control}
+-reduced control flap effectiveness due to separation effects at the flap hinge
+-control
+-thermal limitations to flaps
+
+\subsection{Propulsion System}
+-propulsion system (he says because it hasnt been validated)
+--he points out it hasnt been validated against an 'operational' engine, so maybe include some discussion about how its only been validated against test engines?
+-ive got a couple of papers about quasi 1d validation for scramjets
+\subsection{Dynamic Modelling}
+-3DOF model
+-spherical earth model
+	-gravity
+	-positioning (J2 effects?)
+-atmosphere (1976)
+-hohmann transfer
+
+\subsection{Numerical Methods}
+
+
+
+-time step(from reviewer)
+
+-numerical approximations during optimisation
+
+-numerical interpolation of tables
+
+-interpolation of the control flap
+
+\subsection{Internal Design Simplifications}
+-mass model
+-changes in mass model of third stage during optimisation
+
+\subsection{Design}
+-changes in design? kinda associated with all the others, maybe link in between
+-Cavity in back of vehicle
+
+-look at dawid and jazras theses for indication of magnitudes of design variations?
+
+\subsection{Thermal}
+
+
 \section{Propulsion Interpolation Scheme}
 
 \begin{figure}[ht]
@@ -715,6 +802,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 
 \chapter{Viscous Drag Variation}
+
 
 This section presents the sensitivity of the launch system performance to variations in the viscous drag of the SPARTAN. This sensitivity analysis is intended as a reference, to indicate the magnitude of variations in the viscous drag of the SPARTAN due to variations in modelling methods, and is unlikely to be indicative of any physical design variations.
 The viscous drag component of the SPARTAN's aerodynamics is calculated using flat plate correlations, which require an estimation of the laminar to turbulent transition point on the body of the SPARTAN\cite{Ward2018}. This transition point is difficult to estimate to a high degree of accuracy, and can have a significant effect on the viscous drag of an aircraft\cite{Ward2018}.

@@ -3,6 +3,9 @@
 \cleardoublepage
 \chapter{Optimised Ascent Trajectory}\label{chapter:Ascent}
 
+\textcolor{red}{XXX NOTE First stage is not using less that full mass anymore}
+
+
 This chapter presents a maximum payload-to-orbit trajectory optimisation for the rocket-scramjet-rocket launch system incorporating the SPARTAN scramjet-powered accelerator. 
 This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), and delivers a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectory solutions for this launch system.
 First, a trajectory solution is calculated in which the SPARTAN flies at constant dynamic pressure. This trajectory is calculated to serve as a baseline for comparisons, as previous studies have assumed that flying the SPARTAN at its maximum allowable dynamic pressure would produce the best overall system performance\cite{Preller2017b}. An optimal payload-to-orbit trajectory is then developed, and the trajectory shape compared and contrasted to the constant dynamic pressure trajectory.
@@ -34,7 +37,7 @@ These optimised trajectory cases allow the benefits of flying an optimised traje
   
 
 \section{Case 1: Constant Dynamic Pressure Trajectory}
-
+\textcolor{red}{XXX Double check LODESTAR, particularly payload calcs, before starting any new trajectories}
 
 \begin{figure}[ht]
 	\centering
@@ -107,7 +110,7 @@ In addition, the designs and aerodynamic simulations of each vehicle of the laun
 		\hline 
 	\end{tabular} 
 	
-	\caption{Summary of the key results from a maximum payload-to-orbit trajectory with the SPARTAN constrained to 50kPa (Case 1).}
+	\caption{Summary of the key results from a maximum payload-to-orbit trajectory with the SPARTAN constrained to 50kPa (Case 1). \textcolor{red}{XXX about sig figs: the high number of sig figs have been included to highlight trends in the variation section. I should porentially argue that a high number of significant figures are included for this, but make note that the results are still subject to significant sources of error? }}
 	\label{tab:constqsummary}
 \end{table}
 \begin{figure}[ht!]
@@ -156,6 +159,7 @@ When this altitude is reached, the trajectory is circularised and a Hohmann tran
 
 \section{Case 2: Optimised Ascent Trajectory}\label{sec:optimisednoreturn}
 
+\textcolor{red}{XXX If i havent already, I should point out that the small corrections being made during 50kPa flight probably indicate that the vehicle shape is not optimised for 50kPa flight, and that it wants to fly at max q but cant sustain an optimal aoa to do so}
 
 This section presents the maximum payload-to-orbit trajectory for the rocket-scramjet-rocket launch system, with the SPARTAN able to deviate from its maximum dynamic pressure. 
 The optimal trajectory shape for a 50kPa dynamic pressure limited trajectory is shown in Figure \ref{fig:GroundTrackStandardNoReturn}, with detailed trajectory information for each stage shown in Figures \ref{fig:FirstStageStandardNoReturn} - \ref{fig:ThirdStageStandardNoReturn}, and key results summarised in Table \ref{tab:summaryStandardNoReturn}. The maximum payload-to-orbit trajectory shape involves the SPARTAN performing altitude raising manoeuvres, where the dynamic pressure of the SPARTAN is lowered from its maximum of 50kPa. These manoeuvres serve either to increase the net specific impulse of the SPARTAN, or to trade-off the efficiency of the SPARTAN in order to increase the efficiency of the first and third stages. 

@@ -256,7 +256,7 @@ Optimal trajectories have previously been developed for launch systems integrati
  
  \subsection{Multi-Stage Vehicles}
 \textcolor{red}{XXX This is probably the key section, I need to expand on this. I should include multi stage vehicles which dont have a pull up too, and lead into how my work improves upon them.}
-
+\textcolor{red}{XXX \cite{Kimura1999} is an example of another three stage system}
 
 For a multi-stage to orbit vehicle, calculating the optimal trajectory for maximum payload flight is significantly more difficult. A multi-stage vehicle has one or more stage transition points, where the vehicle separates a component which is discarded or reused later, and does not continue to orbit. At a stage transition point there is a large change in the mass and aerodynamics of the launch system. 
 This change in flight dynamics makes finding the optimal stage transition point more complicated. To find the optimal separation point there is a trade-off between:
@@ -629,7 +629,9 @@ This is the case for the simulation of the internal flow paths of scramjet engin
 
 
 \subsection{Cart3D}\label{sec:Cart3d}
-
+\textcolor{red}{XXX Validate low mach no. paper and maybe discuss inviscid code at low mach numbers more (due to examiner comment)}
+\textcolor{red}{XXX Abenayake paper shows that cart is relatively accurate at high mach no.s but not so accurate at low M and doesnt have right trends at transsonic. Abenayake also estimates errors}
+\textcolor{red}{XXX line this section up with uncertainty section}
 Cart3D is an inviscid Euler solver CFD package, designed for use during preliminary vehicle design and analysis\cite{Almosnino2016}. Cart3D is computationally efficient and requires only a surface triangulation of the vehicle being analysed to initiate a simulation. Cart3D is utilised in this study due to its efficiency and ease of use, along with its demonstrated accuracy for hypersonic flow calculations\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a}. Cart3D features adjoint mesh adaptation, and uses cartesian `cut-cells' which intersect the surface, allowing complex geometries to be analysed automatically. The mesh automatically refines as the simulation progresses, reducing error. The absence of a requirement for a user generated mesh allows Cart3D to be easily applied to complex launch vehicle designs, as well as allowing for simple modification of control surface deflections and flight conditions. 
 Cart3D has been used extensively for aerodynamic simulations in preliminary design, including analysis of the plumes of the Skylon spaceplane\cite{Mehta2016}, HIFiRE-5\cite{Kimmel2010}, and in low sonic boom shape optimisations\cite{Aftosmis2011}. 
 \begin{figure}[ht]

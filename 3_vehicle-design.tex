@@ -1,16 +1,18 @@
 % 3_methodology.tex
 
 \cleardoublepage
-\chapter{Launch Vehicle Design and Simulation}\label{chapter:Design}
+\chapter{The Representative Launch Vehicle}\label{chapter:Design}
 
-\textcolor{red}{XXX I need to make it clear that this design is building on and changing the existing design of the spartan, and that it is intended to be used as a representative launch system. I should clearly define the scope, and level to which I am designing the launch system.}
 
-\textcolor{red}{XXX I also need to make it clear why stage separations are not modelled: This is because they act as mostly a hard constraint to the trajectory, and would limit the knowledge gained from an optimised trajectory. In addition, there is a large amount of design to be done on the separation mechanism, which is likely to require a broad study with high fidelity modelling (maybe put this before, dont use as excuse). }
 
-In order to be competitive in the emerging small satellite market, a small satellite launcher must be cost-effective, reliable, and capable of launching on a flexible schedule. The inclusion of airbreathing engines within a small satellite launch system has the potential for improving cost effectiveness compared to disposable rocket-powered launchers, by allowing partial reusability of a launch system. The airbreathing engine most appropriate for small satellite launch systems is the scramjet engine, which operates efficiently within the hypersonic regime, with the capability to operate over a relatively large Mach number range compared to turbojet or ramjet engines. A launch system incorporating scramjets must necessarily include two rocket-powered flight stages: a first stage rocket to accelerate the system from launch to the minimum operational Mach number of the ramjet or scramjet engines, and a third stage rocket to accelerate the payload at exoatmospheric conditions and place it into the correct orbit. 
-This chapter presents the design and modelling of a rocket-scramjet-rocket launch system in which the scramjet stage is reusable for multiple launches. 
-This rocket-scramjet-rocket launch system is designed to launch satellites on the order of 200kg to a 567km altitude sun-synchronous orbit and is based on the SPARTAN scramjet accelerator developed by Preller \& Smart\cite{Preller2017b}. The SPARTAN is a scramjet-powered accelerator being developed by The University of Queensland and Hypersonix, to launch small satellites as part of a rocket-scramjet-rocket launch system.
-The rocket-scramjet-rocket launch system described in this chapter is used as a representative model for an airbreathing, partially-reusable, multi-stage small satellite launcher. 
+In order to be competitive in the emerging small satellite market, a small satellite launcher must be cost-effective, reliable, and capable of launching on a flexible schedule. The inclusion of airbreathing engines within a small satellite launch system has the potential for improving cost effectiveness compared to disposable rocket-powered launchers, by allowing partial reusability of a launch system. The airbreathing engine most appropriate for small satellite launch systems is the scramjet engine, which operates efficiently within the hypersonic regime, with the capability to operate over a relatively large Mach number range compared to turbojet or ramjet engines. A launch system incorporating scramjets must necessarily include two rocket-powered flight phases: a rocket to accelerate the system from launch to the minimum operational Mach number of the scramjet engines, and a rocket to accelerate the payload at exoatmospheric conditions and place it into the correct orbit. 
+
+
+This chapter presents the design and modelling of a \textcolor{red}{representative} rocket-scramjet-rocket launch system, in which the scramjet stage is reusable for multiple launches. 
+\textcolor{red}{
+This rocket-scramjet-rocket launch system is designed to launch small satellites to a 567km altitude sun-synchronous orbit and is based on the rocket-scramjet-rocket launch system developed by Preller \& Smart\cite{Preller2017b}, that has been designed around the SPARTAN scramjet-powered accelerator\cite{Preller2017b}. The SPARTAN is a winged-cone accelerator being developed by The University of Queensland and Hypersonix, to launch small satellites as part of a rocket-scramjet-rocket launch system.
+The SPARTAN-based launch system is used as the basis for representative launch system within this study as it is the only scramjet powered launch system that is being designed specifically for small satellite launches. }  
+The rocket-scramjet-rocket launch system described in this chapter is used as a representative model for a partially-airbreathing, partially-reusable, three-stage small satellite launcher. 
 
 
 
@@ -30,7 +32,7 @@ The rocket-scramjet-rocket launch system described in this chapter is used as a 
  The size and external design of the SPARTAN scramjet accelerator are used exactly as defined for the Baseline SPARTAN vehicle designed by Preller \& Smart\cite{Preller2017b}. Both the first and third stage rockets are designed in this study, and are sized around the Baseline SPARTAN vehicle. 
  The first stage rocket has not previously been designed, and as such is created for this study, while the third stage is redesigned to use a SpaceX Kestrel engine. This third stage design replaces the third stage used in previous SPARTAN studies, which was powered by a Pratt \& Whitney RL-10-3A engine\cite{Preller2017b}. The pump-fed RL-10-3A engine was deemed too costly, and it has been replaced by a significantly cheaper pressure-fed Kestrel engine in this study.  
  The internal layout of the SPARTAN has been reconfigured around this redesigned third stage. 
- This launch system weighs a total of 29356kg, and is 32.44m long. 
+ This launch system weighs a total of \textcolor{red}{28355}kg, and is 32.44m long. 
  
  The following sections present the detailed design of the launch system, along with the aerodynamic and propulsion modelling of each stage.
 The SPARTAN design is presented first, as the design of the SPARTAN drives the operational requirements and sizing of the launch system, and thus the design of the first and third stage rockets. 
@@ -39,7 +41,7 @@ The SPARTAN design is presented first, as the design of the SPARTAN drives the o
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/NoInternal}
-	\caption{The rocket-scramjet-rocket launch system, top view, showing the SPARTAN and first stage. }
+	\caption{The rocket-scramjet-rocket launch system, top view, showing the SPARTAN and first stage. \textcolor{red}{XXX change this pic, remove interface}}
 	\label{fig:NoInternal}
 \end{figure}
 
@@ -61,18 +63,17 @@ The SPARTAN design is presented first, as the design of the SPARTAN drives the o
 	
 	
 	\section{The Second Stage Scramjet Accelerator}\label{sec:SPARTAN}
-
 	
 		\subsection{The SPARTAN Accelerator}
 		
-		The SPARTAN vehicle, shown in Figure \ref{fig:SPARTANlabelled}, is based on the work by Preller \& Smart\cite{Preller2017b}. The SPARTAN is 22.94m long, with a frontal cone half angle of 5$^\circ$\cite{Preller2017b}. 
+		The \textcolor{red}{representative scramjet-powered accelerator vehicle used in this study}, shown in Figure \ref{fig:SPARTANlabelled}, is based closely on the SPARTAN designed by Preller \& Smart\cite{Preller2017b}, and is referred to as the SPARTAN in this work. \textcolor{red}{The external geometry of the SPARTAN is unchanged in this study, and is used to provide a baseline scale to the launch system.} The SPARTAN is 22.94m long, with a frontal cone half angle of 5$^\circ$\cite{Preller2017b}. 
 		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/SPARTANlabelled}
 			\caption{The external features of the SPARTAN.}
 			\label{fig:SPARTANlabelled}
 		\end{figure}
-		A mass breakdown of the SPARTAN is shown in Table \ref{tab:MassBreakdown}, adapted from\cite{Preller2017b}. The fuel tank sizes and total fuel mass are sized to accommodate the Kestrel-powered third stage, described in Section \ref{sec:ThirdStageBaseline}.
+		A mass breakdown of the SPARTAN is shown in Table \ref{tab:MassBreakdown}, adapted from previous work by Preller \& Smart\cite{Preller2017b}. \textcolor{red}{The fuel mass of the SPARTAN has been modified for the representative launch system in this work, as} the fuel tank sizes and total fuel mass are sized to accommodate the Kestrel-powered third stage, described in Section \ref{sec:ThirdStageBaseline}.
 		\begin{table}[h]
 		\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 			\hline  \textbf{Part} & Total & Fuselage & Wings & Tanks & Systems & Landing Gear & Scramjets & Fuel \\ 
@@ -82,7 +83,7 @@ The SPARTAN design is presented first, as the design of the SPARTAN drives the o
 		\caption{Mass breakdown of the modified SPARTAN vehicle.}
 		\label{tab:MassBreakdown}
 		\end{table}
-This study assumes that the third stage is stored within the fuselage of the SPARTAN for simplicity. It is assumed that the release mechanism for the third stage is able to be situated within the available space surrounding the third stage, however the release mechanism is not considered further in this study. 
+This study assumes that the third stage is stored within the fuselage of the SPARTAN for simplicity. It is assumed that the release mechanism for the third stage is able to be situated within the available space surrounding the third stage, however the release mechanism is not considered further in this study \textcolor{red}{(see Section XXX - modelling uncertainties and simplifications)}. 
 		
 		
 		% LH2 density
@@ -92,18 +93,28 @@ This study assumes that the third stage is stored within the fuselage of the SPA
 The resized fuel tanks hold a total of 1562kg of LH2 fuel. This assumes an LH2 density of 71kg/m$^3$, slightly denser than LH2 at phase transition point at 1 atm.
 The mass of the fuel tanks is scaled, by surface area, from Dawid Preller's Baseline vehicle model of the SPARTAN\cite{Preller2017b}, giving a total fuel tank mass of 179.4kg.
 		
-		
+		\textcolor{red}{\subsection{Thermal Protection}
+			- I need to frame this as a reference vehicle based on the SPARTAN
+			-it is assumed that thye SPARTAN will be capable of flying at const q, as in previous studies
+			-SPARTAN has tungsten tip
+			-It is acknowledged that the current TPS is likely to require the addition of active cooling, for the leading edges of the scramjet and the control surfaces, as well as the combustor
+			-mention yielding limit at high temps
+			-mention dlrs transpiration cooling and heat transport to eliminate local hot spots such as in scott kasens thesis?
+			-this is currently a project proposal by darpa http://thermalsummit.com/2018/12/darpa-to-host-hypersonic-thermal-management-material-design-program/
+			-I should cite something that says where max heating is, and the studies which show analyses of the stagnation points
+			-developing a detailed heating model is beyond the scope of this study, however, limitations to stagnation point heat flux are considered as one of the variable designs factors
+			-\cite{Marley2017} is a good paper
+		}
 
 
 \subsection{Propulsion}\label{sec:propulsion}
-\textcolor{red}{XXX I should be specific about the program used to calculate the CRESTM10 database}
 
 The SPARTAN is powered by four underslung scramjet engines, fuelled by liquid hydrogen. These engines are Rectangular To Elliptical Shape Transition (REST) engines, configured to allow for a conical forebody (C-REST). REST engines have a rectangular to elliptical shape transition inlet, and an elliptical combustor, offering simplicity in design as well as reduced thermal loading and viscous drag compared to scramjets with planar geometries\cite{Suraweera2009}.  REST engines are also specifically designed to operate over a wide range of Mach numbers, and at off design conditions, making them particularly applicable to use on scramjet accelerator vehicles. 
 
 
 \subsubsection{Propulsion Modelling}\label{sec:Propulsion}
 
- The thrust generated by the C-REST engines determines how rapidly the SPARTAN accelerates, and the efficiency of the engines determines how rapidly fuel is consumed, and influences the separation point of the third stage rocket. The C-REST engines are simulated separately to the aerodynamic simulations of the SPARTAN, using a combination of quasi-1D and high fidelity CFD simulations\cite{Preller2017b,Preller2018a}. The engine model takes the conditions at the inlet, and calculates the exit conditions and propulsive properties of the engine. The engine exit conditions are added into the aerodynamic simulations and the propulsive properties are used in the simulated vehicle model.
+ The thrust generated by the C-REST engines determines how rapidly the SPARTAN accelerates, and the efficiency of the engines determines how rapidly fuel is consumed, and influences the separation point of the third stage rocket. The C-REST engines are simulated separately to the aerodynamic simulations of the SPARTAN, using a combination of quasi-1D flow path analysis and performance curves based on high fidelity CFD simulations\cite{Preller2017b,Preller2018a}. The engine model takes the conditions at the inlet, and calculates the exit conditions and propulsive properties of the engine. The engine exit conditions are added into the aerodynamic simulations and the propulsive properties are used in the simulated vehicle model.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/SPARTANEngineshock}
@@ -180,7 +191,7 @@ In the available database, the C-REST engine was modelled to a nozzle exit area 
 
 		
 		
-		\subsection{The Aerodynamics of the SPARTAN}\label{sec:aero}
+		\subsection{Aerodynamics}\label{sec:aero}
 		
 		
 		
@@ -250,7 +261,7 @@ analyse hypersonic vehicles, and has shown good agreement with experimental data
 		
 	\end{subfigure}
 	
-	\caption{The convergence of a Cart3D simulation.}
+	\caption{The convergence of a Cart3D simulation of the SPARTAN at Mach 6, 2$^\circ$ angle of attack.}
 	\label{fig:Cart3dValidation}
 \end{figure}
 
@@ -357,7 +368,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 				\caption{Empty of fuel, after third stage release, engines off.}
 				
 			\end{subfigure}
-			\caption{Centre of gravity positions throughout the flight of the SPARTAN. \textcolor{red}{XXX Changed}}
+			\caption{Centre of gravity positions throughout the flight of the SPARTAN. }%\textcolor{red}{XXX Changed}
 			\label{fig:CentreOfGravity}
 		\end{figure}
 		
@@ -460,13 +471,15 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 			\caption{Viscous drag coefficient across various Mach numbers.}
 			\label{fig:ViscousCd}
 		\end{figure}
-		As Cart3D is an inviscid solver, the aerodynamic database generated by Cart3D lacks the forces generated by skin friction drag. In order for the aerodynamic model to more closely approximate realistic dynamics, a correction for the viscous forces on the SPARTAN is calculated, using the inviscid Cart3D cases. This inviscid correction utilises flat plate correlations for skin friction on each surface cell, employing a simplified running length based on the Euclidean distance to the respective stagnation feature. Further details of this method can be found in Reference\cite{Ward2018}. This method has been shown to significantly improve upon the accuracy of the aerodynamic coefficients calculated by Cart3D for multiple test vehicles\cite{Ward2018}. The viscous drag coefficients are generated for the SPARTAN at every Mach number and angle of attack which are simulated in Cart3D. Viscous databases are generated for both engine-on and engine-off cases, for altitudes of 20-45km and 20-60km respectively. The viscous drag coefficients for selected flight conditions are shown in Figure \ref{fig:ViscousCd}.
+		
+		As Cart3D is an inviscid solver, the aerodynamic database generated by Cart3D lacks the forces generated by skin friction drag. In order for the aerodynamic model to more closely approximate realistic dynamics, a correction for the viscous forces on the SPARTAN is calculated, using the inviscid Cart3D cases. This inviscid correction utilises flat plate correlations for skin friction on each surface cell, employing a simplified running length based on the Euclidean distance to the respective stagnation feature. Further details of this method can be found in Reference\cite{Ward2018}. This method has been shown to significantly improve upon the accuracy of the aerodynamic coefficients calculated by Cart3D for multiple test vehicles\cite{Ward2018}. The additional viscous force and moment components from flap deflections are calculated using mean skin friction coefficient for computational efficiency, due to the very small contribution of this to the flap forces. The viscous drag coefficients are generated for the SPARTAN at every Mach number and angle of attack which are simulated in Cart3D. Viscous databases are generated for both engine-on and engine-off cases, for altitudes of 20-45km and 0-60km respectively.  The viscous drag coefficients for selected flight conditions are shown in Figure \ref{fig:ViscousCd}.
 		
 		
 		
 		
 		
 		\subsection{Trimmed Aerodynamic Database of the SPARTAN with Engine-On}\label{sec:trimmedongineon}
+		\textcolor{red}{XXX I should include what altitudes this is modelled over as well, and state altitude in figures}
 		
 		The engine-on aerodynamics of the SPARTAN are used during the simulation of the acceleration phase, when the C-REST engines are operational at all times, as well as during the fly-back phase, when the engines are operational for a short time to aid the SPARTAN in returning to its initial launch site.
 		The external aerodynamics of the SPARTAN with the scramjet engines powered-on are calculated by removing the engine and boat tail from Cart3D simulations of the SPARTAN with engine flowpaths. Engine-on aerodynamic calculations are performed for Mach numbers 5,7,9 and 10. An example of a Cart3D solution of the nozzle exit and boat tail with the scramjet engines powered-on is shown in Figure \ref{fig:EngineOn}, and the aerodynamics of the SPARTAN with engines powered-on are shown in Figure \ref{fig:EngineOnAero}.
@@ -550,9 +563,9 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 
 During the majority of the return flight, the scramjet engines are not operational, and the SPARTAN is gliding without power. The return phase takes the SPARTAN from third stage separation, at approximately Mach 9, to landing approach at low subsonic speeds. 
  While the engines are not powered-on air flows through the flowpath without fuel injection, generating a large amount of drag. 
-The aerodynamics of the SPARTAN are calculated using Cart3D for Mach numbers from 0.2 to 10, and angle of attack values from 0$^\circ$ to 10$^\circ$ to cover the range of flight conditions experienced during the fly-back of the SPARTAN.  An example Cart3D solution is shown for a Mach 7 engine off condition in Figure  \ref{fig:CartSPART}. 
+The aerodynamics of the SPARTAN are calculated using Cart3D for Mach numbers from 0.2 to 10, and angle of attack values from 0$^\circ$ to 10$^\circ$ to cover the range of flight conditions experienced during the fly-back of the SPARTAN.  An example Cart3D solution is shown for a Mach 7 engine off condition in Figure  \ref{fig:CartSPART}. \textcolor{red}{A strong bow shock can be observed, as well as a large shock from the underside of the vehicle, generated by the engine cowl. It can be observed that the aerodynamic pressure is extremely high on the angled portion of the engine cowl, due to its high incident angle to the incoming flow. Significantly high pressure is also experienced by the nose cone and cowl underside, as well as on a section of the tail, where a small shock generated by the wings is incident on the tail.}
 Figure \ref{fig:aero1} shows the engine off aerodynamic characteristics of the SPARTAN vehicle over the range of Mach numbers and angle of attack values analysed.
-These results show a distinct maximum region in the L/D of the SPARTAN at high Mach numbers, within the hypersonic regime. Below Mach 5, the L/D of the SPARTAN decreases sharply. This is caused by the scramjet engines unstarting, generating significant drag. The unstarted scramjet engines are shown in Figure \ref{fig:Unstart}. Below Mach 3,  the L/D shows a trend of general increase, except at very low angle of attack, as the effects of the unstarted engine lessen. Below Mach 1 the L/D of the SPARTAN increases significantly, in part due to not having the significant drag induced from the engines unstarting, as observed in the supersonic regime.  
+These results show a distinct maximum region in the L/D of the SPARTAN at high Mach numbers, within the hypersonic regime. Below Mach 5, the L/D of the SPARTAN decreases sharply. This is caused by the scramjet engines unstarting, generating significant drag. The unstarted scramjet engines are shown in Figure \ref{fig:Unstart}\textcolor{red}{, where shocks within the inlet of the engine are evident, causing high pressures}. Below Mach 3,  the L/D shows a trend of general increase, except at very low angle of attack, as the effects of the unstarted engine lessen. Below Mach 1 the L/D of the SPARTAN increases significantly, in part due to not having the significant drag induced from the engines unstarting, as observed in the supersonic regime.  
 
 \begin{figure}[ht]
 	\centering
@@ -563,13 +576,18 @@ These results show a distinct maximum region in the L/D of the SPARTAN at high M
 
 
 \section{The First Stage Rocket}\label{sec:firststage}
+\textcolor{red}{XXX change first stage to variable CG}
+\textcolor{red}{XXX maybe make it clear somewhere that the SPARTAN first stage is planned to fly back? ref joes paper? probably best in lit review.}
+
+
 The first stage rocket is required to deliver the second stage to near horizontal flight at Mach 5.1 flight conditions,
-after which it is discarded. To achieve this, the first stage rocket is modelled as a Falcon-1e first stage scaled down
-lengthwise to 8.5m, keeping the original diameter of 1.67m\cite{Vehicle2008}. An additional 1m is added between the first stage and the SPARTAN to allow for any necessary stage interfacing. 
+after which it is discarded. 
+\textcolor{red}{The representative first stage rocket in this study has been  modelled as a Falcon-1e first stage scaled down
+lengthwise to 8.5m, keeping the original diameter of 1.67m\cite{Vehicle2008}. This scaling was based off a first principles design of the first stage mass and performance necessary to achieve the minimum operating conditions of the SPARTAN, performed by Preller \& Smart\cite{Preller2017b}, with some tuning due to the higher fidelity aerodynamics used in this study.}
 The Falcon-1e has been chosen due to its appropriate scale, and the proven flightworthiness of the Falcon-1. 
  The first stage is attached to the rear of the scramjet
 second stage and is powered by a single LOX-kerosene Merlin 1-C engine. A connecting cowl has been modelled between the first stage rocket and the SPARTAN to improve the aerodynamic profile.  The first stage has a structural mass of
-1356kg, determined by scaling of the structural mass of the Falcon-1e. The engine mass of the Merlin 1-C is kept constant during scaling at 630kg\cite{Wade2017}. The mass of the
+\textcolor{red}{841.6}kg, determined by scaling of the structural mass of the Falcon-1e. The engine mass of the Merlin 1-C is kept constant during scaling at 630kg\cite{Wade2017}. The mass of the
 fuel in the first stage is scaled as part of the optimisation routine, as the dynamics of the vehicle, and its ability to reach a
 given separation point, are very closely coupled to the available fuel mass.
 
@@ -586,14 +604,13 @@ given separation point, are very closely coupled to the available fuel mass.
 	\label{tab:1stStageEngine}
 \end{table}
 The thrust and specific impulse of the Merlin 1-C are determined by interpolation between the sea level and vacuum specific impulse of the Merlin 1-C, shown in Table \ref{tab:1stStageEngine}, with ambient pressure. Thrust scaling is determined by linear pressure scaling using nozzle exit area, $T = T_{SL} + (p_e - p_{SL})A_e$. 
- The Merlin 1-C is throttled down to a constant 70\%, \textcolor{red}{the minimum throttlable level of the Merlin 1-C \cite{Norris2011}}, a throttling value determined during the trajectory optimisation process to allow the first stage to pitch over more easily, while still allowing the first stage rocket to accelerate the SPARTAN to Mach 5 \textcolor{red}{XXX This sentence is not good, change it}.
+ \textcolor{red}{The Merlin 1-C is throttlable between 70\% and 100\%\cite{Norris2011}}.
 
 
 
 
   \subsection{The Aerodynamics of the First Stage Rocket and SPARTAN}\label{sec:firststageaero}
   
-  \textcolor{red}{XXX Do viscous for first stage stack, or make clear why I havent.}
   
   
   
@@ -628,7 +645,7 @@ The thrust and specific impulse of the Merlin 1-C are determined by interpolatio
     	\label{fig:FirstStageAero}
     \end{figure}
   The aerodynamics of the launch system during first stage flight are calculated in a similar manner to those of the SPARTAN without the first stage rocket, as detailed in Section \ref{sec:aero}. 
-  The aerodynamics of the SPARTAN and first stage rocket are calculated using Cart3D. The first stage aerodynamics are modelled between angles of attack of 0$^\circ$ to -5$^\circ$, as the first stage will be flying at negative angle of attack to induce faster pitch-over. Mach numbers from 0.2 to 5.1 (second stage separation velocity) are simulated. Figure \ref{fig:CARTcontour} shows an example Cart3D simulation case, at Mach 2, -1$^\circ$ angle of attack. The coefficient of lift, drag and aerodynamic moment are tabulated for each simulation. Figure \ref{fig:FirstStageAero} shows the lift and drag coefficients of the first stage, as well as the lift-over-drag, across the simulated Mach Numbers and angles of attack. Above -1$^\circ$ angle of attack, the L/D of the first stage is generally greater than 0, meaning that lift is being gained in the positive vertical direction, and that the angle of attack must be lower than 1$^\circ$ to assist pitching.
+  The aerodynamics of the SPARTAN and first stage rocket are calculated using Cart3D and corrected for viscous effects. The first stage aerodynamics are modelled between angles of attack of 0$^\circ$ to -5$^\circ$, as the first stage will be flying at negative angle of attack to induce faster pitch-over. Mach numbers from 0.2 to 5.1 (second stage separation velocity) are simulated. Figure \ref{fig:CARTcontour} shows an example Cart3D simulation case, at Mach 2, -1$^\circ$ angle of attack. The coefficient of lift, drag and aerodynamic moment are tabulated for each simulation. Figure \ref{fig:FirstStageAero} shows the lift and drag coefficients of the first stage, as well as the lift-over-drag, across the simulated Mach Numbers and angles of attack. Above -1$^\circ$ angle of attack, the L/D of the first stage is generally greater than 0, meaning that lift is being gained in the positive vertical direction, and that the angle of attack must be lower than 1$^\circ$ to assist pitching.
   At Mach numbers over Mach 2, the absolute magnitude of the L/D generally increases as the Mach number increases. This is caused by the decreased effects of the engines unstarting, in turn reducing the drag of the engines at higher Mach numbers, as observed in the aerodynamics of the SPARTAN in Section \ref{sec:SPARTAN}. 
    Note that absolute magnitude is the metric used for `good' L/D, as the angles of attack are negative. 
   
@@ -658,36 +675,71 @@ The thrust and specific impulse of the Merlin 1-C are determined by interpolatio
 \caption{The third stage rocket, showing major internal features.}
 \label{fig:3rdStage}
 \end{figure}
-	
-	\textcolor{red}{The design of the third stage rocket in this study is modified significantly from the third stage rocket designed for the Baseline SPARTAN configuration\cite{Preller2017b}.}
-	In this study the third stage rocket is designed to accommodate a SpaceX Kestrel engine, whereas in previous studies the third stage was designed to be powered by a Pratt \& Whitney RL-10-3A pump-fed engine. The Kestrel has been used over the RL-10-3A for its cost effectiveness. As a pressure-fed engine, the Kestrel trades off specific impulse for cost savings when compared to the RL-10-3A. Because the only expendable portion of the system is projected to be the third stage, the cost of the third stage will be one of the main drivers of overall system cost. Reducing the cost of the third stage allows the cost of launch to be directly reduced. 
-	
-	\textcolor{red}{The transition to the Kestrel engine from the Rl-10-3A changes the propellant of the third stage from LOX/LH2 to LOX/RP-1. 
-		The oxidiser-to-fuel mixture ratio of RP-1 is lower than that of LH2, 2.56\cite{RPE} compared to 6\cite{Preller2017b}, and the density of RP-1 is significantly higher than that of LH2, 813kg/m$^3$\cite{Magee} compared to 70.99kg/m$^3$\cite{Preller2017b}. Due to the significantly higher proportion of higher density fuel, the mass of the third stage rocket will be higher than previous designs for the same internal volume, allowing the size of the fuselage to be reduced. For this reason, the geometry of the third stage rocket has been redesigned for this study.}
-	
-	\textcolor{red}{The length of the third stage has been reduced to account for the reduced fuel volume necessary. The third stage centrebody length has been reduced to 4.5m, giving a total length of 9m, with a 3m long nose unmodified from the Baseline third stage\cite{Preller2017b} and a 1.5m long engine\cite{Vehicle2008}. An overall length of 9m is chosen so that the third stage is able to fit within the main cylindrical fuselage section of the Baseline SPARTAN geometry, as illustrated in Figure \ref{fig:INTERNALS}. This is advantageous because the third stage in this study is housed within the body of the SPARTAN, necessitating a release mechanism such as retractable panels or a hinged fuselage section. While the release mechanism of the third stage is not considered in this study, it is assumed that the release process will be simplified if the release mechanism is constrained to the cylindrical fuselage of the SPARTAN, rather than involving geometric variation of the nose cone of the SPARTAN, which receives a large amount of aerodynamic force as illustrated in Figure \ref{fig:CartTop}. The diameter of the third stage has been increased to 1.1m including heat shield, an increase of 0.05m compared to the third stage configuration designed for the Baseline SPARTAN\cite{Preller2017b}. This diameter increase matches the diameter of the third stage to the maximum diameter of the kestrel nozzle for consistency in width. } 
-	
-	The third stage rocket is released at the end of the scramjet accelerator burn, and lifts the payload out of the atmosphere and into the desired orbit. The third stage weighs a total of 3300kg. This has been chosen as a nominal design weight, to satisfy the fuel necessary to achieve orbit with an acceptable payload, while also allowing for ample payload volume. The internal layout of the third stage rocket is shown in Figure \ref{fig:3rdStage}. The third stage has a structural mass fraction of \textcolor{red}{0.079}, similar to the Falcon 1 second stage \textcolor{red}{without the Kestrel engine or fairing included}\cite{Vehicle2008}. This gives a total structural mass of \textcolor{red}{236.3kg, without heat shield or engine, and assuming a payload mass of 100kg}. 
-	
-The kestrel engine which powers the third stage is modified to have 50\% increased propellant mass flow rate, giving a mass flow rate of 14.8kg/s. This is done to assist the rocket in exiting the atmosphere, as it was found during analysis that a the third stage has difficulty exiting the atmosphere when powered by a standard Kestrel engine. \textcolor{red}{A 50\% increase in mass flow rate provides additional thrust such that the trajectory angle of the third stage does not decrease after release from the SPARTAN flying a constant dynamic pressure trajectory. This was chosen as the indicative factor that the third stage is successfully able to pull-up out of the atmosphere.} It is likely that this mass flow increase will necessitate a heavier combustion chamber \textcolor{red}{as well as more heavy duty piping and valves, more or larger injectors, and a heavier nozzle and structure to transmit the higher thrust forces\cite{RPE,Huzel1967}. To compensate for these factors, the mass of the Kestrel is increased by 50\%, from 52kg\cite{Wade2017} to 78kg, encompassing the thrust chamber as well as all feed systems, cooling systems, and the gymballing system of the rocket motor. This is estimated to be slightly conservative, as the surface area of the combustion chamber, and thus the mass and the cooling necessary, will not vary linearly with the increase in volume necessary to maintain a constant characteristic length as mass flow rate in increased\cite{RPE,Huzel1967}. However, as the mass of the relative components of the Kestrel are not published, a conservative approach to mass increase is appropriate. The need to modify the Kestrel engine for this study highlights the potential necessity for the design of a cheap rocket engine with higher thrust than the Kestrel, Aestus or OMS.}
+
+The third stage rocket is an expendable portion of the launch system, tasked with delivering the payload to its final orbital position. 
+  The third stage is released from the SPARTAN at a flight speed of approximately Mach 9, after which it must fly within the atmosphere for a time, performing a significant altitude raising manoeuvre to achieve orbital flight\cite{Preller2017b}. 
+  In previous studies, the third stage of the SPARTAN-based launch system was designed around a pump-fed RL-10-3A engine\cite{Preller2017b}, and was designed to fit into a cavity on the back of the fuselage of the vehicle\cite{Preller2017b}. For the representative launch vehicle in this work a new third stage is designed, to reduce cost, and to integrate within the fuselage of the SPARTAN. 
+   
+  The third stage rocket in this study is designed around a modified version of the SpaceX Kestrel engine. The Kestrel is a pressure-fed engine, which was designed for launching small satellites to orbit as part of the now retired Falcon-1. The Kestrel is chosen primarily for its low cost, to ensure that the representative launch system in this study closely approximates a cost-effective future launch system.  
+  The third stage rocket in this study has also been designed to have a total length of 9m, so that it is able to fit within the main cylindrical fuselage section of the SPARTAN's geometry.  This is done to reduce the heat loads present on the third stage during the second stage acceleration, as well as to improve the aerodynamics of the SPARTAN during ascent and fly-back. While the release mechanism of the third stage is not considered in this study, it is assumed that the release process will be simplified if the release mechanism is constrained to the cylindrical fuselage of the SPARTAN, rather than involving geometric variation of the nose cone of the SPARTAN, which receives a large amount of aerodynamic force as illustrated in Figure \ref{fig:CartTop}.
+  
+ The third stage internals have been designed to weigh a total of 3300kg. This has been chosen as a nominal design weight, to satisfy the fuel necessary to achieve orbit with an acceptable payload, while also allowing for ample payload volume. The internal layout of the third stage rocket is shown in Figure \ref{fig:3rdStage}, and a mass breakdown is given in Table \ref{tab:MassBreakdown3}. The third stage has a structural mass fraction of 0.079, similar to the Falcon 1 second stage without the Kestrel engine or fairing included\cite{Vehicle2008}. This gives a total structural mass of 236.3kg, without heat shield or engine. 
+ 
+
+ 
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline  \textbf{Part} & Total & Structural & Heat Shield & Engine & Fuel & Payload (est) \\ 
+			\hline \textbf{Mass} (kg) & 3300.0  & 236.3  & 130.9  & 78.0  & 2754.8 & 100.0\\ 
+			\hline 
+		\end{tabular} 
+		\caption{Mass breakdown of the third stage rocket.}
+		\label{tab:MassBreakdown3}
+	\end{table}
+ 
+ 
+ 
+ 
+ \subsection{Geometry}\label{sec:3int}
+
+The third stage has a total length of 9m, to fit within the main body fuselage of the SPARTAN.
+ The third stage nose length is set at 3m, for a similar nose geometry to the third stage designed for previous analysis of the SPARTAN\cite{Preller2017b}. This nose geometry is chosen so that the heat shield in this study may be appropriately modelled after the heat shield designed for the Rl-10-3A-powered third stage\cite{Preller2017b}.
+ The third stage centrebody length has been set to 4.5m, giving a total length of 9m, with a 1.5m long Kestrel engine\cite{Vehicle2008}. The diameter of the third stage has been set to 1.1m including heat shield, to match the diameter of the Kestrel engine, and to be close to half the diameter of the SPARTAN, a scale used to fix the third stage width of the Rl-10-3A powered third stage\cite{Preller2017b}.  
 
 
 
-The nozzle exit of the Kestrel engine has been kept constant at 1.1m diameter. An increase in mass flow necessitates a corresponding increase in throat area. This increase in throat area decreases the area ratio of the nozzle. The initial area ratio is 60, measured from schematics in the Falcon-1 Users Guide. A 50\% mass flow increase corresponds to a 50\% throat area increase, which causes the area ratio to decrease to 40. This decrease in area ratio results in a 2\% loss of efficiency from the nozzle, measured from the thrust coefficient relationships shown in Figure \ref{fig:ThrustCoefficient-Arat}\cite{RPE}. The coefficient of thrust is calculated for a specific heat ratio of 1.20, as this is close to the specific heat ratio of oxygen and RP-1 of 1.24\cite{RPE}. The modified specific impulse of the engine is 310.7s. 
+
 
 
 	
+
+
+\subsection{Fuel Tank Sizing}
+The internal design of the third stage is allowed to be slightly variable as the trajectory is optimised. The third stage mass is fixed at 3300kg, and the calculated payload-to-orbit varies by exchanging leftover fuel mass for effective payload mass. The Kestrel engine utilises LOX/RP-1 propellants, with an oxidiser-to-fuel mixture ratio 2.56\cite{RPE} and a density of 813kg/m$^3$\cite{Magee}. 
+To calculate the dynamics of the third stage, the fuel tanks have been approximately sized, assuming \textcolor{red}{100kg} of payload-to-orbit. Realistically the exchange between fuel and payload mass would cause the fuel tanks to be resized slightly, however, for the purposes of this study the fuel tanks are assumed to be of constant size for simplicity. Currently this is a reasonable assumption as the internals of the rocket are very simplified. With an assumed payload mass of \textcolor{red}{100kg}, the third stage carries a total propellant mass of \textcolor{red}{2754.8kg}. Table \ref{tab:Fuel} breaks shows the component break-down of the LOX oxidiser and RP1 for this fuel weight. The total mass and volumes of these fuels will change slightly as the trajectory of the launch system is optimised, and fuel is traded for payload mass. However, the ratio between the fuel and oxidiser will stay constant. 
+
 	
-	\begin{figure}[ht]
-\centering
-\includegraphics[width=0.7\linewidth]{"figures/3_vehicle_design/Thrust Coefficient - Arat"}
-\caption{Variation in coefficient of thrust with area ratio\cite{RPE}.}
-\label{fig:ThrustCoefficient-Arat}
-\end{figure}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline  & \textbf{LOX} & \textbf{RP1} \\ 
+		\hline Ratio & 2.56\cite{RPE} & 1 \\ 
+		\hline Density & 1141kg/m3 & 813kg/m3\cite{Magee}\\ 
+		\hline Volume & \textcolor{red}{1.736m3} & \textcolor{red}{0.952m3} \\ 
+		\hline Mass & \textcolor{red}{1981.0} kg & \textcolor{red}{773.8} kg \\ 
+		\hline 
+	\end{tabular} 
+	\caption{Third stage fuel distribution.}
+	\label{tab:Fuel}
+\end{table}
 
 
 
 \subsection{Heat Shield Sizing}
+
+%\textcolor{red}{XXX Be clear that the thickness is also from a report by Michael: Smart, M. K., “Heating Analysis of the 3rd Stage SPARTAN Rocket During High-q Separation,” Hypersonics Archive, Univ. of Queensland, Rept. UQ-CFH-2017-GB1, Brisbane, Australia, 2017.}
 
 The third stage rocket is separated from the SPARTAN at a high dynamic pressure, after which it spends some time accelerating in-atmosphere before reaching exoatmospheric conditions. The time spent within a high dynamic pressure environment creates a large amount of heat loading, which must be mitigated by heat shielding. The heat shielding must be capable of withstanding the extremely high heat and structural loading necessary to protect the third stage rocket internals and payload, as well as being lightweight, as the payload-to-orbit is extremely sensitive to the mass of the third stage, and cost effective, as increasing the cost of the third stage directly increases launch cost due to it being expendable. 
 
@@ -709,85 +761,75 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 \label{tab:heatshield}
 \end{table}
 		
-		\subsection{Fuel Tank Sizing}
-		The internal design of the third stage is allowed to be slightly variable as the trajectory is optimised. The third stage mass is fixed at 3300kg, and the calculated payload-to-orbit varies by exchanging leftover fuel mass for effective payload mass. To calculate the dynamics of the third stage, the fuel tanks have been approximately sized, assuming \textcolor{red}{100kg} of payload-to-orbit. Realistically the exchange between fuel and payload mass would cause the fuel tanks to be resized slightly, however, for the purposes of this study the fuel tanks are assumed to be of constant size for simplicity. Currently this is a reasonable assumption as the internals of the rocket are very simplified. With an assumed payload mass of \textcolor{red}{100kg}, the third stage carries a total propellant mass of \textcolor{red}{2754.8kg}. Table \ref{tab:Fuel} breaks shows the component break-down of the LOX oxidiser and RP1 for this fuel weight. The total mass and volumes of these fuels will change slightly as the trajectory of the launch system is optimised, and fuel is traded for payload mass. However, the ratio between the fuel and oxidiser will stay constant. 
 		
-		\begin{table}[h]
+		
+		\subsection{Propulsion}
+		
+		
+		The Kestrel engine which powers the third stage is modified to have 50\% increased propellant mass flow rate, giving a mass flow rate of 14.8kg/s. This is done to assist the rocket in exiting the atmosphere, as it was found during analysis that a the third stage has difficulty exiting the atmosphere when powered by a standard Kestrel engine. A 50\% increase in mass flow rate provides additional thrust such that the trajectory angle of the third stage does not decrease after release from the SPARTAN flying a constant dynamic pressure trajectory. This was chosen as the indicative factor that the third stage is successfully able to pull-up out of the atmosphere. It is likely that this mass flow increase will necessitate a heavier combustion chamber as well as more heavy duty piping and valves, more or larger injectors, and a heavier nozzle and structure to transmit the higher thrust forces\cite{RPE,Huzel1967}. To compensate for these factors, the mass of the Kestrel is increased by 50\%, from 52kg\cite{Wade2017} to 78kg, encompassing the thrust chamber as well as all feed systems, cooling systems, and the thrust transmission structure. This is estimated to be slightly conservative, as the surface area of the combustion chamber, and thus the mass and the cooling necessary, will not vary linearly with the increase in volume necessary to maintain a constant characteristic length as mass flow rate in increased\cite{RPE,Huzel1967}. However, as the mass of the relative components of the Kestrel are not published, a conservative approach to mass increase is appropriate. The need to modify the Kestrel engine for this study highlights the potential necessity for the design of a cheap rocket engine with higher thrust than the Kestrel, Aestus or OMS, if a rocket-scramjet-rocket system is to be practical and cost-effective.
+		
+		
+		
+		The nozzle exit of the Kestrel engine has been kept constant at 1.1m diameter. An increase in mass flow necessitates a corresponding increase in throat area. This increase in throat area decreases the area ratio of the nozzle. The initial area ratio is 60, measured from schematics in the Falcon-1 Users Guide. A 50\% mass flow increase corresponds to a 50\% throat area increase, which causes the area ratio to decrease to 40. This decrease in area ratio results in a 2\% loss of efficiency from the nozzle, measured from the thrust coefficient relationships shown in Figure \ref{fig:ThrustCoefficient-Arat}\cite{RPE}. The coefficient of thrust is calculated for a specific heat ratio of 1.20, as this is close to the specific heat ratio of oxygen and RP-1 of 1.24\cite{RPE}. The modified specific impulse of the engine is 310.7s. 
+		
+		
+		
+		
+		\begin{figure}[ht]
 			\centering
-\begin{tabular}{|c|c|c|}
-	\hline  & \textbf{LOX} & \textbf{RP1} \\ 
-	\hline Ratio & 2.56\cite{RPE} & 1 \\ 
-	\hline Density & 1141kg/m3 & 813kg/m3\cite{Magee}\\ 
-	\hline Volume & \textcolor{red}{1.736m3} & \textcolor{red}{0.952m3} \\ 
-	\hline Mass & \textcolor{red}{1981.0} kg & \textcolor{red}{773.8} kg \\ 
-	\hline 
-\end{tabular} 
-\caption{Third stage fuel distribution.}
-\label{tab:Fuel}
-		\end{table}
+			\includegraphics[width=0.7\linewidth]{"figures/3_vehicle_design/Thrust Coefficient - Arat"}
+			\caption{Variation in coefficient of thrust with area ratio\cite{RPE}.}
+			\label{fig:ThrustCoefficient-Arat}
+		\end{figure}
 
-		
-		
-
-		\subsection{The Aerodynamics of the Third Stage Rocket}\label{sec:thirdstageaero}
-		
+		\subsection{Aerodynamics}\label{sec:thirdstageaero}
+			\begin{figure}[ht]
+				\begin{subfigure}{.5\textwidth}
+					\centering
+					\includegraphics[width=0.99\linewidth]{figures/3_vehicle_design/ThirdStageCl}
+					\caption{Coefficient of lift.}
+					\label{fig:Cl-ThirdStage}
+				\end{subfigure}
+				\begin{subfigure}{.5\textwidth}
+					\centering
+					\includegraphics[width=0.99\linewidth]{figures/3_vehicle_design/ThirdStageCd}
+					\caption{Coefficient of drag.}
+					\label{fig:Cd-ThirdStage}
+				\end{subfigure}
+				\begin{subfigure}{.5\textwidth}
+					\centering
+					\includegraphics[width=0.99\linewidth]{figures/3_vehicle_design/ThirdStageLD}
+					\caption{L/D.}
+					\label{fig:LD-ThirdStage}
+				\end{subfigure}
+				\caption{Aerodynamic characteristics of the third stage rocket, for a reference area of 0.95m$^2$.}
+				\label{fig:ThirdStageAero}
+			\end{figure}
 		The third stage aerodynamics have been calculated using Missile Datcom\cite{Rosema2011}, a preliminary design tool for estimating the aerodynamic characteristics of missile and rocket vehicles. Missile Datcom utilises empirical methods, along with various estimation techniques, to compute the aerodynamics of missile and rocket-like vehicles across the subsonic, supersonic and hypersonic regimes. The aerodynamic coefficients of the third stage rocket are shown in Figure \ref{fig:ThirdStageAero}. 
 		
 		
-		\begin{figure}
-			\begin{subfigure}{.5\textwidth}
-				\centering
-				\includegraphics[width=0.99\linewidth]{figures/3_vehicle_design/ThirdStageCl}
-				\caption{Coefficient of lift.}
-				\label{fig:Cl-ThirdStage}
-			\end{subfigure}
-			\begin{subfigure}{.5\textwidth}
-				\centering
-				\includegraphics[width=0.99\linewidth]{figures/3_vehicle_design/ThirdStageCd}
-				\caption{Coefficient of drag.}
-				\label{fig:Cd-ThirdStage}
-			\end{subfigure}
-			\begin{subfigure}{.5\textwidth}
-				\centering
-				\includegraphics[width=0.99\linewidth]{figures/3_vehicle_design/ThirdStageLD}
-				\caption{L/D.}
-				\label{fig:LD-ThirdStage}
-			\end{subfigure}
-			\caption{Aerodynamic characteristics of the third stage rocket, for a reference area of 0.95m$^2$.}
-			\label{fig:ThirdStageAero}
+	
+		
+		
+		
+		\subsection{Thrust Vectoring}\label{sec:thrustvectoring}
+		\begin{figure}[ht]
+			\centering
+			\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/ThrustVec}
+			\caption{Thrust vector moment balancing of the third stage.}
+			\label{fig:ThrustVec}
 		\end{figure}
 		
+		The third stage rocket is controlled via thrust vectoring. The centre of pressure is calculated using Missile Datcom. The thrust vector is set so that the moment generated by the engine matches the lift force acting at the centre of pressure, as shown in Figure \ref{fig:ThrustVec}, ie $M_{T} = -M_{Fn}$. This thrust vector is calculates at each flight condition during the trajectory simulations. The maximum thrust vector limit has been set to 8$^\circ$. As no data on the maximum thrust vectoring capabilities of the kestrel engine was able to be found, this was set to the maximum gimbal range of the Aestus engine and Orbital Manoeuvring Engine (OME), which are similarly sized pressure-fed engines\cite{Wade2017}.
 		
+		The centre of gravity is determined using CREO by creating a three dimensional model of the rocket with representative densities, illustrated in Figure \ref{fig:3rdStage}. It is assumed that the mass of the structure of the rocket (excluding fuel tanks, heat shielding, engine and payload) is distributed homogeneously for simplicity. The Mass Properties tool within CREO is used to calculate the centre of gravity, which is located at 4.46m from the nose when the rocket is full of fuel, and 4.11m from the nose when the rocket is completely empty. The centre of gravity is interpolated linearly from these values as the fuel mass within the rocket decreases. These centre of gravity calculations are performed with the heat shield on, as the thrust vectoring is only calculated while the rocket is in-atmosphere, with the engine on. Note that the rocket will not become completely empty while in-atmosphere. 
 		
-		\subsubsection{Thrust Vectoring}\label{sec:thrustvectoring}
-		
-		The third stage rocket is controlled via thrust vectoring. The centre of pressure is calculated using Missile Datcom. The thrust vector is set so that the moment generated by the engine matches the lift force acting at the centre of pressure, as shown in Figure \ref{fig:ThrustVec}, ie $M_{T} = -M_{Fn}$. This thrust vector is calculates at each flight condition during the trajectory simulations. The maximum thrust vector limit has been set to 8$^\circ$. As no data on the maximum thrust vectoring capabilities of the kestrel engine was able to be found, this was set to the maximum gimbal range of the Aestus pressure-fed engine and Orbital Manoeuvring Engine (OME), which are similarly sized engines\cite{Wade2017}.
-		
-			\textcolor{red}{The centre of gravity is determined using CREO by creating a three dimensional model of the rocket with representative densities, illustrated in Figure \ref{fig:3rdStage}. It is assumed that the mass of the structure of the rocket (excluding fuel tanks, heat shielding, engine and payload) is distributed homogeneously for simplicity. The Mass Properties tool within CREO is used to calculate the centre of gravity, which is located at 4.46m from the nose when the rocket is full of fuel, and 4.11m from the nose when the rocket is completely empty. The centre of gravity is interpolated linearly from these values as the fuel mass within the rocket decreases. These centre of gravity calculations are performed with the heat shield on, as the thrust vectoring is only calculated while the rocket is in-atmosphere, with the engine on. Note that the rocket will not become completely empty while in-atmosphere.} 
-		
-		\textcolor{red}{The third stage rocket is statically unstable. For the purposes of this study, it is assumed that the third stage rocket is controllable as long as the thrust vector limits of the vehicle are not exceeded. 
+	The third stage rocket is statically unstable. For the purposes of this study, it is assumed that the third stage rocket is controllable as long as the thrust vector limits of the vehicle are not exceeded. 
 		Flying this rocket at an angle of attack will require an advanced automatic controller, as the only control available is produced by thrust vectoring. For the purposes of this study, the design of the third stage as presented is regarded to be sufficient as a representative third stage design.
-		However, it is likely that in the future a highly detailed study of the third stage design and control strategy must be undertaken, to determine the practicality of thrust vector control. }
+		However, it is likely that in the future a highly detailed study of the third stage design and control strategy must be undertaken, to determine the practicality of thrust vector control. 
 		
-\begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/ThrustVec}
-\caption{Thrust vector moment balancing of the third stage.}
-\label{fig:ThrustVec}
-\end{figure}
-		
-		\textcolor{red}{
-\section{Major Sources of Uncertainty}
-The medium and low fidelity modelling techniques used in this work have been chosen for their fitness-for-purpose for optimal trajectory analysis. 
-\begin{tabular}{|c|c|}
-	\hline Source of Uncertainty & Estimated Error  \\ 
-	\hline  Aerodynamic Modelling & \\ 
-	\hline  Aerodynamic Modelling< Mach 2 &  \\ 
-	\hline  Viscous Effects - Control Surfaces &  \\ 
-	\hline  &  \\ 
-	\hline 
-\end{tabular} 
-}
+
+
 	\section{Summary}	
 	
 	In this chapter, the design and simulation of a rocket-scramjet-rocket launch system was presented, based on the SPARTAN scramjet-powered accelerator. 

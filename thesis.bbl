@@ -2810,6 +2810,40 @@
     \field{year}{2012}
   \endentry
 
+  \entry{Kimura1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KT}{%
+         family={Kimura},
+         familyi={K\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=SK}{%
+         family={Sawada},
+         familyi={S\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+    }
+    \strng{namehash}{KTSK1}
+    \strng{fullhash}{KTSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/2.3500
+    \endverb
+    \field{issn}{00224650}
+    \field{number}{5}
+    \field{pages}{675\bibrangedash 680}
+    \field{title}{{Three-Stage Launch System with Scramjets}}
+    \field{volume}{36}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kimura1999.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{1999}
+  \endentry
+
   \entry{Hellman}{report}{}
     \name{author}{1}{}{%
       {{hash=HBM}{%
@@ -6309,44 +6343,6 @@
     \field{year}{2006}
   \endentry
 
-  \entry{Huzel1967}{book}{}
-    \name{author}{2}{}{%
-      {{hash=HD}{%
-         family={Huzel},
-         familyi={H\bibinitperiod},
-         given={D},
-         giveni={D},
-      }}%
-      {{hash=HD}{%
-         family={Huang},
-         familyi={H\bibinitperiod},
-         given={D},
-         giveni={D},
-      }}%
-    }
-    \list{publisher}{2}{%
-      {American Institute of Aeronautics}%
-      {Astronautics}%
-    }
-    \strng{namehash}{HDHD1}
-    \strng{fullhash}{HDHD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Liquid propellant rocket engine conference proceedings and parameters for
-  design of rocket engines and systems%
-    }
-    \field{booktitle}{Nasa Sp-125}
-    \field{isbn}{1563470136}
-    \field{pages}{1\bibrangedash 472}
-    \field{title}{{Design of Liquid Propellant Rocket Engines}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASArocketDesign.pd
-    \verb f:pdf
-    \endverb
-    \field{year}{1992}
-  \endentry
-
   \entry{tungsten}{misc}{}
     \name{author}{1}{}{%
       {{hash=I}{%
@@ -6426,6 +6422,44 @@
     \endverb
     \field{type}{techreport}
     \field{year}{2018}
+  \endentry
+
+  \entry{Huzel1967}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HD}{%
+         family={Huzel},
+         familyi={H\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=HD}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {American Institute of Aeronautics}%
+      {Astronautics}%
+    }
+    \strng{namehash}{HDHD1}
+    \strng{fullhash}{HDHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Liquid propellant rocket engine conference proceedings and parameters for
+  design of rocket engines and systems%
+    }
+    \field{booktitle}{Nasa Sp-125}
+    \field{isbn}{1563470136}
+    \field{pages}{1\bibrangedash 472}
+    \field{title}{{Design of Liquid Propellant Rocket Engines}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASArocketDesign.pd
+    \verb f:pdf
+    \endverb
+    \field{year}{1992}
   \endentry
 
   \entry{Patterson2015}{report}{}
@@ -6805,6 +6839,36 @@
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gilbert.pdf:pdf
     \endverb
     \field{year}{2015}
+  \endentry
+
+  \entry{Abeynayake2013a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AD}{%
+         family={Abeynayake},
+         familyi={A\bibinitperiod},
+         given={Dineth},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Agon},
+         familyi={A\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{cart3d,cfd,comparison,missile datcom,validation,wind tunnel}
+    \strng{namehash}{ADAA1}
+    \strng{fullhash}{ADAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{December}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{{Comparison of computational and semi-empirical aerodynamics
+  tools for making fit-for-purpose modelling decisions}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
+    \endverb
+    \field{year}{2013}
   \endentry
 
   \entry{Carlson1972}{article}{}
