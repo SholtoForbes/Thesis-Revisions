@@ -379,7 +379,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/SPARTANForces}
-			\caption{The forces on the SPARTAN during flight. }
+			\caption{The forces on the SPARTAN during flight. \textcolor{red}{XXX The flaps vector is slightly wrong (should point back too)}}
 			\label{fig:SPARTANForces}
 		\end{figure}
 		
@@ -578,7 +578,7 @@ These results show a distinct maximum region in the L/D of the SPARTAN at high M
 \section{The First Stage Rocket}\label{sec:firststage}
 \textcolor{red}{XXX change first stage to variable CG}
 \textcolor{red}{XXX maybe make it clear somewhere that the SPARTAN first stage is planned to fly back? ref joes paper? probably best in lit review.}
-
+\textcolor{red}{XXX mention first stage total mass? that is was sized to 18000kg update mass values}
 
 The first stage rocket is required to deliver the second stage to near horizontal flight at Mach 5.1 flight conditions,
 after which it is discarded. 
@@ -587,7 +587,7 @@ lengthwise to 8.5m, keeping the original diameter of 1.67m\cite{Vehicle2008}. Th
 The Falcon-1e has been chosen due to its appropriate scale, and the proven flightworthiness of the Falcon-1. 
  The first stage is attached to the rear of the scramjet
 second stage and is powered by a single LOX-kerosene Merlin 1-C engine. A connecting cowl has been modelled between the first stage rocket and the SPARTAN to improve the aerodynamic profile.  The first stage has a structural mass of
-\textcolor{red}{841.6}kg, determined by scaling of the structural mass of the Falcon-1e. The engine mass of the Merlin 1-C is kept constant during scaling at 630kg\cite{Wade2017}. The mass of the
+\textcolor{red}{820.5}kg, determined by scaling of the structural mass of the Falcon-1e. The engine mass of the Merlin 1-C is kept constant during scaling at 630kg\cite{Wade2017}. The mass of the
 fuel in the first stage is scaled as part of the optimisation routine, as the dynamics of the vehicle, and its ability to reach a
 given separation point, are very closely coupled to the available fuel mass.
 
@@ -783,6 +783,9 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 		\end{figure}
 
 		\subsection{Aerodynamics}\label{sec:thirdstageaero}
+		
+		\textcolor{red}{XXX I should maybe justify using missile datcom as it is easier with wide flight regime of the third stage rocket}
+		
 			\begin{figure}[ht]
 				\begin{subfigure}{.5\textwidth}
 					\centering

@@ -5,6 +5,8 @@
 
 \textcolor{red}{XXX I should maybe include some info on exergy/energy analysis in the lit review? I should be clear that the energy analysis of the trajectory is part of the significant contribution }
 
+\textcolor{red}{XXX I need to be clear when I am looking at pull-ups that these were limited by the designs, and that this study wants to investigate an optimised trajectory without this. Tie this together with later discussion on my calculated pull-up and how it relates to previous optimal pull-ups. Differentiate between an optimised pull-up, and a hard limited pull-up}
+
   This chapter examines the relevant literature associated with the different aspects of the work conducted as part of this thesis. A brief overview of the theory behind scramjet engines is presented, followed by surveys of the current state of small satellite and reusable launch systems. Next, various conceptual airbreathing launch systems are presented, along with the trajectories and return flights which have been simulated for these systems, with particular emphasis on whether the trajectories were optimised or not. The SPARTAN scramjet-powered accelerator is detailed, followed by a review of the design of the third stage rocket. The theory behind optimal control methods is presented, followed by a survey into currently available optimal control solvers.
   Lastly, an overview of various aerodynamic modelling methods with emphasis on applicability to preliminary design is detailed. 
   
@@ -206,6 +208,8 @@ Simulations carried out for three stage systems utilising scramjet and rocket en
 \textcolor{red}{make sure to make it clear that a three-stage / small system has not been analysed before, and that high accuracy and robust optimisation is required for a detailed trajectory analysis}
 
 \textcolor{red}{XXX Point out the propulsion systems of the different launchers, and how scramjet powered is different.}
+
+\textcolor{red}{XXX Be very specific about how they pulled up, why and to where}
 
 The trajectory of an airbreathing launch vehicle is more complex than that of a fully rocket-powered launch system. 
 A airbreathing launch system trajectory must be designed around a number of factors:
@@ -631,7 +635,7 @@ This is the case for the simulation of the internal flow paths of scramjet engin
 \subsection{Cart3D}\label{sec:Cart3d}
 \textcolor{red}{XXX Validate low mach no. paper and maybe discuss inviscid code at low mach numbers more (due to examiner comment)}
 \textcolor{red}{XXX Abenayake paper shows that cart is relatively accurate at high mach no.s but not so accurate at low M and doesnt have right trends at transsonic. Abenayake also estimates errors}
-\textcolor{red}{XXX line this section up with uncertainty section}
+\textcolor{red}{XXX line this section up with uncertainty section (also line missile datcom section up)}
 Cart3D is an inviscid Euler solver CFD package, designed for use during preliminary vehicle design and analysis\cite{Almosnino2016}. Cart3D is computationally efficient and requires only a surface triangulation of the vehicle being analysed to initiate a simulation. Cart3D is utilised in this study due to its efficiency and ease of use, along with its demonstrated accuracy for hypersonic flow calculations\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a}. Cart3D features adjoint mesh adaptation, and uses cartesian `cut-cells' which intersect the surface, allowing complex geometries to be analysed automatically. The mesh automatically refines as the simulation progresses, reducing error. The absence of a requirement for a user generated mesh allows Cart3D to be easily applied to complex launch vehicle designs, as well as allowing for simple modification of control surface deflections and flight conditions. 
 Cart3D has been used extensively for aerodynamic simulations in preliminary design, including analysis of the plumes of the Skylon spaceplane\cite{Mehta2016}, HIFiRE-5\cite{Kimmel2010}, and in low sonic boom shape optimisations\cite{Aftosmis2011}. 
 \begin{figure}[ht]
@@ -654,6 +658,10 @@ Finally, in a comparison between Cart3D and the Overflow-D Navier-Stokes solver,
 
 
 \subsection{Missile Datcom}
+
+\textcolor{red}{XXX Rework this significantly, particularly where I say close agreement for pitching moment coeffs}
+
+
 Missile Datcom is a widely used, semi-empirical, aerodynamic prediction tool for missile configurations. Missile Datcom is used in this study for its extremely high computational efficiency and ease of use, along with its proven accuracy\cite{Sooy2005}. Missile Datcom uses component-buildup methods by which the aerodynamics of each component of a missile or rocket design are estimated and then added together to determine the aerodynamics of the entire vehicle. Missile Datcom uses a combination of empirical and theoretical methods and is capable of calculating the aerodynamic forces, stability derivatives, and moments over a range of angle of attack and Mach number values. The high efficiency of Missile Datcom allows an aerodynamic database to be generated simply and rapidly. Missile Datcom has been shown to produce close agreement with experimental wind tunnel data for normal force and pitching moment coefficients, and reasonable agreement for axial force coefficients\cite{Sooy2005}. 
 
 

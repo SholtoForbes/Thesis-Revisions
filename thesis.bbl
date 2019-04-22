@@ -1558,6 +1558,36 @@
     \field{year}{2003}
   \endentry
 
+  \entry{Gilmour}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GM}{%
+         family={Gilmour},
+         familyi={G\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM1}
+    \strng{fullhash}{GM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Gilmour Space Technologies Media Release}
+    \field{pages}{1\bibrangedash 3}
+    \field{title}{{Gilmour Space Secures AUD 19 Million to Launch
+  Next-Generation Hybrid Rockets to Space}}
+    \verb{url}
+    \verb https://www.gspacetech.com/single-post/2018/09/28/Gilmour-Space-secur
+    \verb es-AUD-19-million-to-launch-next-gen-hybrid-rockets
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gilmour.pdf:pdf
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
+  \endentry
+
   \entry{Electron}{misc}{}
     \name{author}{1}{}{%
       {{hash=R}{%
@@ -1598,36 +1628,6 @@
     \field{urlday}{30}
     \field{urlmonth}{11}
     \field{urlyear}{2017}
-  \endentry
-
-  \entry{Gilmour}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=GM}{%
-         family={Gilmour},
-         familyi={G\bibinitperiod},
-         given={Michelle},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GM1}
-    \strng{fullhash}{GM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Gilmour Space Technologies Media Release}
-    \field{pages}{1\bibrangedash 3}
-    \field{title}{{Gilmour Space Secures AUD 19 Million to Launch
-  Next-Generation Hybrid Rockets to Space}}
-    \verb{url}
-    \verb https://www.gspacetech.com/single-post/2018/09/28/Gilmour-Space-secur
-    \verb es-AUD-19-million-to-launch-next-gen-hybrid-rockets
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gilmour.pdf:pdf
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{06}
-    \field{urlmonth}{10}
-    \field{urlyear}{2018}
   \endentry
 
   \entry{Intrepid}{misc}{}
@@ -5954,6 +5954,55 @@
     \field{year}{2005}
   \endentry
 
+  \entry{Marley2017}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MCD}{%
+         family={Marley},
+         familyi={M\bibinitperiod},
+         given={Christopher\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=DJF}{%
+         family={Driscoll},
+         familyi={D\bibinitperiod},
+         given={James\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCDDJF1}
+    \strng{fullhash}{MCDDJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Efficient aerodynamic heating and thermal protection system models are
+  added to MA- SIV, a reduced-order model of a generic scramjet-powered
+  vehicle. The MASIV code was selected over similar reduced-order models
+  because of its advanced combustion model, as heat addition to the combustor
+  walls is often the largest source of heating in hypersonic air-breathing
+  vehicles. The thermal protection system consists of passive insulation and
+  ac- tive cooling with the liquid hydrogen fuel acting as the cooling agent.
+  Temperatures within the passive thermal protection system are shown over time
+  at verious trimmed flight con- ditions. High temperatures within the
+  combustor walls reveal the need for active cooling. The results show
+  important trade-offs for design and optimization purposes.%
+    }
+    \field{booktitle}{AIAA SciTech}
+    \verb{doi}
+    \verb 10.2514/6.2017-0118
+    \endverb
+    \field{number}{January}
+    \field{pages}{1\bibrangedash 27}
+    \field{title}{{Modeling an Active and Passive Thermal Protection System for
+  a Hypersonic Vehicle}}
+    \list{location}{1}{%
+      {Grapevine, TX}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Marley2017.pdf:pdf
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{Suraweera2009}{article}{}
     \name{author}{2}{}{%
       {{hash=SM}{%
@@ -6284,7 +6333,9 @@
     \verb in/spacex-unveils-plans-be-world-s-top-rocket-maker
     \endverb
     \field{year}{2011}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{urlday}{17}
+    \field{urlmonth}{03}
+    \field{urlyear}{2019}
   \endentry
 
   \entry{RPE}{book}{}
@@ -6350,8 +6401,8 @@
          familyi={I\bibinitperiod},
       }}%
     }
-    \strng{namehash}{I1}
-    \strng{fullhash}{I1}
+    \strng{namehash}{I2}
+    \strng{fullhash}{I2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{booktitle}{About Tungsten}
@@ -6617,6 +6668,191 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Icao2002}{article}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Icao},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    En 1989, le Conseil de l'OACI a recommand\'{e} ce qui suit: "The ICAO
+  adopts, as a standard, the geodetic reference system WGS-84 and develops
+  appropriate ICAO material, particularly in respect of Annexes 4 and 15, in
+  order to ensure a rapid and comprehensive implentation of the WGS-84 geodetic
+  reference system"%
+    }
+    \field{pages}{21\bibrangedash 23}
+    \field{title}{{World Geodetic System - 1984 (WGS-84) Manual}}
+    \field{volume}{1984}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WGS84.pdf:pdf
+    \endverb
+    \field{year}{2002}
+  \endentry
+
+  \entry{Maddock2017}{article}{}
+    \name{author}{11}{}{%
+      {{hash=MC}{%
+         family={Maddock},
+         familyi={M\bibinitperiod},
+         given={Christie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Toso},
+         familyi={T\bibinitperiod},
+         given={Federico},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Ricciardi},
+         familyi={R\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mogavero},
+         familyi={M\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LKH}{%
+         family={Lo},
+         familyi={L\bibinitperiod},
+         given={Kin\bibnamedelima Hing},
+         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rengarajan},
+         familyi={R\bibinitperiod},
+         given={Sriram},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kontis},
+         familyi={K\bibinitperiod},
+         given={Konstantinos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Milne},
+         familyi={M\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={West},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={McIntyre},
+         familyi={M\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MC+1}
+    \strng{fullhash}{MCTFRLMALKHRSKKMAEDWMMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper presents the conceptual design and performance analysis of a
+  partially reusa- ble space launch vehicle for small payloads. The system uses
+  a multi-stage vehicle with rocket engines, with a reusable first stage
+  capable of glided or powered flight, and expen- dable upper stage(s) to
+  inject a 500 kg payload in different low Earth orbits. The space access
+  vehicle is designed to be air-launched from a modified aircraft carrier. The
+  aim of the system design is to develop a commercially viable launch system
+  for near-term opera- tion, thus emphasis is placed on the efficient use of
+  high TRL technologies. The vehicle design are analysed using a
+  multi-disciplinary design optimisation approach to evaluate the performance,
+  operational capabilities and design trade-offs.%
+    }
+    \verb{doi}
+    \verb 10.2514/6.2017-2224
+    \endverb
+    \field{isbn}{978-1-62410-463-3}
+    \field{number}{March}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{{Vehicle and Mission Design of a Future Small Payload
+  Launcher}}
+    \verb{url}
+    \verb https://arc.aiaa.org/doi/10.2514/6.2017-2224
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Maddock2017.pdf:pdf
+    \endverb
+    \field{journaltitle}{21st AIAA International Space Planes and Hypersonics
+  Technologies Conference}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Tewari2007}{book}{}
+    \name{author}{1}{}{%
+      {{hash=TA}{%
+         family={Tewari},
+         familyi={T\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TA1}
+    \strng{fullhash}{TA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Acinetobacter baumannii contains RND-family efflux systems AdeABC and
+  AdeIJK, which pump out a wide range of antimicrobial compounds, as judged
+  from the MIC changes occurring upon deletion of the responsible genes.
+  However, these studies may miss changes because of the high backgrounds
+  generated by the remaining pumps and by $\beta$-lactamases, and it is unclear
+  how the activities of these pumps compare quantitatively with those of the
+  well-studied AcrAB-TolC system of Escherichia coli . We expressed adeABC and
+  adeIJK of A. baumannii , as well as E. coli acrAB , in an E. coli host from
+  which acrAB was deleted. The A. baumannii pumps were functional in E. coli ,
+  and the MIC changes that were observed largely confirmed the substrate range
+  already reported, with important differences. Thus, the AdeABC system pumped
+  out all $\beta$-lactams, an activity that was often missed in deletion
+  studies. When the expression level of the pump genes was adjusted to a
+  similar level for a comparison with AcrAB-TolC, we found that both A.
+  baumannii efflux systems pumped out a wide range of compounds, but AdeABC was
+  less effective than AcrAB-TolC in the extrusion of lipophilic
+  $\beta$-lactams, novobiocin, and ethidium bromide, although it was more
+  effective at tetracycline efflux. AdeIJK was remarkably more effective than a
+  similar level of AcrAB-TolC in the efflux of $\beta$-lactams, novobiocin, and
+  ethidium bromide, although it was less so in the efflux of erythromycin.
+  These results thus allow us to compare these efflux systems on a quantitative
+  basis, if we can assume that the heterologous systems are fully functional in
+  the E. coli host.%
+    }
+    \verb{doi}
+    \verb 10.1007/978-0-8176-4438-3
+    \endverb
+    \field{isbn}{978-0-8176-4437-6}
+    \field{title}{{Atmospheric and Space Flight Dynamics}}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/978-0-8176-4438-3
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/2007\_Book\_Atmosph
+    \verb ericAndSpaceFlightDynam.pdf:pdf
+    \endverb
+    \field{year}{2007}
+  \endentry
+
   \entry{Betts2009}{book}{}
     \name{author}{1}{}{%
       {{hash=BJT}{%
@@ -6869,6 +7105,209 @@
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
     \endverb
     \field{year}{2013}
+  \endentry
+
+  \entry{Dunn1989}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Dunn},
+         familyi={D\bibinitperiod},
+         given={Archibald},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Aeropredictive Methods for Missile Analysis}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Archibald1989.pdf:p
+    \verb df
+    \endverb
+    \field{year}{1989}
+  \endentry
+
+  \entry{Davidian1987}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DKJ}{%
+         family={Davidian},
+         familyi={D\bibinitperiod},
+         given={Kenneth\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DRH}{%
+         family={Dieck},
+         familyi={D\bibinitperiod},
+         given={Ronald\bibnamedelima H.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Chuang},
+         familyi={C\bibinitperiod},
+         given={Isaac},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DKJDRHCI1}
+    \strng{fullhash}{DKJDRHCI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A preliminary uncertainty analysis has been performed for the High Area
+  Ratio Rocket Nozzle test program which took place at an altitude test
+  capsule. Results from the study establish the uncertainty of measured and
+  calculated parameters required for the calculation of rocket engine specific
+  impulse. A generalized description of the uncertainty methodology employed is
+  provided. Specific equations used and a detailed description of the analysis
+  are presented. Verification of the uncertainty analysis model was performed
+  by comparison with results from the experimental program's data reduction
+  code.%
+    }
+    \field{issn}{04999320}
+    \field{title}{{A detailed description of the uncertainty analysis for high
+  area ratio rocket nozzle tests at the NASA Lewis Research Center}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Davidian.pdf:pdf
+    \endverb
+    \field{journaltitle}{NASA Technical Memorandum}
+    \field{year}{1987}
+  \endentry
+
+  \entry{Marini2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Marini},
+         familyi={M\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Compression ramps,Hypersonic laminar flows,Scaling laws,Sharp leading
+  edge,Shock wave boundary layer interactions}
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The present work is devoted to reviewing recent cases of shock
+  wave/boundary layer laminar interactions over compression ramps with sharp
+  leading edge (two-dimensional and axisymmetric concave geometries), and to
+  making a contribution to the understanding of the physical features and
+  controlling mechanisms of the flows by means of extensive numerical
+  simulations and comparison with experiments. The most critical aspects of
+  numerical simulations have been identified and attention has been focused on
+  the effects of ramp angle, wall temperature, axisymmetry and finite span.
+  Present compression ramp cases cover a wide range of Mach number and Reynolds
+  number, thus making the analysis reasonably complete. Results are validated
+  in terms of simplified theoretical analysis, comparison with available
+  measurements, and correlation laws describing the characteristic parameters
+  of the problem. It has been shown that mechanical and thermal loads over
+  compression ramps, as well as separation characteristics, depend strongly on
+  ramp angle, wall temperature assumption and geometric configuration. On the
+  other hand, their quantitative prediction depends on grid resolution as well
+  as the correctness of the physical and numerical modeling employed. © 2001
+  \'{E}ditions scientifiques et m\'{e}dicales Elsevier SAS.%
+    }
+    \verb{doi}
+    \verb 10.1016/S1270-9638(01)01109-9
+    \endverb
+    \field{issn}{12709638}
+    \field{number}{4}
+    \field{pages}{257\bibrangedash 271}
+    \field{title}{{Analysis of hypersonic compression ramp laminar flows under
+  sharp leading edge conditions}}
+    \field{volume}{5}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Marini2001.pdf:pdf
+    \endverb
+    \field{journaltitle}{Aerospace Science and Technology}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Takahashi1997}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TS}{%
+         family={Takahashi},
+         familyi={T\bibinitperiod},
+         given={Shinei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mizobata},
+         familyi={M\bibinitperiod},
+         given={Kazuhide},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sawada},
+         familyi={S\bibinitperiod},
+         given={Keisuke},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TSMKSK1}
+    \strng{fullhash}{TSMKSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A conceptual study of Japan’s unmanned two-stage-to-orbit launch vehicle
+  is described. The rst stage of the vehicle is reusable and has a wing-body
+  configuration and air-breathing engines as the propulsion system. The second
+  stage is expendable and rocket powered and is mounted under the fuselage of
+  the first stage. The assumed mission is to deliver a 2-ton payload to a
+  300-km circular orbit at various inclination angles. There is an acceptable
+  set of launch, landing, and emergency landing sites along the coast of the
+  Japanese islands, and the corresponding ight paths including those for
+  emergency landings can be de ned for several selected cases. Emphasis is
+  placed on showing the geographic advantage of Japan, which it is surrounded
+  by sea and with territory that stretches in a northeasterly direction. The
+  method of staging separation is also described.%
+    }
+    \verb{doi}
+    \verb 10.2514/2.3280
+    \endverb
+    \field{issn}{0022-4650}
+    \field{number}{5}
+    \field{pages}{628\bibrangedash 635}
+    \field{title}{{Conceptual Study of a Two-Stage, Air-Breathing Reusable
+  Launch Vehicle}}
+    \field{volume}{34}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Takahashi.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{annotation}{%
+    a pull-up to reduce dynamic pressure%
+    }
+    \field{year}{1997}
+  \endentry
+
+  \entry{Preller2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={Preller},
+         familyi={P\bibinitperiod},
+         given={Dawid},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PD1}
+    \strng{fullhash}{PD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
+  Hypersonic Airbreathing Accelerating Vehicle}}
+    \list{institution}{1}{%
+      {University of Queensland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/Preller-2017-
+    \verb Multidisciplinary-Design-and-Optimisation-of-a-Pitch-Trimmed-Hyperson
+    \verb ic-Airbreathing-Accelerating-Vehicle.pdf:pdf
+    \endverb
+    \field{type}{phdthesis}
+    \field{year}{2018}
   \endentry
 
   \entry{Carlson1972}{article}{}

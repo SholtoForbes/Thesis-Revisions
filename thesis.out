@@ -95,46 +95,50 @@
 \BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 95
 \BOOKMARK [0][-]{chapter.8}{Recommendations for future work}{}% 96
 \BOOKMARK [0][-]{chapter*.145}{References}{}% 97
-\BOOKMARK [0][-]{appendix.A}{Modelling and Simulation}{}% 98
-\BOOKMARK [1][-]{section.A.1}{Major Sources of Uncertainty and Modelling Simplifications}{appendix.A}% 99
-\BOOKMARK [2][-]{subsection.A.1.1}{Staging}{section.A.1}% 100
-\BOOKMARK [2][-]{subsection.A.1.2}{Aerodynamic Coefficients}{section.A.1}% 101
-\BOOKMARK [2][-]{subsection.A.1.3}{Control}{section.A.1}% 102
-\BOOKMARK [2][-]{subsection.A.1.4}{Propulsion System}{section.A.1}% 103
-\BOOKMARK [2][-]{subsection.A.1.5}{Dynamic Modelling}{section.A.1}% 104
-\BOOKMARK [2][-]{subsection.A.1.6}{Numerical Methods}{section.A.1}% 105
-\BOOKMARK [2][-]{subsection.A.1.7}{Internal Design Simplifications}{section.A.1}% 106
-\BOOKMARK [2][-]{subsection.A.1.8}{Design}{section.A.1}% 107
-\BOOKMARK [2][-]{subsection.A.1.9}{Thermal}{section.A.1}% 108
-\BOOKMARK [1][-]{section.A.2}{Propulsion Interpolation Scheme}{appendix.A}% 109
-\BOOKMARK [1][-]{section.A.3}{SPARTAN Flow Results}{appendix.A}% 110
-\BOOKMARK [1][-]{section.A.4}{Cart3D Mesh}{appendix.A}% 111
-\BOOKMARK [1][-]{section.A.5}{Performance of the SPARTAN During Fly-Back}{appendix.A}% 112
-\BOOKMARK [0][-]{appendix.B}{Example and Verification}{}% 113
-\BOOKMARK [1][-]{section.B.1}{GPOPS-2 Example - Brachistochrone Problem}{appendix.B}% 114
-\BOOKMARK [1][-]{section.B.2}{Optimised Trajectory Analysis}{appendix.B}% 115
-\BOOKMARK [2][-]{subsection.B.2.1}{Mesh History}{section.B.2}% 116
-\BOOKMARK [2][-]{subsection.B.2.2}{Verification}{section.B.2}% 117
-\BOOKMARK [0][-]{appendix.C}{Alternate Trajectory Cases}{}% 118
-\BOOKMARK [1][-]{section.C.1}{Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}{appendix.C}% 119
-\BOOKMARK [1][-]{section.C.2}{Sonic Boom Ground Effects}{appendix.C}% 120
-\BOOKMARK [1][-]{section.C.3}{Alternate Launch Location}{appendix.C}% 121
-\BOOKMARK [0][-]{appendix.D}{Trajectory Plot Comparisons}{}% 122
-\BOOKMARK [1][-]{section.D.1}{Optimised Ascent Trajectory Comparisons With No Fly-Back}{appendix.D}% 123
-\BOOKMARK [2][-]{subsection.D.1.1}{Case 3: Maximum Dynamic Pressure Sensitivity Comparison}{section.D.1}% 124
-\BOOKMARK [2][-]{subsection.D.1.2}{Case 4: SPARTAN Drag Sensitivity Comparison}{section.D.1}% 125
-\BOOKMARK [2][-]{subsection.D.1.3}{Case 5: SPARTAN Specific Impulse Sensitivity Comparison}{section.D.1}% 126
-\BOOKMARK [2][-]{subsection.D.1.4}{Case 6: SPARTAN Mass Sensitivity Comparison}{section.D.1}% 127
-\BOOKMARK [2][-]{subsection.D.1.5}{Case 7: SPARTAN Fuel Mass Sensitivity Comparison}{section.D.1}% 128
-\BOOKMARK [2][-]{subsection.D.1.6}{Case 8: Third Stage Mass Sensitivity Comparison}{section.D.1}% 129
-\BOOKMARK [2][-]{subsection.D.1.7}{Case 9: Third Stage Specific Impulse Sensitivity Comparison}{section.D.1}% 130
-\BOOKMARK [2][-]{subsection.D.1.8}{Case 10:Third Stage Drag Sensitivity Comparison}{section.D.1}% 131
-\BOOKMARK [1][-]{section.D.2}{Optimised Ascent Trajectory Comparisons With Fly-Back}{appendix.D}% 132
-\BOOKMARK [2][-]{subsection.D.2.1}{Case 12: Dynamic Pressure Sensitivity Comparison}{section.D.2}% 133
-\BOOKMARK [2][-]{subsection.D.2.2}{Case 13: SPARTAN Drag Sensitivity Comparison}{section.D.2}% 134
-\BOOKMARK [2][-]{subsection.D.2.3}{Case 14:SPARTAN Specific Impulse Sensitivity Comparison}{section.D.2}% 135
-\BOOKMARK [2][-]{subsection.D.2.4}{Case 15: SPARTAN Mass Sensitivity Comparison}{section.D.2}% 136
-\BOOKMARK [2][-]{subsection.D.2.5}{Case 16: SPARTAN Fuel Mass Sensitivity Comparison}{section.D.2}% 137
-\BOOKMARK [2][-]{subsection.D.2.6}{Case 17: Third Stage Mass Sensitivity Comparison}{section.D.2}% 138
-\BOOKMARK [2][-]{subsection.D.2.7}{Case 18: Third Stage Specific Impulse Sensitivity Comparison}{section.D.2}% 139
-\BOOKMARK [0][-]{appendix.E}{Viscous Drag Variation}{}% 140
+\BOOKMARK [0][-]{appendix.A}{Uncertainties and Simplifications}{}% 98
+\BOOKMARK [1][-]{section.A.1}{Modelling and Design Simplifications}{appendix.A}% 99
+\BOOKMARK [2][-]{subsection.A.1.1}{Control}{section.A.1}% 100
+\BOOKMARK [2][-]{subsection.A.1.2}{Staging Effects}{section.A.1}% 101
+\BOOKMARK [2][-]{subsection.A.1.3}{Mass Model Simplifications}{section.A.1}% 102
+\BOOKMARK [2][-]{subsection.A.1.4}{Thermal}{section.A.1}% 103
+\BOOKMARK [1][-]{section.A.2}{Aerodynamic and Propulsion Simulation Uncertainties}{appendix.A}% 104
+\BOOKMARK [2][-]{subsection.A.2.1}{The Uncertainties of the Aerodynamics of the First and Second Stages}{section.A.2}% 105
+\BOOKMARK [2][-]{subsection.A.2.2}{Propulsion System Uncertainties}{section.A.2}% 106
+\BOOKMARK [2][-]{subsection.A.2.3}{Quantification of Aerodynamic and Propulsion Uncertainty Effects}{section.A.2}% 107
+\BOOKMARK [2][-]{subsection.A.2.4}{Atmospheric Variations}{section.A.2}% 108
+\BOOKMARK [2][-]{subsection.A.2.5}{Quantification of Atmospheric Variation Effects}{section.A.2}% 109
+\BOOKMARK [0][-]{appendix.B}{Modelling and Simulation}{}% 110
+\BOOKMARK [1][-]{section.B.1}{Propulsion Interpolation Scheme}{appendix.B}% 111
+\BOOKMARK [1][-]{section.B.2}{SPARTAN Flow Results}{appendix.B}% 112
+\BOOKMARK [1][-]{section.B.3}{Cart3D Mesh}{appendix.B}% 113
+\BOOKMARK [1][-]{section.B.4}{Performance of the SPARTAN During Fly-Back}{appendix.B}% 114
+\BOOKMARK [0][-]{appendix.C}{Example and Verification}{}% 115
+\BOOKMARK [1][-]{section.C.1}{GPOPS-2 Example - Brachistochrone Problem}{appendix.C}% 116
+\BOOKMARK [1][-]{section.C.2}{Optimised Trajectory Verification}{appendix.C}% 117
+\BOOKMARK [1][-]{section.C.3}{Optimised Trajectory Analysis}{appendix.C}% 118
+\BOOKMARK [2][-]{subsection.C.3.1}{Mesh History}{section.C.3}% 119
+\BOOKMARK [2][-]{subsection.C.3.2}{Verification}{section.C.3}% 120
+\BOOKMARK [0][-]{appendix.D}{Alternate Trajectory Cases}{}% 121
+\BOOKMARK [1][-]{section.D.1}{Trajectory with Decreased Third Stage TPS Mass}{appendix.D}% 122
+\BOOKMARK [1][-]{section.D.2}{Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}{appendix.D}% 123
+\BOOKMARK [1][-]{section.D.3}{Sonic Boom Ground Effects}{appendix.D}% 124
+\BOOKMARK [1][-]{section.D.4}{Alternate Launch Location}{appendix.D}% 125
+\BOOKMARK [0][-]{appendix.E}{Trajectory Plot Comparisons}{}% 126
+\BOOKMARK [1][-]{section.E.1}{Optimised Ascent Trajectory Comparisons With No Fly-Back}{appendix.E}% 127
+\BOOKMARK [2][-]{subsection.E.1.1}{Case 3: Maximum Dynamic Pressure Sensitivity Comparison}{section.E.1}% 128
+\BOOKMARK [2][-]{subsection.E.1.2}{Case 4: SPARTAN Drag Sensitivity Comparison}{section.E.1}% 129
+\BOOKMARK [2][-]{subsection.E.1.3}{Case 5: SPARTAN Specific Impulse Sensitivity Comparison}{section.E.1}% 130
+\BOOKMARK [2][-]{subsection.E.1.4}{Case 6: SPARTAN Mass Sensitivity Comparison}{section.E.1}% 131
+\BOOKMARK [2][-]{subsection.E.1.5}{Case 7: SPARTAN Fuel Mass Sensitivity Comparison}{section.E.1}% 132
+\BOOKMARK [2][-]{subsection.E.1.6}{Case 8: Third Stage Mass Sensitivity Comparison}{section.E.1}% 133
+\BOOKMARK [2][-]{subsection.E.1.7}{Case 9: Third Stage Specific Impulse Sensitivity Comparison}{section.E.1}% 134
+\BOOKMARK [2][-]{subsection.E.1.8}{Case 10:Third Stage Drag Sensitivity Comparison}{section.E.1}% 135
+\BOOKMARK [1][-]{section.E.2}{Optimised Ascent Trajectory Comparisons With Fly-Back}{appendix.E}% 136
+\BOOKMARK [2][-]{subsection.E.2.1}{Case 12: Dynamic Pressure Sensitivity Comparison}{section.E.2}% 137
+\BOOKMARK [2][-]{subsection.E.2.2}{Case 13: SPARTAN Drag Sensitivity Comparison}{section.E.2}% 138
+\BOOKMARK [2][-]{subsection.E.2.3}{Case 14:SPARTAN Specific Impulse Sensitivity Comparison}{section.E.2}% 139
+\BOOKMARK [2][-]{subsection.E.2.4}{Case 15: SPARTAN Mass Sensitivity Comparison}{section.E.2}% 140
+\BOOKMARK [2][-]{subsection.E.2.5}{Case 16: SPARTAN Fuel Mass Sensitivity Comparison}{section.E.2}% 141
+\BOOKMARK [2][-]{subsection.E.2.6}{Case 17: Third Stage Mass Sensitivity Comparison}{section.E.2}% 142
+\BOOKMARK [2][-]{subsection.E.2.7}{Case 18: Third Stage Specific Impulse Sensitivity Comparison}{section.E.2}% 143
+\BOOKMARK [0][-]{appendix.F}{Viscous Drag Variation}{}% 144

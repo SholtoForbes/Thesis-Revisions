@@ -57,14 +57,9 @@ If there are large discontinuities or inaccurate extrapolation effects within th
 Discontinuities within the aerodynamics or engine properties of a particular vehicle must be mitigated through the careful application of interpolation techniques. Discontinuities that are unable to be mitigated, such as stage separations, must be separated into distinct phases within the optimal control solution and connected by linkage constraints \cite{Betts1998}, as discussed further in Section \ref{sec:optstruct}. 
 
 \subsection{Equations of Motion}
-\textcolor{red}{XXX Can I integrate WGS84 into this? I may be able to just modify the calculated altitude and gravity?}
-\textcolor{red}{XXX I need to make sure that descrbing this as geodetic is correct if I am not using a high accuracy earth model... but may need to be defined as a geographic coordinate system instead?}
-\textcolor{red}{XXX reference clearly lays out motion for a spherical rotating earth. Can look up motion over an oblate earth. %www.ingaero.uniroma1.it/attachments/1978_AvanziniEDLA.pdf  
-	}
-\textcolor{red}{The difference between the radius at the equator and poles is very small... is not likely to make any difference...I definitely can use a spherical approximation}
-\textcolor{red}{also, lots of the papers in the optimal trajectories folder of my menderley use this model..}
 
-The dynamics of the launch system are calculated in \textcolor{red}{three} degrees of freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, velocity $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Josselyn2002a}:
+
+The dynamics of the launch system are calculated in \textcolor{red}{three} degrees of freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. The Earth is modelled as an ablate spheroid using the World Geodetic System 1984\cite{Icao2002} (WGS-84) shape and gravity model. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, velocity $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Maddock2017,Tewari2007}:
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/4_LODESTAR/global}
@@ -85,18 +80,18 @@ The dynamics of the launch system are calculated in \textcolor{red}{three} degre
 \dot{\phi} = \frac{v\cos\gamma\sin\zeta}{r}
 \end{equation}
 \begin{equation}
-\dot{\gamma} = \frac{T\sin\alpha \cos\eta}{mv} + (\frac{v}{r}-\frac{\mu_E}{r^2 v})\cos\gamma + \frac{L}{mv}
+\dot{\gamma} = \frac{(L + T\sin\alpha) \cos\eta}{mv} + (\frac{v}{r}-\frac{g_r}{v})\cos\gamma -\frac{g_t}{v}\sin\gamma\cos\zeta
 + \cos\phi[2\omega_E \cos\zeta + \frac{\omega_E^2 r}{v}(\cos\phi\cos\gamma+\sin\phi\sin\gamma\sin\zeta)]
 \end{equation}
 \begin{equation}
-\dot{v} = \frac{T\cos\alpha}{m}-\frac{\mu_E}{r^2}\sin\gamma - \frac{D}{m}
+\dot{v} = \frac{T\cos\alpha - D}{m}-g_r\sin\gamma +g_t\cos\gamma\cos\zeta
 + \omega_E^2 r\cos\phi(\cos\phi\sin\gamma-\sin\phi\cos\gamma\sin\zeta)
 \end{equation}
 \begin{equation}\label{eq:heading}
-\dot{\zeta} = \frac{T\sin\alpha \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta +2\omega_E\cos\phi\tan\gamma\sin\zeta - \frac{\omega_E^2 r}{v\cos\gamma}\sin\phi\cos\phi\cos\zeta-2\omega_E\sin\phi 
+\dot{\zeta} = \frac{(L + T\sin\alpha) \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta +2\omega_E\cos\phi\tan\gamma\sin\zeta - \frac{\omega_E^2 r}{v\cos\gamma}\sin\gamma\cos\phi\cos\zeta-2\omega_E\sin\phi -g_t\sin\zeta
 \end{equation}
-\textcolor{red}{XXX $\omega_E$ not defined?}
-These dynamics are used as the dynamic constraints of the launch system, as shown in Equation \ref{eq:states}, with each dynamic parameter implemented as a state variable ($\mathbf{x}$). The lift ($L$) and drag ($D$) forces are interpolated from the aerodynamic databases, described in Chapter \ref{chapter:Design}.
+
+Where $\omega_E$ is the angular velocity of the Earth, and $g_r$ and $g_t$ are the gravity of the Earth in the radial and transverse directions. These dynamics are used as the dynamic constraints of the launch system, as shown in Equation \ref{eq:states}, with each dynamic parameter implemented as a state variable ($\mathbf{x}$). The lift ($L$) and drag ($D$) forces are interpolated from the aerodynamic databases, described in Chapter \ref{chapter:Design}.
 
 \section{Optimal Control Problem Structure}\label{sec:optstruct}
 
