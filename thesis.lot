@@ -9,7 +9,7 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces First Stage Engine Properties\cite {Wade2017}.\relax }}{61}{table.caption.82}
 \contentsline {table}{\numberline {3.3}{\ignorespaces Mass breakdown of the third stage rocket.\relax }}{64}{table.caption.87}
 \contentsline {table}{\numberline {3.4}{\ignorespaces Third stage fuel distribution.\relax }}{65}{table.caption.88}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Third stage heat shield breakdown.\relax }}{65}{table.caption.89}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Third stage heat shield breakdown.\relax }}{66}{table.caption.89}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Segment coupling conditions for combined trajectory optimisation.\relax }}{83}{table.caption.97}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Optimisation setup of the first stage phase. \relax }}{84}{table.caption.98}
@@ -42,11 +42,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Optimisation setup of the Brachistochrone problem. \relax }}{198}{table.caption.160}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{206}{table.caption.166}
-\contentsline {table}{\numberline {D.2}{\ignorespaces A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction.\relax }}{208}{table.caption.173}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Optimisation setup of the Brachistochrone problem. \relax }}{192}{table.caption.154}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Summary of key trajectory parameters with SPARTAN viscous drag variation.\relax }}{252}{table.caption.211}
+\contentsline {table}{\numberline {D.1}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{210}{table.caption.172}
+\contentsline {table}{\numberline {D.2}{\ignorespaces A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction.\relax }}{212}{table.caption.179}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {F.1}{\ignorespaces Summary of key trajectory parameters with SPARTAN viscous drag variation.\relax }}{256}{table.caption.217}

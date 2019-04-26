@@ -170,7 +170,7 @@ The propulsive properties of the rocket engines that power the first and third s
 \subsubsection{Quantification of Uncertainty Magnitudes}
 
 The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been applied based on the errors described in the studies analysed in the preceding sections adjusted using engineering judgement. As a correction was applied for viscous effects, the uncertainty margins in Cart3D derived drag properties are based heavily on the work by Ward et al.\cite{Ward2018}, though with the magnitude of the uncertainty increased slightly due to the drag uncertainties observed by Abenayake and Agon\cite{Abeynayake2013a}, which are higher than those observed by Ward et al. even accounting for viscous effects.
-The subsonic uncertainty in the lift and drag are set to 20\%. This value accounts for reduced uncertainty due to the low angle of attack of the launch system at subsonic speeds, though takes into account the complexity of the representative launch system, which is likely to increase the error in the modelled aerodynamics.
+The subsonic uncertainty in the lift and drag are set to a nominalk value 20\%. This value accounts for reduced uncertainty due to the low angle of attack of the launch system at subsonic speeds, though takes into account the complexity of the representative launch system, which is likely to increase the error in the modelled aerodynamics.
 
 \textcolor{red}{This is an example, I am not sure if it is appropriate to use an estimated value or if I should take a value directly from one of the experimental comparisons.}
 
@@ -209,6 +209,207 @@ This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} 
 The effects of atmospheric variation are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface copmpared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated. 
 
 
+
+\chapter{Example and Verification}
+
+\section{Example - Brachistochrone Problem}
+
+This section describes a short example of an optimal control problem solved in GPOPS-II. The purpose of this example is to demonstrate the effectiveness of the pseudospectral method and GPOPS-II, and to provide a simple example case to establish the terminology of an optimal control problem.  
+
+
+The brachistochrone (from the Greek for 'shortest time') problem is a simple optimal control problem, which describes a ball rolling in two dimensions under gravity. The objective is to find the curve of descent which will minimise the time from point \textit{a}, where the ball is at rest, to point \textit{b}. It is assumed that gravity is constant and that there is no forces other than gravity acting on the ball. 
+The analytical solution of this problem can be computed using the Euler-Lagrange equation as the equations describing a cycloid:
+
+$x = A(\theta + \sin\theta) $,
+
+$y=A(1 - \cos\theta)$
+
+This problem is included within GPOPS-2 as an example problem, and has been solved to illustrate the GPOPS-2 solution set-up\cite{Rao2010}. Table \ref{tab:brachistochrone} describes the set-up of the optimal control problem in GPOPS-2. The dynamic equations for the Brachistochrone problem are:
+
+$\dot{x} = v*cos(u)$,
+
+$\dot{y} = v*sin(u)$,
+
+$\dot{v} = g*sin(u)$.
+
+\noindent These equations are provided to GPOPS-2 as the time-variant system model in this form. The control variable is set to be the descent angle. The initial constraints are defined to initiate the ball at rest at the origin, and the terminal constraints are defined to terminate the problem at coordinates of [2,2]. The cost is set to minimum time, so that the solution will be the descent angle which minimises the time to get from the initial position, to the end position. 
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline Primal Variables  & x Position\\& y Position\\& Velocity\\ 
+		\hline Control Variables  & Angle of Descent\\ 
+		\hline Initial Constraints  & Velocity\\ & x Position\\ & y Position\\
+		\hline Terminal Constraints &  x Position\\ & y Position\\
+		\hline Path Constraints & None \\ 
+		\hline Target Cost & Minimum Time \\ 
+		\hline 
+	\end{tabular} 
+	\caption{Optimisation setup of the Brachistochrone problem. }
+	\label{tab:brachistochrone}
+\end{table}
+
+
+The GPOPS-2 solution to the Brachistochrone problem is shown in Figure \ref{fig:Brachistochrone}, matching the analytical solution almost exactly. This is expected in this case, as the dynamics of the basic Brachistochrone problem are very simple. As the dynamics become more complex, it is no longer possible to obtain an analytical solution.  
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/4_LODESTAR/Brachistochrone}
+	\caption{The solution to the Brachistochrone problem, solved in GPOPS-2\cite{Rao2010}.}
+	\label{fig:Brachistochrone}
+\end{figure}
+
+
+
+
+\textcolor{red}{\section{Example - Shuttle Reentry}}
+
+This section describes an optimised shuttle reentry trajectory problem, taken from the textbook 'Practical Methods for Optimal Control and Estimation Using Nonlinear Programming' by Betts\cite{Betts2009}, which has been simulated in GPOPS-2 to illustrate the capabilities of GPOPS-2 when applied to a complex aerodynamic problem of an existing vehicle. The optimisation of the space shuttle reentry is relevant due to the large flight regime and long time period being simulated, which leads to a complex, extremely sensitive optimal control problem\cite{Betts2009}, similar in a simplified manner to the problem being solved in this work. The shuttle reentry problem is highly nonlinear and intractable to simple optimisation methods\cite{Betts2009}, making it suitable for illustrating the robustness of GPOPS-2 for aerospace problems of this type. 
+The space shuttle reentry problem aims to maximise crossrange during reentry, with two cases; unconstrained, and limited by a simple heating rate constraint. The example in this section uses the vehicle model exactly as defined by Betts\cite{Betts2009} for comparison purposes, however the problem is formulated in a simplified version of the coordinate system that is used in the rest of this work. 
+
+
+\subsection{Problem Formulation}
+
+The dynamics of the space shuttle are defined exactly similarly to those in the problem designed by Betts\cite{Betts2009}, using a simplified model that neglects the rotation of the Earth and the tangential component of gravity:
+
+\begin{equation}
+\dot{r} = v \sin \gamma,
+\end{equation}
+
+\begin{equation}
+\dot{\xi} = \frac{v\cos \gamma \cos \zeta}{r \cos \phi},
+\end{equation}
+
+\begin{equation}
+\dot{\phi} = \frac{v\cos\gamma\sin\zeta}{r},
+\end{equation}
+\begin{equation}
+\dot{\gamma} = \frac{L \cos\eta}{mv} + (\frac{v}{r}-\frac{g}{v})\cos\gamma,
+\end{equation}
+\begin{equation}
+\dot{v} = \frac{D}{m}-g\sin\gamma,
+\end{equation}
+\begin{equation}
+\dot{\zeta} = \frac{L  \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta.
+\end{equation}
+
+The aerodynamics of the vehicle are modelled using simple correlations, where $C_L = −0.20704 + 0.029244\alpha$, and $C_D = 0.07854 -0.61592\times10^{-2}\alpha^2 + 0.621408\times10^{-3}\alpha^3$. The density is modelled as exponentially decaying, $\rho = 1.2255708354e^{-h/7254}$, and the gravity is modelled by an inverse square law, $g = \frac{\mu}{r^2}$.
+The space shuttle initial conditions are set as follows\cite{Betts2009}, to simulate the entry of the shuttle into the upper atmosphere:
+\begin{table}[H]
+	\centering
+\begin{tabular}{c c}
+  $h_0$ =  79248m, & $v_0$ = 7803m/s, \\ 
+  $\gamma_0$ =  -1$^\circ$, & $\phi_0$ =  0$^\circ$,\\ 
+ $\xi_0$ =  0$^\circ$, & $\zeta_0$ =  0$^\circ$,\\ 
+\end{tabular} 
+\end{table}
+and the end conditions are set as follows\cite{Betts2009}, to match the terminal area energy management interface:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c c c}
+		   $h_f$ =  24384m, &  $v_f$ =762m/s, & $\gamma_f$ =  -5$^\circ$.\\ 
+		
+		
+	\end{tabular} 
+\end{table}
+
+The problem is set to maximise crossrange from the initial point, which in this case is equivalent to maximising latitude:
+
+\begin{equation}
+J = -\phi_f.
+\end{equation}
+
+\subsection{Unconstrained Result}
+The shuttle rentry crossrange maximisation problem is optimised in GPOPS-2, with result time histories shown in Figures \ref{fig:SpaceShuttleNoq1} and \ref{fig:SpaceShuttleNoq2}. The shuttle follows a 'skipping' trajectory, with an initially large bank angle that changes the heading of the vehicle rapidly in the early stages of reentry. The skips serve to maximise the range of the space shuttle's flight, and they are controlled by the angle of attack of the vehicle. The solution computed in GPOPS-2 matches the result computed by Betts\cite{Betts2009}, with the shape of the trajectories being close to identical. A maximum crossrange of 34.18$^\circ$ is achieved, a difference of 0.11\% when compared to the solution computed by Betts\cite{Betts2009}. This result is indicative of the ability of GPOPS-2 to compute highly sensitive optimal control problems for aerospace vehicles. 
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleNoq1}
+\caption{}
+\label{fig:SpaceShuttleNoq1}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleNoq2}
+\caption{}
+\label{fig:SpaceShuttleNoq2}
+\end{figure}
+
+
+\subsection{Heating Rate Limited Result}
+%\textcolor{red}{XXX Need to find a way to denote heating rate thats not q}
+The heating rate of the space shuttle is limited during descent, to illustrate the ability of GPOPS-2 to deal with complex inequality constraints. The leading edge heating is approximated using a simplified empirical model, so that $q = q_aq_r$, where $q_r = 17700\sqrt{\rho}(0.0001v)^{3.07}$ and $q_a = 1.0672181 -0.19213774\times10^{-1}
+\alpha + 0.21286289\times10^{-3}\alpha^2 -0.10117249\times10^{-5}\alpha^3$. The trajectory is successfully optimised in the presence of this complex inequality, once again showing a near identical trajectory to the optimised solution calculated by Betts\cite{Betts2009}. The maximum crossrange is reduced to 30.70$^\circ$, a difference of 0.25\% to the solution calculated by Betts\cite{Betts2009}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleq1}
+\caption{}
+\label{fig:SpaceShuttleq1}
+\end{figure}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleq2}
+\caption{}
+\label{fig:SpaceShuttleq2}
+\end{figure}
+
+\subsection{Increased Fidelity Model Result}
+
+
+
+\section{Optimised Trajectory Verification}
+
+\textcolor{red}{XXX Add verification here (possiblywith one of maddocks works, or a single stage to orbit, or space shuttle)}
+\textcolor{red}{XXX  this is the section that descibes the error in 'timestep' as requested by reviewer, though there are multiple other factors. 'A Comparison of Accuracy and Computational E ciency of Three Pseudospectral Methods' also uses matlabs ODE45 for error comparison}.
+
+\section{Optimised Trajectory Analysis}
+
+This section presents an example of the convergence and verification of a trajectory optimised using GPOPS-2, within LODESTAR. The convergence and verification of a maximum payload-to-orbit trajectory solution, with SPARTAN fly-back (Case 11) is shown. 
+
+\subsection{Mesh History}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../LODESTAR_FINAL/Results/mode11/MeshHistory}
+	\caption{The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). the phases are shown in each subfigure as follows: a) first stage rocket, b) SPARTAN acceleration, c) SPARTAN fly-back and d) third stage.}
+	\label{fig:MeshHistory}
+\end{figure}
+The mesh history of the optimal trajectory solution is shown in Figure \ref{fig:MeshHistory}. The mesh is updated by GPOPS-2 in each iteration of the optimal solution. It can be observed that the meshes of the first and third stage rockets contain significantly less node points at the final iteration than the meshes of the SPARTAN's acceleration and return. This is due to the relatively simple dynamics and shorter flight time of the first and third stages. The first stage shows a cluster of nodes at the beginning of its trajectory, in the subsonic, transonic and low Mach regimes. In this region, the aerodynamics are changing rapidly, and the nodes are clustered to accurately capture the dynamic behaviour of the vehicle. After transition occurs to supersonic flight, the aerodynamics and engine performance of the vehicle change more slowly, and the nodes become more widely spaced. In contrast, the acceleration of the SPARTAN shows significant node density throughout. The operation of the SPARTAN is complex, as the dynamics of the vehicle and the performance of the scramjet engines vary significantly, even during relatively level flight. For this reason, the nodes of the return flight show even greater density. The trajectory conditions change significantly as the SPARTAN performs skipping manoeuvres, and transitions through the various return phases, necessitating high node density to capture the vehicle dynamics, particularly between powered and unpowered flight. The trajectories of the SPARTAN also last for a significantly longer time than the rocket trajectories, requiring more total nodes to accurately capture the vehicle dynamics. The third stage shows the least nodes at the final mesh iteration, as the dynamics of the third stage are relatively simple. Some node  clustering is observed in the first part of the trajectory, where the atmospheric density is still significant. 
+
+
+
+\subsection{Verification}
+
+After a trajectory has been calculated, it must be verified to ensure that the optimal control solver has converged correctly. Details on this verification are provided in Section \ref{sec:verification}. Figure \ref{fig:HamiltonianStandard} shows the Hamiltonian time history for the optimised trajectory solution of Case 11. For an optimal solution to be found, the Hamiltonian should be equal to 0 at all points over every phase. In a practical solution, a Hamiltonian close to 0 is acceptable, which is observable over all phases in the optimised solution. The Hamiltonian is close to 0 at all points of the trajectory, indicating that an optimal solution has been found. 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/HamiltonianStandard}
+	\caption{The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11).}
+	\label{fig:HamiltonianStandard}
+\end{figure}
+
+The next step in the verification process is to ensure that the dynamic constraints of the optimal control problem holds across the entire solution, ie. $\dot{\textbf{x}}(t) = f[t,\textbf{x}(t),\textbf{u}(t)]$. This is the most important step in the verification process, which checks that the optimal control solver has converged correctly, so that the physical dynamics of the vehicle are being correctly represented by the polynomial approximations within GPOPS-2. The dynamic constraints are tested by first calculating the dynamics of each vehicle at every node of the solution, using the vehicle simulations. These dynamics are then integrated over time using trapezoidal integration, starting at the initial conditions of each phase. The integrated dynamics are then compared to the states of the optimised solution. If the dynamic constraints have been satisfied, then the integrated dynamics of the system will be equal to the state variables of the solution. The error in the dynamic constraints of each state are shown in Figure \ref{fig:VerificationStandard}, calculated as the difference between the integrated dynamics and each state variable, normalised to the range of the state variable. 
+It can be observed that all errors in the dynamic constraints are very small. The error that is present is likely to be due to the inaccuracies of the trapezoidal method, which is significantly less accurate than the approximating polynomials of the pseudospectral method. 
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/VerificationStandard}
+	\caption{The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.}
+	\label{fig:VerificationStandard}
+\end{figure}
+
+The final verification step is a forward simulation of each phase. This forward simulation compares the solution state with a simulation which is forward integrated using only the controls of each stage. This is the most stringent method of checking the validity of the solution dynamics. However, it is expected that this verification will have significantly higher errors than the check which verifies the dynamics of each state independently, as the interdependencies of each state come into play, and small errors are compounded. Figure \ref{fig:ForwardErrorStandard} shows the error between the forward simulation and the solution states. As described in Section \ref{sec:verification}, the forward simulation of the return flight is separated into three segments, at 1/6th and 1/3rd of the flight time. The errors in the forward simulation of each stage are observed to be acceptably small, significantly under 1\% in all cases, and it is evident that compounding errors are the cause of the most extreme deviations. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/ForwardErrorStandard}
+	\caption{The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.}
+	\label{fig:ForwardErrorStandard}
+\end{figure}
 
 
 
@@ -284,107 +485,6 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 \end{figure}
 
 
-\chapter{Example and Verification}
-
-\section{GPOPS-2 Example - Brachistochrone Problem}
-
-This section describes a short example of an optimal control problem solved in GPOPS-II. The purpose of this example is to demonstrate the effectiveness of the pseudospectral method and GPOPS-II, and to provide a simple example case to establish the terminology of an optimal control problem.  
-
-
-The brachistochrone (from the Greek for 'shortest time') problem is a simple optimal control problem, which describes a ball rolling in two dimensions under gravity. The objective is to find the curve of descent which will minimise the time from point \textit{a}, where the ball is at rest, to point \textit{b}. It is assumed that gravity is constant and that there is no forces other than gravity acting on the ball. 
-The analytical solution of this problem can be computed using the Euler-Lagrange equation as the equations describing a cycloid:
-
-$x = A(\theta + \sin\theta) $,
-
-$y=A(1 - \cos\theta)$
-
-This problem is included within GPOPS-2 as an example problem, and has been solved to illustrate the GPOPS-2 solution set-up\cite{Rao2010}. Table \ref{tab:brachistochrone} describes the set-up of the optimal control problem in GPOPS-2. The dynamic equations for the Brachistochrone problem are:
-
-$\dot{x} = v*cos(u)$,
-
-$\dot{y} = v*sin(u)$,
-
-$\dot{v} = g*sin(u)$.
-
-\noindent These equations are provided to GPOPS-2 as the time-variant system model in this form. The control variable is set to be the descent angle. The initial constraints are defined to initiate the ball at rest at the origin, and the terminal constraints are defined to terminate the problem at coordinates of [2,2]. The cost is set to minimum time, so that the solution will be the descent angle which minimises the time to get from the initial position, to the end position. 
-
-\begin{table}
-	\centering
-	\begin{tabular}{|c|c|}
-		\hline Primal Variables  & x Position\\& y Position\\& Velocity\\ 
-		\hline Control Variables  & Angle of Descent\\ 
-		\hline Initial Constraints  & Velocity\\ & x Position\\ & y Position\\
-		\hline Terminal Constraints &  x Position\\ & y Position\\
-		\hline Path Constraints & None \\ 
-		\hline Target Cost & Minimum Time \\ 
-		\hline 
-	\end{tabular} 
-	\caption{Optimisation setup of the Brachistochrone problem. }
-	\label{tab:brachistochrone}
-\end{table}
-
-
-The GPOPS-2 solution to the Brachistochrone problem is shown in Figure \ref{fig:Brachistochrone}, matching the analytical solution almost exactly. This is expected in this case, as the dynamics of the basic Brachistochrone problem are very simple. As the dynamics become more complex, it is no longer possible to obtain an analytical solution.  
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.9\linewidth]{figures/4_LODESTAR/Brachistochrone}
-	\caption{The solution to the Brachistochrone problem, solved in GPOPS-2\cite{Rao2010}.}
-	\label{fig:Brachistochrone}
-\end{figure}
-
-\section{Optimised Trajectory Verification}
-
-\textcolor{red}{XXX Add verification here (possiblywith one of maddocks works, or a single stage to orbit, or space shuttle)}
-\textcolor{red}{XXX  this is the section that descibes the error in 'timestep' as requested by reviewer, though there are multiple other factors. 'A Comparison of Accuracy and Computational E ciency of Three Pseudospectral Methods' also uses matlabs ODE45 for error comparison}.
-		
-		\section{Optimised Trajectory Analysis}
-		
-		This section presents an example of the convergence and verification of a trajectory optimised using GPOPS-2, within LODESTAR. The convergence and verification of a maximum payload-to-orbit trajectory solution, with SPARTAN fly-back (Case 11) is shown. 
-		
-	\subsection{Mesh History}
-	
-	\begin{figure}[ht]
-		\centering
-		\includegraphics[width=0.8\linewidth]{../LODESTAR_FINAL/Results/mode11/MeshHistory}
-		\caption{The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). the phases are shown in each subfigure as follows: a) first stage rocket, b) SPARTAN acceleration, c) SPARTAN fly-back and d) third stage.}
-		\label{fig:MeshHistory}
-	\end{figure}
-	The mesh history of the optimal trajectory solution is shown in Figure \ref{fig:MeshHistory}. The mesh is updated by GPOPS-2 in each iteration of the optimal solution. It can be observed that the meshes of the first and third stage rockets contain significantly less node points at the final iteration than the meshes of the SPARTAN's acceleration and return. This is due to the relatively simple dynamics and shorter flight time of the first and third stages. The first stage shows a cluster of nodes at the beginning of its trajectory, in the subsonic, transonic and low Mach regimes. In this region, the aerodynamics are changing rapidly, and the nodes are clustered to accurately capture the dynamic behaviour of the vehicle. After transition occurs to supersonic flight, the aerodynamics and engine performance of the vehicle change more slowly, and the nodes become more widely spaced. In contrast, the acceleration of the SPARTAN shows significant node density throughout. The operation of the SPARTAN is complex, as the dynamics of the vehicle and the performance of the scramjet engines vary significantly, even during relatively level flight. For this reason, the nodes of the return flight show even greater density. The trajectory conditions change significantly as the SPARTAN performs skipping manoeuvres, and transitions through the various return phases, necessitating high node density to capture the vehicle dynamics, particularly between powered and unpowered flight. The trajectories of the SPARTAN also last for a significantly longer time than the rocket trajectories, requiring more total nodes to accurately capture the vehicle dynamics. The third stage shows the least nodes at the final mesh iteration, as the dynamics of the third stage are relatively simple. Some node  clustering is observed in the first part of the trajectory, where the atmospheric density is still significant. 
-	
-		
-		
-		\subsection{Verification}
-		
-		After a trajectory has been calculated, it must be verified to ensure that the optimal control solver has converged correctly. Details on this verification are provided in Section \ref{sec:verification}. Figure \ref{fig:HamiltonianStandard} shows the Hamiltonian time history for the optimised trajectory solution of Case 11. For an optimal solution to be found, the Hamiltonian should be equal to 0 at all points over every phase. In a practical solution, a Hamiltonian close to 0 is acceptable, which is observable over all phases in the optimised solution. The Hamiltonian is close to 0 at all points of the trajectory, indicating that an optimal solution has been found. 
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/HamiltonianStandard}
-			\caption{The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11).}
-			\label{fig:HamiltonianStandard}
-		\end{figure}
-		
-		The next step in the verification process is to ensure that the dynamic constraints of the optimal control problem holds across the entire solution, ie. $\dot{\textbf{x}}(t) = f[t,\textbf{x}(t),\textbf{u}(t)]$. This is the most important step in the verification process, which checks that the optimal control solver has converged correctly, so that the physical dynamics of the vehicle are being correctly represented by the polynomial approximations within GPOPS-2. The dynamic constraints are tested by first calculating the dynamics of each vehicle at every node of the solution, using the vehicle simulations. These dynamics are then integrated over time using trapezoidal integration, starting at the initial conditions of each phase. The integrated dynamics are then compared to the states of the optimised solution. If the dynamic constraints have been satisfied, then the integrated dynamics of the system will be equal to the state variables of the solution. The error in the dynamic constraints of each state are shown in Figure \ref{fig:VerificationStandard}, calculated as the difference between the integrated dynamics and each state variable, normalised to the range of the state variable. 
-		It can be observed that all errors in the dynamic constraints are very small. The error that is present is likely to be due to the inaccuracies of the trapezoidal method, which is significantly less accurate than the approximating polynomials of the pseudospectral method. 
-		
-	
-		
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/VerificationStandard}
-			\caption{The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.}
-			\label{fig:VerificationStandard}
-		\end{figure}
-		
-		The final verification step is a forward simulation of each phase. This forward simulation compares the solution state with a simulation which is forward integrated using only the controls of each stage. This is the most stringent method of checking the validity of the solution dynamics. However, it is expected that this verification will have significantly higher errors than the check which verifies the dynamics of each state independently, as the interdependencies of each state come into play, and small errors are compounded. Figure \ref{fig:ForwardErrorStandard} shows the error between the forward simulation and the solution states. As described in Section \ref{sec:verification}, the forward simulation of the return flight is separated into three segments, at 1/6th and 1/3rd of the flight time. The errors in the forward simulation of each stage are observed to be acceptably small, significantly under 1\% in all cases, and it is evident that compounding errors are the cause of the most extreme deviations. 
-		
-		\begin{figure}[ht]
-			\centering
-			\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/ForwardErrorStandard}
-			\caption{The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.}
-			\label{fig:ForwardErrorStandard}
-		\end{figure}
-		
 		\chapter{Alternate Trajectory Cases}
 		\section{Trajectory with Decreased Third Stage TPS Mass}
 		\textcolor{red}{XXX Add here}
