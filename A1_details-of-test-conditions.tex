@@ -1,15 +1,46 @@
 % details-of-test-conditions.tex
 \chapter{Uncertainties and Simplifications}
 
+\textcolor{red}{XXX change name}
+
+modified version of ingos comments:
+
+This thesis aims to provide new insight into the operability and feasibility of multi-stage launch systems incorporating an air-breathing stage.
+No such launch systems currently exist, and several of the sub-systems necessary for the successful their operation are in the research stage of development.
+This means that that reliable performance data is not available, and the predicted performance (i.e. payload to orbit) will be affected by design and modelling error, resulting in a variation of achievable performance. 
+The aim of this chapter is to apply a systematic approach to develop an understanding of how these variations may affect the performance of the launch system. These variations have been separated into two categories; design choices, variability that can be controlled by a designer; and modelling accuracy, uncertainty introduced by modelling assumptions and simplifications. To explore these we need to consider firstly what a realistic design process would look like and secondly how the vehicle flight simulations, performed using Pseudo-Spectral methods, are different to realistic flight. 
 
 
-This chapter aims to aid the reader in understanding the uncertainties and simplifications associated with the representative launch system in this work. 
-This chapter is delineated into two distinct parts, with the purpose of differentiating the simplifications and assumptions in the design of the representative launch system, and the uncertainties introduced throughout the aerodynamic and propulsion modelling that have a direct impact on the performance of the launch system as designed. 
 
-The design of the launch system in this work is simplified because there is currently no rocket-scramjet-rocket systems past the initial design phase, and because an in-depth design study is beyond the scope of this work. The launch system in this work has been modelled to a fidelity capable of producing useful and indicative maximum payload-to-orbit optimised trajectory results, however, the practical trajectory of a rocket-scramjet-rocket launch system may be limited by design factors that are not considered in the modelling of the launch system in this work. The primary design simplifications that may have a significant impact on the trajectory of the launch system are discussed, along with the possible limitations or variations that they may cause on the trajectory of a launch system of this type. These limitations are strongly interconnected with the design of the launch system, and must be considered in an in-depth launch system design study, which is outside the scope of this work. 
+The design process is considered in this analysis as the stage where the vehicle designers set the vehicle geometry, structure, and internal layout, defining the mass, mass-distribution, and the nominal aerodynamic performance of the vehicle. In this work the design process is necessarily simplified, and it is assumed that by making appropriate design choices the nominal vehicle can be constructed (i.e. it is assumed that the designer can achieve the nominal design by selecting appropriate materials and layouts), and that the nominal vehicle is capable of flying an appropriate launch trajectory. For this stage a parameter by parameter sensitivity study is conducted, to provide an understanding of how the design factors of the launch system impact on the performance of the launch system and the shape of the optimised trajectory. 
 
-Though the estimation of the limitations and variations arising from the launch system design is outside the scope of this work, the uncertainty margins of the aerodynamics and propulsive properties of the representative launch system are modelled.
- Uncertainties in the simulation of the launch system arise due to the methods used to generate the aerodynamic and propulsive data models, which are by necessity low and medium-fidelity. The uncertainty margins of the models used in this work are discussed, and the impact of the uncertainties on the calculated payload-to-orbit of an optimised trajectory is estimated.
+
+
+The second aspect to consider is the difference between the actual launch system and the "as-designed" nominal launch system, due to uncertainties inherent to the modelling assumptions in the aerodynamics and propulsion modelling of the launch system. As the designer has no direct control over these variations between the "as-designed" and actual vehicle, we need to rely on a-priori experience and a stochastic approach to quantify how the variations may affect the ultimate performance of the vehicle. To consider this effect we conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise "known" vehicle. 
+
+
+Using this two stage approach we can indicate the effects of design choices, which will evolve as partially-airbreathing, multi-stage access to space systems move from the preliminary to detailed design, and delineate these from uncertainties that arise due to errors/simplifications inherent to modelling vs real flight. In effect, even the most detailed designs will still suffer from the same modelling uncertainties (though with reduced margins) as analysed. 
+
+
+
+
+
+Caveat Statement:
+
+Due to applying the pseudo-spectral approach to simulate and optimise the trajectory, we assume that the entire aerodynamics performance is known prior to flight. This is different to what an actual control system would do, which must respond to over/under performance on the fly. It is expected that much of this discrepancy could be compensated though applying Model Predictive Control to re-evaluate the optimal trajectory during the flight. Exploring this further is one of the items identified under future work.
+
+note: maybe add this to control section? I think ive taken this into account by mentioning the trajectory above
+
+note:I should maybe do a variation of just the return drag - "the performance of the launch system may be significantly different on the ascent and return trajectories (in addition to the engine flowpaths)"
+
+% my first draft:
+%This chapter aims to aid the reader in understanding the uncertainties and simplifications associated with the representative launch system in this work. 
+%This chapter is delineated into two distinct parts, with the purpose of differentiating the simplifications and assumptions in the design of the representative launch system, and the uncertainties introduced throughout the aerodynamic and propulsion modelling that have a direct impact on the performance of the launch system as designed. 
+
+%The design of the launch system in this work is simplified because there is currently no rocket-scramjet-rocket systems past the initial design phase, and because an in-depth design study is beyond the scope of this work. The launch system in this work has been modelled to a fidelity capable of producing useful and indicative maximum payload-to-orbit optimised trajectory results, however, the practical trajectory of a rocket-scramjet-rocket launch system may be limited by design factors that are not considered in the modelling of the launch system in this work. The primary design simplifications that may have a significant impact on the trajectory of the launch system are discussed, along with the possible limitations or variations that they may cause on the trajectory of a launch system of this type. These limitations are strongly interconnected with the design of the launch system, and must be considered in an in-depth launch system design study, which is outside the scope of this work. 
+
+%Though the estimation of the limitations and variations arising from the launch system design is outside the scope of this work, the uncertainty margins of the aerodynamics and propulsive properties of the representative launch system are modelled.
+ %Uncertainties in the simulation of the launch system arise due to the methods used to generate the aerodynamic and propulsive data models, which are by necessity low and medium-fidelity. The uncertainty margins of the models used in this work are discussed, and the impact of the uncertainties on the calculated payload-to-orbit of an optimised trajectory is estimated.
  
 
 
@@ -96,7 +127,7 @@ The uncertainties in the propulsive and aerodynamic properties of the launch sys
 
 %\subsubsection{Uncertainties Associated With Cart3D}
 
-%-add 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' and maybe others?
+%-add 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' and maybe others? - its too hard to estimate the values from almosnino.. sagerman only gives some specific pressure results, 
 
 %\textcolor{red}{XXX I need to make sure this isnt contradicting my lit review at all, and should repeat some of this in my lit review.}
 
@@ -105,13 +136,25 @@ The uncertainties in the propulsive and aerodynamic properties of the launch sys
 The aerodynamic coefficients of the first and second stages in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle, particularly at subsonic and transonic conditions. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously compared Cart3D with experimental data for a number of geometries, at various flight conditions. These experimental comparisons are  utilised to estimate the uncertainty arising in the aerodynamic coefficients due to the use of Cart3D.
 
 %\textcolor{red}{XXX be really careful here, the reviewer will know this paper inside out}
-Abeynayake \& Agon assess two missile geometries; a conventional missile, and a non-conventional missile that has a cruise missile profile and includes small wings\cite{Abeynayake2013a}. The study by Abenayake and Agon estimates the magnitude of the uncertainty of Cart3D in a comparison to experimental results, although no viscous correction is included, and so the lack of a viscous component significantly affects the aerodynamic coefficients, particularly drag. The uncertainty magnitudes are estimated in relative error, normalised by the average value of data points between 0$^\circ$ and 10$^\circ$ angle of attack for drag, or the value at 10$^\circ$ angle of attack in the case of the lift and pitching moment coefficients\cite{Abeynayake2013a}. It is noted that these relative errors only give an indication of the accuracy of a specific tool\cite{Abeynayake2013a}. It is found that when compared to experimental results, Cart3D has a mean error in drag of 31.3\% for subsonic, 23.5\% for supersonic, and 18.0\% for transonic cases\cite{Abeynayake2013a} when compared to wind tunnel data for the non-conventional missile at angle of attack values between -10$^\circ$ and 10$^\circ$ in the subsonic regime, and the conventional missile at angles of attack of 0$^\circ$ to 10$^\circ$ in the transonic and supersonic regimes. The error in lift was found to be 16.5\% for subsonic, 1.3\% for supersonic, and 28.7\% for transonic cases\cite{Abeynayake2013a}, and the error in pitching moment 22.0\% for supersonic and 67.1\% for transonic cases, with no subsonic error given\cite{Abeynayake2013a}.
+Abeynayake \& Agon assess two missile geometries; a conventional missile at transonic and supersonic speeds, and a non-conventional missile that has a cruise missile profile and includes small wings at subsonic speeds\cite{Abeynayake2013a}. The study by Abenayake and Agon estimates the magnitude of the uncertainty of Cart3D in a comparison to experimental results, although no viscous correction is included, and so the lack of a viscous component significantly affects the aerodynamic coefficients, particularly drag. The uncertainty magnitudes are estimated in relative error, normalised by the average value of data points between 0$^\circ$ and 10$^\circ$ angle of attack for drag, or the value at 10$^\circ$ angle of attack in the case of the lift and pitching moment coefficients\cite{Abeynayake2013a}. It is noted that these relative errors only give an indication of the accuracy of a specific tool\cite{Abeynayake2013a}. It is found that when compared to experimental results, Cart3D has a mean error in drag of 31.3\% for subsonic, 23.5\% for supersonic, and 18.0\% for transonic cases\cite{Abeynayake2013a} when compared to wind tunnel data for the non-conventional missile at angle of attack values between -10$^\circ$ and 10$^\circ$ in the subsonic regime, and the conventional missile at angles of attack of 0$^\circ$ to 10$^\circ$ in the transonic and supersonic regimes. The mean relative error in lift was found to be 16.5\% for subsonic, 1.3\% for supersonic, and 28.7\% for transonic cases\cite{Abeynayake2013a}, and the error in pitching moment 22.0\% for supersonic and 67.1\% for transonic cases, with no subsonic error given\cite{Abeynayake2013a}.
 In this comparison study Cart3D was not able to match experimental trends closely in the subsonic and transonic regimes. Errors of up to 80.2\% in drag are observed in the subsonic regime for an unconventional missile geometry\cite{Abeynayake2013a}, although the drag error diminishes significantly at angle of attack values between -5$^\circ$ and 5$^\circ$. In the supersonic regime, Cart3D appears to closely match the experimental lift and drag trends, with an underprediction in the magnitude of the drag forces due to the absence of viscous forces. 
 Cart3D had poor results when computing pitching moment, although it was occasionally able to match the magnitude of the pitching moment well Cart3D was not able to match the experimental pitching moment trends for either vehicle\cite{Abeynayake2013a}. The work by Abeynayake \& Agon indicates that the uncertainties associated with Cart3D are significant, particularly at angle of attack values greater than 5 in the subsonic and transonic regimes, and that it does not estimate pitching moment trends well. However, a portion of the uncertainty magnitudes are associated with the inviscid nature of Cart3D, particularly in the drag forces.
 
 
 A study by Ward et al.\cite{Ward2018} compares Cart3D results to experimental results for a blunt body at hypersonic speeds, a lifting body vehicle at subsonic and supersonic speeds, and a hypersonic accelerator test geometry at hypersonic speeds. Ward et al. provide a method for viscous correction of the Cart3D results, and also compare this with experimental results, focusing on the amount that drag error is able to be corrected. In this study Cart3d was found to predict trends drag coefficients well for all tested cases both subsonic and supersonic, although with a consistent underprediction of 15-25\% in drag coefficient due to a lack of viscous effects\cite{Ward2018}. When corrected for viscous effects, the drag coefficient was found to agree closely with the experimental results at supersonic and hypersonic speeds, with error reducing to less than 10\% for the hypersonic accelerator test vehicle, and less than 11\% for the lifting body at supersonic speed\cite{Ward2018}. Drag error at high angles of attack at subsonic speeds was still found to be large, at 38\%, however, at angles of attack under 5$^\circ$ the error reduced significantly, matching the experimental results to within 16\%. 
 The Euclidean correction method outlined by A. Ward was utilised to correct the inviscid aerodynamic coefficients in this study, with viscous aerodynamics provided by A. Ward for this work. 
+
+
+These two studies are used to inform the uncertainty margins in the aerodynamics of the first and second stages of the representative launch system. Note that while the values reported by Abeynayake \& Agon\cite{Abeynayake2013a} are non-dimensionalised relative accuracies, it is assumed here that the values reported somewhat indicate the accuracy of Cart3D. 
+For the lift uncertainties and the pitching moment at in the transonic and supersonic regimes, the uncertainty values are taken directly from the mean relative accuracies reported by Abeynayake \& Agon\cite{Abeynayake2013a}. The pitching moment error in the subsonic regime is not stated, so the average relative error for all Cart3D coefficients at subsonic speeds, 23\%, is used.
+The subsonic uncertainty in the drag is estimated at a nominal value of 20\%, accounting for reduced uncertainty due to the low angle of attack of the launch system at subsonic speeds, which is shown to reduce error significantly.
+This value is based primarily on the uncertainty determined by Ward et al.\cite{Ward2018} in the low subsonic regime at low angles of attack, with a slight increase due to the high uncertainties that are observed by Abeynayake \& Agon\cite{Abeynayake2013a}, which do not show evidence of a consistent trend due to a lack of viscous effects, though are again significantly reduced at low angles of attack. 
+In the transonic case, Abenayake and Agon find that Cart3D is not capable of predicting the trends of the aerodynamic data well\cite{Abeynayake2013a}.
+For this reason, the drag uncertainty in the transonic regime is set to 18\%, to match the mean value reported by Abenayake and Agon\cite{Abeynayake2013a}, as it is not evident that the lack of a viscous drag component produces a clear trend, and no corrected transonic cases are available. In the supersonic regime the ability of Cart3D to predict drag improves, and the lack of viscous effects causes an underprediction in drag while still matching experimental trends when uncorrected\cite{Abeynayake2013a,Ward2018}. The uncertainty in drag in the supersonic regime is set to 11\%, to match the maximum error observed after viscous correction by Ward et al.\cite{Ward2018}, assuming that the consistent underprediction observed by Abeynayake \& Agon\cite{Abeynayake2013a} is primarily due to a lack of viscous effects.
+
+
+
+
 
 
 
@@ -126,7 +169,7 @@ The Euclidean correction method outlined by A. Ward was utilised to correct the 
 
 The aerodynamic properties of the third stage rocket are calculated using Missile Datcom, a low fidelity, semi empirical analysis tool. Missile Datcom is based on a component build-up method, and is primarily designed for analysis of missiles composed of basic geometric shapes\cite{Abeynayake2013a}. As the third stage rocket is flying at high Mach numbers for the entirety of its trajectory, only validation cases with supersonic Mach numbers are considered to estimate uncertainty margins. 
 
-In the same study used to identify the uncertainties associated with Cart3D, Abeynayake \& Agon assess Missile Datcom at Mach 4.5 for the conventional missile design\cite{Abeynayake2013a}. Missile Datcom was observed to provide reasonable estimates of lift and drag values, with a mean uncertainty values of 17.5\% for drag, and 7.5\% for lift in the supersonic regime. However, Missile Datcom was not observed to provide a good estimate of pitching moment in the supersonic regime, with a 42.5\% mean error. The centre of pressure and associated errors are not stated. 
+In the same study used to identify the uncertainties associated with Cart3D, Abeynayake \& Agon assess Missile Datcom at Mach 4.5 for the conventional missile design\cite{Abeynayake2013a}. Missile Datcom was observed to provide reasonable estimates of lift and drag values, with mean relative uncertainty values of 17.5\% for drag, and 7.5\% for lift in the supersonic regime. However, Missile Datcom was not observed to provide a good estimate of pitching moment in the supersonic regime, with a 42.5\% mean error. The centre of pressure and associated errors are not stated. 
 
 A study by Sooy and Schmidt\cite{Sooy2005} compares Missile Datcom with wind tunnel data for a variety of missile configurations. 
 The results for missile Datcom comparisons in the study by Sooy and Schmidt are mixed\cite{Sooy2005}.
@@ -134,14 +177,16 @@ For a missile with wing-body and tail configuration similar to the Sparrow\rom{3
 A body-tail configuration is investigated, exhibiting good agreement between Missile Datcom and experimental data, with errors within 4\% for normal force coefficient, 4\% for pitching moment error, and 2\% for centre of pressure location. No axial force coefficients are compared for this geometry\cite{Sooy2005}.
 For a body-flare configuration at Mach 2.01 up to 30$^\circ$ angle of attack normal and axial force coefficients have predicted errors of within 13\% and approximately 26\%. The pitching moment coefficient has a maximum error of approximately 87\%, and the centre of pressure has a maximum error of approximately 49\%\cite{Sooy2005}. These errors are large, and are caused by a shift in the wind tunnel data around 10$^\circ$ angle of attack that is not elaborated upon\cite{Sooy2005}. 
 A body-tail configuration at Mach 2.01 exhibits maximum errors in normal force and pitching moment coefficients both under 11\%, and a maximum centre of pressure location error of less than 1\%\cite{Sooy2005}. 
-large axial coefficient exhibited in this case, with maximum error of approximately 26\% and 65\% respectively\cite{Sooy2005}.
+large axial coefficient exhibited in this case, with maximum error of approximately 65\%\cite{Sooy2005}.
 Overall it is suggested that Missile Datcom generally struggles with predicting axial force coefficients\cite{Sooy2005}.
-Note that two case studies from Sooy and Schmidt were not assessed from the study by Sooy and Schmidt, one of which had large aerodynamic surfaces with large errors, that is omitted due to its complex geometry and large lifting surfaces that are assessed as particularly problematic for Missile Datcoms centre of pressure prediction\cite{Sooy2005}, and a body alone configuration that was assessed to have inconclusive error calculations\cite{Sooy2005}. 
+Note that two case studies were not assessed from the study by Sooy and Schmidt, one of which had large aerodynamic surfaces with large errors, that is omitted due to its complex geometry and large lifting surfaces that are assessed as particularly problematic for Missile Datcoms centre of pressure prediction\cite{Sooy2005}, and a body alone configuration that was assessed to have inconclusive error calculations\cite{Sooy2005}. 
 
 
 Dunn\cite{Dunn1989} compares the aerodynamic properties predicted by Missile Datcom to experimental data for a variety of projectile shapes and observes that drag force prediction becomes less accurate as the configuration geometry becomes more complex\cite{Dunn1989}. The study by Dunn\cite{Dunn1989} is of limited use for determining the accuracy of normal force coefficients, as normal force curve slopes at 0$^\circ$ are generally analysed rather than normal or lift coefficients. However, of interest is the axial force coefficients of a spinner geometry, a simple low-curvature ogive nose-cylinder geometry generally similar to the third stage rocket of the representative launch system. This spinner is investigated at 0$^\circ$ angle of attack over a range of Mach numbers from 0.6 to 4.0. Lift coefficients are not directly investigated, though drag coefficients are compared, showing agreement between Missile Datcom and experimental data within approximately 18\% over the range of Mach numbers investigated. 
 
-From these experimental comparisons it is evident that Missile Datcom is able to predict normal forces reasonably closely. However, there is variation in the accuracy of predicted pitching moment and centre of pressure locations, and overall Missile Datcom is poor at estimating axial forces. 
+From these experimental comparisons it is evident that Missile Datcom is able to predict normal forces reasonably closely. However, there is variation in the accuracy of predicted pitching moment and centre of pressure locations, and overall Missile Datcom is poor at estimating axial forces. The uncertainties in Missile Datcom are taken to be the mean of the available error data, assuming that the lift and drag errors observed by Abeynayake \& Agon approximately correspond to normal and axial errors respectively, due to the relatively low angles of attack investigated. With this assumption, the mean axial error from the compared tests is 34.5\%, and mean normal force error is 8.9\%. When calculating pitching moment, the large pitching moment error of 87\% observed in the body-flare configuration tested by Sooy and Schmidt\cite{Sooy2005} is excluded, due to being the result of an unknown anomaly. Without this, the mean pitching moment error is calculated as 17.4\%.
+
+
 
 \subsection{Propulsion System Uncertainties}
 
@@ -150,17 +195,20 @@ From these experimental comparisons it is evident that Missile Datcom is able to
 
 \subsubsection{The Rocket Engines}
 The propulsive properties of the rocket engines that power the first and third stages of the launch system are taken from the Falcon 1 Launch Vehicle Payload User's Guide\cite{Vehicle2008}, a document released by SpaceX that does not contain detailed information as to how the engine properties are calculated. It is assumed that the properties of the engines presented by SpaceX have been measured experimentally, and that the primary uncertainties associated with the rocket engine properties are experimental uncertainties. With no knowledge of the experimental facilities or processes used, it is necessary to estimate the experimental uncertainty through analysis of other experimental facilities, information that is generally sparse. Davidian, Diek and Chuang\cite{Davidian1987} assess the specific impulse uncertainty associated with high area ratio rocket tests at NASA Lewis Research centre, by propagating an "exhaustive" list of possible error sources. The test facility was found to be capable of measuring specific impulse to within 1.30\%, thrust to within 1.12\%, and mass flow rate to within 0.72\%. These propagated uncertainty values assumed that there was no bias errors, and that calibration was perfectly carried out prior to testing. 
+The uncertainty in the specific impulse of 1.30\% is used as the rocket engine performance uncertainty for the purposes of this study. 
 
 %\textcolor{red}{XXX Im lacking practical knowledge with this one}
 \subsubsection{The Scramjet Engine}
-\textcolor{red}{I have some comparisons with experimental results from "Shock Tunnel Experiments with a Mach 12 {REST} Scramjet at Off-Design Conditions" and "Quasi-One-Dimensional Model of Hydrogen-Fueled Scramjet Combustors". These are comparisons of the internal dynamics of the engine and I have not yet thought of how best to synthesise these into thrust or mass flow rate uncertainties. }
+%\textcolor{red}{I have some comparisons with experimental results from "Shock Tunnel Experiments with a Mach 12 {REST} Scramjet at Off-Design Conditions" and "Quasi-One-Dimensional Model of Hydrogen-Fueled Scramjet Combustors". These are comparisons of the internal dynamics of the engine and I have not yet thought of how best to synthesise these into thrust or mass flow rate uncertainties. }
 
-%--he points out it hasnt been validated against an 'operational' engine, so maybe include some discussion about how its only been validated against test engines?
+--he points out it hasnt been validated against an 'operational' engine, so maybe include some discussion about how its only been validated against test engines?
 %-ive got a couple of papers about quasi 1d validation for scramjets
 
 
+from ingo: -no flight datas for scramjet is an issue - be clear about this. say that there is no availsbl;e flight test data in the public doain. in the absence of clear data an uncertainty of 25\%? it is plausible that this may be larger. maybe have section eploring lower limit on engine.
+-ask michaael if crest database has experiomental results- ingo thinks that 1D ANalysis is tuned using ground test data. In this case it doesnt make much sense to work out uncertainty from ground test data.
 
-
+Ingo says that I might need to ballpark a number, say 25\%, but that it could be much higher, even 50\% in his optinion. I will need to be very clear here. 
 
 
 
@@ -168,23 +216,24 @@ The propulsive properties of the rocket engines that power the first and third s
 
 
 \subsubsection{Quantification of Uncertainty Magnitudes}
+%\textcolor{red}{XXX Dont say 'engineering judgement'-ingo}
 
-The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been applied based on the errors described in the studies analysed in the preceding sections adjusted using engineering judgement. As a correction was applied for viscous effects, the uncertainty margins in Cart3D derived drag properties are based heavily on the work by Ward et al.\cite{Ward2018}, though with the magnitude of the uncertainty increased slightly due to the drag uncertainties observed by Abenayake and Agon\cite{Abeynayake2013a}, which are higher than those observed by Ward et al. even accounting for viscous effects.
-The subsonic uncertainty in the lift and drag are set to a nominalk value 20\%. This value accounts for reduced uncertainty due to the low angle of attack of the launch system at subsonic speeds, though takes into account the complexity of the representative launch system, which is likely to increase the error in the modelled aerodynamics.
+The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been applied based on the errors described in the studies analysed in the preceding sections adjusted using . 
 
-\textcolor{red}{This is an example, I am not sure if it is appropriate to use an estimated value or if I should take a value directly from one of the experimental comparisons.}
+-note that it is assumed that only the moments on the spartan are affected, and not the flaps
 
 
 \begin{tabular}{|c|c|c|c|}
 	\hline  Parameter & Subsonic Uncertainty & Transonic Uncertainty  & Supersonic/Hypersonic Uncertainty \\ 
-	\hline  SPARTAN/First Stage $C_L$ & 20\% &  &  \\  
-	\hline  SPARTAN/First Stage $C_D$ & 20\% &  &  \\  
-	\hline  SPARTAN/First Stage $X_{CP}$ &  &  &   \\ 
-	\hline  SPARTAN/First Stage $T$ &  &  &   \\ 
-	\hline  Third Stage $C_L$ &  &  &  \\ 
-	\hline  Third Stage $C_D$ &  &  &  \\ 
-	\hline  Third Stage $X_{CP}$ &  &  &   \\ 
-	\hline  Third Stage $T$ &  &  &   \\ 
+	\hline  First Stage $I_{SP}$ & 1.3\% & 1.3\% &  1.3\% \\ 
+	\hline  SPARTAN/First Stage $C_L$ & 16.5\% & 28.7\% & 1.3\% \\  
+	\hline  SPARTAN/First Stage $C_D$ & 20\% & 18\% & 11\% \\  
+	\hline  SPARTAN/First Stage $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
+	\hline  SPARTAN $I_{SP}$ & - & - &  25\% \\ 
+	\hline  Third Stage $C_a$ & - & - &  34.5\% \\ 
+	\hline  Third Stage $C_n$ &  -& - & 8.9\% \\ 
+	\hline  Third Stage $C_M$ & - & - & 17.4\%  \\ 
+	\hline  Third Stage $I_{SP}$ & - & - & 1.3\%  \\ 
 	\hline 
 	\label{tab:AppendixUncertainty}
 \end{tabular}
@@ -262,7 +311,8 @@ The GPOPS-2 solution to the Brachistochrone problem is shown in Figure \ref{fig:
 
 
 
-\textcolor{red}{\section{Example - Shuttle Reentry}}
+\textcolor{red}{\section{Example - Space Shuttle Reentry}}
+\textcolor{red}{XXX I havent been able to find any good trajectories for comparison, that offer me the ability to recreate them..}
 
 This section describes an optimised shuttle reentry trajectory problem, taken from the textbook 'Practical Methods for Optimal Control and Estimation Using Nonlinear Programming' by Betts\cite{Betts2009}, which has been simulated in GPOPS-2 to illustrate the capabilities of GPOPS-2 when applied to a complex aerodynamic problem of an existing vehicle. The optimisation of the space shuttle reentry is relevant due to the large flight regime and long time period being simulated, which leads to a complex, extremely sensitive optimal control problem\cite{Betts2009}, similar in a simplified manner to the problem being solved in this work. The shuttle reentry problem is highly nonlinear and intractable to simple optimisation methods\cite{Betts2009}, making it suitable for illustrating the robustness of GPOPS-2 for aerospace problems of this type. 
 The space shuttle reentry problem aims to maximise crossrange during reentry, with two cases; unconstrained, and limited by a simple heating rate constraint. The example in this section uses the vehicle model exactly as defined by Betts\cite{Betts2009} for comparison purposes, however the problem is formulated in a simplified version of the coordinate system that is used in the rest of this work. 
@@ -323,13 +373,13 @@ J = -\phi_f.
 The shuttle rentry crossrange maximisation problem is optimised in GPOPS-2, with result time histories shown in Figures \ref{fig:SpaceShuttleNoq1} and \ref{fig:SpaceShuttleNoq2}. The shuttle follows a 'skipping' trajectory, with an initially large bank angle that changes the heading of the vehicle rapidly in the early stages of reentry. The skips serve to maximise the range of the space shuttle's flight, and they are controlled by the angle of attack of the vehicle. The solution computed in GPOPS-2 matches the result computed by Betts\cite{Betts2009}, with the shape of the trajectories being close to identical. A maximum crossrange of 34.18$^\circ$ is achieved, a difference of 0.11\% when compared to the solution computed by Betts\cite{Betts2009}. This result is indicative of the ability of GPOPS-2 to compute highly sensitive optimal control problems for aerospace vehicles. 
 
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleNoq1}
 \caption{}
 \label{fig:SpaceShuttleNoq1}
 \end{figure}
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleNoq2}
 \caption{}
@@ -342,13 +392,13 @@ The shuttle rentry crossrange maximisation problem is optimised in GPOPS-2, with
 The heating rate of the space shuttle is limited during descent, to illustrate the ability of GPOPS-2 to deal with complex inequality constraints. The leading edge heating is approximated using a simplified empirical model, so that $q = q_aq_r$, where $q_r = 17700\sqrt{\rho}(0.0001v)^{3.07}$ and $q_a = 1.0672181 -0.19213774\times10^{-1}
 \alpha + 0.21286289\times10^{-3}\alpha^2 -0.10117249\times10^{-5}\alpha^3$. The trajectory is successfully optimised in the presence of this complex inequality, once again showing a near identical trajectory to the optimised solution calculated by Betts\cite{Betts2009}. The maximum crossrange is reduced to 30.70$^\circ$, a difference of 0.25\% to the solution calculated by Betts\cite{Betts2009}.
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleq1}
 \caption{}
 \label{fig:SpaceShuttleq1}
 \end{figure}
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleq2}
 \caption{}
@@ -356,7 +406,7 @@ The heating rate of the space shuttle is limited during descent, to illustrate t
 \end{figure}
 
 \subsection{Increased Fidelity Model Result}
-
+-using higher fidelity aerodynamics, and a rotating, oblate earth
 
 
 \section{Optimised Trajectory Verification}
