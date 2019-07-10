@@ -7,6 +7,8 @@
 
 \textcolor{red}{XXX I need to be clear when I am looking at pull-ups that these were limited by the designs, and that this study wants to investigate an optimised trajectory without this. Tie this together with later discussion on my calculated pull-up and how it relates to previous optimal pull-ups. Differentiate between an optimised pull-up, and a hard limited pull-up}
 
+\textcolor{red}{XXX I should frame this section better from the start, give more context in this intro section (which must be changed anyway). I should give more details on why I am focussing on particular aspects of the trajectories, and relate the things that I look at in this section to the work that I've done eg why am I looking at optimal control and exergy analysis.}
+
   This chapter examines the relevant literature associated with the different aspects of the work conducted as part of this thesis. A brief overview of the theory behind scramjet engines is presented, followed by surveys of the current state of small satellite and reusable launch systems. Next, various conceptual airbreathing launch systems are presented, along with the trajectories and return flights which have been simulated for these systems, with particular emphasis on whether the trajectories were optimised or not. The SPARTAN scramjet-powered accelerator is detailed, followed by a review of the design of the third stage rocket. The theory behind optimal control methods is presented, followed by a survey into currently available optimal control solvers.
   Lastly, an overview of various aerodynamic modelling methods with emphasis on applicability to preliminary design is detailed. 
   
@@ -18,141 +20,6 @@
   
   
   
-  \section{Scramjets}
- 
-
-  \textcolor{red}{XXX I should reorder this, and make larger, more coherent sections. Maybe put scramjets section in front of airbreathing launchers, and have large sections like: current state of the launch industry / airbreathing launch system design background / technical background}
-  
- 
-  
-  
-  A Scramjet, or supersonic combustion ramjet, is an airbreathing engine design which combusts air at supersonic speeds and is capable of high Mach number operation. 
-      Across their operating range, scramjets offer much higher specific impulse than rockets, the only other propulsion system capable of operating efficiently at hypersonic speeds\cite{Billig1993,Cook2003}.
-        Scramjets compress air without moving parts, using geometry changes within the engine\cite{Curran2001a}, as well as on the forebody of the vehicle to create inlet shocks which provide the compression required for combustion\cite{Smart2012}. After combustion, the combustion products are expanded through a thrust nozzle, shown in Figure \ref{fig:scramjet}. This is similar in operation to a ramjet engine, though a scramjet does not generate a normal shock, allowing supersonic air to enter the combustor. Maintaining supersonic speeds throughout the engine allows scramjets to operate efficiently at Mach numbers of 5 and greater. 
-        Scramjets were proposed in the 1940's\cite{Curran2001} and found to be capable of positive net thrust in 1993\cite{Paull1993}, but have yet to be developed to a level which would allow for commercial application. 
-        Though scramjets are still in-development, the potential advantages which they offer over rockets for certain applications are driving their development in a number of institutions\cite{Curran2001b}.
-   \begin{figure}[ht]
-   	\centering
-   	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/scramjet}
-   	\caption{A simple schematic of a scramjet engine\cite{Heiser1994}.}
-   	\label{fig:scramjet}
-   \end{figure}
-   
-   Scramjet engines are suitable for a number of applications where sustained flight or acceleration is desired at high Mach numbers. 
-   The high efficiency of scramjet engines means that significantly less propellant (fuel + oxidiser) is used during flight compared to rocket engines, and consequently, that a much smaller fraction of a scramjet-powered vehicle consists of fuel mass\cite{Curran2003}. 
-   The smaller fuel mass fraction of a vehicle powered by scramjet engines mitigates the mass of the vehicle systems, allowing features such as wings, control surfaces, landing gear, and passenger transport capabilities to be included in the vehicle design\cite{Curran2003}. 
-   
-      \begin{figure}[ht]
-      	\centering
-      	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/Scramjet-Efficiency}
-      	\caption{Characteristic performance for airbreathing and rocket engines with Mach number\cite{Fry2004}.}
-      	\label{fig:Scramjet-Efficiency}
-      \end{figure}
-
- Theoretically, the operable range of scramjets is wide\cite{Smart2007a}; the specific impulse of a scramjet decreases with velocity, until it is equal to rockets around Mach 19\cite{Fry2004}, as shown in Figure \ref{fig:Scramjet-Efficiency}. 
- However, in practical designs, the operating range for a scramjet engine is far more limited. 
- For a fixed geometry scramjet, the operable region is constrained by the geometries of the forebody of the vehicle, the inlet, and the combustor of the scramjet engine\cite{Smart2010}.  
-The Mach number range of a scramjet engine varies by design, but Mach number ranges of 5-10\cite{Preller2017b}, 7-11\cite{Dalle2014} and 6-10\cite{Bradford2000} have been suggested as appropriate operable regimes for scramjet-powered launch vehicles.
-  The operable range of scramjet engines can be improved with mechanisms to vary the geometry of the inlet during flight\cite{Dalle2011}. However, the systems necessary for variable geometry inlets add weight and complexity to the scramjet engine, and can be detrimental to overall system performance\cite{Smart2010}. 
-  
-
-  
-  
- 
-
-
-  
-  
-  
-  \section{Reusable Rocket-Powered Satellite Launch Systems}
-   
-   \begin{figure}[ht]
-   	\centering
-   	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/LaunchVehicles}
-   	\caption{Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite{BlueOrigin}.}
-   	\label{fig:LaunchVehicles}
-   \end{figure}
-  
-  Launch system technologies have progressed rapidly over the last 60 years. From the early vehicles based on intercontinental ballistic missile technology such as the Thor based launch systems, capable of launching 40-400kg to LEO in the 1960s, to the more modern Atlas V based systems of the 2000s capable of launching 9750-18500kg to LEO\cite{Kendall2010}. 
-  The materials, propulsion technology, aerodynamics and guidance algorithms have all improved significantly, enabling  rockets to become more efficient, cheaper to produce, and more reliable. As the demand for satellite launches grows, and the cost of development of launchers becomes cheaper, the potential for profiting from space launches increases. 
-  This has driven a large portion of the space flight industry to move towards privatisation, with a heavy focus on reusable technology. 
-    \begin{figure}[ht]
-    	\centering
-    	\includegraphics[width=1\linewidth]{"figures/2_literature-review/FalconTrajectory"}
-    	\caption{The trajectory of the Falcon Heavy\cite{FalconHeavy}.}
-    	\label{fig:FalconTrajectory}
-    \end{figure}
-    
-  Reusable launch technology has been possible for many years, in the form of the space shuttle. However, the space shuttle was weighed down by large launch costs and operational complexity, and was not a commercial success\cite{Launius2006}. Recently, reusable launchers have become the focus of many of the largest private launch companies, as reusability becomes more achievable due to technological advances\cite{Foust2018,Mosher2018}. The SpaceX Falcon 9 and Falcon Heavy have been demonstrated on multiple occasions, landing booster stages successfully, and re-flying reused boosters multiple times\cite{Foust2018}. In the near future the Blue Origin New Glenn is planned\cite{Foust2018}, with potentially the Airbus Adeline to follow (to be used on the Ariane 6)\cite{Adeline}. The Falcon and New Glenn rockets are shown in Figure \ref{fig:LaunchVehicles}, and the trajectories of the Falcon Heavy and Adeline are shown in Figures \ref{fig:FalconTrajectory} and \ref{fig:visuel_adeline1}.  
-
-  
- 
-  
-  
-  
-  \begin{figure}[ht]
-  	\centering
-  	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/visuel_adeline1}
-  	\caption{The trajectory of the Ariane featuring Adeline\cite{Adelineb}.}
-  	\label{fig:visuel_adeline1}
-  \end{figure}
-  
-       The aim of reusing launch vehicles is to reduce the cost-over-time of the reused components drastically, which subsequently allows the cost of individual launches to be reduced\cite{RichardWebb2016}. Reducing costs lowers the barrier of entry for space launches, potentially improving the diversity of space-based enterprises. 
-       Reusing launch system components also allows faster turnaround times for launches, as refurbishment of stages is much faster than manufacturing stages from scratch. Reduced turnaround times are key for improving mission scheduling, allowing satellites to be launched more rapidly, on a more flexible time frame. 
-  
-  For a launch vehicle to be reusable, it must necessarily have the ability to come back to Earth safely, without damage to major system components. In addition, it is preferable for the vehicle to return to its initial launch site, to reduce the cost and time necessary for transport. This return flight requires the addition of system components which allow the reusable stage to fly to a specified landing point. Control surfaces\cite{Clark2018}, structural components\cite{Sarigul2003}, additional fuel\cite{Sarigul2003}, and in the case of the Adeline, additional engines\cite{Adeline}, must be incorporated within a reusable launch vehicle design. The additional weight that these components contribute further increases the fuel and structural mass necessary to initially accelerate the reusable stage. The impact of reusability on the mass and cost of the vehicle is minimised when the velocity at the initiation of the return trajectory is decreased. Because of this mass increase on any stage which is to be designed to be reusable, most current reusable launch vehicle designs include only reusable first stages, with later stages being expendable. 
-  
-  
- 
-
-  \section{Small Satellite Launchers}\label{subsec:smallsats}
- 
- 
- 
- \afterpage{
- 	\begin{landscape}% Landscape page
- 		\begin{table}
- 			
- 			\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|}
- 				
- 				\hline  \textbf{Launcher} & \textbf{Company} & \textbf{Country} & \textbf{Payload Capacity} & \textbf{Cost/Kg} (USD) & \textbf{Availability }& \textbf{Stages \& Propulsion} & \textbf{Reusability}  \\ 
- 				\hline  Electron\cite{Electron} & RocketLab & NZ/USA & 150Kg to SSO & \$32,600 & Available & Rocket-rocket & No \\ 
- 			
- 				\hline Bloostar\cite{Bloostar} & Zero2Infinity & Spain & 100kg to SSO & \$40,000 &  - & Balloon-rocket-rocket-rocket & No \\ 
- 				
- 				\hline Eris\cite{Gilmour} & Gilmour Space Technologies & Aus/SG& 380kg to LEO  &\$23,000-38,000   & Q4 2020 && No\\ 
- 				\hline Intrepid-1\cite{Intrepid} & Rocket Crafters  & USA & 376kg to SSO & \$23,936 & Q1 2019 & Rocket-rocket & No \\ 
- 				\hline KZ-1A\cite{FT1} & CASIC  &  China & 250kg to SSO  & - & - & Rocket-rocket & No \\ 
- 				\hline  Vector-H\cite{Vector}& Vector Space Systems  & USA & 160kg to LEO  & \$21,875 & 2018 & Rocket-Rocket-(Third rocket optional)& No\\ 
- 				\hline SMILE\cite{Kuhn2017} & NLR &  EU & 50kg & $<$\$50,000 & -  & -& -\\ 
- 				\hline 
- 			 Firefly $\alpha$\cite{firefly}& Firefly Aerospace &  USA & 630kg to SSO & - & 2019  & Rocket-Rocket& No\\ 
- 				\hline 
- 					 LauncherOne\cite{Virgin} & Virgin Orbit & UK & 300kg to SSO & \$33,000 & - & Aircraft-rocket-rocket & Aircraft\\ 
- 					 \hline XS-1\cite{DARPA2017} & Boeing & USA & - & - &  - & - & First Stage\\ 
- 					 \hline
- 					 500R\cite{500R} & Orbital Access  & UK & 500kg to SSO & - & - & Aircraft-Rocket & Fully Reusable \\ 
- 					 \hline
- 			\end{tabularx} 
- 			\caption{A selection of the small satellite launchers which are operational or in development.}
- 			\label{tab:smallsats}
- 		\end{table}
- 	\end{landscape}
- }
- 
- 
-  The vast improvements in computational technologies in recent years have allowed satellites to decrease in size and cost to a large degree. These factors have lowered the barrier of entry into small satellite manufacturing significantly, driving a surge in the demand for small satellite launches. Many private and public companies are currently developing small satellite launchers which will allow small satellites to be launched into bespoke orbits on schedules determined by the customer\cite{Faa2018}. The details of a selection of the most promising or innovative of the small satellite launchers currently in active development is shown in Table \ref{tab:smallsats}. Many of these launchers are projected to be available within the next few years, and will offer cost-per-kg comparable to piggybacking on larger launches. 
-  
-  
-  
-  The majority of the small satellite launchers in development are expendable\cite{Niederstrasser2015}. These expendable small satellite launch systems aim to reduce costs by creating a launch system which is as cost-efficient as possible to produce and launch\cite{Niederstrasser2015}. This generally entails making use of conventional, well-tested designs, combined with state of the art manufacturing techniques, such as 3-D printing\cite{Niederstrasser2015,Gilmour}. This method allows for rapid development, although it has an intrinsic cost limit due to the requirement of manufacturing a new launch system for each launch.  
-  
-  Reusable small satellite launchers have higher initial costs-per-vehicle, but also have the potential for large advantages in the long term\cite{Preller2017b}. Reusable small satellite launchers have the potential for lower cost-per-launch than expendable systems, with increased launch flexibility\cite{Preller2017b}. 
- One of the most promising methods of reusability for small launchers is the addition of airbreathing engines\cite{Smart2009}.
-
-   
-
-  
   
 
   
@@ -161,6 +28,7 @@ The Mach number range of a scramjet engine varies by design, but Mach number ran
 
   \textcolor{red}{XXX I should clearly define the fidelity to which each launch is modelled.}
   \textcolor{red}{XXX Move scramjets before this, and expand this section}
+  \textcolor{red}{XXX I should distinguish between launch systems using turbojets (ie virgin) and hypersonic launchers}
   
     The addition of airbreathing stages to a satellite launch system to allow for partial or full reusability of a launch system has been investigated for a number of years by multiple institutions\cite{Powell1991,Wilhite1991,Varvill2008,Tsuchiya2005,Mehta2001,Preller2017b,Trefny1999,Roche2000,Young2006,Bradford2000,Gong2014}. The reduced fuel usage of airbreathing engines allows for the inclusion of systems which enable fly-back and landing of the stage in a similar manner to a conventional aircraft, potentially offering multi-launch re-use with increased launch flexibility and decreased costs\cite{Preller2017b}. However, the addition of airbreathing engines to a launch system introduces significant design challenges, and 
     no airbreathing access to space systems have yet been deployed. 
@@ -210,6 +78,13 @@ Simulations carried out for three stage systems utilising scramjet and rocket en
 \textcolor{red}{XXX Point out the propulsion systems of the different launchers, and how scramjet powered is different.}
 
 \textcolor{red}{XXX Be very specific about how they pulled up, why and to where}
+
+\textcolor{red}{XXX I should be very specific that I'm looking at a small, vertically launched, three stage system.. look at all ways that my analysis is different including whether banking during ascent is allowed (dont think banking is allowed in tsuchiya and mori during ascent) and what fidelity optimisation is used, also what engine is used (tsuchiya and mori are using a pre-cooled turbojet..)}
+
+\textcolor{red}{XXX more papers to include:
+https://www.jstage.jst.go.jp/article/tjsass/60/5/60_T-15-71/_pdf/-char/ja}
+
+\textcolor{red}{XXX I should have a paragraph detailing why looking at variation studies is important, and compare to MDO (how it is different)}
 
 The trajectory of an airbreathing launch vehicle is more complex than that of a fully rocket-powered launch system. 
 A airbreathing launch system trajectory must be designed around a number of factors:
@@ -357,6 +232,148 @@ Optimising the fly-back trajectory of the reusable stages of a launch vehicle ca
  \end{figure}
 
 
+\section{Optimal Control}\label{sec:Optimisation}
+\textcolor{red}{In Section XXX it has been established that the trajectory of a small, three stage partially-airbreathing launch system has not been defined.}
+
+Calculating the optimal trajectory of a launch system with multiple stages and multiple modes of propulsion is a complex process. 
+Defining the trajectory of a launch system purely from vehicle analysis is unlikely to yield a trajectory which maximises the performance of the system.
+A simulation method is required which is able to calculate a trajectory path which maximises the performance of the launch system, while taking into account the aerodynamic and propulsive properties of each stage and propulsion mode. 
+Optimal control theory is used in situations where an optimal trajectory path must be found with little prior knowledge of the shape of the trajectory. 
+
+For an optimisation of a complex trajectory there are a variety of optimal control methods that are useful for specific problem types. These are separated into two categories: direct and indirect solution methods. Indirect methods are based on the calculus of variations or minimum principle model, and generally result in high accuracy solutions to optimisation problems\cite{Bulirsch1993}. However indirect models suffer from the drawbacks of small radii of convergence and the fact that the equations to be solved often exhibit strong nonlinearity and discontinuities. This means that indirect methods will not be solvable unless the problem is very well defined with a minimum of nonlinearity, making indirect methods unsuitable for many complex optimisation problems, such as aerospace vehicle simulations which can exhibit strong nonlinear behaviour and have a wide solution space. 
+
+Direct methods transform an optimisation problem into a nonlinear programming (NLP) problem which can be solved computationally\cite{Stryk1992}. NLP solvers solve the optimisation problem defined as\cite{Bazaraa2013}:
+
+\begin{equation}
+Minimise \qquad f(x)
+\end{equation}
+
+\begin{equation}
+Subject \quad to \qquad g_i(x)\leq0 \quad for \quad i=1,...,m
+\end{equation}
+
+\begin{equation}
+and \qquad h_j(x) = 0 \quad for \quad j=1,...,n
+\end{equation}
+
+An optimisation problem that has been discretised in this form can thus be solved using any of a variety of NLP solvers. One of the most effective methods of solving twice differentiable NLP problems is sequential quadratic programming (SQP)\cite{Boggs2000} for which there is a variety of commercial solvers available such as NPSOL, SNOPT, and packages within MATLAB. 
+
+In order for these packages to be able to solve an optimisation problem it must be presented in discretised form, and as such must be transformed using transcription techniques\cite{Kelly2015}. The task of transcribing a continuous optimisation problem into discrete NLP solvable form is not simple. SQP solvers can very easily run into convergence issues when provided with an optimisation problem which has not been well defined. Also, any transcription must be carried out with care that the accuracy of the solution is not compromised. 
+There are multiple ways to approximate a continuous optimisation problem directly as an NLP problem, the most common of which are shooting and collocation methods. The choice of discretisation method can affect the stability and accuracy of the solution as well as the solution time of the problem. 
+
+\subsection{Shooting Methods}
+
+Shooting methods in optimal control are forward-time methods of discretisation\cite{Kelly2015}. Shooting methods explicitly enforce the dynamics of the system, and update the free conditions and system controls to move towards an optimal solution from an initial guess\cite{Kelly2015}. Shooting methods are generally simple to apply, and require little specialised knowledge to use once they have been implemented. 
+
+
+\subsubsection{The Single Shooting Method}
+
+The oldest and simplest method of approximating continuous optimisation problems as NLP problems is the direct single shooting method. Direct single shooting discretises the control function over the solution space, and solves this directly as an NLP by integrating the vehicle dynamics, or state variables, along the trajectory at each trajectory guess\cite{Betts1998,Kelly2015,Rao2009,Fasano2013}. Single shooting is simple to apply and has been used since the 1970s for rocket trajectory optimisation\cite{jezewski1971}. Single shooting methods suffer from nonlinearity problems, ie. an optimisation problem solved using the single shooting method will potentially struggle to solve if the problem exhibits even small nonlinearities, due to being unable to converge to an optimal solution. This makes the single shooting method unsuitable for complex problems such as a scramjet model, as there are many nonlinear factors inherent in atmosphere and airbreathing engine modelling.
+
+
+\subsubsection{The Multiple Shooting Method}
+
+Direct multiple shooting solves some of the instabilities of the single shooting method by splitting the trajectory into multiple shooting arcs, and collocating these at specific time points\cite{Betts1998,Kelly2015,Rao2009,Fasano2013}. This creates a system of discontinuities, illustrated in Figure \ref{fig:multipleshooting}, which are gradually minimised by the solver algorithm until the trajectory is continuous. These discontinuities allow greater flexibility for the solver than is afforded by the single shooting method. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{SingleMultiple}
+	\caption{A comparison of single shooting and multiple shooting\cite{Kelly2015}.}
+	\label{fig:multipleshooting}
+\end{figure}
+
+The multiple shooting method has greatly improved convergence compared to the single shooting method, removing much of the susceptibility to instabilities resulting from nonlinear effects. However, the multiple shooting approach still suffers from a relatively small radius of convergence and slow computation times\cite{Fasano2013}. Radius of convergence is extremely important to this study as the optimal solution cannot be approximated to a great degree of accuracy, and as such multiple shooting was deemed inappropriate for this study. It was desired to find a method with a global radius of convergence to apply to the optimisation problem being considered.
+
+\subsection{Collocation Methods}
+
+Collocation methods are arguably the most powerful methods for solving optimal control problems\cite{Rao2009}. Collocation methods are simultaneous methods, where both the states and controls are approximated using a specific form of functional\cite{Kelly2015,Rao2009}. In these methods, the dynamics of the system are not explicitly enforced, but instead are constrained at specified points along the trajectory, called collocation points, or nodes\cite{Kelly2015}. This means that the derivative of the state functions become a constraint within the NLP, being equated to the polynomial approximation functions by the solver algorithm. 
+Collocation methods provide larger radius of convergence, greater robustness, and smaller computational times compared to multiple shooting\cite{Fasano2013}. However, the solution accuracy of collocation methods is less than that of multiple shooting methods\cite{Fasano2013}, although this can be improved through the choice of basis functions used for collocation\cite{Rao2009}.
+
+Collocation methods can be represented in two ways; \textsf{h} and \textsf{p} schemes\cite{Kelly2015}. \textsf{p} schemes, or global methods, represent the entire trajectory as high order polynomials, and converge by increasing the order of these polynomial\cite{Kelly2015}. This method works well if the underlying solution is smooth, however, if there are discontinuities present, a \textsf{p} scheme will fail\cite{Kelly2015}. \textsf{h} schemes separate the trajectory into a series of medium order polynomials, stitched together at set points using defect constraints, similarly to the multiple shooting method\cite{Kelly2015,Rao2009,Ross2004}. These joining points are called knot points\cite{Kelly2015,Ross2004}. A comparison between \textsf{h} and \textsf{p} methods is shown in Figure \ref{fig:HPExamples}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/HPExamples}
+	\caption{Examples of \textsf{h} and \textsf{p} collocation methods\cite{Kelly2015}.}
+	\label{fig:HPExamples}
+\end{figure}
+
+\subsubsection{The Pseudospectral Method}\label{sec:PS}
+
+
+The most accurate and effective type of collocation methods use orthogonal polynomials to approximate the state and control functionals\cite{Fahroo2000}. In trajectory optimisation, this type of collocation is referred to as the pseudospectral method\cite{Kelly2015}. 
+The pseudospectral method was first introduced in 1972 by Kreiss \& Oliger\cite{Kreiss1972} as an efficient way to compute meteorology and oceanography problems. The pseudospectral method has recently garnered a large amount of attention for its ability to rapidly and accurately solve a wide variety of optimal control problems.  When a solution is well behaved and smooth, the pseudospectral method converges at an exponential rate, with a high accuracy known as spectral accuracy\cite{Ross2004,Darby2011a}. 
+
+The pseudospectral method employs the use of orthogonal polynomials such as Legendre or Chebychev polynomials to approximate the state and control functions.
+This approximation is used to transcribe the optimal control problem into a nonlinear programming problem (NLP) through collocation. This process involves mapping the time domain of the system is to the time interval $[-1,+1]$, and discretising the approximated dynamics at a specific set of points, obtained from Gaussian quadrature\cite{Fahroo2000,Huntington2007,Kelly2015,Rao2009,Garg2011}. 
+There are multiple types of pseudpospectral methods, distinguished by the polynomial and collocation points used. Usually, these polynomials are Chebyshev or Lagrange polynomials\cite{Fahroo2000,Rao2009}, and the collocation points are the roots of a Legendre polynomial\cite{Garg2009}. Chebyshev polynomials have been used since the introduction of pseudospectral methods in optimal control, but have been superseded in many cases by Lagrange polynomials, which offer simpler collocation conditions\cite{Rao2009}. 
+There are many possible types of collocation nodes, although there are three most commonly used sets; Legendre-Gauss (LG); Legendre-Gauss-Radau (LGR); and Legendre-Gauss-Lobatto (LGL)\cite{Garg2009,Rao2009}. The choice of collocation type determines how the roots of the problem are calculated, and changes the formulation of the problem slightly\cite{Garg2009}. Practically, there is very little difference between these node sets\cite{Garg2009}.
+Detailed information on the pseudospectral information may be found in Reference \cite{Huntington2007}.
+
+
+The pseudospectral method is usually employed as a \textsf{p} method, where a global polynomial is used, and convergence is achieved by increasing the order of this polynomial\cite{Rao2009}. Recently, \textsf{hp}-adaptive pseudospectral methods have been introduced, which segment the mesh using an h method, whilst also having a variable polynomial degree, as in the \textsf{p} method\cite{Darby2011a}. These \textsf{hp} methods converge by varying the degree of the approximating polynomial as well as the number of segments simultaneously. Utilising both \textsf{h} and \textsf{p} methods improves the accuracy and robustness of the solution, as illustrated in Figure \ref{fig:OptimisationMethodComparisonChai}, from a study by Chai et al.\cite{Chai2015} comparing the single shooting method to \textsf{p} (Gauss) and \textsf{hp}-adaptive pseudospectral methods. Additionally, the \textsf{hp}-adaptive method decreases the computational effort and memory usage necessary during the solution process\cite{Darby2011a,Chai2015}. 
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/OptimisationMethodComparisonChai}
+	\caption{Comparison of optimisation techniques\cite{Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf{hp}-adaptive method can be observed to have produced the most optimal result.}
+	\label{fig:OptimisationMethodComparisonChai}
+\end{figure}
+
+A secondary usability advantage of the pseudospectral method is the ability to generate Hamiltonian and costate values easily\cite{Gong2010,Fahroo2001,Rao2009}. The Hamiltonian and costate values allow a solution to easily and quickly be checked to determine if some of the necessary conditions for optimality are being met. This is useful to determine if the optimal solution calculated by the pseudospectral solver is valid.
+
+
+The pseudospectral method has been proven to be extremely effective for simulations in aerospace applications and has been proven in flight applications such as the zero propellant manoeuvre of the International Space Station in 2007, where the ISS was rotated 180 degrees without any propellant used following a pseudospectral method solution\cite{Bedrossian}. 
+The pseudospectral method has been used successfully in a multitude of studies for the trajectory optimisation of hypersonic vehicles\cite{Li2012,Josselyn2002a,Zhao2013,Tian2011,Darby2011,Chai2015,Rizvi2015,Moshman2014,Yang2017,Kodera2014}. 
+These results indicate that the pseudospectral method is robust for complex, nonlinear systems, and that the pseudospectral method can be used for systems with many state variables.
+
+
+\section{Available Optimal Control Solvers}\label{sec:optsolvers}
+
+There are a number of optimal control solvers available, both commercially and open source. A summary of the most prominent available solvers is shown in Table \ref{table:programs}. These programs are mostly general solvers, and must be configured specifically in order to solve a particular optimal control problem. The exception is ASTOS\cite{astos}, which is a standalone program designed for aerospace trajectory optimisation.
+
+Functionally, most of the available solvers are similar in operation. The states and controls of the optimal control problem are defined to the program by the user, along with any constraints; continuous or endpoint. The cost function of the problem is input, and dynamic model of the system is defined. An initial guess is provided, and once activated, the solver will move toward an optimal solution from this initial guess. 
+The most significant practical difference between the solvers lies in the robustness of the optimal solution, ie. how easily a particular solver is able to converge to the optimal solution. For a simple and continuous optimisation problem all solvers will be able to approach the same solution (though with varying efficiency). However, for a complex and nonlinear optimisation problem, some solvers will converge much more easily and rapidly than others. Generally, this stems from the underlying transcription method used. 
+The most common form of discretisation used by these solvers is the pseudospectral method, although other forms of collocation, as well as multiple shooting, are also used. Of the methods used, \textsf{hp}-adaptive pseudospectral methods exhibit the best convergence and accuracy properties\cite{Chai2015}. The readily available packages which utilise \textsf{hp}-adaptive pseudospectral methods are GPOPS-2\cite{Rao2010} and ICLOCS2\cite{iclocs}.
+
+ICLOCS2 is a software package in the alpha stages of development, which is based upon ICLOCS, a multiple shooting solver\cite{iclocs}. ICLOCS2 is able to implement a range of transcription methods, including a \textsf{hp}-adaptive Legendre-Gauss Pseudospectral method\cite{iclocs}. As ICLOCS2 is relatively new at the time of writing, it has not yet been implemented in any published works and documentation is limited. 
+
+GPOPS-2 is a proprietary \textsf{hp}-adaptive pseudospectral method solver, which implements a variety of \textsf{hp}-adaptive pseudospectral methods, so that the best method may be chosen for a given problem\cite{Rao2010}. GPOPS-2 is specifically designed to be as flexible as possible, to accommodate for a wide range of problem formulations\cite{Rao2010}. GPOPS-2 is well proven in aerospace applications, and has been used for spacecraft orbit optimisation as well as in-atmosphere trajectory optimisation\cite{Rizvi2015,Lipp2014}. GPOPS-2 is well suited to solving multi-phase optimal control problems, which is necessary for efficient multi-stage launch optimisation\cite{Rao2010}. GPOPS-2 represents the state of the art in trajectory optimisation software, and as such is used by a number of institutions around the world. 
+
+Both ICLOCS2 and GPOPS-2 uses IPOPT\cite{Wachter2006} (Interior Point OPTimizer) as the standard nonlinear programming solver (with the option of installing others). IPOPT is a widely used open source nonlinear optimisation package which utilises an interior point line search filter method. 
+
+\begin{table}[ht]
+	
+	\begin{tabular}{|c|c|c| p{4cm}|}
+		\hline \textbf{Software} & \textbf{Publisher} & \textbf{Platform} & \textbf{Optimisation Type} \\ 
+		\hline DIDO\cite{Ross2002} & Elissar Global & MATLAB & Chebychev Pseudospectral \\ 
+		\hline GPOPS II\cite{Rao2010} & RP Optimization Research & MATLAB & \textsf{hp}-Adaptive Legendre-Gauss-Radau Pseudospectral \\ 
+		\hline PROPT (IPOPT)\cite{Rutquist2010}& TOMLAB & MATLAB & Legendre-Gauss  Pseudospectral  \\ 
+		\hline ICLOCS2\cite{iclocs} & Imperial College & MATLAB &  Multiple Shooting / \textsf{hp}-adaptive Legendre-Gauss Pseudospectral  \\ 
+		\hline POST2\cite{WilliamColson} & NASA & FORTRAN & Direct Shooting \\ 
+		\hline OTIS\cite{otis} & NASA  & Fortran & Pseudospectral + Various  \\ 
+		\hline TRANSWORHP\cite{Wassel2013} & ESA & Fortran/C++ & Full Discretisation \\ 
+		\hline ASTOS\cite{astos} & Astos Solutions & Standalone & Multiple Shooting/Collocation  \\  
+		\hline ACADO\cite{Houska2011} & Open Source & C++ &  Direct \\  
+		\hline JModelica\cite{jmodelica} & Modelon AB, Open Source & Modelica/Python &  Collocation/ Pseudospectral \\  
+		
+		\hline 
+	\end{tabular} 
+	
+	\caption{Summary of programs capable of pseudospectral optimisation.}
+	\label{table:programs}
+\end{table}
+
+
+
+
+\section{Pseudospectral Method Optimisation in Aerospace Applications}
+Optimal control theory has been widely used in aerospace applications, including being used to optimise the launch of airbreathing hypersonic launch vehicles\cite{Powell1991,Lu1993,Trefny1999,Roche2000,Pescetelli2012,Young2006}, \textcolor{red}{as detailed in Section \ref{sec:AscentTrajectories}}.
+
+\textcolor{red}{
+\section{Exergy Analysis}
+}
 
 \section{The University of Queensland's Rocket-Scramjet-Rocket Launch System}
 
@@ -443,6 +460,7 @@ The third stage has to this point been designed to be powered by the Pratt \& Wh
 
 
 \subsection{Exoatmospheric Rocket Engines}
+\textcolor{red}{XXX I should cover exacly why I am talking about three stage engines, eg: This work aims to introduce a low-cost third stage because blah...}
 \textcolor{red}{XXX I should potentially use the kestrels use of RP1 as a justification too, non exremely toxic?}
 
 The third stage requires a rocket engine with sufficient thrust to accelerate out of the atmosphere, and a diameter small enough to allow the rocket to fit within the fuselage of the SPARTAN. The major factors when choosing a rocket engine are efficiency and thrust-to-weight ratio, as well as cost. It is desirable to use a rocket engine which has already been developed and flight tested, to reduce the costs and potential complications of engine development. Table \ref{tab:Engine} shows a comparison study of small sized upper stage rocket engines which are currently in use, or have been used, for commercial space flight. The pump-fed motors have significantly higher specific impulse than pressure fed motors\textcolor{red}{, and while the masses of pressure-fed engines appear low compared to turbopump engines, this mass is generally made up for by the additional mass required by the pressurised propellant and pressurant tanks of pressure-fed engines.}. However, while the cost of these engines is not generally published, pressure fed engines cost significantly less than pump-fed engines, due to the cost of the turbopump and the associated complexity of a pump-fed system.  As such, it is desirable to use a pressure-fed rocket engine for a small satellite launch system if possible. Of the pressure-fed engines, the SpaceX Kestrel exhibits a significantly higher thrust/mass ratio than the other engines, with comparable specific impulse and size. \textcolor{red}{Additionally, the Kestrel has been designed for a low cost, small satellite launcher, making} the Kestrel engine \textcolor{red}{likely to be fit-for-purpose for} powering the third stage rocket.  
@@ -468,145 +486,6 @@ The third stage requires a rocket engine with sufficient thrust to accelerate ou
 	\end{table}
 \end{landscape}
 }
-
-
-\section{Optimal Control}\label{sec:Optimisation}
-
-
- Calculating the optimal trajectory of a launch system with multiple stages and multiple modes of propulsion is a complex process. 
- Defining the trajectory of a launch system purely from vehicle analysis is unlikely to yield a trajectory which maximises the performance of the system.
-  A simulation method is required which is able to calculate a trajectory path which maximises the performance of the launch system, while taking into account the aerodynamic and propulsive properties of each stage and propulsion mode. 
-  Optimal control theory is used in situations where an optimal trajectory path must be found with little prior knowledge of the shape of the trajectory. Optimal control theory has been widely used in aerospace applications, including being used to optimise the launch of airbreathing hypersonic launch vehicles\cite{Powell1991,Lu1993,Trefny1999,Roche2000,Pescetelli2012,Young2006}, \textcolor{red}{as detailed in Section \ref{sec:AscentTrajectories}}.
-  
-For an optimisation of a complex trajectory there are a variety of optimal control methods that are useful for specific problem types. These are separated into two categories: direct and indirect solution methods. Indirect methods are based on the calculus of variations or minimum principle model, and generally result in high accuracy solutions to optimisation problems\cite{Bulirsch1993}. However indirect models suffer from the drawbacks of small radii of convergence and the fact that the equations to be solved often exhibit strong nonlinearity and discontinuities. This means that indirect methods will not be solvable unless the problem is very well defined with a minimum of nonlinearity, making indirect methods unsuitable for many complex optimisation problems, such as aerospace vehicle simulations which can exhibit strong nonlinear behaviour and have a wide solution space. 
-
-Direct methods transform an optimisation problem into a nonlinear programming (NLP) problem which can be solved computationally\cite{Stryk1992}. NLP solvers solve the optimisation problem defined as\cite{Bazaraa2013}:
-
-\begin{equation}
-Minimise \qquad f(x)
-\end{equation}
-
-\begin{equation}
-Subject \quad to \qquad g_i(x)\leq0 \quad for \quad i=1,...,m
-\end{equation}
-
-\begin{equation}
-and \qquad h_j(x) = 0 \quad for \quad j=1,...,n
-\end{equation}
-
-An optimisation problem that has been discretised in this form can thus be solved using any of a variety of NLP solvers. One of the most effective methods of solving twice differentiable NLP problems is sequential quadratic programming (SQP)\cite{Boggs2000} for which there is a variety of commercial solvers available such as NPSOL, SNOPT, and packages within MATLAB. 
-
-In order for these packages to be able to solve an optimisation problem it must be presented in discretised form, and as such must be transformed using transcription techniques\cite{Kelly2015}. The task of transcribing a continuous optimisation problem into discrete NLP solvable form is not simple. SQP solvers can very easily run into convergence issues when provided with an optimisation problem which has not been well defined. Also, any transcription must be carried out with care that the accuracy of the solution is not compromised. 
-There are multiple ways to approximate a continuous optimisation problem directly as an NLP problem, the most common of which are shooting and collocation methods. The choice of discretisation method can affect the stability and accuracy of the solution as well as the solution time of the problem. 
-
-\subsection{Shooting Methods}
-
-Shooting methods in optimal control are forward-time methods of discretisation\cite{Kelly2015}. Shooting methods explicitly enforce the dynamics of the system, and update the free conditions and system controls to move towards an optimal solution from an initial guess\cite{Kelly2015}. Shooting methods are generally simple to apply, and require little specialised knowledge to use once they have been implemented. 
-
-
-\subsubsection{The Single Shooting Method}
-
-The oldest and simplest method of approximating continuous optimisation problems as NLP problems is the direct single shooting method. Direct single shooting discretises the control function over the solution space, and solves this directly as an NLP by integrating the vehicle dynamics, or state variables, along the trajectory at each trajectory guess\cite{Betts1998,Kelly2015,Rao2009,Fasano2013}. Single shooting is simple to apply and has been used since the 1970s for rocket trajectory optimisation\cite{jezewski1971}. Single shooting methods suffer from nonlinearity problems, ie. an optimisation problem solved using the single shooting method will potentially struggle to solve if the problem exhibits even small nonlinearities, due to being unable to converge to an optimal solution. This makes the single shooting method unsuitable for complex problems such as a scramjet model, as there are many nonlinear factors inherent in atmosphere and airbreathing engine modelling.
-
- 
-\subsubsection{The Multiple Shooting Method}
-
-Direct multiple shooting solves some of the instabilities of the single shooting method by splitting the trajectory into multiple shooting arcs, and collocating these at specific time points\cite{Betts1998,Kelly2015,Rao2009,Fasano2013}. This creates a system of discontinuities, illustrated in Figure \ref{fig:multipleshooting}, which are gradually minimised by the solver algorithm until the trajectory is continuous. These discontinuities allow greater flexibility for the solver than is afforded by the single shooting method. 
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.9\linewidth]{SingleMultiple}
-	\caption{A comparison of single shooting and multiple shooting\cite{Kelly2015}.}
-	\label{fig:multipleshooting}
-\end{figure}
-
-The multiple shooting method has greatly improved convergence compared to the single shooting method, removing much of the susceptibility to instabilities resulting from nonlinear effects. However, the multiple shooting approach still suffers from a relatively small radius of convergence and slow computation times\cite{Fasano2013}. Radius of convergence is extremely important to this study as the optimal solution cannot be approximated to a great degree of accuracy, and as such multiple shooting was deemed inappropriate for this study. It was desired to find a method with a global radius of convergence to apply to the optimisation problem being considered.
-
-\subsection{Collocation Methods}
-
-Collocation methods are arguably the most powerful methods for solving optimal control problems\cite{Rao2009}. Collocation methods are simultaneous methods, where both the states and controls are approximated using a specific form of functional\cite{Kelly2015,Rao2009}. In these methods, the dynamics of the system are not explicitly enforced, but instead are constrained at specified points along the trajectory, called collocation points, or nodes\cite{Kelly2015}. This means that the derivative of the state functions become a constraint within the NLP, being equated to the polynomial approximation functions by the solver algorithm. 
-Collocation methods provide larger radius of convergence, greater robustness, and smaller computational times compared to multiple shooting\cite{Fasano2013}. However, the solution accuracy of collocation methods is less than that of multiple shooting methods\cite{Fasano2013}, although this can be improved through the choice of basis functions used for collocation\cite{Rao2009}.
-
-Collocation methods can be represented in two ways; \textsf{h} and \textsf{p} schemes\cite{Kelly2015}. \textsf{p} schemes, or global methods, represent the entire trajectory as high order polynomials, and converge by increasing the order of these polynomial\cite{Kelly2015}. This method works well if the underlying solution is smooth, however, if there are discontinuities present, a \textsf{p} scheme will fail\cite{Kelly2015}. \textsf{h} schemes separate the trajectory into a series of medium order polynomials, stitched together at set points using defect constraints, similarly to the multiple shooting method\cite{Kelly2015,Rao2009,Ross2004}. These joining points are called knot points\cite{Kelly2015,Ross2004}. A comparison between \textsf{h} and \textsf{p} methods is shown in Figure \ref{fig:HPExamples}.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/HPExamples}
-	\caption{Examples of \textsf{h} and \textsf{p} collocation methods\cite{Kelly2015}.}
-	\label{fig:HPExamples}
-\end{figure}
-
-\subsubsection{The Pseudospectral Method}\label{sec:PS}
-
-
-The most accurate and effective type of collocation methods use orthogonal polynomials to approximate the state and control functionals\cite{Fahroo2000}. In trajectory optimisation, this type of collocation is referred to as the pseudospectral method\cite{Kelly2015}. 
-The pseudospectral method was first introduced in 1972 by Kreiss \& Oliger\cite{Kreiss1972} as an efficient way to compute meteorology and oceanography problems. The pseudospectral method has recently garnered a large amount of attention for its ability to rapidly and accurately solve a wide variety of optimal control problems.  When a solution is well behaved and smooth, the pseudospectral method converges at an exponential rate, with a high accuracy known as spectral accuracy\cite{Ross2004,Darby2011a}. 
-
- The pseudospectral method employs the use of orthogonal polynomials such as Legendre or Chebychev polynomials to approximate the state and control functions.
-This approximation is used to transcribe the optimal control problem into a nonlinear programming problem (NLP) through collocation. This process involves mapping the time domain of the system is to the time interval $[-1,+1]$, and discretising the approximated dynamics at a specific set of points, obtained from Gaussian quadrature\cite{Fahroo2000,Huntington2007,Kelly2015,Rao2009,Garg2011}. 
- There are multiple types of pseudpospectral methods, distinguished by the polynomial and collocation points used. Usually, these polynomials are Chebyshev or Lagrange polynomials\cite{Fahroo2000,Rao2009}, and the collocation points are the roots of a Legendre polynomial\cite{Garg2009}. Chebyshev polynomials have been used since the introduction of pseudospectral methods in optimal control, but have been superseded in many cases by Lagrange polynomials, which offer simpler collocation conditions\cite{Rao2009}. 
- There are many possible types of collocation nodes, although there are three most commonly used sets; Legendre-Gauss (LG); Legendre-Gauss-Radau (LGR); and Legendre-Gauss-Lobatto (LGL)\cite{Garg2009,Rao2009}. The choice of collocation type determines how the roots of the problem are calculated, and changes the formulation of the problem slightly\cite{Garg2009}. Practically, there is very little difference between these node sets\cite{Garg2009}.
- Detailed information on the pseudospectral information may be found in Reference \cite{Huntington2007}.
- 
- 
- The pseudospectral method is usually employed as a \textsf{p} method, where a global polynomial is used, and convergence is achieved by increasing the order of this polynomial\cite{Rao2009}. Recently, \textsf{hp}-adaptive pseudospectral methods have been introduced, which segment the mesh using an h method, whilst also having a variable polynomial degree, as in the \textsf{p} method\cite{Darby2011a}. These \textsf{hp} methods converge by varying the degree of the approximating polynomial as well as the number of segments simultaneously. Utilising both \textsf{h} and \textsf{p} methods improves the accuracy and robustness of the solution, as illustrated in Figure \ref{fig:OptimisationMethodComparisonChai}, from a study by Chai et al.\cite{Chai2015} comparing the single shooting method to \textsf{p} (Gauss) and \textsf{hp}-adaptive pseudospectral methods. Additionally, the \textsf{hp}-adaptive method decreases the computational effort and memory usage necessary during the solution process\cite{Darby2011a,Chai2015}. 
-
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/OptimisationMethodComparisonChai}
-	\caption{Comparison of optimisation techniques\cite{Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf{hp}-adaptive method can be observed to have produced the most optimal result.}
-	\label{fig:OptimisationMethodComparisonChai}
-\end{figure}
-
-A secondary usability advantage of the pseudospectral method is the ability to generate Hamiltonian and costate values easily\cite{Gong2010,Fahroo2001,Rao2009}. The Hamiltonian and costate values allow a solution to easily and quickly be checked to determine if some of the necessary conditions for optimality are being met. This is useful to determine if the optimal solution calculated by the pseudospectral solver is valid.
-
-
-The pseudospectral method has been proven to be extremely effective for simulations in aerospace applications and has been proven in flight applications such as the zero propellant manoeuvre of the International Space Station in 2007, where the ISS was rotated 180 degrees without any propellant used following a pseudospectral method solution\cite{Bedrossian}. 
-The pseudospectral method has been used successfully in a multitude of studies for the trajectory optimisation of hypersonic vehicles\cite{Li2012,Josselyn2002a,Zhao2013,Tian2011,Darby2011,Chai2015,Rizvi2015,Moshman2014,Yang2017,Kodera2014}. 
-These results indicate that the pseudospectral method is robust for complex, nonlinear systems, and that the pseudospectral method can be used for systems with many state variables.
-
-
-\section{Available Optimal Control Solvers}\label{sec:optsolvers}
-
-There are a number of optimal control solvers available, both commercially and open source. A summary of the most prominent available solvers is shown in Table \ref{table:programs}. These programs are mostly general solvers, and must be configured specifically in order to solve a particular optimal control problem. The exception is ASTOS\cite{astos}, which is a standalone program designed for aerospace trajectory optimisation.
-
-Functionally, most of the available solvers are similar in operation. The states and controls of the optimal control problem are defined to the program by the user, along with any constraints; continuous or endpoint. The cost function of the problem is input, and dynamic model of the system is defined. An initial guess is provided, and once activated, the solver will move toward an optimal solution from this initial guess. 
-The most significant practical difference between the solvers lies in the robustness of the optimal solution, ie. how easily a particular solver is able to converge to the optimal solution. For a simple and continuous optimisation problem all solvers will be able to approach the same solution (though with varying efficiency). However, for a complex and nonlinear optimisation problem, some solvers will converge much more easily and rapidly than others. Generally, this stems from the underlying transcription method used. 
- The most common form of discretisation used by these solvers is the pseudospectral method, although other forms of collocation, as well as multiple shooting, are also used. Of the methods used, \textsf{hp}-adaptive pseudospectral methods exhibit the best convergence and accuracy properties\cite{Chai2015}. The readily available packages which utilise \textsf{hp}-adaptive pseudospectral methods are GPOPS-2\cite{Rao2010} and ICLOCS2\cite{iclocs}.
- 
- ICLOCS2 is a software package in the alpha stages of development, which is based upon ICLOCS, a multiple shooting solver\cite{iclocs}. ICLOCS2 is able to implement a range of transcription methods, including a \textsf{hp}-adaptive Legendre-Gauss Pseudospectral method\cite{iclocs}. As ICLOCS2 is relatively new at the time of writing, it has not yet been implemented in any published works and documentation is limited. 
- 
-GPOPS-2 is a proprietary \textsf{hp}-adaptive pseudospectral method solver, which implements a variety of \textsf{hp}-adaptive pseudospectral methods, so that the best method may be chosen for a given problem\cite{Rao2010}. GPOPS-2 is specifically designed to be as flexible as possible, to accommodate for a wide range of problem formulations\cite{Rao2010}. GPOPS-2 is well proven in aerospace applications, and has been used for spacecraft orbit optimisation as well as in-atmosphere trajectory optimisation\cite{Rizvi2015,Lipp2014}. GPOPS-2 is well suited to solving multi-phase optimal control problems, which is necessary for efficient multi-stage launch optimisation\cite{Rao2010}. GPOPS-2 represents the state of the art in trajectory optimisation software, and as such is used by a number of institutions around the world. 
-
- Both ICLOCS2 and GPOPS-2 uses IPOPT\cite{Wachter2006} (Interior Point OPTimizer) as the standard nonlinear programming solver (with the option of installing others). IPOPT is a widely used open source nonlinear optimisation package which utilises an interior point line search filter method. 
-
-\begin{table}[ht]
-	
-	\begin{tabular}{|c|c|c| p{4cm}|}
-		\hline \textbf{Software} & \textbf{Publisher} & \textbf{Platform} & \textbf{Optimisation Type} \\ 
-		\hline DIDO\cite{Ross2002} & Elissar Global & MATLAB & Chebychev Pseudospectral \\ 
-		\hline GPOPS II\cite{Rao2010} & RP Optimization Research & MATLAB & \textsf{hp}-Adaptive Legendre-Gauss-Radau Pseudospectral \\ 
-		\hline PROPT (IPOPT)\cite{Rutquist2010}& TOMLAB & MATLAB & Legendre-Gauss  Pseudospectral  \\ 
-		\hline ICLOCS2\cite{iclocs} & Imperial College & MATLAB &  Multiple Shooting / \textsf{hp}-adaptive Legendre-Gauss Pseudospectral  \\ 
-		\hline POST2\cite{WilliamColson} & NASA & FORTRAN & Direct Shooting \\ 
-		\hline OTIS\cite{otis} & NASA  & Fortran & Pseudospectral + Various  \\ 
-		\hline TRANSWORHP\cite{Wassel2013} & ESA & Fortran/C++ & Full Discretisation \\ 
-		\hline ASTOS\cite{astos} & Astos Solutions & Standalone & Multiple Shooting/Collocation  \\  
-		\hline ACADO\cite{Houska2011} & Open Source & C++ &  Direct \\  
-		\hline JModelica\cite{jmodelica} & Modelon AB, Open Source & Modelica/Python &  Collocation/ Pseudospectral \\  
-		
-		\hline 
-	\end{tabular} 
-	
-	\caption{Summary of programs capable of pseudospectral optimisation.}
-	\label{table:programs}
-\end{table}
-
-
-
-
-
 
 
 
@@ -652,17 +531,17 @@ Finally, in a comparison between Cart3D and the Overflow-D Navier-Stokes solver,
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.9\linewidth]{"figures/2_literature-review/Cart3D Comparisons"}
-\caption{Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite{Sagerman2017}.}
+\caption{Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite{Sagerman2017}. \textcolor{red}{XXX Change this picture to something more relevant}}
 \label{fig:Cart3DComparisons}
 \end{figure}
 
 
-\subsection{Missile Datcom}
+%\subsection{Missile Datcom}
 
-\textcolor{red}{XXX Rework this significantly, particularly where I say close agreement for pitching moment coeffs}
+%\textcolor{red}{XXX Rework this significantly, particularly where I say close agreement for pitching moment coeffs}
 
 
-Missile Datcom is a widely used, semi-empirical, aerodynamic prediction tool for missile configurations. Missile Datcom is used in this study for its extremely high computational efficiency and ease of use, along with its proven accuracy\cite{Sooy2005}. Missile Datcom uses component-buildup methods by which the aerodynamics of each component of a missile or rocket design are estimated and then added together to determine the aerodynamics of the entire vehicle. Missile Datcom uses a combination of empirical and theoretical methods and is capable of calculating the aerodynamic forces, stability derivatives, and moments over a range of angle of attack and Mach number values. The high efficiency of Missile Datcom allows an aerodynamic database to be generated simply and rapidly. Missile Datcom has been shown to produce close agreement with experimental wind tunnel data for normal force and pitching moment coefficients, and reasonable agreement for axial force coefficients\cite{Sooy2005}. 
+%Missile Datcom is a widely used, semi-empirical, aerodynamic prediction tool for missile configurations. Missile Datcom is used in this study for its extremely high computational efficiency and ease of use, along with its proven accuracy\cite{Sooy2005}. Missile Datcom uses component-buildup methods by which the aerodynamics of each component of a missile or rocket design are estimated and then added together to determine the aerodynamics of the entire vehicle. Missile Datcom uses a combination of empirical and theoretical methods and is capable of calculating the aerodynamic forces, stability derivatives, and moments over a range of angle of attack and Mach number values. The high efficiency of Missile Datcom allows an aerodynamic database to be generated simply and rapidly. Missile Datcom has been shown to produce close agreement with experimental wind tunnel data for normal force and pitching moment coefficients, and reasonable agreement for axial force coefficients\cite{Sooy2005}. 
 
 
       

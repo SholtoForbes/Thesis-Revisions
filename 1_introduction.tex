@@ -63,6 +63,7 @@ Airbreathing engines produce higher specific impulse than rockets, and do not re
   	  		\label{fig:project-spartan}
   	  	\end{figure}
   	  	
+  	  	
 
   \section{Research aims}
 
@@ -131,3 +132,143 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     \subsubsection*{Conclusions and Recommendations}
 
       The body of this thesis concludes by summarising the most significant findings from this work. Recommendations for future work are made. 
+      
+      
+      
+      \chapter{Background}
+    
+    
+    \section{Scramjets}
+    
+    
+    \textcolor{red}{XXX I should reorder this, and make larger, more coherent sections. Maybe put scramjets section in front of airbreathing launchers, and have large sections like: current state of the launch industry / airbreathing launch system design background / technical background}
+    
+    
+    
+    
+    A Scramjet, or supersonic combustion ramjet, is an airbreathing engine design which combusts air at supersonic speeds and is capable of high Mach number operation. 
+    Across their operating range, scramjets offer much higher specific impulse than rockets, the only other propulsion system capable of operating efficiently at hypersonic speeds\cite{Billig1993,Cook2003}.
+    Scramjets compress air without moving parts, using geometry changes within the engine\cite{Curran2001a}, as well as on the forebody of the vehicle to create inlet shocks which provide the compression required for combustion\cite{Smart2012}. After combustion, the combustion products are expanded through a thrust nozzle, shown in Figure \ref{fig:scramjet}. This is similar in operation to a ramjet engine, though a scramjet does not generate a normal shock, allowing supersonic air to enter the combustor. Maintaining supersonic speeds throughout the engine allows scramjets to operate efficiently at Mach numbers of 5 and greater. 
+    Scramjets were proposed in the 1940's\cite{Curran2001} and found to be capable of positive net thrust in 1993\cite{Paull1993}, but have yet to be developed to a level which would allow for commercial application. 
+    Though scramjets are still in-development, the potential advantages which they offer over rockets for certain applications are driving their development in a number of institutions\cite{Curran2001b}.
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/scramjet}
+    	\caption{A simple schematic of a scramjet engine\cite{Heiser1994}.}
+    	\label{fig:scramjet}
+    \end{figure}
+    
+    Scramjet engines are suitable for a number of applications where sustained flight or acceleration is desired at high Mach numbers. 
+    The high efficiency of scramjet engines means that significantly less propellant (fuel + oxidiser) is used during flight compared to rocket engines, and consequently, that a much smaller fraction of a scramjet-powered vehicle consists of fuel mass\cite{Curran2003}. 
+    The smaller fuel mass fraction of a vehicle powered by scramjet engines mitigates the mass of the vehicle systems, allowing features such as wings, control surfaces, landing gear, and passenger transport capabilities to be included in the vehicle design\cite{Curran2003}. 
+    
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/Scramjet-Efficiency}
+    	\caption{Characteristic performance for airbreathing and rocket engines with Mach number\cite{Fry2004}.}
+    	\label{fig:Scramjet-Efficiency}
+    \end{figure}
+    
+    Theoretically, the operable range of scramjets is wide\cite{Smart2007a}; the specific impulse of a scramjet decreases with velocity, until it is equal to rockets around Mach 19\cite{Fry2004}, as shown in Figure \ref{fig:Scramjet-Efficiency}. 
+    However, in practical designs, the operating range for a scramjet engine is far more limited. 
+    For a fixed geometry scramjet, the operable region is constrained by the geometries of the forebody of the vehicle, the inlet, and the combustor of the scramjet engine\cite{Smart2010}.  
+    The Mach number range of a scramjet engine varies by design, but Mach number ranges of 5-10\cite{Preller2017b}, 7-11\cite{Dalle2014} and 6-10\cite{Bradford2000} have been suggested as appropriate operable regimes for scramjet-powered launch vehicles.
+    The operable range of scramjet engines can be improved with mechanisms to vary the geometry of the inlet during flight\cite{Dalle2011}. However, the systems necessary for variable geometry inlets add weight and complexity to the scramjet engine, and can be detrimental to overall system performance\cite{Smart2010}. 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    \section{Reusable Rocket-Powered Satellite Launch Systems}
+    
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/LaunchVehicles}
+    	\caption{Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite{BlueOrigin}.}
+    	\label{fig:LaunchVehicles}
+    \end{figure}
+    
+    Launch system technologies have progressed rapidly over the last 60 years. From the early vehicles based on intercontinental ballistic missile technology such as the Thor based launch systems, capable of launching 40-400kg to LEO in the 1960s, to the more modern Atlas V based systems of the 2000s capable of launching 9750-18500kg to LEO\cite{Kendall2010}. 
+    The materials, propulsion technology, aerodynamics and guidance algorithms have all improved significantly, enabling  rockets to become more efficient, cheaper to produce, and more reliable. As the demand for satellite launches grows, and the cost of development of launchers becomes cheaper, the potential for profiting from space launches increases. 
+    This has driven a large portion of the space flight industry to move towards privatisation, with a heavy focus on reusable technology. 
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=1\linewidth]{"figures/2_literature-review/FalconTrajectory"}
+    	\caption{The trajectory of the Falcon Heavy\cite{FalconHeavy}.}
+    	\label{fig:FalconTrajectory}
+    \end{figure}
+    
+    Reusable launch technology has been possible for many years, in the form of the space shuttle. However, the space shuttle was weighed down by large launch costs and operational complexity, and was not a commercial success\cite{Launius2006}. Recently, reusable launchers have become the focus of many of the largest private launch companies, as reusability becomes more achievable due to technological advances\cite{Foust2018,Mosher2018}. The SpaceX Falcon 9 and Falcon Heavy have been demonstrated on multiple occasions, landing booster stages successfully, and re-flying reused boosters multiple times\cite{Foust2018}. In the near future the Blue Origin New Glenn is planned\cite{Foust2018}, with potentially the Airbus Adeline to follow (to be used on the Ariane 6)\cite{Adeline}. The Falcon and New Glenn rockets are shown in Figure \ref{fig:LaunchVehicles}, and the trajectories of the Falcon Heavy and Adeline are shown in Figures \ref{fig:FalconTrajectory} and \ref{fig:visuel_adeline1}.  
+    
+    
+    
+    
+    
+    
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/visuel_adeline1}
+    	\caption{The trajectory of the Ariane featuring Adeline\cite{Adelineb}.}
+    	\label{fig:visuel_adeline1}
+    \end{figure}
+    
+    The aim of reusing launch vehicles is to reduce the cost-over-time of the reused components drastically, which subsequently allows the cost of individual launches to be reduced\cite{RichardWebb2016}. Reducing costs lowers the barrier of entry for space launches, potentially improving the diversity of space-based enterprises. 
+    Reusing launch system components also allows faster turnaround times for launches, as refurbishment of stages is much faster than manufacturing stages from scratch. Reduced turnaround times are key for improving mission scheduling, allowing satellites to be launched more rapidly, on a more flexible time frame. 
+    
+    For a launch vehicle to be reusable, it must necessarily have the ability to come back to Earth safely, without damage to major system components. In addition, it is preferable for the vehicle to return to its initial launch site, to reduce the cost and time necessary for transport. This return flight requires the addition of system components which allow the reusable stage to fly to a specified landing point. Control surfaces\cite{Clark2018}, structural components\cite{Sarigul2003}, additional fuel\cite{Sarigul2003}, and in the case of the Adeline, additional engines\cite{Adeline}, must be incorporated within a reusable launch vehicle design. The additional weight that these components contribute further increases the fuel and structural mass necessary to initially accelerate the reusable stage. The impact of reusability on the mass and cost of the vehicle is minimised when the velocity at the initiation of the return trajectory is decreased. Because of this mass increase on any stage which is to be designed to be reusable, most current reusable launch vehicle designs include only reusable first stages, with later stages being expendable. 
+    
+    
+    
+    
+    \section{Small Satellite Launchers}\label{subsec:smallsats}
+    
+    
+    
+    \afterpage{
+    	\begin{landscape}% Landscape page
+    		\begin{table}
+    			
+    			\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|}
+    				
+    				\hline  \textbf{Launcher} & \textbf{Company} & \textbf{Country} & \textbf{Payload Capacity} & \textbf{Cost/Kg} (USD) & \textbf{Availability }& \textbf{Stages \& Propulsion} & \textbf{Reusability}  \\ 
+    				\hline  Electron\cite{Electron} & RocketLab & NZ/USA & 150Kg to SSO & \$32,600 & Available & Rocket-rocket & No \\ 
+    				
+    				\hline Bloostar\cite{Bloostar} & Zero2Infinity & Spain & 100kg to SSO & \$40,000 &  - & Balloon-rocket-rocket-rocket & No \\ 
+    				
+    				\hline Eris\cite{Gilmour} & Gilmour Space Technologies & Aus/SG& 380kg to LEO  &\$23,000-38,000   & Q4 2020 && No\\ 
+    				\hline Intrepid-1\cite{Intrepid} & Rocket Crafters  & USA & 376kg to SSO & \$23,936 & Q1 2019 & Rocket-rocket & No \\ 
+    				\hline KZ-1A\cite{FT1} & CASIC  &  China & 250kg to SSO  & - & - & Rocket-rocket & No \\ 
+    				\hline  Vector-H\cite{Vector}& Vector Space Systems  & USA & 160kg to LEO  & \$21,875 & 2018 & Rocket-Rocket-(Third rocket optional)& No\\ 
+    				\hline SMILE\cite{Kuhn2017} & NLR &  EU & 50kg & $<$\$50,000 & -  & -& -\\ 
+    				\hline 
+    				Firefly $\alpha$\cite{firefly}& Firefly Aerospace &  USA & 630kg to SSO & - & 2019  & Rocket-Rocket& No\\ 
+    				\hline 
+    				LauncherOne\cite{Virgin} & Virgin Orbit & UK & 300kg to SSO & \$33,000 & - & Aircraft-rocket-rocket & Aircraft\\ 
+    				\hline XS-1\cite{DARPA2017} & Boeing & USA & - & - &  - & - & First Stage\\ 
+    				\hline
+    				500R\cite{500R} & Orbital Access  & UK & 500kg to SSO & - & - & Aircraft-Rocket & Fully Reusable \\ 
+    				\hline
+    			\end{tabularx} 
+    			\caption{A selection of the small satellite launchers which are operational or in development.}
+    			\label{tab:smallsats}
+    		\end{table}
+    	\end{landscape}
+    }
+    
+    
+    The vast improvements in computational technologies in recent years have allowed satellites to decrease in size and cost to a large degree. These factors have lowered the barrier of entry into small satellite manufacturing significantly, driving a surge in the demand for small satellite launches. Many private and public companies are currently developing small satellite launchers which will allow small satellites to be launched into bespoke orbits on schedules determined by the customer\cite{Faa2018}. The details of a selection of the most promising or innovative of the small satellite launchers currently in active development is shown in Table \ref{tab:smallsats}. Many of these launchers are projected to be available within the next few years, and will offer cost-per-kg comparable to piggybacking on larger launches. 
+    
+    
+    
+    The majority of the small satellite launchers in development are expendable\cite{Niederstrasser2015}. These expendable small satellite launch systems aim to reduce costs by creating a launch system which is as cost-efficient as possible to produce and launch\cite{Niederstrasser2015}. This generally entails making use of conventional, well-tested designs, combined with state of the art manufacturing techniques, such as 3-D printing\cite{Niederstrasser2015,Gilmour}. This method allows for rapid development, although it has an intrinsic cost limit due to the requirement of manufacturing a new launch system for each launch.  
+    
+    Reusable small satellite launchers have higher initial costs-per-vehicle, but also have the potential for large advantages in the long term\cite{Preller2017b}. Reusable small satellite launchers have the potential for lower cost-per-launch than expendable systems, with increased launch flexibility\cite{Preller2017b}. 
+    One of the most promising methods of reusability for small launchers is the addition of airbreathing engines\cite{Smart2009}.
+    
+    
+    

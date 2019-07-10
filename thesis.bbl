@@ -253,56 +253,65 @@
 
   \entry{Smart2009a}{article}{}
     \name{author}{2}{}{%
+      {{hash=SMV}{%
+         family={Suraweera},
+         familyi={S\bibinitperiod},
+         given={Milinda\bibnamedelima V.},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
          given={Michael\bibnamedelima K.},
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
-      {{hash=TMR}{%
-         family={Tetlow},
-         familyi={T\bibinitperiod},
-         given={Matthew\bibnamedelima R.},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
     }
-    \strng{namehash}{SMKTMR1}
-    \strng{fullhash}{SMKTMR1}
+    \strng{namehash}{SMVSMK1}
+    \strng{fullhash}{SMVSMK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
-  rockets during the hypersonic phase of low- Earth-orbit insertion
-  trajectories. Despite this, scramjets are not used on any current systems due
-  to the difﬁculty of operating over the large Mach number envelope required
-  by this accelerating trajectory. The key to taking advantage of airbreathing
-  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
-  system that makes use of the scramjet only within its high-performance
-  regime. A multistage rocket-scramjet-rocket system that accepts this
-  limitation has therefore been examined. This system includes a solid rocket
-  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
-  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
-  Trajectory calculations for a system scaled to deliver approximately 100 kg
-  to a 200 km equatorial orbit indicate payload mass fractions of approximately
-  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
-  packaging. The goal of this work is to guide the future development of
-  scramjets by identifying the areas that will make the most signiﬁcant
-  improvement to their use for space access.%
+    A shock tunnel investigation of a scramjet with a
+  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
+  elliptical combustor has been$\backslash$nconducted at conditions simulating
+  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
+  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
+  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
+  began with a rearward facing step around its perimeter,$\backslash$nand was
+  followed by a constant area and diverging section. The
+  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
+  fuel was$\backslash$ninjected either through multiple portholes on the
+  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
+  at the combustor entrance,$\backslash$nor a combination of the two. All
+  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
+  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
+  Fuel injection in the intake produced$\backslash$nrobust combustion and good
+  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
+  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
+  was observed for fuel injection at the step at all
+  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
+  injection$\backslash$nwas observed to have the best performance. These
+  experimental results$\backslash$ndemonstrate that REST scramjets, designed
+  for access-to-space applications,$\backslash$ncan operate efficiently at
+  conditions below the design Mach number.%
     }
     \verb{doi}
-    \verb 10.2514/1.38784
+    \verb 10.2514/1.37946
     \endverb
-    \field{isbn}{1563478269}
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{117\bibrangedash 125}
-    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
-  Airbreathing Propulsion}}
-    \field{volume}{46}
+    \field{isbn}{9781563479373}
+    \field{issn}{0748-4658}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 564}
+    \field{title}{{Shock-Tunnel Experiments with a Mach 12
+  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/1.37946
+    \endverb
+    \field{volume}{25}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MSmart2009.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{journaltitle}{Journal of Propulsion and Power}
     \field{year}{2009}
   \endentry
 
@@ -7077,101 +7086,36 @@
     \field{year}{2015}
   \endentry
 
-  \entry{Abeynayake2013a}{article}{}
+  \entry{Dirkx}{book}{}
     \name{author}{2}{}{%
-      {{hash=AD}{%
-         family={Abeynayake},
-         familyi={A\bibinitperiod},
-         given={Dineth},
+      {{hash=DD}{%
+         family={Dirkx},
+         familyi={D\bibinitperiod},
+         given={Dominic},
          giveni={D\bibinitperiod},
       }}%
-      {{hash=AA}{%
-         family={Agon},
-         familyi={A\bibinitperiod},
-         given={Alan},
-         giveni={A\bibinitperiod},
+      {{hash=ME}{%
+         family={Mooj},
+         familyi={M\bibinitperiod},
+         given={Erwin},
+         giveni={E\bibinitperiod},
       }}%
     }
-    \keyw{cart3d,cfd,comparison,missile datcom,validation,wind tunnel}
-    \strng{namehash}{ADAA1}
-    \strng{fullhash}{ADAA1}
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{DDME1}
+    \strng{fullhash}{DDME1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{December}
-    \field{pages}{1\bibrangedash 6}
-    \field{title}{{Comparison of computational and semi-empirical aerodynamics
-  tools for making fit-for-purpose modelling decisions}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
-    \endverb
-    \field{year}{2013}
-  \endentry
-
-  \entry{Dunn1989}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DA}{%
-         family={Dunn},
-         familyi={D\bibinitperiod},
-         given={Archibald},
-         giveni={A\bibinitperiod},
-      }}%
+    \field{edition}{1}
+    \field{pages}{65\bibrangedash 67}
+    \field{title}{{Conceptual Shape Optimization of Entry Vehicles Applied to
+  Capsules and Winged Fuselage Vehicles}}
+    \list{location}{1}{%
+      {Cham, Switzerland}%
     }
-    \strng{namehash}{DA1}
-    \strng{fullhash}{DA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Aeropredictive Methods for Missile Analysis}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Archibald1989.pdf:p
-    \verb df
-    \endverb
-    \field{year}{1989}
-  \endentry
-
-  \entry{Davidian1987}{article}{}
-    \name{author}{3}{}{%
-      {{hash=DKJ}{%
-         family={Davidian},
-         familyi={D\bibinitperiod},
-         given={Kenneth\bibnamedelima J.},
-         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=DRH}{%
-         family={Dieck},
-         familyi={D\bibinitperiod},
-         given={Ronald\bibnamedelima H.},
-         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=CI}{%
-         family={Chuang},
-         familyi={C\bibinitperiod},
-         given={Isaac},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DKJDRHCI1}
-    \strng{fullhash}{DKJDRHCI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A preliminary uncertainty analysis has been performed for the High Area
-  Ratio Rocket Nozzle test program which took place at an altitude test
-  capsule. Results from the study establish the uncertainty of measured and
-  calculated parameters required for the calculation of rocket engine specific
-  impulse. A generalized description of the uncertainty methodology employed is
-  provided. Specific equations used and a detailed description of the analysis
-  are presented. Verification of the uncertainty analysis model was performed
-  by comparison with results from the experimental program's data reduction
-  code.%
-    }
-    \field{issn}{04999320}
-    \field{title}{{A detailed description of the uncertainty analysis for high
-  area ratio rocket nozzle tests at the NASA Lewis Research Center}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Davidian.pdf:pdf
-    \endverb
-    \field{journaltitle}{NASA Technical Memorandum}
-    \field{year}{1987}
+    \field{year}{2017}
   \endentry
 
   \entry{Marini2001}{article}{}
@@ -7308,6 +7252,82 @@
     \endverb
     \field{type}{phdthesis}
     \field{year}{2018}
+  \endentry
+
+  \entry{Abeynayake2013a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AD}{%
+         family={Abeynayake},
+         familyi={A\bibinitperiod},
+         given={Dineth},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Agon},
+         familyi={A\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{cart3d,cfd,comparison,missile datcom,validation,wind tunnel}
+    \strng{namehash}{ADAA1}
+    \strng{fullhash}{ADAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{December}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{{Comparison of computational and semi-empirical aerodynamics
+  tools for making fit-for-purpose modelling decisions}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{Davidian1987}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DKJ}{%
+         family={Davidian},
+         familyi={D\bibinitperiod},
+         given={Kenneth\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DRH}{%
+         family={Dieck},
+         familyi={D\bibinitperiod},
+         given={Ronald\bibnamedelima H.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Chuang},
+         familyi={C\bibinitperiod},
+         given={Isaac},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DKJDRHCI1}
+    \strng{fullhash}{DKJDRHCI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A preliminary uncertainty analysis has been performed for the High Area
+  Ratio Rocket Nozzle test program which took place at an altitude test
+  capsule. Results from the study establish the uncertainty of measured and
+  calculated parameters required for the calculation of rocket engine specific
+  impulse. A generalized description of the uncertainty methodology employed is
+  provided. Specific equations used and a detailed description of the analysis
+  are presented. Verification of the uncertainty analysis model was performed
+  by comparison with results from the experimental program's data reduction
+  code.%
+    }
+    \field{issn}{04999320}
+    \field{title}{{A detailed description of the uncertainty analysis for high
+  area ratio rocket nozzle tests at the NASA Lewis Research Center}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Davidian.pdf:pdf
+    \endverb
+    \field{journaltitle}{NASA Technical Memorandum}
+    \field{year}{1987}
   \endentry
 
   \entry{Carlson1972}{article}{}

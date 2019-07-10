@@ -120,20 +120,24 @@ In future design studies, the subsystems of the vehicles and interface mechanism
 Because of the large number of simulations necessary to cover the possible flight regimes of the launch system, the launch system in this study is analysed using medium and low fidelity modelling techniques chosen for their fitness-for-purpose for optimal trajectory analysis, with an emphasis on computational efficiency as well as accuracy.
 The uncertainties in the propulsive and aerodynamic properties of the launch system modelled in this work must be estimated, as there are no flight test or experimental results available for the representative launch system analysed in this study. In this section an estimate of the aerodynamic and propulsive uncertainties associated with the trajectory optimisations in this work is provided, and a Latin hypercube analysis is carried out to determine the variance in a sample trajectory optimisation. 
 
-\subsection{The Uncertainties of the Aerodynamics of the First and Second Stages}
+\subsection{Aerodynamic Uncertainty}
 
 
 
 
 %\subsubsection{Uncertainties Associated With Cart3D}
 
-%-add 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' and maybe others? - its too hard to estimate the values from almosnino.. sagerman only gives some specific pressure results, 
+
 
 %\textcolor{red}{XXX I need to make sure this isnt contradicting my lit review at all, and should repeat some of this in my lit review.}
 
+\textcolor{red}{XXX Change this to be all three stages, add some discussion about cart3d at high altitudes}
+
+The aerodynamic coefficients of the first and second stages in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle, particularly at subsonic and transonic conditions. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously compared Cart3D with experimental data for a number of geometries at various flight conditions. These experimental comparisons are utilised to estimate the uncertainty arising in the aerodynamic coefficients due to the use of Cart3D. These comparison studies do not usually correct for viscous forces, and so underpredict drag in almost all cases.
 
 
-The aerodynamic coefficients of the first and second stages in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle, particularly at subsonic and transonic conditions. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously compared Cart3D with experimental data for a number of geometries, at various flight conditions. These experimental comparisons are  utilised to estimate the uncertainty arising in the aerodynamic coefficients due to the use of Cart3D.
+
+%-add 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' and maybe others? - its too hard to estimate the values from almosnino.. but I should discuss it. sagerman only gives some specific pressure results, should discuss that too. 
 
 %\textcolor{red}{XXX be really careful here, the reviewer will know this paper inside out}
 Abeynayake \& Agon assess two missile geometries; a conventional missile at transonic and supersonic speeds, and a non-conventional missile that has a cruise missile profile and includes small wings at subsonic speeds\cite{Abeynayake2013a}. The study by Abenayake and Agon estimates the magnitude of the uncertainty of Cart3D in a comparison to experimental results, although no viscous correction is included, and so the lack of a viscous component significantly affects the aerodynamic coefficients, particularly drag. The uncertainty magnitudes are estimated in relative error, normalised by the average value of data points between 0$^\circ$ and 10$^\circ$ angle of attack for drag, or the value at 10$^\circ$ angle of attack in the case of the lift and pitching moment coefficients\cite{Abeynayake2013a}. It is noted that these relative errors only give an indication of the accuracy of a specific tool\cite{Abeynayake2013a}. It is found that when compared to experimental results, Cart3D has a mean error in drag of 31.3\% for subsonic, 23.5\% for supersonic, and 18.0\% for transonic cases\cite{Abeynayake2013a} when compared to wind tunnel data for the non-conventional missile at angle of attack values between -10$^\circ$ and 10$^\circ$ in the subsonic regime, and the conventional missile at angles of attack of 0$^\circ$ to 10$^\circ$ in the transonic and supersonic regimes. The mean relative error in lift was found to be 16.5\% for subsonic, 1.3\% for supersonic, and 28.7\% for transonic cases\cite{Abeynayake2013a}, and the error in pitching moment 22.0\% for supersonic and 67.1\% for transonic cases, with no subsonic error given\cite{Abeynayake2013a}.
@@ -164,27 +168,27 @@ For this reason, the drag uncertainty in the transonic regime is set to 18\%, to
 %-I have no way to convert the error from the coefficients to something useful. Also the lift coefficient errors that they have produced seem ridiculous compared to even their own aero coeffs in other papers? but they are saying its well predicted?
 
 
-\subsubsection{The Aerodynamics of the Third Stage}
+%\subsubsection{The Aerodynamics of the Third Stage}
 
 
-The aerodynamic properties of the third stage rocket are calculated using Missile Datcom, a low fidelity, semi empirical analysis tool. Missile Datcom is based on a component build-up method, and is primarily designed for analysis of missiles composed of basic geometric shapes\cite{Abeynayake2013a}. As the third stage rocket is flying at high Mach numbers for the entirety of its trajectory, only validation cases with supersonic Mach numbers are considered to estimate uncertainty margins. 
+%The aerodynamic properties of the third stage rocket are calculated using Missile Datcom, a low fidelity, semi empirical analysis tool. Missile Datcom is based on a component build-up method, and is primarily designed for analysis of missiles composed of basic geometric shapes\cite{Abeynayake2013a}. As the third stage rocket is flying at high Mach numbers for the entirety of its trajectory, only validation cases with supersonic Mach numbers are considered to estimate uncertainty margins. 
 
-In the same study used to identify the uncertainties associated with Cart3D, Abeynayake \& Agon assess Missile Datcom at Mach 4.5 for the conventional missile design\cite{Abeynayake2013a}. Missile Datcom was observed to provide reasonable estimates of lift and drag values, with mean relative uncertainty values of 17.5\% for drag, and 7.5\% for lift in the supersonic regime. However, Missile Datcom was not observed to provide a good estimate of pitching moment in the supersonic regime, with a 42.5\% mean error. The centre of pressure and associated errors are not stated. 
+%In the same study used to identify the uncertainties associated with Cart3D, Abeynayake \& Agon assess Missile Datcom at Mach 4.5 for the conventional missile design\cite{Abeynayake2013a}. Missile Datcom was observed to provide reasonable estimates of lift and drag values, with mean relative uncertainty values of 17.5\% for drag, and 7.5\% for lift in the supersonic regime. However, Missile Datcom was not observed to provide a good estimate of pitching moment in the supersonic regime, with a 42.5\% mean error. The centre of pressure and associated errors are not stated. 
 
-A study by Sooy and Schmidt\cite{Sooy2005} compares Missile Datcom with wind tunnel data for a variety of missile configurations. 
-The results for missile Datcom comparisons in the study by Sooy and Schmidt are mixed\cite{Sooy2005}.
-For a missile with wing-body and tail configuration similar to the Sparrow\rom{3}, at Mach numbers of 1.5 and 4.6 and Angle of attack values up to 45$^\circ$, errors of less than 9\% are observed in the normal force coefficient, the error pitching is observed to be within 12\% up to 30$^\circ$ angle of attack, and the error in $X_{CP}/l_b$ is less than 2\%\cite{Sooy2005}. However, axial coefficients are not predicted well, particularly at Mach 4.6, where large deviations are observed in the axial coefficient, particularly at high angle of attack values (at Mach 4.6 and 15$^\circ$ angle of attack, approximately 46\% error is apparent\cite{Sooy2005}). 
-A body-tail configuration is investigated, exhibiting good agreement between Missile Datcom and experimental data, with errors within 4\% for normal force coefficient, 4\% for pitching moment error, and 2\% for centre of pressure location. No axial force coefficients are compared for this geometry\cite{Sooy2005}.
-For a body-flare configuration at Mach 2.01 up to 30$^\circ$ angle of attack normal and axial force coefficients have predicted errors of within 13\% and approximately 26\%. The pitching moment coefficient has a maximum error of approximately 87\%, and the centre of pressure has a maximum error of approximately 49\%\cite{Sooy2005}. These errors are large, and are caused by a shift in the wind tunnel data around 10$^\circ$ angle of attack that is not elaborated upon\cite{Sooy2005}. 
-A body-tail configuration at Mach 2.01 exhibits maximum errors in normal force and pitching moment coefficients both under 11\%, and a maximum centre of pressure location error of less than 1\%\cite{Sooy2005}. 
-large axial coefficient exhibited in this case, with maximum error of approximately 65\%\cite{Sooy2005}.
-Overall it is suggested that Missile Datcom generally struggles with predicting axial force coefficients\cite{Sooy2005}.
-Note that two case studies were not assessed from the study by Sooy and Schmidt, one of which had large aerodynamic surfaces with large errors, that is omitted due to its complex geometry and large lifting surfaces that are assessed as particularly problematic for Missile Datcoms centre of pressure prediction\cite{Sooy2005}, and a body alone configuration that was assessed to have inconclusive error calculations\cite{Sooy2005}. 
+%A study by Sooy and Schmidt\cite{Sooy2005} compares Missile Datcom with wind tunnel data for a variety of missile configurations. 
+%The results for missile Datcom comparisons in the study by Sooy and Schmidt are mixed\cite{Sooy2005}.
+%For a missile with wing-body and tail configuration similar to the Sparrow\rom{3}, at Mach numbers of 1.5 and 4.6 and Angle of attack values up to 45$^\circ$, errors of less than 9\% are observed in the normal force coefficient, the error pitching is observed to be within 12\% up to 30$^\circ$ angle of attack, and the error in $X_{CP}/l_b$ is less than 2\%\cite{Sooy2005}. However, axial coefficients are not predicted well, particularly at Mach 4.6, where large deviations are observed in the axial coefficient, particularly at high angle of attack values (at Mach 4.6 and 15$^\circ$ angle of attack, approximately 46\% error is apparent\cite{Sooy2005}). 
+%A body-tail configuration is investigated, exhibiting good agreement between Missile Datcom and experimental data, with errors within 4\% for normal force coefficient, 4\% for pitching moment error, and 2\% for centre of pressure location. No axial force coefficients are compared for this geometry\cite{Sooy2005}.
+%For a body-flare configuration at Mach 2.01 up to 30$^\circ$ angle of attack normal and axial force coefficients have predicted errors of within 13\% and approximately 26\%. The pitching moment coefficient has a maximum error of approximately 87\%, and the centre of pressure has a maximum error of approximately 49\%\cite{Sooy2005}. These errors are large, and are caused by a shift in the wind tunnel data around 10$^\circ$ angle of attack that is not elaborated upon\cite{Sooy2005}. 
+%A body-tail configuration at Mach 2.01 exhibits maximum errors in normal force and pitching moment coefficients both under 11\%, and a maximum centre of pressure location error of less than 1\%\cite{Sooy2005}. 
+%large axial coefficient exhibited in this case, with maximum error of approximately 65\%\cite{Sooy2005}.
+%Overall it is suggested that Missile Datcom generally struggles with predicting axial force coefficients\cite{Sooy2005}.
+%Note that two case studies were not assessed from the study by Sooy and Schmidt, one of which had large aerodynamic surfaces with large errors, that is omitted due to its complex geometry and large lifting surfaces that are assessed as particularly problematic for Missile Datcoms centre of pressure prediction\cite{Sooy2005}, and a body alone configuration that was assessed to have inconclusive error calculations\cite{Sooy2005}. 
 
 
-Dunn\cite{Dunn1989} compares the aerodynamic properties predicted by Missile Datcom to experimental data for a variety of projectile shapes and observes that drag force prediction becomes less accurate as the configuration geometry becomes more complex\cite{Dunn1989}. The study by Dunn\cite{Dunn1989} is of limited use for determining the accuracy of normal force coefficients, as normal force curve slopes at 0$^\circ$ are generally analysed rather than normal or lift coefficients. However, of interest is the axial force coefficients of a spinner geometry, a simple low-curvature ogive nose-cylinder geometry generally similar to the third stage rocket of the representative launch system. This spinner is investigated at 0$^\circ$ angle of attack over a range of Mach numbers from 0.6 to 4.0. Lift coefficients are not directly investigated, though drag coefficients are compared, showing agreement between Missile Datcom and experimental data within approximately 18\% over the range of Mach numbers investigated. 
+%Dunn\cite{Dunn1989} compares the aerodynamic properties predicted by Missile Datcom to experimental data for a variety of projectile shapes and observes that drag force prediction becomes less accurate as the configuration geometry becomes more complex\cite{Dunn1989}. The study by Dunn\cite{Dunn1989} is of limited use for determining the accuracy of normal force coefficients, as normal force curve slopes at 0$^\circ$ are generally analysed rather than normal or lift coefficients. However, of interest is the axial force coefficients of a spinner geometry, a simple low-curvature ogive nose-cylinder geometry generally similar to the third stage rocket of the representative launch system. This spinner is investigated at 0$^\circ$ angle of attack over a range of Mach numbers from 0.6 to 4.0. Lift coefficients are not directly investigated, though drag coefficients are compared, showing agreement between Missile Datcom and experimental data within approximately 18\% over the range of Mach numbers investigated. 
 
-From these experimental comparisons it is evident that Missile Datcom is able to predict normal forces reasonably closely. However, there is variation in the accuracy of predicted pitching moment and centre of pressure locations, and overall Missile Datcom is poor at estimating axial forces. The uncertainties in Missile Datcom are taken to be the mean of the available error data, assuming that the lift and drag errors observed by Abeynayake \& Agon approximately correspond to normal and axial errors respectively, due to the relatively low angles of attack investigated. With this assumption, the mean axial error from the compared tests is 34.5\%, and mean normal force error is 8.9\%. When calculating pitching moment, the large pitching moment error of 87\% observed in the body-flare configuration tested by Sooy and Schmidt\cite{Sooy2005} is excluded, due to being the result of an unknown anomaly. Without this, the mean pitching moment error is calculated as 17.4\%.
+%From these experimental comparisons it is evident that Missile Datcom is able to predict normal forces reasonably closely. However, there is variation in the accuracy of predicted pitching moment and centre of pressure locations, and overall Missile Datcom is poor at estimating axial forces. The uncertainties in Missile Datcom are taken to be the mean of the available error data, assuming that the lift and drag errors observed by Abeynayake \& Agon approximately correspond to normal and axial errors respectively, due to the relatively low angles of attack investigated. With this assumption, the mean axial error from the compared tests is 34.5\%, and mean normal force error is 8.9\%. When calculating pitching moment, the large pitching moment error of 87\% observed in the body-flare configuration tested by Sooy and Schmidt\cite{Sooy2005} is excluded, due to being the result of an unknown anomaly. Without this, the mean pitching moment error is calculated as 17.4\%.
 
 
 
@@ -201,15 +205,17 @@ The uncertainty in the specific impulse of 1.30\% is used as the rocket engine p
 \subsubsection{The Scramjet Engine}
 %\textcolor{red}{I have some comparisons with experimental results from "Shock Tunnel Experiments with a Mach 12 {REST} Scramjet at Off-Design Conditions" and "Quasi-One-Dimensional Model of Hydrogen-Fueled Scramjet Combustors". These are comparisons of the internal dynamics of the engine and I have not yet thought of how best to synthesise these into thrust or mass flow rate uncertainties. }
 
---he points out it hasnt been validated against an 'operational' engine, so maybe include some discussion about how its only been validated against test engines?
+%--he points out it hasnt been validated against an 'operational' engine, so maybe include some discussion about how its only been validated against test engines?
 %-ive got a couple of papers about quasi 1d validation for scramjets
 
 
-from ingo: -no flight datas for scramjet is an issue - be clear about this. say that there is no availsbl;e flight test data in the public doain. in the absence of clear data an uncertainty of 25\%? it is plausible that this may be larger. maybe have section eploring lower limit on engine.
--ask michaael if crest database has experiomental results- ingo thinks that 1D ANalysis is tuned using ground test data. In this case it doesnt make much sense to work out uncertainty from ground test data.
+%from ingo: -no flight datas for scramjet is an issue - be clear about this. say that there is no availsbl;e flight test data in the public doain. in the absence of clear data an uncertainty of 25\%? it is plausible that this may be larger. maybe have section eploring lower limit on engine.
+%-ask michaael if crest database has experiomental results- ingo thinks that 1D ANalysis is tuned using ground test data. In this case it doesnt make much sense to work out uncertainty from ground test data.
 
-Ingo says that I might need to ballpark a number, say 25\%, but that it could be much higher, even 50\% in his optinion. I will need to be very clear here. 
+%Ingo says that I might need to ballpark a number, say 25\%, but that it could be much higher, even 50\% in his optinion. I will need to be very clear here. 
 
+%\textcolor{red}{XXX check with michael about the experimental corrections}
+The C-REST engines are modelled in this work using a dataset developed using a combination of high-fidelity CFD, and quasi 1-D analysis, tuned using experimental results. Estimating the error in this model in comparison to a realistic, flight capable scramjet is not feasible, due to the lack of flight test data or full-scale engine ground testing for scramjet engines in the public domain. For the purposes of this study a nominal uncertainty of 25\% is associated with the specific impulse of the scramjet engines. This is a nominal, estimated, uncertainty margin, and it is possible that the uncertainty margin may be higher than this estimated value. However it is probable that if there is errors larger than 25\% in the performance modelling of the scramjet engines, then the design of the system may have to change considerably to be feasible. For this reason, the uncertainty margin of the scramjet specific impulse is kept at 25\% for payload-to-orbit uncertainty margin calculations, although it is acknowledged that major modelling or experimental discrepancies may cause design changes to be necessary or lead to the infeasibility of the system as a whole. 
 
 
 \subsection{Quantification of Aerodynamic and Propulsion Uncertainty Effects}
@@ -230,11 +236,11 @@ The uncertainty margins of the aerodynamic and propulsive data for the represent
 	\hline  SPARTAN/First Stage $C_D$ & 20\% & 18\% & 11\% \\  
 	\hline  SPARTAN/First Stage $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 	\hline  SPARTAN $I_{SP}$ & - & - &  25\% \\ 
-	\hline  Third Stage $C_a$ & - & - &  34.5\% \\ 
-	\hline  Third Stage $C_n$ &  -& - & 8.9\% \\ 
-	\hline  Third Stage $C_M$ & - & - & 17.4\%  \\ 
-	\hline  Third Stage $I_{SP}$ & - & - & 1.3\%  \\ 
-	\hline 
+	%\hline  Third Stage $C_a$ & - & - &  34.5\% \\ 
+	%\hline  Third Stage $C_n$ &  -& - & 8.9\% \\ 
+	%\hline  Third Stage $C_M$ & - & - & 17.4\%  \\ 
+	%\hline  Third Stage $I_{SP}$ & - & - & 1.3\%  \\ 
+	%\hline 
 	\label{tab:AppendixUncertainty}
 \end{tabular}
 
@@ -243,7 +249,7 @@ In order to quantify the effects of the uncertainty in the aerodynamic and propu
 %-2 sigma variation? normalised spread?
 
 \subsection{Atmospheric Variations}
-
+\textcolor{red}{XXX I need to make it clear that the variations in the atmosphere are very complex, and that this is a simplified model to estimate major uncertainties}
 This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} to calculate the properties of the atmosphere during simulations. The U.S Standard Atmosphere 1976 is based on a collection of data from sites across America, Brazil, Australia, and Russia, with values calculated for annual mean properties at an interpolated latitude of 45$^\circ$\cite{Administration1976}. The properties that are calculated using this atmosphere are subject to seasonal variability, as well as variability due to geographic position. Figure \ref{fig:AtmosphericVariation} shows the variation in temperature and pressure in the 1976 U.S Standard Atmosphere model with altitude. In the higher latitudes maximum and minimum temperatures at altitudes below 25km are seasonal, however at higher altitudes semi-annual and biennial oscillations have a large influence\cite{Administration1976}. The variations shown do not occur at the same time in the same envelopes of the atmosphere; warm temeratures at the surface are associated with cold temperatures near the tropopause, and temperatures near the stratopause are negatively correlated with temperatures near the mesopause\cite{Administration1976}. These oscillations are particularly important in the equatorial regions, where the seasonal variation in temperature is smallest. The variations in atmospheric properties with geography or time may affect the performance of the launch system significantly. These variations may have significant impact on the aerodynamic and aerothermal performance of the launch system at a particular altitude, as well as the performance of the propulsion systems of the launch system, particularly the scramjet engines. 
 
 \begin{figure}[ht]
@@ -313,6 +319,7 @@ The GPOPS-2 solution to the Brachistochrone problem is shown in Figure \ref{fig:
 
 \textcolor{red}{\section{Example - Space Shuttle Reentry}}
 \textcolor{red}{XXX I havent been able to find any good trajectories for comparison, that offer me the ability to recreate them..}
+\textcolor{red}{XXX this is not quite the same as the GPOPS example, more similar to my dynamics}
 
 This section describes an optimised shuttle reentry trajectory problem, taken from the textbook 'Practical Methods for Optimal Control and Estimation Using Nonlinear Programming' by Betts\cite{Betts2009}, which has been simulated in GPOPS-2 to illustrate the capabilities of GPOPS-2 when applied to a complex aerodynamic problem of an existing vehicle. The optimisation of the space shuttle reentry is relevant due to the large flight regime and long time period being simulated, which leads to a complex, extremely sensitive optimal control problem\cite{Betts2009}, similar in a simplified manner to the problem being solved in this work. The shuttle reentry problem is highly nonlinear and intractable to simple optimisation methods\cite{Betts2009}, making it suitable for illustrating the robustness of GPOPS-2 for aerospace problems of this type. 
 The space shuttle reentry problem aims to maximise crossrange during reentry, with two cases; unconstrained, and limited by a simple heating rate constraint. The example in this section uses the vehicle model exactly as defined by Betts\cite{Betts2009} for comparison purposes, however the problem is formulated in a simplified version of the coordinate system that is used in the rest of this work. 
@@ -1082,7 +1089,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 
 \chapter{Viscous Drag Variation}
-
+\textcolor{red}{XXX Will need to redo this with variation for all stages}
 
 This section presents the sensitivity of the launch system performance to variations in the viscous drag of the SPARTAN. This sensitivity analysis is intended as a reference, to indicate the magnitude of variations in the viscous drag of the SPARTAN due to variations in modelling methods, and is unlikely to be indicative of any physical design variations.
 The viscous drag component of the SPARTAN's aerodynamics is calculated using flat plate correlations, which require an estimation of the laminar to turbulent transition point on the body of the SPARTAN\cite{Ward2018}. This transition point is difficult to estimate to a high degree of accuracy, and can have a significant effect on the viscous drag of an aircraft\cite{Ward2018}.

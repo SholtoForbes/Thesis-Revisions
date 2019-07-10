@@ -2,7 +2,7 @@
 
 \cleardoublepage
 \chapter{LODESTAR}\label{chapter:LODESTAR}
-
+\textcolor{red}{XXX Maybe rename this to modelling and simulation or something}
 
 This chapter presents the package LODESTAR (Launch Optimisation and Data Evaluation for Scramjet Trajectory Analysis Research), which has been developed to calculate the optimal trajectories of partially airbreathing satellite launch systems, as a general tool for this purpose is not currently widely available. LODESTAR has the capability to calculate optimal mission profiles for systems consisting of various combinations of rocket and airbreathing stages, using \textcolor{red}{accurate and robust} optimisation techniques. 
 LODESTAR optimises a trajectory towards a user-defined objective function, such as maximum payload-to-orbit, subject to constraints that ensure that the launch system does not exceed its aerodynamic or structural limitations.
@@ -432,7 +432,7 @@ Splitting the forward simulation allows the forward simulation of the return sta
 		\begin{figure}[ht]
 			\centering
 			\includegraphics[width=0.98\linewidth]{"figures/4_LODESTAR/Ascent Flowchart"}
-			\caption{\textcolor{red}{XXX Change 6DOF in this image! }The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.}
+			\caption{\textcolor{red}{XXX Change 6DOF in this image! also check section no.s}The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.}
 			\label{fig:AscentFlowchart}
 		\end{figure} 
 	\end{landscape}
@@ -468,7 +468,48 @@ This exergy efficiency expresses how efficiently each stage utilises its availab
 This exergy efficiency expresses how efficiently the launch system as a whole is able to accelerate the payload to orbit. 
 Within this work, exergy efficiency is expressed as the percentage of total exergy utilised, \%$\eta$, ie. $\eta_{exergy} \times 100$.
 
+\section{Thermal Analysis}
+\textcolor{red}{XXX New section}
+\textcolor{red}{XXX I dont know how to express why reynolds analogy is not valid.. is it just radiating shock layer effects? Then why would it be specific to a part of the leading edge that isnt near the shock?}
 
+During launch, the launch system is exposed to large aerothermal loading that must be resisted using passive thermal protection systems. The heat flux over the trajectory is modelled at various locations on the SPARTAN and third stage, and integrated over the trajectory using 1-D heat conduction analysis to determine the efficacy of the thermal protection system. For the body, the criteria for thermal protection system effectiveness is that the temperature at the internal surface of the thermal protection system must be under 1000$^\circ$C, corresponding to the operable limit of the internal insulation. For the nose tip and the wing leading edge it is assumed that the thermal protection system will not be directly attached to the internal insulation, so that the criteria for thermal protection system success is that the temperature at these points is maintained below the operable limit of the thermal protection system material. 
+
+The heat transfer coefficients on the body of the vehicle are computed using Reynolds analogy: 
+\begin{equation}
+c_h = \frac{c_f}{2s},
+\end{equation}
+where $c_f$ is the coefficient of friction and $s$ is the Reynold's analogy factor, assumed to be 1.16\cite{Ward2018}. 
+This solution is performed within the viscous solver VC3D, at specific locations around the body of the SPARTAN and third stage: \textcolor{red}{XXX show both spartan and third stage}
+
+The heat transfer at the stagnation point and leading edge of the wings, where Reynold's analogy is not valid, is estimated using semi-empirical correlations\cite{Dirkx}. At the stagnation point, the heat transfer is given by\cite{Dirkx}:
+\begin{equation}
+q_s = k_1\rho^{N_1}V^{N_2},
+\end{equation}
+where $N_1 = 0.5$ and $N_2 = 3$, and the constant $k$ is\cite{Dirkx}:
+\begin{equation}
+k_1 = \frac{1.83 \times 10^{-4}}{\sqrt{R_n}}(1-\frac{T_w}{T_{aw}}),
+\end{equation}
+where $R_n$ is the nose radius, $T_w$ is the wall temperature, and $T_{aw}$ is the adiabatic wall temperature.
+
+The heating at the leading edge is given by a weighted average correlation between a stagnation point and a flat plate\cite{Dirkx,Tauber2008}:
+\begin{equation}
+q_{LE} = (\frac{1}{2}q_s^2 \cos^2(\Lambda) + q_{FP}^2 \sin^2(\Lambda))^{1/2},
+\end{equation}
+where $\Lambda$ is the wing sweep angle, and the equation for a flat plate is calculated assuming turbulent flow under 2962m/s as:
+\begin{equation}
+q_{FP} = k_2\rho^{N_3}V^{N_4},
+\end{equation}
+where $N_3 = 3.37$, $N_4 = 0.8$ and
+\begin{equation}
+k_2 = 3.35 \times 10^{-4} \cos^{1.78}(\theta) \sin^{1.6}(\theta) x_T^{-1/5} (\frac{T_w}{556})^{-1/4} (1 - 1.11\frac{T_w}{T_{aw}}),
+\end{equation}
+where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, the aeroheating is calculated at the start of the wing, providing an overall worst case scenario for the heating rate. Results for both best case and worst case transition points are provided in Appendix \textcolor{red}{XXX} and are shown to exhibit only \textcolor{red}{XXX}\% difference. As this is comparatively small and acknowledging the preliminary design nature (and associated design uncertainties) of the current project, we have opted to use the worst case assumption for estimating heat-transfer.
+
+\textcolor{red}{XXX-the reynolds analogy doesnt (?) take into account radiating shock layer effects like there would be over a shock, need to look at daniel potters thesis, ingo says the intro may give me a good overview, though my cases will be less severe}
+
+\textcolor{red}{XXX Need to put in recognition for Alex \& Ingo for thermal stuff}
+
+\textcolor{red}{XXX add section in appendix comparing best and worst cases of transition point}
 
 \section{Summary}
 This chapter presented a tool for optimising the trajectory of launch systems, designated LODESTAR. 
