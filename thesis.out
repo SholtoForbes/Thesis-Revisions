@@ -8,26 +8,26 @@
 \BOOKMARK [1][-]{section.2.2}{Reusable Rocket-Powered Satellite Launch Systems}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.3}{Small Satellite Launchers}{chapter.2}% 9
 \BOOKMARK [0][-]{chapter.3}{Literature review}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Airbreathing Access-to-Space Systems}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.1.1}{Small Airbreathing Launchers}{section.3.1}% 12
-\BOOKMARK [1][-]{section.3.2}{Airbreathing Launch Vehicle Ascent Trajectories}{chapter.3}% 13
-\BOOKMARK [2][-]{subsection.3.2.1}{Single-Stage Vehicles}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.2}{Multi-Stage Vehicles}{section.3.2}% 15
-\BOOKMARK [1][-]{section.3.3}{Hypersonic Vehicle Fly-Back Trajectories}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.4}{Optimal Control}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.4.1}{Shooting Methods}{section.3.4}% 18
-\BOOKMARK [2][-]{subsection.3.4.2}{Collocation Methods}{section.3.4}% 19
-\BOOKMARK [1][-]{section.3.5}{Available Optimal Control Solvers}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.6}{Pseudospectral Method Optimisation in Aerospace Applications}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.7}{Exergy Analysis}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.8}{The University of Queensland's Rocket-Scramjet-Rocket Launch System}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.8.1}{Scramjet Engine Model}{section.3.8}% 24
-\BOOKMARK [2][-]{subsection.3.8.2}{The Trajectory of the SPARTAN}{section.3.8}% 25
-\BOOKMARK [2][-]{subsection.3.8.3}{The Third Stage Rocket}{section.3.8}% 26
-\BOOKMARK [2][-]{subsection.3.8.4}{Exoatmospheric Rocket Engines}{section.3.8}% 27
-\BOOKMARK [1][-]{section.3.9}{Aerodynamic Analysis}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.9.1}{Cart3D}{section.3.9}% 29
-\BOOKMARK [1][-]{section.3.10}{Summary}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.1}{The Launch System Design Process}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.1.1}{Trajectory Modelling}{section.3.1}% 12
+\BOOKMARK [1][-]{section.3.2}{Airbreathing Access-to-Space Systems and Their Trajectories}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.2.1}{Single Stage Launch Systems}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{Two-Stage Launch Systems}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.3}{Three-Stage Launch Systems}{section.3.2}% 16
+\BOOKMARK [1][-]{section.3.3}{Hypersonic Vehicle Fly-Back Trajectories}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Trajectory Analysis}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.4.1}{Exergy Analysis}{section.3.4}% 19
+\BOOKMARK [1][-]{section.3.5}{Optimal Control}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.5.1}{Shooting Methods}{section.3.5}% 21
+\BOOKMARK [2][-]{subsection.3.5.2}{Collocation Methods}{section.3.5}% 22
+\BOOKMARK [1][-]{section.3.6}{Available Optimal Control Solvers}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.7}{Pseudospectral Method Optimisation in Aerospace Applications}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.8}{Modelling and Design}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.8.1}{Scramjet Engine Modelling}{section.3.8}% 26
+\BOOKMARK [2][-]{subsection.3.8.2}{Aerodynamic Analysis}{section.3.8}% 27
+\BOOKMARK [2][-]{subsection.3.8.3}{Exoatmospheric Rocket Engines}{section.3.8}% 28
+\BOOKMARK [2][-]{subsection.3.8.4}{Modelling Simplifications}{section.3.8}% 29
+\BOOKMARK [1][-]{section.3.9}{Summary}{chapter.3}% 30
 \BOOKMARK [0][-]{chapter.4}{The Representative Launch Vehicle}{}% 31
 \BOOKMARK [1][-]{section.4.1}{The Second Stage Scramjet Accelerator}{chapter.4}% 32
 \BOOKMARK [2][-]{subsection.4.1.1}{The SPARTAN Accelerator}{section.4.1}% 33
@@ -98,7 +98,7 @@
 \BOOKMARK [1][-]{section.7.7}{Summary}{chapter.7}% 98
 \BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 99
 \BOOKMARK [0][-]{chapter.9}{Recommendations for future work}{}% 100
-\BOOKMARK [0][-]{chapter*.145}{References}{}% 101
+\BOOKMARK [0][-]{chapter*.148}{References}{}% 101
 \BOOKMARK [0][-]{appendix.A}{Uncertainties and Simplifications}{}% 102
 \BOOKMARK [1][-]{section.A.1}{Modelling and Design Simplifications}{appendix.A}% 103
 \BOOKMARK [2][-]{subsection.A.1.1}{Control}{section.A.1}% 104

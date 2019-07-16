@@ -253,65 +253,56 @@
 
   \entry{Smart2009a}{article}{}
     \name{author}{2}{}{%
-      {{hash=SMV}{%
-         family={Suraweera},
-         familyi={S\bibinitperiod},
-         given={Milinda\bibnamedelima V.},
-         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
          given={Michael\bibnamedelima K.},
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
+      {{hash=TMR}{%
+         family={Tetlow},
+         familyi={T\bibinitperiod},
+         given={Matthew\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{SMVSMK1}
-    \strng{fullhash}{SMVSMK1}
+    \strng{namehash}{SMKTMR1}
+    \strng{fullhash}{SMKTMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A shock tunnel investigation of a scramjet with a
-  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
-  elliptical combustor has been$\backslash$nconducted at conditions simulating
-  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
-  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
-  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
-  began with a rearward facing step around its perimeter,$\backslash$nand was
-  followed by a constant area and diverging section. The
-  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
-  fuel was$\backslash$ninjected either through multiple portholes on the
-  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
-  at the combustor entrance,$\backslash$nor a combination of the two. All
-  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
-  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
-  Fuel injection in the intake produced$\backslash$nrobust combustion and good
-  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
-  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
-  was observed for fuel injection at the step at all
-  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
-  injection$\backslash$nwas observed to have the best performance. These
-  experimental results$\backslash$ndemonstrate that REST scramjets, designed
-  for access-to-space applications,$\backslash$ncan operate efficiently at
-  conditions below the design Mach number.%
+    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
+  rockets during the hypersonic phase of low- Earth-orbit insertion
+  trajectories. Despite this, scramjets are not used on any current systems due
+  to the difﬁculty of operating over the large Mach number envelope required
+  by this accelerating trajectory. The key to taking advantage of airbreathing
+  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
+  system that makes use of the scramjet only within its high-performance
+  regime. A multistage rocket-scramjet-rocket system that accepts this
+  limitation has therefore been examined. This system includes a solid rocket
+  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
+  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
+  Trajectory calculations for a system scaled to deliver approximately 100 kg
+  to a 200 km equatorial orbit indicate payload mass fractions of approximately
+  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
+  packaging. The goal of this work is to guide the future development of
+  scramjets by identifying the areas that will make the most signiﬁcant
+  improvement to their use for space access.%
     }
     \verb{doi}
-    \verb 10.2514/1.37946
+    \verb 10.2514/1.38784
     \endverb
-    \field{isbn}{9781563479373}
-    \field{issn}{0748-4658}
-    \field{number}{3}
-    \field{pages}{555\bibrangedash 564}
-    \field{title}{{Shock-Tunnel Experiments with a Mach 12
-  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/1.37946
-    \endverb
-    \field{volume}{25}
+    \field{isbn}{1563478269}
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{117\bibrangedash 125}
+    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
+  Airbreathing Propulsion}}
+    \field{volume}{46}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MSmart2009.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2009}
   \endentry
 
@@ -1597,6 +1588,64 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Smart2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=TMR}{%
+         family={Tetlow},
+         familyi={T\bibinitperiod},
+         given={Matthew\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMKTMR1}
+    \strng{fullhash}{SMKTMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
+  rockets during the hypersonic phase of low- Earth-orbit insertion
+  trajectories. Despite this, scramjets are not used on any current systems due
+  to the difﬁculty of operating over the large Mach number envelope required
+  by this accelerating trajectory. The key to taking advantage of airbreathing
+  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
+  system that makes use of the scramjet only within its high-performance
+  regime. A multistage rocket-scramjet-rocket system that accepts this
+  limitation has therefore been examined. This system includes a solid rocket
+  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
+  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
+  Trajectory calculations for a system scaled to deliver approximately 100 kg
+  to a 200 km equatorial orbit indicate payload mass fractions of approximately
+  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
+  packaging. The goal of this work is to guide the future development of
+  scramjets by identifying the areas that will make the most signiﬁcant
+  improvement to their use for space access.%
+    }
+    \verb{doi}
+    \verb 10.2514/1.38784
+    \endverb
+    \field{isbn}{1563478269}
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{117\bibrangedash 125}
+    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
+  Airbreathing Propulsion}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/1.38784
+    \endverb
+    \field{volume}{46}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/smart2009.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2009}
+  \endentry
+
   \entry{Electron}{misc}{}
     \name{author}{1}{}{%
       {{hash=R}{%
@@ -1856,62 +1905,48 @@
     \field{urlyear}{2017}
   \endentry
 
-  \entry{Smart2009}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SMK}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima K.},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+  \entry{Blair2001}{report}{}
+    \name{author}{4}{}{%
+      {{hash=BJC}{%
+         family={Blair},
+         familyi={B\bibinitperiod},
+         given={J\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
-      {{hash=TMR}{%
-         family={Tetlow},
-         familyi={T\bibinitperiod},
-         given={Matthew\bibnamedelima R.},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      {{hash=RRS}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={R\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SLa}{%
+         family={Schutzenhofer},
+         familyi={S\bibinitperiod},
+         given={L\bibnamedelima a},
+         giveni={L\bibinitperiod\bibinitdelim a\bibinitperiod},
+      }}%
+      {{hash=HWR}{%
+         family={Humphries},
+         familyi={H\bibinitperiod},
+         given={W\bibnamedelima R},
+         giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SMKTMR1}
-    \strng{fullhash}{SMKTMR1}
+    \strng{namehash}{BJC+1}
+    \strng{fullhash}{BJCRRSSLaHWR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
-  rockets during the hypersonic phase of low- Earth-orbit insertion
-  trajectories. Despite this, scramjets are not used on any current systems due
-  to the difﬁculty of operating over the large Mach number envelope required
-  by this accelerating trajectory. The key to taking advantage of airbreathing
-  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
-  system that makes use of the scramjet only within its high-performance
-  regime. A multistage rocket-scramjet-rocket system that accepts this
-  limitation has therefore been examined. This system includes a solid rocket
-  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
-  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
-  Trajectory calculations for a system scaled to deliver approximately 100 kg
-  to a 200 km equatorial orbit indicate payload mass fractions of approximately
-  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
-  packaging. The goal of this work is to guide the future development of
-  scramjets by identifying the areas that will make the most signiﬁcant
-  improvement to their use for space access.%
+    \field{number}{May}
+    \field{title}{{Launch Vehicle Design Process : Integration , Technical and
+  Lessons Learned}}
+    \list{institution}{1}{%
+      {NASA STI Program Office}%
     }
-    \verb{doi}
-    \verb 10.2514/1.38784
-    \endverb
-    \field{isbn}{1563478269}
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{117\bibrangedash 125}
-    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
-  Airbreathing Propulsion}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/1.38784
-    \endverb
-    \field{volume}{46}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/smart2009.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Blair.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2009}
+    \field{type}{techreport}
+    \field{year}{2001}
   \endentry
 
   \entry{Powell1991}{article}{}
@@ -2454,51 +2489,6 @@
     \field{year}{2014}
   \endentry
 
-  \entry{Flaherty2010}{article}{}
-    \name{author}{3}{}{%
-      {{hash=FKW}{%
-         family={Flaherty},
-         familyi={F\bibinitperiod},
-         given={Kevin\bibnamedelima W.},
-         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=AKM}{%
-         family={Andrews},
-         familyi={A\bibinitperiod},
-         given={Katherine\bibnamedelima M.},
-         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=LGW}{%
-         family={Liston},
-         familyi={L\bibinitperiod},
-         given={Glenn\bibnamedelima W.},
-         giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FKWAKMLGW1}
-    \strng{fullhash}{FKWAKMLGW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/1.43750
-    \endverb
-    \field{issn}{0022-4650}
-    \field{number}{2}
-    \field{pages}{280\bibrangedash 287}
-    \field{title}{{Operability Benefits of Airbreathing Hypersonic Propulsion
-  for Flexible Access to Space}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/1.43750
-    \endverb
-    \field{volume}{47}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Flaherty2010.pdf:pd
-    \verb f
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2010}
-  \endentry
-
   \entry{Olds1998}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=OJ}{%
@@ -2851,6 +2841,77 @@
     \endverb
     \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{1999}
+  \endentry
+
+  \entry{Jazra2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JT}{%
+         family={Jazra},
+         familyi={J\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Preller},
+         familyi={P\bibinitperiod},
+         given={Dawid},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JTPDSMK1}
+    \strng{fullhash}{JTPDSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.A32381
+    \endverb
+    \field{isbn}{9781600869426}
+    \field{issn}{0022-4650}
+    \field{number}{2}
+    \field{pages}{411\bibrangedash 422}
+    \field{title}{{Design of an Airbreathing Second Stage for a
+  Rocket-Scramjet-Rocket Launch Vehicle}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/1.A32381
+    \endverb
+    \field{volume}{50}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/DPreller.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Preller2018a}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={Preller},
+         familyi={P\bibinitperiod},
+         given={Dawid},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PD1}
+    \strng{fullhash}{PD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
+  Hypersonic Airbreathing Accelerating Vehicle}}
+    \list{institution}{1}{%
+      {The University of Queensland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/s804635\_fina
+    \verb l\_thesis.pdf:pdf
+    \endverb
+    \field{type}{Ph.D Dissertation}
+    \field{year}{2018}
   \endentry
 
   \entry{Hellman}{report}{}
@@ -3212,156 +3273,6 @@
     \endverb
     \field{journaltitle}{Journal of Aircraft}
     \field{year}{2007}
-  \endentry
-
-  \entry{Jazra2013}{article}{}
-    \name{author}{3}{}{%
-      {{hash=JT}{%
-         family={Jazra},
-         familyi={J\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=PD}{%
-         family={Preller},
-         familyi={P\bibinitperiod},
-         given={Dawid},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=SMK}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima K.},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JTPDSMK1}
-    \strng{fullhash}{JTPDSMK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/1.A32381
-    \endverb
-    \field{isbn}{9781600869426}
-    \field{issn}{0022-4650}
-    \field{number}{2}
-    \field{pages}{411\bibrangedash 422}
-    \field{title}{{Design of an Airbreathing Second Stage for a
-  Rocket-Scramjet-Rocket Launch Vehicle}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/1.A32381
-    \endverb
-    \field{volume}{50}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/DPreller.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2013}
-  \endentry
-
-  \entry{Smart2006}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SMK}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima K},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-      {{hash=REG}{%
-         family={Ruf},
-         familyi={R\bibinitperiod},
-         given={Edward\bibnamedelima G},
-         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SMKREG1}
-    \strng{fullhash}{SMKREG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Scramjet flowpaths employing elliptical combustors have the potential to
-  improve structural efficiency and performance relative to those using planar
-  geometries. NASA Langley has developed a scramjet flowpath that is integrated
-  into a lifting body vehicle, transitions from a rectangular capture area to
-  an elliptical throat, and includes an elliptical combustor. This
-  Rectangular-to-Elliptical Shape Transition (REST) scramjet has a design point
-  of Mach 7.1, and is intended to operate with fixed-geometry between Mach 4.5
-  and 8.0. This paper describes initial free-jet testing of a heat-sink REST
-  scramjet engine model at conditions simulating Mach 5.3 flight. Combustion of
-  gaseous hydrogen fuel at equivalence ratios between 0.5 and 1.5 generated
-  robust performance after ignition with a silane-hydrogen pilot. Facility-
-  model interactions were experienced for fuel equivalence ratios above 1.1,
-  yet despite this, the flowpath was never unstarted by fuel addition at the
-  Mach 5.3 test condition. Combustion tests resulting in engine unstart at
-  reduced stagnation enthalpy indicated that the inlet/engine self-started
-  following termination of the fuel injection. Engine data is presented for the
-  largest fuel equivalence ratio tested without facility interaction. These
-  results indicate that this class of three-dimensional scramjet engine can
-  operate successfully at off-design conditions.%
-    }
-    \verb{doi}
-    \verb doi:10.2514/6.2006-2955
-    \endverb
-    \field{isbn}{1563478110}
-    \field{number}{AIAA 2006-2955}
-    \field{pages}{190\bibrangedash 201}
-    \field{title}{{Free-jet testing of a \{REST\} scramjet at off-design
-  conditions}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2006.pdf:pdf
-    \endverb
-    \field{journaltitle}{Collection of Technical Papers - 25th AIAA Aerodynamic
-  Measurement Technology and Ground Testing Conference}
-    \field{year}{2006}
-  \endentry
-
-  \entry{Preller2018a}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=PD}{%
-         family={Preller},
-         familyi={P\bibinitperiod},
-         given={Dawid},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PD1}
-    \strng{fullhash}{PD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
-  Hypersonic Airbreathing Accelerating Vehicle}}
-    \list{institution}{1}{%
-      {The University of Queensland}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/s804635\_fina
-    \verb l\_thesis.pdf:pdf
-    \endverb
-    \field{type}{Ph.D Dissertation}
-    \field{year}{2018}
-  \endentry
-
-  \entry{Wade2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=WM}{%
-         family={Wade},
-         familyi={W\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WM1}
-    \strng{fullhash}{WM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Encyclopedia Astronautica}}
-    \verb{url}
-    \verb http://www.astronautix.com/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{24}
-    \field{urlmonth}{07}
-    \field{urlyear}{2018}
   \endentry
 
   \entry{Bulirsch1993}{article}{}
@@ -4899,6 +4810,62 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Smart2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=REG}{%
+         family={Ruf},
+         familyi={R\bibinitperiod},
+         given={Edward\bibnamedelima G},
+         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMKREG1}
+    \strng{fullhash}{SMKREG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Scramjet flowpaths employing elliptical combustors have the potential to
+  improve structural efficiency and performance relative to those using planar
+  geometries. NASA Langley has developed a scramjet flowpath that is integrated
+  into a lifting body vehicle, transitions from a rectangular capture area to
+  an elliptical throat, and includes an elliptical combustor. This
+  Rectangular-to-Elliptical Shape Transition (REST) scramjet has a design point
+  of Mach 7.1, and is intended to operate with fixed-geometry between Mach 4.5
+  and 8.0. This paper describes initial free-jet testing of a heat-sink REST
+  scramjet engine model at conditions simulating Mach 5.3 flight. Combustion of
+  gaseous hydrogen fuel at equivalence ratios between 0.5 and 1.5 generated
+  robust performance after ignition with a silane-hydrogen pilot. Facility-
+  model interactions were experienced for fuel equivalence ratios above 1.1,
+  yet despite this, the flowpath was never unstarted by fuel addition at the
+  Mach 5.3 test condition. Combustion tests resulting in engine unstart at
+  reduced stagnation enthalpy indicated that the inlet/engine self-started
+  following termination of the fuel injection. Engine data is presented for the
+  largest fuel equivalence ratio tested without facility interaction. These
+  results indicate that this class of three-dimensional scramjet engine can
+  operate successfully at off-design conditions.%
+    }
+    \verb{doi}
+    \verb doi:10.2514/6.2006-2955
+    \endverb
+    \field{isbn}{1563478110}
+    \field{number}{AIAA 2006-2955}
+    \field{pages}{190\bibrangedash 201}
+    \field{title}{{Free-jet testing of a \{REST\} scramjet at off-design
+  conditions}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2006.pdf:pdf
+    \endverb
+    \field{journaltitle}{Collection of Technical Papers - 25th AIAA Aerodynamic
+  Measurement Technology and Ground Testing Conference}
+    \field{year}{2006}
+  \endentry
+
   \entry{Rosema2011}{report}{}
     \name{author}{5}{}{%
       {{hash=RC}{%
@@ -5909,58 +5876,27 @@
     \field{year}{2004}
   \endentry
 
-  \entry{Sooy2005}{article}{}
-    \name{author}{2}{}{%
-      {{hash=STJ}{%
-         family={Sooy},
-         familyi={S\bibinitperiod},
-         given={Thomas\bibnamedelima J.},
-         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=SRZ}{%
-         family={Schmidt},
-         familyi={S\bibinitperiod},
-         given={Rebecca\bibnamedelima Z.},
-         giveni={R\bibinitperiod\bibinitdelim Z\bibinitperiod},
+  \entry{Wade2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WM}{%
+         family={Wade},
+         familyi={W\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{STJSRZ1}
-    \strng{fullhash}{STJSRZ1}
+    \strng{namehash}{WM1}
+    \strng{fullhash}{WM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The U.S. Air Force Missile DATCOM (97 version) and the Naval Surface
-  Warfare Center Dahlgren Division Aeroprediction 98 (AP98) are two widely used
-  aerodynamic prediction codes. These codes predict aerodynamic forces,
-  moments, and stability derivatives as a function of angle of attack and Mach
-  number for a wide range of axisymmetric and nonaxisymmetric missile
-  configurations. This study evaluates the accuracy of each code compared to
-  experimental wind-tunnel data for a variety of missile configurations and
-  flight conditions. The missile configurations in this study include
-  axisymmetricbodyalone,bodywingtail,andbodytail.Theaerodynamic forces under
-  investigation were normal force, pitching moment, axial force, and
-  center-of-pressure location.For the configurations detailed in this paper,
-  these case studies shownormal force prediction for both codes to have minimal
-  error. Both AP98 and MissileDATCOMwere effective in predicting
-  pitching-moment coefficients, though at times limiting factors were
-  necessary. Finally, both AP98 and DATCOM predict reasonable axial-force
-  coefficients for most cases, though AP98 proved more accurate for the
-  body-wing-tail and body-tail configurations evaluated in this study.%
-    }
-    \verb{doi}
-    \verb 10.2514/1.7814
+    \field{title}{{Encyclopedia Astronautica}}
+    \verb{url}
+    \verb http://www.astronautix.com/
     \endverb
-    \field{issn}{0022-4650}
-    \field{number}{2}
-    \field{pages}{257\bibrangedash 265}
-    \field{title}{{Aerodynamic Predictions, Comparisons, and Validations Using
-  Missile DATCOM (97) and Aeroprediction 98 (AP98)}}
-    \field{volume}{42}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Sooy.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2005}
+    \field{year}{2017}
+    \field{urlday}{24}
+    \field{urlmonth}{07}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Marley2017}{inproceedings}{}
@@ -7116,6 +7052,65 @@
       {Cham, Switzerland}%
     }
     \field{year}{2017}
+  \endentry
+
+  \entry{Tauber2008}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TME}{%
+         family={Tauber},
+         familyi={T\bibinitperiod},
+         given={Michael\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MGP}{%
+         family={Menees},
+         familyi={M\bibinitperiod},
+         given={Gene\bibnamedelima P.},
+         giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=AHG}{%
+         family={Adelman},
+         familyi={A\bibinitperiod},
+         given={Henry\bibnamedelima G.},
+         giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMEMGPAHG1}
+    \strng{fullhash}{TMEMGPAHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A transatmospheric vehicle (TAV) using airbreathing propulsion requires a
+  long acceleration period within the denser part of the atmosphere to reach
+  orbital speed. The long flight time, coupled with the need for a low-drag
+  configuration, results in severe heating of parts of the vehicle. The ascent
+  peak stagnation point and wing leading edge equilibrium wall temperatures are
+  about 3500 K and 2500 K, respectively, likely requiring some form of mass
+  addition cooling. The corresponding temperatures during entry are 1000 K
+  lower. The vehicle windward centerline temperatures are more moderate, with
+  values peaking around 1300 K during both ascent and entry. Therefore,
+  radiative cooling should be effective over large areas of the vehicle. The
+  windward centerline heat loads during entry are comparable to those for low
+  acceleration ascent trajectories. However, ascent heat loads for the
+  stagnation point and the wing leading edge are about three times higher than
+  those during entry. For comparison, the entry heat load for the TAV's
+  stagnation point is about three times higher than the value for Shuttle.
+  Therefore the ascent heat load at the TAV's stagnation point exceeds the
+  Shuttle's entry value by an order of magnitude.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.45483
+    \endverb
+    \field{issn}{0021-8669}
+    \field{number}{9}
+    \field{pages}{594\bibrangedash 602}
+    \field{title}{{Aerothermodynamics of transatmospheric vehicles}}
+    \field{volume}{24}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Tauber.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Aircraft}
+    \field{year}{2008}
   \endentry
 
   \entry{Marini2001}{article}{}

@@ -9,164 +9,165 @@
 \contentsline {section}{\numberline {2.2}Reusable Rocket-Powered Satellite Launch Systems}{9}{section.2.2}
 \contentsline {section}{\numberline {2.3}Small Satellite Launchers}{11}{section.2.3}
 \contentsline {chapter}{\numberline {3}Literature review}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Airbreathing Access-to-Space Systems}{16}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Small Airbreathing Launchers}{17}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Airbreathing Launch Vehicle Ascent Trajectories}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Single-Stage Vehicles}{20}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Multi-Stage Vehicles}{21}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Hypersonic Vehicle Fly-Back Trajectories}{22}{section.3.3}
-\contentsline {section}{\numberline {3.4}Optimal Control}{25}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Shooting Methods}{26}{subsection.3.4.1}
-\contentsline {subsubsection}{The Single Shooting Method}{26}{section*.36}
-\contentsline {subsubsection}{The Multiple Shooting Method}{27}{section*.37}
-\contentsline {subsection}{\numberline {3.4.2}Collocation Methods}{27}{subsection.3.4.2}
-\contentsline {subsubsection}{The Pseudospectral Method}{28}{section*.40}
-\contentsline {section}{\numberline {3.5}Available Optimal Control Solvers}{30}{section.3.5}
-\contentsline {section}{\numberline {3.6}Pseudospectral Method Optimisation in Aerospace Applications}{32}{section.3.6}
-\contentsline {section}{\numberline {3.7}Exergy Analysis}{32}{section.3.7}
-\contentsline {section}{\numberline {3.8}The University of Queensland's Rocket-Scramjet-Rocket Launch System}{32}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Scramjet Engine Model}{33}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}The Trajectory of the SPARTAN}{34}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}The Third Stage Rocket}{35}{subsection.3.8.3}
-\contentsline {subsection}{\numberline {3.8.4}Exoatmospheric Rocket Engines}{36}{subsection.3.8.4}
-\contentsline {section}{\numberline {3.9}Aerodynamic Analysis}{38}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}Cart3D}{39}{subsection.3.9.1}
-\contentsline {section}{\numberline {3.10}Summary}{41}{section.3.10}
-\contentsline {chapter}{\numberline {4}The Representative Launch Vehicle}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}The Second Stage Scramjet Accelerator}{46}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}The SPARTAN Accelerator}{46}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Thermal Protection}{47}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Propulsion}{47}{subsection.4.1.3}
-\contentsline {subsubsection}{Propulsion Modelling}{47}{section*.56}
-\contentsline {subsection}{\numberline {4.1.4}Aerodynamics}{50}{subsection.4.1.4}
-\contentsline {subsubsection}{Cart3D Simulations}{52}{section*.62}
-\contentsline {subsubsection}{Engine-On Aerodynamic Analysis}{53}{section*.65}
-\contentsline {subsubsection}{Centre of Gravity Analysis}{55}{section*.69}
-\contentsline {subsubsection}{Calculation of Trimmed Flap Deflections}{56}{section*.71}
-\contentsline {subsubsection}{Viscous Correction}{58}{section*.75}
-\contentsline {subsection}{\numberline {4.1.5}Trimmed Aerodynamic Database of the SPARTAN with Engine-On}{59}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Trimmed Aerodynamic Database of the SPARTAN with Engine-Off}{60}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}The First Stage Rocket}{62}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}The Aerodynamics of the First Stage Rocket and SPARTAN}{64}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}The Third Stage Rocket}{65}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Geometry}{66}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Fuel Tank Sizing}{66}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Heat Shield Sizing}{67}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Propulsion}{68}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Aerodynamics}{69}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Thrust Vectoring}{69}{subsection.4.3.6}
-\contentsline {section}{\numberline {4.4}Summary}{70}{section.4.4}
-\contentsline {chapter}{\numberline {5}LODESTAR}{77}{chapter.5}
-\contentsline {section}{\numberline {5.1}Mission Definition}{78}{section.5.1}
-\contentsline {section}{\numberline {5.2}Vehicle Simulation}{79}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Equations of Motion}{80}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Optimal Control Problem Structure}{81}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Trajectory Connection Points}{83}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}\leavevmode {\color {red}I.} First Stage Vertical Ascent}{84}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}\leavevmode {\color {red}II.} First Stage Pitching Ascent}{85}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}\leavevmode {\color {red}III.} Second Stage Ascent Trajectory}{86}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}\leavevmode {\color {red}IV.} Second Stage Return Trajectory}{88}{subsection.5.3.5}
-\contentsline {subsection}{\numberline {5.3.6}\leavevmode {\color {red}V.} Third Stage Powered Ascent}{89}{subsection.5.3.6}
-\contentsline {subsection}{\numberline {5.3.7}\leavevmode {\color {red}VI.} Third Stage Unpowered Ascent}{90}{subsection.5.3.7}
-\contentsline {subsection}{\numberline {5.3.8}\leavevmode {\color {red}VII.} Hohmann Transfer}{90}{subsection.5.3.8}
-\contentsline {section}{\numberline {5.4}Optimal Solution Analysis}{92}{section.5.4}
-\contentsline {section}{\numberline {5.5}The Optimisation Process in LODESTAR}{94}{section.5.5}
-\contentsline {section}{\numberline {5.6}Trajectory and Performance Analysis}{96}{section.5.6}
-\contentsline {section}{\numberline {5.7}Thermal Analysis}{97}{section.5.7}
-\contentsline {section}{\numberline {5.8}Summary}{98}{section.5.8}
-\contentsline {chapter}{\numberline {6}Optimised Ascent Trajectory}{101}{chapter.6}
-\contentsline {section}{\numberline {6.1}Case 1: Constant Dynamic Pressure Trajectory}{102}{section.6.1}
-\contentsline {section}{\numberline {6.2}Case 2: Optimised Ascent Trajectory}{108}{section.6.2}
-\contentsline {section}{\numberline {6.3}Angle of Attack Study}{115}{section.6.3}
-\contentsline {section}{\numberline {6.4}Energy Usage Analysis}{115}{section.6.4}
-\contentsline {section}{\numberline {6.5}Sensitivity Analysis}{118}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Case 3: Maximum Dynamic Pressure Sensitivity}{119}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Case 4: SPARTAN Drag Sensitivity}{120}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Case 5: C-REST Specific Impulse Sensitivity}{121}{subsection.6.5.3}
-\contentsline {subsection}{\numberline {6.5.4}Case 6: SPARTAN Mass Sensitivity}{123}{subsection.6.5.4}
-\contentsline {subsection}{\numberline {6.5.5}Case 7: SPARTAN Fuel Mass Sensitivity}{124}{subsection.6.5.5}
-\contentsline {subsection}{\numberline {6.5.6}Case 8: Third Stage Mass Sensitivity}{126}{subsection.6.5.6}
-\contentsline {subsection}{\numberline {6.5.7}Case 9: Third Stage Specific Impulse Sensitivity}{127}{subsection.6.5.7}
-\contentsline {subsection}{\numberline {6.5.8}Case 10: Third Stage Drag Sensitivity}{128}{subsection.6.5.8}
-\contentsline {subsection}{\numberline {6.5.9}Thermal Analysis}{129}{subsection.6.5.9}
-\contentsline {section}{\numberline {6.6}Comparison of Design Parameters}{130}{section.6.6}
-\contentsline {section}{\numberline {6.7}Summary}{132}{section.6.7}
-\contentsline {chapter}{\numberline {7}Optimised Trajectory Including Fly-Back}{135}{chapter.7}
-\contentsline {section}{\numberline {7.1}Case 11: Combined SPARTAN Ascent-Descent \& Third Stage}{136}{section.7.1}
-\contentsline {section}{\numberline {7.2}Ascent Trajectory}{137}{section.7.2}
-\contentsline {section}{\numberline {7.3}Fly-Back Trajectory}{142}{section.7.3}
-\contentsline {subsubsection}{ Initial Turn}{143}{section*.133}
-\contentsline {subsubsection}{ Boost-Skip}{143}{section*.134}
-\contentsline {subsubsection}{ Approach}{144}{section*.135}
-\contentsline {section}{\numberline {7.4}Energy Usage Analysis}{144}{section.7.4}
-\contentsline {section}{\numberline {7.5}Design Sensitivity Analysis}{146}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Case 12: Maximum Dynamic Pressure Sensitivity with Fly-Back}{148}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Case 13: SPARTAN Drag Sensitivity with Fly-Back}{149}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Case 14: C-REST Specific Impulse Sensitivity with Fly-Back}{151}{subsection.7.5.3}
-\contentsline {subsection}{\numberline {7.5.4}Case 15: SPARTAN Mass Sensitivity with Fly-Back}{152}{subsection.7.5.4}
-\contentsline {subsection}{\numberline {7.5.5}Case 16: SPARTAN Fuel Mass Sensitivity with Fly-Back}{153}{subsection.7.5.5}
-\contentsline {subsection}{\numberline {7.5.6}Case 17: Third Stage Mass Sensitivity with Fly-Back}{154}{subsection.7.5.6}
-\contentsline {subsection}{\numberline {7.5.7}Case 18: Third Stage Specific Impulse Sensitivity with Fly-Back}{156}{subsection.7.5.7}
-\contentsline {section}{\numberline {7.6}Comparison of Sensitivities with Fly-Back}{157}{section.7.6}
-\contentsline {section}{\numberline {7.7}Summary}{158}{section.7.7}
-\contentsline {chapter}{\numberline {8}Conclusions}{161}{chapter.8}
-\contentsline {chapter}{\numberline {9}Recommendations for future work}{167}{chapter.9}
-\contentsline {chapter}{References}{169}{chapter*.145}
-\contentsline {chapter}{\numberline {A}Uncertainties and Simplifications}{185}{appendix.A}
-\contentsline {section}{\numberline {A.1}Modelling and Design Simplifications}{186}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Control}{187}{subsection.A.1.1}
-\contentsline {subsubsection}{Control Modelling}{187}{section*.146}
-\contentsline {subsubsection}{Control Surface Design}{187}{section*.147}
-\contentsline {subsection}{\numberline {A.1.2}Staging Effects}{188}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Mass Model Simplifications}{189}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}Thermal}{189}{subsection.A.1.4}
-\contentsline {section}{\numberline {A.2}Aerodynamic and Propulsion Simulation Uncertainties}{189}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Aerodynamic Uncertainty}{189}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Propulsion System Uncertainties}{192}{subsection.A.2.2}
-\contentsline {subsubsection}{The Rocket Engines}{192}{section*.148}
-\contentsline {subsubsection}{The Scramjet Engine}{192}{section*.149}
-\contentsline {subsection}{\numberline {A.2.3}Quantification of Aerodynamic and Propulsion Uncertainty Effects}{192}{subsection.A.2.3}
-\contentsline {subsubsection}{Quantification of Uncertainty Magnitudes}{192}{section*.150}
-\contentsline {subsubsection}{Variation Study}{193}{section*.151}
-\contentsline {subsection}{\numberline {A.2.4}Atmospheric Variations}{193}{subsection.A.2.4}
-\contentsline {subsection}{\numberline {A.2.5}Quantification of Atmospheric Variation Effects}{194}{subsection.A.2.5}
-\contentsline {chapter}{\numberline {B}Example and Verification}{195}{appendix.B}
-\contentsline {section}{\numberline {B.1}Example - Brachistochrone Problem}{195}{section.B.1}
-\contentsline {section}{\numberline {B.2}Example - Space Shuttle Reentry}{196}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}Problem Formulation}{197}{subsection.B.2.1}
-\contentsline {subsection}{\numberline {B.2.2}Unconstrained Result}{198}{subsection.B.2.2}
-\contentsline {subsection}{\numberline {B.2.3}Heating Rate Limited Result}{200}{subsection.B.2.3}
-\contentsline {subsection}{\numberline {B.2.4}Increased Fidelity Model Result}{201}{subsection.B.2.4}
-\contentsline {section}{\numberline {B.3}Optimised Trajectory Verification}{201}{section.B.3}
-\contentsline {section}{\numberline {B.4}Optimised Trajectory Analysis}{201}{section.B.4}
-\contentsline {subsection}{\numberline {B.4.1}Mesh History}{201}{subsection.B.4.1}
-\contentsline {subsection}{\numberline {B.4.2}Verification}{203}{subsection.B.4.2}
-\contentsline {chapter}{\numberline {C}Modelling and Simulation}{207}{appendix.C}
-\contentsline {section}{\numberline {C.1}Propulsion Interpolation Scheme}{207}{section.C.1}
-\contentsline {section}{\numberline {C.2}SPARTAN Flow Results}{208}{section.C.2}
-\contentsline {section}{\numberline {C.3}Cart3D Mesh}{209}{section.C.3}
-\contentsline {section}{\numberline {C.4}Performance of the SPARTAN During Fly-Back}{211}{section.C.4}
-\contentsline {chapter}{\numberline {D}Alternate Trajectory Cases}{213}{appendix.D}
-\contentsline {section}{\numberline {D.1}Trajectory with Decreased Third Stage TPS Mass}{213}{section.D.1}
-\contentsline {section}{\numberline {D.2}Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}{213}{section.D.2}
-\contentsline {section}{\numberline {D.3}Sonic Boom Ground Effects}{214}{section.D.3}
-\contentsline {section}{\numberline {D.4}Alternate Launch Location}{215}{section.D.4}
-\contentsline {chapter}{\numberline {E}Trajectory Plot Comparisons}{221}{appendix.E}
-\contentsline {section}{\numberline {E.1}Optimised Ascent Trajectory Comparisons With No Fly-Back}{222}{section.E.1}
-\contentsline {subsection}{\numberline {E.1.1}Case 3: Maximum Dynamic Pressure Sensitivity Comparison}{222}{subsection.E.1.1}
-\contentsline {subsection}{\numberline {E.1.2}Case 4: SPARTAN Drag Sensitivity Comparison}{224}{subsection.E.1.2}
-\contentsline {subsection}{\numberline {E.1.3}Case 5: SPARTAN Specific Impulse Sensitivity Comparison}{226}{subsection.E.1.3}
-\contentsline {subsection}{\numberline {E.1.4}Case 6: SPARTAN Mass Sensitivity Comparison}{228}{subsection.E.1.4}
-\contentsline {subsection}{\numberline {E.1.5}Case 7: SPARTAN Fuel Mass Sensitivity Comparison}{230}{subsection.E.1.5}
-\contentsline {subsection}{\numberline {E.1.6}Case 8: Third Stage Mass Sensitivity Comparison}{232}{subsection.E.1.6}
-\contentsline {subsection}{\numberline {E.1.7}Case 9: Third Stage Specific Impulse Sensitivity Comparison}{234}{subsection.E.1.7}
-\contentsline {subsection}{\numberline {E.1.8}Case 10:Third Stage Drag Sensitivity Comparison}{236}{subsection.E.1.8}
-\contentsline {section}{\numberline {E.2}Optimised Ascent Trajectory Comparisons With Fly-Back}{238}{section.E.2}
-\contentsline {subsection}{\numberline {E.2.1}Case 12: Dynamic Pressure Sensitivity Comparison}{238}{subsection.E.2.1}
-\contentsline {subsection}{\numberline {E.2.2}Case 13: SPARTAN Drag Sensitivity Comparison}{241}{subsection.E.2.2}
-\contentsline {subsection}{\numberline {E.2.3}Case 14:SPARTAN Specific Impulse Sensitivity Comparison}{244}{subsection.E.2.3}
-\contentsline {subsection}{\numberline {E.2.4}Case 15: SPARTAN Mass Sensitivity Comparison}{247}{subsection.E.2.4}
-\contentsline {subsection}{\numberline {E.2.5}Case 16: SPARTAN Fuel Mass Sensitivity Comparison}{250}{subsection.E.2.5}
-\contentsline {subsection}{\numberline {E.2.6}Case 17: Third Stage Mass Sensitivity Comparison}{253}{subsection.E.2.6}
-\contentsline {subsection}{\numberline {E.2.7}Case 18: Third Stage Specific Impulse Sensitivity Comparison}{256}{subsection.E.2.7}
-\contentsline {chapter}{\numberline {F}Viscous Drag Variation}{259}{appendix.F}
+\contentsline {section}{\numberline {3.1}The Launch System Design Process}{16}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Trajectory Modelling}{17}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Airbreathing Access-to-Space Systems and Their Trajectories}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Single Stage Launch Systems}{22}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Two-Stage Launch Systems}{23}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Three-Stage Launch Systems}{25}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Hypersonic Vehicle Fly-Back Trajectories}{27}{section.3.3}
+\contentsline {section}{\numberline {3.4}Trajectory Analysis}{30}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Exergy Analysis}{30}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Optimal Control}{31}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Shooting Methods}{32}{subsection.3.5.1}
+\contentsline {subsubsection}{The Single Shooting Method}{32}{section*.42}
+\contentsline {subsubsection}{The Multiple Shooting Method}{33}{section*.43}
+\contentsline {subsection}{\numberline {3.5.2}Collocation Methods}{33}{subsection.3.5.2}
+\contentsline {subsubsection}{The Pseudospectral Method}{34}{section*.46}
+\contentsline {section}{\numberline {3.6}Available Optimal Control Solvers}{36}{section.3.6}
+\contentsline {section}{\numberline {3.7}Pseudospectral Method Optimisation in Aerospace Applications}{38}{section.3.7}
+\contentsline {section}{\numberline {3.8}Modelling and Design}{38}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Scramjet Engine Modelling}{38}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Aerodynamic Analysis}{39}{subsection.3.8.2}
+\contentsline {subsubsection}{Cart3D}{40}{section*.50}
+\contentsline {subsection}{\numberline {3.8.3}Exoatmospheric Rocket Engines}{42}{subsection.3.8.3}
+\contentsline {subsection}{\numberline {3.8.4}Modelling Simplifications}{44}{subsection.3.8.4}
+\contentsline {section}{\numberline {3.9}Summary}{44}{section.3.9}
+\contentsline {chapter}{\numberline {4}The Representative Launch Vehicle}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}The Second Stage Scramjet Accelerator}{50}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}The SPARTAN Accelerator}{50}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Thermal Protection}{51}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Propulsion}{51}{subsection.4.1.3}
+\contentsline {subsubsection}{Propulsion Modelling}{51}{section*.59}
+\contentsline {subsection}{\numberline {4.1.4}Aerodynamics}{54}{subsection.4.1.4}
+\contentsline {subsubsection}{Cart3D Simulations}{56}{section*.65}
+\contentsline {subsubsection}{Engine-On Aerodynamic Analysis}{57}{section*.68}
+\contentsline {subsubsection}{Centre of Gravity Analysis}{59}{section*.72}
+\contentsline {subsubsection}{Calculation of Trimmed Flap Deflections}{60}{section*.74}
+\contentsline {subsubsection}{Viscous Correction}{62}{section*.78}
+\contentsline {subsection}{\numberline {4.1.5}Trimmed Aerodynamic Database of the SPARTAN with Engine-On}{63}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Trimmed Aerodynamic Database of the SPARTAN with Engine-Off}{64}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}The First Stage Rocket}{66}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The Aerodynamics of the First Stage Rocket and SPARTAN}{68}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}The Third Stage Rocket}{69}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Geometry}{70}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Fuel Tank Sizing}{70}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Heat Shield Sizing}{71}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Propulsion}{72}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Aerodynamics}{73}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Thrust Vectoring}{73}{subsection.4.3.6}
+\contentsline {section}{\numberline {4.4}Summary}{74}{section.4.4}
+\contentsline {chapter}{\numberline {5}LODESTAR}{81}{chapter.5}
+\contentsline {section}{\numberline {5.1}Mission Definition}{82}{section.5.1}
+\contentsline {section}{\numberline {5.2}Vehicle Simulation}{83}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Equations of Motion}{84}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Optimal Control Problem Structure}{85}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Trajectory Connection Points}{87}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}\leavevmode {\color {red}I.} First Stage Vertical Ascent}{88}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}\leavevmode {\color {red}II.} First Stage Pitching Ascent}{89}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}\leavevmode {\color {red}III.} Second Stage Ascent Trajectory}{90}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}\leavevmode {\color {red}IV.} Second Stage Return Trajectory}{92}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.6}\leavevmode {\color {red}V.} Third Stage Powered Ascent}{93}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.7}\leavevmode {\color {red}VI.} Third Stage Unpowered Ascent}{94}{subsection.5.3.7}
+\contentsline {subsection}{\numberline {5.3.8}\leavevmode {\color {red}VII.} Hohmann Transfer}{94}{subsection.5.3.8}
+\contentsline {section}{\numberline {5.4}Optimal Solution Analysis}{96}{section.5.4}
+\contentsline {section}{\numberline {5.5}The Optimisation Process in LODESTAR}{98}{section.5.5}
+\contentsline {section}{\numberline {5.6}Trajectory and Performance Analysis}{100}{section.5.6}
+\contentsline {section}{\numberline {5.7}Thermal Analysis}{101}{section.5.7}
+\contentsline {section}{\numberline {5.8}Summary}{102}{section.5.8}
+\contentsline {chapter}{\numberline {6}Optimised Ascent Trajectory}{105}{chapter.6}
+\contentsline {section}{\numberline {6.1}Case 1: Constant Dynamic Pressure Trajectory}{106}{section.6.1}
+\contentsline {section}{\numberline {6.2}Case 2: Optimised Ascent Trajectory}{112}{section.6.2}
+\contentsline {section}{\numberline {6.3}Angle of Attack Study}{119}{section.6.3}
+\contentsline {section}{\numberline {6.4}Energy Usage Analysis}{119}{section.6.4}
+\contentsline {section}{\numberline {6.5}Sensitivity Analysis}{122}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Case 3: Maximum Dynamic Pressure Sensitivity}{123}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Case 4: SPARTAN Drag Sensitivity}{124}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Case 5: C-REST Specific Impulse Sensitivity}{125}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}Case 6: SPARTAN Mass Sensitivity}{127}{subsection.6.5.4}
+\contentsline {subsection}{\numberline {6.5.5}Case 7: SPARTAN Fuel Mass Sensitivity}{128}{subsection.6.5.5}
+\contentsline {subsection}{\numberline {6.5.6}Case 8: Third Stage Mass Sensitivity}{130}{subsection.6.5.6}
+\contentsline {subsection}{\numberline {6.5.7}Case 9: Third Stage Specific Impulse Sensitivity}{131}{subsection.6.5.7}
+\contentsline {subsection}{\numberline {6.5.8}Case 10: Third Stage Drag Sensitivity}{132}{subsection.6.5.8}
+\contentsline {subsection}{\numberline {6.5.9}Thermal Analysis}{133}{subsection.6.5.9}
+\contentsline {section}{\numberline {6.6}Comparison of Design Parameters}{134}{section.6.6}
+\contentsline {section}{\numberline {6.7}Summary}{136}{section.6.7}
+\contentsline {chapter}{\numberline {7}Optimised Trajectory Including Fly-Back}{139}{chapter.7}
+\contentsline {section}{\numberline {7.1}Case 11: Combined SPARTAN Ascent-Descent \& Third Stage}{140}{section.7.1}
+\contentsline {section}{\numberline {7.2}Ascent Trajectory}{141}{section.7.2}
+\contentsline {section}{\numberline {7.3}Fly-Back Trajectory}{146}{section.7.3}
+\contentsline {subsubsection}{ Initial Turn}{147}{section*.136}
+\contentsline {subsubsection}{ Boost-Skip}{147}{section*.137}
+\contentsline {subsubsection}{ Approach}{148}{section*.138}
+\contentsline {section}{\numberline {7.4}Energy Usage Analysis}{148}{section.7.4}
+\contentsline {section}{\numberline {7.5}Design Sensitivity Analysis}{150}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Case 12: Maximum Dynamic Pressure Sensitivity with Fly-Back}{152}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Case 13: SPARTAN Drag Sensitivity with Fly-Back}{153}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Case 14: C-REST Specific Impulse Sensitivity with Fly-Back}{155}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.4}Case 15: SPARTAN Mass Sensitivity with Fly-Back}{156}{subsection.7.5.4}
+\contentsline {subsection}{\numberline {7.5.5}Case 16: SPARTAN Fuel Mass Sensitivity with Fly-Back}{157}{subsection.7.5.5}
+\contentsline {subsection}{\numberline {7.5.6}Case 17: Third Stage Mass Sensitivity with Fly-Back}{158}{subsection.7.5.6}
+\contentsline {subsection}{\numberline {7.5.7}Case 18: Third Stage Specific Impulse Sensitivity with Fly-Back}{160}{subsection.7.5.7}
+\contentsline {section}{\numberline {7.6}Comparison of Sensitivities with Fly-Back}{161}{section.7.6}
+\contentsline {section}{\numberline {7.7}Summary}{162}{section.7.7}
+\contentsline {chapter}{\numberline {8}Conclusions}{165}{chapter.8}
+\contentsline {chapter}{\numberline {9}Recommendations for future work}{171}{chapter.9}
+\contentsline {chapter}{References}{173}{chapter*.148}
+\contentsline {chapter}{\numberline {A}Uncertainties and Simplifications}{189}{appendix.A}
+\contentsline {section}{\numberline {A.1}Modelling and Design Simplifications}{190}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Control}{191}{subsection.A.1.1}
+\contentsline {subsubsection}{Control Modelling}{191}{section*.149}
+\contentsline {subsubsection}{Control Surface Design}{191}{section*.150}
+\contentsline {subsection}{\numberline {A.1.2}Staging Effects}{192}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Mass Model Simplifications}{193}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Thermal}{193}{subsection.A.1.4}
+\contentsline {section}{\numberline {A.2}Aerodynamic and Propulsion Simulation Uncertainties}{193}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}Aerodynamic Uncertainty}{193}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Propulsion System Uncertainties}{196}{subsection.A.2.2}
+\contentsline {subsubsection}{The Rocket Engines}{196}{section*.151}
+\contentsline {subsubsection}{The Scramjet Engine}{196}{section*.152}
+\contentsline {subsection}{\numberline {A.2.3}Quantification of Aerodynamic and Propulsion Uncertainty Effects}{196}{subsection.A.2.3}
+\contentsline {subsubsection}{Quantification of Uncertainty Magnitudes}{196}{section*.153}
+\contentsline {subsubsection}{Variation Study}{197}{section*.154}
+\contentsline {subsection}{\numberline {A.2.4}Atmospheric Variations}{197}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.5}Quantification of Atmospheric Variation Effects}{198}{subsection.A.2.5}
+\contentsline {chapter}{\numberline {B}Example and Verification}{199}{appendix.B}
+\contentsline {section}{\numberline {B.1}Example - Brachistochrone Problem}{199}{section.B.1}
+\contentsline {section}{\numberline {B.2}Example - Space Shuttle Reentry}{200}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Problem Formulation}{201}{subsection.B.2.1}
+\contentsline {subsection}{\numberline {B.2.2}Unconstrained Result}{202}{subsection.B.2.2}
+\contentsline {subsection}{\numberline {B.2.3}Heating Rate Limited Result}{204}{subsection.B.2.3}
+\contentsline {subsection}{\numberline {B.2.4}Increased Fidelity Model Result}{205}{subsection.B.2.4}
+\contentsline {section}{\numberline {B.3}Optimised Trajectory Verification}{205}{section.B.3}
+\contentsline {section}{\numberline {B.4}Optimised Trajectory Analysis}{205}{section.B.4}
+\contentsline {subsection}{\numberline {B.4.1}Mesh History}{205}{subsection.B.4.1}
+\contentsline {subsection}{\numberline {B.4.2}Verification}{207}{subsection.B.4.2}
+\contentsline {chapter}{\numberline {C}Modelling and Simulation}{211}{appendix.C}
+\contentsline {section}{\numberline {C.1}Propulsion Interpolation Scheme}{211}{section.C.1}
+\contentsline {section}{\numberline {C.2}SPARTAN Flow Results}{212}{section.C.2}
+\contentsline {section}{\numberline {C.3}Cart3D Mesh}{213}{section.C.3}
+\contentsline {section}{\numberline {C.4}Performance of the SPARTAN During Fly-Back}{215}{section.C.4}
+\contentsline {chapter}{\numberline {D}Alternate Trajectory Cases}{217}{appendix.D}
+\contentsline {section}{\numberline {D.1}Trajectory with Decreased Third Stage TPS Mass}{217}{section.D.1}
+\contentsline {section}{\numberline {D.2}Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}{217}{section.D.2}
+\contentsline {section}{\numberline {D.3}Sonic Boom Ground Effects}{218}{section.D.3}
+\contentsline {section}{\numberline {D.4}Alternate Launch Location}{219}{section.D.4}
+\contentsline {chapter}{\numberline {E}Trajectory Plot Comparisons}{225}{appendix.E}
+\contentsline {section}{\numberline {E.1}Optimised Ascent Trajectory Comparisons With No Fly-Back}{226}{section.E.1}
+\contentsline {subsection}{\numberline {E.1.1}Case 3: Maximum Dynamic Pressure Sensitivity Comparison}{226}{subsection.E.1.1}
+\contentsline {subsection}{\numberline {E.1.2}Case 4: SPARTAN Drag Sensitivity Comparison}{228}{subsection.E.1.2}
+\contentsline {subsection}{\numberline {E.1.3}Case 5: SPARTAN Specific Impulse Sensitivity Comparison}{230}{subsection.E.1.3}
+\contentsline {subsection}{\numberline {E.1.4}Case 6: SPARTAN Mass Sensitivity Comparison}{232}{subsection.E.1.4}
+\contentsline {subsection}{\numberline {E.1.5}Case 7: SPARTAN Fuel Mass Sensitivity Comparison}{234}{subsection.E.1.5}
+\contentsline {subsection}{\numberline {E.1.6}Case 8: Third Stage Mass Sensitivity Comparison}{236}{subsection.E.1.6}
+\contentsline {subsection}{\numberline {E.1.7}Case 9: Third Stage Specific Impulse Sensitivity Comparison}{238}{subsection.E.1.7}
+\contentsline {subsection}{\numberline {E.1.8}Case 10:Third Stage Drag Sensitivity Comparison}{240}{subsection.E.1.8}
+\contentsline {section}{\numberline {E.2}Optimised Ascent Trajectory Comparisons With Fly-Back}{242}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}Case 12: Dynamic Pressure Sensitivity Comparison}{242}{subsection.E.2.1}
+\contentsline {subsection}{\numberline {E.2.2}Case 13: SPARTAN Drag Sensitivity Comparison}{245}{subsection.E.2.2}
+\contentsline {subsection}{\numberline {E.2.3}Case 14:SPARTAN Specific Impulse Sensitivity Comparison}{248}{subsection.E.2.3}
+\contentsline {subsection}{\numberline {E.2.4}Case 15: SPARTAN Mass Sensitivity Comparison}{251}{subsection.E.2.4}
+\contentsline {subsection}{\numberline {E.2.5}Case 16: SPARTAN Fuel Mass Sensitivity Comparison}{254}{subsection.E.2.5}
+\contentsline {subsection}{\numberline {E.2.6}Case 17: Third Stage Mass Sensitivity Comparison}{257}{subsection.E.2.6}
+\contentsline {subsection}{\numberline {E.2.7}Case 18: Third Stage Specific Impulse Sensitivity Comparison}{260}{subsection.E.2.7}
+\contentsline {chapter}{\numberline {F}Viscous Drag Variation}{263}{appendix.F}

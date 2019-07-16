@@ -3,51 +3,51 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces A selection of the small satellite launchers which are operational or in development.\relax }}{12}{table.caption.28}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of programs capable of pseudospectral optimisation.\relax }}{31}{table.caption.42}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of upper stage rocket engines, sourced from the Encyclopedia Astronautica reference website\cite {Wade2017}. \leavevmode {\color {red}XXX INCLUDE THE RUTHERFORD (RocketLab)} Also kestrel length is wrong\relax }}{37}{table.caption.48}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of programs capable of pseudospectral optimisation.\relax }}{37}{table.caption.48}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of upper stage rocket engines, sourced from the Encyclopedia Astronautica reference website\cite {Wade2017}. \leavevmode {\color {red}XXX INCLUDE THE RUTHERFORD (RocketLab)} Also kestrel length is wrong\relax }}{43}{table.caption.53}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Mass breakdown of the modified SPARTAN vehicle.\relax }}{46}{table.caption.55}
-\contentsline {table}{\numberline {4.2}{\ignorespaces First Stage Engine Properties\cite {Wade2017}.\relax }}{63}{table.caption.82}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Mass breakdown of the third stage rocket.\relax }}{66}{table.caption.87}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Third stage fuel distribution.\relax }}{67}{table.caption.88}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Third stage heat shield breakdown.\relax }}{68}{table.caption.89}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Mass breakdown of the modified SPARTAN vehicle.\relax }}{50}{table.caption.58}
+\contentsline {table}{\numberline {4.2}{\ignorespaces First Stage Engine Properties\cite {Wade2017}.\relax }}{67}{table.caption.85}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Mass breakdown of the third stage rocket.\relax }}{70}{table.caption.90}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Third stage fuel distribution.\relax }}{71}{table.caption.91}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Third stage heat shield breakdown.\relax }}{72}{table.caption.92}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Segment coupling conditions for combined trajectory optimisation.\relax }}{85}{table.caption.97}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Optimisation setup of the first stage phase. \relax }}{86}{table.caption.98}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Optimisation setup of the second stage ascent. $^*$ This is only used in the constant dynamic pressure simulation. \leavevmode {\color {red}XXX Check these, particularly traj angle}\relax }}{87}{table.caption.99}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Optimisation setup of the second stage return.\relax }}{88}{table.caption.100}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Optimisation setup of the third stage powered ascent.\relax }}{89}{table.caption.101}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Segment coupling conditions for combined trajectory optimisation.\relax }}{89}{table.caption.100}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Optimisation setup of the first stage phase. \relax }}{90}{table.caption.101}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Optimisation setup of the second stage ascent. $^*$ This is only used in the constant dynamic pressure simulation. \leavevmode {\color {red}XXX Check these, particularly traj angle}\relax }}{91}{table.caption.102}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Optimisation setup of the second stage return.\relax }}{92}{table.caption.103}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Optimisation setup of the third stage powered ascent.\relax }}{93}{table.caption.104}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of the key results from a maximum payload-to-orbit trajectory with the SPARTAN constrained to 50kPa (Case 1). \leavevmode {\color {red}XXX about sig figs: the high number of sig figs have been included to highlight trends in the variation section. I should porentially argue that a high number of significant figures are included for this, but make note that the results are still subject to significant sources of error? }\relax }}{104}{table.caption.105}
-\contentsline {table}{\numberline {6.2}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory (Case 2).\relax }}{111}{table.caption.111}
-\contentsline {table}{\numberline {6.3}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, the SPARTAN constrained to constant dynamic pressure (Cases 1 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'.\relax }}{116}{table.caption.116}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the SPARTAN (Case 3).\relax }}{119}{table.caption.117}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the SPARTAN (Case 4).\relax }}{121}{table.caption.118}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison of key trajectory parameters with variations in the specific impulse of the C-REST engines (Case 5).\relax }}{122}{table.caption.119}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Comparison of key trajectory parameters with variation in the structural mass of the SPARTAN (Case 6).\relax }}{123}{table.caption.120}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Comparison of key trajectory parameters with variation in the fuel mass of the SPARTAN (Case 7).\relax }}{125}{table.caption.121}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Comparison of key trajectory parameters with variation in the mass of the third stage (Case 8).\relax }}{126}{table.caption.122}
-\contentsline {table}{\numberline {6.10}{\ignorespaces Comparison of key trajectory parameters with variation in the third stage specific impulse (Case 9).\relax }}{127}{table.caption.123}
-\contentsline {table}{\numberline {6.11}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the third stage (Case 10).\relax }}{129}{table.caption.124}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of the key results from a maximum payload-to-orbit trajectory with the SPARTAN constrained to 50kPa (Case 1). \leavevmode {\color {red}XXX about sig figs: the high number of sig figs have been included to highlight trends in the variation section. I should porentially argue that a high number of significant figures are included for this, but make note that the results are still subject to significant sources of error? }\relax }}{108}{table.caption.108}
+\contentsline {table}{\numberline {6.2}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory (Case 2).\relax }}{115}{table.caption.114}
+\contentsline {table}{\numberline {6.3}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, the SPARTAN constrained to constant dynamic pressure (Cases 1 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'.\relax }}{120}{table.caption.119}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the SPARTAN (Case 3).\relax }}{123}{table.caption.120}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the SPARTAN (Case 4).\relax }}{125}{table.caption.121}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Comparison of key trajectory parameters with variations in the specific impulse of the C-REST engines (Case 5).\relax }}{126}{table.caption.122}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Comparison of key trajectory parameters with variation in the structural mass of the SPARTAN (Case 6).\relax }}{127}{table.caption.123}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Comparison of key trajectory parameters with variation in the fuel mass of the SPARTAN (Case 7).\relax }}{129}{table.caption.124}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Comparison of key trajectory parameters with variation in the mass of the third stage (Case 8).\relax }}{130}{table.caption.125}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Comparison of key trajectory parameters with variation in the third stage specific impulse (Case 9).\relax }}{131}{table.caption.126}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the third stage (Case 10).\relax }}{133}{table.caption.127}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Selected trajectory conditions for a maximum payload-to-orbit trajectory including SPARTAN fly-back (Case 11).\relax }}{137}{table.caption.127}
-\contentsline {table}{\numberline {7.2}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, SPARTAN fly-back (Cases 11 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'. Negative energy indicates energy being supplied.\relax }}{145}{table.caption.136}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the SPARTAN, with fly-back (Case 12).\relax }}{148}{table.caption.137}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the SPARTAN, with fly-back (Case 13).\relax }}{150}{table.caption.138}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Comparison of key trajectory parameters with variation in the specific impulse of the C-REST engines, with fly-back (Case 14).\relax }}{151}{table.caption.139}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Comparison of key trajectory parameters with variation in the structural mass of the SPARTAN, with fly-back (Case 15).\relax }}{152}{table.caption.140}
-\contentsline {table}{\numberline {7.7}{\ignorespaces Comparison of key trajectory parameters with variation in the fuel mass of the SPARTAN, with fly-back (Case 16).\relax }}{154}{table.caption.141}
-\contentsline {table}{\numberline {7.8}{\ignorespaces Comparison of key trajectory parameters with variation in the mass of the third stage, with fly-back (Case 17).\relax }}{155}{table.caption.142}
-\contentsline {table}{\numberline {7.9}{\ignorespaces Comparison of key trajectory parameters with variation in the specific impulse of the third stage, with fly-back (Case 18).\relax }}{156}{table.caption.143}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Selected trajectory conditions for a maximum payload-to-orbit trajectory including SPARTAN fly-back (Case 11).\relax }}{141}{table.caption.130}
+\contentsline {table}{\numberline {7.2}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, SPARTAN fly-back (Cases 11 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'. Negative energy indicates energy being supplied.\relax }}{149}{table.caption.139}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the SPARTAN, with fly-back (Case 12).\relax }}{152}{table.caption.140}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the SPARTAN, with fly-back (Case 13).\relax }}{154}{table.caption.141}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Comparison of key trajectory parameters with variation in the specific impulse of the C-REST engines, with fly-back (Case 14).\relax }}{155}{table.caption.142}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Comparison of key trajectory parameters with variation in the structural mass of the SPARTAN, with fly-back (Case 15).\relax }}{156}{table.caption.143}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Comparison of key trajectory parameters with variation in the fuel mass of the SPARTAN, with fly-back (Case 16).\relax }}{158}{table.caption.144}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Comparison of key trajectory parameters with variation in the mass of the third stage, with fly-back (Case 17).\relax }}{159}{table.caption.145}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Comparison of key trajectory parameters with variation in the specific impulse of the third stage, with fly-back (Case 18).\relax }}{160}{table.caption.146}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Optimisation setup of the Brachistochrone problem. \relax }}{196}{table.caption.153}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{214}{table.caption.171}
-\contentsline {table}{\numberline {D.2}{\ignorespaces A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction.\relax }}{216}{table.caption.178}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Optimisation setup of the Brachistochrone problem. \relax }}{200}{table.caption.156}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Summary of key trajectory parameters with SPARTAN viscous drag variation.\relax }}{260}{table.caption.216}
+\contentsline {table}{\numberline {D.1}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{218}{table.caption.174}
+\contentsline {table}{\numberline {D.2}{\ignorespaces A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction.\relax }}{220}{table.caption.181}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {F.1}{\ignorespaces Summary of key trajectory parameters with SPARTAN viscous drag variation.\relax }}{264}{table.caption.219}
