@@ -14,24 +14,24 @@
 \contentsline {section}{\numberline {3.2}Hypersonic Airbreathing Launch Systems and Trajectories}{19}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Single Stage Airbreathing Launch Systems}{20}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Two-Stage Launch Systems}{24}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Three-Stage Launch Systems}{26}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Hypersonic Vehicle Fly-Back Trajectories}{28}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Summary of Key Trajectory features}{31}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.3}Three-Stage Launch Systems}{27}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Hypersonic Vehicle Fly-Back Trajectories}{29}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Summary of Key Trajectory features}{32}{subsection.3.2.5}
 \contentsline {section}{\numberline {3.3}Trajectory Analysis}{33}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Exergy Analysis}{33}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Optimal Control}{33}{section.3.4}
+\contentsline {section}{\numberline {3.4}Optimal Control}{34}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Shooting Methods}{35}{subsection.3.4.1}
 \contentsline {subsubsection}{The Single Shooting Method}{35}{section*.37}
 \contentsline {subsubsection}{The Multiple Shooting Method}{35}{section*.38}
-\contentsline {subsection}{\numberline {3.4.2}Collocation Methods}{35}{subsection.3.4.2}
-\contentsline {subsubsection}{The Pseudospectral Method}{36}{section*.41}
+\contentsline {subsection}{\numberline {3.4.2}Collocation Methods}{36}{subsection.3.4.2}
+\contentsline {subsubsection}{The Pseudospectral Method}{37}{section*.41}
 \contentsline {section}{\numberline {3.5}Available Optimal Control Solvers}{39}{section.3.5}
 \contentsline {section}{\numberline {3.6}Pseudospectral Method Optimisation in Aerospace Applications}{40}{section.3.6}
-\contentsline {section}{\numberline {3.7}Modelling and Design}{40}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Scramjet Engine Modelling}{40}{subsection.3.7.1}
+\contentsline {section}{\numberline {3.7}Modelling and Design}{41}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Scramjet Engine Modelling}{41}{subsection.3.7.1}
 \contentsline {subsection}{\numberline {3.7.2}Aerodynamic Analysis}{42}{subsection.3.7.2}
 \contentsline {subsubsection}{Cart3D}{43}{section*.45}
-\contentsline {subsection}{\numberline {3.7.3}Exoatmospheric Rocket Engines}{44}{subsection.3.7.3}
+\contentsline {subsection}{\numberline {3.7.3}Exoatmospheric Rocket Engines}{45}{subsection.3.7.3}
 \contentsline {subsection}{\numberline {3.7.4}Modelling Simplifications}{47}{subsection.3.7.4}
 \contentsline {section}{\numberline {3.8}Summary}{47}{section.3.8}
 \contentsline {chapter}{\numberline {4}The Representative Launch Vehicle}{49}{chapter.4}
