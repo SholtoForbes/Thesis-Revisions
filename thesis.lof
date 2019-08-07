@@ -7,59 +7,59 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite {BlueOrigin}.\relax }}{9}{figure.caption.25}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The trajectory of the Falcon Heavy\cite {FalconHeavy}.\relax }}{10}{figure.caption.26}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces The trajectory of the Ariane featuring Adeline\cite {Adelineb}.\relax }}{11}{figure.caption.27}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces The general design process flow for a launch vehicle, adapted from Blair et al\cite {Blair2001}\relax }}{13}{figure.caption.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The general design process flow for a launch vehicle, adapted from \cite {Blair2001}\relax }}{16}{figure.caption.29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An example airbreathing flight corridor of a partially-airbreathing launch vehicle.\relax }}{18}{figure.caption.30}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The scramjet accelerator of the SPARTAN, as designed by Preller\cite {Preller2018a}.\relax }}{40}{figure.caption.32}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The third stage rocket of the rocket-scramjet-rocket launch system\cite {Preller2017b}.\relax }}{40}{figure.caption.33}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces The flight trajectory of the SPARTAN. a) shows the physical trajectory and b) shows the forces on the vehicle and performance indicators.\relax }}{41}{figure.caption.35}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces The elevons of the SPARTAN\cite {Preller2017b}.\relax }}{42}{figure.caption.36}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces \leavevmode {\color {red}An illustration of }the optimised maximum range trajectory of a hypersonic vehicle\cite {Chai2015}.\relax }}{44}{figure.caption.37}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{47}{figure.caption.40}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of \textsf {h} and \textsf {p} collocation methods\cite {Kelly2015}.\relax }}{48}{figure.caption.41}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{49}{figure.caption.43}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{54}{figure.caption.46}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite {Sagerman2017}. \leavevmode {\color {red}XXX Change this picture to something more relevant}\relax }}{55}{figure.caption.47}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An example airbreathing flight corridor of an airbreathing launch vehicle.\relax }}{17}{figure.caption.30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The scramjet accelerator of the SPARTAN, as designed by Preller\cite {Preller2018a}.\relax }}{38}{figure.caption.32}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The third stage rocket of the rocket-scramjet-rocket launch system\cite {Preller2017b}.\relax }}{39}{figure.caption.33}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The flight trajectory of the SPARTAN. a) shows the physical trajectory and b) shows the forces on the vehicle and performance indicators.\relax }}{40}{figure.caption.35}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The elevons of the SPARTAN\cite {Preller2017b}.\relax }}{41}{figure.caption.36}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces \leavevmode {\color {red}An illustration of }the optimised maximum range trajectory of a hypersonic vehicle\cite {Chai2015}.\relax }}{43}{figure.caption.37}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{45}{figure.caption.40}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Examples of \textsf {h} and \textsf {p} collocation methods\cite {Kelly2015}.\relax }}{46}{figure.caption.41}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{48}{figure.caption.43}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{52}{figure.caption.46}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite {Sagerman2017}. \leavevmode {\color {red}XXX Change this picture to something more relevant}\relax }}{53}{figure.caption.47}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The launch process of the rocket-scramjet-rocket launch system, presented in simplified form.\relax }}{58}{figure.caption.48}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The rocket-scramjet-rocket launch system, top view, showing the SPARTAN and first stage. \leavevmode {\color {red}XXX change this pic, remove interface}\relax }}{59}{figure.caption.49}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The rocket-scramjet-rocket launch system, side view, showing the SPARTAN and fuel tanks, along with the third and first stages. \leavevmode {\color {red}XXX Cround third stage nose}\relax }}{59}{figure.caption.50}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The external features of the SPARTAN.\relax }}{60}{figure.caption.51}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The C-RESTM10 propulsion database, specific impulse.\relax }}{62}{figure.caption.54}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces The locations of conditions relevant to C-REST engine simulation. \relax }}{63}{figure.caption.55}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow conditions after the conical shock generated by the vehicle nose cone as a function of flight Mach number and angle of attack. Figure a) shows the Mach number, b) shows the pressure ratio, and c) shows the temperature ratio following the conical shock, at the engine inlet.\relax }}{64}{figure.caption.56}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Specific impulse of the C-REST engines with input temperature and Mach number. Available data points are indicated.\relax }}{65}{figure.caption.57}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Operable equivalence ratio of the C-REST engines with input temperature and Mach number. Available data points are indicated.\relax }}{66}{figure.caption.58}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces The process for generating aerodynamic databases.\relax }}{67}{figure.caption.59}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Surface triangulation of the Baseline SPARTAN, generated using Pointwise\cite {Pointwise}.\relax }}{68}{figure.caption.61}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces The convergence of a Cart3D simulation of the SPARTAN at Mach 6, 2$^\circ $ angle of attack.\relax }}{69}{figure.caption.62}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces View of the SPARTAN surface triangulation showing engine outlet boundaries.\relax }}{70}{figure.caption.64}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The total thrust output of the SPARTAN, including the CRESTM10 database, and Cart3D nozzle and boat tail simulations.\relax }}{70}{figure.caption.65}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces The specific impulse of the SPARTAN, including the C-rest database, and Cart3D nozzle and boat tail simulations.\relax }}{71}{figure.caption.66}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Centre of gravity positions throughout the flight of the SPARTAN. \relax }}{72}{figure.caption.68}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces The forces on the SPARTAN during flight. \leavevmode {\color {red}XXX The flaps vector is slightly wrong (should point back too)}\relax }}{72}{figure.caption.70}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces SPARTAN model showing control surfaces.\relax }}{73}{figure.caption.71}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Flap deflection required for trim of the SPARTAN. Negative up. \leavevmode {\color {red}XXX I need to redo these for new CG}\relax }}{74}{figure.caption.72}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Viscous drag coefficient across various Mach numbers.\relax }}{75}{figure.caption.74}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Engine-on Cart3D simulation at Mach 6, 2$^\circ $ angle of attack, and 25km altitude.\relax }}{76}{figure.caption.75}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces The aerodynamic coefficients of the SPARTAN with the C-REST engines powered-on. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of \leavevmode {\color {red}15.24m} (full of fuel, with third stage). \leavevmode {\color {red}XXX CHANGE CG of SPARTAN}\relax }}{77}{figure.caption.76}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Cart3D flow result for the SPARTAN, at Mach 6, 2$^\circ $ angle of attack.\relax }}{78}{figure.caption.77}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Aerodynamic Characteristics of the SPARTAN with C-REST engine powered-off. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of 14.23m (no third stage, conical tank full). \leavevmode {\color {red}XXX I should add mention about CG z, and moment from scramjet engines (if I dont have one already?)}\relax }}{84}{figure.caption.78}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Unstarted scramjet engines at mach 3, 2$^\circ $ angle of attack.\relax }}{85}{figure.caption.79}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Cart3D result for the SPARTAN and first stage vehicles at Mach 2, -1$^\circ $ angle of attack.\relax }}{85}{figure.caption.81}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces The aerodynamic characteristics of the SPARTAN including the first stage rocket. Coefficients correspond to a reference area of 62.77m$^2$.\relax }}{86}{figure.caption.82}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Thrust vectoring moment balancing of the first stage. \leavevmode {\color {red}XXX I need to add what the first stage CG is, and update for new third stage CG}\relax }}{86}{figure.caption.83}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces The third stage rocket, showing major internal features. \leavevmode {\color {red}XXX Change picture to rounded nose}\relax }}{87}{figure.caption.84}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Variation in coefficient of thrust with area ratio\cite {RPE}.\relax }}{89}{figure.caption.91}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Aerodynamic characteristics of the third stage rocket, for a reference area of 0.95m$^2$.\relax }}{90}{figure.caption.92}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Thrust vector moment balancing of the third stage.\relax }}{91}{figure.caption.93}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The launch process of the rocket-scramjet-rocket launch system, presented in simplified form.\relax }}{56}{figure.caption.48}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The rocket-scramjet-rocket launch system, top view, showing the SPARTAN and first stage. \leavevmode {\color {red}XXX change this pic, remove interface}\relax }}{57}{figure.caption.49}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The rocket-scramjet-rocket launch system, side view, showing the SPARTAN and fuel tanks, along with the third and first stages. \leavevmode {\color {red}XXX Cround third stage nose}\relax }}{57}{figure.caption.50}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The external features of the SPARTAN.\relax }}{58}{figure.caption.51}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The C-RESTM10 propulsion database, specific impulse.\relax }}{60}{figure.caption.54}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The locations of conditions relevant to C-REST engine simulation. \relax }}{61}{figure.caption.55}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Flow conditions after the conical shock generated by the vehicle nose cone as a function of flight Mach number and angle of attack. Figure a) shows the Mach number, b) shows the pressure ratio, and c) shows the temperature ratio following the conical shock, at the engine inlet.\relax }}{62}{figure.caption.56}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Specific impulse of the C-REST engines with input temperature and Mach number. Available data points are indicated.\relax }}{63}{figure.caption.57}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Operable equivalence ratio of the C-REST engines with input temperature and Mach number. Available data points are indicated.\relax }}{64}{figure.caption.58}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The process for generating aerodynamic databases.\relax }}{65}{figure.caption.59}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Surface triangulation of the Baseline SPARTAN, generated using Pointwise\cite {Pointwise}.\relax }}{66}{figure.caption.61}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The convergence of a Cart3D simulation of the SPARTAN at Mach 6, 2$^\circ $ angle of attack.\relax }}{67}{figure.caption.62}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces View of the SPARTAN surface triangulation showing engine outlet boundaries.\relax }}{68}{figure.caption.64}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The total thrust output of the SPARTAN, including the CRESTM10 database, and Cart3D nozzle and boat tail simulations.\relax }}{68}{figure.caption.65}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The specific impulse of the SPARTAN, including the C-rest database, and Cart3D nozzle and boat tail simulations.\relax }}{69}{figure.caption.66}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Centre of gravity positions throughout the flight of the SPARTAN. \relax }}{70}{figure.caption.68}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces The forces on the SPARTAN during flight. \leavevmode {\color {red}XXX The flaps vector is slightly wrong (should point back too)}\relax }}{70}{figure.caption.70}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces SPARTAN model showing control surfaces.\relax }}{71}{figure.caption.71}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Flap deflection required for trim of the SPARTAN. Negative up. \leavevmode {\color {red}XXX I need to redo these for new CG}\relax }}{72}{figure.caption.72}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Viscous drag coefficient across various Mach numbers.\relax }}{73}{figure.caption.74}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Engine-on Cart3D simulation at Mach 6, 2$^\circ $ angle of attack, and 25km altitude.\relax }}{74}{figure.caption.75}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces The aerodynamic coefficients of the SPARTAN with the C-REST engines powered-on. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of \leavevmode {\color {red}15.24m} (full of fuel, with third stage). \leavevmode {\color {red}XXX CHANGE CG of SPARTAN}\relax }}{75}{figure.caption.76}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Cart3D flow result for the SPARTAN, at Mach 6, 2$^\circ $ angle of attack.\relax }}{76}{figure.caption.77}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Aerodynamic Characteristics of the SPARTAN with C-REST engine powered-off. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of 14.23m (no third stage, conical tank full). \leavevmode {\color {red}XXX I should add mention about CG z, and moment from scramjet engines (if I dont have one already?)}\relax }}{82}{figure.caption.78}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Unstarted scramjet engines at mach 3, 2$^\circ $ angle of attack.\relax }}{83}{figure.caption.79}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Cart3D result for the SPARTAN and first stage vehicles at Mach 2, -1$^\circ $ angle of attack.\relax }}{83}{figure.caption.81}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces The aerodynamic characteristics of the SPARTAN including the first stage rocket. Coefficients correspond to a reference area of 62.77m$^2$.\relax }}{84}{figure.caption.82}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Thrust vectoring moment balancing of the first stage. \leavevmode {\color {red}XXX I need to add what the first stage CG is, and update for new third stage CG}\relax }}{84}{figure.caption.83}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces The third stage rocket, showing major internal features. \leavevmode {\color {red}XXX Change picture to rounded nose}\relax }}{85}{figure.caption.84}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Variation in coefficient of thrust with area ratio\cite {RPE}.\relax }}{87}{figure.caption.91}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Aerodynamic characteristics of the third stage rocket, for a reference area of 0.95m$^2$.\relax }}{88}{figure.caption.92}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Thrust vector moment balancing of the third stage.\relax }}{89}{figure.caption.93}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sun synchronous orbit illustration, passing over the equator at the same time each day\cite {NASASSO}.\relax }}{94}{figure.caption.94}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Approximate location of the ELA launch site. Image from Google maps.\relax }}{95}{figure.caption.95}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The Earth-fixed components of the geodetic rotational coordinate system.\relax }}{97}{figure.caption.96}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustration of the phases of the launch profile. Controlled and uncontrolled phases are distinguished. \relax }}{99}{figure.caption.97}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces The Hohmann transfer manoeuvre. $\Delta $V indicates a velocity change due to a burn.\relax }}{107}{figure.caption.103}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \leavevmode {\color {red}XXX Change 6DOF in this image! also check section no.s}The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.\relax }}{111}{figure.caption.104}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sun synchronous orbit illustration, passing over the equator at the same time each day\cite {NASASSO}.\relax }}{92}{figure.caption.94}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Approximate location of the ELA launch site. Image from Google maps.\relax }}{93}{figure.caption.95}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The Earth-fixed components of the geodetic rotational coordinate system.\relax }}{95}{figure.caption.96}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustration of the phases of the launch profile. Controlled and uncontrolled phases are distinguished. \relax }}{97}{figure.caption.97}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The Hohmann transfer manoeuvre. $\Delta $V indicates a velocity change due to a burn.\relax }}{105}{figure.caption.103}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \leavevmode {\color {red}XXX Change 6DOF in this image! also check section no.s}The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.\relax }}{109}{figure.caption.104}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Maximum payload-to-orbit trajectory path with the SPARTAN flying at constant dynamic pressure (Case 1). Initial heading angle 92.6$^\circ $.\relax }}{117}{figure.caption.105}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces The first stage trajectory of the launch system, with the SPARTAN constrained to flight at constant dynamic pressure (Case 1).\relax }}{119}{figure.caption.107}
