@@ -253,56 +253,65 @@
 
   \entry{Smart2009a}{article}{}
     \name{author}{2}{}{%
+      {{hash=SMV}{%
+         family={Suraweera},
+         familyi={S\bibinitperiod},
+         given={Milinda\bibnamedelima V.},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
          given={Michael\bibnamedelima K.},
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
-      {{hash=TMR}{%
-         family={Tetlow},
-         familyi={T\bibinitperiod},
-         given={Matthew\bibnamedelima R.},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
     }
-    \strng{namehash}{SMKTMR1}
-    \strng{fullhash}{SMKTMR1}
+    \strng{namehash}{SMVSMK1}
+    \strng{fullhash}{SMVSMK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
-  rockets during the hypersonic phase of low- Earth-orbit insertion
-  trajectories. Despite this, scramjets are not used on any current systems due
-  to the difﬁculty of operating over the large Mach number envelope required
-  by this accelerating trajectory. The key to taking advantage of airbreathing
-  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
-  system that makes use of the scramjet only within its high-performance
-  regime. A multistage rocket-scramjet-rocket system that accepts this
-  limitation has therefore been examined. This system includes a solid rocket
-  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
-  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
-  Trajectory calculations for a system scaled to deliver approximately 100 kg
-  to a 200 km equatorial orbit indicate payload mass fractions of approximately
-  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
-  packaging. The goal of this work is to guide the future development of
-  scramjets by identifying the areas that will make the most signiﬁcant
-  improvement to their use for space access.%
+    A shock tunnel investigation of a scramjet with a
+  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
+  elliptical combustor has been$\backslash$nconducted at conditions simulating
+  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
+  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
+  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
+  began with a rearward facing step around its perimeter,$\backslash$nand was
+  followed by a constant area and diverging section. The
+  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
+  fuel was$\backslash$ninjected either through multiple portholes on the
+  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
+  at the combustor entrance,$\backslash$nor a combination of the two. All
+  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
+  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
+  Fuel injection in the intake produced$\backslash$nrobust combustion and good
+  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
+  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
+  was observed for fuel injection at the step at all
+  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
+  injection$\backslash$nwas observed to have the best performance. These
+  experimental results$\backslash$ndemonstrate that REST scramjets, designed
+  for access-to-space applications,$\backslash$ncan operate efficiently at
+  conditions below the design Mach number.%
     }
     \verb{doi}
-    \verb 10.2514/1.38784
+    \verb 10.2514/1.37946
     \endverb
-    \field{isbn}{1563478269}
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{117\bibrangedash 125}
-    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
-  Airbreathing Propulsion}}
-    \field{volume}{46}
+    \field{isbn}{9781563479373}
+    \field{issn}{0748-4658}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 564}
+    \field{title}{{Shock-Tunnel Experiments with a Mach 12
+  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/1.37946
+    \endverb
+    \field{volume}{25}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MSmart2009.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{journaltitle}{Journal of Propulsion and Power}
     \field{year}{2009}
   \endentry
 
@@ -695,6 +704,648 @@
     \field{urlday}{21}
     \field{urlmonth}{06}
     \field{urlyear}{2018}
+  \endentry
+
+  \entry{BlueOrigin}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Lewin},
+         familyi={L\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Space.com}
+    \field{title}{{Blue Origin Announces Big 'New Glenn' Rocket for Satellite
+  \& Crew Launches}}
+    \verb{url}
+    \verb https://www.space.com/34034-blue-origin-new-glenn-rocket-for-satellit
+    \verb es-people.html
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Kendall2010}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=KR}{%
+         family={Kendall},
+         familyi={K\bibinitperiod},
+         given={Randy},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Portanova},
+         familyi={P\bibinitperiod},
+         given={Pete},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KRPP1}
+    \strng{fullhash}{KRPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Aerospace.org}
+    \field{title}{{Launch Vehicles Then and Now: 50 Years of Evolution}}
+    \verb{url}
+    \verb http://www.aerospace.org/crosslinkmag/spring-2010/launch-vehicles-the
+    \verb n-and-now-50-years-of-evolution/
+    \endverb
+    \field{year}{2010}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{FalconHeavy}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PH}{%
+         family={Pettit},
+         familyi={P\bibinitperiod},
+         given={Harry},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PH1}
+    \strng{fullhash}{PH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Daily Mail}
+    \field{title}{{The galaxy's fastest car}}
+    \verb{url}
+    \verb http://www.dailymail.co.uk/sciencetech/article-5361789/Ride-Elon-Musk
+    \verb s-Starman-travels-space.html
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Launius2006}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LRD}{%
+         family={Launius},
+         familyi={L\bibinitperiod},
+         given={Roger\bibnamedelima D.},
+         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LRD1}
+    \strng{fullhash}{LRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This article reviews the core legacies of the Space Shuttle program after
+  25 years and suggests that, while it was not an unadulterated success, on
+  balance the Shuttle served a valuable role in the development of spaceflight
+  and deserves an overall positive assessment in history. There are five core
+  legacies that deserve discussion. First, the Space Shuttle has a reputation
+  as a mistake resulting from a policy failure that should never have been
+  pursued. Second, it has been criticized as a program that prohibited other
+  paths for the US space program. Third, and more positively, the Space Shuttle
+  provided more than two decades of significant human spaceflight capability
+  and stretched the nature of what could be accomplished in Earth orbit much
+  beyond where it had previously been. Fourth, it served as a relatively
+  flexible platform for scientific activities. Finally, and perhaps most
+  significantly since the US human spaceflight program has always been focused
+  on national prestige, the Space Shuttle served well as a symbol of American
+  technological verisimilitude.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.spacepol.2006.08.008
+    \endverb
+    \field{issn}{02659646}
+    \field{number}{4}
+    \field{pages}{226\bibrangedash 234}
+    \field{title}{{Assessing the legacy of the Space Shuttle}}
+    \field{volume}{22}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Launius\_SpaceShutt
+    \verb le.pdf:pdf
+    \endverb
+    \field{journaltitle}{Space Policy}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Foust2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FJ}{%
+         family={Foust},
+         familyi={F\bibinitperiod},
+         given={Jeff},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJ1}
+    \strng{fullhash}{FJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{SpaceNews}
+    \field{title}{{SpaceX achievements generate growing interest in reusable
+  launchers}}
+    \verb{url}
+    \verb http://spacenews.com/spacex-achievements-generate-growing-interest-in
+    \verb -reusable-launchers/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Mosher2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={Mosher},
+         familyi={M\bibinitperiod},
+         given={Dave},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Business Insider}
+    \field{title}{{SpaceX faces a growing list of competitors in the new space
+  race}}
+    \verb{url}
+    \verb https://www.businessinsider.com.au/spacex-elon-musk-competition-compa
+    \verb nies-rockets-2018-3
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Adeline}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Spaceflight Now}
+    \field{title}{{Ariane 6 Rocket Holding to Schedule for 2020 Maiden Flight}}
+    \verb{url}
+    \verb https://spaceflightnow.com/2016/08/13/ariane-6-rocket-holding-to-sche
+    \verb dule-for-2020-maiden-flight/
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Adelineb}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Space Safety Magazine}
+    \field{title}{{To Challenge SpaceX, Rockets Get Wings}}
+    \verb{url}
+    \verb http://www.spacesafetymagazine.com/news/to-challenge-spacex-rockets-g
+    \verb et-wings/
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{RichardWebb2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Richard Webb}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 19}
+    \field{title}{{Is It Worth It? The Economics of Reusable Space
+  Transportation}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Webb2016.pdf:pdf
+    \endverb
+    \field{journaltitle}{ICEAA 2016 International Training Symposium, Bristol,
+  UK}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Clark2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Spaceflight Now}
+    \field{title}{{Falcon 9 rocket launching Sunday sports fin upgrade}}
+    \verb{url}
+    \verb https://spaceflightnow.com/2017/06/25/falcon-9-rocket-launching-sunda
+    \verb y-sports-fin-upgrade/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Sarigul2003}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SKM}{%
+         family={Sarigul-Klijn},
+         familyi={S\bibinitperiod-K\bibinitperiod},
+         given={Marti},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SKN}{%
+         family={Sarigul-Klijn},
+         familyi={S\bibinitperiod-K\bibinitperiod},
+         given={Nesrin},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SKMSKN1}
+    \strng{fullhash}{SKMSKN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{41st Aerospace Sciences Meeting and Exhibit, Aerospace
+  Sciences Meetings}
+    \field{title}{{Flight Mechanics of Manned Sub-Orbital Reusable Launch
+  Vehicles with Recommendations for Launch and Recovery}}
+    \list{location}{1}{%
+      {Reno, NV}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{Gilmour}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GM}{%
+         family={Gilmour},
+         familyi={G\bibinitperiod},
+         given={Michelle},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM1}
+    \strng{fullhash}{GM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Gilmour Space Technologies Media Release}
+    \field{pages}{1\bibrangedash 3}
+    \field{title}{{Gilmour Space Secures AUD 19 Million to Launch
+  Next-Generation Hybrid Rockets to Space}}
+    \verb{url}
+    \verb https://www.gspacetech.com/single-post/2018/09/28/Gilmour-Space-secur
+    \verb es-AUD-19-million-to-launch-next-gen-hybrid-rockets
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gilmour.pdf:pdf
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Electron}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rocket Lab}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R2}
+    \strng{fullhash}{R2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Electron}}
+    \verb{url}
+    \verb https://www.rocketlabusa.com/electron/
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{30}
+    \field{urlmonth}{11}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{Bloostar}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Z}{%
+         family={Zero2Infinity},
+         familyi={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Z1}
+    \strng{fullhash}{Z1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Bloostar}}
+    \verb{url}
+    \verb http://www.zero2infinity.space/bloostar/
+    \endverb
+    \field{year}{2016}
+    \field{urlday}{30}
+    \field{urlmonth}{11}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{Intrepid}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={RocketCrafters},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R3}
+    \strng{fullhash}{R3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Intrepid-1}}
+    \verb{url}
+    \verb http://rocketcrafters.space/products-services/intrepid-launcher-famil
+    \verb y/intrepid-1/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{FT1}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Space Launch Report}
+    \field{title}{{China Launches New Rocket}}
+    \verb{url}
+    \verb http://www.spacelaunchreport.com/kz.html
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{06}
+    \field{urlmonth}{10}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{Vector}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Vector Space}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Vector Launch Vehicle Family}}
+    \verb{url}
+    \verb https://vectorspacesystems.com/technology/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{Kuhn2017}{article}{}
+    \name{author}{8}{}{%
+      {{hash=KM}{%
+         family={Kuhn},
+         familyi={K\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={M\"{u}ller},
+         familyi={M\bibinitperiod},
+         given={Ilja},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Petkov},
+         familyi={P\bibinitperiod},
+         given={Ivaylo},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=OB}{%
+         family={Oving},
+         familyi={O\bibinitperiod},
+         given={Bertil},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=vKAJ}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Kleef},
+         familyi={K\bibinitperiod},
+         given={Arnaud\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VCJ}{%
+         family={Verberne},
+         familyi={V\bibinitperiod},
+         given={C.\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Haemmerli},
+         familyi={H\bibinitperiod},
+         given={Bastien},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Boiron},
+         familyi={B\bibinitperiod},
+         given={Adrien},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KM+2}
+    \strng{fullhash}{KMMIPIOBKAJvVCJHBBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/6.2017-2441
+    \endverb
+    \field{isbn}{978-1-62410-463-3}
+    \field{number}{March}
+    \field{pages}{1\bibrangedash 14}
+    \field{title}{{Innovative European Launcher Concept SMILE}}
+    \verb{url}
+    \verb https://arc.aiaa.org/doi/10.2514/6.2017-2441
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kuhn2017.pdf:pdf
+    \endverb
+    \field{journaltitle}{21st AIAA International Space Planes and Hypersonics
+  Technologies Conference}
+    \field{year}{2017}
+  \endentry
+
+  \entry{firefly}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={Firefly},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F2}
+    \strng{fullhash}{F2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Firefly}}
+    \verb{url}
+    \verb http://www.fireflyspace.com/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{30}
+    \field{urlmonth}{11}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{Virgin}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={VirginOrbit},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{V2}
+    \strng{fullhash}{V2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{LauncherOne}}
+    \verb{url}
+    \verb https://virginorbit.com/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{30}
+    \field{urlmonth}{11}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{DARPA2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=OD}{%
+         family={Outreach},
+         familyi={O\bibinitperiod},
+         given={DARPA},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OD1}
+    \strng{fullhash}{OD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{DARPA Picks Design for Next-Generation Spaceplane}}
+    \verb{url}
+    \verb https://www.darpa.mil/news-events/2017-05-24
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{16}
+    \field{urlmonth}{11}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{500R}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Orbital Access}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{The Orbital 500R}}
+    \verb{url}
+    \verb http://www.orbital-access.com/the-orbital-500/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2017}
+  \endentry
+
+  \entry{Smart2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=TMR}{%
+         family={Tetlow},
+         familyi={T\bibinitperiod},
+         given={Matthew\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMKTMR1}
+    \strng{fullhash}{SMKTMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
+  rockets during the hypersonic phase of low- Earth-orbit insertion
+  trajectories. Despite this, scramjets are not used on any current systems due
+  to the difﬁculty of operating over the large Mach number envelope required
+  by this accelerating trajectory. The key to taking advantage of airbreathing
+  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
+  system that makes use of the scramjet only within its high-performance
+  regime. A multistage rocket-scramjet-rocket system that accepts this
+  limitation has therefore been examined. This system includes a solid rocket
+  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
+  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
+  Trajectory calculations for a system scaled to deliver approximately 100 kg
+  to a 200 km equatorial orbit indicate payload mass fractions of approximately
+  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
+  packaging. The goal of this work is to guide the future development of
+  scramjets by identifying the areas that will make the most signiﬁcant
+  improvement to their use for space access.%
+    }
+    \verb{doi}
+    \verb 10.2514/1.38784
+    \endverb
+    \field{isbn}{1563478269}
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{117\bibrangedash 125}
+    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
+  Airbreathing Propulsion}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/1.38784
+    \endverb
+    \field{volume}{46}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/smart2009.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2009}
   \endentry
 
   \entry{Billig1993}{article}{}
@@ -1263,648 +1914,6 @@
     \field{year}{2011}
   \endentry
 
-  \entry{BlueOrigin}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=LS}{%
-         family={Lewin},
-         familyi={L\bibinitperiod},
-         given={Sarah},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LS1}
-    \strng{fullhash}{LS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Space.com}
-    \field{title}{{Blue Origin Announces Big 'New Glenn' Rocket for Satellite
-  \& Crew Launches}}
-    \verb{url}
-    \verb https://www.space.com/34034-blue-origin-new-glenn-rocket-for-satellit
-    \verb es-people.html
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Kendall2010}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=KR}{%
-         family={Kendall},
-         familyi={K\bibinitperiod},
-         given={Randy},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=PP}{%
-         family={Portanova},
-         familyi={P\bibinitperiod},
-         given={Pete},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KRPP1}
-    \strng{fullhash}{KRPP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Aerospace.org}
-    \field{title}{{Launch Vehicles Then and Now: 50 Years of Evolution}}
-    \verb{url}
-    \verb http://www.aerospace.org/crosslinkmag/spring-2010/launch-vehicles-the
-    \verb n-and-now-50-years-of-evolution/
-    \endverb
-    \field{year}{2010}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{FalconHeavy}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=PH}{%
-         family={Pettit},
-         familyi={P\bibinitperiod},
-         given={Harry},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PH1}
-    \strng{fullhash}{PH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Daily Mail}
-    \field{title}{{The galaxy's fastest car}}
-    \verb{url}
-    \verb http://www.dailymail.co.uk/sciencetech/article-5361789/Ride-Elon-Musk
-    \verb s-Starman-travels-space.html
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Launius2006}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LRD}{%
-         family={Launius},
-         familyi={L\bibinitperiod},
-         given={Roger\bibnamedelima D.},
-         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LRD1}
-    \strng{fullhash}{LRD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This article reviews the core legacies of the Space Shuttle program after
-  25 years and suggests that, while it was not an unadulterated success, on
-  balance the Shuttle served a valuable role in the development of spaceflight
-  and deserves an overall positive assessment in history. There are five core
-  legacies that deserve discussion. First, the Space Shuttle has a reputation
-  as a mistake resulting from a policy failure that should never have been
-  pursued. Second, it has been criticized as a program that prohibited other
-  paths for the US space program. Third, and more positively, the Space Shuttle
-  provided more than two decades of significant human spaceflight capability
-  and stretched the nature of what could be accomplished in Earth orbit much
-  beyond where it had previously been. Fourth, it served as a relatively
-  flexible platform for scientific activities. Finally, and perhaps most
-  significantly since the US human spaceflight program has always been focused
-  on national prestige, the Space Shuttle served well as a symbol of American
-  technological verisimilitude.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.spacepol.2006.08.008
-    \endverb
-    \field{issn}{02659646}
-    \field{number}{4}
-    \field{pages}{226\bibrangedash 234}
-    \field{title}{{Assessing the legacy of the Space Shuttle}}
-    \field{volume}{22}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Launius\_SpaceShutt
-    \verb le.pdf:pdf
-    \endverb
-    \field{journaltitle}{Space Policy}
-    \field{year}{2006}
-  \endentry
-
-  \entry{Foust2018}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=FJ}{%
-         family={Foust},
-         familyi={F\bibinitperiod},
-         given={Jeff},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FJ1}
-    \strng{fullhash}{FJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{SpaceNews}
-    \field{title}{{SpaceX achievements generate growing interest in reusable
-  launchers}}
-    \verb{url}
-    \verb http://spacenews.com/spacex-achievements-generate-growing-interest-in
-    \verb -reusable-launchers/
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Mosher2018}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=MD}{%
-         family={Mosher},
-         familyi={M\bibinitperiod},
-         given={Dave},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MD1}
-    \strng{fullhash}{MD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Business Insider}
-    \field{title}{{SpaceX faces a growing list of competitors in the new space
-  race}}
-    \verb{url}
-    \verb https://www.businessinsider.com.au/spacex-elon-musk-competition-compa
-    \verb nies-rockets-2018-3
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Adeline}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=CS}{%
-         family={Clark},
-         familyi={C\bibinitperiod},
-         given={Stephen},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CS1}
-    \strng{fullhash}{CS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Spaceflight Now}
-    \field{title}{{Ariane 6 Rocket Holding to Schedule for 2020 Maiden Flight}}
-    \verb{url}
-    \verb https://spaceflightnow.com/2016/08/13/ariane-6-rocket-holding-to-sche
-    \verb dule-for-2020-maiden-flight/
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{06}
-    \field{urlmonth}{10}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Adelineb}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Space Safety Magazine}
-    \field{title}{{To Challenge SpaceX, Rockets Get Wings}}
-    \verb{url}
-    \verb http://www.spacesafetymagazine.com/news/to-challenge-spacex-rockets-g
-    \verb et-wings/
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{RichardWebb2016}{article}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Richard Webb}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R1}
-    \strng{fullhash}{R1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{1\bibrangedash 19}
-    \field{title}{{Is It Worth It? The Economics of Reusable Space
-  Transportation}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Webb2016.pdf:pdf
-    \endverb
-    \field{journaltitle}{ICEAA 2016 International Training Symposium, Bristol,
-  UK}
-    \field{year}{2016}
-  \endentry
-
-  \entry{Clark2018}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=CS}{%
-         family={Clark},
-         familyi={C\bibinitperiod},
-         given={Stephen},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CS1}
-    \strng{fullhash}{CS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Spaceflight Now}
-    \field{title}{{Falcon 9 rocket launching Sunday sports fin upgrade}}
-    \verb{url}
-    \verb https://spaceflightnow.com/2017/06/25/falcon-9-rocket-launching-sunda
-    \verb y-sports-fin-upgrade/
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Sarigul2003}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=SKM}{%
-         family={Sarigul-Klijn},
-         familyi={S\bibinitperiod-K\bibinitperiod},
-         given={Marti},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SKN}{%
-         family={Sarigul-Klijn},
-         familyi={S\bibinitperiod-K\bibinitperiod},
-         given={Nesrin},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SKMSKN1}
-    \strng{fullhash}{SKMSKN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{41st Aerospace Sciences Meeting and Exhibit, Aerospace
-  Sciences Meetings}
-    \field{title}{{Flight Mechanics of Manned Sub-Orbital Reusable Launch
-  Vehicles with Recommendations for Launch and Recovery}}
-    \list{location}{1}{%
-      {Reno, NV}%
-    }
-    \field{year}{2003}
-  \endentry
-
-  \entry{Gilmour}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=GM}{%
-         family={Gilmour},
-         familyi={G\bibinitperiod},
-         given={Michelle},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GM1}
-    \strng{fullhash}{GM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Gilmour Space Technologies Media Release}
-    \field{pages}{1\bibrangedash 3}
-    \field{title}{{Gilmour Space Secures AUD 19 Million to Launch
-  Next-Generation Hybrid Rockets to Space}}
-    \verb{url}
-    \verb https://www.gspacetech.com/single-post/2018/09/28/Gilmour-Space-secur
-    \verb es-AUD-19-million-to-launch-next-gen-hybrid-rockets
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gilmour.pdf:pdf
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{06}
-    \field{urlmonth}{10}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Smart2009}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SMK}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima K.},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-      {{hash=TMR}{%
-         family={Tetlow},
-         familyi={T\bibinitperiod},
-         given={Matthew\bibnamedelima R.},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SMKTMR1}
-    \strng{fullhash}{SMKTMR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
-  rockets during the hypersonic phase of low- Earth-orbit insertion
-  trajectories. Despite this, scramjets are not used on any current systems due
-  to the difﬁculty of operating over the large Mach number envelope required
-  by this accelerating trajectory. The key to taking advantage of airbreathing
-  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
-  system that makes use of the scramjet only within its high-performance
-  regime. A multistage rocket-scramjet-rocket system that accepts this
-  limitation has therefore been examined. This system includes a solid rocket
-  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
-  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
-  Trajectory calculations for a system scaled to deliver approximately 100 kg
-  to a 200 km equatorial orbit indicate payload mass fractions of approximately
-  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
-  packaging. The goal of this work is to guide the future development of
-  scramjets by identifying the areas that will make the most signiﬁcant
-  improvement to their use for space access.%
-    }
-    \verb{doi}
-    \verb 10.2514/1.38784
-    \endverb
-    \field{isbn}{1563478269}
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{117\bibrangedash 125}
-    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
-  Airbreathing Propulsion}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/1.38784
-    \endverb
-    \field{volume}{46}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/smart2009.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2009}
-  \endentry
-
-  \entry{Electron}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Rocket Lab}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R2}
-    \strng{fullhash}{R2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Electron}}
-    \verb{url}
-    \verb https://www.rocketlabusa.com/electron/
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{30}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{Bloostar}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=Z}{%
-         family={Zero2Infinity},
-         familyi={Z\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{Z1}
-    \strng{fullhash}{Z1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Bloostar}}
-    \verb{url}
-    \verb http://www.zero2infinity.space/bloostar/
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{30}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{Intrepid}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={RocketCrafters},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R3}
-    \strng{fullhash}{R3}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Intrepid-1}}
-    \verb{url}
-    \verb http://rocketcrafters.space/products-services/intrepid-launcher-famil
-    \verb y/intrepid-1/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{01}
-    \field{urlmonth}{12}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{FT1}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Space Launch Report}
-    \field{title}{{China Launches New Rocket}}
-    \verb{url}
-    \verb http://www.spacelaunchreport.com/kz.html
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{06}
-    \field{urlmonth}{10}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{Vector}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=V}{%
-         family={{Vector Space}},
-         familyi={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{V1}
-    \strng{fullhash}{V1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Vector Launch Vehicle Family}}
-    \verb{url}
-    \verb https://vectorspacesystems.com/technology/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{01}
-    \field{urlmonth}{12}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{Kuhn2017}{article}{}
-    \name{author}{8}{}{%
-      {{hash=KM}{%
-         family={Kuhn},
-         familyi={K\bibinitperiod},
-         given={Markus},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MI}{%
-         family={M\"{u}ller},
-         familyi={M\bibinitperiod},
-         given={Ilja},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=PI}{%
-         family={Petkov},
-         familyi={P\bibinitperiod},
-         given={Ivaylo},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=OB}{%
-         family={Oving},
-         familyi={O\bibinitperiod},
-         given={Bertil},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=vKAJ}{%
-         prefix={van},
-         prefixi={v\bibinitperiod},
-         family={Kleef},
-         familyi={K\bibinitperiod},
-         given={Arnaud\bibnamedelima J.},
-         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=VCJ}{%
-         family={Verberne},
-         familyi={V\bibinitperiod},
-         given={C.\bibnamedelima J.},
-         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=HB}{%
-         family={Haemmerli},
-         familyi={H\bibinitperiod},
-         given={Bastien},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=BA}{%
-         family={Boiron},
-         familyi={B\bibinitperiod},
-         given={Adrien},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KM+2}
-    \strng{fullhash}{KMMIPIOBKAJvVCJHBBA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/6.2017-2441
-    \endverb
-    \field{isbn}{978-1-62410-463-3}
-    \field{number}{March}
-    \field{pages}{1\bibrangedash 14}
-    \field{title}{{Innovative European Launcher Concept SMILE}}
-    \verb{url}
-    \verb https://arc.aiaa.org/doi/10.2514/6.2017-2441
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kuhn2017.pdf:pdf
-    \endverb
-    \field{journaltitle}{21st AIAA International Space Planes and Hypersonics
-  Technologies Conference}
-    \field{year}{2017}
-  \endentry
-
-  \entry{firefly}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=F}{%
-         family={Firefly},
-         familyi={F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{F2}
-    \strng{fullhash}{F2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Firefly}}
-    \verb{url}
-    \verb http://www.fireflyspace.com/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{30}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{Virgin}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=V}{%
-         family={VirginOrbit},
-         familyi={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{V2}
-    \strng{fullhash}{V2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{LauncherOne}}
-    \verb{url}
-    \verb https://virginorbit.com/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{30}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{DARPA2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=OD}{%
-         family={Outreach},
-         familyi={O\bibinitperiod},
-         given={DARPA},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OD1}
-    \strng{fullhash}{OD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{DARPA Picks Design for Next-Generation Spaceplane}}
-    \verb{url}
-    \verb https://www.darpa.mil/news-events/2017-05-24
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{16}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
-  \endentry
-
-  \entry{500R}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=O}{%
-         family={{Orbital Access}},
-         familyi={O\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{O1}
-    \strng{fullhash}{O1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{The Orbital 500R}}
-    \verb{url}
-    \verb http://www.orbital-access.com/the-orbital-500/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{01}
-    \field{urlmonth}{12}
-    \field{urlyear}{2017}
-  \endentry
-
   \entry{Blair2001}{report}{}
     \name{author}{4}{}{%
       {{hash=BJC}{%
@@ -1949,57 +1958,68 @@
     \field{year}{2001}
   \endentry
 
-  \entry{NASP}{article}{}
-    \name{author}{1}{}{%
-      {{hash=PNAs}{%
-         family={Plane},
-         familyi={P\bibinitperiod},
-         given={National Aero-space},
-         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod-s\bibinitperiod},
+  \entry{Olds1998}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=OJ}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={J.R.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BI}{%
+         family={Budianto},
+         familyi={B\bibinitperiod},
+         given={I.a.},
+         giveni={I\bibinitperiod},
       }}%
     }
-    \strng{namehash}{PNAs1}
-    \strng{fullhash}{PNAs1}
+    \strng{namehash}{OJBI1}
+    \strng{fullhash}{OJBI1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{The National Aero-Space Plane}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASP.PDF:PDF
-    \endverb
-  \endentry
-
-  \entry{WCC}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=PSZ}{%
-         family={Pinckney},
-         familyi={P\bibinitperiod},
-         given={S\bibnamedelima Zane},
-         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=MJD}{%
-         family={Mcminn},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
+    \field{abstract}{%
+    Future space transportation vehicles may well rely on high speed
+  airbreathing propulsion (ramjets and scramjets) to supply much of their
+  motive power. Because of the tradeoff relationship between engine thrust and
+  vehicle airframe weight, ascent trajectories are typically simulated using a
+  constant dynamic pressure phase during airbreathing acceleration. That is,
+  dynamic pressure is increased to benefit vehicle thrust up to some fixed
+  limit imposed by the vehicle structure. The constant dynamic pressure portion
+  of the trajectory typically begins around Mach 2 or 3 and continues to the
+  maximum airbreathing Mach number or until some convective aeroheating limit
+  is reached. This paper summarizes comparative research on three candidate
+  guidance methods suitable for simulating constant dynamic pressure
+  trajectories. These are generalized acceleration steering, linear feedback
+  control, and cubic polynomial control. All methods were implemented in POST
+  (Program to Optimize Simulated Trajectories) — an industry standard
+  trajectory simulation code. Both quantitative and qualitative comparisons of
+  these methods (i.e. in terms of computer processing time, number of required
+  iterations for convergence, sensitivity to quality of initial values,
+  accuracy and program robustness) are presented. Of the three methods, the
+  linear feedback control approach is found to be the most efficient and
+  robust, with good accuracy.%
     }
-    \strng{namehash}{SJDPSZMJD1}
-    \strng{fullhash}{SJDPSZMJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
-  Configuration Model :}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
+    \field{booktitle}{Aerospace Sciences Meeting \& Exhibit}
+    \verb{doi}
+    \verb 10.2514/6.1998-302
     \endverb
-    \field{journaltitle}{Simulation}
-    \field{year}{1990}
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{{Constant Dynamic Pressure Trajectory Simulation with POST}}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.25.6506\&amp
+    \verb ;rep=rep1\&amp;type=pdf
+    \endverb
+    \list{location}{1}{%
+      {Reno, NV}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/JOlds1998.pdf:pdf
+    \endverb
+    \field{annotation}{%
+    this is a fairly good discussion of the constant dynamic pressure
+  trajectory%
+    }
+    \field{year}{1998}
   \endentry
 
   \entry{Powell1991}{article}{}
@@ -2066,109 +2086,33 @@
     \field{year}{1991}
   \endentry
 
-  \entry{Lu1993}{article}{}
+  \entry{Trefny1999}{inproceedings}{}
     \name{author}{1}{}{%
-      {{hash=LP}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LP1}
-    \strng{fullhash}{LP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    An inverse dynamics approach for trajectory optimization is proposed. This
-  technique can be useful in many difficult trajectory optimization and control
-  problems. The application of the approach is exemplified by ascent trajectory
-  optimization for an aerospace plane. Both minimum-fuel and minimax types of
-  performance indices are considered. When rocket augmentation is available for
-  ascent, it is shown that accurate orbital insertion can be achieved through
-  the inverse control of the rocket in the presence of disturbances.%
-    }
-    \verb{doi}
-    \verb 10.2514/3.21073
-    \endverb
-    \field{issn}{0731-5090}
-    \field{number}{4}
-    \field{pages}{726\bibrangedash 732}
-    \field{title}{{Inverse dynamics approach to trajectory optimization for an
-  aerospace plane}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
-    \endverb
-    \field{volume}{16}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-    \field{year}{1993}
-  \endentry
-
-  \entry{HyperX}{article}{}
-    \name{author}{5}{}{%
-      {{hash=MCR}{%
-         family={McClinton},
-         familyi={M\bibinitperiod},
-         given={Charles\bibnamedelima R.},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=RVL}{%
-         family={Rausch},
-         familyi={R\bibinitperiod},
-         given={Vincent\bibnamedelima L.},
-         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SRJ}{%
-         family={Shaw},
-         familyi={S\bibinitperiod},
-         given={Robert\bibnamedelima J.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MU}{%
-         family={Metha},
-         familyi={M\bibinitperiod},
-         given={Unmeel},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=NC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={Chris},
+      {{hash=TC}{%
+         family={Trefny},
+         familyi={T\bibinitperiod},
+         given={Charles},
          giveni={C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{MCR+1}
-    \strng{fullhash}{MCRRVLSRJMUNC1}
+    \strng{namehash}{TC1}
+    \strng{fullhash}{TC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
-  provided a major, essential demonstration of the capability of the
-  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
-  design tools and vision vehicles. This flight was a crucial step toward
-  establishing air-breathing hypersonic propulsion for application to
-  space-launch vehicles and other hypersonic systems. This paper examines the
-  significance of the flight test in advancing the state-of-the science and
-  provides a strategic vision for achieving the dream for safe, efficient and
-  reliable space access with air-breathing propulsion in the near future,
-  through use of more near term approaches. Published by Elsevier Ltd.%
-    }
+    \field{booktitle}{35th Joint Propulsion Conference and Exhibit}
     \verb{doi}
-    \verb 10.1016/j.actaastro.2005.03.061
+    \verb 10.2514/6.1999-2730
     \endverb
-    \field{issn}{00945765}
-    \field{number}{2-8}
-    \field{pages}{614\bibrangedash 622}
-    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
-    \field{volume}{57}
+    \field{number}{May}
+    \field{title}{{An Air-Breathing Concept Launch Vehicle for
+  Single-Stage-to-Orbit}}
+    \list{location}{1}{%
+      {Los Angeles, CA}%
+    }
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Trefny.pdf:pdf
     \endverb
-    \field{journaltitle}{Acta Astronautica}
-    \field{year}{2005}
+    \field{year}{1999}
   \endentry
 
   \entry{Roche2000}{report}{}
@@ -2221,33 +2165,90 @@
     \field{year}{2000}
   \endentry
 
-  \entry{Trefny1999}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=TC}{%
-         family={Trefny},
-         familyi={T\bibinitperiod},
-         given={Charles},
+  \entry{Pescetelli2012}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=PF}{%
+         family={Pescetelli},
+         familyi={P\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Minisci},
+         familyi={M\bibinitperiod},
+         given={Edmondo},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maddock},
+         familyi={M\bibinitperiod},
+         given={Christie},
          giveni={C\bibinitperiod},
       }}%
+      {{hash=TI}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{TC1}
-    \strng{fullhash}{TC1}
+    \strng{namehash}{PF+1}
+    \strng{fullhash}{PFMEMCTIBR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{35th Joint Propulsion Conference and Exhibit}
-    \verb{doi}
-    \verb 10.2514/6.1999-2730
-    \endverb
-    \field{number}{May}
-    \field{title}{{An Air-Breathing Concept Launch Vehicle for
-  Single-Stage-to-Orbit}}
-    \list{location}{1}{%
-      {Los Angeles, CA}%
+    \field{abstract}{%
+    This paper addresses the design of ascent trajectories for a hybrid-engine,
+  high performance, unmanned, single-stage-to-orbit vehicle for payload
+  deployment into low Earth orbit. A hybrid optimisation technique that couples
+  a population-based, stochastic algorithm with a deterministic, gradient-based
+  technique is used to maximize the final vehicle mass in low Earth orbit after
+  accounting for operational constraints on the dynamic pressure, Mach number
+  and maximum axial and normal accelerations. The control search space is first
+  explored by the population-based algorithm, which uses a single shooting
+  method to evaluate the performance of candidate solutions. The resultant
+  optimal control law and corresponding trajectory are then further refined by
+  a direct collocation method based on finite elements in time. Two distinct
+  operational phases, one using an air-breathing propulsion mode and the second
+  using rocket propulsion, are considered. The presence of uncertainties in the
+  atmospheric and vehicle aerodynamic models are considered in order to
+  quantify their effect on the performance of the vehicle. Firstly, the
+  deterministic optimal control law is re-integrated after introducing
+  uncertainties into the models. The proximity of the final solutions to the
+  target states are analysed statistically. A second analysis is then
+  performed, aimed at determining the best performance of the vehicle when
+  these uncertainties are included directly in the optimisation. The
+  statistical analysis of the results obtained are summarized by an expectancy
+  curve which represents the probable vehicle performance as a function of the
+  uncertain system parameters. This analysis can be used during the preliminary
+  phase of design to yield valuable insights into the robustness of the
+  performance of the vehicle to uncertainties in the specification of its
+  parameters. © 2012 by Richard E Brown, Edmondo Minisci, Christie Maddock,
+  Ian Taylor, Fabrizio Pescetelli.%
     }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Trefny.pdf:pdf
+    \field{booktitle}{18th AIAA/3AF International Space Planes and Hypersonic
+  Systems and Technologies Conference}
+    \verb{doi}
+    \verb 10.2514/6.2012-5828
     \endverb
-    \field{year}{1999}
+    \field{isbn}{978-1-60086-931-0}
+    \field{number}{September}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{{Ascent Trajectory Optimisation for a Single-Stage-to-Orbit
+  Vehicle with Hybrid Propulsion}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2012-5828
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/Pescetelli.pdf:pdf
+    \endverb
+    \field{year}{2012}
   \endentry
 
   \entry{Young2006}{inproceedings}{}
@@ -2357,6 +2358,216 @@
     \field{year}{2006}
   \endentry
 
+  \entry{Mooij}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={Mooij},
+         familyi={M\bibinitperiod},
+         given={Erwin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pringer}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Modeling and Optimization in Space Engineering}}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Lu1993}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An inverse dynamics approach for trajectory optimization is proposed. This
+  technique can be useful in many difficult trajectory optimization and control
+  problems. The application of the approach is exemplified by ascent trajectory
+  optimization for an aerospace plane. Both minimum-fuel and minimax types of
+  performance indices are considered. When rocket augmentation is available for
+  ascent, it is shown that accurate orbital insertion can be achieved through
+  the inverse control of the rocket in the presence of disturbances.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.21073
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{4}
+    \field{pages}{726\bibrangedash 732}
+    \field{title}{{Inverse dynamics approach to trajectory optimization for an
+  aerospace plane}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
+    \endverb
+    \field{volume}{16}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{year}{1993}
+  \endentry
+
+  \entry{NASP}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PNAs}{%
+         family={Plane},
+         familyi={P\bibinitperiod},
+         given={National Aero-space},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod-s\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PNAs1}
+    \strng{fullhash}{PNAs1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{The National Aero-Space Plane}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASP.PDF:PDF
+    \endverb
+  \endentry
+
+  \entry{WCC}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PSZ}{%
+         family={Pinckney},
+         familyi={P\bibinitperiod},
+         given={S\bibnamedelima Zane},
+         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJDPSZMJD1}
+    \strng{fullhash}{SJDPSZMJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
+  Configuration Model :}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
+    \endverb
+    \field{journaltitle}{Simulation}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Aberleen}{book}{}
+    \name{author}{1}{}{%
+      {{hash=vdAL}{%
+         prefix={van\bibnamedelima den},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Aberleen},
+         familyi={A\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{ALvd1}
+    \strng{fullhash}{ALvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9783319444703}
+    \field{pages}{176\bibrangedash 179}
+    \field{title}{{Spaceplane HERMES: Europe ’ s Dream of Independent Manned
+  Spaceflight Luc van den Abeelen}}
+    \list{location}{1}{%
+      {Cham, Switzerland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/2017\_Book\_Spacepl
+    \verb aneHERMES.pdf:pdf
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{HyperX}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MCR}{%
+         family={McClinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RVL}{%
+         family={Rausch},
+         familyi={R\bibinitperiod},
+         given={Vincent\bibnamedelima L.},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MU}{%
+         family={Metha},
+         familyi={M\bibinitperiod},
+         given={Unmeel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCR+1}
+    \strng{fullhash}{MCRRVLSRJMUNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
+  provided a major, essential demonstration of the capability of the
+  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
+  design tools and vision vehicles. This flight was a crucial step toward
+  establishing air-breathing hypersonic propulsion for application to
+  space-launch vehicles and other hypersonic systems. This paper examines the
+  significance of the flight test in advancing the state-of-the science and
+  provides a strategic vision for achieving the dream for safe, efficient and
+  reliable space access with air-breathing propulsion in the near future,
+  through use of more near term approaches. Published by Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.actaastro.2005.03.061
+    \endverb
+    \field{issn}{00945765}
+    \field{number}{2-8}
+    \field{pages}{614\bibrangedash 622}
+    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
+    \field{volume}{57}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{2005}
+  \endentry
+
   \entry{Hyperion}{article}{}
     \name{author}{6}{}{%
       {{hash=OJ}{%
@@ -2463,125 +2674,6 @@
     \field{year}{1998}
   \endentry
 
-  \entry{Olds1998}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=OJ}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={J.R.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BI}{%
-         family={Budianto},
-         familyi={B\bibinitperiod},
-         given={I.a.},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OJBI1}
-    \strng{fullhash}{OJBI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Future space transportation vehicles may well rely on high speed
-  airbreathing propulsion (ramjets and scramjets) to supply much of their
-  motive power. Because of the tradeoff relationship between engine thrust and
-  vehicle airframe weight, ascent trajectories are typically simulated using a
-  constant dynamic pressure phase during airbreathing acceleration. That is,
-  dynamic pressure is increased to benefit vehicle thrust up to some fixed
-  limit imposed by the vehicle structure. The constant dynamic pressure portion
-  of the trajectory typically begins around Mach 2 or 3 and continues to the
-  maximum airbreathing Mach number or until some convective aeroheating limit
-  is reached. This paper summarizes comparative research on three candidate
-  guidance methods suitable for simulating constant dynamic pressure
-  trajectories. These are generalized acceleration steering, linear feedback
-  control, and cubic polynomial control. All methods were implemented in POST
-  (Program to Optimize Simulated Trajectories) — an industry standard
-  trajectory simulation code. Both quantitative and qualitative comparisons of
-  these methods (i.e. in terms of computer processing time, number of required
-  iterations for convergence, sensitivity to quality of initial values,
-  accuracy and program robustness) are presented. Of the three methods, the
-  linear feedback control approach is found to be the most efficient and
-  robust, with good accuracy.%
-    }
-    \field{booktitle}{Aerospace Sciences Meeting \& Exhibit}
-    \verb{doi}
-    \verb 10.2514/6.1998-302
-    \endverb
-    \field{pages}{1\bibrangedash 13}
-    \field{title}{{Constant Dynamic Pressure Trajectory Simulation with POST}}
-    \verb{url}
-    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.25.6506\&amp
-    \verb ;rep=rep1\&amp;type=pdf
-    \endverb
-    \list{location}{1}{%
-      {Reno, NV}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/JOlds1998.pdf:pdf
-    \endverb
-    \field{annotation}{%
-    this is a fairly good discussion of the constant dynamic pressure
-  trajectory%
-    }
-    \field{year}{1998}
-  \endentry
-
-  \entry{Tsuchiya2005}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TT}{%
-         family={Tsuchiya},
-         familyi={T\bibinitperiod},
-         given={Takeshi},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=MT}{%
-         family={Mori},
-         familyi={M\bibinitperiod},
-         given={Takashige},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TTMT1}
-    \strng{fullhash}{TTMT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Many candidate concepts of reusable space transportation vehicles have been
-  proposed around the world. Our aim in this study is to apply an optimization
-  method for conceptual designs of two-stage-to-orbit (TSTO) space planes with
-  airbreathing engines on the first-stage boosters and to obtain necessary
-  vehicle sizes and their optimal flight trajectories. First, we integrate
-  analysis methods into the optimization problem, the solution of which yield
-  the minimized total dry mass of the first-stage booster and the second-stage
-  orbiter. This information allows us to determine the optimal vehicle
-  configuration and flight trajectory for a highly feasible TSTO space plane.
-  The optimal solutions show that TSTO space planes with boosters powered by
-  rocket engines added to the airbreathing engines are lighter in total dry
-  mass than vehicles with boosters propelled by only airbreathing engines.
-  However, it is necessary to lighten and miniaturize vehicle components to
-  achieve greater feasibility. In addition, the trajectory optimizations enable
-  the booster to glide back to a launch site using little propellant, despite
-  the long downrange path from the staging point of the ascent trajectory. This
-  study confirms that the analysis and optimization method proposed are
-  effective.%
-    }
-    \verb{doi}
-    \verb 10.2514/1.8012
-    \endverb
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{90\bibrangedash 97}
-    \field{title}{{Optimal Design of Two-Stage-To-Orbit Space Planes with
-  Airbreathing Engines}}
-    \field{volume}{42}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Tsuchiya.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2005}
-  \endentry
-
   \entry{Wilhite1991}{article}{}
     \name{author}{4}{}{%
       {{hash=WAW}{%
@@ -2646,6 +2738,127 @@
     \field{year}{1991}
   \endentry
 
+  \entry{Tsuchiya2005}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TT}{%
+         family={Tsuchiya},
+         familyi={T\bibinitperiod},
+         given={Takeshi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Takashige},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TTMT1}
+    \strng{fullhash}{TTMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Many candidate concepts of reusable space transportation vehicles have been
+  proposed around the world. Our aim in this study is to apply an optimization
+  method for conceptual designs of two-stage-to-orbit (TSTO) space planes with
+  airbreathing engines on the first-stage boosters and to obtain necessary
+  vehicle sizes and their optimal flight trajectories. First, we integrate
+  analysis methods into the optimization problem, the solution of which yield
+  the minimized total dry mass of the first-stage booster and the second-stage
+  orbiter. This information allows us to determine the optimal vehicle
+  configuration and flight trajectory for a highly feasible TSTO space plane.
+  The optimal solutions show that TSTO space planes with boosters powered by
+  rocket engines added to the airbreathing engines are lighter in total dry
+  mass than vehicles with boosters propelled by only airbreathing engines.
+  However, it is necessary to lighten and miniaturize vehicle components to
+  achieve greater feasibility. In addition, the trajectory optimizations enable
+  the booster to glide back to a launch site using little propellant, despite
+  the long downrange path from the staging point of the ascent trajectory. This
+  study confirms that the analysis and optimization method proposed are
+  effective.%
+    }
+    \verb{doi}
+    \verb 10.2514/1.8012
+    \endverb
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{90\bibrangedash 97}
+    \field{title}{{Optimal Design of Two-Stage-To-Orbit Space Planes with
+  Airbreathing Engines}}
+    \field{volume}{42}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Tsuchiya.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Fujikawa2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FT}{%
+         family={Fujikawa},
+         familyi={F\bibinitperiod},
+         given={Takahiro},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Tsuchiya},
+         familyi={T\bibinitperiod},
+         given={Takeshi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tomioka},
+         familyi={T\bibinitperiod},
+         given={Sadatake},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{combined cycle engine,conceptual design study,future space
+  transportation system,multidisciplinary design
+  optimization,rocket-based,two-stage-to-orbit reusable launch vehicle}
+    \strng{namehash}{FTTTTS1}
+    \strng{fullhash}{FTTTTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A fully reusable two-stage-to-orbit launch vehicle with ethanol-fueled
+  rocket-based combined cycle (RBCC) engines has been studied in Japan as a
+  promising option for future space transportation system. In this paper, a
+  conceptual design study of such a vehicle is conducted using
+  multidisciplinary design optimization (MDO) techniques in order to clarify a
+  technology goal for related technology development activities. An MDO
+  framework composed of coupled analysis disciplines (vehicle geometry, mass
+  property, aerodynamics, propulsion, and trajectory) is constructed. In
+  particular, consideration is given to the development of a simplified
+  numerical model for evaluating the airframe-propulsion integration that can
+  be incorporated into MDO studies, in contrast to costly CFD simulations.
+  Vehicle design and ascent trajectory are then simultaneously optimized with
+  the aim of minimizing the gross mass of the mated vehicle (booster and
+  orbiter). The gross mass of the obtained optimal design is 581 t for the
+  assumed mission of transporting an 800 kg payload into a low Earth orbit. A
+  detailed inspection of the solution reveals that an external nozzle of the
+  engines enhances not only the propulsion performance, but also longitudinal
+  static stability of the vehicle during hypersonic flight.%
+    }
+    \verb{doi}
+    \verb 10.2322/tjsass.60.265
+    \endverb
+    \field{issn}{0549-3811}
+    \field{number}{5}
+    \field{pages}{265\bibrangedash 275}
+    \field{title}{{Multidisciplinary Design Optimization of a
+  Two-Stage-to-Orbit Reusable Launch Vehicle with Ethanol-Fueled Rocket-Based
+  Combined Cycle Engines}}
+    \field{volume}{60}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Fujikawa.pdf:pdf
+    \endverb
+    \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
+  Space Sciences}
+    \field{year}{2017}
+  \endentry
+
   \entry{Mehta2001}{article}{}
     \name{author}{2}{}{%
       {{hash=MUB}{%
@@ -2702,112 +2915,6 @@
     \endverb
     \field{journaltitle}{Journal of Propulsion and Power}
     \field{year}{2001}
-  \endentry
-
-  \entry{Pescetelli2012}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=PF}{%
-         family={Pescetelli},
-         familyi={P\bibinitperiod},
-         given={Fabrizio},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ME}{%
-         family={Minisci},
-         familyi={M\bibinitperiod},
-         given={Edmondo},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=MC}{%
-         family={Maddock},
-         familyi={M\bibinitperiod},
-         given={Christie},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=TI}{%
-         family={Taylor},
-         familyi={T\bibinitperiod},
-         given={Ian},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=BR}{%
-         family={Brown},
-         familyi={B\bibinitperiod},
-         given={Richard},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PF+1}
-    \strng{fullhash}{PFMEMCTIBR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper addresses the design of ascent trajectories for a hybrid-engine,
-  high performance, unmanned, single-stage-to-orbit vehicle for payload
-  deployment into low Earth orbit. A hybrid optimisation technique that couples
-  a population-based, stochastic algorithm with a deterministic, gradient-based
-  technique is used to maximize the final vehicle mass in low Earth orbit after
-  accounting for operational constraints on the dynamic pressure, Mach number
-  and maximum axial and normal accelerations. The control search space is first
-  explored by the population-based algorithm, which uses a single shooting
-  method to evaluate the performance of candidate solutions. The resultant
-  optimal control law and corresponding trajectory are then further refined by
-  a direct collocation method based on finite elements in time. Two distinct
-  operational phases, one using an air-breathing propulsion mode and the second
-  using rocket propulsion, are considered. The presence of uncertainties in the
-  atmospheric and vehicle aerodynamic models are considered in order to
-  quantify their effect on the performance of the vehicle. Firstly, the
-  deterministic optimal control law is re-integrated after introducing
-  uncertainties into the models. The proximity of the final solutions to the
-  target states are analysed statistically. A second analysis is then
-  performed, aimed at determining the best performance of the vehicle when
-  these uncertainties are included directly in the optimisation. The
-  statistical analysis of the results obtained are summarized by an expectancy
-  curve which represents the probable vehicle performance as a function of the
-  uncertain system parameters. This analysis can be used during the preliminary
-  phase of design to yield valuable insights into the robustness of the
-  performance of the vehicle to uncertainties in the specification of its
-  parameters. © 2012 by Richard E Brown, Edmondo Minisci, Christie Maddock,
-  Ian Taylor, Fabrizio Pescetelli.%
-    }
-    \field{booktitle}{18th AIAA/3AF International Space Planes and Hypersonic
-  Systems and Technologies Conference}
-    \verb{doi}
-    \verb 10.2514/6.2012-5828
-    \endverb
-    \field{isbn}{978-1-60086-931-0}
-    \field{number}{September}
-    \field{pages}{1\bibrangedash 18}
-    \field{title}{{Ascent Trajectory Optimisation for a Single-Stage-to-Orbit
-  Vehicle with Hybrid Propulsion}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2012-5828
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/Pescetelli.pdf:pdf
-    \endverb
-    \field{year}{2012}
-  \endentry
-
-  \entry{Mooij}{book}{}
-    \name{author}{1}{}{%
-      {{hash=ME}{%
-         family={Mooij},
-         familyi={M\bibinitperiod},
-         given={Erwin},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Pringer}%
-    }
-    \strng{namehash}{ME1}
-    \strng{fullhash}{ME1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Modeling and Optimization in Space Engineering}}
-    \field{year}{2019}
   \endentry
 
   \entry{Takahashi1997}{article}{}
@@ -3176,6 +3283,28 @@
     \field{year}{2010}
   \endentry
 
+  \entry{Fergusen2009}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=FT}{%
+         family={Ferguson},
+         familyi={F\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FT1}
+    \strng{fullhash}{FT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Small Satellite Separation from a Hypersonic Airbreathing
+  Vehicle}}
+    \list{institution}{1}{%
+      {The University of Queensland}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2009}
+  \endentry
+
   \entry{Hellman}{report}{}
     \name{author}{1}{}{%
       {{hash=HBM}{%
@@ -3461,6 +3590,38 @@
     may show similar characteristics to the return flight%
     }
     \field{year}{2015}
+  \endentry
+
+  \entry{Pesch1980}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PHJ}{%
+         family={Pesch},
+         familyi={P\bibinitperiod},
+         given={Hans\bibnamedelima Josef},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PHJ1}
+    \strng{fullhash}{PHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/3.56011
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{5}
+    \field{pages}{386\bibrangedash 391}
+    \field{title}{{Neighboring Optimum Guidance of a Space-Shuttle-Orbiter-Type
+  Vehicle}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/3.56011
+    \endverb
+    \field{volume}{3}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Pesch.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{year}{1980}
   \endentry
 
   \entry{Eggers1957}{report}{}
@@ -3804,6 +3965,106 @@
     \endverb
     \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{1971}
+  \endentry
+
+  \entry{Maddock2018}{article}{}
+    \name{author}{9}{}{%
+      {{hash=MCA}{%
+         family={Maddock},
+         familyi={M\bibinitperiod},
+         given={Christie\bibnamedelima Alisa},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Ricciardi},
+         familyi={R\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={West},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={West},
+         familyi={W\bibinitperiod},
+         given={Joanne},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kontis},
+         familyi={K\bibinitperiod},
+         given={Konstantinos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rengarajan},
+         familyi={R\bibinitperiod},
+         given={Sriram},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Milne},
+         familyi={M\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={McIntyre},
+         familyi={M\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \keyw{Space access,Space transportation,Trajectory optimisation}
+    \strng{namehash}{MCA+1}
+    \strng{fullhash}{MCARLWMWJKKRSEDMAMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper presents the conceptual design and performance analysis of a
+  partially reusable space launch vehicle for small payloads. The system
+  employs a multi-stage vehicle powered by rocket engines, with a reusable
+  first stage capable of glided or powered flight, and expendable upper
+  stage(s) to inject 500 kg of payload into low Earth orbits. The space access
+  vehicle is designed to be air-launched from a modified aircraft carrier. The
+  aim of the system design is to develop a commercially viable launch system
+  for near-term operation, thus emphasis is placed on the efficient use of high
+  TRL technologies and on the commercial potential of the technical design. The
+  vehicle design is analysed using a multi-disciplinary design optimisation
+  approach to evaluate the performance, operational capabilities and design
+  trade-offs. Results from two trade-off studies are shown, evaluating the
+  choice wing area and thus aerodynamic characteristics, and the choice of
+  stage masses and engines selection on the mission performance.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.actaastro.2018.08.021
+    \endverb
+    \field{issn}{00945765}
+    \field{number}{August}
+    \field{pages}{782\bibrangedash 792}
+    \field{title}{{Conceptual design analysis for a two-stage-to-orbit
+  semi-reusable launch system for small satellites}}
+    \verb{url}
+    \verb https://doi.org/10.1016/j.actaastro.2018.08.021
+    \endverb
+    \field{volume}{152}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Maddock2018.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{2018}
   \endentry
 
   \entry{Ross2004}{article}{}
@@ -4788,6 +5049,40 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Wachter2006}{book}{}
+    \name{author}{2}{}{%
+      {{hash=Wa}{%
+         family={W\"{a}chter},
+         familyi={W\bibinitperiod},
+         given={a},
+         giveni={a},
+      }}%
+      {{hash=BLT}{%
+         family={Biegler},
+         familyi={B\bibinitperiod},
+         given={L\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{barrier method,filter method,interior-point method,line
+  search,nonconvex constrained optimization,nonlinear programming}
+    \strng{namehash}{WaBLT1}
+    \strng{fullhash}{WaBLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{1010700405}
+    \field{number}{1}
+    \field{pages}{25\bibrangedash 57}
+    \field{title}{{On the Implementation of a Primal-Dual Interior Point Filter
+  Line Search Algorithm for Large-Scale Nonlinear Programming}}
+    \field{volume}{106}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/W\"{a}chter-Biegler
+    \verb 2006\_Article\_OnTheImplementationOfAnInterio.pdf:pdf
+    \endverb
+    \field{year}{2006}
+  \endentry
+
   \entry{Lipp2014}{article}{}
     \name{author}{2}{}{%
       {{hash=LT}{%
@@ -4828,40 +5123,6 @@
     \endverb
     \field{journaltitle}{International Journal of Control}
     \field{year}{2014}
-  \endentry
-
-  \entry{Wachter2006}{book}{}
-    \name{author}{2}{}{%
-      {{hash=Wa}{%
-         family={W\"{a}chter},
-         familyi={W\bibinitperiod},
-         given={a},
-         giveni={a},
-      }}%
-      {{hash=BLT}{%
-         family={Biegler},
-         familyi={B\bibinitperiod},
-         given={L\bibnamedelima T},
-         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \keyw{barrier method,filter method,interior-point method,line
-  search,nonconvex constrained optimization,nonlinear programming}
-    \strng{namehash}{WaBLT1}
-    \strng{fullhash}{WaBLT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{1010700405}
-    \field{number}{1}
-    \field{pages}{25\bibrangedash 57}
-    \field{title}{{On the Implementation of a Primal-Dual Interior Point Filter
-  Line Search Algorithm for Large-Scale Nonlinear Programming}}
-    \field{volume}{106}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/W\"{a}chter-Biegler
-    \verb 2006\_Article\_OnTheImplementationOfAnInterio.pdf:pdf
-    \endverb
-    \field{year}{2006}
   \endentry
 
   \entry{Ross2002}{article}{}
@@ -5070,62 +5331,6 @@
     \field{urlday}{24}
     \field{urlmonth}{07}
     \field{urlyear}{2018}
-  \endentry
-
-  \entry{Smart2006}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SMK}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima K},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-      {{hash=REG}{%
-         family={Ruf},
-         familyi={R\bibinitperiod},
-         given={Edward\bibnamedelima G},
-         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SMKREG1}
-    \strng{fullhash}{SMKREG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Scramjet flowpaths employing elliptical combustors have the potential to
-  improve structural efficiency and performance relative to those using planar
-  geometries. NASA Langley has developed a scramjet flowpath that is integrated
-  into a lifting body vehicle, transitions from a rectangular capture area to
-  an elliptical throat, and includes an elliptical combustor. This
-  Rectangular-to-Elliptical Shape Transition (REST) scramjet has a design point
-  of Mach 7.1, and is intended to operate with fixed-geometry between Mach 4.5
-  and 8.0. This paper describes initial free-jet testing of a heat-sink REST
-  scramjet engine model at conditions simulating Mach 5.3 flight. Combustion of
-  gaseous hydrogen fuel at equivalence ratios between 0.5 and 1.5 generated
-  robust performance after ignition with a silane-hydrogen pilot. Facility-
-  model interactions were experienced for fuel equivalence ratios above 1.1,
-  yet despite this, the flowpath was never unstarted by fuel addition at the
-  Mach 5.3 test condition. Combustion tests resulting in engine unstart at
-  reduced stagnation enthalpy indicated that the inlet/engine self-started
-  following termination of the fuel injection. Engine data is presented for the
-  largest fuel equivalence ratio tested without facility interaction. These
-  results indicate that this class of three-dimensional scramjet engine can
-  operate successfully at off-design conditions.%
-    }
-    \verb{doi}
-    \verb doi:10.2514/6.2006-2955
-    \endverb
-    \field{isbn}{1563478110}
-    \field{number}{AIAA 2006-2955}
-    \field{pages}{190\bibrangedash 201}
-    \field{title}{{Free-jet testing of a \{REST\} scramjet at off-design
-  conditions}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2006.pdf:pdf
-    \endverb
-    \field{journaltitle}{Collection of Technical Papers - 25th AIAA Aerodynamic
-  Measurement Technology and Ground Testing Conference}
-    \field{year}{2006}
   \endentry
 
   \entry{Rosema2011}{report}{}
@@ -6138,29 +6343,6 @@
     \field{year}{2004}
   \endentry
 
-  \entry{Wade2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=WM}{%
-         family={Wade},
-         familyi={W\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WM1}
-    \strng{fullhash}{WM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Encyclopedia Astronautica}}
-    \verb{url}
-    \verb http://www.astronautix.com/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{24}
-    \field{urlmonth}{07}
-    \field{urlyear}{2018}
-  \endentry
-
   \entry{Marley2017}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=MCD}{%
@@ -6270,6 +6452,62 @@
     \endverb
     \field{journaltitle}{Journal of Propulsion and Power}
     \field{year}{2009}
+  \endentry
+
+  \entry{Smart2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=REG}{%
+         family={Ruf},
+         familyi={R\bibinitperiod},
+         given={Edward\bibnamedelima G},
+         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMKREG1}
+    \strng{fullhash}{SMKREG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Scramjet flowpaths employing elliptical combustors have the potential to
+  improve structural efficiency and performance relative to those using planar
+  geometries. NASA Langley has developed a scramjet flowpath that is integrated
+  into a lifting body vehicle, transitions from a rectangular capture area to
+  an elliptical throat, and includes an elliptical combustor. This
+  Rectangular-to-Elliptical Shape Transition (REST) scramjet has a design point
+  of Mach 7.1, and is intended to operate with fixed-geometry between Mach 4.5
+  and 8.0. This paper describes initial free-jet testing of a heat-sink REST
+  scramjet engine model at conditions simulating Mach 5.3 flight. Combustion of
+  gaseous hydrogen fuel at equivalence ratios between 0.5 and 1.5 generated
+  robust performance after ignition with a silane-hydrogen pilot. Facility-
+  model interactions were experienced for fuel equivalence ratios above 1.1,
+  yet despite this, the flowpath was never unstarted by fuel addition at the
+  Mach 5.3 test condition. Combustion tests resulting in engine unstart at
+  reduced stagnation enthalpy indicated that the inlet/engine self-started
+  following termination of the fuel injection. Engine data is presented for the
+  largest fuel equivalence ratio tested without facility interaction. These
+  results indicate that this class of three-dimensional scramjet engine can
+  operate successfully at off-design conditions.%
+    }
+    \verb{doi}
+    \verb doi:10.2514/6.2006-2955
+    \endverb
+    \field{isbn}{1563478110}
+    \field{number}{AIAA 2006-2955}
+    \field{pages}{190\bibrangedash 201}
+    \field{title}{{Free-jet testing of a \{REST\} scramjet at off-design
+  conditions}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2006.pdf:pdf
+    \endverb
+    \field{journaltitle}{Collection of Technical Papers - 25th AIAA Aerodynamic
+  Measurement Technology and Ground Testing Conference}
+    \field{year}{2006}
   \endentry
 
   \entry{Administration1976}{book}{}
@@ -6518,6 +6756,29 @@
     \endverb
     \field{type}{techreport}
     \field{year}{2008}
+  \endentry
+
+  \entry{Wade2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WM}{%
+         family={Wade},
+         familyi={W\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WM1}
+    \strng{fullhash}{WM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Encyclopedia Astronautica}}
+    \verb{url}
+    \verb http://www.astronautix.com/
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{24}
+    \field{urlmonth}{07}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Norris2011}{misc}{}

@@ -9,16 +9,15 @@
 }
 \textcolor{red}{
   The design of an airbreathing launch system must be determined with careful consideration of the trajectory, particularly because the flight of a launch system involves vehicles flying at very high speeds and being subject to extreme aerodynamic, structural and heating loads. Accurate trajectory models are required to determine the performance metrics of the launch system, and these initial flight paths are later used to guide the control laws and mechanisms of the launch system.
-This work aims to expand our knowledge on the operation of airbreathing launch systems, by developing a trajectory for a rocket-scramjet-rocket small satellite launch system, of a design based on The SPARTAN launch system under development by The University of Queensland and Hypersonix. The trajectory development for this launch system involves the calculation of the ascent-to-orbit of all three stages as well as the full return of the second stage, using the Pseudodospectral Method, a state of the art method of optimal control, to find the maximum payload-to-orbit trajectory profile. This optimal trajectory profile is investigated to give insights into the trade-offs between the rocket and airbreathing stages that are unique to this type of launch system. This manner of optimal trajectory analysis allows for generalities to be made about the nature of the trajectory shape, and for the understanding of the performance of this type of launch system to be improved.
+This work aims to expand our knowledge on the operation of airbreathing launch systems, by developing a trajectory for a rocket-scramjet-rocket small satellite launch system, of a design based on The SPARTAN launch system under development by The University of Queensland and Hypersonix. This optimal trajectory profile is investigated to give insights into the trade-offs between the rocket and airbreathing stages that are unique to this type of launch system. This manner of optimal trajectory analysis allows for generalities to be made about the nature of the trajectory shape, and for the understanding of the performance of this type of launch system to be improved.
 This trajectory analysis is intended to both aid in the ongoing design process of multi-stage launchers, by characterising the performance needs of a rocket-scramjet-rocket launch system throughout its trajectory, as well as to stand on its own merit by indicating the best possible trajectory shape for this type of launch system. 
 }
 
 
 
 \textcolor{red}{
-This section covers the literature available in the areas that are key to developing and analysing the trajectory for a rocket-scramjet-rocket launch system. Firstly, the need for trajectory modelling and analysis is examined in the context of the launch vehicle design process. 
-Then a background of the process of designing and flying access to space systems is given, to supply the reader with a context for the current work in the process of airbreathing launch system development. 
-A study is conducted on the airbreathing launch systems that have previously been designed and analysed, along with an analysis of the trajectories of these launch systems that may offer valuable insights into the operations of rocket-scramjet-rocket launch systems. Of particular interest are the trajectories of airbreathing launch systems that have previously been optimised to maximise a performance target, that give insights into the trajectory features that arise from the unique nature of airbreathing launch systems. 
+This section covers the literature available in the areas that are key to developing and analysing the trajectory for a rocket-scramjet-rocket launch system. 
+Firstly, a study is conducted on the airbreathing launch systems that have previously been designed and analysed, along with an analysis of the trajectories of these launch systems that may offer valuable insights into the operations of rocket-scramjet-rocket launch systems. Of particular interest are the trajectories of multi-stage airbreathing launch systems, that give insights into the trajectory features that arise from effects of stage separations. 
 After this, an overview is given of the optimal control methods that may be used to develop efficient trajectories, along with their applicability to launch vehicle trajectories. 
 Lastly, a study is presented on the methods of aerodynamic modelling that may be used to develop dynamic models of the launch system, along with a focussed discussion on the Cart3D program, that is used in this work. 
 }
@@ -289,9 +288,11 @@ For SSTO vehicles a pull-up manoeuvre is a simple trade-off between the altitude
 	\hline \small 
 	\textbf{LaRC Turboramjet}\cite{Wilhite1991}\newline\newline
 	The LaRC boosters were developed by Wilhite et al.\cite{Wilhite1991} in order to test the effects of staging Mach number on a two-stage system. These boosters were studied as part of the NASP program, and were intended only to be used as a representative vehicle for research purposes.  
-	\textcolor{red}{XXX MDO?}
+
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/WilHite Booster Vehicle"}}
+	
+	$\cdot$Fully reusable.
 	
 	$\cdot$Nominal gross takeoff weight of approximately 360klb (160Mg), although this varies with staging Mach number. 
 	
@@ -317,30 +318,32 @@ For SSTO vehicles a pull-up manoeuvre is a simple trade-off between the altitude
 	
 	\hline \small 
 	\textbf{JAXA TSTO Spaceplane}\cite{Tsuchiya2005}\newline\newline
-	Tsuchiya and Mori\cite{Tsuchiya2005} developed two conceptual spaceplane designs as part of a JAXA initiative to develop an SSTO airbreathing spaceplane, with TSTO launchers as an interim phase. These spaceplane designs were developed using an MDO analysis. 
+	Fujikawa et al.\cite{Fujikawa2017} have developed a spaceplane as a feasibility study on TSTO fully-reusable launch for JAXA. 
 	
-	\textcolor{red}{XXX No banking during ascent? possible useful..  change to https://www.jstage.jst.go.jp/article/tjsass/60/5/60_T-15-71/_pdf/-char/ja (NOTE: 2DOF no return)? end text of p 272 in interesting}
+	% (NOTE: 2DOF no return)? end text of p 272 in interesting}
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/Tsuchiya Vehicles"}}
 	
 	$\cdot$Fully-reusable. 
 	
-	$\cdot$The two boosters developed have different propulsion systems, fully airbreathing using a precooled turbojet, and turbojet/rocket.
+	$\cdot$\textbf{Propulsion:} First stage RBCC, second stage rocket. 
+	
+	$\cdot$\textbf{Payload:} 800kg.
 
-	 $\cdot$When launching a 4Mg payload the fully-airbreathing booster weighs 216.38Mg and is 89.75m long, and the orbiter weighs 170.07Mg and is 41.45m long.
+	 $\cdot$\textbf{Mass:} Booster 533.8t, orbiter 47.1t.
 	 
-	 $\cdot$When launching a 4Mg payload the airbreathing/rocket booster weighs 240.6ton and is 76.43m long, and the orbiter weighs 113.03ton and is 33.37m long.
+	 $\cdot$\textbf{Length:} Booster 38.4m, orbiter 18.8m. 
+	 
 	
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/Tsuchiya"}}
 	
-	$\cdot$Horizontal takeoff. 
+	$\cdot$\textbf{Launch:} Horizontal. 
 	
-	$\cdot$Both boosters reach maximum dynamic pressure of 50kPa rapidly, after a brief hold of acceleration during the transonic regime. 
+	$\cdot$\textbf{Airbreathing trajectory:} Flight at maximum dynamic pressure for periods, with manoeuvres performed to lower dynamic pressure in order to optimise the performance of the RBCC engines. Pull-up during scramjet operation, possibly to optimise separation point.
+
 	
-	$\cdot$Both boosters pull-up to 15kPa dynamic pressure before separation, the maximum dynamic pressure limit of the orbiter. The airbreathing/rocket booster uses rocket power for this pull-up. 
-	
-	$\cdot$The boosters return to the initial launch site, initially with high bank and angle of attack, and then with angle of attack set to the angle of attack that maximises lift-to-drag. The airbreathing engines are ignited for 'several tens of seconds' to assist the return. 
+	$\cdot$\textbf{Return trajectory:} Not simulated. 
 	
 	\\
 	\hline \small 
@@ -349,6 +352,8 @@ For SSTO vehicles a pull-up manoeuvre is a simple trade-off between the altitude
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=0.48\linewidth]{"figures/2_literature-review/Mehta Vehicle"}}
 	\raisebox{-\totalheight}{\includegraphics[width=0.48\linewidth]{"figures/2_literature-review/Mehta Vehicle2"}}
+	
+	$\cdot$Fully reusable.
 	
 	$\cdot$25000lbs (11339.8kg) of payload.
 	
@@ -380,7 +385,7 @@ For SSTO vehicles a pull-up manoeuvre is a simple trade-off between the altitude
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/Takahashi Vehicle"}}
 	
-	$\cdot$First stage reusable. 
+	$\cdot$Partially reusable, first stage only. 
 	
 	$\cdot$2000kg payload to LEO. 
 	
@@ -409,7 +414,9 @@ For SSTO vehicles a pull-up manoeuvre is a simple trade-off between the altitude
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/Saenger"}}
 	
-	$\cdot$First stage with a weight of 405t and length of 82.5m. Two alternative upper stages; a reusable, manned version for a crew of four and 3t payload, and an expendable cargo version for carrying 7-8t payload to LEO. 
+	$\cdot$First stage reusable. Two alternative upper stages; a reusable, manned version for a crew of four and 3t payload, and an expendable cargo version for carrying 7-8t payload to LEO. 
+	
+	$\cdot$First stage with a weight of 405t and length of 82.5m. 
 	
 	$\cdot$First stage powered by tubojets and ramjets, with upper stages powered by conventional LOX/LH2 rockets. 
 	
@@ -426,6 +433,8 @@ Developed by Dassault, the STAR-H was the French study that sought to mirror the
 	&\small
 \raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/StarH"}}
 
+$\cdot$partially reusable. Reusable first stage, expendable second stage booster, 'payload' of a small spaceplane glider is also reusable. 
+
 $\cdot$First stage weighing 299t, with a second stage weighing 101t, with the Hermes spaceplane as 'payload'. 
 
 $\cdot$First stage powered by five combined cycle engines, second stage rocket powered. 
@@ -439,6 +448,8 @@ $\cdot$First stage powered by five combined cycle engines, second stage rocket p
 	Starsaber was a conceptual design produced by the Georgia Institute of Technology Space Systems Design Lab, with the collaboration of NASA's Marshall Space Flight Centre. Starsaber was intended to investigate the feasibility of RBCC engines for small payload class missions. 
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/Starsaber"}}
+	
+	$\cdot$Partially reusable. First stage reusable, second stage expendable. 
 	
 	$\cdot$300lbs (136kg) payload. 
 	
@@ -467,6 +478,8 @@ $\cdot$First stage powered by five combined cycle engines, second stage rocket p
 Quicksat was designed by SpaceWorks Engineering and the Air Force Research Lab as a conceptual exploration of combined cycle propulsion systems for reusable space access. Quicksat was developed in support of a U.S. military initiative to investigate responsive space access for national security purposes. Quicksat is capable of both the orbital delivery of a Space Manoeuvre Vehicle, as well as hypersonic strike. 
 	&\small
 	\raisebox{-\totalheight}{\includegraphics[width=\linewidth]{"figures/2_literature-review/Quicksat"}}
+	
+	$\cdot$Fully reusable. 
 	
 	$\cdot$500lbs (226.8kg) payload. 
 	
@@ -518,7 +531,7 @@ Quicksat was designed by SpaceWorks Engineering and the Air Force Research Lab a
 	
 	$\cdot$The upper stage injects into orbit using rocket boosters. 
 	
-	\textcolor{red}{XXX Need to put in reusable or not}
+
 	\\
 \hline 
 \end{xltabular} 
@@ -526,18 +539,10 @@ Quicksat was designed by SpaceWorks Engineering and the Air Force Research Lab a
 }
 
 The most studied alternative to single-stage-to-orbit for an airbreathing launch vehicle is the two-stage-to-orbit configuration. Table XXX provides a summary of the TSTO airbreathing launch systems that have gone through a detailed design process, along with their key design and trajectory features. The TSTO configuration generally separates the launch system into an airbreathing or airbreathing/rocket-powered 'booster' stage, and a rocket-powered 'orbiter' stage. This configuration allows for the separation of the booster stage after the airbreathing engines have ceased to be used. This separation removes a large fraction of the system mass, as the airbreathing engines are generally complex and heavy systems. As a consequence of this mass reduction, the rocket engines used for the final acceleration to orbit may be considerably smaller, and therefore cheaper and lighter. 
-
-
-TSTO systems may be designed to be fully or partially reusable, ie. while the booster stage returns to launch site, the orbiter stage may be returned, or discarded. Returning the orbiter stage is a more complex task than returning the booster stage, due to its high velocities, as well as generally being a much smaller vehicle, meaning that the relative mass penalties for including the systems necessary for reuse are more severe. 
-Despite this, most of the TSTO launch systems that have been designed are fully reusable, with winged orbiter stages designed for self-landing.
-% XXX point out whether each system is reusable
-% XXX Specifically point out the starsaber here?
-
-
 The booster stages are all powered by airbreathing engines, although a variety array of engine architectures can be observed in the TSTO vehicles. RBCC engines are common, however some designs eschew the use of rocket engines in the booster stage altogether. This is due to the separation of the booster stage not requiring all engines to be accelerated to orbit, enabling the use of engines not designed for extremely high speeds, as well as allowing an emphasis to be directed towards fuel efficiency, rather than mass efficiency, within the engine systems. 
 
 
-The trajectories of TSTO airbreathing launch systems, where available, are relatively similar to those of SSTO launch systems. All of the TSTO systems that have gone through detailed design are launched horizontally, and fly at the maximum dynamic pressure boundary for the majority of the duration of hypersonic airbreathing flight. Near the end of airbreathing operation, a pull-up is generally performed, similarly to the pull-up observed in SSTO launchers, before stage separation. However, this pull-up is not always observed, and when it is observed, it occurs to very different extents, so that the separation of the second stage is initiated at significantly different altitudes and velocities between launch systems. 
+The trajectories of TSTO airbreathing launch systems, where available, are relatively similar to those of SSTO launch systems. All of the TSTO systems that have gone through detailed design are launched horizontally, and most fly at the maximum dynamic pressure boundary for the majority of the duration of hypersonic airbreathing flight. The exception to this is the JAXA TSTO launcher, which flies at a higher altitude to increase the performance of its airbreathing engines. Near the end of airbreathing operation, a pull-up is generally performed, similarly to the pull-up observed in SSTO launchers, before stage separation. However, this pull-up is not universally performed, and when it is, it occurs to very different extents and generally is driven by the structural or thermal limits of the orbiter stage. 
 This variety of staging points is due to the location of the staging point being determined by a multitude of factors stemming from the design and configuration of the launch system. The optimal separation point is determined by a trade-off between;
 \begin{itemize}
 	\item the high efficiency of the scramjet engines;
@@ -548,9 +553,6 @@ This variety of staging points is due to the location of the staging point being
 \end{itemize}
 All of these factors must be considered in order to generate an optimal trajectory. In addition, the staging point may be significantly limited by the design of the launch system, particularly if the orbiter stage is limited by structural or thermal requirements. 
 
-The optimal point at which staging occurs from airbreathing to rocket stages is of considerable interest for the development of a small rocket-scramjet-rocket launch system, as maximising the performance of the launch system is critical. 
-
-% XXX not flowing well at all
 
 There has been a number of studies which have identified a pull-up manoeuvre as being advantageous for a multi-stage system in order to decrease the dynamic pressure of the vehicle at airbreathing-rocket stage separation\cite{Tsuchiya2005,Wilhite1991,Mehta2001}. 
 In the studies by Tsuchiya et al.\cite{Tsuchiya2005} and Wilhite et al.\cite{Wilhite1991}, decreased dynamic pressure is necessary for the successful operation of the orbital rocket stages, of the systems under investigation. In these studies the airbreathing stages pull-up to the maximum allowable dynamic pressure for the rocket-powered orbital stages. When the orbital stages are able to operate, stage separation occurs. These pull-up manoeuvres demonstrate the advantages of a pull-up for the operation of the orbital stages, allowing the aerodynamic and thermal loading on the vehicle to be reduced. However, these pull-up manoeuvres are not performed as part of optimal trajectories, instead they are designed to ensure that the performance constraints of the systems are met. 
@@ -636,34 +638,27 @@ While a pull-up is generally performed under airbreathing power for the majority
 \end{landscape}
 }
 
-% XXX I think i should start this more positively 'three stage systems have recently been advpocated, paricularly by UQ'
-Three-stage-to-orbit (3STO) airbreathing systems are by far the least studied configuration of airbreathing launch system. This is due to two stages being previously reckoned as the maximum number of stages necessary for an efficient, fully-reusable airbreathing launcher, with one stage powered by airbreathing engines sometimes augmented with rocket engines, and another stage powered by rocket engines only. However, if the launcher is not fully-reusable it may be advantageous to further separate the launch system into a three-stage configuration. A three-stage configuration allows for cost-efficient partial-reusability in small launchers, enabling the acceleration of a small, disposable third stage, with reusable first and second stages. 
+Three-stage-to-orbit (3STO) airbreathing launch systems have been advocated as an efficient configuration for dedicated small satellite launch, a payload profile that has recently garnered a large amount of interest. A three-stage configuration allows for cost-efficient partial-reusability in small launchers, enabling the acceleration of a small, disposable third stage, with reusable first and second stages. 
 3STO systems are likely to be most applicable to smaller launch systems, where any 'dead' weight from unused propulsion systems at hypersonic speeds carries relatively larger mass penalties when compared to more massive systems. 
-
-% XXX bad first sentence
-The three-stage airbreathing launchers that have been or are being investigated are summarised in Table \textcolor{red}{XXX}. Only two such systems have been identified; the Tohoku University 3STO launch system investigated by Kimura and Sawada in 1999\cite{Kimura1999}, and The SPARTAN, a rocket-scramjet-rocket launch system currently under development by the University of Queensland and Hypersonix. Both of these systems are designed to be a cost effective near-term solution to airbreathing access to space, using a disposable third stage rocket along with reusable first and second stages. Both stages use second stages powered by scramjets, with The SPARTAN utilising a rocket-powered first stage along with vertical launch, while the Tohoku University launcher utilises turboramjets along with a horizontal launch, in a plane-like configuration. % XXX plane like first stage? not really plane like overall
-
+The three-stage airbreathing launchers that have been or are being investigated are summarised in Table \textcolor{red}{XXX}. Only two such systems have been identified; the Tohoku University 3STO launch system investigated by Kimura and Sawada in 1999\cite{Kimura1999}, and The SPARTAN, a rocket-scramjet-rocket launch system currently under development by the University of Queensland and Hypersonix. Both of these systems are designed to be a cost effective near-term solution to airbreathing access to space, using a disposable third stage rocket along with reusable first and second stages. Both stages use second stages powered by scramjets, with The SPARTAN utilising a rocket-powered first stage along with vertical launch, while the Tohoku University launcher utilises turboramjets along with a horizontal launch and a large, winged first stage. 
 
 Both the Tohoku University launcher and the SPARTAN fly close to the maximum limits of the vehicle during airbreathing operation. The flight paths of both of these launch systems are predefined, and designed around the physical limits of the launch systems.  
 While this is believed to be the most optimal or representative trajectory for these launch systems, no analysis has been undertaken to indicate that these trajectories are in fact the most efficient way of flying to orbit. This is particularly true for the SPARTAN, because the fly-back of the scramjet stage has not been modelled, even though it is an integral part of the cost effectiveness of the launch system. 
-When compared to the trajectories flown by two-stage-to-orbit airbreathing launch systems, it is evident that a pull-up during airbreathing operation, before the release of the third stage, may possibly improve the efficiency of the launch system. Although the extent of this pull-up, or indeed whether a pull-up is necessary at all, cannot be easily estimated from the previous studies of airbreathing launch systems.
-% XXX Maybe say why, eg based heavily on vehicle configuration? 
-
-This study seeks to model a rocket scramjet-rocket launch system, of which the SPARTAN is the only example that has undergone detailed design. This work will utilise a modified version of the SPARTAN launch system as a basis for trajectory analysis research on rocket-scramjet-rocket launch systems. 
-% XXX Maybe expand this a bit
+The vertical launch of The SPARTAN is considerably different to other multi-stage launch systems, and it remains to be seen whether a constant dynamic pressure airbreathing trajectory is in-fact the optimal way in which to constrain the system during launch. 
+At the end of the airbreathing trajectory, when compared to the trajectories flown by two-stage-to-orbit airbreathing launch systems, it is evident that a pull-up during airbreathing operation, before the release of the third stage, may possibly improve the efficiency of a rocket-scramjet-rocket launch system. Although the extent of this pull-up, or indeed whether a pull-up is necessary at all, cannot be estimated from the previous studies of airbreathing launch systems.
+This study seeks to model the optimal trajectory of a rocket scramjet-rocket launch system, utilising a modified version of the SPARTAN launch system in order to gain insights into the most efficient way to fly a launch system of this type. 
 
 \subsubsection{The SPARTAN - Design}
 
-%\textcolor{red}{XXX make note of vertical launch}
-
- The SPARTAN launch system system is considered in this study as a representative model for three stage, rocket-scramjet-rocket access to space system designs. 
- Access to the detailed design of the SPARTAN has been provided by the University of Queensland, where this work has been undertaken. % XXX maybe rephrase this, this work has been performed at uq where the spartan is being designed?
  
+This study has been performed at the University of Queensland, where research on The SPARTAN is being undertaken, and access to the design of the SPARTAN completed to date has been provided for this study. 
  The SPARTAN launch system is in the preliminary design phases, undergoing research and design to assess the feasibility of a rocket-scramjet-rocket multi-stage airbreathing launch system for small satellite launch. 
- The SPARTAN system is based around the scramjet accelerator, and the scramjet accelerator is the first stage that has been designed in detail, because the development and performance of the scramjet accelerator are likely to be the most critical aspects of the launch system design. 
- The scramjet accelerator stage of the SPARTAN was first designed by Jazra, Preller and Smart\cite{Jazra2010, Jazra2013}, based on the winged-cone vehicle developed by Shaughnessy et al. as part of the NASP program\cite{Shaughnessy1990}. % XXX More details here, powered by c-rest engines developed at UQ etc.
-  The scramjet stage in this work is a modified version of the Baseline scramjet accelerator stage designed by Preller \& Smart\cite{Preller2018a,Preller2017b}, defined as The SPARTAN by Preller, although the nomenclature has since been changed so that The SPARTAN refers to the entire launch system. % XXX This sentence is a little unclear
+ The SPARTAN system is based around the scramjet accelerator, and the scramjet accelerator is the stage that has been designed in the most detail, because the development and performance of the scramjet accelerator are likely to be the critical aspects of the launch system design. 
+ The scramjet accelerator stage of the SPARTAN was first designed by Jazra, Preller and Smart\cite{Jazra2010, Jazra2013}, based on the winged-cone vehicle developed by Shaughnessy et al. as part of the NASP program\cite{Shaughnessy1990}. 
+ 
+  The scramjet stage in this work is a modified version of the Baseline scramjet accelerator stage designed by Preller \& Smart\cite{Preller2018a,Preller2017b}. This scramjet accelerator has been defined as The SPARTAN in previous works, although the nomenclature has since been changed so that The SPARTAN refers to the entire launch system.
   The scramjet accelerator used in this study uses the general fuselage shape and control system to the Baseline vehicle designed by Preller \& Smart, and is detailed in Section \textcolor{red}{XXX}. However, the third stage in this work will be situated internally within the scramjet accelerator vehicle, similarly to the scramjet accelerator designed by Jazra, Preller and Smart\cite{Jazra2013}. 
+  The scramjet accelerator is powered by four rectangular-to-elliptical shape transition (REST) scramjet engines, developed at The University of Queensland, specifically designed to integrate smoothly with the conical forebody of the scramjet accelerator. 
  
 \begin{figure}[ht]
 \centering
@@ -674,11 +669,12 @@ This study seeks to model a rocket scramjet-rocket launch system, of which the S
 
 
 The first stage has not yet been modelled in detail, with only very representative aerodynamic models used for analysis of a non-reusable first stage rocket.
-It is eventually intended that the first stage of The SPARTAN be returnable to launch site under cruise-back power for reuse, however, a first stage capable of return flight has not been designed or modelled for a full scale SPARTAN system. % XXX double Check this
- Some preliminary work has been carried out, exploring the reuse of the first stage boosters of The SPARTAN \cite{chai2017} for a modified, reduced size SPARTAN concept, however this work is still in its infancy. 
- This work will build on the design of the SPARTAN by designing a non-reusable first stage rocket, to align with the work that has previously been completed\cite{Preller2017b}. % XXX awkward sentence
+It is eventually intended that the first stage of The SPARTAN be returnable to launch site under cruise-back power for reuse, however, a first stage capable of return flight has not been designed or modelled for a full scale SPARTAN system.
+ Some preliminary work has been carried out, exploring the reuse of the first stage boosters of The SPARTAN \cite{chai2017} for a modified, reduced size SPARTAN concept, however this work is still in its infancy, and the basic design of the booster or boosters is still to be determined. 
+ This work will build on the design of the SPARTAN launch system by designing a first stage rocket that is based on a modern, expendable system, to align with the work that has previously been completed on the full size SPARTAN system\cite{Preller2017b}.
 
-% XXX some more detail, 'the third stage has been designed and simulated.. stored either in front, within fuselage, or on top 
+
+The third stage is an expendable rocket system, that has variously been designed to be situated within the nose of the scramjet accelerator\cite{Jazra2013}, within the scramjet accelerator fuselage\cite{Fergusen2009}, or nestled within a recess on the fuselage of the scramjet accelerator\cite{Preller2017b}. 
 The third stage rocket separates from the SPARTAN at the end of its trajectory, and performs a pull-up manoeuvre to exit the atmosphere. The third stage rocket of the rocket-scramjet-rocket launch system consists of a rocket motor, fuel tanks, structure, payload and a thermal protection system\cite{Preller2017b}, shown in Figure \ref{fig:ThirdStage}. Once the density of the atmosphere is low enough, the thermal protection system separated from the vehicle for mass efficiency, and once exoatmospheric, the third stage performs a Hohmann transfer to reach the desired orbit. 
 \begin{figure}[ht]
 	\centering
@@ -698,8 +694,8 @@ The third stage has to this point been designed to be powered by the Pratt \& Wh
 	\label{fig:SPARTAN_traj}
 \end{figure}
 
-To date, studies of the SPARTAN have assumed a constant dynamic pressure trajectory\cite{Preller2017b}.
-Past studies of the SPARTAN vehicle have assumed that a fly-back to launch site is possible after third stage separation\cite{Preller2017b}. However, this fly-back has not yet been simulated. 
+To date, studies of the SPARTAN have assumed a constant dynamic pressure trajectory\cite{Preller2017b,Preller2018a}.
+Past studies of the SPARTAN vehicle have assumed that a fly-back to launch site is possible after third stage separation\cite{Preller2017b,Preller2018a}. However, this fly-back has not yet been simulated. 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/SPARTANElevons}
@@ -707,15 +703,15 @@ Past studies of the SPARTAN vehicle have assumed that a fly-back to launch site 
 	\label{fig:SPARTANElevons}
 \end{figure}
 Figure \ref{fig:SPARTAN_traj} shows the trajectory of the SPARTAN, simulated in three degrees of freedom to fly close to a constant 50kPa dynamic pressure, using a pole-placement angle of attack controller\cite{Preller2017b}.
-The ascent trajectory of the SPARTAN begins at Mach 6, and terminates at Mach 9.34, when the hydrogen fuel is exhausted\cite{Preller2017b}. 
-The net specific impulse of the SPARTAN varies from 1492s at the beginning of the trajectory, to 439s by the time the fuel is depleted\cite{Preller2017b}. This significant decrease in efficiency means that by the end of the trajectory, the net efficiency of the SPARTAN is approximately that of a rocket\cite{Preller2017b}. % XXX of the rocket engine? check this
-The SPARTAN is trimmed throughout the trajectory by ailerons on the wing, shown in Figure \ref{fig:SPARTANElevons}. These elevons were sized through variation of the width, $b_E$, to have an area equal to 15\% of the area of the wing, and to have a cord length, $c_E$, of 15\% of the cord length of the wing\cite{Preller2017b}. Over the flight of the SPARTAN, the flap deflection changes from 10.6$^\circ$ to 12.2$^\circ$\cite{Preller2017b}. The drag contribution of the flap varies from 14.3\% to 14.5\%, and the lift contribution from 18.8\% to 21.0\%\cite{Preller2018a}. % XXX check where im sourcing this, maybe make this have a point?
-
-This trajectory enables the delivery of 279.8kg of payload to sun synchronous orbit, when using a third stage powered by a Pratt \& Whitney RL-10-3A\cite{Preller2018a}. 
-This trajectory was designed around the SPARTAN flying a constant dynamic pressure trajectory, with the third stage and first stage trajectories confirming to this constraint. It has been suggested that for the design of this launch system to be improved, an optimised trajectory is necessary\cite{Preller2017b}.
+The ascent trajectory of the SPARTAN begins at Mach 6, and terminates at Mach 9.34, when the hydrogen fuel is exhausted\cite{Preller2018a}. 
+The net specific impulse of the SPARTAN varies from 1492s at the beginning of the trajectory, to 439s by the time the fuel is depleted\cite{Preller2017b}. 
+The SPARTAN is trimmed throughout the trajectory by ailerons on the wing, shown in Figure \ref{fig:SPARTANElevons}. These elevons were sized through variation of the width, $b_E$, to have an area equal to 15\% of the area of the wing, and to have a cord length, $c_E$, of 15\% of the cord length of the wing\cite{Preller2018a}. Over the flight of the SPARTAN, the flap deflection changes from 10.6$^\circ$ to 12.2$^\circ$\cite{Preller2018a}. The drag contribution of the flap varies from 14.3\% to 14.5\%, and the lift contribution from 18.8\% to 21.0\%\cite{Preller2018a}. However, this is calculated without a detailed analysis of the centre of gravity location, which is assumed to be located at 50\% planform area. This assumption of the centre of gravity location may affect the performance of the scramjet accelerator significantly, and as such this work will determine the centre of gravity more accurately. 
 
 
-%\textcolor{red}{numbers are from prellers thesis, not paper. Might need to be clear on this}
+This trajectory was designed around the SPARTAN flying a constant dynamic pressure trajectory, with the third stage and first stage trajectories confirming to this constraint. This trajectory enables the delivery of 279.8kg of payload to sun synchronous orbit when using a third stage powered by a Pratt \& Whitney RL-10-3A\cite{Preller2018a}. As previous studies have indicated\cite{Preller2017b}, if the performance of this launch system is to be analysed in detail, and the design of this launch system improved, the development of an optimal launch trajectory is necessary.
+
+
+%\textcolor{red}{numbers are from prellers thesis, not paper.}
 
 \subsection{Hypersonic Vehicle Return and Glide Trajectories}
 
@@ -743,7 +739,7 @@ These boosters fly to a downrange distance of 600-625km from the launch site, an
 
 
 \textcolor{red}{
-In addition to investigating the trajectories of airbreathing launch vehicles, the maximum-range, minimum-fuel trajectories of hypersonic vehicles and lifting bodies that are not necessarily launch vehicles can also allow a better understanding of the maximum efficiency return trajectory shape. The maximum range trajectory of a hypersonic vehicle operating at high altitudes is often a `skipping' trajectory, where the altitude of the vehicle is repeatedly raised and lowered to take advantage of the most efficient angle of attack of a vehicle while travelling through high density air\cite{Moshman2014,Darby2011,Toso2015,Chai2015}.} A skipping trajectory has been shown to be range optimal for hypersonic vehicles able to skip out of the atmosphere\cite{Eggers1957,Moshman2014}, as well as vehicles flying entirely within the atmosphere\cite{Moshman2014,Darby2011,Toso2015,Tetlow1992}. A skipping trajectory has also been shown to be optimal for an airbreathing hypersonic vehicle thrusting throughout the trajectory\cite{Kanda2007,Chai2015}, as shown in Figure \ref{fig:chai-boostskip}. The range optimal operation of the scramjet engine is shown to be repeated ignitions at the trough of each skip\cite{Chai2015}. The scramjets are ignited as the vehicle climbs after the trough, as the Mach number decreases to the minimum operable conditions of the scramjet engines\cite{Chai2015}. Minimising the Mach number during operation in this way maximises the efficiency of the scramjet engines\cite{Chai2015}. % XXX make a connection to tsuchiya and mori
+In addition to investigating the trajectories of airbreathing launch vehicles, the maximum-range, minimum-fuel trajectories of hypersonic vehicles and lifting bodies that are not necessarily launch vehicles can also allow a better understanding of the maximum efficiency return trajectory shape. The maximum range trajectory of a hypersonic vehicle operating at high altitudes is often a `skipping' trajectory, where the altitude of the vehicle is repeatedly raised and lowered to take advantage of the most efficient angle of attack of a vehicle while travelling through high density air\cite{Moshman2014,Darby2011,Toso2015,Chai2015,Pesch1980}.} A skipping trajectory has been shown to be range optimal for hypersonic gliding vehicles when range is desired to be maximised, from a wide range of release points and vehicle configurations\cite{Eggers1957,Moshman2014,Pesch1980,Moshman2014,Darby2011,Toso2015,Tetlow1992,Darby2011}. A skipping trajectory has also been shown to be optimal for an airbreathing hypersonic vehicle thrusting throughout the trajectory\cite{Kanda2007,Chai2015}, as shown in Figure \ref{fig:chai-boostskip}. The range optimal operation of the scramjet engine is shown to be repeated ignitions at the trough of each skip\cite{Chai2015}. The scramjets are ignited as the vehicle climbs after the trough, as the Mach number decreases to the minimum operable conditions of the scramjet engines\cite{Chai2015}. Minimising the Mach number during operation in this way maximises the efficiency of the scramjet engines\cite{Chai2015}.
  \begin{figure}[ht]
  	\centering
  	\includegraphics[width=0.9\linewidth]{"figures/2_literature-review/chai-boost skip"}
@@ -752,17 +748,12 @@ In addition to investigating the trajectories of airbreathing launch vehicles, t
  \end{figure}
 
 \textcolor{red}{
-	% XXX expand with somthing like 'there is no well defined control law to follow, trajectory is highly dependent on starting altitude - maybe expand on this?'
-In order to determine the most efficient return trajectory for the SPARTAN's scramjet accelerator stage, an optimal trajectory must be developed that allows the scramjet accelerator to ignite its engines if necessary, and also allows for a high level of freedom while manoeuvring during return. 
+	Although it is not currently known what shape of trajectory will be optimal for a scramjet accelerator-type vehicle released at relatively low altitude at over Mach 9, it can be inferred from these maximum range trajectories that the SPARTAN is likely to 'skip'. 
+In order to determine the most efficient return trajectory for the SPARTAN's scramjet accelerator stage, an optimal trajectory must be developed that allows the scramjet accelerator to ignite its engines if necessary, and also allows for a high level of freedom while manoeuvring during return. Coupling the ascent and return trajectories is particularly important if the scramjet accelerator is to ignite its engines, as there may be a complex trade-off between the ascent and return phases to produce an overall fuel-optimal trajectory. 
 }
 
 
 \section{Optimal Control}\label{sec:Optimisation}
-
-%\textcolor{red}{XXX ingo: I need to clearly situate how this fits relative to GNC}
-
-%\textcolor{red}{XXX I need to frame this as 'this is how optimisation has been used, it is useful in these ways, whis is why im doing what im doing, ie here is some examples of successful multiple shooting or collocation'}
-
 
 
 \textcolor{red}{In order to investigate the best possible way to fly The SPARTAN system to orbit, a simulation must be developed that will calculate the optimal flight path, taking into account the trajectory of all of the stages of the launch system, including ascent trajectories, as well as the return of the scramjet accelerator stage. 
@@ -770,9 +761,8 @@ Calculating the optimal trajectory of a launch system with multiple stages and m
 Defining the trajectory of a launch system purely from vehicle analysis is unlikely to yield a trajectory which maximises the performance of the system.
 A simulation method is required that is able to calculate a trajectory path, which maximises the performance of the launch system, while taking into account the aerodynamic and propulsive properties of each stage and propulsion mode. 
 Optimal control theory is used in situations where a control sequence must be found to minimise or maximise an objective function with little prior knowledge. 
-Optimal control theory has been widely used in aerospace applications, including being used to optimise the launch of airbreathing hypersonic launch vehicles\cite{Powell1991,Lu1993,Trefny1999,Roche2000,Pescetelli2012,Young2006}, \textcolor{red}{as detailed in Section \ref{sec:AscentTrajectories}}.
+Optimal control theory has been widely used in aerospace applications, including being used to optimise the launch of airbreathing hypersonic launch vehicles\cite{Powell1991,Lu1993,Trefny1999,Roche2000,Pescetelli2012,Young2006}, \textcolor{red}{including those detailed in Section \ref{sec:AscentTrajectories}}.
 }
-% XXX Need to expand on this a bit, cite some books and define optimal control
 
 
 For an optimisation of a complex trajectory there are a variety of numerical methods that are useful for specific problem types. These are separated into two categories: direct and indirect solution methods\cite{Betts1998}. Indirect methods are based on the calculus of variations or minimum principle model, and generally result in high accuracy solutions to optimisation problems\cite{Bulirsch1993}. However indirect models suffer from the drawbacks of small radii of convergence and the fact that the equations to be solved often exhibit strong nonlinearity and discontinuities. This means that indirect methods will not be solvable unless the problem is very well defined with a minimum of nonlinearity, making indirect methods unsuitable for many complex optimisation problems, such as aerospace vehicle simulations which can exhibit strong nonlinear behaviour and have a wide solution space. 
@@ -803,7 +793,7 @@ Shooting methods in optimal control are forward-time methods of discretisation\c
 
 \subsubsection{The Single Shooting Method}
 
-The oldest and simplest method of approximating continuous optimisation problems as NLP problems is the direct single shooting method. Direct single shooting discretises the control function over the solution space, and solves this directly as an NLP by integrating the vehicle dynamics, or state variables, along the trajectory at each trajectory guess\cite{Betts1998,Kelly2015,Rao2009,Fasano2013}. Single shooting is simple to apply and has been used since the 1970s for rocket trajectory optimisation\cite{jezewski1971}. Single shooting methods suffer from nonlinearity problems, ie. an optimisation problem solved using the single shooting method will potentially struggle to solve if the problem exhibits even small nonlinearities, due to being unable to converge to an optimal solution. This makes the single shooting method unsuitable for complex problems such as a scramjet model, as there are many nonlinear factors inherent in atmosphere and airbreathing engine modelling.
+The oldest and simplest method of approximating continuous optimisation problems as NLP problems is the direct single shooting method. Direct single shooting discretises the control function over the solution space, and solves this directly as an NLP by integrating the vehicle dynamics, or state variables, along the trajectory at each trajectory guess\cite{Betts1998,Kelly2015,Rao2009,Fasano2013}. Single shooting is simple to apply and has been used since the 1970s for rocket trajectory optimisation\cite{jezewski1971}. \textcolor{red}{Single shooting methods have also been used for the analysis of airbreathing launch trajectories, with some degree of success\cite{Powell1991,Bradford2000,Hyperion,Bradford2002,Fujikawa2017}. However,} single shooting methods suffer from nonlinearity problems, ie. an optimisation problem solved using the single shooting method will potentially struggle to solve if the problem exhibits even small nonlinearities, due to being unable to converge to an optimal solution. This makes the single shooting method unsuitable \textcolor{red}{for the in-depth trajectory analysis of} complex problems such as a scramjet model, as there are many nonlinear factors inherent in atmosphere and airbreathing engine modelling. \textcolor{red}{For this reason single shooting is not commonly used at the current time for the trajectory analysis of complex launch vehicles.}
 
 
 \subsubsection{The Multiple Shooting Method}
@@ -817,11 +807,7 @@ Direct multiple shooting solves some of the instabilities of the single shooting
 	\label{fig:multipleshooting}
 \end{figure}
 
-The multiple shooting method has greatly improved convergence compared to the single shooting method, removing much of the susceptibility to instabilities resulting from nonlinear effects. However, the multiple shooting approach still suffers from a relatively small radius of convergence and slow computation times\cite{Fasano2013}. Radius of convergence is extremely important to this study as the optimal solution cannot be approximated to a great degree of accuracy, and as such multiple shooting was deemed inappropriate for this study. It was desired to find a method with a global radius of convergence to apply to the optimisation problem being considered.
-
-% XXX I should be careful and maybe define global radius of convergence better
-
-% XXX Put examples of where it has been used successfully here
+The multiple shooting method has greatly improved convergence compared to the single shooting method, removing much of the susceptibility to instabilities resulting from nonlinear effects. For this reason, multiple shooting has been used successfully in a variety of applications, including the trajectory optimisation of reusable space vehicles\cite{Maddock2018}. However, the multiple shooting approach still suffers from a relatively small radius of convergence and slow computation times\cite{Fasano2013}. Radius of convergence is extremely important to this study as the optimal solution cannot be approximated to a great degree of accuracy. As such it is desirable to use a method with a large radius of convergence to apply to the optimisation problem being considered, to improve the robustness of the solution process.
 
 \subsection{Collocation Methods}
 
@@ -864,24 +850,23 @@ A secondary usability advantage of the pseudospectral method is the ability to g
 
 
 The pseudospectral method has been proven to be extremely effective for simulations in aerospace applications and has been proven in flight applications such as the zero propellant manoeuvre of the International Space Station in 2007, where the ISS was rotated 180 degrees without any propellant used following a pseudospectral method solution\cite{Bedrossian}. 
-The pseudospectral method has been used successfully in a multitude of studies for the trajectory optimisation of hypersonic vehicles\cite{Li2012,Josselyn2002a,Zhao2013,Tian2011,Darby2011,Chai2015,Rizvi2015,Moshman2014,Yang2017,Kodera2014}, and has proved an extremely effective tool. 
-These results indicate that the pseudospectral method is robust for complex, nonlinear systems, and that the pseudospectral method can be used for systems with many state variables.
-
-\textcolor{red}{XXX I might need to expand this, or point to section}
-
+\textcolor{red}{
+The pseudospectral method has been used successfully in a multitude of studies for the trajectory analysis of hypersonic vehicles\cite{Li2012,Josselyn2002a,Zhao2013,Tian2011,Darby2011,Chai2015,Rizvi2015,Moshman2014,Yang2017,Kodera2014}, and has proved an extremely effective tool for solving the highly nonlinear trajectory optimisation problems that arise from complex aerodynamics. 
+These successful use cases indicate that the pseudospectral method is robust for complex, nonlinear systems, and that the pseudospectral method can be used to solver problems with many state variables and phases, such as is required by the aerodynamics and multi-stage nature of launch vehicles.
+}
 \section{Available Optimal Control Solvers}\label{sec:optsolvers}
 
 There are a number of optimal control solvers available, both commercially and open source. A summary of the most prominent available solvers is shown in Table \ref{table:programs}. These programs are mostly general solvers, and must be configured specifically in order to solve a particular optimal control problem. The exception is ASTOS\cite{astos}, which is a standalone program designed for aerospace trajectory optimisation.
 
 Functionally, most of the available solvers are similar in operation. The states and controls of the optimal control problem are defined to the program by the user, along with any constraints; continuous or endpoint. The cost function of the problem is input, and dynamic model of the system is defined. An initial guess is provided, and once activated, the solver will move toward an optimal solution from this initial guess. 
 The most significant practical difference between the solvers lies in the robustness of the optimal solution, ie. how easily a particular solver is able to converge to the optimal solution. For a simple and continuous optimisation problem all solvers will be able to approach the same solution (though with varying efficiency). However, for a complex and nonlinear optimisation problem, some solvers will converge much more easily and rapidly than others. Generally, this stems from the underlying transcription method used. 
-The most common form of discretisation used by these solvers is the pseudospectral method, although other forms of collocation, as well as multiple shooting, are also used. Of the methods used, \textsf{hp}-adaptive pseudospectral methods exhibit the best convergence and accuracy properties\cite{Chai2015}. The readily available packages which utilise \textsf{hp}-adaptive pseudospectral methods are GPOPS-2\cite{Rao2010} and ICLOCS2\cite{iclocs}.
+The most common form of discretisation used by these solvers is the pseudospectral method, although other forms of collocation, as well as multiple shooting, are also used. Of the methods used, \textsf{hp}-adaptive pseudospectral methods exhibit the best convergence and accuracy properties\cite{Chai2015}. The readily available packages which utilise \textsf{hp}-adaptive pseudospectral methods are GPOPS-2\cite{Rao2010} and ICLOCS2\cite{iclocs}. Both ICLOCS2 and GPOPS-2 uses IPOPT\cite{Wachter2006}, a widely used open source nonlinear optimisation package which utilises an interior point line search filter method. 
 
 ICLOCS2 is a software package in the alpha stages of development, which is based upon ICLOCS, a multiple shooting solver\cite{iclocs}. ICLOCS2 is able to implement a range of transcription methods, including a \textsf{hp}-adaptive Legendre-Gauss Pseudospectral method\cite{iclocs}. As ICLOCS2 is relatively new at the time of writing, it has not yet been implemented in any published works and documentation is limited. 
 
 GPOPS-2 is a proprietary \textsf{hp}-adaptive pseudospectral method solver, which implements a variety of \textsf{hp}-adaptive pseudospectral methods, so that the best method may be chosen for a given problem\cite{Rao2010}. GPOPS-2 is specifically designed to be as flexible as possible, to accommodate for a wide range of problem formulations\cite{Rao2010}. GPOPS-2 is well proven in aerospace applications, and has been used for spacecraft orbit optimisation as well as in-atmosphere trajectory optimisation\cite{Rizvi2015,Lipp2014}. GPOPS-2 is well suited to solving multi-phase optimal control problems, which is necessary for efficient multi-stage launch optimisation\cite{Rao2010}. GPOPS-2 represents the state of the art in trajectory optimisation software, and as such is used by a number of institutions around the world. 
 
-Both ICLOCS2 and GPOPS-2 uses IPOPT\cite{Wachter2006} (Interior Point OPTimizer) as the standard nonlinear programming solver (with the option of installing others). IPOPT is a widely used open source nonlinear optimisation package which utilises an interior point line search filter method. 
+
 
 \begin{table}[ht]
 	
@@ -905,7 +890,9 @@ Both ICLOCS2 and GPOPS-2 uses IPOPT\cite{Wachter2006} (Interior Point OPTimizer)
 	\label{table:programs}
 \end{table}
 
-% XXX I should summarise this section - maybe pointing out that it many of these solvers are similar, and most have been used in aerospace applications and may be appropriate to the problem being solved
+Although many of these optimisation packages are relatively similar, and are appropriate for highly nonlinear hypersonic launch problems, GPOPS-2 is the most readily available package that utilises a very high robustness and accuracy transcription method. However, GPOPS-2 is simply a generic solver, requiring the launch vehicle to be modelled, and the optimal control problem to be described, in order for a solution to be achieved. 
+
+
 
 
 
@@ -928,9 +915,9 @@ Both ICLOCS2 and GPOPS-2 uses IPOPT\cite{Wachter2006} (Interior Point OPTimizer)
 
 
 \section{Aerodynamic Analysis}
-% XXX strt this with something like these optimisation programs require input of dynamic simulations
 
-Simulating the trajectory of access to space systems requires the aerodynamics of each stage of the launch system to be characterised at every flight condition experienced during launch. For this to be possible, it is necessary to create large aerodynamic coefficient databases, which cover the operable region of the vehicle, and include the effects of control surface deflections and propulsion.
+Optimising the trajectory of a space access vehicle using optimal control methods requires the input of a dynamic model of the launch vehicle. 
+This dynamic model requires the aerodynamics of each stage of the launch system to be characterised at every flight condition experienced during launch. For this to be possible, it is necessary to create large aerodynamic coefficient databases, which cover the operable region of the vehicle, and include the effects of control surface deflections and propulsion.
 
 There are a variety of tools available to calculate the aerodynamics of aerospace vehicles.
  These tools are primarily designed towards either accuracy or efficiency, as more accurate methods require more computational power, longer computational times and, usually, more man-hours to produce a solution. 
@@ -973,13 +960,6 @@ Finally, in a comparison between Cart3D and the Overflow-D Navier-Stokes solver,
 \end{figure}
 
 
-%\subsection{Missile Datcom}
-
-%\textcolor{red}{XXX Rework this significantly, particularly where I say close agreement for pitching moment coeffs}
-
-
-%Missile Datcom is a widely used, semi-empirical, aerodynamic prediction tool for missile configurations. Missile Datcom is used in this study for its extremely high computational efficiency and ease of use, along with its proven accuracy\cite{Sooy2005}. Missile Datcom uses component-buildup methods by which the aerodynamics of each component of a missile or rocket design are estimated and then added together to determine the aerodynamics of the entire vehicle. Missile Datcom uses a combination of empirical and theoretical methods and is capable of calculating the aerodynamic forces, stability derivatives, and moments over a range of angle of attack and Mach number values. The high efficiency of Missile Datcom allows an aerodynamic database to be generated simply and rapidly. Missile Datcom has been shown to produce close agreement with experimental wind tunnel data for normal force and pitching moment coefficients, and reasonable agreement for axial force coefficients\cite{Sooy2005}. 
-
 
 
       
@@ -991,4 +971,4 @@ This section provided a review of available literature, pertaining to the design
        Prior works suggest that the optimal trajectory for an airbreathing-rocket vehicle operating as a single stage involves flight at or close to maximum dynamic pressure, before a pull-up is initiated as the vehicle transitions from airbreathing to rocket power. This pull-up is also observed in some multi-stage vehicle trajectories, although in previous works this had generally been performed in order to satisfy operational requirements, rather than specifically improving the performance of the launch system. 
        The return and maximum range trajectories of prior hypersonic vehicles have been investigated, and it was determined that a full glide-back of a vehicle is likely not possible without operation of the airbreathing engines. However, performing a `skipping' manoeuvre may assist in maximising the glide range. 
 The background of optimal control theory was outlined, and the specific optimal control techniques which are most applicable to trajectory optimisation were detailed, along with a survey of existing optimal control solvers. 
-A survey into CFD solvers was conducted, and the specifics of Cart3D, which is utilised in this study, were detailed. 
+A survey into CFD solvers was conducted, and the specific details of Cart3D, which is utilised in this study, were examined. 
