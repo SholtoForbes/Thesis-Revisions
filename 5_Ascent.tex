@@ -7,6 +7,8 @@
 
 \textcolor{red}{XXX I need to make a point of the pull-up, compare with previous studies}
 	
+	\textcolor{red}{XXX NOTE third stage has very small thrust vector angle, turns out that the force is pretty close to the CG}
+	
 This chapter presents a maximum payload-to-orbit trajectory optimisation for the rocket-scramjet-rocket launch system incorporating the SPARTAN scramjet-powered accelerator. 
 This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), and delivers a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectory solutions for this launch system.
 First, a trajectory solution is calculated in which the SPARTAN flies at constant dynamic pressure. This trajectory is calculated to serve as a baseline for comparisons, as previous studies have assumed that flying the SPARTAN at its maximum allowable dynamic pressure would produce the best overall system performance\cite{Preller2017b}. An optimal payload-to-orbit trajectory is then developed, and the trajectory shape compared and contrasted to the constant dynamic pressure trajectory.
@@ -38,7 +40,6 @@ These optimised trajectory cases allow the benefits of flying an optimised traje
   
 
 \section{Case 1: Constant Dynamic Pressure Trajectory}
-\textcolor{red}{XXX Double check LODESTAR, particularly payload calcs, before starting any new trajectories}
 
 \begin{figure}[ht]
 	\centering
@@ -112,11 +113,11 @@ In addition, the designs and aerodynamic simulations of each vehicle of the laun
 	\end{tabular} 
 	
 	\caption{Summary of the key results from a maximum payload-to-orbit trajectory with the SPARTAN constrained to 50kPa (Case 1). \textcolor{red}{XXX about sig figs: the high number of sig figs have been included to highlight trends in the variation section. I should porentially argue that a high number of significant figures are included for this, but make note that the results are still subject to significant sources of error? }}
-	\label{tab:constqsummary}
+	\label{tab:constqsummary} % updated 14/8/19
 \end{table}
-\begin{figure}[ht!]
+\begin{figure}[ht!] % updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode900/FirstStageConstq}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/FirstStageConstq}
 	\caption{The first stage trajectory of the launch system, with the SPARTAN constrained to flight at constant dynamic pressure (Case 1).}
 	\label{fig:FirstStageConstq}
 \end{figure}
@@ -130,9 +131,9 @@ The SPARTAN is separated at a trajectory angle of \firstsecondSeparationgammaCon
 The first stage rocket achieves an exergy efficiency of \firstExergyEffConstqNoReturn\%$\eta$ when separating the SPARTAN onto a constant dynamic pressure trajectory. 
 
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode900/SecondStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/SecondStageConstq}
 \caption{The constant dynamic pressure flight path of the SPARTAN (Case 1).}
 \label{fig:SecondStageConstq}
 \end{figure}
@@ -143,9 +144,9 @@ The constant dynamic pressure trajectory shows very close adherence to 50kPa dyn
 Over the trajectory, the Mach number increases from 4.85 to 9.23, the velocity increases from \firstsecondSeparationvConstqNoReturn m/s to \secondthirdSeparationvConstqNoReturn m/s, and the flap deflection increases from $-3.2^\circ$ to $4.7^\circ$. The angles of attack of the SPARTAN are very low across the trajectory, generally between 0.5-0.7$^\circ$, indicating that the lift of the SPARTAN is high for this mission profile. At the beginning of the trajectory the equivalence ratio increases, as the capture limitations are relaxed with increasing Mach number. This causes the net specific impulse ($I_{sp_{net}} = \frac{T-D}{\dot{m}_f g}$) to increase, to a maximum of 1481s, during the first 169.3s flight time.  After this initial increase, the net specific impulse decreases over the trajectory, as the efficiency of the scramjet engines decreases. 
 Third stage release occurs at 502.5 s, at \secondthirdSeparationAltConstqNoReturn km altitude. Immediately before third stage separation, there is a slight increase in the angle of attack and flap deflection of the SPARTAN. This is done to increase the trajectory angle and improve the payload-to-orbit slightly, but does not have a significant effect on the performance of the launch system. 
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode900/ThirdStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/ThirdStageConstq}
 \caption{The third stage trajectory of the launch system, with the SPARTAN constrained to flight at constant dynamic pressure (Case 1).}
 \label{fig:ThirdStageConstq}
 \end{figure}
@@ -160,7 +161,7 @@ When this altitude is reached, the trajectory is circularised and a Hohmann tran
 
 \section{Case 2: Optimised Ascent Trajectory}\label{sec:optimisednoreturn}
 
-\textcolor{red}{XXX If i havent already, I should point out that the small corrections being made during 50kPa flight probably indicate that the vehicle shape is not optimised for 50kPa flight, and that it wants to fly at max q but cant sustain an optimal aoa to do so}
+\textcolor{red}{XXX If i havent already, I should point out that the small corrections being made during 50kPa flight probably indicate that the vehicle shape is not optimised for 50kPa flight, and that it wants to fly at max q but cant sustain an optimal aoa to do so, link to prior work that showed similar?}
 
 This section presents the maximum payload-to-orbit trajectory for the rocket-scramjet-rocket launch system, with the SPARTAN able to deviate from its maximum dynamic pressure. 
 The optimal trajectory shape for a 50kPa dynamic pressure limited trajectory is shown in Figure \ref{fig:GroundTrackStandardNoReturn}, with detailed trajectory information for each stage shown in Figures \ref{fig:FirstStageStandardNoReturn} - \ref{fig:ThirdStageStandardNoReturn}, and key results summarised in Table \ref{tab:summaryStandardNoReturn}. The maximum payload-to-orbit trajectory shape involves the SPARTAN performing altitude raising manoeuvres, where the dynamic pressure of the SPARTAN is lowered from its maximum of 50kPa. These manoeuvres serve either to increase the net specific impulse of the SPARTAN, or to trade-off the efficiency of the SPARTAN in order to increase the efficiency of the first and third stages. 
@@ -178,9 +179,9 @@ This payload-to-orbit optimised trajectory is able to deliver \PayloadToOrbitSta
 
 
 The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, follows a very similar trajectory to that of the first stage releasing the SPARTAN onto a constant dynamic pressure trajectory.
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode10/FirstStageStandard}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/FirstStageStandard}
 	\caption{The optimised maximum payload-to-orbit trajectory of the launch system under power of the first stage rocket (Case 2).}
 	\label{fig:FirstStageStandardNoReturn}
 \end{figure}
@@ -190,7 +191,7 @@ The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, follows a
  During the maximum payload-to-orbit trajectory, the first stage rocket releases the SPARTAN at a velocity of 1484.3m/s, an increase of 2.7\% compared to the first stage releasing the SPARTAN onto a constant dynamic pressure trajectory. Neither first stage utilises the full amount of allowable fuel mass, 17934kg, indicating that using the full fuel mass would necessitate separation conditions which would reduce the efficiency of the SPARTAN unfavourably. 
 These results indicate that the fuel mass utilised by the first stage has an optimal magnitude, and that including additional fuel past this amount does not increase the performance of the system. This implies that the size of the first stage is closely linked to the optimal trajectory of the system, and that future first stage designs should be sized so that optimal pitching is achieved. 
 
-\begin{table}[ht]
+\begin{table}[ht]% updated 14/8/19
 	\centering
 \begin{tabular}{l c } 
 	\hline \textbf{Trajectory Condition}
@@ -259,9 +260,9 @@ These results indicate that the fuel mass utilised by the first stage has an opt
 
 
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode10/SecondStageStandard}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/SecondStageStandard}
 \caption{The optimised maximum payload-to-orbit trajectory of the SPARTAN (Case 2).}
 \label{fig:SecondStageStandardNoReturn}
 \end{figure}
@@ -269,7 +270,7 @@ These results indicate that the fuel mass utilised by the first stage has an opt
 
 
 After the initial deviation from the maximum dynamic pressure, the SPARTAN returns to 50kPa dynamic pressure for a time. 
-At 122.5 seconds, the altitude of the trajectory is again raised, and the dynamic pressure decreased, to a minimum of 35.6kPa. In this region the net specific impulse of the SPARTAN is relatively homogeneous with respect to changes in dynamic pressure. This homogeneous region can be observed in the specific impulse of the C-REST engines in Figure \ref{fig:IspStandard}, between inlet Mach number (M1, see Figure \ref{fig:SPARTANEngineshock}) values of 6 and 7, and in Figure \ref{fig:NetIspStandardNoReturn}, in the flight Mach number 7 and 8 plots of net specific impulse. In these figures, the flight dynamic pressure varies inversely with altitude. The homogeneity between flight conditions means that the variation in engine performance with flight conditions is small and that flying at the maximum dynamic pressure in this region does not maximise the specific impulse from the C-REST engines. Figure \ref{fig:NetIspStandardNoReturn} shows that while the optimised trajectory differs significantly from a constant dynamic pressure trajectory, both achieve similar net specific impulses, with the exception of the initial trajectory conditions at Mach 5, where the efficiency of the SPARTAN is traded for first stage rocket performance. 
+At 122.5 seconds, the altitude of the trajectory is again raised, and the dynamic pressure decreased, to a minimum of 35.6kPa. In this region the net specific impulse of the SPARTAN is relatively homogeneous with respect to changes in dynamic pressure, as can be observed in the specific impulse of the C-REST engines in Figure \ref{fig:IspStandard}. The homogeneity between flight conditions means that the variation in engine performance with flight conditions is small and that flying at the maximum dynamic pressure in this region does not maximise the specific impulse from the C-REST engines. Figure \ref{fig:NetIspStandardNoReturn} shows that while the optimised trajectory differs significantly from a constant dynamic pressure trajectory, both achieve similar net specific impulses during the acceleration phase of flight, with the exception of the initial trajectory conditions at Mach 5, where the efficiency of the SPARTAN is traded for first stage rocket performance. 
 Appendix \ref{sec:Appendix_qconst} details a maximum payload-to-orbit trajectory in which the SPARTAN is constrained to 50kPa between Mach 6-8, to prevent the altitude raising manoeuvre from taking place. This constrained trajectory allows for the magnitude of the performance gain from the altitude raising manoeuvre to be quantified. 
 Overall, the altitude raising manoeuvre results in a slight increase in net specific impulse, compared to the trajectory constrained to maximum $q$, increasing the overall efficiency of the launch system from \totalExergyEffqconstrainedNoReturn \%$\eta$ to \totalExergyEffStandardNoReturn\%$\eta$. This is a relatively minor variation, and the payload-to-orbit benefits of this altitude raising manoeuvre are correspondingly small; 
 the optimised trajectory exhibits a payload-to-orbit increase of 0.4kg compared to the trajectory constrained to 50kPa between Mach 6-8, a difference of only 0.2\%.
@@ -279,16 +280,16 @@ Also, despite its small benefit to payload-to-orbit, this altitude raising manoe
 
 
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19 - note, modified point location for Mach 8.5 so not to be during pull-up
 	\centering
-	\includegraphics[width=0.8\linewidth]{../LODESTAR_FINAL/Results/mode10/NetIspStandard}
-	\caption{Net Isp contours for the SPARTAN at Mach numbers from 5-9, showing flight conditions for an optimised trajectory with no constraints (Case 2) and a constant dynamic pressure trajectory (Case 1).}
+	\includegraphics[width=\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/NetIspStandard}
+	\caption{Net Isp contours for the SPARTAN at Mach numbers from 5-9, showing flight conditions for an optimised trajectory with no constraints (Case 2) and a constant dynamic pressure trajectory (Case 1). }
 	\label{fig:NetIspStandardNoReturn}
 \end{figure}
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19 
 	\centering
-	\includegraphics[width=0.8\linewidth]{../LODESTAR_FINAL/Results/mode10/IspStandard}
+	\includegraphics[width=0.8\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/IspStandard}
 	\caption{The specific impulse of the C-REST engines, plotted for inlet temperature (T1) and inlet Mach number (M1). Data points are shown in black.}
 	\label{fig:IspStandard}
 \end{figure}
@@ -297,9 +298,9 @@ Also, despite its small benefit to payload-to-orbit, this altitude raising manoe
 At 314.3s, the SPARTAN returns to flight at close to 50kPa dynamic pressure until 494.1s, at which point a pull-up manoeuvre is performed, gaining altitude until the third stage rocket is released at 528.4s SPARTAN flight time. 
  The point at which the pull-up manoeuvre begins is the location that takes into account the best combination of velocity, altitude and release angle for the trade-off between the scramjet stage performance and the release of the third stage rocket. This pull-up indicates the region at which increasing altitude and release angle becomes more important than extracting maximum thrust from the scramjet (which is generally attained at high $q$ and low flight angle at an equivalence ratio of 1).
 At high Mach numbers, flight in a lower dynamic pressure environment results in less thrust output from the scramjet engines, as well as an increase in angle of attack and flap deflection angle to compensate for the additional lift required. Due to this, less overall acceleration is obtained compared to the fixed dynamic pressure result. Separation occurs at a velocity of \secondthirdSeparationvStandardNoReturn m/s, a decrease of 116.2m/s (-4.1\%). However, at the same time separation altitude increases by 9.48km (+29.4\%) to \secondthirdSeparationAltqStandardNoReturn km, resulting in a decrease in separation dynamic pressure to \secondthirdSeparationqStandardNoReturn kPa. 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode10/ThirdStageStandard}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/ThirdStageStandard}
 	\caption{The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory (Case 2).}
 	\label{fig:ThirdStageStandardNoReturn}
 \end{figure}
@@ -318,8 +319,7 @@ This separation occurs when the performance benefits provided by the superior ae
 to separate the scramjet stage results in a lower altitude scramjet-rocket transition point, when compared to single
 stage vehicle designs.
 
-\section{Angle of Attack Study}
-\textcolor{red}{XXX A section/subsection exploring the angle of attack limitation on the third stage, with the aim of providing knowledge of the effects of increased third stage controllability. Maybe include for both const q and pull-up cases}
+
 
 \section{Energy Usage Analysis}\label{sec:exergy1}
 
@@ -440,13 +440,16 @@ These lowered propulsion losses are due to the SPARTAN's scramjet engines utilis
   
 
 \section{Sensitivity Analysis}\label{sec:sensitivityNoReturn}
-\textcolor{red}{XXX add first stage thrust variation?}
+\textcolor{red}{XXX add first stage thrust variation? ... maybe if i think its worth it}
 
 \textcolor{red}{XXX I need more justification and estimation of variance (can maybe look at dawids and other shape optimisation papers to get an idea?) I also need to focus this partly in terms of uncertainties}
 
 \textcolor{red}{XXX I need to make it clear that the sensitivity study is an important contribution, that gives useful insights into the interplay between the stages}
 
 \textcolor{red}{XXX I need to make clear that this analysis isnt just 'what are the number differences' but mostly 'is the trajectory optimisation valid across vehicle designs'}
+
+
+\textcolor{red}{XXX remove max aoa form tables}
 
 \textcolor{red}{The launch system studied in this work is intended to be representative of a three stage, rocket-scramjet-rocket, small satellite launch system, to be used to inform future vehicle designs. It is anticipated that the design of the launch system will change significantly before a optimal, or even practically feasible, iteration is reached. Additionally, this study models the launch system using medium and low fidelity methods, which may be significant sources of error on the final optimised trajectory.  
 	To quantify how variations in a the design of a stage or variations in the performance of a stage due to modelling error may affect the performance of the launch system, it is useful to conduct a sensitivity analysis on the launch system.}
@@ -631,7 +634,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 
 \subsection{Case 4: SPARTAN Drag Sensitivity}\label{sec:dragvariation}
 
-\begin{table}[ht!]
+\begin{table}[ht!] % updated 14/8/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $C_{d,2}$: 
@@ -648,7 +651,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \textbf{\PayloadToOrbitCdStandardNoReturn}
 		& \textbf{\PayloadToOrbitCdOneHundredFiveNoReturn}
 		& \textbf{\PayloadToOrbitCdOneHundredTenNoReturn}
-		&\textbf{-1.9}
+		&\textbf{-2}
 		\\
 		\textbf{Payload Variation (\%)}
 		& \PayloadVarCdNinetyNoReturn
@@ -656,7 +659,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \PayloadVarCdStandardNoReturn
 		& \PayloadVarCdOneHundredFiveNoReturn
 		& \PayloadVarCdOneHundredTenNoReturn
-		&-0.99
+		&-1.29
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffCdNinetyNoReturn}
@@ -664,7 +667,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \textbf{\totalExergyEffCdStandardNoReturn}
 		& \textbf{\totalExergyEffCdOneHundredFiveNoReturn}
 		& \textbf{\totalExergyEffCdOneHundredTenNoReturn}
-		& \textbf{-0.00016}
+		& \textbf{-0.00018}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -673,16 +676,15 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \textbf{\firstExergyEffCdStandardNoReturn}
 		& \textbf{\firstExergyEffCdOneHundredFiveNoReturn}
 		& \textbf{\firstExergyEffCdOneHundredTenNoReturn}
-		& \textbf{-0.034}
+		& \textbf{-0.042}
 		\\
-	
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltCdNinetyNoReturn
 		& \firstsecondSeparationAltCdNinetyFiveNoReturn
 		& \firstsecondSeparationAltCdStandardNoReturn
 		& \firstsecondSeparationAltCdOneHundredFiveNoReturn
 		& \firstsecondSeparationAltCdOneHundredTenNoReturn
-		&-0.09
+		&-0.04
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 		& \firstsecondSeparationvCdNinetyNoReturn
@@ -690,7 +692,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \firstsecondSeparationvCdStandardNoReturn
 		& \firstsecondSeparationvCdOneHundredFiveNoReturn
 		& \firstsecondSeparationvCdOneHundredTenNoReturn
-		&-4.87
+		&-5.3
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 		& \firstsecondSeparationgammaCdNinetyNoReturn
@@ -698,7 +700,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \firstsecondSeparationgammaCdStandardNoReturn
 		& \firstsecondSeparationgammaCdOneHundredFiveNoReturn
 		& \firstsecondSeparationgammaCdOneHundredTenNoReturn
-		&-0.22
+		&0.02
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -707,9 +709,8 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \textbf{\secondExergyEffCdStandardNoReturn}
 		& \textbf{\secondExergyEffCdOneHundredFiveNoReturn}
 		& \textbf{\secondExergyEffCdOneHundredTenNoReturn}
-		& \textbf{-0.037}
+		& \textbf{-0.043}
 		\\
-	
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltCdNinetyNoReturn
 		& \secondthirdSeparationAltCdNinetyFiveNoReturn
@@ -724,7 +725,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \secondthirdSeparationvCdStandardNoReturn
 		& \secondthirdSeparationvCdOneHundredFiveNoReturn
 		& \secondthirdSeparationvCdOneHundredTenNoReturn
-		&-10.69
+		&-12.38
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammaCdNinetyNoReturn
@@ -732,16 +733,23 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \secondthirdSeparationgammaCdStandardNoReturn
 		& \secondthirdSeparationgammaCdOneHundredFiveNoReturn
 		& \secondthirdSeparationgammaCdOneHundredTenNoReturn
-		& -
+		&0.06
 		\\
-
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeCdNinetyNoReturn
+		& \secondFlightTimeCdNinetyFiveNoReturn
+		& \secondFlightTimeCdStandardNoReturn
+		& \secondFlightTimeCdOneHundredFiveNoReturn
+		& \secondFlightTimeCdOneHundredTenNoReturn
+		&0.93
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistCdNinetyNoReturn
 		& \SecondDistCdNinetyFiveNoReturn
 		& \SecondDistCdStandardNoReturn
 		& \SecondDistCdOneHundredFiveNoReturn
 		& \SecondDistCdOneHundredTenNoReturn
-		&-5.93
+		&-4.37
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -750,9 +758,8 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \textbf{\thirddExergyEffCdStandardNoReturn}
 		& \textbf{\thirddExergyEffCdOneHundredFiveNoReturn}
 		& \textbf{\thirddExergyEffCdOneHundredTenNoReturn}
-		& \textbf{-0.181}
+		& \textbf{-0.197}
 		\\
-
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveCdNinetyNoReturn
 		& \thirdqOverFiveCdNinetyFiveNoReturn
@@ -775,7 +782,7 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \thirdmFuelCdStandardNoReturn
 		& \thirdmFuelCdOneHundredFiveNoReturn
 		& \thirdmFuelCdOneHundredTenNoReturn
-		&1.86
+		&2.02
 		\\
 		\hline 
 	\end{tabular} 
@@ -794,7 +801,7 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 
 \subsection{Case 5: C-REST Specific Impulse Sensitivity}\label{sec:ispsensitivitynoflyback}
 
-\begin{table}[ht!]
+\begin{table}[ht!] % updated 14/8/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $I_{SP,2}$:
@@ -819,7 +826,7 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		& \PayloadVarIspStandardNoReturn
 		& \PayloadVarIspOneHundredFiveNoReturn
 		& \PayloadVarIspOneHundredTenNoReturn
-		&1.16
+		&1.41
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffIspNinetyNoReturn}
@@ -838,7 +845,6 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		& \textbf{\firstExergyEffIspOneHundredTenNoReturn}
 		& -
 		\\
-
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltIspNinetyNoReturn
 		& \firstsecondSeparationAltIspNinetyFiveNoReturn
@@ -872,7 +878,6 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		& \textbf{\secondExergyEffIspOneHundredTenNoReturn}
 		& \textbf{0.065}
 		\\
-	
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltIspNinetyNoReturn
 		& \secondthirdSeparationAltIspNinetyFiveNoReturn
@@ -887,7 +892,7 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		& \secondthirdSeparationvIspStandardNoReturn
 		& \secondthirdSeparationvIspOneHundredFiveNoReturn
 		& \secondthirdSeparationvIspOneHundredTenNoReturn
-		&13.74
+		&13.83
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammaIspNinetyNoReturn
@@ -897,14 +902,21 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		& \secondthirdSeparationgammaIspOneHundredTenNoReturn
 		&-0.08
 		\\
-	
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeIspNinetyNoReturn
+		& \secondFlightTimeIspNinetyFiveNoReturn
+		& \secondFlightTimeIspStandardNoReturn
+		& \secondFlightTimeIspOneHundredFiveNoReturn
+		& \secondFlightTimeIspOneHundredTenNoReturn
+		& -
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistIspNinetyNoReturn
 		& \SecondDistIspNinetyFiveNoReturn
 		& \SecondDistIspStandardNoReturn
 		& \SecondDistIspOneHundredFiveNoReturn
 		& \SecondDistIspOneHundredTenNoReturn
-		& -
+		&4.78
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -913,9 +925,8 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		& \textbf{\thirddExergyEffIspStandardNoReturn}
 		& \textbf{\thirddExergyEffIspOneHundredFiveNoReturn}
 		& \textbf{\thirddExergyEffIspOneHundredTenNoReturn}
-		& \textbf{0.212}
+		& \textbf{0.214}
 		\\
-
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveIspNinetyNoReturn
 		& \thirdqOverFiveIspNinetyFiveNoReturn
@@ -941,7 +952,8 @@ This is primarily due to the lower velocity of SPARTAN-third stage separation at
 		&-2.2
 		\\
 		\hline 
-	\end{tabular} 
+	\end{tabular}  
+
 	
 	\caption{Comparison of key trajectory parameters with variations in the specific impulse of the C-REST engines (Case 5).}
 	\label{tab:comparison30}
@@ -957,12 +969,12 @@ Increasing the specific impulse of the C-REST engines allows the SPARTAN to acce
 The exergy efficiency of the third stage is increased as the specific impulse of the SPARTAN increases, increasing by +2.339\%$\eta$ at 110\% $I_{SP}$, and decreasing by -1.976\%$\eta$ at 90\% $I_{SP}$. This is due to the significantly decreased propulsive losses of the third stage when released at a higher velocity, \PlossthreeCombinedIspOneHundredTenNoReturn\% (16.10 GJ) at 110\%$I_{SP}$, compared to \PlossthreeCombinedIspNinetyNoReturn\% (17.96 GJ) at 90\%$I_{SP}$. 
 
 \subsection{Case 6: SPARTAN Mass Sensitivity}\label{sec:SpartanMassnoreturn}
-\textcolor{red}{XXX I should change CG of this and third stage variations, by running new clic cases is easiest,(ssh into mango and run matlab) also change CG for first stage}
+\textcolor{red}{XXX change to 10\%}
 
 \begin{table}[ht]
 	\centering
 	
-	\begin{tabular}{l c c c c c c} 
+	\begin{tabular}{l c c c c c c} % updated 14/8/19 - but for only 5% variation
 	\hline \textbf{Trajectory Condition  \qquad  $m_{2}$: }
 	&95\%
 	&97.5\%
@@ -977,7 +989,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \textbf{\PayloadToOrbitmSPARTANStandardNoReturn}
 		& \textbf{\PayloadToOrbitmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\PayloadToOrbitmSPARTANOneHundredFiveNoReturn}
-		&\textbf{-1.5}
+		&\textbf{-1.3}
 		\\
 		\textbf{Payload Variation (\%)}
 		& \PayloadVarmSPARTANNinetyFiveNoReturn
@@ -985,7 +997,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \PayloadVarmSPARTANStandardNoReturn
 		& \PayloadVarmSPARTANOneHundredTwoFiveNoReturn
 		& \PayloadVarmSPARTANOneHundredFiveNoReturn
-		&-0.8
+		&-0.83
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffmSPARTANNinetyFiveNoReturn}
@@ -993,7 +1005,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \textbf{\totalExergyEffmSPARTANStandardNoReturn}
 		& \textbf{\totalExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\totalExergyEffmSPARTANOneHundredFiveNoReturn}
-		& \textbf{-0.00011}
+		& \textbf{-0.00012}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -1002,16 +1014,15 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \textbf{\firstExergyEffmSPARTANStandardNoReturn}
 		& \textbf{\firstExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\firstExergyEffmSPARTANOneHundredFiveNoReturn}
-		& \textbf{-0.043}
+		& \textbf{-0.021}
 		\\
-	
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltmSPARTANNinetyFiveNoReturn
 		& \firstsecondSeparationAltmSPARTANNinetySevenFiveNoReturn
 		& \firstsecondSeparationAltmSPARTANStandardNoReturn
 		& \firstsecondSeparationAltmSPARTANOneHundredTwoFiveNoReturn
 		& \firstsecondSeparationAltmSPARTANOneHundredFiveNoReturn
-		&-0.22
+		&-0.06
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 		& \firstsecondSeparationvmSPARTANNinetyFiveNoReturn
@@ -1019,7 +1030,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \firstsecondSeparationvmSPARTANStandardNoReturn
 		& \firstsecondSeparationvmSPARTANOneHundredTwoFiveNoReturn
 		& \firstsecondSeparationvmSPARTANOneHundredFiveNoReturn
-		&-11.97
+		&-7.07
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 		& \firstsecondSeparationgammamSPARTANNinetyFiveNoReturn
@@ -1027,7 +1038,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \firstsecondSeparationgammamSPARTANStandardNoReturn
 		& \firstsecondSeparationgammamSPARTANOneHundredTwoFiveNoReturn
 		& \firstsecondSeparationgammamSPARTANOneHundredFiveNoReturn
-		&-0.34
+		&0.05
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1036,16 +1047,15 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \textbf{\secondExergyEffmSPARTANStandardNoReturn}
 		& \textbf{\secondExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\secondExergyEffmSPARTANOneHundredFiveNoReturn}
-		& \textbf{-0.01}
+		& \textbf{-0.011}
 		\\
-	
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltmSPARTANNinetyFiveNoReturn
 		& \secondthirdSeparationAltmSPARTANNinetySevenFiveNoReturn
 		& \secondthirdSeparationAltmSPARTANStandardNoReturn
 		& \secondthirdSeparationAltmSPARTANOneHundredTwoFiveNoReturn
 		& \secondthirdSeparationAltmSPARTANOneHundredFiveNoReturn
-		& -
+		&-0.06
 		\\
 		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
 		& \secondthirdSeparationvmSPARTANNinetyFiveNoReturn
@@ -1053,7 +1063,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \secondthirdSeparationvmSPARTANStandardNoReturn
 		& \secondthirdSeparationvmSPARTANOneHundredTwoFiveNoReturn
 		& \secondthirdSeparationvmSPARTANOneHundredFiveNoReturn
-		&-9.54
+		&-6.56
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammamSPARTANNinetyFiveNoReturn
@@ -1061,16 +1071,23 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \secondthirdSeparationgammamSPARTANStandardNoReturn
 		& \secondthirdSeparationgammamSPARTANOneHundredTwoFiveNoReturn
 		& \secondthirdSeparationgammamSPARTANOneHundredFiveNoReturn
-		&0.06
+		& -
 		\\
-	
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimemSPARTANNinetyFiveNoReturn
+		& \secondFlightTimemSPARTANNinetySevenFiveNoReturn
+		& \secondFlightTimemSPARTANStandardNoReturn
+		& \secondFlightTimemSPARTANOneHundredTwoFiveNoReturn
+		& \secondFlightTimemSPARTANOneHundredFiveNoReturn
+		& -
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistmSPARTANNinetyFiveNoReturn
 		& \SecondDistmSPARTANNinetySevenFiveNoReturn
 		& \SecondDistmSPARTANStandardNoReturn
 		& \SecondDistmSPARTANOneHundredTwoFiveNoReturn
 		& \SecondDistmSPARTANOneHundredFiveNoReturn
-		&-10.68
+		&-5.74
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1079,16 +1096,15 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \textbf{\thirddExergyEffmSPARTANStandardNoReturn}
 		& \textbf{\thirddExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\thirddExergyEffmSPARTANOneHundredFiveNoReturn}
-		& \textbf{-0.147}
+		& \textbf{-0.128}
 		\\
-	
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFivemSPARTANNinetyFiveNoReturn
 		& \thirdqOverFivemSPARTANNinetySevenFiveNoReturn
 		& \thirdqOverFivemSPARTANStandardNoReturn
 		& \thirdqOverFivemSPARTANOneHundredTwoFiveNoReturn
 		& \thirdqOverFivemSPARTANOneHundredFiveNoReturn
-		&-0.24
+		& -
 		\\
 		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
 		& \thirdmaxAoAmSPARTANNinetyFiveNoReturn
@@ -1104,7 +1120,7 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 		& \thirdmFuelmSPARTANStandardNoReturn
 		& \thirdmFuelmSPARTANOneHundredTwoFiveNoReturn
 		& \thirdmFuelmSPARTANOneHundredFiveNoReturn
-		&1.52
+		&1.31
 		\\
 		\hline 
 	\end{tabular}  
@@ -1127,7 +1143,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 
 \subsection{Case 7: SPARTAN Fuel Mass Sensitivity} \label{sec:fuelmassNoReturn}
 
-\begin{table}[!ht]
+\begin{table}[!ht] % updated 14/9/19
 \begin{tabular}{l c c c c c c} 
 	\hline \textbf{Trajectory Condition}   \qquad  $m_{f,2}$:
 	&90\%
@@ -1151,7 +1167,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \PayloadVarmFuelStandardNoReturn
 	& \PayloadVarmFuelOneHundredFiveNoReturn
 	& \PayloadVarmFuelOneHundredTenNoReturn
-	&0.37
+	&0.47
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffmFuelNinetyNoReturn}
@@ -1159,7 +1175,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \textbf{\totalExergyEffmFuelStandardNoReturn}
 	& \textbf{\totalExergyEffmFuelOneHundredFiveNoReturn}
 	& \textbf{\totalExergyEffmFuelOneHundredTenNoReturn}
-	& \textbf{0}
+	& \textbf{-1e-05}
 	\\
 	\hline 
 	\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -1168,16 +1184,15 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \textbf{\firstExergyEffmFuelStandardNoReturn}
 	& \textbf{\firstExergyEffmFuelOneHundredFiveNoReturn}
 	& \textbf{\firstExergyEffmFuelOneHundredTenNoReturn}
-	& \textbf{-0.013}
+	& \textbf{-0.006}
 	\\
-
 	\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 	& \firstsecondSeparationAltmFuelNinetyNoReturn
 	& \firstsecondSeparationAltmFuelNinetyFiveNoReturn
 	& \firstsecondSeparationAltmFuelStandardNoReturn
 	& \firstsecondSeparationAltmFuelOneHundredFiveNoReturn
 	& \firstsecondSeparationAltmFuelOneHundredTenNoReturn
-	&-0.08
+	&-0.02
 	\\
 	\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 	& \firstsecondSeparationvmFuelNinetyNoReturn
@@ -1185,7 +1200,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \firstsecondSeparationvmFuelStandardNoReturn
 	& \firstsecondSeparationvmFuelOneHundredFiveNoReturn
 	& \firstsecondSeparationvmFuelOneHundredTenNoReturn
-	&-3.65
+	&-2.22
 	\\
 	\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 	& \firstsecondSeparationgammamFuelNinetyNoReturn
@@ -1193,7 +1208,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \firstsecondSeparationgammamFuelStandardNoReturn
 	& \firstsecondSeparationgammamFuelOneHundredFiveNoReturn
 	& \firstsecondSeparationgammamFuelOneHundredTenNoReturn
-	& -
+	&0.02
 	\\
 	\hline 
 	\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1202,9 +1217,8 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \textbf{\secondExergyEffmFuelStandardNoReturn}
 	& \textbf{\secondExergyEffmFuelOneHundredFiveNoReturn}
 	& \textbf{\secondExergyEffmFuelOneHundredTenNoReturn}
-	& \textbf{-0.014}
+	& \textbf{-0.016}
 	\\
-
 	\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 	& \secondthirdSeparationAltmFuelNinetyNoReturn
 	& \secondthirdSeparationAltmFuelNinetyFiveNoReturn
@@ -1219,7 +1233,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \secondthirdSeparationvmFuelStandardNoReturn
 	& \secondthirdSeparationvmFuelOneHundredFiveNoReturn
 	& \secondthirdSeparationvmFuelOneHundredTenNoReturn
-	&4.78
+	&4.66
 	\\
 	\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 	& \secondthirdSeparationgammamFuelNinetyNoReturn
@@ -1227,16 +1241,23 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \secondthirdSeparationgammamFuelStandardNoReturn
 	& \secondthirdSeparationgammamFuelOneHundredFiveNoReturn
 	& \secondthirdSeparationgammamFuelOneHundredTenNoReturn
-	&-0.04
+	&-0.03
 	\\
-
+	\textbf{2$^{nd}$ Stage Flight Time (s)}
+	& \secondFlightTimemFuelNinetyNoReturn
+	& \secondFlightTimemFuelNinetyFiveNoReturn
+	& \secondFlightTimemFuelStandardNoReturn
+	& \secondFlightTimemFuelOneHundredFiveNoReturn
+	& \secondFlightTimemFuelOneHundredTenNoReturn
+	&4.94
+	\\
 	\textbf{2$^{nd}$ Stage Distance Flown (km)}
 	& \SecondDistmFuelNinetyNoReturn
 	& \SecondDistmFuelNinetyFiveNoReturn
 	& \SecondDistmFuelStandardNoReturn
 	& \SecondDistmFuelOneHundredFiveNoReturn
 	& \SecondDistmFuelOneHundredTenNoReturn
-	&11.11
+	&12.07
 	\\
 	\hline 
 	\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1245,16 +1266,15 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \textbf{\thirddExergyEffmFuelStandardNoReturn}
 	& \textbf{\thirddExergyEffmFuelOneHundredFiveNoReturn}
 	& \textbf{\thirddExergyEffmFuelOneHundredTenNoReturn}
-	& \textbf{0.068}
+	& \textbf{0.072}
 	\\
-
 	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 	& \thirdqOverFivemFuelNinetyNoReturn
 	& \thirdqOverFivemFuelNinetyFiveNoReturn
 	& \thirdqOverFivemFuelStandardNoReturn
 	& \thirdqOverFivemFuelOneHundredFiveNoReturn
 	& \thirdqOverFivemFuelOneHundredTenNoReturn
-	&0.11
+	&0.07
 	\\
 	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
 	& \thirdmaxAoAmFuelNinetyNoReturn
@@ -1270,7 +1290,7 @@ As the mass of the SPARTAN increases, the exergy efficiency of the third stage i
 	& \thirdmFuelmFuelStandardNoReturn
 	& \thirdmFuelmFuelOneHundredFiveNoReturn
 	& \thirdmFuelmFuelOneHundredTenNoReturn
-	&-0.71
+	&-0.74
 	\\
 	\hline 
 \end{tabular} 
@@ -1293,7 +1313,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 
 \subsection{Case 8: Third Stage Mass Sensitivity}\label{sec:m3noReturn}
 
-\begin{table}[ht]
+\begin{table}[ht] % updated 14/9/19
 	\centering
 	
 	\begin{tabular}{l c c c c c c} 
@@ -1311,7 +1331,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \textbf{\PayloadToOrbitmThreeStandardNoReturn}
 		& \textbf{\PayloadToOrbitmThreeOneHundredFiveNoReturn}
 		& \textbf{\PayloadToOrbitmThreeOneHundredTenNoReturn}
-		&\textbf{0.9}
+		& -
 		\\
 		\textbf{Payload Variation (\%)}
 		& \PayloadVarmThreeNinetyNoReturn
@@ -1319,7 +1339,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \PayloadVarmThreeStandardNoReturn
 		& \PayloadVarmThreeOneHundredFiveNoReturn
 		& \PayloadVarmThreeOneHundredTenNoReturn
-		&0.47
+		& -
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffmThreeNinetyNoReturn}
@@ -1327,7 +1347,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \textbf{\totalExergyEffmThreeStandardNoReturn}
 		& \textbf{\totalExergyEffmThreeOneHundredFiveNoReturn}
 		& \textbf{\totalExergyEffmThreeOneHundredTenNoReturn}
-		& \textbf{8e-05}
+		& -
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -1336,16 +1356,15 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \textbf{\firstExergyEffmThreeStandardNoReturn}
 		& \textbf{\firstExergyEffmThreeOneHundredFiveNoReturn}
 		& \textbf{\firstExergyEffmThreeOneHundredTenNoReturn}
-		& \textbf{-0.029}
+		& \textbf{-0.014}
 		\\
-	
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltmThreeNinetyNoReturn
 		& \firstsecondSeparationAltmThreeNinetyFiveNoReturn
 		& \firstsecondSeparationAltmThreeStandardNoReturn
 		& \firstsecondSeparationAltmThreeOneHundredFiveNoReturn
 		& \firstsecondSeparationAltmThreeOneHundredTenNoReturn
-		&-0.18
+		&-0.04
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 		& \firstsecondSeparationvmThreeNinetyNoReturn
@@ -1353,7 +1372,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \firstsecondSeparationvmThreeStandardNoReturn
 		& \firstsecondSeparationvmThreeOneHundredFiveNoReturn
 		& \firstsecondSeparationvmThreeOneHundredTenNoReturn
-		&-7.78
+		&-4.72
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 		& \firstsecondSeparationgammamThreeNinetyNoReturn
@@ -1361,7 +1380,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \firstsecondSeparationgammamThreeStandardNoReturn
 		& \firstsecondSeparationgammamThreeOneHundredFiveNoReturn
 		& \firstsecondSeparationgammamThreeOneHundredTenNoReturn
-		&-0.25
+		&0.03
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1370,16 +1389,15 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \textbf{\secondExergyEffmThreeStandardNoReturn}
 		& \textbf{\secondExergyEffmThreeOneHundredFiveNoReturn}
 		& \textbf{\secondExergyEffmThreeOneHundredTenNoReturn}
-		& \textbf{0.037}
+		& \textbf{0.065}
 		\\
-	
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltmThreeNinetyNoReturn
 		& \secondthirdSeparationAltmThreeNinetyFiveNoReturn
 		& \secondthirdSeparationAltmThreeStandardNoReturn
 		& \secondthirdSeparationAltmThreeOneHundredFiveNoReturn
 		& \secondthirdSeparationAltmThreeOneHundredTenNoReturn
-		&0.03
+		& -
 		\\
 		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
 		& \secondthirdSeparationvmThreeNinetyNoReturn
@@ -1387,7 +1405,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \secondthirdSeparationvmThreeStandardNoReturn
 		& \secondthirdSeparationvmThreeOneHundredFiveNoReturn
 		& \secondthirdSeparationvmThreeOneHundredTenNoReturn
-		&-7.09
+		& -
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammamThreeNinetyNoReturn
@@ -1395,16 +1413,23 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \secondthirdSeparationgammamThreeStandardNoReturn
 		& \secondthirdSeparationgammamThreeOneHundredFiveNoReturn
 		& \secondthirdSeparationgammamThreeOneHundredTenNoReturn
-		&0.07
+		& -
 		\\
-	
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimemThreeNinetyNoReturn
+		& \secondFlightTimemThreeNinetyFiveNoReturn
+		& \secondFlightTimemThreeStandardNoReturn
+		& \secondFlightTimemThreeOneHundredFiveNoReturn
+		& \secondFlightTimemThreeOneHundredTenNoReturn
+		& -
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistmThreeNinetyNoReturn
 		& \SecondDistmThreeNinetyFiveNoReturn
 		& \SecondDistmThreeStandardNoReturn
 		& \SecondDistmThreeOneHundredFiveNoReturn
 		& \SecondDistmThreeOneHundredTenNoReturn
-		&-6.5
+		&-4.37
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1413,9 +1438,8 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \textbf{\thirddExergyEffmThreeStandardNoReturn}
 		& \textbf{\thirddExergyEffmThreeOneHundredFiveNoReturn}
 		& \textbf{\thirddExergyEffmThreeOneHundredTenNoReturn}
-		& \textbf{-0.095}
+		& \textbf{-0.292}
 		\\
-	
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFivemThreeNinetyNoReturn
 		& \thirdqOverFivemThreeNinetyFiveNoReturn
@@ -1438,7 +1462,7 @@ One again, as the SPARTAN-third stage release velocity increases, the exergy eff
 		& \thirdmFuelmThreeStandardNoReturn
 		& \thirdmFuelmThreeOneHundredFiveNoReturn
 		& \thirdmFuelmThreeOneHundredTenNoReturn
-		&29.15
+		&31.92
 		\\
 		\hline 
 	\end{tabular} 
@@ -1462,7 +1486,7 @@ The decrease in the exergy efficiency of the third stage rocket, as its mass inc
 
 
 \subsection{Case 9: Third Stage Specific Impulse Sensitivity}\label{sec:isp3NoReturn}
-
+\textcolor{red}{XXX change to 10\%}
 \begin{table}[ht]
 	%note: these are labelled T3, but are actually Isp3. 
 	\centering
@@ -1629,7 +1653,7 @@ As the specific impulse of the third stage is varied, the size and shape of the 
 
 
 \subsection{Case 10: Third Stage Drag Sensitivity}
-\textcolor{red}{I should potentially change lift instead of drag here}
+\textcolor{red}{I should potentially change lift instead of drag here, or change to 10\% (the small effect of drag is pretty useful to know..)}
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{l c c c c c c} 
@@ -1790,7 +1814,6 @@ The SPARTAN exhibits a slightly higher pull-up as the drag of the third stage is
 Increasing the drag of the third stage by 20\% causes a decrease in the exergy efficiency of the SPARTAN of -0.036\%$\eta$ (-0.76\%), and a decrease in the efficiency of the third stage of -0.068\%$\eta$ (-0.36\%), while decreasing the drag of the third stage by 20\% causes an increase in the exergy efficiency of the SPARTAN of +0.060\%$\eta$ (+1.27\%), and an increase in the third stage efficiency of +0.082\%$\eta$ (+0.44\%). 
 As the drag of the third stage increases, the SPARTAN pulls-up to a higher altitude so that the third stage spends less time in a high dynamic pressure environment, where the increased drag has a significant effect, mitigating the energy loss due to the increased drag. The higher pull-up of the SPARTAN with the third stage drag increased by 20\%, decreases the time that the third stage spends above 5kPa dynamic pressure by -2.4s (-16.9\%), resulting in drag losses of \WDthreeCdThreeOneHundredTwentyNoReturn\% (0.19 GJ), while the lower pull-up of the SPARTAN when the third stage drag is decreased by 20\% increases the time spent at greater than 5kPa dynamic pressure by +2.5s (+17.6\%), resulting in drag losses of \WDthreeCdThreeEightyNoReturn\% (0.22 GJ). This indicates that as the drag of the third stage is increased, the optimal pull-up manoeuvre is increased so as to more than compensate for the additional energy losses, trading off the efficiency of the SPARTAN to do so. 
 
-\textcolor{red}{\subsection{Thermal Analysis} XXX Maybe I should make integrate this into all trajectories? probably not...}
 
 \section{Comparison of Design Parameters}\label{sec:comparisonNoReturn}
 

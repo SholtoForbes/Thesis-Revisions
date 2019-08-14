@@ -26,7 +26,7 @@ This sensitivity analysis allows the influence of the fly-back of the SPARTAN on
 
 
 \section{Case 11: Combined SPARTAN Ascent-Descent \& Third Stage}
-\begin{table}[ht]
+\begin{table}[ht] % upodated 14/8/19
 	\centering
 \begin{tabular}{l c } 
 	\hline \textbf{Trajectory Condition}
@@ -105,9 +105,9 @@ The benefits of flying back the SPARTAN to its initial launch site, compared to 
 
 \section{Ascent Trajectory}
 
-\begin{figure}[ht]
+\begin{figure}[ht]% updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/FirstStageStandard}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T110354mode11/FirstStageStandard}
 	\caption{The first stage of the optimised maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). }
 	\label{fig:FirstStageStandard}
 \end{figure}
@@ -120,9 +120,9 @@ When the fly-back of the SPARTAN is included in the trajectory optimisation, the
  This higher release point requires less aerodynamic manoeuvring of the first stage, and enables the first stage to be efficiently launched with a higher fuel mass of 17943kg, an increase of +758kg (+4.4\%) compared to the trajectory without fly-back. This additional fuel increases the total acceleration of the first stage,
  in turn increasing the exergy efficiency of the first stage rocket by +0.308\%$\eta$ (+4.9\%) due to a higher propulsion efficiency, and allowing the first stage to achieve a higher velocity at separation (an increase of +64m/s, +4.3\%). 
  
-  \begin{figure}[!ht]
+  \begin{figure}[!ht] % updated 14/8/19
   	\centering
-  	\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode11/SecondStageStandard}
+  	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T110354mode11/SecondStageStandard}
   	\caption{The acceleration of the SPARTAN flying an optimised maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). }
   	\label{fig:SecondStageStandard}
   \end{figure}
@@ -136,12 +136,12 @@ After this point, the bank angle of the SPARTAN is maintained between 50.4$^\cir
 The angle of attack of the SPARTAN is significantly higher over the course of the maximum payload-to-orbit trajectory with fly-back inclusion, compared to maximum payload-to-orbit trajectory with no fly-back, detailed in Section \ref{sec:optimisednoreturn}. These significantly  higher angles of attack are a result of the high bank angle of the SPARTAN throughout its trajectory, which cause the lift of the SPARTAN to be partially used for changing the heading of the SPARTAN, rather than providing vertical force. 
  The higher angles of attack result in the optimal trajectory of the SPARTAN following a close to maximum dynamic pressure path for most of the duration of its trajectory, without the altitude raising manoeuvre observed in Section \ref{sec:optimisednoreturn}.
  The increase in angle of attack means that the SPARTAN no longer flies within the homogeneous region of the specific impulse of the C-REST engines. instead the flight conditions are close to a region where an increase in angle of attack causes a sharp decrease in specific impulse, illustrated in Figure \ref{fig:NetIspStandard}. 
-This indicates that at Mach 7 and 8, the angle of attack, and consequently the allowable bank angle, of the SPARTAN is being limited by the performance of the C-REST engines. 
+This indicates that the angle of attack, and consequently the allowable bank angle, of the SPARTAN is being limited by the performance of the C-REST engines. 
  The SPARTAN stays close to its maximum dynamic pressure until a pull-up is performed at 365.8s flight time. 
- \begin{figure}[!ht]
+ \begin{figure}[!ht]% updated 14/8/19
  	\centering
- 	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/NetIspStandard}
- 	\caption{Net $I_{SP}$ contours for the SPARTAN at Mach numbers between 6 and 8, showing the optimised trajectory path (Case 11). }
+ 	\includegraphics[width=\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T110354mode11/NetIspStandard}
+ 	\caption{Net $I_{SP}$ contours for the SPARTAN at Mach numbers between 5.5 and 8.5, showing the optimised trajectory path (Case 11). }
  	\label{fig:NetIspStandard}
  \end{figure}
 
@@ -152,9 +152,9 @@ A total fuel mass of 1294kg is used during the SPARTAN's acceleration, out of a 
 The exergy efficiency of the third stage is decreased by -1.845\%$\eta$ (-9.8\%) when compared to the maximum payload-to-orbit trajectory with no SPARTAN fly-back. This lowered efficiency is primarily due to the lower velocity of the third stage release, which increases the losses of the third stage due to propulsive inefficiencies. 
 
 
-\begin{figure}[ht!]
+\begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode11/ThirdStageStandard}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T110354mode11/ThirdStageStandard}
 \caption{The third stage trajectory of an optimised maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). }
 \label{fig:ThirdStageStandard}
 \end{figure}
@@ -162,9 +162,9 @@ The exergy efficiency of the third stage is decreased by -1.845\%$\eta$ (-9.8\%)
 
 \section{Fly-Back Trajectory}
 
-\begin{figure}[ht!]
+\begin{figure}[ht!] % updated 14/8/19
 	\centering
-	\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode11/ReturnStandard}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T110354mode11/ReturnStandard}
 	\caption{The fly-back trajectory of the SPARTAN flying an optimised maximum payload-to-orbit trajectory (Case 11). }
 	\label{fig:ReturnStandard}
 \end{figure}
@@ -547,7 +547,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 \subsection{Case 13: SPARTAN Drag Sensitivity with Fly-Back}\label{sec:dragvar}
 
 
-\begin{table}[ht]
+\begin{table}[ht]% updated 14/8/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $C_{d,2}$:
@@ -558,21 +558,13 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		&110\%
 		& $\Delta/\Delta$/\%$C_{d,2}$
 		\\
-		\hline \textbf{Payload to Orbit (kg)}
-		& \textbf{\PayloadToOrbitCdNinety}
-		& \textbf{\PayloadToOrbitCdNinetyFive}
-		& \textbf{\PayloadToOrbitCdStandard}
-		& \textbf{\PayloadToOrbitCdOneHundredFive}
-		& \textbf{\PayloadToOrbitCdOneHundredTen}
-		&\textbf{-1.5}
-		\\
 		\textbf{Payload Variation (\%)}
 		& \PayloadVarCdNinety
 		& \PayloadVarCdNinetyFive
 		& \PayloadVarCdStandard
 		& \PayloadVarCdOneHundredFive
 		& \PayloadVarCdOneHundredTen
-		&-0.9
+		&-1.34
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffCdNinety}
@@ -580,7 +572,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \textbf{\totalExergyEffCdStandard}
 		& \textbf{\totalExergyEffCdOneHundredFive}
 		& \textbf{\totalExergyEffCdOneHundredTen}
-		& \textbf{-0.00013}
+		& \textbf{-0.00018}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -589,7 +581,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \textbf{\firstExergyEffCdStandard}
 		& \textbf{\firstExergyEffCdOneHundredFive}
 		& \textbf{\firstExergyEffCdOneHundredTen}
-		& \textbf{-0.025}
+		& \textbf{-0.032}
 		\\
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltCdNinety
@@ -605,7 +597,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \firstsecondSeparationvCdStandard
 		& \firstsecondSeparationvCdOneHundredFive
 		& \firstsecondSeparationvCdOneHundredTen
-		&-3.66
+		&-4.1
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 		& \firstsecondSeparationgammaCdNinety
@@ -613,7 +605,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \firstsecondSeparationgammaCdStandard
 		& \firstsecondSeparationgammaCdOneHundredFive
 		& \firstsecondSeparationgammaCdOneHundredTen
-		& -
+		&0.23
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -622,7 +614,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \textbf{\secondExergyEffCdStandard}
 		& \textbf{\secondExergyEffCdOneHundredFive}
 		& \textbf{\secondExergyEffCdOneHundredTen}
-		& \textbf{-0.034}
+		& \textbf{-0.039}
 		\\
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltCdNinety
@@ -630,7 +622,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \secondthirdSeparationAltCdStandard
 		& \secondthirdSeparationAltCdOneHundredFive
 		& \secondthirdSeparationAltCdOneHundredTen
-		&-0.04
+		&-0.06
 		\\
 		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
 		& \secondthirdSeparationvCdNinety
@@ -638,7 +630,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \secondthirdSeparationvCdStandard
 		& \secondthirdSeparationvCdOneHundredFive
 		& \secondthirdSeparationvCdOneHundredTen
-		&-9.5
+		&-11.17
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammaCdNinety
@@ -646,9 +638,16 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \secondthirdSeparationgammaCdStandard
 		& \secondthirdSeparationgammaCdOneHundredFive
 		& \secondthirdSeparationgammaCdOneHundredTen
-		& -
+		&0.07
 		\\
-	
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeCdNinety
+		& \secondFlightTimeCdNinetyFive
+		& \secondFlightTimeCdStandard
+		& \secondFlightTimeCdOneHundredFive
+		& \secondFlightTimeCdOneHundredTen
+		&3.37
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistCdNinety
 		& \SecondDistCdNinetyFive
@@ -671,7 +670,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \returnDistCdStandard
 		& \returnDistCdOneHundredFive
 		& \returnDistCdOneHundredTen
-		& -
+		&-23.27
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -680,7 +679,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \textbf{\thirddExergyEffCdStandard}
 		& \textbf{\thirddExergyEffCdOneHundredFive}
 		& \textbf{\thirddExergyEffCdOneHundredTen}
-		& \textbf{-0.149}
+		& \textbf{-0.173}
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveCdNinety
@@ -704,7 +703,7 @@ Increasing the maximum dynamic pressure improves the manoeuvring capabilities of
 		& \thirdmFuelCdStandard
 		& \thirdmFuelCdOneHundredFive
 		& \thirdmFuelCdOneHundredTen
-		&1.53
+		&1.77
 		\\
 		\hline 
 	\end{tabular} 
@@ -726,7 +725,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 \subsection{Case 14: C-REST Specific Impulse Sensitivity with Fly-Back}
 
 
-\begin{table}[ht]
+\begin{table}[ht] % updated 14/8/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $I_{SP,2}$:
@@ -751,7 +750,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \PayloadVarIspStandard
 		& \PayloadVarIspOneHundredFive
 		& \PayloadVarIspOneHundredTen
-		&0.98
+		&1.27
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffIspNinety}
@@ -759,7 +758,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \textbf{\totalExergyEffIspStandard}
 		& \textbf{\totalExergyEffIspOneHundredFive}
 		& \textbf{\totalExergyEffIspOneHundredTen}
-		& \textbf{0.00015}
+		& \textbf{0.00016}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -801,7 +800,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \textbf{\secondExergyEffIspStandard}
 		& \textbf{\secondExergyEffIspOneHundredFive}
 		& \textbf{\secondExergyEffIspOneHundredTen}
-		& \textbf{0.051}
+		& \textbf{0.049}
 		\\
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltIspNinety
@@ -817,7 +816,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \secondthirdSeparationvIspStandard
 		& \secondthirdSeparationvIspOneHundredFive
 		& \secondthirdSeparationvIspOneHundredTen
-		&11.13
+		&10.83
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammaIspNinety
@@ -825,16 +824,23 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \secondthirdSeparationgammaIspStandard
 		& \secondthirdSeparationgammaIspOneHundredFive
 		& \secondthirdSeparationgammaIspOneHundredTen
-		&-0.09
+		&-0.06
 		\\
-	
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeIspNinety
+		& \secondFlightTimeIspNinetyFive
+		& \secondFlightTimeIspStandard
+		& \secondFlightTimeIspOneHundredFive
+		& \secondFlightTimeIspOneHundredTen
+		& -
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistIspNinety
 		& \SecondDistIspNinetyFive
 		& \SecondDistIspStandard
 		& \SecondDistIspOneHundredFive
 		& \SecondDistIspOneHundredTen
-		& -
+		&4.04
 		\\
 		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
 		& \returnFuelIspNinety
@@ -842,7 +848,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \returnFuelIspStandard
 		& \returnFuelIspOneHundredFive
 		& \returnFuelIspOneHundredTen
-		& -
+		&-1.39
 		\\
 		\textbf{2$^{nd}$ Stage Return Distance (km)}
 		& \returnDistIspNinety
@@ -850,7 +856,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \returnDistIspStandard
 		& \returnDistIspOneHundredFive
 		& \returnDistIspOneHundredTen
-		&10.03
+		&11.3
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -859,7 +865,7 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \textbf{\thirddExergyEffIspStandard}
 		& \textbf{\thirddExergyEffIspOneHundredFive}
 		& \textbf{\thirddExergyEffIspOneHundredTen}
-		& \textbf{0.162}
+		& \textbf{0.164}
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveIspNinety
@@ -1091,7 +1097,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 
 \subsection{Case 16: SPARTAN Fuel Mass Sensitivity with Fly-Back}
 
-\begin{table}[ht]
+\begin{table}[ht]%updated 14/8/19
 	\centering
 \begin{tabular}{l c c c c c c} 
 	\hline \textbf{Trajectory Condition}   \qquad  $m_{f,2}$:
@@ -1108,7 +1114,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \textbf{\PayloadToOrbitmFuelStandard}
 	& \textbf{\PayloadToOrbitmFuelOneHundredFive}
 	& \textbf{\PayloadToOrbitmFuelOneHundredTen}
-	&\textbf{0.7}
+	&\textbf{0.6}
 	\\
 	\textbf{Payload Variation (\%)}
 	& \PayloadVarmFuelNinety
@@ -1116,7 +1122,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \PayloadVarmFuelStandard
 	& \PayloadVarmFuelOneHundredFive
 	& \PayloadVarmFuelOneHundredTen
-	&0.4
+	&0.47
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffmFuelNinety}
@@ -1133,7 +1139,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \textbf{\firstExergyEffmFuelStandard}
 	& \textbf{\firstExergyEffmFuelOneHundredFive}
 	& \textbf{\firstExergyEffmFuelOneHundredTen}
-	& -
+	& \textbf{-0.005}
 	\\
 	\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 	& \firstsecondSeparationAltmFuelNinety
@@ -1141,7 +1147,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \firstsecondSeparationAltmFuelStandard
 	& \firstsecondSeparationAltmFuelOneHundredFive
 	& \firstsecondSeparationAltmFuelOneHundredTen
-	& -
+	&-0.02
 	\\
 	\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 	& \firstsecondSeparationvmFuelNinety
@@ -1149,7 +1155,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \firstsecondSeparationvmFuelStandard
 	& \firstsecondSeparationvmFuelOneHundredFive
 	& \firstsecondSeparationvmFuelOneHundredTen
-	&-2.82
+	&-2.01
 	\\
 	\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 	& \firstsecondSeparationgammamFuelNinety
@@ -1182,7 +1188,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \secondthirdSeparationvmFuelStandard
 	& \secondthirdSeparationvmFuelOneHundredFive
 	& \secondthirdSeparationvmFuelOneHundredTen
-	&4.73
+	&4.14
 	\\
 	\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 	& \secondthirdSeparationgammamFuelNinety
@@ -1190,16 +1196,23 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \secondthirdSeparationgammamFuelStandard
 	& \secondthirdSeparationgammamFuelOneHundredFive
 	& \secondthirdSeparationgammamFuelOneHundredTen
-	&-0.04
+	&-0.03
 	\\
-
+	\textbf{2$^{nd}$ Stage Flight Time (s)}
+	& \secondFlightTimemFuelNinety
+	& \secondFlightTimemFuelNinetyFive
+	& \secondFlightTimemFuelStandard
+	& \secondFlightTimemFuelOneHundredFive
+	& \secondFlightTimemFuelOneHundredTen
+	&4.37
+	\\
 	\textbf{2$^{nd}$ Stage Distance Flown (km)}
 	& \SecondDistmFuelNinety
 	& \SecondDistmFuelNinetyFive
 	& \SecondDistmFuelStandard
 	& \SecondDistmFuelOneHundredFive
 	& \SecondDistmFuelOneHundredTen
-	&12.29
+	&9.89
 	\\
 	\textbf{2$^{nd}$ Stage Return Fuel (kg)}
 	& \returnFuelmFuelNinety
@@ -1224,7 +1237,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \textbf{\thirddExergyEffmFuelStandard}
 	& \textbf{\thirddExergyEffmFuelOneHundredFive}
 	& \textbf{\thirddExergyEffmFuelOneHundredTen}
-	& \textbf{0.066}
+	& \textbf{0.061}
 	\\
 	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 	& \thirdqOverFivemFuelNinety
@@ -1232,7 +1245,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \thirdqOverFivemFuelStandard
 	& \thirdqOverFivemFuelOneHundredFive
 	& \thirdqOverFivemFuelOneHundredTen
-	& -
+	&0.05
 	\\
 	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
 	& \thirdmaxAoAmFuelNinety
@@ -1248,7 +1261,7 @@ In contrast to the mass sensitivity study without fly-back, the SPARTAN-third st
 	& \thirdmFuelmFuelStandard
 	& \thirdmFuelmFuelOneHundredFive
 	& \thirdmFuelmFuelOneHundredTen
-	&-0.69
+	&-0.63
 	\\
 	\hline 
 \end{tabular} 
@@ -1268,8 +1281,8 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 
 
 \subsection{Case 17: Third Stage Mass Sensitivity with Fly-Back}
-
-\begin{table}[ht]
+\textcolor{red}{XXX this is weird, redo? but the no-flyback case has the same trend... its probably because I have a set amount of first stage fuel now, total exergy efficiency is lower at higher masses}
+\begin{table}[ht]% updated 14/8/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $m_{3}$:
@@ -1286,7 +1299,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \textbf{\PayloadToOrbitmThreeStandard}
 		& \textbf{\PayloadToOrbitmThreeOneHundredFive}
 		& \textbf{\PayloadToOrbitmThreeOneHundredTen}
-		&\textbf{1}
+		& -
 		\\
 		\textbf{Payload Variation (\%)}
 		& \PayloadVarmThreeNinety
@@ -1294,7 +1307,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \PayloadVarmThreeStandard
 		& \PayloadVarmThreeOneHundredFive
 		& \PayloadVarmThreeOneHundredTen
-		&0.56
+		& -
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffmThreeNinety}
@@ -1302,7 +1315,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \textbf{\totalExergyEffmThreeStandard}
 		& \textbf{\totalExergyEffmThreeOneHundredFive}
 		& \textbf{\totalExergyEffmThreeOneHundredTen}
-		& \textbf{8e-05}
+		& -
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -1311,7 +1324,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \textbf{\firstExergyEffmThreeStandard}
 		& \textbf{\firstExergyEffmThreeOneHundredFive}
 		& \textbf{\firstExergyEffmThreeOneHundredTen}
-		& \textbf{-0.019}
+		& \textbf{-0.012}
 		\\
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltmThreeNinety
@@ -1319,7 +1332,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \firstsecondSeparationAltmThreeStandard
 		& \firstsecondSeparationAltmThreeOneHundredFive
 		& \firstsecondSeparationAltmThreeOneHundredTen
-		&-0.14
+		&-0.04
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 		& \firstsecondSeparationvmThreeNinety
@@ -1327,7 +1340,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \firstsecondSeparationvmThreeStandard
 		& \firstsecondSeparationvmThreeOneHundredFive
 		& \firstsecondSeparationvmThreeOneHundredTen
-		&-5.06
+		&-4.48
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 		& \firstsecondSeparationgammamThreeNinety
@@ -1335,7 +1348,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \firstsecondSeparationgammamThreeStandard
 		& \firstsecondSeparationgammamThreeOneHundredFive
 		& \firstsecondSeparationgammamThreeOneHundredTen
-		& -
+		&0.05
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1344,7 +1357,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \textbf{\secondExergyEffmThreeStandard}
 		& \textbf{\secondExergyEffmThreeOneHundredFive}
 		& \textbf{\secondExergyEffmThreeOneHundredTen}
-		& \textbf{0.029}
+		& \textbf{0.062}
 		\\
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltmThreeNinety
@@ -1360,7 +1373,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \secondthirdSeparationvmThreeStandard
 		& \secondthirdSeparationvmThreeOneHundredFive
 		& \secondthirdSeparationvmThreeOneHundredTen
-		&-6.25
+		& -
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammamThreeNinety
@@ -1368,16 +1381,23 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \secondthirdSeparationgammamThreeStandard
 		& \secondthirdSeparationgammamThreeOneHundredFive
 		& \secondthirdSeparationgammamThreeOneHundredTen
-		&0.09
+		& -
 		\\
-	
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimemThreeNinety
+		& \secondFlightTimemThreeNinetyFive
+		& \secondFlightTimemThreeStandard
+		& \secondFlightTimemThreeOneHundredFive
+		& \secondFlightTimemThreeOneHundredTen
+		& -
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistmThreeNinety
 		& \SecondDistmThreeNinetyFive
 		& \SecondDistmThreeStandard
 		& \SecondDistmThreeOneHundredFive
 		& \SecondDistmThreeOneHundredTen
-		&-3.92
+		& -
 		\\
 		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
 		& \returnFuelmThreeNinety
@@ -1393,7 +1413,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \returnDistmThreeStandard
 		& \returnDistmThreeOneHundredFive
 		& \returnDistmThreeOneHundredTen
-		& -
+		&-16.57
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1402,7 +1422,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \textbf{\thirddExergyEffmThreeStandard}
 		& \textbf{\thirddExergyEffmThreeOneHundredFive}
 		& \textbf{\thirddExergyEffmThreeOneHundredTen}
-		& \textbf{-0.071}
+		& \textbf{-0.271}
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFivemThreeNinety
@@ -1426,7 +1446,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \thirdmFuelmThreeStandard
 		& \thirdmFuelmThreeOneHundredFive
 		& \thirdmFuelmThreeOneHundredTen
-		&29.07
+		&31.94
 		\\
 		\hline 
 	\end{tabular} 

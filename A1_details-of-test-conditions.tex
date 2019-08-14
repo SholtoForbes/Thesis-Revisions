@@ -1,15 +1,115 @@
 % details-of-test-conditions.tex
+
+\textcolor{red}{
+	\chapter{Thermal Analysis}
+}
+
+The thermal protection of a hypersonic launch vehicle is essential to its operation, and is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The SPARTAN-based launch system in this study includes nearly the same thermal protection that is used in previous SPARTAN studies, that has been assumed to be able to protect the SPARTAN throughout its launch trajectory\cite{Preller2018a}. However, no detailed thermal analysis of the SPARTAN has been carried out to date. This section aims to analyse the thermal protection system of the SPARTAN, in order to determine whether it is sufficient for operation to a first approximation. While the purpose of this work is not to significantly redesign a launch vehicle, the design of the SPARTAN's TPS is investigated to analyse the level of thermal protection that may be necessary for future operation. 
+
+\section{1-D Thermal Analysis}
+ 
+ 
+ 
+To determine the effectiveness of the SPARTAN's TPS system, a 1-D heat analysis is conducted.  %quasi 3d? check this
+This heating calculation is implemented through the uqTurbine software package. 
+The temperature of the TPS is calculated at various points over the scramjet accelerator and third stage. 
+This gives an indication of the temperature at specified points around the SPARTAN throughout its trajectory. 
+Figure \ref{fig:TrajTemp} shows the heat responses at the specified locations over the trajectory of The SPARTAN. 
+
+
+
+% ingo thinks its probably best just to study the heating and not try to 'solve' it. eg how thick would the C-C shell need to be to resist heating? what might a heat limited trajectory look like? 
+
+% Make argument that q limiting reduces the acceleration significantly - reducing pull up and payload - and that its probably more beneficial to find a better thermal protection system than q limiting
+
+% need to really position this well, link to design, and to trajectories, explain how my trajectory results are still useful
+
+
+% say something like 'the temperature is a bit over, but will need more detailed analysis to determine the best course of action, including possible the development of new internal insulation
+
+% note that it is within the operational regime of the C-C
+
+
+% T3Nose max = 856.2K
+
+\begin{figure}[ht]
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TNose}
+		\caption{.}
+
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TLE}
+		\caption{}
+
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos1}
+		\caption{}
+
+	\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos2}
+			\caption{}
+			
+		\end{subfigure}
+			\begin{subfigure}{.5\textwidth}
+				\centering
+				\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos3png}
+				\caption{}
+				
+			\end{subfigure}
+				\begin{subfigure}{.5\textwidth}
+					\centering
+					\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos4png}
+					\caption{}
+					
+				\end{subfigure}
+	\caption{.}
+	\label{fig:TrajTemp}
+\end{figure}
+
+\begin{figure}[ht]
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TNose3}
+		\caption{.}
+		
+	\end{subfigure}
+	
+		\caption{.}
+		\label{fig:TrajTemp3}
+	\end{figure}
+
+\section{Heating limited Trajectory}
+
+
+\section{TPS Design Exploration}
+
+\section{Scramjet Accelerator}
+-TPS thickness required to get under 1000C
+
+--TPS thermal conductivity / other properties required to get under 1000C
+
+-active cooling efficiency required to get under 1000C
+
+\section{Third Stage}
+
+-- heat shield reduction due to pull-up
+
 \textcolor{red}{
 \chapter{Uncertainties and Simplifications}
 }
-\textcolor{red}{XXX change name}
 
-modified version of ingos comments:
 
 This thesis aims to provide new insight into the operability and feasibility of multi-stage launch systems incorporating an air-breathing stage.
 No such launch systems currently exist, and several of the sub-systems necessary for the successful their operation are in the research stage of development.
 This means that that reliable performance data is not available, and the predicted performance (i.e. payload to orbit) will be affected by design and modelling error, resulting in a variation of achievable performance. 
-The aim of this chapter is to apply a systematic approach to develop an understanding of how these variations may affect the performance of the launch system. These variations have been separated into two categories; design choices, variability that can be controlled by a designer; and modelling accuracy, uncertainty introduced by modelling assumptions and simplifications. To explore these we need to consider firstly what a realistic design process would look like and secondly how the vehicle flight simulations, performed using Pseudo-Spectral methods, are different to realistic flight. 
+The aim of this chapter is to apply a systematic approach to develop an understanding of how these variations may affect the performance of the launch system. These variations have been separated into two categories; design choices, variability that can be controlled by a designer; and modelling accuracy, ie. uncertainty introduced by modelling assumptions and simplifications. To explore these we need to consider firstly what a realistic design process would look like and secondly how the vehicle flight simulations, performed using Pseudo-Spectral methods, are different to realistic flight. 
 
 
 
@@ -17,33 +117,11 @@ The design process is considered in this analysis as the stage where the vehicle
 
 
 
-The second aspect to consider is the difference between the actual launch system and the "as-designed" nominal launch system, due to uncertainties inherent to the modelling assumptions in the aerodynamics and propulsion modelling of the launch system. As the designer has no direct control over these variations between the "as-designed" and actual vehicle, we need to rely on a-priori experience and a stochastic approach to quantify how the variations may affect the ultimate performance of the vehicle. To consider this effect we conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise "known" vehicle. 
+The second aspect to consider is the difference between the actual launch system and the "as-designed" nominal launch system. These uncertainties are due to uncertainties inherent to the modelling assumptions in the aerodynamics and propulsion modelling of the launch system, in effect, even the most detailed designs will still suffer from many of the same modelling uncertainties as analysed (though with reduced margins). 
+As the designer has no direct control over these variations between the "as-designed" and actual vehicle, we need to rely on a-priori experience and a stochastic approach to quantify how the variations may affect the ultimate performance of the vehicle. To consider this effect we conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise "known" vehicle. 
 
 
-Using this two stage approach we can indicate the effects of design choices, which will evolve as partially-airbreathing, multi-stage access to space systems move from the preliminary to detailed design, and delineate these from uncertainties that arise due to errors/simplifications inherent to modelling vs real flight. In effect, even the most detailed designs will still suffer from the same modelling uncertainties (though with reduced margins) as analysed. 
-
-
-
-
-
-Caveat Statement:
-
-Due to applying the pseudo-spectral approach to simulate and optimise the trajectory, we assume that the entire aerodynamics performance is known prior to flight. This is different to what an actual control system would do, which must respond to over/under performance on the fly. It is expected that much of this discrepancy could be compensated though applying Model Predictive Control to re-evaluate the optimal trajectory during the flight. Exploring this further is one of the items identified under future work.
-
-note: maybe add this to control section? I think ive taken this into account by mentioning the trajectory above
-
-note:I should maybe do a variation of just the return drag - "the performance of the launch system may be significantly different on the ascent and return trajectories (in addition to the engine flowpaths)"
-
-% my first draft:
-%This chapter aims to aid the reader in understanding the uncertainties and simplifications associated with the representative launch system in this work. 
-%This chapter is delineated into two distinct parts, with the purpose of differentiating the simplifications and assumptions in the design of the representative launch system, and the uncertainties introduced throughout the aerodynamic and propulsion modelling that have a direct impact on the performance of the launch system as designed. 
-
-%The design of the launch system in this work is simplified because there is currently no rocket-scramjet-rocket systems past the initial design phase, and because an in-depth design study is beyond the scope of this work. The launch system in this work has been modelled to a fidelity capable of producing useful and indicative maximum payload-to-orbit optimised trajectory results, however, the practical trajectory of a rocket-scramjet-rocket launch system may be limited by design factors that are not considered in the modelling of the launch system in this work. The primary design simplifications that may have a significant impact on the trajectory of the launch system are discussed, along with the possible limitations or variations that they may cause on the trajectory of a launch system of this type. These limitations are strongly interconnected with the design of the launch system, and must be considered in an in-depth launch system design study, which is outside the scope of this work. 
-
-%Though the estimation of the limitations and variations arising from the launch system design is outside the scope of this work, the uncertainty margins of the aerodynamics and propulsive properties of the representative launch system are modelled.
- %Uncertainties in the simulation of the launch system arise due to the methods used to generate the aerodynamic and propulsive data models, which are by necessity low and medium-fidelity. The uncertainty margins of the models used in this work are discussed, and the impact of the uncertainties on the calculated payload-to-orbit of an optimised trajectory is estimated.
- 
-
+Using this two stage approach we can indicate the effects of design choices, that will evolve as partially-airbreathing, multi-stage access to space systems move from the preliminary to detailed design, and delineate these from uncertainties that arise due to errors/simplifications inherent to modelling vs real flight. 
 
 
 
@@ -60,7 +138,7 @@ note:I should maybe do a variation of just the return drag - "the performance of
 
 The representative launch system in this study is based on the launch system designed to accommodate the SPARTAN\cite{Preller2017b}. This launch system is in the preliminary design phases, and has not yet been designed or modelled to an accurate subsystem level. This work aims to model a modified version of this launch system to a fidelity where a trajectory may be optimised and analysed with significant results, and it is assumed that the representative launch system utilised in this work is appropriate for successfully launching to orbit.
  However, there are necessarily some simplifications that occur in the design and modelling of the launch system, that may have significant effects on the trajectory of the launch system. Some of the effects of the design simplifications are captured in the sensitivity study carried out in Sections \textcolor{red}{XXX link}, for example mass variations, however some of the simplifications may be limiting factors to the trajectories that are able to be flown, particularly control and staging effects. These limiting factors are not considered in this study, because they are heavily dependent on the vehicle design, and it is assumed that future design studies will be carried out that will investigate the ability of this type of launch system to fly a practical launch trajectory, along with an interconnected design study. 
-This section discusses some of the significant design and modelling simplifications made in this work.
+This section discusses some of the significant design and modelling factors that are not explicitly addressed in the current work.
 
 
 
@@ -68,7 +146,9 @@ This section discusses some of the significant design and modelling simplificati
 
 
 \subsubsection{Control Modelling}
-This work assumes a point mass vehicle in all phases of simulation, with the control surface deflections or thrust vector of each stage modified throughout the trajectory to trim the vehicle. Practically, complex controller designs will likely be necessary to fly a launch system of this type, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. The controllability will be heavily interdependent on the vehicle design, and will require the high fidelity modelling of each vehicle throughout the trajectory, as well as modelling of the control scheme. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
+This work assumes a point mass vehicle in all phases of simulation, with the control surface deflections or thrust vector of each stage modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. This is done in order to effectively apply the Pseudospectral method of optimal control for the purposes of this work. Practically however, an actual control system must respond to the performance of the system on the fly. Complex controller designs will likely be necessary to fly a launch system of this type, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. The controllability will be heavily interdependent on the vehicle design, and will require the high fidelity modelling of each vehicle throughout the trajectory, as well as modelling of the control scheme. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
+It is expected that much of the discrepancy between the assumptions in this work and practical control system design could be compensated though applying Model Predictive Control to re-evaluate the optimal trajectory during the flight. Exploring this further is one of the items identified under future work.
+
 
 
 
@@ -97,7 +177,7 @@ The storage of the third stage within the main body of the scramjet-powered acce
 Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in a cavity on the back of the airbreathing vehicle mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
 The methods of staging of a launch system of this type must be considered carefully in future design studies, taking into account the controllability of the launch system, along with the aerodynamic and aerothermal properties of each stage. 
 
-
+\textcolor{red}{XXX Need to reference section in alternate trajectories where I do variation in return drag}
 
 
 
@@ -121,24 +201,18 @@ In future design studies, the subsystems of the vehicles and interface mechanism
 Because of the large number of simulations necessary to cover the possible flight regimes of the launch system, the launch system in this study is analysed using medium and low fidelity modelling techniques chosen for their fitness-for-purpose for optimal trajectory analysis, with an emphasis on computational efficiency as well as accuracy.
 The uncertainties in the propulsive and aerodynamic properties of the launch system modelled in this work must be estimated, as there are no flight test or experimental results available for the representative launch system analysed in this study. In this section an estimate of the aerodynamic and propulsive uncertainties associated with the trajectory optimisations in this work is provided, and a Latin hypercube analysis is carried out to determine the variance in a sample trajectory optimisation. 
 
-\subsection{Aerodynamic Uncertainty}
+\subsection{Aerodynamic Uncertainty}\label{sec:aerounc}
 
-
-
-
-%\subsubsection{Uncertainties Associated With Cart3D}
 
 
 
 %\textcolor{red}{XXX I need to make sure this isnt contradicting my lit review at all, and should repeat some of this in my lit review.}
 
-\textcolor{red}{XXX Change this to be all three stages, add some discussion about cart3d at high altitudes}
-
-The aerodynamic coefficients of the first and second stages in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle, particularly at subsonic and transonic conditions. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously compared Cart3D with experimental data for a number of geometries at various flight conditions. These experimental comparisons are utilised to estimate the uncertainty arising in the aerodynamic coefficients due to the use of Cart3D. These comparison studies do not usually correct for viscous forces, and so underpredict drag in almost all cases.
+The aerodynamic coefficients of the SPARTAN in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle, particularly at subsonic and transonic conditions. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously compared Cart3D with experimental data for a number of geometries at various flight conditions. These experimental comparisons are utilised to estimate the uncertainty arising in the aerodynamic coefficients due to the use of Cart3D. These comparison studies do not usually correct for viscous forces, and so underpredict drag in almost all cases.
 
 
 
-%-add 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' and maybe others? - its too hard to estimate the values from almosnino.. but I should discuss it. sagerman only gives some specific pressure results, should discuss that too. 
+%- 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' has error, but its too hard to estimate the values  from this.. . sagerman gives some specific pressure results, but only some. 
 
 %\textcolor{red}{XXX be really careful here, the reviewer will know this paper inside out}
 Abeynayake \& Agon assess two missile geometries; a conventional missile at transonic and supersonic speeds, and a non-conventional missile that has a cruise missile profile and includes small wings at subsonic speeds\cite{Abeynayake2013a}. The study by Abenayake and Agon estimates the magnitude of the uncertainty of Cart3D in a comparison to experimental results, although no viscous correction is included, and so the lack of a viscous component significantly affects the aerodynamic coefficients, particularly drag. The uncertainty magnitudes are estimated in relative error, normalised by the average value of data points between 0$^\circ$ and 10$^\circ$ angle of attack for drag, or the value at 10$^\circ$ angle of attack in the case of the lift and pitching moment coefficients\cite{Abeynayake2013a}. It is noted that these relative errors only give an indication of the accuracy of a specific tool\cite{Abeynayake2013a}. It is found that when compared to experimental results, Cart3D has a mean error in drag of 31.3\% for subsonic, 23.5\% for supersonic, and 18.0\% for transonic cases\cite{Abeynayake2013a} when compared to wind tunnel data for the non-conventional missile at angle of attack values between -10$^\circ$ and 10$^\circ$ in the subsonic regime, and the conventional missile at angles of attack of 0$^\circ$ to 10$^\circ$ in the transonic and supersonic regimes. The mean relative error in lift was found to be 16.5\% for subsonic, 1.3\% for supersonic, and 28.7\% for transonic cases\cite{Abeynayake2013a}, and the error in pitching moment 22.0\% for supersonic and 67.1\% for transonic cases, with no subsonic error given\cite{Abeynayake2013a}.
@@ -169,89 +243,66 @@ For this reason, the drag uncertainty in the transonic regime is set to 18\%, to
 %-I have no way to convert the error from the coefficients to something useful. Also the lift coefficient errors that they have produced seem ridiculous compared to even their own aero coeffs in other papers? but they are saying its well predicted?
 
 
-%\subsubsection{The Aerodynamics of the Third Stage}
 
 
-%The aerodynamic properties of the third stage rocket are calculated using Missile Datcom, a low fidelity, semi empirical analysis tool. Missile Datcom is based on a component build-up method, and is primarily designed for analysis of missiles composed of basic geometric shapes\cite{Abeynayake2013a}. As the third stage rocket is flying at high Mach numbers for the entirety of its trajectory, only validation cases with supersonic Mach numbers are considered to estimate uncertainty margins. 
-
-%In the same study used to identify the uncertainties associated with Cart3D, Abeynayake \& Agon assess Missile Datcom at Mach 4.5 for the conventional missile design\cite{Abeynayake2013a}. Missile Datcom was observed to provide reasonable estimates of lift and drag values, with mean relative uncertainty values of 17.5\% for drag, and 7.5\% for lift in the supersonic regime. However, Missile Datcom was not observed to provide a good estimate of pitching moment in the supersonic regime, with a 42.5\% mean error. The centre of pressure and associated errors are not stated. 
-
-%A study by Sooy and Schmidt\cite{Sooy2005} compares Missile Datcom with wind tunnel data for a variety of missile configurations. 
-%The results for missile Datcom comparisons in the study by Sooy and Schmidt are mixed\cite{Sooy2005}.
-%For a missile with wing-body and tail configuration similar to the Sparrow\rom{3}, at Mach numbers of 1.5 and 4.6 and Angle of attack values up to 45$^\circ$, errors of less than 9\% are observed in the normal force coefficient, the error pitching is observed to be within 12\% up to 30$^\circ$ angle of attack, and the error in $X_{CP}/l_b$ is less than 2\%\cite{Sooy2005}. However, axial coefficients are not predicted well, particularly at Mach 4.6, where large deviations are observed in the axial coefficient, particularly at high angle of attack values (at Mach 4.6 and 15$^\circ$ angle of attack, approximately 46\% error is apparent\cite{Sooy2005}). 
-%A body-tail configuration is investigated, exhibiting good agreement between Missile Datcom and experimental data, with errors within 4\% for normal force coefficient, 4\% for pitching moment error, and 2\% for centre of pressure location. No axial force coefficients are compared for this geometry\cite{Sooy2005}.
-%For a body-flare configuration at Mach 2.01 up to 30$^\circ$ angle of attack normal and axial force coefficients have predicted errors of within 13\% and approximately 26\%. The pitching moment coefficient has a maximum error of approximately 87\%, and the centre of pressure has a maximum error of approximately 49\%\cite{Sooy2005}. These errors are large, and are caused by a shift in the wind tunnel data around 10$^\circ$ angle of attack that is not elaborated upon\cite{Sooy2005}. 
-%A body-tail configuration at Mach 2.01 exhibits maximum errors in normal force and pitching moment coefficients both under 11\%, and a maximum centre of pressure location error of less than 1\%\cite{Sooy2005}. 
-%large axial coefficient exhibited in this case, with maximum error of approximately 65\%\cite{Sooy2005}.
-%Overall it is suggested that Missile Datcom generally struggles with predicting axial force coefficients\cite{Sooy2005}.
-%Note that two case studies were not assessed from the study by Sooy and Schmidt, one of which had large aerodynamic surfaces with large errors, that is omitted due to its complex geometry and large lifting surfaces that are assessed as particularly problematic for Missile Datcoms centre of pressure prediction\cite{Sooy2005}, and a body alone configuration that was assessed to have inconclusive error calculations\cite{Sooy2005}. 
-
-
-%Dunn\cite{Dunn1989} compares the aerodynamic properties predicted by Missile Datcom to experimental data for a variety of projectile shapes and observes that drag force prediction becomes less accurate as the configuration geometry becomes more complex\cite{Dunn1989}. The study by Dunn\cite{Dunn1989} is of limited use for determining the accuracy of normal force coefficients, as normal force curve slopes at 0$^\circ$ are generally analysed rather than normal or lift coefficients. However, of interest is the axial force coefficients of a spinner geometry, a simple low-curvature ogive nose-cylinder geometry generally similar to the third stage rocket of the representative launch system. This spinner is investigated at 0$^\circ$ angle of attack over a range of Mach numbers from 0.6 to 4.0. Lift coefficients are not directly investigated, though drag coefficients are compared, showing agreement between Missile Datcom and experimental data within approximately 18\% over the range of Mach numbers investigated. 
-
-%From these experimental comparisons it is evident that Missile Datcom is able to predict normal forces reasonably closely. However, there is variation in the accuracy of predicted pitching moment and centre of pressure locations, and overall Missile Datcom is poor at estimating axial forces. The uncertainties in Missile Datcom are taken to be the mean of the available error data, assuming that the lift and drag errors observed by Abeynayake \& Agon approximately correspond to normal and axial errors respectively, due to the relatively low angles of attack investigated. With this assumption, the mean axial error from the compared tests is 34.5\%, and mean normal force error is 8.9\%. When calculating pitching moment, the large pitching moment error of 87\% observed in the body-flare configuration tested by Sooy and Schmidt\cite{Sooy2005} is excluded, due to being the result of an unknown anomaly. Without this, the mean pitching moment error is calculated as 17.4\%.
-
-
-
-\subsection{Propulsion System Uncertainties}
+\subsection{Propulsion System Uncertainties}\label{sec:propunc}
 
 
 
 
 \subsubsection{The Rocket Engines}
-The propulsive properties of the rocket engines that power the first and third stages of the launch system are taken from the Falcon 1 Launch Vehicle Payload User's Guide\cite{Vehicle2008}, a document released by SpaceX that does not contain detailed information as to how the engine properties are calculated. It is assumed that the properties of the engines presented by SpaceX have been measured experimentally, and that the primary uncertainties associated with the rocket engine properties are experimental uncertainties. With no knowledge of the experimental facilities or processes used, it is necessary to estimate the experimental uncertainty through analysis of other experimental facilities, information that is generally sparse. Davidian, Diek and Chuang\cite{Davidian1987} assess the specific impulse uncertainty associated with high area ratio rocket tests at NASA Lewis Research centre, by propagating an "exhaustive" list of possible error sources. The test facility was found to be capable of measuring specific impulse to within 1.30\%, thrust to within 1.12\%, and mass flow rate to within 0.72\%. These propagated uncertainty values assumed that there was no bias errors, and that calibration was perfectly carried out prior to testing. 
-The uncertainty in the specific impulse of 1.30\% is used as the rocket engine performance uncertainty for the purposes of this study. 
+The propulsive properties of the rocket engines that power the first and third stages of the launch system are taken from the Falcon 1 Launch Vehicle Payload User's Guide\cite{Vehicle2008}, a document released by SpaceX that does not contain detailed information as to how the engine properties are calculated. It is assumed that the properties of the engines presented by SpaceX have been measured experimentally, and that the primary uncertainties associated with the rocket engine properties are experimental uncertainties. With no knowledge of the experimental facilities or processes used, it is necessary to estimate the experimental uncertainty through analysis of other experimental facilities, information that is generally sparse. Davidian, Diek and Chuang\cite{Davidian1987} assess the specific impulse uncertainty associated with high area ratio rocket tests at NASA Lewis Research centre, by propagating an "exhaustive" list of possible error sources. The test facility was found to be capable of measuring specific impulse to within 1.30\%, thrust to within 1.12\%, and mass flow rate to within 0.72\%. These propagated uncertainty values assumed that there was no bias errors, and that calibration had no error prior to testing. 
+The uncertainty in the specific impulse of 1.30\% is used as the rocket engine performance uncertainty for the purposes of this study, assuming that the testing that has been carried out on the Merlin 1-C and Kestrel engines has the same error margins as the NASA Lewis Research Centre facilities. 
 
-%\textcolor{red}{XXX Im lacking practical knowledge with this one}
 \subsubsection{The Scramjet Engine}
-%\textcolor{red}{I have some comparisons with experimental results from "Shock Tunnel Experiments with a Mach 12 {REST} Scramjet at Off-Design Conditions" and "Quasi-One-Dimensional Model of Hydrogen-Fueled Scramjet Combustors". These are comparisons of the internal dynamics of the engine and I have not yet thought of how best to synthesise these into thrust or mass flow rate uncertainties. }
-
-%--he points out it hasnt been validated against an 'operational' engine, so maybe include some discussion about how its only been validated against test engines?
-%-ive got a couple of papers about quasi 1d validation for scramjets
-
-
-%from ingo: -no flight datas for scramjet is an issue - be clear about this. say that there is no availsbl;e flight test data in the public doain. in the absence of clear data an uncertainty of 25\%? it is plausible that this may be larger. maybe have section eploring lower limit on engine.
-%-ask michaael if crest database has experiomental results- ingo thinks that 1D ANalysis is tuned using ground test data. In this case it doesnt make much sense to work out uncertainty from ground test data.
+%Quasi-One-Dimensional Model of Hydrogen-Fueled Scramjet Combustors". These are the studies that the engine models were likely tuned off 
 
 %Ingo says that I might need to ballpark a number, say 25\%, but that it could be much higher, even 50\% in his optinion. I will need to be very clear here. 
 
 %\textcolor{red}{XXX check with michael about the experimental corrections}
-The C-REST engines are modelled in this work using a dataset developed using a combination of high-fidelity CFD, and quasi 1-D analysis, tuned using experimental results. Estimating the error in this model in comparison to a realistic, flight capable scramjet is not feasible, due to the lack of flight test data or full-scale engine ground testing for scramjet engines in the public domain. For the purposes of this study a nominal uncertainty of 25\% is associated with the specific impulse of the scramjet engines. This is a nominal, estimated, uncertainty margin, and it is possible that the uncertainty margin may be higher than this estimated value. However it is probable that if there is errors larger than 25\% in the performance modelling of the scramjet engines, then the design of the system may have to change considerably to be feasible. For this reason, the uncertainty margin of the scramjet specific impulse is kept at 25\% for payload-to-orbit uncertainty margin calculations, although it is acknowledged that major modelling or experimental discrepancies may cause design changes to be necessary or lead to the infeasibility of the system as a whole. 
+%-ask michaael if crest database has experiomental results- ingo thinks that 1D ANalysis is tuned using ground test data. In this case it doesnt make much sense to work out uncertainty from ground test data.
+The C-REST engines are modelled in this work using a dataset developed using a combination of high-fidelity CFD, and quasi 1-D analysis, tuned using experimental results. Estimating the error in this model in comparison to a realistic, flight capable scramjet is not feasible, due to the lack of flight test data or full-scale engine ground testing for scramjet engines in the public domain. For the purposes of this study a nominal uncertainty of 25\% is associated with the specific impulse of the scramjet engines based on the experience of the Author's colleagues and supervisors at The University of Queensland's Centre for Hypersonics. This is an estimated uncertainty margin, and it is possible that the uncertainty margin may be higher than this estimated value. However it is probable that if there is errors larger than 25\% in the performance modelling of the scramjet engines, then the design of the system may have to change considerably to be feasible. For this reason, the uncertainty margin of the scramjet specific impulse is kept at 25\% for payload-to-orbit uncertainty margin calculations, although it is acknowledged that major unforseen modelling or experimental errors may cause design changes to be necessary or lead to the infeasibility of the system as a whole. 
 
 
 \subsection{Quantification of Aerodynamic and Propulsion Uncertainty Effects}
 
 
 \subsubsection{Quantification of Uncertainty Magnitudes}
-%\textcolor{red}{XXX Dont say 'engineering judgement'-ingo}
 
-The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been applied based on the errors described in the studies analysed in the preceding sections adjusted using . 
+The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been applied based on the errors described in the studies analysed Sections \ref{sec:aerounc} \& \ref{sec:propunc}. 
 
--note that it is assumed that only the moments on the spartan are affected, and not the flaps
+%-note that it is assumed that only the moments on the spartan are affected, and not the flaps
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline  Uncertainty & Subsonic & Transonic  & Supersonic/Hypersonic \\ 
+		\hline  1$^{st}$ \& 3$^{rd}$ Stage $I_{SP}$ & 1.3\% & 1.3\% &  1.3\% \\ 
+		\hline  Scramjet $I_{SP}$ & - & - &  25\% \\ 
+		\hline   $C_L$ & 16.5\% & 28.7\% & 1.3\% \\  
+		\hline   $C_D$ & 20\% & 18\% & 11\% \\  
+		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
+		\hline 
+	\end{tabular}
+	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of The SPARTAN.}
+	\label{tab:AppendixUncertainty}
+\end{table}
 
 
-\begin{tabular}{|c|c|c|c|}
-	\hline  Parameter & Subsonic Uncertainty & Transonic Uncertainty  & Supersonic/Hypersonic Uncertainty \\ 
-	\hline  First Stage $I_{SP}$ & 1.3\% & 1.3\% &  1.3\% \\ 
-	\hline  SPARTAN/First Stage $C_L$ & 16.5\% & 28.7\% & 1.3\% \\  
-	\hline  SPARTAN/First Stage $C_D$ & 20\% & 18\% & 11\% \\  
-	\hline  SPARTAN/First Stage $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
-	\hline  SPARTAN $I_{SP}$ & - & - &  25\% \\ 
 	%\hline  Third Stage $C_a$ & - & - &  34.5\% \\ 
 	%\hline  Third Stage $C_n$ &  -& - & 8.9\% \\ 
 	%\hline  Third Stage $C_M$ & - & - & 17.4\%  \\ 
 	%\hline  Third Stage $I_{SP}$ & - & - & 1.3\%  \\ 
-	%\hline 
-	\label{tab:AppendixUncertainty}
-\end{tabular}
 
 \subsubsection{Variation Study}
 In order to quantify the effects of the uncertainty in the aerodynamic and propulsion models, a variation study is carried out using a Latin Hypercube Sampling technique. 
 %-2 sigma variation? normalised spread?
 
 \subsection{Atmospheric Variations}
-\textcolor{red}{XXX I need to make it clear that the variations in the atmosphere are very complex, and that this is a simplified model to estimate major uncertainties}
-This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} to calculate the properties of the atmosphere during simulations. The U.S Standard Atmosphere 1976 is based on a collection of data from sites across America, Brazil, Australia, and Russia, with values calculated for annual mean properties at an interpolated latitude of 45$^\circ$\cite{Administration1976}. The properties that are calculated using this atmosphere are subject to seasonal variability, as well as variability due to geographic position. Figure \ref{fig:AtmosphericVariation} shows the variation in temperature and pressure in the 1976 U.S Standard Atmosphere model with altitude. In the higher latitudes maximum and minimum temperatures at altitudes below 25km are seasonal, however at higher altitudes semi-annual and biennial oscillations have a large influence\cite{Administration1976}. The variations shown do not occur at the same time in the same envelopes of the atmosphere; warm temeratures at the surface are associated with cold temperatures near the tropopause, and temperatures near the stratopause are negatively correlated with temperatures near the mesopause\cite{Administration1976}. These oscillations are particularly important in the equatorial regions, where the seasonal variation in temperature is smallest. The variations in atmospheric properties with geography or time may affect the performance of the launch system significantly. These variations may have significant impact on the aerodynamic and aerothermal performance of the launch system at a particular altitude, as well as the performance of the propulsion systems of the launch system, particularly the scramjet engines. 
+
+The Earth's atmosphere varies significantly depending on location, and over time. As such, the atmosphere into which the SPARTAn is launched may be considerably different to the atmosphere that is being modelled in this work. 
+The variations in the properties of the atmosphere with geography or time may affect the aerodynamic and engine performance of the launch system significantly, and change the altitude at which maximum dynamic pressure is reached. These variations may have significant impact on the aerodynamic and aerothermal performance of the launch system at a particular altitude, as well as the performance of the propulsion systems of the launch system, particularly the scramjet engines. 
+This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} to calculate the properties of the atmosphere during simulations. The U.S Standard Atmosphere 1976 is based on a collection of data from sites across America, Brazil, Australia, and Russia, with values calculated for annual mean properties at an interpolated latitude of 45$^\circ$\cite{Administration1976}. The properties that are calculated using this atmosphere are subject to seasonal variability, as well as variability due to geographic position. Figure \ref{fig:AtmosphericVariation} shows the variation in temperature and pressure in the 1976 U.S Standard Atmosphere model with altitude. In the higher latitudes maximum and minimum temperatures at altitudes below 25km are seasonal, however at higher altitudes semi-annual and biennial oscillations have a large influence\cite{Administration1976}. The variations shown do not occur at the same time in the same envelopes of the atmosphere; warm temeratures at the surface are associated with cold temperatures near the tropopause, and temperatures near the stratopause are negatively correlated with temperatures near the mesopause\cite{Administration1976}. These oscillations are particularly important in the equatorial regions, where the seasonal variation in temperature is smallest. 
 
 \begin{figure}[ht]
 	\centering
@@ -260,13 +311,11 @@ This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} 
 	\label{fig:AtmosphericVariation}
 \end{figure}
 
-\subsection{Quantification of Atmospheric Variation Effects}
-
-The effects of atmospheric variation are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface copmpared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated. 
+The effects of atmospheric variation are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface compared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause, as indicated in \ref{fig:AtmosphericVariation}. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated. 
 
 
 
-\chapter{Example and Verification}
+\chapter{Examples and Verification}
 
 \section{Example - Brachistochrone Problem}
 
@@ -541,8 +590,11 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 
 
 		\chapter{Alternate Trajectory Cases}
-		\section{Trajectory with Decreased Third Stage TPS Mass}
-		\textcolor{red}{XXX Add here}
+		\section{Trajectory With Decreased Third Stage TPS Mass}
+		\textcolor{red}{XXX Add here as a design variation for reviewer}
+		
+		\section{Trajectory With Variation in Return Drag}
+		I should maybe do a variation of just the return drag - "the performance of the launch system may be significantly different on the ascent and return trajectories (in addition to the engine flowpaths)"
 		
 		\section{Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}\label{sec:Appendix_qconst}
 		

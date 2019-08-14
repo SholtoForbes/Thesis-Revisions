@@ -1080,8 +1080,8 @@
          familyi={R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{R3}
-    \strng{fullhash}{R3}
+    \strng{namehash}{R4}
+    \strng{fullhash}{R4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{{Intrepid-1}}
@@ -6343,55 +6343,6 @@
     \field{year}{2004}
   \endentry
 
-  \entry{Marley2017}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=MCD}{%
-         family={Marley},
-         familyi={M\bibinitperiod},
-         given={Christopher\bibnamedelima D.},
-         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=DJF}{%
-         family={Driscoll},
-         familyi={D\bibinitperiod},
-         given={James\bibnamedelima F.},
-         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCDDJF1}
-    \strng{fullhash}{MCDDJF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Efficient aerodynamic heating and thermal protection system models are
-  added to MA- SIV, a reduced-order model of a generic scramjet-powered
-  vehicle. The MASIV code was selected over similar reduced-order models
-  because of its advanced combustion model, as heat addition to the combustor
-  walls is often the largest source of heating in hypersonic air-breathing
-  vehicles. The thermal protection system consists of passive insulation and
-  ac- tive cooling with the liquid hydrogen fuel acting as the cooling agent.
-  Temperatures within the passive thermal protection system are shown over time
-  at verious trimmed flight con- ditions. High temperatures within the
-  combustor walls reveal the need for active cooling. The results show
-  important trade-offs for design and optimization purposes.%
-    }
-    \field{booktitle}{AIAA SciTech}
-    \verb{doi}
-    \verb 10.2514/6.2017-0118
-    \endverb
-    \field{number}{January}
-    \field{pages}{1\bibrangedash 27}
-    \field{title}{{Modeling an Active and Passive Thermal Protection System for
-  a Hypersonic Vehicle}}
-    \list{location}{1}{%
-      {Grapevine, TX}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Marley2017.pdf:pdf
-    \endverb
-    \field{year}{2017}
-  \endentry
-
   \entry{Suraweera2009}{article}{}
     \name{author}{2}{}{%
       {{hash=SM}{%
@@ -6941,6 +6892,26 @@
     \endverb
     \field{type}{techreport}
     \field{year}{2018}
+  \endentry
+
+  \entry{rutherford}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rocket lab USA}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R3}
+    \strng{fullhash}{R3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
+    \verb{url}
+    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
+    \verb erford-engine-test-fires/
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{Huzel1967}{book}{}
