@@ -110,10 +110,8 @@ The mass of the fuel tanks is scaled, by surface area, from Dawid Preller's Base
 		%-differentiate between heating at stagnation points (which are probably not connected directly to multilayer %insulation) and points around the vehicle which are likely to be connected directly
 		%ie. stagnation points are calculated to see if the TPS will hold other points are calculated to see if 1000C is exceeded on insulated side 
 
-\textcolor{red}{XXX I need to mention slightly different thickness tps to previous spartan designs (maybe dont link directly to previous spartan designs. mention specific TPS)}
-
-The scramjet accelerator is thermally protected by a 10mm thick Carbon-Carbon aeroshell, with an alumina-borosilicate mat/ stainless steel multilayer insulator at the connection points between the aeroshell and the aluminium internal structure\cite{Preller2018a}. This multilayer insulation has a maximum operational temperature of 1000$^\circ$C. The nose tip of the scramjet accelerator is protected by 40mm thick tungsten, weighing 92kg, to provide rapid heat dissipation and sink in the area of greatest heating. For the purposes of this work it is assumed that the external shell is not connected to the internal structure close to points of large heating such as leading edges, and is structurally independent in these regions. 
-In previous studies, this heat shielding has been assumed to provide adequate protection for the scramjet accelerator flying along a constant dynamic pressure trajectory\cite{Preller2018a}. 
+The scramjet accelerator is thermally protected by a 11.3mm thick Carbon-Carbon aeroshell, with an alumina-borosilicate mat/ stainless steel multilayer insulator at the connection points between the aeroshell and the aluminium internal structure\cite{Preller2018a}. The nose tip of the scramjet accelerator is protected by 40mm thick tungsten, weighing 92kg, to provide rapid heat dissipation and sink in the area of greatest heating. For the purposes of this work it is assumed that the external shell is not connected to the internal structure close to points of large heating such as leading edges, and is structurally independent in these regions. 
+In previous studies, a similar heat shielding has been assumed to provide adequate protection for the scramjet accelerator flying along a constant dynamic pressure trajectory\cite{Preller2018a}, and this assumption is used in the main body of this work. The thermal properties of the launch system are investigated further in Section \textcolor{red}{XXX} and it is concluded that a more advanced thermal protection system may be necessary. However, the full redesign of the thermal protection system of the SPARTAN is beyond the scope of this report, particularly as this is currently an area of significant research effort, and there are many possibly viable options for the cooling of hypersonic systems. 
 
 \subsection{Propulsion}\label{sec:propulsion}
 
@@ -602,14 +600,13 @@ These results show a distinct maximum region in the L/D of the scramjet accelera
 
 
 \section{The First Stage Rocket}\label{sec:firststage}
-\textcolor{red}{XXX change first stage description to variable CG}
-\textcolor{red}{XXX mention first stage total mass? that is was sized to 18000kg update mass values}
+
 
 
 The first stage rocket is required to deliver the second stage to near horizontal flight at Mach 5.1 flight conditions,
 after which it is discarded. 
 \textcolor{red}{The representative first stage rocket in this study has been  modelled as a Falcon-1e first stage scaled down
-lengthwise to 9.5m, keeping the original diameter of 1.67m\cite{Vehicle2008}. This scaling was based off a first principles design of the first stage mass and performance necessary to achieve the minimum operating conditions of the scramjet accelerator, performed by Preller \& Smart\cite{Preller2017b}, with some tuning due to the higher fidelity aerodynamics used in this study.}
+lengthwise to 9.5m and to a mass of 1800kg, keeping the original diameter of 1.67m\cite{Vehicle2008}. This scaling was based off a first principles design of the first stage mass and performance necessary to achieve the minimum operating conditions of the scramjet accelerator, performed by Preller \& Smart\cite{Preller2017b}, with some tuning due to the higher fidelity aerodynamics used in this study.}
 The Falcon-1e has been chosen due to its appropriate scale, and the proven flightworthiness of the Falcon-1. 
  The first stage is attached to the rear of the scramjet
 second stage and is powered by a single LOX-kerosene Merlin 1-C engine. A connecting cowl has been modelled between the first stage rocket and the scramjet accelerator to improve the aerodynamic profile.  The first stage has a structural mass of
@@ -675,7 +672,7 @@ The thrust and specific impulse of the Merlin 1-C are determined by interpolatio
   At Mach numbers over Mach 2, the absolute magnitude of the L/D generally increases as the Mach number increases. This is caused by the decreased effects of the engines unstarting, in turn reducing the drag of the engines at higher Mach numbers, as observed in the aerodynamics of the scramjet accelerator in Section \ref{sec:SPARTAN}. 
    Note that absolute magnitude is the metric used for `good' L/D, as the angles of attack are negative. 
   
-  The First stage is trimmed using thrust vectoring of the Merlin 1-C engine during flight. The thrust vector angle of the engine is adjusted so that the moment caused by the rocket engine is equal and opposite to the moment caused by the aerodynamics of the vehicle, as illustrated in Figure \ref{fig:FirstStageThrustVec}, ie. $M_T = -M_{Fn}$.
+  The First stage is trimmed using thrust vectoring of the Merlin 1-C engine during flight. The centre of gravity of the launch system varies from 23.8m to 16.8m along the vehicle, as the fuel of the first stage is depleted. The thrust vector angle of the engine is adjusted so that the moment caused by the rocket engine is equal and opposite to the moment caused by the aerodynamics of the vehicle, as illustrated in Figure \ref{fig:FirstStageThrustVec}, ie. $M_T = -M_{Fn}$.
   This thrust vectoring is calculated as the trajectory is simulated, at every flight condition. 
  
 
@@ -742,7 +739,7 @@ The third stage has a total length of 9m, to fit within the main body fuselage o
 
 
 \subsection{Fuel Tank Sizing}
-\textcolor{red}{XXX Need to change masses and volumes}
+
 
 The internal design of the third stage is allowed to be slightly variable as the trajectory is optimised. The third stage mass is fixed at 3300kg, and the calculated payload-to-orbit varies by exchanging leftover fuel mass for effective payload mass. The Kestrel engine utilises LOX/RP-1 propellants, with an oxidiser-to-fuel mixture ratio 2.56\cite{RPE} and a density of 813kg/m$^3$\cite{Magee}. 
 To calculate the dynamics of the third stage, the fuel tanks have been approximately sized, assuming \textcolor{red}{100kg} of payload-to-orbit. Realistically the exchange between fuel and payload mass would cause the fuel tanks to be resized slightly, however, for the purposes of this study the fuel tanks are assumed to be of constant size for simplicity. Currently this is a reasonable assumption as the internals of the rocket are very simplified. With an assumed payload mass of \textcolor{red}{100kg}, the third stage carries a total propellant mass of \textcolor{red}{2761.1kg}. Table \ref{tab:Fuel} breaks shows the component break-down of the LOX oxidiser and RP1 for this fuel weight. The total mass and volumes of these fuels will change slightly as the trajectory of the launch system is optimised, and fuel is traded for payload mass. However, the ratio between the fuel and oxidiser will stay constant. 
@@ -779,8 +776,8 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 			\centering
 \begin{tabular}{|c|c|c|c|}
 	\hline  Part & Density & Geometry & mass \\ 
-	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 50mm diameter cylinder, spherical tip & 10.0kg \\ 
-		\hline C-C Cone & $\rho_{CC} = 1593$  kg/m$^3$ & 10.8mm thick, conical & 89.7kg \\ 
+	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 50mm diameter cylinder, spherical tip & \textcolor{red}{10.0}kg \\ 
+		\hline C-C Cone & $\rho_{CC} = 1593$  kg/m$^3$ & 10.8mm thick, conical & \textcolor{red}{89.7}kg \\ 
 			\hline Phenolic Cork Cylinder & $\rho_{Phenolic Cork} = 320$  kg/m$^3$ & 5mm thick, cylindrical & 24.9kg \\ 
 	\hline 
 \end{tabular} 
@@ -811,9 +808,9 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 						\hline Aestus II & Pump-fed & MMH/NTO & 46kN & 337.5s & 148 & - & 2.2m  & 6$^\circ$\\ 
 						\hline RS-72 & Pump-fed & MMH/NTO & 55.4kN & 338s & 154kg & - & 2.286 &  6$^\circ$\\ 
 						\hline ATE & Pump-fed & MMH/NTO & 20kN & 345s & 57.9kg & 0.38m & 1.4m &  15$^\circ$\\ 
-						\hline  Rutherford\cite{rutherford}& Pump-fed & LOX/RP-1 & 24kN & 343s & 35kg & -  & - & - \\ 
+						\hline  Rutherford \cite{rutherford}& Pump-fed & LOX/RP-1 & 24kN & 343s & 35kg & -  & - & - \\ 
 						\hline AJ10-118K & Pressure-fed & A-50/NTO & 43.3kN & 320.5s & 124.5kg & 1.53m & 2.7m & Fixed \\ 
-						\hline Kestrel\cite{Vehicle2008} & Pressure-fed & LOX/RP-1 & 30.7kN & 317s & 52kg & 1.1m & 1.9m  & Yes, Unknown limits\\ 
+						\hline Kestrel \cite{Vehicle2008} & Pressure-fed & LOX/RP-1 & 30.7kN & 317s & 52kg & 1.1m & 1.9m  & Yes, Unknown limits\\ 
 						\hline Aestus & Pressure-fed & MMH/NTO & 27.5kN & 320s & 110kg & 1.27m & 2.2m & 4$^\circ$ \& 4$^\circ$ by mechanical adjustment\\ 
 						\hline OMS & Pressure-fed  & MMH/NTO & 26.7kN & 316s & 118kg & 1.168m & 1.956m & 8$^\circ$\\ 
 						\hline 
@@ -828,7 +825,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 		\subsubsection{Propulsion System Modelling}
 		
 			\textcolor{red}{
-		The Kestrel engine which powers the third stage is modified to have 50\% increased propellant mass flow rate, giving a mass flow rate of 14.8kg/s. This is done to assist the rocket in exiting the atmosphere, as it was found during analysis that a the third stage has difficulty exiting the atmosphere when powered by a standard Kestrel engine. A 50\% increase in mass flow rate provides additional thrust such that the trajectory angle of the third stage does not decrease after release from the scramjet accelerator flying a constant dynamic pressure trajectory. This was chosen as the indicative factor that the third stage is successfully able to pull-up out of the atmosphere. It is likely that this mass flow increase will necessitate a heavier combustion chamber as well as more heavy duty piping and valves, more or larger injectors, and a heavier nozzle and structure to transmit the higher thrust forces\cite{RPE,Huzel1967}. To compensate for these factors, the mass of the Kestrel is increased by 50\%, from 52kg\cite{Wade2017} to 78kg, to approximate an increase in mass of the the thrust chamber as well as all feed systems, cooling systems, and the thrust transmission structure. This is estimated to be slightly conservative, as the surface area of the combustion chamber, and thus the mass and the cooling necessary, will not vary linearly with the increase in volume necessary to maintain a constant characteristic length as mass flow rate in increased\cite{RPE,Huzel1967}. However, as the mass of the relative components of the Kestrel are not published, a conservative approach to mass modelling is most appropriate. The need to modify the Kestrel engine for this study highlights the potential necessity for the design of a cheap rocket engine with higher thrust than the Kestrel, Aestus or OMS, if a rocket-scramjet-rocket system is to be practical and cost-effective.}
+		The Kestrel engine which powers the third stage is modified to have 50\% increased propellant mass flow rate, giving a mass flow rate of 14.8kg/s. This is done to assist the rocket in exiting the atmosphere, as it was found during analysis that a the third stage has difficulty exiting the atmosphere when powered by a standard Kestrel engine. A 50\% increase in mass flow rate provides additional thrust such that the trajectory angle of the third stage does not decrease significantly after release from the scramjet accelerator flying a constant dynamic pressure trajectory. This was chosen as the indicative factor that the third stage is successfully able to pull-up out of the atmosphere. It is likely that this mass flow increase will necessitate a heavier combustion chamber as well as more heavy duty piping and valves, more or larger injectors, and a heavier nozzle and structure to transmit the higher thrust forces\cite{RPE,Huzel1967}. To compensate for these factors, the mass of the Kestrel is increased by 50\%, from 52kg\cite{Wade2017} to 78kg, to approximate an increase in mass of the the thrust chamber as well as all feed systems, cooling systems, and the thrust transmission structure. This is estimated to be slightly conservative, as the surface area of the combustion chamber, and thus the mass and the cooling necessary, will not vary linearly with the increase in volume necessary to maintain a constant characteristic length as mass flow rate in increased\cite{RPE,Huzel1967}. However, as the mass of the relative components of the Kestrel are not published, a conservative approach to mass modelling of the engine is most appropriate. The need to modify the Kestrel engine for this study highlights the potential necessity for the design of a cheap rocket engine with higher thrust than the Kestrel, Aestus or OMS, if a rocket-scramjet-rocket system is to be practical and cost-effective.}
 		
 		
 		
@@ -872,7 +869,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 				\label{fig:ThirdStageAero}
 			\end{figure}
 			The third stage aerodynamics have been calculated using Cart3D, in the same manner as for the  scramjet accelerator and first stage, with a modification for viscous effects using VC3D.
-		The aerodynamic coefficients of the third stage rocket are shown in Figure \ref{fig:ThirdStageAero}. 
+		The aerodynamic coefficients of the third stage rocket are shown in Figure \ref{fig:ThirdStageAero}. These do not show any particular complexity, as is expected for a simple rocket shape, and the highest L/D is exhibited at the maximum angle of attack. 
 		
 		% Note, although i have a rarified correction, the knudsen number doesnt ever actually get high enough for it to be used. So I havent inluded this. also if it did get used I should probably have done it for aerodynamics as well. 
 	
@@ -889,7 +886,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 		
 		The third stage rocket is controlled via thrust vectoring. The centre of pressure is calculated using Missile Datcom. The thrust vector is set so that the moment generated by the engine matches the lift force acting at the centre of pressure, as shown in Figure \ref{fig:ThrustVec}, ie $M_{T} = -M_{Fn}$. This thrust vector is calculates at each flight condition during the trajectory simulations. The maximum thrust vector limit has been set to 8$^\circ$. As no data on the maximum thrust vectoring capabilities of the kestrel engine was able to be found, this was set to the maximum gimbal range of the Aestus engine and Orbital Manoeuvring Engine (OME), which are similarly sized pressure-fed engines\cite{Wade2017}.
 		
-		The centre of gravity is determined using CREO by creating a three dimensional model of the rocket with representative densities, illustrated in Figure \ref{fig:3rdStage}. It is assumed that the mass of the structure of the rocket (excluding fuel tanks, heat shielding, engine and payload) is distributed homogeneously for simplicity. The Mass Properties tool within CREO is used to calculate the centre of gravity, which is located at 4.46m from the nose when the rocket is full of fuel, and 4.11m from the nose when the rocket is completely empty. The centre of gravity is interpolated linearly from these values as the fuel mass within the rocket decreases. These centre of gravity calculations are performed with the heat shield on, as the thrust vectoring is only calculated while the rocket is in-atmosphere, with the engine on. Note that the rocket will not become completely empty while in-atmosphere. 
+		The centre of gravity is determined using CREO by creating a three dimensional model of the rocket with representative densities, illustrated in Figure \ref{fig:3rdStage}. It is assumed that the mass of the structure of the rocket (excluding fuel tanks, heat shielding, engine and payload) is distributed homogeneously for simplicity. The Mass Properties tool within CREO is used to calculate the centre of gravity, which is located at \textcolor{red}{4.33}m from the nose when the rocket is full of fuel, and \textcolor{red}{4.04}m from the nose when the rocket is completely empty. The centre of gravity is interpolated linearly from these values as the fuel mass within the rocket decreases. These centre of gravity calculations are performed with the heat shield on, as the thrust vectoring is only calculated while the rocket is in-atmosphere, with the engine on. Note that the rocket will not become completely empty while in-atmosphere. 
 		
 	The third stage rocket is statically unstable. For the purposes of this study, it is assumed that the third stage rocket is controllable as long as the thrust vector limits of the vehicle are not exceeded. 
 		Flying this rocket at an angle of attack will require an advanced automatic controller, as the only control available is produced by thrust vectoring. For the purposes of this study, the design of the third stage as presented is regarded to be sufficient as a representative third stage design.
@@ -907,6 +904,6 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 	 The aerodynamic databases of all three stages were presented and analysed, and the process for generating these databases was detailed. 
 	 The CFD simulations of each stage in Cart3D have been detailed, including the process of verifying the convergence of each solution. 
 	 The propulsion modelling of the C-REST scramjet engines was presented, along with the schemes used to generate smooth, second order continuous interpolations of the engine data. 
-	The process for generating the trimmed aerodynamic databases for the scramjet accelerator has been presented, including the calculation of the control surface aerodynamics, and the calculation of the variable centre of gravity of the scramjet accelerator. The thrust vectoring for the first and third stages was detailed, along with the relevant limitations to thrust vector angle.
+	The process for generating the trimmed aerodynamic databases for the scramjet accelerator has been presented, including the calculation of the control surface aerodynamics, and the calculation of the variable centre of gravity of the scramjet accelerator. The thrust vectoring control for the first and third stages was detailed.
 	
 	

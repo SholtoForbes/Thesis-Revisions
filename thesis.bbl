@@ -253,65 +253,56 @@
 
   \entry{Smart2009a}{article}{}
     \name{author}{2}{}{%
-      {{hash=SMV}{%
-         family={Suraweera},
-         familyi={S\bibinitperiod},
-         given={Milinda\bibnamedelima V.},
-         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
          given={Michael\bibnamedelima K.},
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
+      {{hash=TMR}{%
+         family={Tetlow},
+         familyi={T\bibinitperiod},
+         given={Matthew\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{SMVSMK1}
-    \strng{fullhash}{SMVSMK1}
+    \strng{namehash}{SMKTMR1}
+    \strng{fullhash}{SMKTMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A shock tunnel investigation of a scramjet with a
-  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
-  elliptical combustor has been$\backslash$nconducted at conditions simulating
-  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
-  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
-  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
-  began with a rearward facing step around its perimeter,$\backslash$nand was
-  followed by a constant area and diverging section. The
-  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
-  fuel was$\backslash$ninjected either through multiple portholes on the
-  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
-  at the combustor entrance,$\backslash$nor a combination of the two. All
-  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
-  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
-  Fuel injection in the intake produced$\backslash$nrobust combustion and good
-  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
-  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
-  was observed for fuel injection at the step at all
-  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
-  injection$\backslash$nwas observed to have the best performance. These
-  experimental results$\backslash$ndemonstrate that REST scramjets, designed
-  for access-to-space applications,$\backslash$ncan operate efficiently at
-  conditions below the design Mach number.%
+    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
+  rockets during the hypersonic phase of low- Earth-orbit insertion
+  trajectories. Despite this, scramjets are not used on any current systems due
+  to the difﬁculty of operating over the large Mach number envelope required
+  by this accelerating trajectory. The key to taking advantage of airbreathing
+  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
+  system that makes use of the scramjet only within its high-performance
+  regime. A multistage rocket-scramjet-rocket system that accepts this
+  limitation has therefore been examined. This system includes a solid rocket
+  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
+  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
+  Trajectory calculations for a system scaled to deliver approximately 100 kg
+  to a 200 km equatorial orbit indicate payload mass fractions of approximately
+  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
+  packaging. The goal of this work is to guide the future development of
+  scramjets by identifying the areas that will make the most signiﬁcant
+  improvement to their use for space access.%
     }
     \verb{doi}
-    \verb 10.2514/1.37946
+    \verb 10.2514/1.38784
     \endverb
-    \field{isbn}{9781563479373}
-    \field{issn}{0748-4658}
-    \field{number}{3}
-    \field{pages}{555\bibrangedash 564}
-    \field{title}{{Shock-Tunnel Experiments with a Mach 12
-  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/1.37946
-    \endverb
-    \field{volume}{25}
+    \field{isbn}{1563478269}
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{117\bibrangedash 125}
+    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
+  Airbreathing Propulsion}}
+    \field{volume}{46}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MSmart2009.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2009}
   \endentry
 
@@ -1958,68 +1949,153 @@
     \field{year}{2001}
   \endentry
 
-  \entry{Olds1998}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=OJ}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={J.R.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BI}{%
-         family={Budianto},
-         familyi={B\bibinitperiod},
-         given={I.a.},
-         giveni={I\bibinitperiod},
+  \entry{Staufenbiel2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SRW}{%
+         family={Staufenbiel},
+         familyi={S\bibinitperiod},
+         given={R\bibnamedelima W},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
-    \strng{namehash}{OJBI1}
-    \strng{fullhash}{OJBI1}
+    \strng{namehash}{SRW1}
+    \strng{fullhash}{SRW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Future space transportation vehicles may well rely on high speed
-  airbreathing propulsion (ramjets and scramjets) to supply much of their
-  motive power. Because of the tradeoff relationship between engine thrust and
-  vehicle airframe weight, ascent trajectories are typically simulated using a
-  constant dynamic pressure phase during airbreathing acceleration. That is,
-  dynamic pressure is increased to benefit vehicle thrust up to some fixed
-  limit imposed by the vehicle structure. The constant dynamic pressure portion
-  of the trajectory typically begins around Mach 2 or 3 and continues to the
-  maximum airbreathing Mach number or until some convective aeroheating limit
-  is reached. This paper summarizes comparative research on three candidate
-  guidance methods suitable for simulating constant dynamic pressure
-  trajectories. These are generalized acceleration steering, linear feedback
-  control, and cubic polynomial control. All methods were implemented in POST
-  (Program to Optimize Simulated Trajectories) — an industry standard
-  trajectory simulation code. Both quantitative and qualitative comparisons of
-  these methods (i.e. in terms of computer processing time, number of required
-  iterations for convergence, sensitivity to quality of initial values,
-  accuracy and program robustness) are presented. Of the three methods, the
-  linear feedback control approach is found to be the most efficient and
-  robust, with good accuracy.%
+    \field{number}{6}
+    \field{pages}{618\bibrangedash 622}
+    \field{title}{{Second-Stage Trajectories of Air-Breathing Space Planes}}
+    \field{volume}{27}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Staufenbiel.pdf:pdf
+    \endverb
+    \field{year}{2000}
+  \endentry
+
+  \entry{Hellman}{report}{}
+    \name{author}{1}{}{%
+      {{hash=HBM}{%
+         family={Hellman},
+         familyi={H\bibinitperiod},
+         given={Barry\bibnamedelima Mark},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
     }
-    \field{booktitle}{Aerospace Sciences Meeting \& Exhibit}
-    \verb{doi}
-    \verb 10.2514/6.1998-302
-    \endverb
-    \field{pages}{1\bibrangedash 13}
-    \field{title}{{Constant Dynamic Pressure Trajectory Simulation with POST}}
-    \verb{url}
-    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.25.6506\&amp
-    \verb ;rep=rep1\&amp;type=pdf
-    \endverb
-    \list{location}{1}{%
-      {Reno, NV}%
+    \strng{namehash}{HBM1}
+    \strng{fullhash}{HBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{{Comparison of Return to Launch Site Options for a Reusable
+  Booster Stage}}
+    \list{institution}{1}{%
+      {Space Sytems Design Lab, Georgia Institute of technology}%
     }
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/JOlds1998.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Hellman.pdf:pdf
     \endverb
-    \field{annotation}{%
-    this is a fairly good discussion of the constant dynamic pressure
-  trajectory%
+    \field{type}{techreport}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Tetlow1992}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TMR}{%
+         family={Tetlow},
+         familyi={T\bibinitperiod},
+         given={M\bibnamedelima R},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SoUM}{%
+         family={Sch-ograve},
+         familyi={S\bibinitperiod-o\bibinitperiod},
+         given={U\bibnamedelima M},
+         giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=T}{%
+         family={Ttle},
+         familyi={T\bibinitperiod},
+      }}%
+      {{hash=SGM}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={G\bibnamedelima M},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
     }
-    \field{year}{1998}
+    \strng{namehash}{TMR+1}
+    \strng{fullhash}{TMRSoUMTSGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/2.3742
+    \endverb
+    \field{issn}{0022-4650}
+    \field{number}{5}
+    \field{pages}{752\bibrangedash 758}
+    \field{title}{{Comparison of Glideback and Flyback Boosters}}
+    \verb{url}
+    \verb http://dx.doi.org/10.2514/2.3742
+    \endverb
+    \field{volume}{38}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Tetlow.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{1992}
+  \endentry
+
+  \entry{NASP}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PNAs}{%
+         family={Plane},
+         familyi={P\bibinitperiod},
+         given={National Aero-space},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod-s\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PNAs1}
+    \strng{fullhash}{PNAs1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{The National Aero-Space Plane}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASP.PDF:PDF
+    \endverb
+  \endentry
+
+  \entry{WCC}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PSZ}{%
+         family={Pinckney},
+         familyi={P\bibinitperiod},
+         given={S\bibnamedelima Zane},
+         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJDPSZMJD1}
+    \strng{fullhash}{SJDPSZMJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
+  Configuration Model :}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
+    \endverb
+    \field{journaltitle}{Simulation}
+    \field{year}{1990}
   \endentry
 
   \entry{Powell1991}{article}{}
@@ -2086,33 +2162,141 @@
     \field{year}{1991}
   \endentry
 
-  \entry{Trefny1999}{inproceedings}{}
+  \entry{Lu1993}{article}{}
     \name{author}{1}{}{%
-      {{hash=TC}{%
-         family={Trefny},
-         familyi={T\bibinitperiod},
-         given={Charles},
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An inverse dynamics approach for trajectory optimization is proposed. This
+  technique can be useful in many difficult trajectory optimization and control
+  problems. The application of the approach is exemplified by ascent trajectory
+  optimization for an aerospace plane. Both minimum-fuel and minimax types of
+  performance indices are considered. When rocket augmentation is available for
+  ascent, it is shown that accurate orbital insertion can be achieved through
+  the inverse control of the rocket in the presence of disturbances.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.21073
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{4}
+    \field{pages}{726\bibrangedash 732}
+    \field{title}{{Inverse dynamics approach to trajectory optimization for an
+  aerospace plane}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
+    \endverb
+    \field{volume}{16}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Aberleen}{book}{}
+    \name{author}{1}{}{%
+      {{hash=vdAL}{%
+         prefix={van\bibnamedelima den},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Aberleen},
+         familyi={A\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{ALvd1}
+    \strng{fullhash}{ALvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9783319444703}
+    \field{pages}{176\bibrangedash 179}
+    \field{title}{{Spaceplane HERMES: Europe ’ s Dream of Independent Manned
+  Spaceflight Luc van den Abeelen}}
+    \list{location}{1}{%
+      {Cham, Switzerland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/2017\_Book\_Spacepl
+    \verb aneHERMES.pdf:pdf
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{HyperX}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MCR}{%
+         family={McClinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RVL}{%
+         family={Rausch},
+         familyi={R\bibinitperiod},
+         given={Vincent\bibnamedelima L.},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MU}{%
+         family={Metha},
+         familyi={M\bibinitperiod},
+         given={Unmeel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={Chris},
          giveni={C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{TC1}
-    \strng{fullhash}{TC1}
+    \strng{namehash}{MCR+1}
+    \strng{fullhash}{MCRRVLSRJMUNC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{35th Joint Propulsion Conference and Exhibit}
-    \verb{doi}
-    \verb 10.2514/6.1999-2730
-    \endverb
-    \field{number}{May}
-    \field{title}{{An Air-Breathing Concept Launch Vehicle for
-  Single-Stage-to-Orbit}}
-    \list{location}{1}{%
-      {Los Angeles, CA}%
+    \field{abstract}{%
+    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
+  provided a major, essential demonstration of the capability of the
+  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
+  design tools and vision vehicles. This flight was a crucial step toward
+  establishing air-breathing hypersonic propulsion for application to
+  space-launch vehicles and other hypersonic systems. This paper examines the
+  significance of the flight test in advancing the state-of-the science and
+  provides a strategic vision for achieving the dream for safe, efficient and
+  reliable space access with air-breathing propulsion in the near future,
+  through use of more near term approaches. Published by Elsevier Ltd.%
     }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Trefny.pdf:pdf
+    \verb{doi}
+    \verb 10.1016/j.actaastro.2005.03.061
     \endverb
-    \field{year}{1999}
+    \field{issn}{00945765}
+    \field{number}{2-8}
+    \field{pages}{614\bibrangedash 622}
+    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
+    \field{volume}{57}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{2005}
   \endentry
 
   \entry{Roche2000}{report}{}
@@ -2165,90 +2349,33 @@
     \field{year}{2000}
   \endentry
 
-  \entry{Pescetelli2012}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=PF}{%
-         family={Pescetelli},
-         familyi={P\bibinitperiod},
-         given={Fabrizio},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ME}{%
-         family={Minisci},
-         familyi={M\bibinitperiod},
-         given={Edmondo},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=MC}{%
-         family={Maddock},
-         familyi={M\bibinitperiod},
-         given={Christie},
+  \entry{Trefny1999}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=TC}{%
+         family={Trefny},
+         familyi={T\bibinitperiod},
+         given={Charles},
          giveni={C\bibinitperiod},
       }}%
-      {{hash=TI}{%
-         family={Taylor},
-         familyi={T\bibinitperiod},
-         given={Ian},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=BR}{%
-         family={Brown},
-         familyi={B\bibinitperiod},
-         given={Richard},
-         giveni={R\bibinitperiod},
-      }}%
     }
-    \strng{namehash}{PF+1}
-    \strng{fullhash}{PFMEMCTIBR1}
+    \strng{namehash}{TC1}
+    \strng{fullhash}{TC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper addresses the design of ascent trajectories for a hybrid-engine,
-  high performance, unmanned, single-stage-to-orbit vehicle for payload
-  deployment into low Earth orbit. A hybrid optimisation technique that couples
-  a population-based, stochastic algorithm with a deterministic, gradient-based
-  technique is used to maximize the final vehicle mass in low Earth orbit after
-  accounting for operational constraints on the dynamic pressure, Mach number
-  and maximum axial and normal accelerations. The control search space is first
-  explored by the population-based algorithm, which uses a single shooting
-  method to evaluate the performance of candidate solutions. The resultant
-  optimal control law and corresponding trajectory are then further refined by
-  a direct collocation method based on finite elements in time. Two distinct
-  operational phases, one using an air-breathing propulsion mode and the second
-  using rocket propulsion, are considered. The presence of uncertainties in the
-  atmospheric and vehicle aerodynamic models are considered in order to
-  quantify their effect on the performance of the vehicle. Firstly, the
-  deterministic optimal control law is re-integrated after introducing
-  uncertainties into the models. The proximity of the final solutions to the
-  target states are analysed statistically. A second analysis is then
-  performed, aimed at determining the best performance of the vehicle when
-  these uncertainties are included directly in the optimisation. The
-  statistical analysis of the results obtained are summarized by an expectancy
-  curve which represents the probable vehicle performance as a function of the
-  uncertain system parameters. This analysis can be used during the preliminary
-  phase of design to yield valuable insights into the robustness of the
-  performance of the vehicle to uncertainties in the specification of its
-  parameters. © 2012 by Richard E Brown, Edmondo Minisci, Christie Maddock,
-  Ian Taylor, Fabrizio Pescetelli.%
-    }
-    \field{booktitle}{18th AIAA/3AF International Space Planes and Hypersonic
-  Systems and Technologies Conference}
+    \field{booktitle}{35th Joint Propulsion Conference and Exhibit}
     \verb{doi}
-    \verb 10.2514/6.2012-5828
+    \verb 10.2514/6.1999-2730
     \endverb
-    \field{isbn}{978-1-60086-931-0}
-    \field{number}{September}
-    \field{pages}{1\bibrangedash 18}
-    \field{title}{{Ascent Trajectory Optimisation for a Single-Stage-to-Orbit
-  Vehicle with Hybrid Propulsion}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2012-5828
-    \endverb
+    \field{number}{May}
+    \field{title}{{An Air-Breathing Concept Launch Vehicle for
+  Single-Stage-to-Orbit}}
+    \list{location}{1}{%
+      {Los Angeles, CA}%
+    }
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/Pescetelli.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Trefny.pdf:pdf
     \endverb
-    \field{year}{2012}
+    \field{year}{1999}
   \endentry
 
   \entry{Young2006}{inproceedings}{}
@@ -2358,216 +2485,6 @@
     \field{year}{2006}
   \endentry
 
-  \entry{Mooij}{book}{}
-    \name{author}{1}{}{%
-      {{hash=ME}{%
-         family={Mooij},
-         familyi={M\bibinitperiod},
-         given={Erwin},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Pringer}%
-    }
-    \strng{namehash}{ME1}
-    \strng{fullhash}{ME1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Modeling and Optimization in Space Engineering}}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Lu1993}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LP}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LP1}
-    \strng{fullhash}{LP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    An inverse dynamics approach for trajectory optimization is proposed. This
-  technique can be useful in many difficult trajectory optimization and control
-  problems. The application of the approach is exemplified by ascent trajectory
-  optimization for an aerospace plane. Both minimum-fuel and minimax types of
-  performance indices are considered. When rocket augmentation is available for
-  ascent, it is shown that accurate orbital insertion can be achieved through
-  the inverse control of the rocket in the presence of disturbances.%
-    }
-    \verb{doi}
-    \verb 10.2514/3.21073
-    \endverb
-    \field{issn}{0731-5090}
-    \field{number}{4}
-    \field{pages}{726\bibrangedash 732}
-    \field{title}{{Inverse dynamics approach to trajectory optimization for an
-  aerospace plane}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
-    \endverb
-    \field{volume}{16}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-    \field{year}{1993}
-  \endentry
-
-  \entry{NASP}{article}{}
-    \name{author}{1}{}{%
-      {{hash=PNAs}{%
-         family={Plane},
-         familyi={P\bibinitperiod},
-         given={National Aero-space},
-         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod-s\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PNAs1}
-    \strng{fullhash}{PNAs1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{The National Aero-Space Plane}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASP.PDF:PDF
-    \endverb
-  \endentry
-
-  \entry{WCC}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=PSZ}{%
-         family={Pinckney},
-         familyi={P\bibinitperiod},
-         given={S\bibnamedelima Zane},
-         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=MJD}{%
-         family={Mcminn},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJDPSZMJD1}
-    \strng{fullhash}{SJDPSZMJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
-  Configuration Model :}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
-    \endverb
-    \field{journaltitle}{Simulation}
-    \field{year}{1990}
-  \endentry
-
-  \entry{Aberleen}{book}{}
-    \name{author}{1}{}{%
-      {{hash=vdAL}{%
-         prefix={van\bibnamedelima den},
-         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
-         family={Aberleen},
-         familyi={A\bibinitperiod},
-         given={Luc},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{ALvd1}
-    \strng{fullhash}{ALvd1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{9783319444703}
-    \field{pages}{176\bibrangedash 179}
-    \field{title}{{Spaceplane HERMES: Europe ’ s Dream of Independent Manned
-  Spaceflight Luc van den Abeelen}}
-    \list{location}{1}{%
-      {Cham, Switzerland}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/2017\_Book\_Spacepl
-    \verb aneHERMES.pdf:pdf
-    \endverb
-    \field{year}{2017}
-  \endentry
-
-  \entry{HyperX}{article}{}
-    \name{author}{5}{}{%
-      {{hash=MCR}{%
-         family={McClinton},
-         familyi={M\bibinitperiod},
-         given={Charles\bibnamedelima R.},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=RVL}{%
-         family={Rausch},
-         familyi={R\bibinitperiod},
-         given={Vincent\bibnamedelima L.},
-         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SRJ}{%
-         family={Shaw},
-         familyi={S\bibinitperiod},
-         given={Robert\bibnamedelima J.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MU}{%
-         family={Metha},
-         familyi={M\bibinitperiod},
-         given={Unmeel},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=NC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCR+1}
-    \strng{fullhash}{MCRRVLSRJMUNC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
-  provided a major, essential demonstration of the capability of the
-  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
-  design tools and vision vehicles. This flight was a crucial step toward
-  establishing air-breathing hypersonic propulsion for application to
-  space-launch vehicles and other hypersonic systems. This paper examines the
-  significance of the flight test in advancing the state-of-the science and
-  provides a strategic vision for achieving the dream for safe, efficient and
-  reliable space access with air-breathing propulsion in the near future,
-  through use of more near term approaches. Published by Elsevier Ltd.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.actaastro.2005.03.061
-    \endverb
-    \field{issn}{00945765}
-    \field{number}{2-8}
-    \field{pages}{614\bibrangedash 622}
-    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
-    \field{volume}{57}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
-    \endverb
-    \field{journaltitle}{Acta Astronautica}
-    \field{year}{2005}
-  \endentry
-
   \entry{Hyperion}{article}{}
     \name{author}{6}{}{%
       {{hash=OJ}{%
@@ -2672,6 +2589,176 @@
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Argus.pdf:pdf
     \endverb
     \field{year}{1998}
+  \endentry
+
+  \entry{Olds1998}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=OJ}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={J.R.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BI}{%
+         family={Budianto},
+         familyi={B\bibinitperiod},
+         given={I.a.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OJBI1}
+    \strng{fullhash}{OJBI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Future space transportation vehicles may well rely on high speed
+  airbreathing propulsion (ramjets and scramjets) to supply much of their
+  motive power. Because of the tradeoff relationship between engine thrust and
+  vehicle airframe weight, ascent trajectories are typically simulated using a
+  constant dynamic pressure phase during airbreathing acceleration. That is,
+  dynamic pressure is increased to benefit vehicle thrust up to some fixed
+  limit imposed by the vehicle structure. The constant dynamic pressure portion
+  of the trajectory typically begins around Mach 2 or 3 and continues to the
+  maximum airbreathing Mach number or until some convective aeroheating limit
+  is reached. This paper summarizes comparative research on three candidate
+  guidance methods suitable for simulating constant dynamic pressure
+  trajectories. These are generalized acceleration steering, linear feedback
+  control, and cubic polynomial control. All methods were implemented in POST
+  (Program to Optimize Simulated Trajectories) — an industry standard
+  trajectory simulation code. Both quantitative and qualitative comparisons of
+  these methods (i.e. in terms of computer processing time, number of required
+  iterations for convergence, sensitivity to quality of initial values,
+  accuracy and program robustness) are presented. Of the three methods, the
+  linear feedback control approach is found to be the most efficient and
+  robust, with good accuracy.%
+    }
+    \field{booktitle}{Aerospace Sciences Meeting \& Exhibit}
+    \verb{doi}
+    \verb 10.2514/6.1998-302
+    \endverb
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{{Constant Dynamic Pressure Trajectory Simulation with POST}}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.25.6506\&amp
+    \verb ;rep=rep1\&amp;type=pdf
+    \endverb
+    \list{location}{1}{%
+      {Reno, NV}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/JOlds1998.pdf:pdf
+    \endverb
+    \field{annotation}{%
+    this is a fairly good discussion of the constant dynamic pressure
+  trajectory%
+    }
+    \field{year}{1998}
+  \endentry
+
+  \entry{Pescetelli2012}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=PF}{%
+         family={Pescetelli},
+         familyi={P\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Minisci},
+         familyi={M\bibinitperiod},
+         given={Edmondo},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maddock},
+         familyi={M\bibinitperiod},
+         given={Christie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TI}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PF+1}
+    \strng{fullhash}{PFMEMCTIBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper addresses the design of ascent trajectories for a hybrid-engine,
+  high performance, unmanned, single-stage-to-orbit vehicle for payload
+  deployment into low Earth orbit. A hybrid optimisation technique that couples
+  a population-based, stochastic algorithm with a deterministic, gradient-based
+  technique is used to maximize the final vehicle mass in low Earth orbit after
+  accounting for operational constraints on the dynamic pressure, Mach number
+  and maximum axial and normal accelerations. The control search space is first
+  explored by the population-based algorithm, which uses a single shooting
+  method to evaluate the performance of candidate solutions. The resultant
+  optimal control law and corresponding trajectory are then further refined by
+  a direct collocation method based on finite elements in time. Two distinct
+  operational phases, one using an air-breathing propulsion mode and the second
+  using rocket propulsion, are considered. The presence of uncertainties in the
+  atmospheric and vehicle aerodynamic models are considered in order to
+  quantify their effect on the performance of the vehicle. Firstly, the
+  deterministic optimal control law is re-integrated after introducing
+  uncertainties into the models. The proximity of the final solutions to the
+  target states are analysed statistically. A second analysis is then
+  performed, aimed at determining the best performance of the vehicle when
+  these uncertainties are included directly in the optimisation. The
+  statistical analysis of the results obtained are summarized by an expectancy
+  curve which represents the probable vehicle performance as a function of the
+  uncertain system parameters. This analysis can be used during the preliminary
+  phase of design to yield valuable insights into the robustness of the
+  performance of the vehicle to uncertainties in the specification of its
+  parameters. © 2012 by Richard E Brown, Edmondo Minisci, Christie Maddock,
+  Ian Taylor, Fabrizio Pescetelli.%
+    }
+    \field{booktitle}{18th AIAA/3AF International Space Planes and Hypersonic
+  Systems and Technologies Conference}
+    \verb{doi}
+    \verb 10.2514/6.2012-5828
+    \endverb
+    \field{isbn}{978-1-60086-931-0}
+    \field{number}{September}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{{Ascent Trajectory Optimisation for a Single-Stage-to-Orbit
+  Vehicle with Hybrid Propulsion}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2012-5828
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/Pescetelli.pdf:pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Mooij}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={Mooij},
+         familyi={M\bibinitperiod},
+         given={Erwin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pringer}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Modeling and Optimization in Space Engineering}}
+    \field{year}{2019}
   \endentry
 
   \entry{Wilhite1991}{article}{}
@@ -3132,27 +3219,71 @@
     \field{year}{2002}
   \endentry
 
-  \entry{Staufenbiel2000}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SRW}{%
-         family={Staufenbiel},
+  \entry{mochammad}{thesis}{}
+    \name{author}{2}{}{%
+      {{hash=SF}{%
+         family={Space},
          familyi={S\bibinitperiod},
-         given={R\bibnamedelima W},
-         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+         given={Future},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Systems},
+         familyi={S\bibinitperiod},
+         given={Transport},
+         giveni={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SRW1}
-    \strng{fullhash}{SRW1}
+    \strng{namehash}{SFST1}
+    \strng{fullhash}{SFST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{6}
-    \field{pages}{618\bibrangedash 622}
-    \field{title}{{Second-Stage Trajectories of Air-Breathing Space Planes}}
-    \field{volume}{27}
+    \field{title}{{Stage Separation Aerodynamics of Future Space Transport
+  Systems Stage Separation Aerodynamics of Future Space Transport Systems}}
+    \list{institution}{1}{%
+      {Technischen Universit\"{a}t M\"{u}nchen}%
+    }
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Staufenbiel.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/mochammad.pdf:pdf
     \endverb
-    \field{year}{2000}
+    \field{type}{phdthesis}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Kudo2005}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KK}{%
+         family={Kudo},
+         familyi={K\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kanda},
+         familyi={K\bibinitperiod},
+         given={Takeshi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{aerospace plane,pitching moment,staging,trajectory,unstart}
+    \strng{namehash}{KKKT1}
+    \strng{fullhash}{KKKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2322/tjsass.48.129
+    \endverb
+    \field{issn}{0549-3811}
+    \field{number}{161}
+    \field{pages}{129\bibrangedash 134}
+    \field{title}{{Staging of Two-Stage-to-Orbit Aerospace Plane}}
+    \field{volume}{48}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kudo.pdf:pdf
+    \endverb
+    \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
+  Space Sciences}
+    \field{year}{2005}
   \endentry
 
   \entry{Kimura1999}{article}{}
@@ -3303,79 +3434,6 @@
     }
     \field{type}{phdthesis}
     \field{year}{2009}
-  \endentry
-
-  \entry{Hellman}{report}{}
-    \name{author}{1}{}{%
-      {{hash=HBM}{%
-         family={Hellman},
-         familyi={H\bibinitperiod},
-         given={Barry\bibnamedelima Mark},
-         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HBM1}
-    \strng{fullhash}{HBM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{1\bibrangedash 18}
-    \field{title}{{Comparison of Return to Launch Site Options for a Reusable
-  Booster Stage}}
-    \list{institution}{1}{%
-      {Space Sytems Design Lab, Georgia Institute of technology}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Hellman.pdf:pdf
-    \endverb
-    \field{type}{techreport}
-    \field{year}{2005}
-  \endentry
-
-  \entry{Tetlow1992}{article}{}
-    \name{author}{4}{}{%
-      {{hash=TMR}{%
-         family={Tetlow},
-         familyi={T\bibinitperiod},
-         given={M\bibnamedelima R},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=SoUM}{%
-         family={Sch-ograve},
-         familyi={S\bibinitperiod-o\bibinitperiod},
-         given={U\bibnamedelima M},
-         giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=T}{%
-         family={Ttle},
-         familyi={T\bibinitperiod},
-      }}%
-      {{hash=SGM}{%
-         family={Schneider},
-         familyi={S\bibinitperiod},
-         given={G\bibnamedelima M},
-         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TMR+1}
-    \strng{fullhash}{TMRSoUMTSGM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/2.3742
-    \endverb
-    \field{issn}{0022-4650}
-    \field{number}{5}
-    \field{pages}{752\bibrangedash 758}
-    \field{title}{{Comparison of Glideback and Flyback Boosters}}
-    \verb{url}
-    \verb http://dx.doi.org/10.2514/2.3742
-    \endverb
-    \field{volume}{38}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Tetlow.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{1992}
   \endentry
 
   \entry{Moshman2014}{article}{}
@@ -7516,6 +7574,28 @@
     \field{year}{2015}
   \endentry
 
+  \entry{HypersonicGas}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AJ}{%
+         family={Anderson},
+         familyi={A\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {American Institute of Aeronautics}%
+      {Astronautics}%
+    }
+    \strng{namehash}{AJ1}
+    \strng{fullhash}{AJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Hypersonic and high Temperature Gas Dynamics: Second
+  Edition}}
+    \field{year}{2000}
+  \endentry
+
   \entry{Dirkx}{book}{}
     \name{author}{2}{}{%
       {{hash=DD}{%
@@ -7605,6 +7685,54 @@
     \endverb
     \field{journaltitle}{Journal of Aircraft}
     \field{year}{2008}
+  \endentry
+
+  \entry{Kourtides}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KDa}{%
+         family={Kourtides},
+         familyi={K\bibinitperiod},
+         given={Demetrius\bibnamedelima a.},
+         giveni={D\bibinitperiod\bibinitdelim a\bibinitperiod},
+      }}%
+      {{hash=PWC}{%
+         family={Pitts},
+         familyi={P\bibinitperiod},
+         given={William\bibnamedelima C.},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Araujo},
+         familyi={A\bibinitperiod},
+         given={Myrian},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZRS}{%
+         family={Zimmerman},
+         familyi={Z\bibinitperiod},
+         given={R.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDa+1}
+    \strng{fullhash}{KDaPWCAMZRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1177/073490418800600501
+    \endverb
+    \field{issn}{15308049}
+    \field{number}{5}
+    \field{pages}{313\bibrangedash 332}
+    \field{title}{{High-Temperature Properties of Ceramic Fibers and
+  Insulations for Thermal Protection of Atmospheric Entry and Hypersonic Cruise
+  Vehicles}}
+    \field{volume}{6}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kourtides.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Fire Sciences}
+    \field{year}{1988}
   \endentry
 
   \entry{Marini2001}{article}{}
