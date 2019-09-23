@@ -16,9 +16,9 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces The flight trajectory of the SPARTAN. a) shows the physical trajectory and b) shows the forces on the vehicle and performance indicators.\relax }}{47}{figure.caption.34}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces The third stage rocket of the rocket-scramjet-rocket launch system\cite {Preller2017b}.\relax }}{48}{figure.caption.35}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces The third stage trajectory of The SPARTAN launch system\cite {Preller2018a}.\relax }}{48}{figure.caption.36}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{51}{figure.caption.39}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{52}{figure.caption.39}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of \textsf {h} and \textsf {p} collocation methods\cite {Kelly2015}.\relax }}{53}{figure.caption.40}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{54}{figure.caption.42}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{55}{figure.caption.42}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{59}{figure.caption.45}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite {Sagerman2017}. \leavevmode {\color {red}XXX Change this picture to something more relevant}\relax }}{60}{figure.caption.46}
 \addvspace {10\p@ }

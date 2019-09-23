@@ -784,7 +784,7 @@ The trajectory of the third stage has to date been constrained to the scramjet a
  Once the density of the atmosphere is low enough, the thermal protection system separated from the vehicle for mass efficiency, and once exoatmospheric, the third stage performs a Hohmann transfer to reach the desired orbit. 
 This trajectory enables the delivery of 279.8kg\cite{Preller2018a} of payload to sun synchronous orbit when using a third stage powered by a Pratt \& Whitney RL-10-3A\cite{Preller2018a}. 
 
-Whilst the SPARTAN launch system is the most studied 3STO airbreathing system, it is evident that there is significant portions of the system left to design in detail, and significant design challenges to overcome. It is also evident that the trajectory analysis of The SPARTAN, like all 3STO launch systems, and many 2STO launch systems, makes significant assumptions as to the most optimal flight path, notably constraining the scramjet accelerator to constant dynamic pressure flight. 
+Whilst the SPARTAN launch system is the most studied 3STO airbreathing system, it is evident that there is significant portions of the system left to design in detail, and significant design challenges to overcome. It is also apparent that the trajectory analysis of The SPARTAN, like all 3STO launch systems, and many 2STO launch systems, makes significant assumptions as to the most optimal flight path, notably constraining the scramjet accelerator to constant dynamic pressure flight. 
 As previous studies have indicated\cite{Preller2017b}, if the performance and designs of this launch system and 3STO airbreathing launch systems in general are to be improved, the development and analysis of an optimal launch trajectory is necessary.
 
 
@@ -795,22 +795,23 @@ As previous studies have indicated\cite{Preller2017b}, if the performance and de
 
 \section{Optimal Control}\label{sec:Optimisation}
 
--XXX have something about how sensitive scramjet engines are
 
--xxx explain how this differs from guidance and control
 
--XXX this starts exactly the same as last section, change a little..
 
-\textcolor{red}{In order to investigate the best possible way to fly a rocket-scramjet-rocket launch system to orbit, a simulation must be developed that will calculate the optimal flight path, taking into account the trajectory of all of the stages of the launch system, including ascent trajectories, as well as the return of the scramjet accelerator stage. 
-Calculating the optimal trajectory of a launch system with multiple stages and multiple modes of propulsion is a complex process. 
-Defining the trajectory of a launch system purely from vehicle analysis is unlikely to yield a trajectory which maximises the performance of the system.
-A simulation method is required that is able to calculate a trajectory path, which maximises the performance of the launch system, while taking into account the aerodynamic and propulsive properties of each stage and propulsion mode. 
-Optimal control theory is used in situations where a control sequence must be found to minimise or maximise an objective function with little prior knowledge. 
-Optimal control theory has been widely used in aerospace applications, including being used to optimise the launch of airbreathing hypersonic launch vehicles\cite{Powell1991,Lu1993,Trefny1999,Roche2000,Pescetelli2012,Young2006}, \textcolor{red}{including those detailed in Section \ref{sec:AscentTrajectories}}.
+
+\textcolor{red}{To investigate the best possible way of flying a rocket-scramjet-rocket launch system to orbit, a simulation must be developed that will calculate the optimal flight path, taking into account the trajectory of all of three stages of the launch system, including ascent trajectories, as well as the return to base of the scramjet accelerator stage. Calculating an optimal trajectory that combines all phases of a partially reusable, partially airbreathing, three-stage launch system is a complex task, that has not been carried out to-date.
+Defining the trajectory of a launch system with multiple stages and multiple modes of propulsion purely from an a priori vehicle analysis is unlikely to yield a trajectory that maximises the performance of the system, due to the highly nonlinear performance of a multi-stage, multi-propulsion mode launch system, and the complex trade-offs that are present between the stages. The effects of these trade-offs are extremely difficult to predict, particularly because of the high sensitivity of airbreathing engines to flight conditions, and the complex aerodynamics of an airbreathing launch system. 
+A method of determining the optimal flight path is required, that is able to maximise the performance of the launch system with very few assumptions as to the shape of the trajectory. 
 }
 
+\textcolor{red}{
+Optimal control theory is used in situations where a control sequence must be found to produce an optimal trajectory with little prior knowledge of the form that the optimal trajectory will take. 
+Optimal control theory is a general term for the mathematics of optimising a time variant dynamic system, that can be controlled. 
+Optimal control theory is distinct from control theory in that it does not necessarily attempt to match a set reference or goal, as is generally the case for trajectories developed using control theory methods such as feedback control. Rather, a single global objective function is minimised by determining optimised control actions across the trajectory, subject to a set of user defined constraints.  
+Optimal control theory has been widely used in aerospace applications, and has been successfully used to optimise the launch of airbreathing hypersonic launch vehicles\cite{Powell1991,Lu1993,Trefny1999,Roche2000,Pescetelli2012,Young2006}, including some of the trajectories detailed in Section \ref{sec:AscentTrajectories}. 
+}
 
-For an optimisation of a complex trajectory there are a variety of numerical methods that are useful for specific problem types. These are separated into two categories: direct and indirect solution methods\cite{Betts1998}. Indirect methods are based on the calculus of variations or minimum principle model, and generally result in high accuracy solutions to optimisation problems\cite{Bulirsch1993}. However indirect models suffer from the drawbacks of small radii of convergence and the fact that the equations to be solved often exhibit strong nonlinearity and discontinuities. This means that indirect methods will not be solvable unless the problem is very well defined with a minimum of nonlinearity, making indirect methods unsuitable for many complex optimisation problems, such as aerospace vehicle simulations which can exhibit strong nonlinear behaviour and have a wide solution space. 
+For an optimisation of a complex trajectory there are a variety of optimal control methods that are useful for specific problem types. These are separated into two categories: direct and indirect solution methods\cite{Betts1998}. Indirect methods are based on the calculus of variations or minimum principle model, and generally result in high accuracy solutions to optimisation problems\cite{Bulirsch1993}. However indirect models suffer from the drawbacks of small radii of convergence and the fact that the equations to be solved often exhibit strong nonlinearity and discontinuities. This means that indirect methods will not be solvable unless the problem is very well defined with a minimum of nonlinearity, making indirect methods unsuitable for many complex optimisation problems, such as aerospace vehicle simulations which can exhibit strong nonlinear behaviour and have a wide solution space. 
 
 Direct methods transform an optimisation problem into a nonlinear programming (NLP) problem which can be solved computationally\cite{Stryk1992}. NLP solvers solve the optimisation problem defined as\cite{Bazaraa2013}:
 
@@ -962,6 +963,8 @@ Although many of these optimisation packages are relatively similar, and are app
 
 
 \section{Aerodynamic Analysis}
+
+-\textcolor{red}{XXX I should have here: previous studies have used low fidelity methods, particularly when doing an MDO, but I want to use a higher fidelity to allow better insights into the optimal trajectory shape}
 
 Optimising the trajectory of a space access vehicle using optimal control methods requires the input of a dynamic model of the launch vehicle. 
 This dynamic model requires the aerodynamics of each stage of the launch system to be characterised at every flight condition experienced during launch. \textcolor{red}{This is usually achieved either analytically for simple vehicle designs, or through the generation of large aerodynamic coefficient databases that cover the operable region of the vehicle. The generation of databases is generally necessary when it is desired to capture more complex and nonlinear aerodynamics that must be pre-computed for efficiency.}
