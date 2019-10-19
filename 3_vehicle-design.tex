@@ -10,7 +10,7 @@
 		This rocket-scramjet-rocket launch system is designed to launch small satellites to a 567km altitude sun-synchronous orbit and is based on the SPARTAN launch system concept, originally designed by Jazra, Preller \& Smart\cite{Preller2017b,Jazra2013}, and now being developed by The University of Queensland and Hypersonix.
 		the SPARTAN launch system is used as the basis for a representative launch system within this study because it is the only rocket-scramjet-rocket launch system undergoing design, 
 		 and it is up-to-date technologically because it is currently in the research and design process. In addition, the SPARTAN is relatively mature when compared to other small, multi-stage systems, with multiple studies dedicated to its design, which is based on the experimentally tested REST scramjet engines.   
-	The rocket-scramjet-rocket launch system described in this chapter is used as a representative model for a partially-airbreathing, partially-reusable, three-stage small satellite launcher, and the optimal trajectory results and performance analysis produced are expected to be directly applicable to future iterations of the SPARTAN as well as generally applicable to other multi-stage airbreathing launch systems that use a 'space-plane' type design. }
+	The rocket-scramjet-rocket launch system described in this chapter is used as a representative model for a partially-airbreathing, partially-reusable, three-stage small satellite launcher. The optimal trajectory results and performance analysis produced are expected to be directly applicable to future iterations of the SPARTAN, as well as generally applicable, at least in part, to other multi-stage airbreathing launch systems that use a 'space-plane' type design. }
 	
 	
 	 %However, the designs of the airbreathing launchers studied in Section XXX do show some similarities, primarily due to the requirement for the airbreathing stages to fly within the atmosphere and return to land under aerodynamic control. The airbreathing launch systems that have been designed to date are all configured for sustained in-atmosphere flight, including large lifting surfaces and aerodynamic control capability. In addition to this, airbreathing launch systems must include the systems necessary for airbreathing operation and reusability, including thermal protection, engines, and any necessary auxiliary systems. 
@@ -90,13 +90,13 @@ The scramjet accelerator design is presented first, as the design of the scramje
 		\caption{Mass breakdown of the modified scramjet accelerator vehicle.}
 		\label{tab:MassBreakdown}
 		\end{table}
-This study assumes that the third stage is stored within the fuselage of the scramjet accelerator for simplicity. It is assumed that the release mechanism for the third stage is able to be situated within the available space surrounding the third stage, however the release mechanism is not considered further in this study \textcolor{red}{(see Section XXX)}. %- modelling uncertainties and simplifications)}
+This study assumes that the third stage is stored within the fuselage of the scramjet accelerator for simplicity. It is assumed that the release mechanism for the third stage is able to be situated within the available space surrounding the third stage, however the release mechanism, as well as the change in the aerodynamics of the vehicle during staging,  is not considered further in this study \textcolor{red}{(see Section XXX for a discussion of the major simplifications within the launch system model)}. %- modelling uncertainties and simplifications)}
 		
 		
 		% LH2 density
 		 %http://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C1333740&Type=SatT&Digits=5&PLow=.5&PHigh=1.5&PInc=.1&RefState=DEF&TUnit=K&PUnit=atm&DUnit=kg/m3&HUnit=kJ/mol&WUnit=m/s&VisUnit=uPa*s&STUnit=N/m%
 
-		The fuel tanks are sized to fit around the kestrel-powered third stage. There are three fuel tanks; two cylindrical tanks situated underneath the third stage; and a truncated conical tank in the nose. The conical fuel tank is designed to fit immediately forward of the third stage. This fuel tank is 8m long, leaving 1.47m$^3$ of space in the nose for cooling systems, frontal landing gear, and any additional systems or sensors which are necessary in the nose cone. The cylindrical tanks are positioned underneath and slightly to either side of the third stage, leaving space underneath for vehicle systems. The cylindrical fuel tanks are designed to be 8.5m long, with diameters of 0.87m, sized to give a nominal total tank volume of 22m$^3$.
+		The fuel tanks are sized to fit around the kestrel-powered third stage, \textcolor{red}{as shown in Figure \ref{fig:INTERNALS}}. There are three fuel tanks; two cylindrical tanks situated underneath the third stage; and a truncated conical tank in the nose. The conical fuel tank is designed to fit immediately forward of the third stage. This fuel tank is 8m long, leaving 1.47m$^3$ of space in the nose for cooling systems, frontal landing gear, and any additional systems or sensors which are necessary in the nose cone. The cylindrical tanks are positioned underneath and slightly to either side of the third stage, leaving space underneath for vehicle systems. The cylindrical fuel tanks are designed to be 8.5m long, with diameters of 0.87m, sized to give a nominal total tank volume of 22m$^3$.
 The resized fuel tanks hold a total of 1562kg of LH2 fuel. This assumes an LH2 density of 71kg/m$^3$, slightly denser than LH2 at phase transition point at 1 atm.
 The mass of the fuel tanks is scaled, by surface area, from Dawid Preller's Baseline vehicle model\cite{Preller2017b}, giving a total fuel tank mass of 179.4kg.
 		
@@ -117,34 +117,30 @@ The mass of the fuel tanks is scaled, by surface area, from Dawid Preller's Base
 		%-differentiate between heating at stagnation points (which are probably not connected directly to multilayer %insulation) and points around the vehicle which are likely to be connected directly
 		%ie. stagnation points are calculated to see if the TPS will hold other points are calculated to see if 1000C is exceeded on insulated side 
 
-The scramjet accelerator is thermally protected by a 11.3mm thick Carbon-Carbon aeroshell, with an alumina-borosilicate mat/ stainless steel multilayer insulator at the connection points between the aeroshell and the aluminium internal structure\cite{Preller2018a}. The nose tip of the scramjet accelerator is protected by 40mm thick tungsten, weighing 92kg, to provide rapid heat dissipation and sink in the area of greatest heating. For the purposes of this work it is assumed that the external shell is not connected to the internal structure close to points of large heating such as leading edges, and is structurally independent in these regions. 
+\textcolor{red}{For this study the thermal protection system has been adapted from the thermal protection system used by Preller\cite{Preller2018a}}. The scramjet accelerator is thermally protected by a 11.3mm thick Carbon-Carbon aeroshell, with an alumina-borosilicate mat/ stainless steel multilayer insulator at the connection points between the aeroshell and the aluminium internal structure\cite{Preller2018a}. The nose tip of the scramjet accelerator is protected by 40mm thick tungsten, weighing 92kg, to provide rapid heat dissipation and sink in the area of greatest heating. For the purposes of this work it is assumed that the external shell is not connected to the internal structure close to points of large heating such as leading edges, and is structurally independent in these regions. 
 In previous studies, a similar heat shielding has been assumed to provide adequate protection for the scramjet accelerator flying along a constant dynamic pressure trajectory\cite{Preller2018a}, and this assumption is used in the main body of this work. The thermal properties of the launch system are investigated further in Section \textcolor{red}{XXX} and it is concluded that a more advanced thermal protection system may be necessary. However, the full redesign of the thermal protection system of the SPARTAN is beyond the scope of this report, particularly as this is currently an area of significant research effort, and there are many possibly viable options for the cooling of hypersonic systems. 
+\textcolor{red}{XXX re-write this after analysis is complete}
 
+\textcolor{red}{
 \subsection{Propulsion}\label{sec:propulsion}
-
-The scramjet accelerator is powered by four underslung scramjet engines, fuelled by liquid hydrogen. These engines are Rectangular To Elliptical Shape Transition (REST) engines, configured to allow for a conical forebody (C-REST). REST engines have a rectangular to elliptical shape transition inlet, and an elliptical combustor, offering simplicity in design as well as reduced thermal loading and viscous drag compared to scramjets with planar geometries\cite{Suraweera2009}.  REST engines are also specifically designed to operate over a wide range of Mach numbers, and at off design conditions, making them particularly applicable to use on scramjet accelerator vehicles. 
+}
+The scramjet accelerator is powered by four underslung scramjet engines, fuelled by liquid hydrogen. These engines are Rectangular To Elliptical Shape Transition (REST) engines, configured to allow for a conical forebody (C-REST). REST engines have a rectangular to elliptical shape transition inlet, and an elliptical combustor, offering simplicity in design as well as reduced thermal loading and viscous drag compared to scramjets with planar geometries\cite{Suraweera2009}.  REST engines are also specifically designed to operate over a wide range of Mach numbers, and at off design conditions, making them particularly applicable to use on scramjet accelerator vehicles. REST engines have been shown experimentally to operate successfully at off design conditions\cite{Smart2006,Smart2009a}, and have shown good agreements with numerical CFD models\cite{Smart2009a}
 
 
 \subsubsection{Propulsion Modelling}\label{sec:Propulsion}
+Before the flow enters the engine, it is affected by the conical shock generated by the forebody of the scramjet accelerator.
+Figure \ref{fig:SPARTANEngineshock} shows the locations of the flow properties, which are necessary to calculate engine performance. The ambient atmospheric conditions are calculated by interpolation using the 1976 NASA Atmospheric properties\cite{Administration1976}.
+The flow properties at the inlet of the engines is calculated using the Taylor-Maccoll analysis method for conical shocks\cite{TaylorMaccoll}. This calculation is performed in the \textsf{cone\_shoot} program provided for this study by Prof. Michael Smart. The flow conditions as a function of flight conditions following the conical shock are shown in Figure \ref{fig:ConicalShock}.  
 
 
-\textcolor{red}{
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/C-REST}
-	\caption{The C-RESTM10 propulsion database, specific impulse.}
-	\label{fig:C-REST}
-\end{figure}
-To deliver a payload to orbit, the SPARTAN's scramjet accelerator stage uses four Rectangular-to-Elliptical Shape Transition (REST) scramjet engines, with inlets configured to allow installation on a conical forebody (C-REST). The C-REST engines that the scramjet accelerator uses have been configured to fly between Mach 5 and 10. This type of engine is known as a C-RESTM10 engine\cite{Preller2017b}. The REST engine has been shown experimentally to operate successfully at off design conditions\cite{Smart2006,Smart2009a}, and has shown good agreements with numerical CFD models\cite{Smart2009a}. 
-}
-\textcolor{red}{
-A C-RESTM10 propulsion database has been used in previous studies to model the scramjet engines of the scramjet accelerator\cite{Preller2017b}. The specific impulse profile of the C-RESTM10 engine, taken from the C-RESTM10 propulsion database, is shown in Figure \ref{fig:C-REST}. This database has been created through separate modelling of the compression within the inlet, combustion within the combustor, and expansion through the internal nozzle\cite{Preller2018a}. The inlet compression was modelled by performance curves based on a set of CFD solutions\cite{Preller2018a}. These performance curves are used to obtain the flow conditions at the end of the inlet. The combustor is modelled using quasi-one-dimentional cycle analysis, assuming a combustion efficiency of 80\%\cite{Preller2018a}. Lastly, the properties at the end of the combustor are expanded assuming a nozzle efficiency of 90\%\cite{Preller2018a}.
+The C-REST engines that the scramjet accelerator uses have been configured to fly between Mach 5 and 10. This type of engine is known as a C-RESTM10 engine\cite{Preller2017b}.  
+A \textsf{CRESTM10} propulsion database has been used in previous studies to model the scramjet engines of the scramjet accelerator\cite{Preller2017b}. The specific impulse profile of the C-RESTM10 engine, taken from the \textsf{CRESTM10} propulsion database, is shown in Figure \ref{fig:ISPinterp}. This database has been created through separate modelling of the compression within the inlet, combustion within the combustor, and expansion through the internal nozzle\cite{Preller2018a}. The inlet compression was modelled by performance curves based on a set of CFD solutions\cite{Preller2018a}. These performance curves are used to obtain the flow conditions at the end of the inlet. The combustor is modelled using quasi-one-dimentional cycle analysis, assuming a combustion efficiency of 80\%\cite{Preller2018a}. Lastly, the properties at the end of the combustor are expanded assuming a nozzle efficiency of 90\%\cite{Preller2018a}.
 The C-RESTM10 is designed for operation at M$_0$ = 10, and the contraction ratio and combustor divergence are not optimal for operation at low Mach numbers. At low Mach numbers, an equivalence ratio of 1 may cause the flow to choke and unstart. 
-Consequently, an equivalence ratio of less than 1 was set at low Mach numbers, in order to avoid unstart\cite{Preller2018a}. At these Mach numbers, the C-REST engines are operating in dual-mode\cite{Preller2018a}. 
-}
+Consequently, an equivalence ratio of less than 1 is set at low Mach numbers, in order to avoid unstart\cite{Preller2018a}. At these Mach numbers, the C-REST engines are operating in dual-mode\cite{Preller2018a}. 
+
 % Above moved from lit review 
 
- The C-REST engines are simulated separately to the aerodynamic simulations of the scramjet accelerator, using a combination of quasi-1D flow path analysis and performance curves based on high fidelity CFD simulations\cite{Preller2017b,Preller2018a}. The engine model takes the conditions at the inlet, and calculates the exit conditions and propulsive properties of the engine. The engine exit conditions are added into the aerodynamic simulations and the propulsive properties are used in the simulated vehicle model.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/SPARTANEngineshock}
@@ -174,22 +170,15 @@ Consequently, an equivalence ratio of less than 1 was set at low Mach numbers, i
 	\caption{Flow conditions after the conical shock generated by the vehicle nose cone as a function of flight Mach number and angle of attack. Figure a) shows the Mach number, b) shows the pressure ratio, and c) shows the temperature ratio following the conical shock, at the engine inlet.}
 	\label{fig:ConicalShock}
 \end{figure}
-Before the flow enters the engine, it is affected by the conical shock generated by the forebody of the scramjet accelerator.
-Figure \ref{fig:SPARTANEngineshock} shows the locations of the flow properties, which are necessary to calculate engine performance. The ambient atmospheric conditions are calculated by interpolation using the 1976 NASA Atmospheric properties\cite{Administration1976}.
-The flow properties at the inlet of the engines is calculated using the Taylor-Maccoll analysis method for conical shocks\cite{TaylorMaccoll}. This calculation is performed in the \textsf{cone\_shoot} program provided for this study by Prof. Michael Smart. The flow conditions as a function of flight conditions following the conical shock are shown in Figure \ref{fig:ConicalShock}.  
 
 
-
-
-
- The engine model used is based on the \textsf{CRESTM10} database\cite{Preller2017b,Preller2018a}, analysed using quasi-1D simulation and provided for this study by Prof. Michael Smart. This database has previously been used in simulations of the scramjet accelerator, as detailed in Section \textcolor{red}{XXX}.
-This database provides data points of engine performance over inlet conditions within the operational range, at 50kPa dynamic pressure equivalent conditions. The specific impulse data set is shown in Figure \ref{fig:ISPinterp}. This data is interpolated for the given inlet conditions, to calculate specific impulse produced by the engine. As the data points of the \textsf{CRESTM10} database are unevenly distributed for inlet Mach and temperature, care must be taken in order to interpolate smoothly to allow the optimal control solver to converge successfully. To ensure that smooth interpolation is achieved, the \textsf{CRESTM10} database is first interpolated using linear interpolation, for each `set' of four nodes which form a square. A uniform grid is created using this linear interpolation, on which a cubic spline interpolation is applied using Matlab's \textsf{griddedInterpolant} function. This is explained in detail in Appendix \ref{Appendix:sim}. During flight the C-REST inlet conditions generally stay within the region bounded by the available data. However, for the purposes of the trajectory optimisation, it is necessary to provide data for a wide range of inlet conditions (T$_1$, M$_1$). To calculate $I_{SP}$ and equivalence ratios outside of the modelled range of inlet conditions, the existing data is extrapolated. This extrapolation is performed in the same manner as the interpolation, a linear extrapolation, followed by a cubic spline interpolation of the extrapolated points. This allows for smooth continuity between the interpolated and extrapolated points, while ensuring that the extrapolated regions provide reasonable values. 
+The \textsf{CRESTM10} database provides data points of engine performance over inlet conditions within the operational range, at 50kPa dynamic pressure equivalent conditions. The specific impulse data set is shown in Figure \ref{fig:ISPinterp}. This data is interpolated for the given inlet conditions, to calculate specific impulse produced by the engine. As the data points of the \textsf{CRESTM10} database are unevenly distributed for inlet Mach and temperature, care must be taken in order to interpolate smoothly to allow the optimal control solver to converge successfully. To ensure that smooth interpolation is achieved, the \textsf{CRESTM10} database is first interpolated using linear interpolation, for each `set' of four nodes which form a square. A uniform grid is created using this linear interpolation, on which a cubic spline interpolation is applied using Matlab's \textsf{griddedInterpolant} function. This is explained in detail in Appendix \ref{Appendix:sim}. During flight the C-REST inlet conditions generally stay within the region bounded by the available data. However, for the purposes of the trajectory optimisation, it is necessary to provide data for a wide range of inlet conditions (T$_1$, M$_1$). To calculate $I_{SP}$ and equivalence ratios outside of the modelled range of inlet conditions, the existing data is extrapolated. This extrapolation is performed in the same manner as the interpolation, a linear extrapolation, followed by a cubic spline interpolation of the extrapolated points. This allows for smooth continuity between the interpolated and extrapolated points, while ensuring that the extrapolated regions provide reasonable values. This smooth and reasonable extrapolation is critical for the trajectory optimisation process, even though the final trajectory conditions are not expected to fall significantly outside of the bounds of the \textsf{CRESTM10} database. The optimiser must be allowed to extrapolate with reasonable results in order to fully explore the solution space, and ensure robust convergence on an optimal solution. 
 
 For operation at high Mach numbers, the fuel mass flow rate is assumed to be stoichiometric, so that $\dot{m_f}$ = $0.0291\dot{m}$. This ensures that the scramjet engines are performing at high efficiency throughout the acceleration of the scramjet stage. 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/3_vehicle_design/ISPinterp}
-	\caption{Specific impulse of the C-REST engines with input temperature and Mach number. Available data points are indicated.}
+	\caption{Specific impulse of the C-REST engines with input temperature and Mach number. Available data points are indicated. \textcolor{red}{M$_1$ and T$_1$ are the inlet Mach number and temperature, as shown in Figure \ref{fig:SPARTANEngineshock}.}}
 	\label{fig:ISPinterp}
 \end{figure}
 However, the C-REST engine is a fixed geometry engine, primarily designed for operability at high Mach numbers\cite{Preller2017b}. At lower Mach numbers, the addition of excessive fuel may cause the engine to choke and unstart, resulting in total loss of thrust\cite{Preller2017b}. To avoid unstart, an equivalence ratio ($\phi$) of less than 1 is necessary at low Mach numbers. In this region the equivalence ratio is set to the maximum value which does not cause the engine to unstart. The equivalence ratio interpolation is linear, as the number of data points available for interpolation is low. The prescribed equivalence ratio over the range of scramjet engine operation is shown in Figure \ref{fig:EquivalenceRatioInterp}.
@@ -201,7 +190,7 @@ However, the C-REST engine is a fixed geometry engine, primarily designed for op
 \end{figure}
 For these conditions, the fuel mass flow rate is determined by approximating the flow into the inlet as an ideal gas; 
 \begin{equation}
-\dot{m} = 0.9 m_c A_{cap} P_0 M_0 \sqrt{\dfrac{\gamma_0}{R_{air} T_0}},
+\dot{m} = 0.9 \; m_c A_{cap} P_0 M_0 \sqrt{\dfrac{\gamma_0}{R_{air} T_0}},
 \end{equation}
 \begin{equation}
 \dot{m}_{fuel} = (\dfrac{m_{fuel}}{m_{ox}} )_{st} \phi \dot{m}.
@@ -212,7 +201,7 @@ The thrust for each engine, $T$, is obtained by inclusion of the interpolated sp
 T = g_0\dot{m}I_{sp}. 
 \end{equation}
 
-In the available database, the C-REST engine was modelled to a nozzle exit area of 0.5586m$^2$. This is smaller than the exit area modelled on the version of the scramjet accelerator used in this work, of 0.9719m$^2$. For this reason, additional thrust is obtained from an additional nozzle segment, and the specific impulse of the C-REST engines will be higher than calculated in the database. The modelling of this additional nozzle segment and the thrust obtained are detailed in Section \ref{sec:engine-oncart}.
+In the available database, the C-REST engine was modelled to a nozzle exit area of 0.56m$^2$. For the scramjet vehicle modelled in this work, this is further expanded to 0.97m$^2$. Additional thrust is obtained from an additional nozzle segment, and the specific impulse of the C-REST engines will be higher than calculated from the \textsf{CRESTM10} database. The modelling of this additional nozzle segment and the thrust obtained are detailed in Section \ref{sec:engine-oncart}.
 
 
 
@@ -251,7 +240,7 @@ The aerodynamics are calculated for Mach numbers between 0-10, angles of attack 
 The process for generating the aerodynamic databases is shown in Figure \ref{fig:FlowChart}. First, a CAD model of the scramjet accelerator is developed, providing the centre of gravity of the scramjet accelerator, as well as a geometry database which is used to create triangulated surface meshes. These surface meshes are then imported into the inviscid CFD solver Cart3D\cite{CART3D}, which calculates flow solutions to determine the aerodynamics of the scramjet accelerator at various flight conditions. CFD solutions are generated for the scramjet accelerator with the scramjet engines turned off, with the scramjet engines operational, and for a range of flap deflections. 
 The flap deflections necessary to trim the vehicle are calculated at every flight condition, by balancing the aerodynamic moment of the scramjet accelerator with the aerodynamic moment generated by the flaps. 
 The additional lift and drag generated by the flaps are then added to the untrimmed aerodynamics to create a trimmed database.
-Finally, the viscous components of the aerodynamics of the scramjet accelerator are calculated, and added to the aerodynamic database. These processes are described in detail in the following sections. 
+Finally, the viscous contributions to the aerodynamics of the scramjet accelerator are calculated, and added to the aerodynamic database. These processes are described in detail in the following sections. 
 
 
 
@@ -271,8 +260,8 @@ Finally, the viscous components of the aerodynamics of the scramjet accelerator 
 
 The aerodynamics of the SPARTAN have been calculated using Cart3D, an inviscid CFD package used in the preliminary design of aerospace vehicles. Cart3D utilises adjoint mesh adaption with a Cartesian cut-cells approach to produce an iteratively refined mesh to fit a flow solution. Cart3D is used to generate the aerodynamic database of the SPARTAN due to its applicability in both the subsonic
 and supersonic regimes, and its robustness across multiple flow solutions\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a,Gomez2004}. Cart3D has previously been used to
-analyse hypersonic vehicles, and has shown good agreement with experimental data across multiple studies\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a}, as described in Section \ref{sec:Cart3d}.
-
+analyse hypersonic vehicles, and has shown relatively good agreement with experimental data across multiple studies\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a}, as described in Sections \ref{sec:Cart3d} \& \textcolor{red}{\ref{sec:aerounc}}.
+\textcolor{red}{XXX Check these citations and bring this statement into line with lit review and appendix}
 
 \begin{figure}[ht]
 	\begin{subfigure}{.5\textwidth}
@@ -308,9 +297,9 @@ For engine-off aerodynamics, the aerodynamic coefficients of the entire scramjet
 \subsubsection{Engine-On Aerodynamic Analysis}\label{sec:engine-oncart}
 
 When the scramjet engines are turned on, the exhaust exits the nozzle of the engines and expands onto the boat tail of the scramjet accelerator. This changes the aerodynamics of the boat tail significantly, necessitating separate Cart3D simulations to calculate the varied aerodynamic coefficients of the boat tail. In addition, 
-the scaled engine modelled in the \textsf{CRESTM10} propulsion analysis has an exit area of 0.5586m$^2$, smaller than the nozzle exit area on the scramjet accelerator, of 0.9719m$^2$. The larger nozzle exit of the scramjet accelerator provides additional expansion area, and additional thrust, which must be modelled using Cart3D. 
+the scaled engine modelled in the \textsf{CRESTM10} propulsion analysis has an exit area of 0.5586m$^2$, smaller than the nozzle exit area on the scramjet accelerator, of 0.9719m$^2$. The larger nozzle exit of the scramjet accelerator provides additional expansion area, and additional thrust, which is modelled using Cart3D. 
 
-The exhaust of the C-REST engines is simulated using CART3D, using SurfBC boundary conditions, which produce outflow and intflow conditions at the inlet and exit of the scramjet engines\cite{Pandya2004}. The exit conditions calculated by the \textsf{CRESTM10} database, as defined in Section \ref{sec:Propulsion}, are set as the inflow conditions for the Cart3D surface. 
+The exhaust of the C-REST engines is simulated using CART3D, using SurfBC boundary conditions, which produce outflow and inflow conditions at the inlet and exit of the scramjet engines\cite{Pandya2004}. The exit conditions calculated by the \textsf{CRESTM10} database, as defined in Section \ref{sec:Propulsion}, are set as the inflow conditions for the Cart3D surface. 
 The inflow surfaces are positioned inside the nozzle on the scramjet accelerator model, scaled to match the exit area of the engines simulated for the \textsf{CRESTM10} database, 0.5586m$^2$. The surface triangulation of the scramjet accelerator with outflow surfaces is shown in Figure \ref{fig:Pointwise-EngineBC}.
 \begin{figure}[ht]
 	\centering
@@ -331,7 +320,7 @@ P_e^* = P_e/(\gamma_0 P_0),
 \begin{equation}
 M_e^* = \sqrt{\gamma_e/\gamma_0 (M_e \sqrt{ P_e^*/\rho_e^*})^2}.
 \end{equation}
-Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensionalisation includes a correction on the Mach number to account for variation in the specific heat ratio, which is not possible to include directly in Cart3D\cite{Mehta2016}. The exhaust of the scramjet engines expands through the additional area of the scramjet accelerator's nozzle, and is further expanded onto the boat tail on the rear of the scramjet accelerator fuselage. This expansion causes significant force on the boat tail of the scramjet accelerator, generating additional lift, thrust, and moment forces. The total thrust generated by the scramjet accelerator, including the thrust generated by the additional nozzle expansion, and the forces on the boat tail, are shown in Figure \ref{fig:Thrust}, with the corresponding specific impulse shown in Figure \ref{fig:Isp}.
+Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensionalisation includes a correction on the Mach number to account for variation in the specific heat ratio present in the combustion products, which is not possible to include directly in Cart3D\cite{Mehta2016}. The exhaust of the scramjet engines expands through the additional area of the scramjet accelerator's nozzle, and is further expanded onto the boat tail on the rear of the scramjet accelerator fuselage. This expansion causes significant force on the boat tail of the scramjet accelerator, generating additional lift, thrust, and moment forces. The total thrust generated by the scramjet accelerator, including the thrust generated by the additional nozzle expansion, and the forces on the boat tail, are shown in Figure \ref{fig:Thrust}, with the corresponding specific impulse shown in Figure \ref{fig:Isp}.
 
 
 
@@ -358,16 +347,16 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 		
 		\subsubsection{Centre of Gravity Analysis}
 		The centre of gravity locations of the SPARTAN are calculated using CREO. For simplicity, it is assumed that structural, systems and landing gear masses are homogeneously distributed throughout the centre fuselage of the scramjet accelerator. 
-		The calculated centre of gravity for the scramjet accelerator full of fuel and including the third stage rocket is \textcolor{red}{15.24m} along the body length. The centre of gravity varies as fuel is depleted throughout the acceleration phase, and at third stage release, changing the flap deflections required for trim. The cylindrical fuel tanks are depleted first, in order to shift the centre of gravity forward, and improve the aerodynamic stability of the scramjet accelerator during the majority of flight. Depleting fuel from the cylindrical fuel tanks first would likely also serve to reduce fuel slosh during flight, although the fuel slosh is not modelled in this study, and it is assumed that the centre of gravity of each individual tank remains constant. After the cylindrical tanks have been depleted, the fuel in the conical tank within the nose is used. The third stage is released at the end of acceleration, and the centre of gravity changes significantly. When the third stage is released there is still fuel stored in the conical tank for flyback, during which centre of gravity change must also be modelled. 
-		Consequently, aerodynamic databases are created for centre of gravity conditions of; 
+		The calculated centre of gravity for the scramjet accelerator full of fuel and including the third stage rocket is \textcolor{red}{15.24m} along the body length. The centre of gravity varies as fuel is depleted throughout the acceleration phase, and at third stage release, changing the flap deflections required for trim. \textcolor{red}{These centre of gravity variations are shown in Figure \ref{fig:CentreOfGravity}}. The cylindrical fuel tanks \textcolor{red}{(shown underneath the third stage in Figure \ref{fig:INTERNALS})} are depleted first, in order to shift the centre of gravity forward, and improve the aerodynamic stability of the scramjet accelerator during the majority of flight. Depleting fuel from the cylindrical fuel tanks first would likely also serve to reduce fuel slosh during flight, although the fuel slosh is not modelled in this study, and it is assumed that the centre of gravity of each individual tank remains constant. After the cylindrical tanks have been depleted, the fuel in the conical tank within the nose is used. The third stage is released at the end of acceleration, and the centre of gravity changes significantly. When the third stage is released there is still fuel stored in the conical tank for flyback, during which centre of gravity change must also be modelled. 
+		Consequently, trimmed aerodynamic databases are created for centre of gravity conditions of; 
 		\begin{itemize}
 			\item full of fuel including third stage,
 			\item conical fuel tank full of fuel, including third stage,
 			\item empty of fuel including third stage,
 			\item conical fuel tank full of fuel after third stage release,
-			\item and empty of fuel after third stage release.
+			\item and empty of fuel after third stage release,
 		\end{itemize}
-		Each of these conditions, along with the corresponding centre of gravity, is shown in Figure \ref{fig:CentreOfGravity}. At each of the listed centre of gravity conditions, aerodynamic coefficients and flap deflections necessary for trim are calculated.  As each fuel tank is depleted, and the centre of gravity shifts, the aerodynamics at the two closest centre of gravity conditions are interpolated to produce the aerodynamics of the scramjet accelerator.  
+		 as illustrated in Figure \ref{fig:CentreOfGravity}. At each of the listed centre of gravity conditions, aerodynamic coefficients and flap deflections necessary for trim are calculated.  As each fuel tank is depleted, and the centre of gravity shifts, the aerodynamics at the two closest centre of gravity conditions are interpolated to produce the aerodynamics of the scramjet accelerator.  
 		
 		
 		\begin{figure}
@@ -415,7 +404,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 			\label{fig:SPARTANForces}
 		\end{figure}
 		
-		The scramjet accelerator as designed by Preller\cite{Preller2017b} is trimmed using control surfaces on the wings, shown in figure \ref{fig:SPARTAN_FLAPS}. 
+		The scramjet accelerator as designed by Preller\cite{Preller2017b} is trimmed using control surfaces on the wings, shown in figure \ref{fig:SPARTANForces}. 
 		The flaps of the scramjet accelerator are modelled at deflected states of -20$^\circ$, -10$^\circ$, 10$^\circ$, and 20$^\circ$. The scramjet accelerator is modelled in CREO with the flaps at each of these deflected states, and a surface mesh is created in Pointwise. 
 		Cart3D is used to simulate each of these flap deflected states, and Clic is used to extract the aerodynamic coefficients, for Mach numbers between 0.2 and 10. These aerodynamic coefficients are tabulated, and interpolation splines fitted, so that the flight Mach number and the moment generated by the flaps are used to interpolate for the flap deflection, ie. $\theta_{Flaps} = f(M,M_{Flaps})$.
 		\begin{figure}[ht]
@@ -511,7 +500,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 		
 		\subsection{Trimmed Aerodynamic Database of the Scramjet Accelerator with Engine-On}\label{sec:trimmedongineon}
 
-		
+		\textcolor{red}{The processes described in the preceding sections are used to generate trimmed aerodynamic databases for the scramjet accelerator, at all relevant centre of gravity locations for both engine-on and engine-off states.}
 		The engine-on aerodynamics of the scramjet accelerator are used during the simulation of the acceleration phase, when the C-REST engines are operational at all times, as well as during the fly-back phase, when the engines are operational for a short time to aid the scramjet accelerator in returning to its initial launch site.
 		The external aerodynamics of the scramjet accelerator with the scramjet engines powered-on are calculated by removing the engine and boat tail from Cart3D simulations of the scramjet accelerator with engine flowpaths. Engine-on aerodynamic calculations are performed for Mach numbers 5,7,9 and 10. An example of a Cart3D solution of the nozzle exit and boat tail with the scramjet engines powered-on is shown in Figure \ref{fig:EngineOn}, and the aerodynamics of the scramjet accelerator with engines powered-on are shown in Figure \ref{fig:EngineOnAero}.
 		
@@ -594,7 +583,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 
 During the majority of the return flight, the scramjet engines are not operational, and the scramjet accelerator is gliding without power. The return phase takes the scramjet accelerator from third stage separation, at approximately Mach 9, to landing approach at low subsonic speeds. 
  While the engines are not powered-on air flows through the flowpath without fuel injection, generating a large amount of drag. 
-The aerodynamics of the scramjet accelerator are calculated using Cart3D for Mach numbers from 0.2 to 10, and angle of attack values from 0$^\circ$ to 10$^\circ$ to cover the range of flight conditions experienced during the fly-back of the scramjet accelerator.  An example Cart3D solution is shown for a Mach 7 engine off condition in Figure  \ref{fig:CartSPART}. \textcolor{red}{A strong bow shock can be observed, as well as a large shock from the underside of the vehicle, generated by the engine cowl. It can be observed that the aerodynamic pressure is extremely high on the angled portion of the engine cowl, due to its high incident angle to the incoming flow. Significantly high pressure is also experienced by the nose cone and cowl underside, as well as on a section of the tail, where a small shock generated by the wings is incident on the tail.}
+The aerodynamics of the scramjet accelerator are calculated using Cart3D for Mach numbers from 0.2 to 10, and angle of attack values from 0$^\circ$ to 10$^\circ$ to cover the range of flight conditions experienced during the fly-back of the scramjet accelerator.  An example Cart3D solution is shown for a Mach 6 engine off condition in Figure  \ref{fig:CartSPART}. \textcolor{red}{A strong bow shock can be observed, as well as a large shock from the underside of the vehicle, generated by the engine cowl. It can be observed that the aerodynamic pressure is extremely high on the angled portion of the engine cowl, due to its high incident angle to the incoming flow. Significantly high pressure is also experienced by the nose cone and cowl underside, as well as on a section of the tail, where a small shock generated by the wings is incident on the tail.}
 Figure \ref{fig:aero1} shows the engine off aerodynamic characteristics of the scramjet accelerator vehicle over the range of Mach numbers and angle of attack values analysed.
 These results show a distinct maximum region in the L/D of the scramjet accelerator at high Mach numbers, within the hypersonic regime. Below Mach 5, the L/D of the scramjet accelerator decreases sharply. This is caused by the scramjet engines unstarting, generating significant drag. The unstarted scramjet engines are shown in Figure \ref{fig:Unstart}\textcolor{red}{, where shocks within the inlet of the engine are evident, causing high pressures}. Below Mach 3,  the L/D shows a trend of general increase, except at very low angle of attack, as the effects of the unstarted engine lessen. Below Mach 1 the L/D of the scramjet accelerator increases significantly, in part due to not having the significant drag induced from the engines unstarting, as observed in the supersonic regime.  
 
@@ -630,7 +619,7 @@ given separation point, are very closely coupled to the available fuel mass.
 		\hline  $A_{e}$ & $0.552m^2$ \\ 
 		\hline 
 	\end{tabular} 
-	\caption{First Stage Engine Properties\cite{Wade2017}.}
+	\caption{First Stage Engine Properties\cite{Wade2017}. \textcolor{red}{XXX Include uncertainties}}
 	\label{tab:1stStageEngine}
 \end{table}
 The thrust and specific impulse of the Merlin 1-C are determined by interpolation between the sea level and vacuum specific impulse of the Merlin 1-C, shown in Table \ref{tab:1stStageEngine}, with ambient pressure. Thrust scaling is determined by linear pressure scaling using nozzle exit area, $T = T_{SL} + (p_e - p_{SL})A_e$. 
@@ -711,7 +700,7 @@ The third stage rocket is an expendable portion of the launch system, tasked wit
   In previous studies, the third stage of the SPARTAN was designed around a pump-fed RL-10-3A engine\cite{Preller2017b}, and was designed to fit into a cavity on the back of the fuselage of the vehicle\cite{Preller2017b}. For the representative launch vehicle in this work a new third stage is designed, to reduce cost, and to integrate within the fuselage of the scramjet accelerator. 
    
   The third stage rocket in this study is designed around a modified version of the SpaceX Kestrel engine. The Kestrel is a pressure-fed engine, which was designed for launching small satellites to orbit as part of the now retired Falcon-1. The Kestrel is chosen primarily for its low cost, to ensure that the representative launch system in this study closely approximates a cost-effective future launch system.  
-  The third stage rocket in this study has a total length of \textcolor{red}{8.66}m, and is sized so that it is able to fit within the main cylindrical fuselage section of the scramjet accelerator's geometry.  This is done to reduce the heat loads present on the third stage during the second stage acceleration, as well as to improve the aerodynamics of the scramjet accelerator during ascent and fly-back. While the release mechanism of the third stage is not considered in this study, it is assumed that the release process will be simplified if the release mechanism is constrained to the cylindrical fuselage of the scramjet accelerator, rather than involving geometric variation of the nose cone of the scramjet accelerator, which receives a large amount of aerodynamic force as illustrated in Figure \ref{fig:CartTop}.
+  
   
  The third stage internals have been designed to weigh a total of 3300kg. This has been chosen as a nominal design weight, to satisfy the fuel necessary to achieve orbit with an acceptable payload, while also allowing for ample payload volume. The internal layout of the third stage rocket is shown in Figure \ref{fig:3rdStage}, and a mass breakdown is given in Table \ref{tab:MassBreakdown3}. The third stage has a structural mass fraction of 0.079, to match the Falcon 1 second stage without the Kestrel engine or fairing included\cite{Vehicle2008}. This gives a total structural mass of 236.3kg, without heat shield or engine. 
  
@@ -720,7 +709,7 @@ The third stage rocket is an expendable portion of the launch system, tasked wit
 	\begin{table}[h]
 		\centering
 		\begin{tabular}{|c|c|c|c|c|c|c|}
-			\hline  \textbf{Part} & Total & Structural & Heat Shield & Engine & Fuel & Payload (est) \\ 
+			\hline  \textbf{Part} & Total & Structural & Heat Shield & Engine & Fuel (est) & Payload (est) \\ 
 			\hline \textbf{Mass} (kg) & 3300.0  & 236.3  & 124.6  & 78.0  & 2761.1 & 100.0\\ 
 			\hline 
 		\end{tabular} 
@@ -732,10 +721,9 @@ The third stage rocket is an expendable portion of the launch system, tasked wit
  
  
  \subsection{Geometry}\label{sec:3int}
-
-The third stage has a total length of 9m, to fit within the main body fuselage of the scramjet accelerator.
- The third stage nose length is set at 3m, for a similar nose geometry to the third stage designed for previous analysis of the scramjet accelerator\cite{Preller2017b}. This nose geometry is chosen so that the heat shield in this study may be appropriately modelled after the heat shield designed for the Rl-10-3A-powered third stage\cite{Preller2017b}.
- The third stage centrebody length has been set to 4.5m, giving a total length of 9m, with a 1.9m long Kestrel engine\cite{Vehicle2008}. The diameter of the third stage has been set to 1.1m including heat shield, to match the diameter of the Kestrel engine, and to be close to half the diameter of the scramjet accelerator, a scale used to fix the third stage width of the Rl-10-3A powered third stage\cite{Preller2017b}.  
+The third stage rocket in this study has a total length of \textcolor{red}{8.7}m, and is sized so that it is able to fit within the main cylindrical fuselage section of the scramjet accelerator's geometry. This is done to reduce the heat loads present on the third stage during the second stage acceleration, as well as to improve the aerodynamics of the scramjet accelerator during ascent and fly-back (see Section \ref{sec:stagingSimp}). While the release mechanism of the third stage is not considered in this study, it is assumed that the release process will be simplified if the release mechanism is constrained to the cylindrical fuselage of the scramjet accelerator, rather than involving geometric variation of the nose cone of the scramjet accelerator, which receives a large amount of aerodynamic force as illustrated in Figure \ref{fig:CartTop}.
+ The third stage nose length is set at 2.7m, for a similar nose geometry to the third stage designed for previous analysis of the scramjet accelerator\cite{Preller2017b}. The tip of the nose has been rounded with a hemispherical diameter of 0.07m, for aerothermodynamic performance.
+ The third stage centrebody length has been set to 4.5m, giving a total length of 8.7m, with the 1.9m long Kestrel engine\cite{Vehicle2008} protruding 1.5m from the centrebody. The diameter of the third stage has been set to 1.1m including heat shield, to match the diameter of the Kestrel engine, and to be close to half the diameter of the scramjet accelerator, a scale used to fix the third stage width of the Rl-10-3A powered third stage\cite{Preller2017b}.  
 
 
 
@@ -749,7 +737,7 @@ The third stage has a total length of 9m, to fit within the main body fuselage o
 
 
 The internal design of the third stage is allowed to be slightly variable as the trajectory is optimised. The third stage mass is fixed at 3300kg, and the calculated payload-to-orbit varies by exchanging leftover fuel mass for effective payload mass. The Kestrel engine utilises LOX/RP-1 propellants, with an oxidiser-to-fuel mixture ratio 2.56\cite{RPE} and a density of 813kg/m$^3$\cite{Magee}. 
-To calculate the dynamics of the third stage, the fuel tanks have been approximately sized, assuming \textcolor{red}{100kg} of payload-to-orbit. Realistically the exchange between fuel and payload mass would cause the fuel tanks to be resized slightly, however, for the purposes of this study the fuel tanks are assumed to be of constant size for simplicity. Currently this is a reasonable assumption as the internals of the rocket are very simplified. With an assumed payload mass of \textcolor{red}{100kg}, the third stage carries a total propellant mass of \textcolor{red}{2761.1kg}. Table \ref{tab:Fuel} breaks shows the component break-down of the LOX oxidiser and RP1 for this fuel weight. The total mass and volumes of these fuels will change slightly as the trajectory of the launch system is optimised, and fuel is traded for payload mass. However, the ratio between the fuel and oxidiser will stay constant. 
+To calculate the dynamics of the third stage, the fuel tanks have been approximately sized, assuming \textcolor{red}{100kg} of payload-to-orbit. Realistically the exchange between fuel and payload mass would cause the fuel tanks to be resized slightly, however, for the purposes of this study the fuel tanks are assumed to be of constant weight for simplicity. Currently this is a reasonable assumption as the internals of the rocket are very simplified. With an assumed payload mass of \textcolor{red}{100kg}, the third stage carries a total propellant mass of \textcolor{red}{2761.1kg}. Table \ref{tab:Fuel} breaks shows the component break-down of the LOX oxidiser and RP1 for this fuel weight. The total mass and volumes of these fuels will change slightly as the trajectory of the launch system is optimised, and fuel is traded for payload mass. However, the ratio between the fuel and oxidiser will stay constant. 
 
 	
 
@@ -798,11 +786,8 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 	
 	The propulsion system for the third stage rocket in previous studies has been modelled after the RL-10-3A\cite{Preller2018a}. However, the Rl-10-3A is an expensive, pump-fed engine designed for the upper stages of large launch vehicles. For the expendable upper stage of a small launch system, a cheap engine will be required, as the cost of this engine will have a large bearing on the cost efficiency of the launch system as a whole. This study redesigns the third stage rocket, so that it is more cost effective, and uses a more modern engine.  
 	
-		\subsubsection{Exoatmospheric Rocket Engine Survey}
-		%moved from lit review
-		
-		%\textcolor{red}{XXX I should potentially use the kestrels use of RP1 as a justification too, non exremely toxic?}
-		
+	
+		\subsubsection{Exoatmospheric Rocket Engine Survey}%moved from lit review%\textcolor{red}{XXX I should potentially use the kestrels use of RP1 as a justification too, non exremely toxic?}
 		The third stage requires a rocket engine with sufficient thrust to accelerate out of the atmosphere, and a diameter small enough to allow the rocket to fit within the fuselage of the scramjet accelerator. The major factors when choosing a rocket engine are efficiency and thrust-to-weight ratio, as well as cost. It is desirable to use a rocket engine which has already been developed and flight tested, to reduce the costs and potential complications of engine development. Table \ref{tab:Engine} shows a comparison study of small sized upper stage rocket engines which are currently in use, or have been used, for commercial space flight. The pump-fed motors have significantly higher specific impulse than pressure fed motors\textcolor{red}{, and while the masses of pressure-fed engines appear low compared to turbopump engines, this mass is generally made up for by the additional mass required by the pressurised propellant and pressurant tanks of pressure-fed engines.}. However, while the cost of these engines is not generally published, pressure fed engines cost significantly less than pump-fed engines, due to the cost of the turbopump and the associated complexity of a pump-fed system.  As such, it is desirable to use a pressure-fed rocket engine for a small satellite launch system if possible. Of the pressure-fed engines, the SpaceX Kestrel exhibits a significantly higher thrust/mass ratio than the other engines, with comparable specific impulse and size. \textcolor{red}{Additionally, the Kestrel has been designed for a low cost, small satellite launcher, making} the Kestrel engine \textcolor{red}{likely to be fit-for-purpose for} powering the third stage rocket.  
 		\afterpage{
 			\begin{landscape}% Landscape page
@@ -830,7 +815,6 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 		
 	
 		\subsubsection{Propulsion System Modelling}
-		
 			\textcolor{red}{
 		The Kestrel engine which powers the third stage is modified to have 50\% increased propellant mass flow rate, giving a mass flow rate of 14.8kg/s. This is done to assist the rocket in exiting the atmosphere, as it was found during analysis that a the third stage has difficulty exiting the atmosphere when powered by a standard Kestrel engine. A 50\% increase in mass flow rate provides additional thrust such that the trajectory angle of the third stage does not decrease significantly after release from the scramjet accelerator flying a constant dynamic pressure trajectory. This was chosen as the indicative factor that the third stage is successfully able to pull-up out of the atmosphere. It is likely that this mass flow increase will necessitate a heavier combustion chamber as well as more heavy duty piping and valves, more or larger injectors, and a heavier nozzle and structure to transmit the higher thrust forces\cite{RPE,Huzel1967}. To compensate for these factors, the mass of the Kestrel is increased by 50\%, from 52kg\cite{Wade2017} to 78kg, to approximate an increase in mass of the the thrust chamber as well as all feed systems, cooling systems, and the thrust transmission structure. This is estimated to be slightly conservative, as the surface area of the combustion chamber, and thus the mass and the cooling necessary, will not vary linearly with the increase in volume necessary to maintain a constant characteristic length as mass flow rate in increased\cite{RPE,Huzel1967}. However, as the mass of the relative components of the Kestrel are not published, a conservative approach to mass modelling of the engine is most appropriate. The need to modify the Kestrel engine for this study highlights the potential necessity for the design of a cheap rocket engine with higher thrust than the Kestrel, Aestus or OMS, if a rocket-scramjet-rocket system is to be practical and cost-effective.}
 		
@@ -891,7 +875,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 			\label{fig:ThrustVec}
 		\end{figure}
 		
-		The third stage rocket is controlled via thrust vectoring. The centre of pressure is calculated using Missile Datcom. The thrust vector is set so that the moment generated by the engine matches the lift force acting at the centre of pressure, as shown in Figure \ref{fig:ThrustVec}, ie $M_{T} = -M_{Fn}$. This thrust vector is calculates at each flight condition during the trajectory simulations. The maximum thrust vector limit has been set to 8$^\circ$. As no data on the maximum thrust vectoring capabilities of the kestrel engine was able to be found, this was set to the maximum gimbal range of the Aestus engine and Orbital Manoeuvring Engine (OME), which are similarly sized pressure-fed engines\cite{Wade2017}.
+		The third stage rocket is controlled via thrust vectoring. The aerodynamic moment is calculated using Cart3D's Clic program, and the thrust vector is set so that the moment generated by the engine matches the aerodynamic moment, as shown in Figure \ref{fig:ThrustVec}, ie $M_{T} = -M_{Fn}$. This thrust vector is calculates at each flight condition during the trajectory simulations. The maximum thrust vector limit has been set to 8$^\circ$. As no data on the maximum thrust vectoring capabilities of the kestrel engine was able to be found, this was set to the maximum gimbal range of the Aestus engine and Orbital Manoeuvring Engine (OME), which are similarly sized pressure-fed engines\cite{Wade2017}.
 		
 		The centre of gravity is determined using CREO by creating a three dimensional model of the rocket with representative densities, illustrated in Figure \ref{fig:3rdStage}. It is assumed that the mass of the structure of the rocket (excluding fuel tanks, heat shielding, engine and payload) is distributed homogeneously for simplicity. The Mass Properties tool within CREO is used to calculate the centre of gravity, which is located at \textcolor{red}{4.33}m from the nose when the rocket is full of fuel, and \textcolor{red}{4.04}m from the nose when the rocket is completely empty. The centre of gravity is interpolated linearly from these values as the fuel mass within the rocket decreases. These centre of gravity calculations are performed with the heat shield on, as the thrust vectoring is only calculated while the rocket is in-atmosphere, with the engine on. Note that the rocket will not become completely empty while in-atmosphere. 
 		
@@ -902,25 +886,18 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 \section{Modelling and Design Simplifications}  % XXX this is one for ingo to look at in particular, the location of this and how it fits in + discussion on controlinstability + section on aero and propulsion
 }
 
-
-
-
-The representative launch system in this study is based on The SPARTAN\cite{Preller2017b}. This launch system is in the preliminary design phases, and has not yet been designed or modelled to an accurate subsystem level. This work aims to model a modified version of this launch system to a fidelity where a trajectory may be optimised and analysed with significant results, and it is assumed that the representative launch system utilised in this work is appropriate for successfully launching to orbit.
-However, there are necessarily some simplifications that occur in the design and modelling of the launch system, that may have significant effects on the trajectory of the launch system. Some of the effects of the modelling simplifications are captured in the sensitivity study carried out in Appendix \textcolor{red}{XXX}, and some of the simplifications are limiting factors to the trajectories that are able to be flown, particularly control and staging effects. These limiting factors are not considered in this study, because they are heavily dependent on the vehicle design, and it is assumed that future design studies will be carried out that will investigate the ability of this type of launch system to fly a practical launch trajectory, along with an interconnected design study. 
-This section discusses some of the significant design and modelling factors that are not considered in the current work, and may influence the performance of the launch vehicle.
-
-
+The representative launch system in this study is based on The SPARTAN\cite{Preller2017b}, as it is the most mature concept for a small satellite launch system using scramjets in the public domain. However, the system is still at the preliminary design phase, meaning that the design, as well as system and sub-system models still incorporate significant simplifications and have not been fully developed. 
+The simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Appendix \textcolor{red}{XXX}, while design related simplifications particularly affect the control, staging, mass modelling of the launch system. At the current stage of The SPARTAN's development phase some of these aspects have not been finalised. 
+The following sections addresses these open design choices, how they may affect the findings from the current work, and how they are indirectly considered in the design parameter analysis in Sections XXX and XXX. 
 
 \subsection{Control}
-
-
 
 
 \subsubsection{Control Surface Design}
 
 %\textcolor{red}{XXX Note, references are for laminar flows}
 
-The control surfaces of the representative SPARTAN in this study are based on previous iterations of the SPARTAN\cite{Preller2017b}, and are modelled as large rectangular flaps. These flaps trim the vehicle during flight, and deflect significantly. These flaps experience large forces, and will need strong and resilient actuators to be able to hold deflection for long periods of time. In future iterations of a launch systems of this type, it may be necessary to design any aerodynamically controlled stages so that the necessary deflections of the control surfaces are minimised, through careful design of the aerodynamic profile and centre of gravity location.
+The control surfaces of the representative SPARTAN in this study are based on previous iterations of The SPARTAN\cite{Preller2017b}, and are modelled as large rectangular flaps. These flaps trim the vehicle during flight, and deflect significantly. These flaps experience large forces, and will need strong and resilient actuators to be able to hold deflection for long periods of time. In future iterations of a launch systems of this type, it may be necessary to design any aerodynamically controlled stages so that the necessary deflections of the control surfaces are minimised, through careful design of the aerodynamic profile and centre of gravity location.
 
 In addition to the possible limitations arising from the actuation mechanism, the control surfaces of the vehicle may experience design limitations due to the design and placement of the control surface.
 A control surface deflected in a supersonic flow acts as a compression ramp, with an incidence angle that changes rapidly at the flap hinge. Depending on the flow conditions, wall temperature adverse pressure gradient and boundary layer stability, the shock at the flap may cause the boundary layer to separate, causing a recirculation bubble, along with a separation shock that reattaches on the control surface\cite{Marini2001}. This recirculation bubble decreases the pressure in the region that it is present on the control surface, while the separation shock increases the shear stress directly downstream of its reattachment\cite{Marini2001}. These effects may reduce the effectiveness of the control surfaces at higher deflection angles, changing the deflection necessary to achieve trim. In addition, the reattachment of the shock will cause a high temperature region on the control surface, that may need to be accounted for during the design of the thermal protection system of the control surface. 
@@ -928,17 +905,22 @@ A control surface deflected in a supersonic flow acts as a compression ramp, wit
 %\textcolor{red}{XXX note -I have not found a direct comparison between inviscid and viscous compression ramps. Also I do not know which other details to go into here. There are a lot of effects on a compression ramp, and going into all of them will be lengthy (eg laminar vs turbulent flow, shock or expansion fan after reattachment). }
 
 
-\subsubsection{Control Instability}
-All three stages of the representative SPARTAN launcher designed in this study are aerodynamically unstable for portions of their trajectories. For the purposes of this study, it is assumed that all stages are controllable as long as the physical limitations of the control systems are not exceeded during flight, although practically this means that flying The SPARTAN will require an advanced automatic controller, or a careful redesign of the launch system with a focus on its internal layout, to reduce or eliminate these unstable regions of flight. For the purposes of this study, the design of The SPARTAN as presented is regarded to be sufficient as a representative launch system design.
-However, it is likely that in the future a highly detailed study of The SPARTAN's design and control strategy must be undertaken, to determine the practicality of controlling this launch system during flight, and in particular the viability of thrust vector control. 
-
 \subsubsection{Control Modelling}
-This work assumes a point mass vehicle in all phases of simulation, with the control surface deflections or thrust vector of each stage modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. This is done in order to effectively apply the Pseudospectral method of optimal control for the purposes of this work. Practically however, an actual control system must respond to the performance of the system on the fly. Complex controller designs will likely be necessary to fly a launch system of this type, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. The controllability will be heavily interdependent on the vehicle design, and will require the high fidelity modelling of each vehicle throughout the trajectory, as well as modelling of the control scheme. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
-It is expected that much of the discrepancy between the assumptions in this work and practical control system design could be compensated though applying Model Predictive Control to re-evaluate the optimal trajectory during the flight. Exploring this further is one of the items identified under future work.
+In order to effectively apply the Pseudospectral method of optimal control for the purposes of this work, a point mass model is used in all phases of simulation, with the control surface deflections or thrust vector of each stage modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. However, all three stages of the representative SPARTAN launch system designed in this study are aerodynamically unstable for portions of their trajectories. Sections XXX and XXX identify the end of the first stage and scramjet stage trajectories as unstable, as well as the majority of fly-back and third stage trajectories.
+For the purposes of this study, the design of The SPARTAN as presented is regarded to be sufficient as a representative launch system design.
+However, it is likely that in the future a highly detailed study of The SPARTAN's design and control strategy must be undertaken, to determine the practicality of controlling this launch system during flight, and in particular the viability of thrust vector control. The controllability will be heavily interdependent on the vehicle design, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
+Exploring this further is one of the items identified under future work.
+
+Likely impacts:
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Necessity for design variations to improve control authority, with follow-on effects to vehicle performance. 
+\end{itemize}
+	
+
+	
 
 
-
-\subsection{Staging Effects}
+\subsection{Staging Effects}\label{sec:stagingSimp}
 
 A rocket-scramjet-rocket multi-stage launch system will require stage separations at high Mach numbers, into high dynamic pressure conditions. These stage separations may induce aerodynamic forces and moments on the stages of the launch system that are significantly different to the nominal flight regime of each stage, and will need to be carefully studied and mitigated for a launch system of this type to be feasible. It is possible that the design of the launch system may be significantly driven by the ability of the launch system to stage successfully at high dynamic pressure conditions. 
 
@@ -982,6 +964,15 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 
 
 	\section{Summary}	
+	\textcolor{red}{XXX Update summary, see below?}
+	
+	
+	%*/ as part of the conclusion you should also consider discussing methodology you have applied. I.e. an additional contribution of this chapter is providing a process of how to develop mass and aerodynamics data for a launch systems. This is valuable for anyone wanting to design their own launch vehicle. So you should highlight this as one of the contributions from this part of your thesis.
+	
+	%*/ Overall, have a look at the chapter narrative. There are a few sections that are repeated. This then creates confusion, as it is not clear which approach is used to perform a certain part of the analysis. - need to have a look through section for this
+	
+	
+	
 	
 	In this chapter, the design and simulation of a rocket-scramjet-rocket launch system was presented, based on the SPARTAN launch system. 
 	The design of the first stage is based on the first stage of the Falcon-1e, scaled down to \textcolor{red}{9.5m}. The third stage is designed around the SpaceX Kestrel engine, with the fuel tanks of the scramjet accelerator resized to accommodate for the new third stage size. 

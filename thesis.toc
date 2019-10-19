@@ -31,34 +31,33 @@
 \contentsline {subsection}{\numberline {4.1.2}Thermal Protection}{66}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Propulsion}{67}{subsection.4.1.3}
 \contentsline {subsubsection}{Propulsion Modelling}{67}{section*.52}
-\contentsline {subsection}{\numberline {4.1.4}Aerodynamics}{71}{subsection.4.1.4}
-\contentsline {subsubsection}{Cart3D Simulations}{73}{section*.59}
-\contentsline {subsubsection}{Engine-On Aerodynamic Analysis}{75}{section*.62}
-\contentsline {subsubsection}{Centre of Gravity Analysis}{76}{section*.66}
-\contentsline {subsubsection}{Calculation of Trimmed Flap Deflections}{78}{section*.68}
-\contentsline {subsubsection}{Viscous Correction}{80}{section*.72}
-\contentsline {subsection}{\numberline {4.1.5}Trimmed Aerodynamic Database of the Scramjet Accelerator with Engine-On}{81}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Trimmed Aerodynamic Database of the Scramjet Accelerator with Engine-Off}{82}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}The First Stage Rocket}{84}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}The Aerodynamics of the First Stage Rocket and Scramjet Accelerator}{86}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}The Third Stage Rocket}{88}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Geometry}{89}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.1.4}Aerodynamics}{70}{subsection.4.1.4}
+\contentsline {subsubsection}{Cart3D Simulations}{72}{section*.58}
+\contentsline {subsubsection}{Engine-On Aerodynamic Analysis}{73}{section*.61}
+\contentsline {subsubsection}{Centre of Gravity Analysis}{75}{section*.65}
+\contentsline {subsubsection}{Calculation of Trimmed Flap Deflections}{77}{section*.67}
+\contentsline {subsubsection}{Viscous Correction}{79}{section*.71}
+\contentsline {subsection}{\numberline {4.1.5}Trimmed Aerodynamic Database of the Scramjet Accelerator with Engine-On}{79}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Trimmed Aerodynamic Database of the Scramjet Accelerator with Engine-Off}{81}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}The First Stage Rocket}{82}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The Aerodynamics of the First Stage Rocket and Scramjet Accelerator}{84}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}The Third Stage Rocket}{87}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Geometry}{88}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Fuel Tank Sizing}{89}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Heat Shield Sizing}{90}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Propulsion}{91}{subsection.4.3.4}
-\contentsline {subsubsection}{Exoatmospheric Rocket Engine Survey}{91}{section*.87}
-\contentsline {subsubsection}{Propulsion System Modelling}{93}{section*.89}
-\contentsline {subsection}{\numberline {4.3.5}Aerodynamics}{94}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.3}Heat Shield Sizing}{89}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Propulsion}{90}{subsection.4.3.4}
+\contentsline {subsubsection}{Exoatmospheric Rocket Engine Survey}{91}{section*.86}
+\contentsline {subsubsection}{Propulsion System Modelling}{91}{section*.87}
+\contentsline {subsection}{\numberline {4.3.5}Aerodynamics}{93}{subsection.4.3.5}
 \contentsline {subsection}{\numberline {4.3.6}Thrust Vectoring}{94}{subsection.4.3.6}
 \contentsline {section}{\numberline {4.4}Modelling and Design Simplifications}{95}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Control}{96}{subsection.4.4.1}
-\contentsline {subsubsection}{Control Surface Design}{96}{section*.93}
-\contentsline {subsubsection}{Control Instability}{97}{section*.94}
-\contentsline {subsubsection}{Control Modelling}{97}{section*.95}
-\contentsline {subsection}{\numberline {4.4.2}Staging Effects}{98}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Mass Model Simplifications}{99}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Aerodynamic and Propulsion Modelling Simplifications}{99}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}Summary}{100}{section.4.5}
+\contentsline {subsubsection}{Control Surface Design}{96}{section*.92}
+\contentsline {subsubsection}{Control Modelling}{96}{section*.93}
+\contentsline {subsection}{\numberline {4.4.2}Staging Effects}{97}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Mass Model Simplifications}{98}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Aerodynamic and Propulsion Modelling Simplifications}{98}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Summary}{99}{section.4.5}
 \contentsline {chapter}{\numberline {5}Trajectory Modelling and Optimisation}{101}{chapter.5}
 \contentsline {section}{\numberline {5.1}Mission Definition}{102}{section.5.1}
 \contentsline {section}{\numberline {5.2}Vehicle Simulation}{103}{section.5.2}
@@ -95,9 +94,9 @@
 \contentsline {section}{\numberline {7.1}Case 11: SPARTAN Trajectory with Scramjet Accelerator Return}{158}{section.7.1}
 \contentsline {section}{\numberline {7.2}Ascent Trajectory}{159}{section.7.2}
 \contentsline {section}{\numberline {7.3}Fly-Back Trajectory}{164}{section.7.3}
-\contentsline {subsubsection}{ Initial Turn}{165}{section*.137}
-\contentsline {subsubsection}{ Boost-Skip}{165}{section*.138}
-\contentsline {subsubsection}{Approach}{166}{section*.139}
+\contentsline {subsubsection}{ Initial Turn}{165}{section*.135}
+\contentsline {subsubsection}{ Boost-Skip}{165}{section*.136}
+\contentsline {subsubsection}{Approach}{166}{section*.137}
 \contentsline {section}{\numberline {7.4}Energy Usage Analysis}{166}{section.7.4}
 \contentsline {section}{\numberline {7.5}Design Sensitivity Analysis}{168}{section.7.5}
 \contentsline {subsection}{\numberline {7.5.1}Case 12: Maximum Dynamic Pressure Sensitivity with Fly-Back}{170}{subsection.7.5.1}
@@ -111,22 +110,22 @@
 \contentsline {section}{\numberline {7.7}Summary}{181}{section.7.7}
 \contentsline {chapter}{\numberline {8}Conclusions}{183}{chapter.8}
 \contentsline {chapter}{\numberline {9}Recommendations for future work}{189}{chapter.9}
-\contentsline {chapter}{References}{191}{chapter*.149}
+\contentsline {chapter}{References}{191}{chapter*.147}
 \contentsline {chapter}{\numberline {A}Thermal Analysis}{209}{appendix.A}
 \contentsline {section}{\numberline {A.1}Thermal Analysis of the Standard Trajectory}{211}{section.A.1}
 \contentsline {section}{\numberline {A.2}Heating limited Trajectory}{212}{section.A.2}
 \contentsline {section}{\numberline {A.3}TPS Design Exploration}{212}{section.A.3}
 \contentsline {section}{\numberline {A.4}Scramjet Accelerator}{212}{section.A.4}
 \contentsline {section}{\numberline {A.5}Third Stage}{212}{section.A.5}
-\contentsline {chapter}{\numberline {B}Uncertainties and Simplifications}{221}{appendix.B}
+\contentsline {chapter}{\numberline {B}Modelling Uncertainties}{221}{appendix.B}
 \contentsline {section}{\numberline {B.1}Aerodynamic and Propulsion Simulation Uncertainties}{222}{section.B.1}
 \contentsline {subsection}{\numberline {B.1.1}Aerodynamic Uncertainty}{222}{subsection.B.1.1}
 \contentsline {subsection}{\numberline {B.1.2}Propulsion System Uncertainties}{224}{subsection.B.1.2}
-\contentsline {subsubsection}{The Rocket Engines}{224}{section*.160}
-\contentsline {subsubsection}{The Scramjet Engine}{225}{section*.161}
+\contentsline {subsubsection}{The Rocket Engines}{224}{section*.158}
+\contentsline {subsubsection}{The Scramjet Engine}{225}{section*.159}
 \contentsline {subsection}{\numberline {B.1.3}Quantification of Aerodynamic and Propulsion Uncertainty Effects}{225}{subsection.B.1.3}
-\contentsline {subsubsection}{Quantification of Uncertainty Magnitudes}{225}{section*.162}
-\contentsline {subsubsection}{Variation Study}{226}{section*.164}
+\contentsline {subsubsection}{Quantification of Uncertainty Magnitudes}{225}{section*.160}
+\contentsline {subsubsection}{Variation Study}{226}{section*.162}
 \contentsline {subsection}{\numberline {B.1.4}Atmospheric Variations}{226}{subsection.B.1.4}
 \contentsline {chapter}{\numberline {C}Examples and Verification}{229}{appendix.C}
 \contentsline {section}{\numberline {C.1}Example - Brachistochrone Problem}{229}{section.C.1}

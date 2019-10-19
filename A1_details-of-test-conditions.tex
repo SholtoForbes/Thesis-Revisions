@@ -225,31 +225,27 @@ On the body of the scramjet accelerator, the nose reaches a maximum of 1355.9K, 
 -- heat shield reduction due to pull-up
 
 \textcolor{red}{
-\chapter{Uncertainties and Simplifications}
+\chapter{Modelling Uncertainties}
 }
-\textcolor{red}{XXX removed the design simplifications from this section, need to redo intro}
 
 %-need to take into account that the error magnitudes estimated are only relative error (as above)
 
 %-take into account that the values qoted for abeynayake paper are mean, and that the max errors are higher
 
 This thesis aims to provide new insight into the operability and feasibility of multi-stage launch systems incorporating an air-breathing stage.
-No such launch systems currently exist, and several of the sub-systems necessary for the successful their operation are in the research stage of development.
-This means that that reliable performance data is not available, and the predicted performance (i.e. payload to orbit) will be affected by design and modelling error, resulting in a variation of achievable performance. 
-The aim of this chapter is to apply a systematic approach to develop an understanding of how these variations may affect the performance of the launch system. These variations have been separated into two categories; design choices, variability that can be controlled by a designer; and modelling accuracy, ie. uncertainty introduced by modelling assumptions and simplifications. To explore these we need to consider firstly what a realistic design process would look like and secondly how the vehicle flight simulations are different to realistic flight. 
+No such launch systems currently exist, and several of the technologies necessary for the successful operation of their systems and subsystems are in the research stage of development.
+This means that that reliable performance data is not available, and while every effort has been made to apply accurate vehicle and subsystem models, it is acknowledged that several are not designed in detail or validated, and others had to be simplified during the modelling process. 
+These simplifications and uncertainties are separated into two distinct parts; the simplifications that arise during vehicle design, and the uncertainties that arise from the modelling of the launch system performance. 
+
+The design uncertainties that arise from simplifications during the design process affect the vehicle's geometry, structure and internal layout, and mass and mass-distribution. In this work the design process is necessarily simplified, and it is assumed that by making appropriate design choices the nominal vehicle can be constructed (i.e. it is assumed that the designer can achieve the representative design by selecting appropriate materials and layouts), and that the nominal vehicle is capable of flying an appropriate launch trajectory. In this stage it is important for the designer to be aware of the sensitivities and trade-offs between design input parameters and performance. These design simplifications are described in more detail in Section XXX, and their effects are expressed by the parameter-by-parameter sensitivity study conducted in Sections XXX and XXX. These sensitivity studies provide insights into how the design factors of the launch system impact on the performance of the launch system and the shape of the optimised trajectory.
+
+The uncertainties that arise during the modelling of the performance of the launch system introduce differences between the actual launch system and the ``as-designed" nominal launch system. These uncertainties are inherent to the modelling assumptions in the aerodynamics and propulsion modelling of the launch system, in effect, even the most detailed designs will still suffer from many of the same modelling uncertainties as analysed (though with reduced margins). 
+As the designer has no direct control over these variations between the ``as-designed" and actual vehicle, we need to rely on a-priori experience and a stochastic approach to quantify how the ultimate performance of the vehicle will be different to the ``as designed" simulations. The aim of this chapter is to apply a systematic approach to develop an understanding of how these uncertainties may affect the performance of the launch system. To consider this we first estimate the modelling uncertainties associated with the representative launch vehicle, and then conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise ``known" vehicle.
 
 
 
-The design process is considered in this analysis as the stage where the vehicle designers set the vehicle geometry, structure, and internal layout, defining the mass, mass-distribution, and the nominal aerodynamic performance of the vehicle. In this work the design process is necessarily simplified, and it is assumed that by making appropriate design choices the nominal vehicle can be constructed (i.e. it is assumed that the designer can achieve the nominal design by selecting appropriate materials and layouts), and that the nominal vehicle is capable of flying an appropriate launch trajectory. For this stage a parameter by parameter sensitivity study is conducted, to provide an understanding of how the design factors of the launch system impact on the performance of the launch system and the shape of the optimised trajectory. 
 
-
-
-The second aspect to consider is the difference between the actual launch system and the ``as-designed" nominal launch system. These uncertainties are due to uncertainties inherent to the modelling assumptions in the aerodynamics and propulsion modelling of the launch system, in effect, even the most detailed designs will still suffer from many of the same modelling uncertainties as analysed (though with reduced margins). 
-As the designer has no direct control over these variations between the ``as-designed" and actual vehicle, we need to rely on a-priori experience and a stochastic approach to quantify how the variations may affect the ultimate performance of the vehicle. To consider this effect we conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise ``known" vehicle. 
-
-
-Using this two stage approach we can indicate the effects of design choices, that will evolve as partially-airbreathing, multi-stage access to space systems move from the preliminary to detailed design, and delineate these from uncertainties that arise due to errors/simplifications inherent to modelling vs real flight. 
-
+ 
 
 
 
