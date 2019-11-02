@@ -134,7 +134,7 @@ The flow properties at the inlet of the engines is calculated using the Taylor-M
 
 
 The C-REST engines that the scramjet accelerator uses have been configured to fly between Mach 5 and 10. This type of engine is known as a C-RESTM10 engine\cite{Preller2017b}.  
-A \textsf{CRESTM10} propulsion database has been used in previous studies to model the scramjet engines of the scramjet accelerator\cite{Preller2017b}. The specific impulse profile of the C-RESTM10 engine, taken from the \textsf{CRESTM10} propulsion database, is shown in Figure \ref{fig:ISPinterp}. This database has been created through separate modelling of the compression within the inlet, combustion within the combustor, and expansion through the internal nozzle\cite{Preller2018a}. The inlet compression was modelled by performance curves based on a set of CFD solutions\cite{Preller2018a}. These performance curves are used to obtain the flow conditions at the end of the inlet. The combustor is modelled using quasi-one-dimentional cycle analysis, assuming a combustion efficiency of 80\%\cite{Preller2018a}. Lastly, the properties at the end of the combustor are expanded assuming a nozzle efficiency of 90\%\cite{Preller2018a}.
+A \textsf{CRESTM10} propulsion database has been used in previous studies to model the scramjet engines of the scramjet accelerator\cite{Preller2017b}. The specific impulse profile of the C-RESTM10 engine, taken from the \textsf{CRESTM10} propulsion database, is shown in Figure \ref{fig:ISPinterp}. This database has been created through separate modelling of the compression within the inlet, combustion within the combustor, and expansion through the internal nozzle\cite{Jazra2010,Preller2018a}. The inlet compression was modelled by performance curves based on a set of CFD solutions\cite{Jazra2010,Preller2018a}. These performance curves are used to obtain the flow conditions at the end of the inlet. The combustor is modelled using quasi-one-dimentional cycle analysis, assuming a combustion efficiency of 80\%\cite{Jazra2010,Preller2018a}. Lastly, the properties at the end of the combustor are expanded assuming a nozzle efficiency of 90\%\cite{Preller2018a}.
 The C-RESTM10 is designed for operation at M$_0$ = 10, and the contraction ratio and combustor divergence are not optimal for operation at low Mach numbers. At low Mach numbers, an equivalence ratio of 1 may cause the flow to choke and unstart. 
 Consequently, an equivalence ratio of less than 1 is set at low Mach numbers, in order to avoid unstart\cite{Preller2018a}. At these Mach numbers, the C-REST engines are operating in dual-mode\cite{Preller2018a}. 
 
@@ -904,6 +904,12 @@ A control surface deflected in a supersonic flow acts as a compression ramp, wit
 
 %\textcolor{red}{XXX note -I have not found a direct comparison between inviscid and viscous compression ramps. Also I do not know which other details to go into here. There are a lot of effects on a compression ramp, and going into all of them will be lengthy (eg laminar vs turbulent flow, shock or expansion fan after reattachment). }
 
+Likely impacts on design:
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item If increased actuator strength is necessary, it would result in increased weight. If limitations on control surface deflection are imposed, they would limit the flight regime of the vehicle. 
+	\item If adverse heating is present on the control surfaces, redesign or repositioning of the control surfaces would be necessary, changing the behaviour of the control surfaces, and possibly adding weight if additional thermal protection is necessary.
+\end{itemize}
+
 
 \subsubsection{Control Modelling}
 In order to effectively apply the Pseudospectral method of optimal control for the purposes of this work, a point mass model is used in all phases of simulation, with the control surface deflections or thrust vector of each stage modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. However, all three stages of the representative SPARTAN launch system designed in this study are aerodynamically unstable for portions of their trajectories. Sections XXX and XXX identify the end of the first stage and scramjet stage trajectories as unstable, as well as the majority of fly-back and third stage trajectories.
@@ -911,9 +917,9 @@ For the purposes of this study, the design of The SPARTAN as presented is regard
 However, it is likely that in the future a highly detailed study of The SPARTAN's design and control strategy must be undertaken, to determine the practicality of controlling this launch system during flight, and in particular the viability of thrust vector control. The controllability will be heavily interdependent on the vehicle design, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
 Exploring this further is one of the items identified under future work.
 
-Likely impacts:
+Likely impacts on design:
 \begin{itemize}[noitemsep,topsep=0pt]
-	\item Necessity for design variations to improve control authority, with follow-on effects to vehicle performance. 
+	\item If the control authority or stability of the vehicle is insufficient to adequately fly a nominal trajectory, it would be necessary for design variations to improve control authority or stability, with follow-on effects to vehicle aerodynamic performance. The control surfaces and/or thrust vectoring controls may have to be redesigned, affecting the weight of the vehicle. 
 \end{itemize}
 	
 
@@ -924,16 +930,21 @@ Likely impacts:
 
 A rocket-scramjet-rocket multi-stage launch system will require stage separations at high Mach numbers, into high dynamic pressure conditions. These stage separations may induce aerodynamic forces and moments on the stages of the launch system that are significantly different to the nominal flight regime of each stage, and will need to be carefully studied and mitigated for a launch system of this type to be feasible. It is possible that the design of the launch system may be significantly driven by the ability of the launch system to stage successfully at high dynamic pressure conditions. 
 
-During the first-second stage separation the first stage and cowling will require separation while flying at low trajectory angles, at high dynamic pressure. For the first and second stages to separate cleanly, the first stage and cowling must decelerate more rapidly than the second stage scramjet. This manoeuvre must be executed in a controlled manner, for there must be no risk of adverse contact between the stages. Clean separation may be challenging, and is likely to require ignition of the scramjet engines prior to the release of the first stage. 
+During the first-second stage separation the first stage and cowling will require separation while flying at low trajectory angles, at high dynamic pressure. For the first and second stages to separate cleanly, the first stage and cowling must decelerate more rapidly than the second stage scramjet. This manoeuvre must be executed in a controlled manner, because there must be no risk of adverse contact between the stages. Clean separation may be challenging, and may require ignition of the scramjet engines prior to the release of the first stage. 
 
-The separation of the third stage rocket is particularly challenging, requiring separating the third stage from the scramjet-powered accelerator while retaining control authority over both vehicles, and ensuring that there is no significant risk of contact between the vehicles. This work assumes that the third stage is contained within the airbreathing stage, similar to some previous designs of the SPARTAN launch system\cite{Jazra2013}. However, other design strategies of multi-stage airbreathing launchers support the upper stage on top of\cite{Gong2014,Tsuchiya2005} or below\cite{Takahashi1997} the airbreathing stage, or contain upper stages within a cavity on the back of the vehicle\cite{Preller2017b,Mehta2001,Wilhite1991}. Each of these methods has positives, as well as drawbacks that must be considered throughout the design process.
+The separation of the third stage rocket is likely to be particularly challenging, requiring separating the third stage from the scramjet-powered accelerator while retaining control authority over both vehicles, and ensuring that there is no significant risk of contact between the vehicles. This work assumes that the third stage is contained within the airbreathing stage, similar to some previous designs of the SPARTAN launch system\cite{Jazra2013}. However, other design strategies of multi-stage airbreathing launchers support the upper stage on top of\cite{Gong2014,Tsuchiya2005} or below\cite{Takahashi1997} the airbreathing stage, or contain upper stages within a cavity on the back of the vehicle\cite{Preller2017b,Mehta2001,Wilhite1991}. Each of these methods has positives as well as drawbacks, that must be considered throughout the design process.
 The storage of the third stage within the main body of the scramjet-powered accelerator during the ascent phase, necessitating a release mechanism such as retractable panels or a hinged fuselage section. This method of release is also likely to require an ejection mechanism, to impart a force onto the third stage and create distance between the stages. Additionally, it is possible that it would be necessary to ignite the third stage before it is fully released from the SPARTAN, due to the lack of a control mechanism for the third stage without the rocket engine ignited. 
-Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in a cavity on the back of the airbreathing vehicle mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
+Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in an uncovered cavity on the back of the airbreathing vehicle (as was done for some iterations of The SPARTAN \textcolor{red}{XXX Cite}) mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
 The methods of staging of a launch system of this type must be considered carefully in future design studies, taking into account the controllability of the launch system, along with the aerodynamic and aerothermal properties of each stage. 
 
 %\textcolor{red}{XXX Need to reference section in alternate trajectories where I do variation in return drag}
 
-
+Likely impacts on design:
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Increased mass if complex separation mechanisms are necessary.
+	\item Variation of scramjet stage fuel mass depending on the internal volume of separation mechanisms. 
+	\item Changed aerodynamic performance if the third stage is stored externally, or in a cavity. 
+\end{itemize}
 
 
 \subsection{Mass Model Simplifications}
@@ -941,6 +952,11 @@ The methods of staging of a launch system of this type must be considered carefu
 This study uses a simplified mass model of the representative launch system, utilising design studies of the SPARTAN vehicle\cite{Preller2017b} that are based on statistical models and models of a representative winged-cone vehicle\cite{Preller2018}, and a scaled model of the Falcon 1e\cite{Vehicle2008}. In addition, the mass model distribution of the launch system in this study assumes a homogeneous distribution of subsystem and structural masses when calculating centre of gravity, and the rotational inertia of the launch system are not modelled.
 These mass models carry with them some uncertainty margin, however these uncertainty margins are not directly estimated in this work due to the lack of data or reference studies available for launch systems of this type and size. 
 In future design studies, the subsystems of the vehicles and interface mechanisms will need to be modelled in detail, and positioned so that good control characteristics are obtained. The relationship between the control characteristics of the vehicle and its internal design will need to be investigated, and this will be thoroughly coupled with the separation dynamics of the launch system. 
+
+Likely impacts on design:
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Variation in the mass and mass distribution of the launch system as detailed models are developed. 
+\end{itemize}
 
 \subsection{Aerodynamic and Propulsion Modelling Simplifications}
 
@@ -961,7 +977,9 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 	\label{tab:AppendixUncertaintyCopy}
 \end{table}
 
+\textcolor{red}{XXX need to include somethning about LHC results, and how my analysis is still valid in the presence of uncertainty}
 
+\textcolor{red}{XXX fom ingo: However, we have assessed the impact of these simplifications as far as is possible at this preliminary design stage, and can conclude that our overall findings are correct. Meaning that our findings still hold for a real vehicle. - will need to change this a bit, but same gist}  
 
 	\section{Summary}	
 	\textcolor{red}{XXX Update summary, see below?}
