@@ -18,7 +18,7 @@ The heat transfer coefficients on the body of the vehicle are computed using Rey
 c_h = \frac{c_f}{2s},
 \end{equation}
 where $c_f$ is the coefficient of friction and $s$ is the Reynold's analogy factor, assumed to be 1.16\cite{Ward2018}. 
-This solution is performed within the viscous solver VC3D, at specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are judged to be locations of potential high heat loads on the vehicles, and are examined as worst-case examples for thermal analysis. 
+This solution is performed within the viscous solver VC3D, at specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are judged to be locations of potential high heat loads on the vehicles, and are examined as likely worst-case examples for thermal analysis. 
 
 \begin{figure}[!ht]
 	
@@ -105,7 +105,7 @@ where $\theta$ is the flow incidence angle and $x_T$ is the distance along the b
 		\caption{The temperature time history on the tail (\textcolor{red}{6}).}
 		
 	\end{subfigure}
-	\caption{Temperature time histories on the scramjet accelerator.}
+	\caption{Temperature time histories on the scramjet accelerator. \textcolor{red}{XXX remove weird legends, add proper legend}}
 	\label{fig:TrajTemp}
 \end{figure}
 
@@ -114,7 +114,7 @@ where $\theta$ is the flow incidence angle and $x_T$ is the distance along the b
 To determine the effectiveness of the SPARTAN's TPS system, a 1-D heat analysis is conducted.  
 This heating calculation is implemented through the \textsf{uqTurbine} software package for 1-D heat transfer calculation, using the heat transfer calculated as defined in the previous section at each point along the trajectory. 
 This gives an indication of the temperature at the specified points around the SPARTAN throughout its trajectory. 
-Figures \ref{fig:TrajTemp} and \ref{fig:TrajTemp3} show the heat responses at the specified locations on the vehicles over the ascent trajectory of The SPARTAN. At the nose and leading edge it is assumed that there is no direct thermal connection to the internal insulation by the structure or TPS at the regions of maximum heat loads. The maximum heating in this area is therefore assumed to be limited by the properties of the TPS itself. The tungsten nose reaches 1947K, and the Carbon-Carbon wing leading edge reaches 1695K. These temperatures are well within the operational regimes of the materials, although they are outside the operational regime of the internal multilayer insulation. While it is outside the scope of this study to account for detailed internal design, the design of the stagnation region and leading edges along with appropriate structural support is likely to be a critical factor in the detailed design of The SPARTAN. These regions must be designed structurally so that the regions of high aerothermal and aerodynamic loads are able to be supported, while not exceeding the maximum operational temperature of the internal insulation close to the critical areas.  
+Figures \ref{fig:TrajTemp} and \ref{fig:TrajTemp3} show the heat responses at the specified locations on the vehicles over the ascent trajectory of the SPARTAN. At the nose and leading edge it is assumed that there is no direct thermal connection to the internal insulation by the structure or TPS at the regions of maximum heat loads. The maximum heating in this area is therefore assumed to be limited by the properties of the TPS itself. The tungsten nose reaches 1947K, and the Carbon-Carbon wing leading edge reaches 1695K. These temperatures are well within the operational regimes of the materials, although they are outside the operational regime of the internal multilayer insulation. While it is outside the scope of this study to account for detailed internal design, the design of the stagnation region and leading edges along with appropriate structural support is likely to be a critical factor in the detailed design of the SPARTAN. These regions must be designed structurally so that the regions of high aerothermal and aerodynamic loads are able to be supported, while not exceeding the maximum operational temperature of the internal insulation close to the critical areas.  
 
 \begin{figure}[ht]
 	\begin{subfigure}{.495\textwidth}
@@ -142,8 +142,11 @@ Figures \ref{fig:TrajTemp} and \ref{fig:TrajTemp3} show the heat responses at th
 	\label{fig:TrajTemp3}
 \end{figure}
 
-On the body of the scramjet accelerator, the interior of the nose reaches a maximum of 1363K, the cowl 1361K, the wing 1337K, and the tail 1142K on the vehicle-facing edge. These temperatures are slightly greater than the 1000$^\circ$C external temperatures that the multilayer internal insulation has been tested for, where the back face of the insulation has been shown experimentally to keep temperatures to 300$^\circ$C\cite{Kourtides}. This indicates that the backface temperature of the insulation is likely to be slightly above 300$^\circ$C. This temperature is significantly less than the melting temperature of Aluminium, which is used for the internal structure, although it is within the range where conventional aluminium alloys begin to lose their mechanical strength. It is likely that a high temperature aluminium alloy would be required, at least in the regions of the internal structure that are close to the interface with the external insulation. In addition, these high temperatures will begin to reduce the mechanical strength of the internal insulation. This must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. In this work it is assumed that the internal structure and insulation of the scramjet accelerator has been designed appropriately to account for regions of high heat load. 
+On the body of the scramjet accelerator, the interior of the nose reaches a maximum of 1363K, the cowl 1337K, the wing 1384K, and the tail 1142K on the vehicle-facing edge. These temperatures are greater than the 1273K (1000$^\circ$C) external temperatures, the approximate surface temperature that the multilayer internal insulation has been tested at, where the back face of the insulation has been shown analytically, based on experimental data, to keep temperatures below 546K (273$^\circ$C)\cite{Kourtides} if the multilayer insulation with best performance (silica felt insulation\cite{Kourtides}) is used. This indicates that the backface temperature of the insulation is likely to be above 546K. This temperature is significantly less than the melting temperature of Aluminium, which is used for the internal structure, although it is within the range where conventional aluminium alloys begin to lose their mechanical strength. It is likely that a high temperature aluminium alloy would be required for the internal structure, at least in the regions of the internal structure that are close to the interface with the external insulation. In addition, these high temperatures will begin to reduce the mechanical strength of the internal insulation\cite{Kourtides}. This must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. Fibers with high strength at these high temperatures must be used in the internal insulation, and the aerodynamic loading must be distributed in such a way that the loads on the internl insulation do not cause mechanical failure. In this work it is assumed that the internal structure and insulation of the scramjet accelerator has been designed appropriately to account for regions of high heat load. 
 
+The temperatures on the third stage rocket are significantly lower than those experienced by the scramjet accelerator. The nose tip of the third stage reached a maximum inner face temperature of 874K, while the nose cone and body reach maximum temperatures of 439K and 377K respectively. These relatively low temperatures indicate that it may be possible to reduce the mass of the heat shield, by reducing the thickness of the C-C protection on the nose, or by changing the material entirely. 
+
+- XXX I could say something like ' this is X\% less than a third stage released from a constant dynamic pressure trajectory.' Then do a trajectory with heat shield thickness X\% less
 
 %Max temps: T0 T1
 
@@ -154,9 +157,9 @@ On the body of the scramjet accelerator, the interior of the nose reaches a maxi
 %1665.796    1695.4998 
 
 %on body:
-%Pos 1 - 1363.0571  1539.7696 
-%Pos 2 - 1361.0127  1435.0191 
-%pos 3 - 1337.0232  1350.7068 
+%Pos 1 - 1361.0127  1435.0191
+%Pos 2 - 1337.0232  1350.7068 
+%pos 3 - 1384.9077  1517.4993 
 %pos 4 - 1142.2337  1290.9281 
 
 
@@ -166,26 +169,13 @@ On the body of the scramjet accelerator, the interior of the nose reaches a maxi
 %Nose: 439.38044 472.50722 
 %Body: 377.97737 397.55307 
 
-% ingo thinks its probably best just to study the heating and not try to 'solve' it. eg how thick would the C-C shell need to be to resist heating? what might a heat limited trajectory look like? 
-
-% Make argument that q limiting reduces the acceleration significantly - reducing pull up and payload - and that its probably more beneficial to find a better thermal protection system than q limiting
-
-% need to really position this well, link to design, and to trajectories, explain how my trajectory results are still useful
-
-
-% say something like 'the temperature is a bit over, but will need more detailed analysis to determine the best course of action, including possible the development of new internal insulation
-
-% note that it is within the operational regime of the C-C
-
-
-
 
 \section{Heating limited Trajectory}
 
-To investigate the effects of limiting the maximum aerothermal heating on The SPARTAN's scramjet accelerator, the stagnation point heat flux is calculated in-loop using a cold wall approximation ($T_W = 0$).  
+To investigate the effects of limiting the maximum aerothermal heating on the SPARTAN's scramjet accelerator, the stagnation point heat flux is calculated in-loop using a cold wall approximation ($T_W = 0$).  
 
 
-\textcolor{red}{XXX Not sure what I was doing here, might need to redo this to just a nominal heat flux limit? I think this limit was from when I was trying to bring the nose heating down a lot}
+\textcolor{red}{XXX Not sure what I was doing here, might need to redo this to just a nominal heat flux limit? I think this limit was from when I was trying to bring the nose heating down a lot. Maybe this should be a sensitivity study. }
 
 \begin{figure}[!ht]
 \centering
@@ -234,20 +224,13 @@ To investigate the effects of limiting the maximum aerothermal heating on The SP
 
 \section{TPS Design Exploration}
 
+The design of the thermal protection systems of the vehicles within an airbreathing launch system is critical to the successful operation of the system. While this work assumes that the TPS is sufficient for operation, more detailed analysis and design optimisation may require for the TPS to be modified to optimise the weight of each vehicle, while accounting for the heating distribution during flight, along with a detailed 3D heating analysis. A 1D sensitivity study of the TPS design is conducted in this section, to allow for an initial estimation of the effects of variations in the passive TPS design, as well as the effects of active cooling inclusion. 
+
 \section{Scramjet Accelerator}
--TPS thickness exploration
 
-\textcolor{red}{XXX currently not converging}
-
---TPS thermal conductivity / density exploration
-
--possibly layers of different materials or new materials entirely
+The thickness, density, thermal conductivity and specific heat of the C-C heat shield on the windward wing panel are varied by $/pm$10\%, to measure the effect of the TPS properties and design at the region of highest heating with direct connection to the internal insulation. The maximum inner face temperature recorded is shown in Table XXX. These variations indicate an inner face temperature sensitivity of XXX K/\% to variation in thickness, XXX K/\% to variation in density, XXX K/\% to variation in thermal conductivity, and XXX K/\% to variation in specific heat when varied from the standard C-C CCAT T-300 properties. 
 
 
--active cooling exploration
-
-17kW of cooling on the inner wall, activated during the scramjet accelerator stage, brings the internal nose temperature down to 1275.8K.
-- redo this with multiple cooling rates - link to how internal structure might get too hot at critical areas
 
 \begin{figure}[!ht]
 \centering
@@ -256,17 +239,42 @@ To investigate the effects of limiting the maximum aerothermal heating on The SP
 \label{fig:TPos1-ActiveCooling}
 \end{figure}
 
+\begin{table}[ht]
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline  &  &  &  &  &  \\ 
+		\hline Thickness & 1418.0497  & 1401.4387 & 1384.9077  &  1375.5604 & 1363.6364\\ 
+		\hline Density & 1369.9448 & 1378.0353 &  & 1396.331 &  1408.5808\\ 
+		\hline 
+	\end{tabular}
+\end{table}
 
+	%\hline  & 1526.6054  & 1522.3407  &  1517.4993  & 1512.1055 &  1506.2186  \\ 
 
+-active cooling exploration
 
-
-
+17kW of cooling on the inner wall, activated during the scramjet accelerator stage, brings the internal nose temperature down to 1275.8K.
+- redo this with multiple cooling rates - link to how internal structure might get too hot at critical areas
 
 \section{Third Stage}
 
--- heat shield reduction due to pull-up?
+% XXX heat shield reduction due to pull-up?
 
--same sort of exploration as for scramjet stage?
+The thickness and density of the third stage heat C-C shield on the conical nose cone is varied by $/pm$10\%, and the temperature time histories along the optimised payload-to-orbit trajectory with return (Case 11) are calculated. The maximum temperatures observed on the inner face at the centreline of the nose cone TPS are shown in Table XXX \& XXX. These variations show an inner face temperature sensitivity of XXX K/\% to variation in thickness, XXX K/\% to variation in density, XXX K/\% to variation in thermal conductivity, and XXX K/\% to variation in specific heat when varied from the standard C-C CCAT T-300 properties. 
+
+\begin{table}[ht]
+\begin{tabular}{|c|c|c|c|c|c|}
+	\hline  &  &  &  & &  \\ 
+	\hline Thickness & 463.53161 & 448.70022 &  & 439.38044  &  429.43074  \\ 
+	\hline Density & 425.20224 & 431.97567 &  & 447.52375 & 456.51396 \\ 
+	\hline 
+\end{tabular} 
+\end{table}
+%+2cm 409.32742 470.08808 
+%+4cm 386.54407 466.62091 
+%-2cm 476.13179 507.79573 
+%-4cm 530.33848 548.67775 
+
+
 
 \textcolor{red}{
 \chapter{Modelling Uncertainties}
@@ -372,7 +380,7 @@ The C-REST engines are modelled in this work using a dataset developed using a c
 
 The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been developed based on the errors described in the studies analysed Sections \ref{sec:aerounc} \& \ref{sec:propunc}. 
 
-%-note that it is assumed that only the moments on the spartan are affected, and not the flaps
+%-note that it is assumed that only the moments on the SPARTAN are affected, and not the flaps
 
 \begin{table}
 	\centering
@@ -385,7 +393,7 @@ The uncertainty margins of the aerodynamic and propulsive data for the represent
 		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 		\hline 
 	\end{tabular}
-	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of The SPARTAN.}
+	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of the SPARTAN.}
 	\label{tab:AppendixUncertainty}
 \end{table}
 
@@ -411,7 +419,7 @@ In order to quantify the effects of the uncertainty in the aerodynamic and propu
 
 \subsection{Atmospheric Variations}
 
-The Earth's atmosphere varies significantly depending on location, and over time. As such, the atmosphere into which The SPARTAN is launched may be considerably different to the atmosphere that is being modelled in this work. 
+The Earth's atmosphere varies significantly depending on location, and over time. As such, the atmosphere into which the SPARTAN is launched may be considerably different to the atmosphere that is being modelled in this work. 
 The variations in the properties of the atmosphere with geography or time may affect the aerodynamic and engine performance of the launch system significantly, and change the altitude at which maximum dynamic pressure is reached. These variations may have significant impact on the aerodynamic and aerothermal performance of the launch system at a particular altitude, as well as the performance of the propulsion systems of the launch system, particularly the scramjet engines. 
 This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} to calculate the properties of the atmosphere during simulations. The U.S Standard Atmosphere 1976 is based on a collection of data from sites across America, Brazil, Australia, and Russia, with values calculated for annual mean properties at an interpolated latitude of 45$^\circ$\cite{Administration1976}. The properties that are calculated using this atmosphere are subject to seasonal variability, as well as variability due to geographic position. Figure \ref{fig:AtmosphericVariation} shows the variation in temperature and pressure in the 1976 U.S Standard Atmosphere model with altitude. In the higher latitudes maximum and minimum temperatures at altitudes below 25km are seasonal, however at higher altitudes semi-annual and biennial oscillations have a large influence\cite{Administration1976}. The variations shown do not occur at the same time in the same envelopes of the atmosphere; warm temeratures at the surface are associated with cold temperatures near the tropopause, and temperatures near the stratopause are negatively correlated with temperatures near the mesopause\cite{Administration1976}. These oscillations are particularly important in the equatorial regions, where the seasonal variation in temperature is smallest. 
 
@@ -968,7 +976,7 @@ These overpressures indicate that overflight of populated areas may not be reaso
 
 \section{Alternate Launch Location}
 
-In this section, an alternate southerly launch is investigated for the rocket-scramjet-rocket launch system, in the case that flight over Papua is not possible. This launch occurs from Streaky Bay, the possible location of a launch site being developed by Southern Launch Australia\cite{Council2016}. The maximum payload-to-orbit has been calculated from this launch site using LODESTAR. Figure \ref{fig:GroundTrackAlternate} shows the ground track of this optimised trajectory, and Table \ref{tab:summaryalternate} details a summary of the key trajectory parameters. The shape of this optimised trajectory is very similar to the optimal trajectory of the launch system launched from the Northern Territory (Case 11). The first stage initially pitches towards the west, separating the SPARTAN in a westerly direction. The SPARTAN then performs a banking manoeuvre to the south, and a pull-up before third stage release. After separation, the SPARTAN exhibits initial turn, boost-skip and approach phases during fly-back, with the scramjet engine igniting three times at the troughs of the first three skips, in the same manner as when launching northerly. A higher payload to orbit is achieved when launching from a southerly location, attaining a total of \PayloadToOrbitAlternate kg of payload-to-orbit, an increase of +2.9\% compared to northerly launch. This payload increase is caused by the rotation of the Earth hindering, rather than assisting, when launching into a retrograde orbit, making launch from a more southerly point desirable. 
+In this section, an alternate southerly launch is investigated for the rocket-scramjet-rocket launch system, in the case that flight over Papua is not possible. This launch occurs from Streaky Bay, the possible location of a launch site being developed by Southern Launch Australia\cite{Council2016}. The maximum payload-to-orbit has been calculated from this launch site using LODESTAR. Figure \ref{fig:GroundTrackAlternate} shows the ground track of this optimised trajectory, and Table \ref{tab:summaryalternate} details a summary of the key trajectory parameters. The shape of this optimised trajectory is very similar to the optimal trajectory of the launch system launched from the Northern Territory (Case 11). The first stage initially pitches towards the west, separating the SPARTAN in a westerly direction. the SPARTAN then performs a banking manoeuvre to the south, and a pull-up before third stage release. After separation, the SPARTAN exhibits initial turn, boost-skip and approach phases during fly-back, with the scramjet engine igniting three times at the troughs of the first three skips, in the same manner as when launching northerly. A higher payload to orbit is achieved when launching from a southerly location, attaining a total of \PayloadToOrbitAlternate kg of payload-to-orbit, an increase of +2.9\% compared to northerly launch. This payload increase is caused by the rotation of the Earth hindering, rather than assisting, when launching into a retrograde orbit, making launch from a more southerly point desirable. 
 
 
 \begin{figure}[th]

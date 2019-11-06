@@ -48,14 +48,14 @@ The scramjet accelerator design is presented first, as the design of the scramje
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/NoInternal}
-	\caption{The SPARTAN launch system, top view, showing the scramjet accelerator and first stage. }
+	\caption{the SPARTAN launch system, top view, showing the scramjet accelerator and first stage. }
 	\label{fig:NoInternal}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/INTERNALS}
-	\caption{The SPARTAN launch system, side view, showing the scramjet accelerator and fuel tanks, along with the third and first stages. }
+	\caption{the SPARTAN launch system, side view, showing the scramjet accelerator and fuel tanks, along with the third and first stages. }
 	\label{fig:INTERNALS}
 \end{figure}
 
@@ -886,8 +886,8 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 \section{Modelling and Design Simplifications}  % XXX this is one for ingo to look at in particular, the location of this and how it fits in + discussion on controlinstability + section on aero and propulsion
 }
 
-The representative launch system in this study is based on The SPARTAN\cite{Preller2017b}, as it is the most mature concept for a small satellite launch system using scramjets in the public domain. However, the system is still at the preliminary design phase, meaning that the design, as well as system and sub-system models still incorporate significant simplifications and have not been fully developed. 
-The simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Appendix \textcolor{red}{XXX}, while design related simplifications particularly affect the control, staging, mass modelling of the launch system. At the current stage of The SPARTAN's development phase some of these aspects have not been finalised. 
+The representative launch system in this study is based on the SPARTAN\cite{Preller2017b}, as it is the most mature concept for a small satellite launch system using scramjets in the public domain. However, the system is still at the preliminary design phase, meaning that the design, as well as system and sub-system models still incorporate significant simplifications and have not been fully developed. 
+The simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Appendix \textcolor{red}{XXX}, while design related simplifications particularly affect the control, staging, mass modelling of the launch system. At the current stage of the SPARTAN's development phase some of these aspects have not been finalised. 
 The following sections addresses these open design choices, how they may affect the findings from the current work, and how they are indirectly considered in the design parameter analysis in Sections XXX and XXX. 
 
 \subsection{Control}
@@ -897,7 +897,7 @@ The following sections addresses these open design choices, how they may affect 
 
 %\textcolor{red}{XXX Note, references are for laminar flows}
 
-The control surfaces of the representative SPARTAN in this study are based on previous iterations of The SPARTAN\cite{Preller2017b}, and are modelled as large rectangular flaps. These flaps trim the vehicle during flight, and deflect significantly. These flaps experience large forces, and will need strong and resilient actuators to be able to hold deflection for long periods of time. In future iterations of a launch systems of this type, it may be necessary to design any aerodynamically controlled stages so that the necessary deflections of the control surfaces are minimised, through careful design of the aerodynamic profile and centre of gravity location.
+The control surfaces of the representative SPARTAN in this study are based on previous iterations of the SPARTAN\cite{Preller2017b}, and are modelled as large rectangular flaps. These flaps trim the vehicle during flight, and deflect significantly. These flaps experience large forces, and will need strong and resilient actuators to be able to hold deflection for long periods of time. In future iterations of a launch systems of this type, it may be necessary to design any aerodynamically controlled stages so that the necessary deflections of the control surfaces are minimised, through careful design of the aerodynamic profile and centre of gravity location.
 
 In addition to the possible limitations arising from the actuation mechanism, the control surfaces of the vehicle may experience design limitations due to the design and placement of the control surface.
 A control surface deflected in a supersonic flow acts as a compression ramp, with an incidence angle that changes rapidly at the flap hinge. Depending on the flow conditions, wall temperature adverse pressure gradient and boundary layer stability, the shock at the flap may cause the boundary layer to separate, causing a recirculation bubble, along with a separation shock that reattaches on the control surface\cite{Marini2001}. This recirculation bubble decreases the pressure in the region that it is present on the control surface, while the separation shock increases the shear stress directly downstream of its reattachment\cite{Marini2001}. These effects may reduce the effectiveness of the control surfaces at higher deflection angles, changing the deflection necessary to achieve trim. In addition, the reattachment of the shock will cause a high temperature region on the control surface, that may need to be accounted for during the design of the thermal protection system of the control surface. 
@@ -913,8 +913,8 @@ Likely impacts on design:
 
 \subsubsection{Control Modelling}
 In order to effectively apply the Pseudospectral method of optimal control for the purposes of this work, a point mass model is used in all phases of simulation, with the control surface deflections or thrust vector of each stage modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. However, all three stages of the representative SPARTAN launch system designed in this study are aerodynamically unstable for portions of their trajectories. Sections XXX and XXX identify the end of the first stage and scramjet stage trajectories as unstable, as well as the majority of fly-back and third stage trajectories.
-For the purposes of this study, the design of The SPARTAN as presented is regarded to be sufficient as a representative launch system design.
-However, it is likely that in the future a highly detailed study of The SPARTAN's design and control strategy must be undertaken, to determine the practicality of controlling this launch system during flight, and in particular the viability of thrust vector control. The controllability will be heavily interdependent on the vehicle design, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
+For the purposes of this study, the design of the SPARTAN as presented is regarded to be sufficient as a representative launch system design.
+However, it is likely that in the future a highly detailed study of the SPARTAN's design and control strategy must be undertaken, to determine the practicality of controlling this launch system during flight, and in particular the viability of thrust vector control. The controllability will be heavily interdependent on the vehicle design, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
 Exploring this further is one of the items identified under future work.
 
 Likely impacts on design:
@@ -934,7 +934,7 @@ During the first-second stage separation the first stage and cowling will requir
 
 The separation of the third stage rocket is likely to be particularly challenging, requiring separating the third stage from the scramjet-powered accelerator while retaining control authority over both vehicles, and ensuring that there is no significant risk of contact between the vehicles. This work assumes that the third stage is contained within the airbreathing stage, similar to some previous designs of the SPARTAN launch system\cite{Jazra2013}. However, other design strategies of multi-stage airbreathing launchers support the upper stage on top of\cite{Gong2014,Tsuchiya2005} or below\cite{Takahashi1997} the airbreathing stage, or contain upper stages within a cavity on the back of the vehicle\cite{Preller2017b,Mehta2001,Wilhite1991}. Each of these methods has positives as well as drawbacks, that must be considered throughout the design process.
 The storage of the third stage within the main body of the scramjet-powered accelerator during the ascent phase, necessitating a release mechanism such as retractable panels or a hinged fuselage section. This method of release is also likely to require an ejection mechanism, to impart a force onto the third stage and create distance between the stages. Additionally, it is possible that it would be necessary to ignite the third stage before it is fully released from the SPARTAN, due to the lack of a control mechanism for the third stage without the rocket engine ignited. 
-Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in an uncovered cavity on the back of the airbreathing vehicle (as was done for some iterations of The SPARTAN \textcolor{red}{XXX Cite}) mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
+Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in an uncovered cavity on the back of the airbreathing vehicle (as was done for some iterations of the SPARTAN \textcolor{red}{XXX Cite}) mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
 The methods of staging of a launch system of this type must be considered carefully in future design studies, taking into account the controllability of the launch system, along with the aerodynamic and aerothermal properties of each stage. 
 
 %\textcolor{red}{XXX Need to reference section in alternate trajectories where I do variation in return drag}
@@ -973,7 +973,7 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 		\hline 
 	\end{tabular}
-	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of The SPARTAN, calculated in Appendix \textcolor{red}{XXX}.}
+	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of the SPARTAN, calculated in Appendix \textcolor{red}{XXX}.}
 	\label{tab:AppendixUncertaintyCopy}
 \end{table}
 
