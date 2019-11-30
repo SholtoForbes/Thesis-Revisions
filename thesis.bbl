@@ -253,56 +253,65 @@
 
   \entry{Smart2009a}{article}{}
     \name{author}{2}{}{%
+      {{hash=SMV}{%
+         family={Suraweera},
+         familyi={S\bibinitperiod},
+         given={Milinda\bibnamedelima V.},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
          given={Michael\bibnamedelima K.},
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
-      {{hash=TMR}{%
-         family={Tetlow},
-         familyi={T\bibinitperiod},
-         given={Matthew\bibnamedelima R.},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
     }
-    \strng{namehash}{SMKTMR1}
-    \strng{fullhash}{SMKTMR1}
+    \strng{namehash}{SMVSMK1}
+    \strng{fullhash}{SMVSMK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
-  rockets during the hypersonic phase of low- Earth-orbit insertion
-  trajectories. Despite this, scramjets are not used on any current systems due
-  to the difﬁculty of operating over the large Mach number envelope required
-  by this accelerating trajectory. The key to taking advantage of airbreathing
-  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
-  system that makes use of the scramjet only within its high-performance
-  regime. A multistage rocket-scramjet-rocket system that accepts this
-  limitation has therefore been examined. This system includes a solid rocket
-  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
-  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
-  Trajectory calculations for a system scaled to deliver approximately 100 kg
-  to a 200 km equatorial orbit indicate payload mass fractions of approximately
-  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
-  packaging. The goal of this work is to guide the future development of
-  scramjets by identifying the areas that will make the most signiﬁcant
-  improvement to their use for space access.%
+    A shock tunnel investigation of a scramjet with a
+  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
+  elliptical combustor has been$\backslash$nconducted at conditions simulating
+  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
+  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
+  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
+  began with a rearward facing step around its perimeter,$\backslash$nand was
+  followed by a constant area and diverging section. The
+  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
+  fuel was$\backslash$ninjected either through multiple portholes on the
+  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
+  at the combustor entrance,$\backslash$nor a combination of the two. All
+  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
+  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
+  Fuel injection in the intake produced$\backslash$nrobust combustion and good
+  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
+  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
+  was observed for fuel injection at the step at all
+  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
+  injection$\backslash$nwas observed to have the best performance. These
+  experimental results$\backslash$ndemonstrate that REST scramjets, designed
+  for access-to-space applications,$\backslash$ncan operate efficiently at
+  conditions below the design Mach number.%
     }
     \verb{doi}
-    \verb 10.2514/1.38784
+    \verb 10.2514/1.37946
     \endverb
-    \field{isbn}{1563478269}
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{117\bibrangedash 125}
-    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
-  Airbreathing Propulsion}}
-    \field{volume}{46}
+    \field{isbn}{9781563479373}
+    \field{issn}{0748-4658}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 564}
+    \field{title}{{Shock-Tunnel Experiments with a Mach 12
+  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/1.37946
+    \endverb
+    \field{volume}{25}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MSmart2009.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{journaltitle}{Journal of Propulsion and Power}
     \field{year}{2009}
   \endentry
 
@@ -3220,26 +3229,20 @@
   \endentry
 
   \entry{mochammad}{thesis}{}
-    \name{author}{2}{}{%
-      {{hash=SF}{%
-         family={Space},
-         familyi={S\bibinitperiod},
-         given={Future},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ST}{%
-         family={Systems},
-         familyi={S\bibinitperiod},
-         given={Transport},
-         giveni={T\bibinitperiod},
+    \name{author}{1}{}{%
+      {{hash=AM}{%
+         family={{Agoes Moelyadi}},
+         familyi={A\bibinitperiod},
+         given={Mochammad},
+         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SFST1}
-    \strng{fullhash}{SFST1}
+    \strng{namehash}{AM1}
+    \strng{fullhash}{AM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{{Stage Separation Aerodynamics of Future Space Transport
-  Systems Stage Separation Aerodynamics of Future Space Transport Systems}}
+  Systems}}
     \list{institution}{1}{%
       {Technischen Universit\"{a}t M\"{u}nchen}%
     }
@@ -3389,51 +3392,6 @@
     \endverb
     \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2013}
-  \endentry
-
-  \entry{Jazra2010}{article}{}
-    \name{author}{1}{}{%
-      {{hash=JT}{%
-         family={Jazra},
-         familyi={J\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JT1}
-    \strng{fullhash}{JT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{November}
-    \field{title}{{Optimisation of Hypersonic Vehicles for Airbreathing
-  Propulsion}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/TJazra\_phd\_finalt
-    \verb hesis.pdf:pdf
-    \endverb
-    \field{year}{2010}
-  \endentry
-
-  \entry{Fergusen2009}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=FT}{%
-         family={Ferguson},
-         familyi={F\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{FT1}
-    \strng{fullhash}{FT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Small Satellite Separation from a Hypersonic Airbreathing
-  Vehicle}}
-    \list{institution}{1}{%
-      {The University of Queensland}%
-    }
-    \field{type}{phdthesis}
-    \field{year}{2009}
   \endentry
 
   \entry{Moshman2014}{article}{}
@@ -3754,6 +3712,29 @@
     \endverb
     \field{journaltitle}{Journal of Aircraft}
     \field{year}{2007}
+  \endentry
+
+  \entry{Jazra2010}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JT}{%
+         family={Jazra},
+         familyi={J\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JT1}
+    \strng{fullhash}{JT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{November}
+    \field{title}{{Optimisation of Hypersonic Vehicles for Airbreathing
+  Propulsion}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/TJazra\_phd\_finalt
+    \verb hesis.pdf:pdf
+    \endverb
+    \field{year}{2010}
   \endentry
 
   \entry{Bulirsch1993}{article}{}
@@ -5985,35 +5966,6 @@
     \field{urlyear}{2018}
   \endentry
 
-  \entry{Segal2009}{book}{}
-    \name{author}{1}{}{%
-      {{hash=SC}{%
-         family={Segal},
-         familyi={S\bibinitperiod},
-         given={Corin},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Cambridge University Press}%
-    }
-    \strng{namehash}{SC1}
-    \strng{fullhash}{SC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{9780521838153}
-    \field{pages}{229}
-    \field{title}{{The Scramjet Engine: Processes and Characteristics}}
-    \list{location}{1}{%
-      {Cambridge, UK}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Segal - 2009 - The
-    \verb scramjet engine Processes and characteristics.pdf:pdf
-    \endverb
-    \field{year}{2009}
-  \endentry
-
   \entry{Sagerman2017}{article}{}
     \name{author}{4}{}{%
       {{hash=SDG}{%
@@ -6952,26 +6904,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{rutherford}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Rocket lab USA}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R3}
-    \strng{fullhash}{R3}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
-    \verb{url}
-    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
-    \verb erford-engine-test-fires/
-    \endverb
-    \field{year}{2018}
-    \warn{\item Invalid format of field 'urldate'}
-  \endentry
-
   \entry{Huzel1967}{book}{}
     \name{author}{2}{}{%
       {{hash=HD}{%
@@ -7008,6 +6940,188 @@
     \verb f:pdf
     \endverb
     \field{year}{1992}
+  \endentry
+
+  \entry{rutherford}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rocket lab USA}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R3}
+    \strng{fullhash}{R3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
+    \verb{url}
+    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
+    \verb erford-engine-test-fires/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{12}
+    \field{urlmonth}{08}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{Marini2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Marini},
+         familyi={M\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Compression ramps,Hypersonic laminar flows,Scaling laws,Sharp leading
+  edge,Shock wave boundary layer interactions}
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The present work is devoted to reviewing recent cases of shock
+  wave/boundary layer laminar interactions over compression ramps with sharp
+  leading edge (two-dimensional and axisymmetric concave geometries), and to
+  making a contribution to the understanding of the physical features and
+  controlling mechanisms of the flows by means of extensive numerical
+  simulations and comparison with experiments. The most critical aspects of
+  numerical simulations have been identified and attention has been focused on
+  the effects of ramp angle, wall temperature, axisymmetry and finite span.
+  Present compression ramp cases cover a wide range of Mach number and Reynolds
+  number, thus making the analysis reasonably complete. Results are validated
+  in terms of simplified theoretical analysis, comparison with available
+  measurements, and correlation laws describing the characteristic parameters
+  of the problem. It has been shown that mechanical and thermal loads over
+  compression ramps, as well as separation characteristics, depend strongly on
+  ramp angle, wall temperature assumption and geometric configuration. On the
+  other hand, their quantitative prediction depends on grid resolution as well
+  as the correctness of the physical and numerical modeling employed. © 2001
+  \'{E}ditions scientifiques et m\'{e}dicales Elsevier SAS.%
+    }
+    \verb{doi}
+    \verb 10.1016/S1270-9638(01)01109-9
+    \endverb
+    \field{issn}{12709638}
+    \field{number}{4}
+    \field{pages}{257\bibrangedash 271}
+    \field{title}{{Analysis of hypersonic compression ramp laminar flows under
+  sharp leading edge conditions}}
+    \field{volume}{5}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Marini2001.pdf:pdf
+    \endverb
+    \field{journaltitle}{Aerospace Science and Technology}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Gong2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GC}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Chunlin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Liangxian},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCCBGL1}
+    \strng{fullhash}{GCCBGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In response to a demand for fast access to near space, a horizontal
+  take-off and horizontal landing Suborbital Reusable Launch Vehicle (SRLV)
+  concept powered by Rocket Based Combined Cycle (RBCC) engine is proposed in
+  this research. This SRLV is designed to deliver a 20,000 kg payload to an
+  altitude of 50km and a velocity of Mach 8, and to be able to fly back to the
+  launch site. Compared with classical rocket launch vehicles and cruise
+  vehicles, this vehicle applies unconventional configuration, flight path and
+  propulsion working mode, and interactions between disciplines are very
+  distinct. As there is scarce knowledge and data to refer to, we are faced
+  with challenges in conceptual design. In this article, a two-phase design
+  methodology is developed for RBCC powered vehicles. In the first phase, a
+  sequential design flow with several design steps is utilized to find a
+  feasible or near-feasible baseline. The methods used in this phase include:
+  1) a simplified trajectory for weight \& sizing, 2) a multi-point
+  optimization for aerodynamic shape design over a wide range of speeds, 3)a
+  multi-point optimization for RBCC engine design to meet requirements of all
+  working modes, 4) an integrated analysis process for aerodynamic/propulsion
+  performance calculation, 5) a gauss-pseudo spectral based trajectory
+  optimization to find the optimal flight path, 6) a structural design and
+  sizing method, and 7) an automatic thermal protection system concept
+  selection and sizing method. Also, considering the features of the vehicle,
+  interactions between these steps are considered. With these methods and
+  several iterations between them, the baseline of vehicle concept is created.
+  In the second phase, Multi-Disciplinary Optimization (MDO) is applied to
+  improve baseline for a feasible and better design. During this phase,
+  optimization problem of SRLV, including design variables, constraints, and
+  objectives, is created. The disciplinary high-fidelity models of and
+  couplings between them are set up. By applying an asymmetric MDO
+  architecture, the synthesis MDO model is integrated. Response Surface Method
+  and Sequential Quadratic Programming algorithm are used in this architecture
+  to find a closure and optimal solution. The application results from
+  presented SRLV show that for a given launch task, the optimal design with all
+  constraints satisfied can be found by this two-phase design methodology. We
+  also find that this methodology is almost knowledge independent and suitable
+  to conceptual design of unconventional vehicle like RBCC powered SRLV.%
+    }
+    \verb{doi}
+    \verb 10.2514/6.2014-2361
+    \endverb
+    \field{isbn}{9781624102844}
+    \field{number}{June}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{{Design and Optimization of RBCC Powered Suborbital Reusable
+  Launch Vehicle}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2014-2361
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/Gong.pdf:pdf
+    \endverb
+    \field{journaltitle}{19th AIAA International Space Planes and Hypersonic
+  Systems and Technologies Conference}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Preller2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={Preller},
+         familyi={P\bibinitperiod},
+         given={Dawid},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PD1}
+    \strng{fullhash}{PD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
+  Hypersonic Airbreathing Accelerating Vehicle}}
+    \list{institution}{1}{%
+      {University of Queensland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/Preller-2017-
+    \verb Multidisciplinary-Design-and-Optimisation-of-a-Pitch-Trimmed-Hyperson
+    \verb ic-Airbreathing-Accelerating-Vehicle.pdf:pdf
+    \endverb
+    \field{type}{phdthesis}
+    \field{year}{2018}
   \endentry
 
   \entry{Patterson2015}{report}{}
@@ -7735,163 +7849,57 @@
     \field{year}{1988}
   \endentry
 
-  \entry{Marini2001}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MM}{%
-         family={Marini},
-         familyi={M\bibinitperiod},
-         given={Marco},
-         giveni={M\bibinitperiod},
+  \entry{Zhu2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZY}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Yinhai},
+         giveni={Y\bibinitperiod},
       }}%
-    }
-    \keyw{Compression ramps,Hypersonic laminar flows,Scaling laws,Sharp leading
-  edge,Shock wave boundary layer interactions}
-    \strng{namehash}{MM1}
-    \strng{fullhash}{MM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The present work is devoted to reviewing recent cases of shock
-  wave/boundary layer laminar interactions over compression ramps with sharp
-  leading edge (two-dimensional and axisymmetric concave geometries), and to
-  making a contribution to the understanding of the physical features and
-  controlling mechanisms of the flows by means of extensive numerical
-  simulations and comparison with experiments. The most critical aspects of
-  numerical simulations have been identified and attention has been focused on
-  the effects of ramp angle, wall temperature, axisymmetry and finite span.
-  Present compression ramp cases cover a wide range of Mach number and Reynolds
-  number, thus making the analysis reasonably complete. Results are validated
-  in terms of simplified theoretical analysis, comparison with available
-  measurements, and correlation laws describing the characteristic parameters
-  of the problem. It has been shown that mechanical and thermal loads over
-  compression ramps, as well as separation characteristics, depend strongly on
-  ramp angle, wall temperature assumption and geometric configuration. On the
-  other hand, their quantitative prediction depends on grid resolution as well
-  as the correctness of the physical and numerical modeling employed. © 2001
-  \'{E}ditions scientifiques et m\'{e}dicales Elsevier SAS.%
-    }
-    \verb{doi}
-    \verb 10.1016/S1270-9638(01)01109-9
-    \endverb
-    \field{issn}{12709638}
-    \field{number}{4}
-    \field{pages}{257\bibrangedash 271}
-    \field{title}{{Analysis of hypersonic compression ramp laminar flows under
-  sharp leading edge conditions}}
-    \field{volume}{5}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Marini2001.pdf:pdf
-    \endverb
-    \field{journaltitle}{Aerospace Science and Technology}
-    \field{year}{2001}
-  \endentry
-
-  \entry{Gong2014}{article}{}
-    \name{author}{3}{}{%
-      {{hash=GC}{%
-         family={Gong},
-         familyi={G\bibinitperiod},
-         given={Chunlin},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=CB}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Bing},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=GL}{%
-         family={Gu},
-         familyi={G\bibinitperiod},
-         given={Liangxian},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GCCBGL1}
-    \strng{fullhash}{GCCBGL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In response to a demand for fast access to near space, a horizontal
-  take-off and horizontal landing Suborbital Reusable Launch Vehicle (SRLV)
-  concept powered by Rocket Based Combined Cycle (RBCC) engine is proposed in
-  this research. This SRLV is designed to deliver a 20,000 kg payload to an
-  altitude of 50km and a velocity of Mach 8, and to be able to fly back to the
-  launch site. Compared with classical rocket launch vehicles and cruise
-  vehicles, this vehicle applies unconventional configuration, flight path and
-  propulsion working mode, and interactions between disciplines are very
-  distinct. As there is scarce knowledge and data to refer to, we are faced
-  with challenges in conceptual design. In this article, a two-phase design
-  methodology is developed for RBCC powered vehicles. In the first phase, a
-  sequential design flow with several design steps is utilized to find a
-  feasible or near-feasible baseline. The methods used in this phase include:
-  1) a simplified trajectory for weight \& sizing, 2) a multi-point
-  optimization for aerodynamic shape design over a wide range of speeds, 3)a
-  multi-point optimization for RBCC engine design to meet requirements of all
-  working modes, 4) an integrated analysis process for aerodynamic/propulsion
-  performance calculation, 5) a gauss-pseudo spectral based trajectory
-  optimization to find the optimal flight path, 6) a structural design and
-  sizing method, and 7) an automatic thermal protection system concept
-  selection and sizing method. Also, considering the features of the vehicle,
-  interactions between these steps are considered. With these methods and
-  several iterations between them, the baseline of vehicle concept is created.
-  In the second phase, Multi-Disciplinary Optimization (MDO) is applied to
-  improve baseline for a feasible and better design. During this phase,
-  optimization problem of SRLV, including design variables, constraints, and
-  objectives, is created. The disciplinary high-fidelity models of and
-  couplings between them are set up. By applying an asymmetric MDO
-  architecture, the synthesis MDO model is integrated. Response Surface Method
-  and Sequential Quadratic Programming algorithm are used in this architecture
-  to find a closure and optimal solution. The application results from
-  presented SRLV show that for a given launch task, the optimal design with all
-  constraints satisfied can be found by this two-phase design methodology. We
-  also find that this methodology is almost knowledge independent and suitable
-  to conceptual design of unconventional vehicle like RBCC powered SRLV.%
-    }
-    \verb{doi}
-    \verb 10.2514/6.2014-2361
-    \endverb
-    \field{isbn}{9781624102844}
-    \field{number}{June}
-    \field{pages}{1\bibrangedash 20}
-    \field{title}{{Design and Optimization of RBCC Powered Suborbital Reusable
-  Launch Vehicle}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2014-2361
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/Gong.pdf:pdf
-    \endverb
-    \field{journaltitle}{19th AIAA International Space Planes and Hypersonic
-  Systems and Technologies Conference}
-    \field{year}{2014}
-  \endentry
-
-  \entry{Preller2018}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=PD}{%
-         family={Preller},
+      {{hash=PW}{%
+         family={Peng},
          familyi={P\bibinitperiod},
-         given={Dawid},
-         giveni={D\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=XR}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Ruina},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Peixue},
+         giveni={P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{PD1}
-    \strng{fullhash}{PD1}
+    \list{publisher}{2}{%
+      {Chinese Society of Aeronautics}%
+      {Astronautics}%
+    }
+    \strng{namehash}{ZY+1}
+    \strng{fullhash}{ZYPWXRJP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
-  Hypersonic Airbreathing Accelerating Vehicle}}
-    \list{institution}{1}{%
-      {University of Queensland}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/Preller-2017-
-    \verb Multidisciplinary-Design-and-Optimisation-of-a-Pitch-Trimmed-Hyperson
-    \verb ic-Airbreathing-Accelerating-Vehicle.pdf:pdf
+    \verb{doi}
+    \verb 10.1016/j.cja.2018.06.011
     \endverb
-    \field{type}{phdthesis}
+    \field{issn}{1000-9361}
+    \field{number}{10}
+    \field{pages}{1929\bibrangedash 1953}
+    \field{title}{{Review on active thermal protection and its heat transfer
+  for airbreathing hypersonic vehicles}}
+    \verb{url}
+    \verb https://doi.org/10.1016/j.cja.2018.06.011
+    \endverb
+    \field{volume}{31}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/ZHU2018.pdf:pdf
+    \endverb
+    \field{journaltitle}{Chinese Journal of Aeronautics}
     \field{year}{2018}
   \endentry
 
@@ -7923,6 +7931,117 @@
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
     \endverb
     \field{year}{2013}
+  \endentry
+
+  \entry{Kiris2011}{article}{}
+    \name{author}{10}{}{%
+      {{hash=KC}{%
+         family={Kiris},
+         familyi={K\bibinitperiod},
+         given={Cetin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Housman},
+         familyi={H\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gusman},
+         familyi={G\bibinitperiod},
+         given={Marshall},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Schauerhamer},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Deere},
+         familyi={D\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Elmiligui},
+         familyi={E\bibinitperiod},
+         given={Alaa},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AHK}{%
+         family={Abdol-Hamid},
+         familyi={A\bibinitperiod-H\bibinitperiod},
+         given={Khaled},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Parlette},
+         familyi={P\bibinitperiod},
+         given={Ed},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Andrews},
+         familyi={A\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Blevins},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCHJGMSDDKEAAHKPEAMBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In support of NASA's next generation heavy lift launch vehicle (HLLV), a
+  simulation protocol has been developed to generate databases of the
+  aerodynamic force and moment coefficients for HLLV ascent. The simulation
+  protocol has been established and validated with a series of computational
+  analyses that ensure best practices are achieved. Results of the sensitivity
+  analyses using a full-scale Ares V flight vehicle are next applied in a
+  validation study with three scaled-down Ares V wind tunnel test articles.
+  Three independent computational fluid dynamic (CFD) flow solvers were
+  included in the study. These included OVERFLOW, a viscous Reynolds Averaged
+  Navier-Stokes (RANS) solver for structured overset grids, USM3D, a viscous
+  RANS solver for unstructured tetrahedral grids, and Cart3D, an inviscid Euler
+  solver using unstructured Cartesian grids and adjoint-based adaptive mesh
+  refinement. First, a series of tests was independently performed for each
+  applicable CFD code, including a grid convergence study and sensitivity
+  studies of turbulence models and convective flux discretization methods. Once
+  the proper grid resolution, physical models, and numerical parameters were
+  determined for each of the codes, the process was continued with a
+  code-to-code comparison. Each CFD code was applied to the Ares V flight
+  vehicle at several points in the ascent trajectory, with all three codes
+  obtaining consistent force and moment predictions. Finally, an extensive
+  validation of the CFD approach was performed, in which the three codes were
+  used to generate aero-databases of force and moment coefficients for three
+  distinct Ares V wind tunnel test articles. These computations were performed
+  concurrent to the experimental databases generated in the 14-inch wind tunnel
+  at Marshall Space Flight Center (MSFC). Comparisons of the CFD results with
+  the experimental data are reported and the viscous flow results compare well.
+  Copyright © 2011 by the American Institute of Aeronautics and Astronautics,
+  Inc.%
+    }
+    \verb{doi}
+    \verb 10.2514/6.2011-16
+    \endverb
+    \field{pages}{1\bibrangedash 21}
+    \field{title}{{Best practices for aero-database CFD simulations of ares V
+  ascent}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kiris2011.pdf:pdf
+    \endverb
+    \field{journaltitle}{49th AIAA Aerospace Sciences Meeting Including the New
+  Horizons Forum and Aerospace Exposition}
+    \field{year}{2011}
   \endentry
 
   \entry{Davidian1987}{article}{}
