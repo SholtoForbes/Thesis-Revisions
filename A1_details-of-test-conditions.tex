@@ -6,13 +6,15 @@
 %\textcolor{red}{XXX note: layers might be at different temps, tested temps may not be exceeded.}
 
 
-The thermal protection of a hypersonic launch vehicle is essential to its operation, and is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The SPARTAN-based launch system in this study includes nearly the same thermal protection that is used in previous SPARTAN studies, that has been assumed to be able to protect the SPARTAN throughout its launch trajectory\cite{Preller2018a}. However, no detailed thermal analysis of the SPARTAN has been carried out to date. This section aims to analyse the thermal protection system of the SPARTAN, in order to determine whether it is sufficient for operation to a first approximation. While the purpose of this work is not to significantly redesign a launch vehicle, the design of the SPARTAN's TPS is investigated to analyse the level of thermal protection that may be necessary for future operation. 
+The thermal protection of a hypersonic launch system is essential to its operation, and resisting the aerothermal loading produced during launch is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The modified SPARTAN launch system in this study uses nearly the same thermal protection that is used in previous SPARTAN studies, which has been assumed to be able to protect the SPARTAN throughout its launch trajectory\cite{Preller2018a}. However, no detailed thermal analysis of the SPARTAN has been carried out to date. This section aims to analyse the thermal protection system of the SPARTAN, in order to determine whether it is sufficient for operation to a first approximation. In this section, the heat flux over the trajectory is modelled at various locations on the SPARTAN and third stage, and integrated over the trajectory using 1-D heat conduction analysis to determine the efficacy of the thermal protection system. In addition, the design of the SPARTAN's TPS is investigated to provide an indication of the sensitivity of the temperatures produced during launch to critical TPS design parameters. 
 
 
 %\textcolor{red}{XXX I dont know how to express why reynolds analogy is not valid.. is it just radiating shock layer effects? Then why would it be specific to a part of the leading edge that isnt near the shock?}
 
-During launch, the launch system is exposed to large aerothermal loading that must be resisted using passive thermal protection systems. The heat flux over the trajectory is modelled at various locations on the SPARTAN and third stage, and integrated over the trajectory using 1-D heat conduction analysis to determine the efficacy of the thermal protection system. For the body, the criteria for thermal protection system effectiveness is that the temperature at the internal surface of the thermal protection system does not melt or cause failure in the internal structure. For the nose tips and the wing leading edges it is assumed that the thermal protection system will not be directly attached to the internal insulation and will have their own isolated structure, so that the criteria for thermal protection system success is that the temperature at these points is maintained within the operable limits of the external thermal protection system materials. 
 
+%For the body, the criteria for thermal protection system effectiveness is that the temperature at the internal surface of the thermal protection system does not cause failure in the internal structure. For the nose tips and the wing leading edges it is assumed that the thermal protection system will not be directly attached to the internal insulation and will have their own isolated structure, so that the criteria for thermal protection system success is that the temperature at these points is maintained within the operable limits of the external thermal protection system materials. 
+
+\section{Heat Transfer Calculation}
 The heat transfer coefficients on the body of the vehicle are computed using Reynolds analogy: 
 \begin{equation}
 c_h = \frac{c_f}{2s},
@@ -36,7 +38,7 @@ This solution is performed within the viscous solver VC3D, at specific locations
 \label{fig:Q_pos}
 \end{figure}
 
-The heat transfer at the stagnation point and leading edge of the wings, where the simple Reynold's analogy is not valid due to large pressure gradients in the flow\cite{HypersonicGas}, is estimated using semi-empirical correlations\cite{Dirkx}. At the stagnation point, the heat transfer is given by\cite{Dirkx}:
+The heat transfer at the stagnation point and leading edge of the wings, where Reynold's analogy is not valid due to large pressure gradients in the flow\cite{HypersonicGas}, is estimated using semi-empirical correlations\cite{Dirkx}. At the stagnation point, the heat transfer is given by\cite{Dirkx}:
 \begin{equation}
 q_s = k_1\rho^{N_1}V^{N_2},
 \end{equation}
@@ -58,7 +60,7 @@ where $N_3 = 3.37$, $N_4 = 0.8$ and
 \begin{equation}
 k_2 = 3.35 \times 10^{-4} \cos^{1.78}(\theta) \sin^{1.6}(\theta) x_T^{-1/5} (\frac{T_w}{556})^{-1/4} (1 - 1.11\frac{T_w}{T_{aw}}),
 \end{equation}
-where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, the aeroheating is calculated at the start of the wing, providing an overall worst case scenario for the heating rate. Results for both best case and worst case transition points are provided in Appendix \textcolor{red}{XXX} and are shown to exhibit only \textcolor{red}{XXX}\% difference. As this is comparatively small and acknowledging the preliminary design nature (and associated design uncertainties) of the current project, we have opted to use the worst case assumption for estimating heat-transfer.
+where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, the aeroheating is calculated at the start of the wing, providing a worst case scenario for the heating rate on the leading edge. 
 
 
 
@@ -105,16 +107,20 @@ where $\theta$ is the flow incidence angle and $x_T$ is the distance along the b
 		\caption{The temperature time history on the tail (\textcolor{red}{6}).}
 		
 	\end{subfigure}
-	\caption{Temperature time histories on the scramjet accelerator. \textcolor{red}{XXX remove weird legends, add proper legend}}
+	\caption{Temperature time histories on the scramjet accelerator.}
 	\label{fig:TrajTemp}
 \end{figure}
 
 
  
 To determine the effectiveness of the SPARTAN's TPS system, a 1-D heat analysis is conducted.  
-This heating calculation is implemented through the \textsf{uqTurbine} software package for 1-D heat transfer calculation, using the heat transfer calculated as defined in the previous section at each point along the trajectory. 
+This heating calculation is implemented through the \textsf{uqTurbine} software package for 1-D heat transfer calculation, using the heat transfer calculations defined in the preceding section. 
 This gives an indication of the temperature at the specified points around the SPARTAN throughout its trajectory. 
-Figures \ref{fig:TrajTemp} and \ref{fig:TrajTemp3} show the heat responses at the specified locations on the vehicles over the ascent trajectory of the SPARTAN. At the nose and leading edge it is assumed that there is no direct thermal connection to the internal insulation by the structure or TPS at the regions of maximum heat loads. The maximum heating in this area is therefore assumed to be limited by the properties of the TPS itself. The tungsten nose reaches 1947K, and the Carbon-Carbon wing leading edge reaches 1695K. These temperatures are within the operational regimes of the materials, although the internal temperatures are close to the limits of the operational regime of the internal multilayer insulation. While it is outside the scope of this study to account for detailed internal design, the design of the stagnation region and leading edges along with appropriate structural support is likely to be a critical factor in the detailed design of the SPARTAN. These regions must be designed structurally so that the regions of high aerodynamic loads are able to be supported, while not degrading the mechanical properties of the internal insulation close to the critical areas due to aerothermal heating.  
+Figures \ref{fig:TrajTemp} and \ref{fig:TrajTemp3} show the heat responses at the specified locations on the vehicles over the ascent trajectory of the SPARTAN. 
+
+The tungsten nose reaches 2015.1K, and the Carbon-Carbon wing leading edge reaches 1665.8K. 
+At the nose and leading edge it is assumed that there is no direct thermal connection to the internal insulation by the structure or TPS at the regions of maximum heat loads. The maximum heating in this area is therefore assumed to be limited by the properties of the TPS itself. These temperatures are within the operational regimes of the external TPS materials, however, the TPS in these areas will need to be carefully designed to support the high structural loading of hypersonic flight, while also providing sufficient thermal isolation of the nose tip and leading edges.
+
 
 \begin{figure}[!ht]
 	\begin{subfigure}{.495\textwidth}
@@ -142,9 +148,13 @@ Figures \ref{fig:TrajTemp} and \ref{fig:TrajTemp3} show the heat responses at th
 	\label{fig:TrajTemp3}
 \end{figure}
 
-On the body of the scramjet accelerator, the interior of the nose reaches a maximum of 1363K, the cowl 1337K, the wing 1384K, and the tail 1142K on the vehicle-facing edge. These temperatures are greater than the 1273K (1000$^\circ$C) approximate surface temperature that the multilayer internal insulation has been tested at, where the back face of the insulation has been shown analytically, based on experimental data, to keep temperatures below 546K (273$^\circ$C)\cite{Kourtides} if the multilayer insulation with best performance (silica felt insulation\cite{Kourtides}) is used. This indicates that the backface temperature of the insulation is likely to be above 546K. This temperature is significantly less than the melting temperature of Aluminium, which is used for the internal structure, although it is within the range where conventional aluminium alloys begin to lose their mechanical strength. It is likely that a high temperature aluminium alloy would be required for the internal structure, at least in the regions of the internal structure that are close to the interface with the external insulation. In addition, these high temperatures will begin to reduce the mechanical strength of the internal insulation\cite{Kourtides}. This must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. Fibers with high strength at these high temperatures must be used in the internal insulation, and the aerodynamic loading must be distributed in such a way that the loads on the internl insulation do not cause mechanical failure. In this work it is assumed that the internal structure and insulation of the scramjet accelerator has been designed appropriately to account for regions of high heat load. 
+On the body of the scramjet accelerator, the interior of the nose cone reaches a maximum of 1363.1K, the cowl 1384.9K, the wing 1326.4K, and the tail 1142.3K on the inner-face of the TPS.
+These temperatures are well within the operational regime of the TPS material, although the internal temperatures are at the limits of the operational regime of the internal multilayer insulation, which is nominally designed for operation in the 900-1100$^\circ$C (1173-1373K) range. These high temperatures will begin to reduce the mechanical strength of the internal insulation\cite{Kourtides}, and must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. Fibers with high strength at these high temperatures must be used in the internal insulation, and the aerodynamic loading must be distributed in such a way that the loads on the internl insulation do not cause mechanical failure. In this work it is assumed that the internal structure and insulation of the scramjet accelerator has been designed appropriately to account for regions of high heat load. For the purposes of this study, this is assumed to be sufficient for operation, however, detailed analysis of the TPS design, including analysis of the external TPS materials, as well as the internal multilayer insulation, must be conducted as the design of the TPS system of the SPARTAN is progressed. 
 
-The temperatures on the third stage rocket are significantly lower than those experienced by the scramjet accelerator. The nose tip of the third stage reached a maximum inner face temperature of 874K, while the nose cone and body reach maximum temperatures of 439K and 377K respectively. These relatively low temperatures indicate that it may be possible to reduce the mass of the heat shield, by reducing the thickness of the C-C protection on the nose, or by changing the material entirely. 
+In addition to the high temperatures possibly approaching the limits of the multilayer insulation, the high temperatures produced will influence the material used for the internal structure. 
+In analytical studies based on experimental tests of the internal multilayer insulation at 1273K (1000$^\circ$C) approximate surface temperature, the back face of the insulation has been shown to keep temperatures below 546K (273$^\circ$C)\cite{Kourtides} when the multilayer insulation with best performance (silica felt insulation\cite{Kourtides}) is used. Because the internal temperatures are above the experimentally tested temperature, the backface temperature of the insulation is likely to be above 546K, and are likely to be within the range where conventional aluminium alloys begin to lose their mechanical strength. Because of this, it is likely that a high temperature aluminium alloy would be required for the internal structure, at least in the regions of the internal structure that are close to the interface with the external insulation.
+
+The temperatures on the third stage rocket are significantly lower than those experienced by the scramjet accelerator. The nose tip of the third stage reached a maximum inner face temperature of 874.8K, while the nose cone and body reach maximum temperatures of 439.4K and 655.8K respectively. These relatively low temperatures indicate that it may be possible to reduce the mass of the heat shield, by reducing the thickness of the tungsten and C-C protection on the nose, or by changing the material entirely. 
 
 
 %Max temps: T0 T1
@@ -174,13 +184,12 @@ The temperatures on the third stage rocket are significantly lower than those ex
 \section{Aerothermal Exploration}
 
 The design of the thermal protection systems of the vehicles within an airbreathing launch system is critical to the successful operation of the system. While this work assumes that the TPS is sufficient for operation, the scramjet accelerator stage is flying close to its thermal limits, while the heat loading on the third stage rocket is significantly lower. 
-As the modelling of the launch system improves, its is likely that the TPS will be redesigned and redistributed somewhat to optimise the weight of each vehicle while accounting for heating distribution. A 1D sensitivity study of the TPS design is conducted in this section, to allow for an initial estimation of the effects of variations in the passive TPS design, as well as the effects of active cooling inclusion. 
+As the modelling of the launch system improves, its is likely that the TPS will be redesigned and heat shielding redistributed to optimise the weight of each vehicle while accounting for heating distribution. A 1D sensitivity study of the TPS design is conducted in this section, to allow for an initial estimation of the effects of variations in the passive TPS design, as well as the effects of active cooling inclusion. 
 
-\section{Scramjet Accelerator TPS Design Exploration}
+\subsection{Scramjet Accelerator TPS Design Exploration}
 
-The thickness, density, thermal conductivity and specific heat of the C-C heat shield on the windward wing panel are varied by $\pm$10\%, to measure the effect of the TPS properties and design at the region of highest heating with direct connection to the internal insulation. The maximum inner face temperature recorded is shown in Table \ref{tab:tpsscramjet}. These variations indicate an inner face temperature sensitivity of -2.7K/\% to variation in thickness, -1.9K/\% to variation in density, and 0.6 K/\% to variation in thermal conductivity when varied from the standard CCAT T-300 properties. 
-
-The effects of a 10\% variation in any of these properties is not particularly large. This indicates that if the maximum inner face temperature is to be reduced significantly in an area of high heating through modification of the heat shield, the heat shield design or properties in that area must be modified significantly to have the desired effect. 
+The thickness, density, thermal conductivity and specific heat of the C-C heat shield on the shroud are varied by $\pm$10\%, to measure the effect of the TPS properties and design at the region of highest heating with direct connection to the internal insulation. The maximum inner face temperature recorded is shown in Table \ref{tab:tpsscramjet}. These variations indicate an inner face temperature sensitivity of -2.7K/\% to variation in thickness, -1.9K/\% to variation in density, and 0.6 K/\% to variation in thermal conductivity when varied from the standard CCAT T-300 properties. 
+The effects of a 10\% variation in any of these properties is not particularly large. This indicates that if the maximum inner face temperature is to be reduced in an area of high heating through modification of the heat shield, the heat shield design or properties in that area must be modified significantly to produce a significant effect. 
 
 
 %XXX  density is the same as specific heat 
@@ -189,15 +198,16 @@ The effects of a 10\% variation in any of these properties is not particularly l
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline  & -10\% & -5\% & Standard & +5\% & +10\% \\ 
 		\hline Thickness & 1418.0 & 1401.4 & 1384.9  &   1375.6&   1363.6\\ 
-		\hline Density & 1408.6 &  1396.3  &  &  1378.0&  1369.9\\ 
-		\hline Thermal Conductivity &  1380.4 & 1382.9 &  &  1388.9& 1393.6\\ 
+		\hline Density & 1408.6 &  1396.3  & 1384.9 &  1378.0&  1369.9\\ 
+		\hline Thermal Conductivity &  1380.4 & 1382.9 & 1384.9 &  1388.9& 1393.6\\ 
 		\hline 
 	\end{tabular}
+	
+	\caption{Inner face temperatures in K on the shroud of the scramjet accelerator with variations in TPS properties.}
 	\label{tab:tpsscramjet}
-	\caption{Inner face temperatures in K on the wing of the scramjet accelerator with variations in TPS properties.}
 	\end{table}
 
-If passive TPS is not sufficient, active cooling may be introduced in areas of high heat loads. This active cooling can take many forms, such as regenerative, film, and transpiration cooling\cite{Zhu2018}, all of which are currently being actively studied for applications to hypersonic vehicles. For the most critical areas of high heating on the scramjet body, regenerative cooling is assumed to be the most practical method of active cooling, and the complex effects of this cooling are approximated as a set rate of heat transfer away from the inner face that directly reduces the temperature of the inner face of the TPS. Inner face temperatures on the wing with heat transfer rates from 0 to 20kW away from the inner face are compared in Table \ref{tab:regenerativecooling}. The inner face temperature shows a sensitivity of -XXX K/kW to a constant rate of heat transfer applied to the inner face. 
+If passive TPS is not sufficient, active cooling may be introduced in areas of high heat loads. This active cooling can take many forms, such as regenerative, film, and transpiration cooling\cite{Zhu2018}, all of which are currently being actively studied for applications to hypersonic vehicles. For the most critical areas of high heating on the scramjet body, regenerative cooling is assumed to be the most practical method of active cooling, and the complex effects of this cooling are approximated as a set rate of heat transfer away from the inner face that directly reduces the temperature of the inner face of the TPS. Inner face temperatures on the shroud with heat transfer rates from 0 to 20kW away from the inner face are compared in Table \ref{tab:regenerativecooling}. The inner face temperature shows a sensitivity of -5.2 K/kW to a constant rate of heat transfer applied to the inner face. 
 
 
 \begin{table}[ht]
@@ -207,25 +217,24 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		\hline Maximum T (K) & 1384.9 & 1359.3 & 1333.4 & 1307.4 & 1281.2 \\ 
 		\hline
 \end{tabular}	
-\caption{Maximum inner face temperature with a constant rate of heat transfer away from the inner face of the wing.}
+\caption{Maximum inner face temperature with a constant rate of heat transfer away from the inner face of the shroud.}
 \label{tab:regenerativecooling}	
 \end{table}
 
 
 
-\section{Heating limited Trajectory}
+\subsection{Heating limited Trajectory}
 
 \begin{table}[ht]
 	
 	\centering
-	\begin{tabular}{l c c c c c c} 
+	\begin{tabular}{l c c c c c } 
 		\hline \textbf{Trajectory Condition}	q$_2$Lim:
 		& Standard
 		& 1700kW
 		& 1600kW
 		& 1500kW
 		& 1400kW
-		& $\Delta/\Delta$q$_2$Lim\%
 		\\
 		\hline \textbf{Payload to Orbit (kg)}
 		& \textbf{\PayloadToOrbitheatLimStandard}
@@ -233,7 +242,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \textbf{\PayloadToOrbitheatLimSixteenHundred}
 		& \textbf{\PayloadToOrbitheatLimFifteenHundred}
 		& \textbf{\PayloadToOrbitheatLimFourteenHundred}
-		&\textbf{-3.3}
 		\\
 		\textbf{Payload Variation (\%)}
 		& \PayloadVarheatLimStandard
@@ -241,7 +249,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \PayloadVarheatLimSixteenHundred
 		& \PayloadVarheatLimFifteenHundred
 		& \PayloadVarheatLimFourteenHundred
-		&-2.78
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffheatLimStandard}
@@ -249,7 +256,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \textbf{\totalExergyEffheatLimSixteenHundred}
 		& \textbf{\totalExergyEffheatLimFifteenHundred}
 		& \textbf{\totalExergyEffheatLimFourteenHundred}
-		& \textbf{-0.00032}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -258,7 +264,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \textbf{\firstExergyEffheatLimSixteenHundred}
 		& \textbf{\firstExergyEffheatLimFifteenHundred}
 		& \textbf{\firstExergyEffheatLimFourteenHundred}
-		& -
 		\\
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 		& \firstsecondSeparationAltheatLimStandard
@@ -266,7 +271,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \firstsecondSeparationAltheatLimSixteenHundred
 		& \firstsecondSeparationAltheatLimFifteenHundred
 		& \firstsecondSeparationAltheatLimFourteenHundred
-		& -
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 		& \firstsecondSeparationvheatLimStandard
@@ -274,7 +278,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \firstsecondSeparationvheatLimSixteenHundred
 		& \firstsecondSeparationvheatLimFifteenHundred
 		& \firstsecondSeparationvheatLimFourteenHundred
-		& -
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 		& \firstsecondSeparationgammaheatLimStandard
@@ -282,7 +285,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \firstsecondSeparationgammaheatLimSixteenHundred
 		& \firstsecondSeparationgammaheatLimFifteenHundred
 		& \firstsecondSeparationgammaheatLimFourteenHundred
-		& -
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -291,7 +293,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \textbf{\secondExergyEffheatLimSixteenHundred}
 		& \textbf{\secondExergyEffheatLimFifteenHundred}
 		& \textbf{\secondExergyEffheatLimFourteenHundred}
-		& -
 		\\
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltheatLimStandard
@@ -299,7 +300,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \secondthirdSeparationAltheatLimSixteenHundred
 		& \secondthirdSeparationAltheatLimFifteenHundred
 		& \secondthirdSeparationAltheatLimFourteenHundred
-		& -
 		\\
 		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
 		& \secondthirdSeparationvheatLimStandard
@@ -307,7 +307,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \secondthirdSeparationvheatLimSixteenHundred
 		& \secondthirdSeparationvheatLimFifteenHundred
 		& \secondthirdSeparationvheatLimFourteenHundred
-		& -
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammaheatLimStandard
@@ -315,7 +314,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \secondthirdSeparationgammaheatLimSixteenHundred
 		& \secondthirdSeparationgammaheatLimFifteenHundred
 		& \secondthirdSeparationgammaheatLimFourteenHundred
-		& -
 		\\
 		\textbf{2$^{nd}$ Stage Flight Time (s)}
 		& \secondFlightTimeheatLimStandard
@@ -323,7 +321,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \secondFlightTimeheatLimSixteenHundred
 		& \secondFlightTimeheatLimFifteenHundred
 		& \secondFlightTimeheatLimFourteenHundred
-		& -
 		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
 		& \SecondDistheatLimStandard
@@ -331,7 +328,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \SecondDistheatLimSixteenHundred
 		& \SecondDistheatLimFifteenHundred
 		& \SecondDistheatLimFourteenHundred
-		&5.59
 		\\
 		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
 		& \returnFuelheatLimStandard
@@ -339,7 +335,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \returnFuelheatLimSixteenHundred
 		& \returnFuelheatLimFifteenHundred
 		& \returnFuelheatLimFourteenHundred
-		& -
 		\\
 		\textbf{2$^{nd}$ Stage Return Distance (km)}
 		& \returnDistheatLimStandard
@@ -347,7 +342,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \returnDistheatLimSixteenHundred
 		& \returnDistheatLimFifteenHundred
 		& \returnDistheatLimFourteenHundred
-		& -
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -356,7 +350,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \textbf{\thirddExergyEffheatLimSixteenHundred}
 		& \textbf{\thirddExergyEffheatLimFifteenHundred}
 		& \textbf{\thirddExergyEffheatLimFourteenHundred}
-		& \textbf{-0.341}
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveheatLimStandard
@@ -364,7 +357,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \thirdqOverFiveheatLimSixteenHundred
 		& \thirdqOverFiveheatLimFifteenHundred
 		& \thirdqOverFiveheatLimFourteenHundred
-		& -
 		\\
 		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
 		& \thirdmaxAoAheatLimStandard
@@ -372,7 +364,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \thirdmaxAoAheatLimSixteenHundred
 		& \thirdmaxAoAheatLimFifteenHundred
 		& \thirdmaxAoAheatLimFourteenHundred
-		& -
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelheatLimStandard
@@ -380,7 +371,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \thirdmFuelheatLimSixteenHundred
 		& \thirdmFuelheatLimFifteenHundred
 		& \thirdmFuelheatLimFourteenHundred
-		&3.32
 		\\
 		\hline 
 	\end{tabular} 
@@ -390,117 +380,120 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.7\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20191126T170823mode151/SecondStageComparison}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20191126T170823mode151/SecondStageComparison}
 \caption{Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.}
 \label{fig:SecondStageheatlimComparison}
 \end{figure}
 
 
 The aerothermal effects on a launch vehicle may also be reduced by limiting the aeroheating of the vehicle during flight. However, performing a 1-D heat transfer analysis within a trajectory optimisation loop is prohibitively computationally expensive. 
-As such, to investigate the effects of limiting the maximum aerothermal heating on the SPARTAN's scramjet accelerator in a computationally efficient manner, the stagnation point heat flux is calculated in-loop using a cold wall approximation ($T_W/T_{AW} \approx 0$). This calculation of the heat flux is conservative, however it is useful for applying limits to the heat loading for optimal trajectory investigation. Stagnation point heat flux limits of 1700, 1600, 1500 and 1400kW are applied, based on the maximum non-limited stagnation point heat flux calculated using a cold-wall approximation, of 1770kW. Optimised trajectories calculated with these heat flux limits applied to the scramjet accelerator stage are presented in Table \ref{tab:stagLim}, and the trajectories of the scramjet stages are shown in Figure \ref{fig:SecondStageheatlimComparison}.
+As such, to investigate the effects of limiting the maximum aerothermal heating on the SPARTAN's scramjet accelerator in a computationally efficient manner, the stagnation point heat flux is calculated in-loop using a cold wall approximation ($T_W/T_{AW} \approx 0$). This calculation of the heat flux is conservative, however it is useful for applying limits to the heat loading for optimal trajectory investigation. Stagnation point heat flux limits of 1700, 1600, 1500 and 1400kW are applied, based on the maximum non-limited stagnation point heat flux calculated using a cold-wall approximation, of 1770kW. Optimised trajectories calculated with these heat flux limits applied to the scramjet accelerator stage are presented in Table \ref{tab:stagLim}, and the trajectories of the scramjet stages are shown in Figure \ref{fig:SecondStageheatlimComparison}. 
 
 From Table \ref{tab:stagLim} and Figure \ref{fig:SecondStageheatlimComparison} it can be observed that limiting the stagnation point heat flux has a significant effect on the optimised trajectory. However, it is also evident that the effects of the 1700kW and 1600kW limits are small, compared to the effects of 1500kW and 1400kW limits. 
-There is a distinct cut-off point at which the scramjet stage is no longer able to perform the manoeuvres necessary to pull-up. When stagnation point heat flux is limited to 1700 or 1600kW, the scramjet stage compensates by flying a slower, higher trajectory after release from the first stage rocket, reaching maximum dynamic pressure later, and performing a larger pull-up. This flight path essentially 'wastes' some energy during the trajectory in order to limit the velocity of the scramjet stage, while still performing a pull-up manoeuvre. In these cases, maximum heat flux is only reached at the start of the pull-up manoeuvre. However, when the stagnation point heating rate is limited to 1500kW or 1400kW, the trajectory changes significantly. For these limits, the beginning of the scramjet stage trajectory conforms with the non-limited optimal flight path, but the stagnation point heating limit causes the scramjet stage to leave maximum dynamic pressure and climb for a long period, reducing efficiency and negating the ability of the scramjet accelerator stage to perform a pull-up manoeuvre. This cut-off point is caused by the lower limit on the velocity of the scramjet accelerator during flight, dictated by the operational regime of the scramjet engine. Because the scramjet engine is not throttlable, there is a hard cut-off between thrust, and no thrust, that limits the ability of the scramjet accelerator to slow itself at the beginning of its trajectory. 
+This sharp change in trajectory shapes is caused by a distinct cut-off point at which the scramjet stage is no longer able to perform the manoeuvres necessary to perform a pull-up. When stagnation point heat flux is limited to 1700 or 1600kW, the scramjet stage compensates by flying a slower, higher trajectory after release from the first stage rocket, reaching maximum dynamic pressure later, and performing a larger pull-up. This flight path limits the velocity of the scramjet stage and manoeuvres into a favourable position, while still performing a pull-up manoeuvre. In these cases, maximum heat flux is only reached at the start of the pull-up manoeuvre. However, when the stagnation point heating rate is limited to 1500kW or 1400kW, the trajectory changes significantly. For these limits, the beginning of the scramjet stage trajectory conforms with the non-limited optimal flight path, but the stagnation point heating limit causes the scramjet stage to leave maximum dynamic pressure and climb in the middle of the trajectory, reducing efficiency and manoeuvrability, and removing the ability of the scramjet accelerator stage to perform a pull-up manoeuvre. This cut-off point is primarily driven by the lower limit on the velocity of the scramjet accelerator during flight, which limits the start-of-trajectory manoeuvres performed to enable the pull-up in the 1700kW and 1600kW heating limited trajectories. 
 
-Generally, these optimised trajectory results indicate that heating limits imposed on the trajectory of the scramjet accelerator vehicle result in the vehicle flying a less efficient trajectory in order to reduce velocity. For small heating limitations this may be suitable, however, in general, it would be preferable to design the vehicle so that it is able to fly close to an optimal flight path. 
-
-
-
-\section{Third Stage TPS Design Exploration}\label{sec:thirdstageheat}
+Generally, these optimised trajectory results indicate that heating limits imposed on the trajectory of the scramjet accelerator vehicle result in the vehicle flying a significantly less efficient trajectory in order to reduce heat loads. For small heating limitations this may be suitable, however, in general, it would be preferable to design the vehicle so that it is able to fly close to an optimal payload-to-orbit flight path without heating limits. 
 
 
 
-To explore the design of the third stage TPS, various properties of the C-C on the conical nose cone are varied by $\pm$10\%, and the temperature time histories along the optimised payload-to-orbit trajectory with return (Case 11) are calculated. The maximum temperatures observed on the inner face at the centreline of the nose cone TPS are shown in Table \ref{tab:tpsthirdstage}. These variations show an inner face temperature sensitivity of -2.1 K/\% to variation in thickness, -1.6 K/\% to variation in density, and 0.2 K/\% to variation in thermal conductivity when varied from the standard CCAT T-300 properties. These variations are relatively small, however, part of the reason for this is that the heat transfer, and the temperatures, are relatively low, due to the third stage being separated after a pull-up manoeuvre. 
+\subsection{Third Stage TPS Design Exploration}\label{sec:thirdstageheat}
 
-
-\begin{table}[ht]
+\begin{table}[!ht]
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|}
 		\hline Property & -10\% & -5\% & Standard & +5\% & +10\% \\ 
-		\hline Thickness & 463.5 & 448.7 & 439 &  429.4 & 420.8  \\ 
-		\hline Density &  456.5 & 447.5 & 439 & 432.0 &  425.2\\ 
-		\hline Thermal Conductivity & 436.8 & 438 & 439 & 440.5 & 441.4 \\ 
+		\hline Thickness & 463.5 & 448.7 & 439.4 &  429.4 & 420.8  \\ 
+		\hline Density &  456.5 & 447.5 & 439.4 & 432.0 &  425.2\\ 
+		\hline Thermal Conductivity & 436.8 & 438.2 & 439.4 & 440.5 & 441.4 \\ 
 		\hline 
 	\end{tabular} 
-	\label{tab:tpsthirdstage}
+	
 	\caption{Inner face temperatures in K with variations in third stage TPS properties.}
+	\label{tab:tpsthirdstage}
 \end{table}
 
+To explore the design of the third stage TPS, various properties of the C-C on the conical nose cone are varied by $\pm$10\%, and the temperature time histories along the optimised payload-to-orbit trajectory with return (Case 11) are calculated. The maximum temperatures observed on the inner face at the centreline of the nose cone TPS are shown in Table \ref{tab:tpsthirdstage}. These variations show an inner face temperature sensitivity of -2.1 K/\% to variation in thickness, -1.6 K/\% to variation in density, and 0.2 K/\% to variation in thermal conductivity when varied from the standard CCAT T-300 properties. These variations are relatively small, however, part of the reason for this is that the heat transfer, and the temperatures, are relatively low. 
 
 
-\section{The Effects of a Pull-Up on the Third Stage Heat Shield Design}
 
-A pull-up at the end of the scramjet stage acceleration has been shown in Section XXX to be an integral part of the payload optimal trajectory for a rocket-scramjet-rocket launch system. This pull-up also has significant aerothermal benefits for the third stage rocket. When separated from a scramjet stage constrained to constant dynamic pressure, the third stage rocket exhibits temperatures of 2163K on the nose tip, 1337k on the nose cone, and 1048k on the body, much larger than the temperatures generated by a third stage separated after a pull-up manoeuvre, of 874k on the nose tip, 439k on the nose cone, and 377k on the body. It is likely that the temperatures generated after release from a constant dynamic pressure trajectory would be at the limits of the multilayer insulation, however when released after a pull-up, the temperatures are much lower. While it is desirable to have lower temperatures on the third stage, and lower temperatures may be required for payload survivability, it may also be desirable to redesign the TPS of the third stage specifically to take into account the conditions after release from a scramjet stage flying a pull-up. 
 
-To illustrate the effects of redesigning the TPS of the third stage rocket, the third stage heat shield thickness is reduced. The effects of the pull-up on the heat shield temperatures are too large to apply the linear sensitivity relationship developed in Section \ref{sec:thirdstageheat}, so the thicknesses of the nose tip, nose cone and cylindrical body are all reduced proportionally to the percentage reduction in temperature when the third stage is released after a pull-up. This resulted in a heat shield weighing 42.4kg. An optimised trajectory was produced using this heat shield mass, with results summarised in Table \ref{tab:heatshieldreduced}. The payload-to-orbit increases to \PayloadToOrbitTPSreduced, an increase of 13.0\% when compared to an optimised trajectory with the full heat shield mass. 
 
-\begin{table}[ht]
+
+\subsection{The Effects of a Pull-Up on the Third Stage Heat Shield Design}
+
+
+\begin{table}[!ht]
 	\centering
-
-\begin{tabular}{l c } 
-	\hline \textbf{Payload to Orbit (kg)}
-	& \textbf{\PayloadToOrbitTPSreduced}
-	\\
-	\textbf{Total $\eta_{exergy}$ (\%)}
-	& \textbf{\totalExergyEffTPSreduced}
-	\\
-	\hline 
-	\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\firstExergyEffTPSreduced}
-	\\
-	\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-	& \firstsecondSeparationAltTPSreduced
-	\\
-	\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-	& \firstsecondSeparationvTPSreduced
-	\\
-	\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-	& \firstsecondSeparationgammaTPSreduced
-	\\
-	\hline 
-	\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\secondExergyEffTPSreduced}
-	\\
-	\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-	& \secondthirdSeparationAltTPSreduced
-	\\
-	\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-	& \secondthirdSeparationvTPSreduced
-	\\
-	\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-	& \secondthirdSeparationgammaTPSreduced
-	\\
-	\textbf{2$^{nd}$ Stage Flight Time (s)}
-	& \secondFlightTimeTPSreduced
-	\\
-	\textbf{2$^{nd}$ Stage Distance Flown (km)}
-	& \SecondDistTPSreduced
-	\\
-	\textbf{2$^{nd}$ Stage Return Fuel (kg)}
-	& \returnFuelTPSreduced
-	\\
-	\textbf{2$^{nd}$ Stage Return Distance (km)}
-	& \returnDistTPSreduced
-	\\
-	\hline 
-	\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\thirddExergyEffTPSreduced}
-	\\
-	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-	& \thirdqOverFiveTPSreduced
-	\\
-	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-	& \thirdmaxAoATPSreduced
-	\\
-	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-	& \thirdmFuelTPSreduced
-	\\
-	\hline 
-\end{tabular} 
-\caption{Summary of a payload-to-orbit optimised trajectory with a 42.4kg third stage heat shield.}
-\label{tab:heatshieldreduced}
-
+	
+	\begin{tabular}{l c } 
+		\hline \textbf{Payload to Orbit (kg)}
+		& \textbf{\PayloadToOrbitTPSreduced}
+		\\
+		\textbf{Total $\eta_{exergy}$ (\%)}
+		& \textbf{\totalExergyEffTPSreduced}
+		\\
+		\hline 
+		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\firstExergyEffTPSreduced}
+		\\
+		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
+		& \firstsecondSeparationAltTPSreduced
+		\\
+		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
+		& \firstsecondSeparationvTPSreduced
+		\\
+		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
+		& \firstsecondSeparationgammaTPSreduced
+		\\
+		\hline 
+		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\secondExergyEffTPSreduced}
+		\\
+		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
+		& \secondthirdSeparationAltTPSreduced
+		\\
+		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
+		& \secondthirdSeparationvTPSreduced
+		\\
+		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
+		& \secondthirdSeparationgammaTPSreduced
+		\\
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeTPSreduced
+		\\
+		\textbf{2$^{nd}$ Stage Distance Flown (km)}
+		& \SecondDistTPSreduced
+		\\
+		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
+		& \returnFuelTPSreduced
+		\\
+		\textbf{2$^{nd}$ Stage Return Distance (km)}
+		& \returnDistTPSreduced
+		\\
+		\hline 
+		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\thirddExergyEffTPSreduced}
+		\\
+		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
+		& \thirdqOverFiveTPSreduced
+		\\
+		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
+		& \thirdmaxAoATPSreduced
+		\\
+		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
+		& \thirdmFuelTPSreduced
+		\\
+		\hline 
+	\end{tabular} 
+	\caption{Summary of a payload-to-orbit optimised trajectory with a 42.4kg third stage heat shield.}
+	\label{tab:heatshieldreduced}
+	
 \end{table}
+
+A pull-up at the end of the scramjet stage acceleration has been shown in Section XXX to be an integral part of the payload optimal trajectory for a rocket-scramjet-rocket launch system. This pull-up also has significant aerothermal benefits for the third stage rocket. When separated from a scramjet stage constrained to constant dynamic pressure, the third stage rocket exhibits temperatures of 2163.5K on the nose tip, 1336.6k on the nose cone, and 1047.8k on the body, much larger than the temperatures generated by a third stage separated after a pull-up manoeuvre, of 874.8k on the nose tip, 439.4k on the nose cone, and 655.8k on the body. It is likely that the temperatures generated after release from a constant dynamic pressure trajectory would be at the limits of the multilayer insulation, however when released after a pull-up, the temperatures are much lower. While it is desirable to have lower temperatures on the third stage, and lower temperatures may be required for payload survivability, it may also be desirable to redesign the TPS of the third stage specifically to take into account the conditions after release from a scramjet stage flying a pull-up. 
+
+To illustrate the effects of redesigning the TPS of the third stage rocket, the third stage heat shield thickness is reduced. The effects of the pull-up on the heat shield temperatures are too large to apply the linear sensitivity relationship developed in Section \ref{sec:thirdstageheat}, so the thicknesses of the nose tip, nose cone and cylindrical body are all reduced proportionally to the percentage reduction in temperature when the third stage is released after a pull-up, when compared to a third stage released without a pull-up as shown in Section XXX. This resulted in a heat shield weighing 49.1kg. An optimised trajectory was produced using this heat shield mass, with results summarised in Table \ref{tab:heatshieldreduced}. The payload-to-orbit increases to \PayloadToOrbitTPSreduced, an increase of 15.4kg (11.7\%) when compared to an optimised trajectory with the full heat shield mass, and an increase of 75.5kg (204.9\%) when compared to a trajectory with the scramjet stage constrained to fly at constant dynamic pressure. 
+
 %-const q with fly-back
 %
 %compare max temps to pull-up
@@ -540,15 +533,18 @@ To illustrate the effects of redesigning the TPS of the third stage rocket, the 
 
 \section{Summary}
 
-A 1-D heat conduction analysis has been conducted, to investigate the aerothermal effects of flying a payload-to-orbit optimised trajectory on the SPARTAN launch system. Various points around the scramjet stage and third stage were investigated, either using stagnation point heat transfer correlations, or Stanton numbers computed using Reynold's analogy. 
+A 1-D heat conduction analysis has been conducted to investigate the aerothermal effects of flying a payload-to-orbit optimised trajectory on the SPARTAN launch system. Various points around the scramjet stage and third stage were investigated, either using stagnation point heat transfer correlations for the nose and leading edges, or Stanton numbers computed using Reynold's analogy for points on the body. It was found that the temperatures on the nose and leading edges of the scramjet stage were very large, at 1947K and 1695K respectively. On the body of the scramjet accelerator, the interior of the nose cone was found to reach a maximum of 1363K, the cowl 1337K, the wing 1384K, and the tail 1142K on the inner face of the TPS. These temperatures are close to the limits of the multilayer internal insulation, and will produce temperatures on the inside face of the multilayer insulation that will require a high temperature aluminium alloy to withstand. It may be necessary to introduce further methods of mitigating this heating in future designs of the SPARTAN or other airbreathing launch vehicles. To investigate possible mitigation strategies, key properties of the TPS of the scramjet-powered stage were varied by $\pm$10\% indicate an inner face temperature sensitivity of -2.7K/\% to variation in thickness, -1.9K/\% to variation in density, and 0.6 K/\% to variation in thermal conductivity 
+Next, active cooling was approximated by a constant rate of heat transfer away from the inner face, exhibiting a sensitivity of -5.2 K/kW. Lastly, heating limitations were imposed on the optimal trajectory, which had only a small effect at limits of 1700 and 1600kW, requiring manoeuvring of the scramjet accelerator at the beginning of the trajectory. However, heating rate limitats of 1500 and 1400kW produced a distinct cutoff point at which the scramjet accelerator could no longer manoeuvre sufficiently at the beginning of the trajectory, so that the trajectory shape followed closely to the dynamic pressure and heating limits, and the performance of the launch system degraded significantly. 
+
+
+The maximum temperatures of the third stage rocket were determined to be much lower, with the nose tip of the third stage reaching a maximum inner face temperature of 874K, the nose cone  439K, and the body 377K on the inner face of the TPS. These relatively low temperatures indicate that it may be possible to reduce the thickness of the heat shield, or change material properties if so desired. A sensitivity study was conducted on key TPS design parameters on the nose cone section of the heat shield, and it was found that the third stage has a nose cone inner face temperature sensitivity of -2.1 K/\% to variations in thickness, -1.6 K/\% to variations in density, and 0.2 K/\% to variations in thermal conductivity when varied $\pm$10\% from the standard CCAT T-300 properties. To illustrate the possible design implications of a pull-up manoeuvre, the third stage heat shielding was reduced in thickness proportionally to the reduction in temperature on each segment caused by a pull-up manoeuvre, resulting in a heat shield weighing 49.1kg. A trajectory optimised for payload-to-orbit with this heat shield mass increased in payload mass to \PayloadToOrbitTPSreduced kg, a 15.4kg (11.7\%) increase over a trajectory optimised with the standard heat shield mass, and an improvement of 75.5kg (204.9\%) over a constant dynamic pressure trajectory. 
+
+These results provide a preliminary analysis of the TPS of the SPARTAN. Initial results indicate that the TPS may be assumed to be sufficient for operation, however, more detailed analysis and design is necessary. A thorough design study is necessary to determine the efficacy of a passive TPS, along with a design optimisation taking into account the trade-offs between the heat shielding, the internal multilayer insulation, and internal structure. 
 
 
 \textcolor{red}{
 \chapter{Modelling Uncertainties}
 }
-XXX Pescetelli and maddock have good examples of aleatory + epistemic uncertainty
-
-XXX I should make it really clear that I' just including modelling uncertainty in uncertainty valued in results - He'll jump on this if I dont
 
 %-need to take into account that the error magnitudes estimated are only relative error (as above)
 
@@ -561,8 +557,8 @@ These simplifications and uncertainties are separated into two distinct parts; t
 
 The design uncertainties that arise from simplifications during the design process affect the vehicle's geometry, structure and internal layout, and mass and mass-distribution. In this work the design process is necessarily simplified, and it is assumed that by making appropriate design choices the nominal vehicle can be constructed (i.e. it is assumed that the designer can achieve the representative design by selecting appropriate materials and layouts), and that the nominal vehicle is capable of flying an appropriate launch trajectory. In this stage it is important for the designer to be aware of the sensitivities and trade-offs between design input parameters and performance. These design simplifications are described in more detail in Section XXX, and their effects are expressed by the parameter-by-parameter sensitivity study conducted in Sections XXX and XXX. These sensitivity studies provide insights into how the design factors of the launch system impact on the performance of the launch system and the shape of the optimised trajectory.
 
-The uncertainties that arise during the modelling of the performance of the launch system introduce differences between the actual launch system and the ``as-designed" nominal launch system. These uncertainties are inherent to the modelling assumptions in the aerodynamics and propulsion modelling of the launch system, in effect, even the most detailed designs will still suffer from many of the same modelling uncertainties as analysed (though with reduced margins). 
-As the designer has no direct control over these variations between the ``as-designed" and actual vehicle, we need to rely on a-priori experience and a stochastic approach to quantify how the ultimate performance of the vehicle will be different to the ``as designed" simulations. The aim of this chapter is to apply a systematic approach to develop an understanding of how these uncertainties may affect the performance of the launch system. To consider this we first estimate the modelling uncertainties associated with the representative launch vehicle, and then conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise ``known" vehicle.
+The uncertainties that arise during the modelling of the performance of the launch system introduce differences between the actual launch system and the ``as-designed" nominal launch system. 
+As the designer has no direct control over these uncertainties (Which are both aleatory and epistemic), we need to rely on a-priori experience and a stochastic approach to quantify how the ultimate performance of the vehicle will be different to the ``as designed" simulations. The aim of this chapter is to apply a systematic approach to develop an understanding of how these uncertainties may affect the performance of the launch system. To consider this we first estimate the modelling uncertainties associated with the representative launch vehicle, and then conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise ``known" vehicle.
 
 
 
@@ -598,7 +594,7 @@ Abeynayake \& Agon assess two missile geometries; a conventional missile at tran
 In this comparison study Cart3D was not able to match experimental trends closely in the subsonic and transonic regimes. Errors of up to 80.2\% in drag are observed in the subsonic regime for an unconventional missile geometry\cite{Abeynayake2013a}, although observing that the CFD++ result is much closer to the experimental result, it follows that the drag error in Cart3D likely diminishes significantly at angle of attack values between -5$^\circ$ and 5$^\circ$. In the supersonic regime, Cart3D appears to closely match the experimental lift and drag trends, with an underprediction in the magnitude of the drag forces due to the absence of viscous forces. 
 Cart3D had poor results when computing pitching moment, although it was occasionally able to match the magnitude of the pitching moment well Cart3D was not able to match the experimental pitching moment trends for either vehicle\cite{Abeynayake2013a}. The work by Abeynayake \& Agon indicates that the uncertainties associated with Cart3D are significant, particularly at angle of attack values greater than 5 in the subsonic and transonic regimes, and that it does not estimate pitching moment trends well. However, a portion of the uncertainty magnitudes are associated with the inviscid nature of Cart3D, particularly in the drag forces in the supersonic and hypersonic regimes.
 
-Kiris et al. compare between experimental data and CFD codes to assess their performance on the Ares V\cite{Kiris2011}. Cart3D is compared to the Overflow and USM3D RANS solvers, on a full scale Ares V model with conditions matching those expected during flight. In this comparison an axial force difference of maximum 10\% was found, \textcolor{red}{XXX This sentence is weird} mostly present in the supersonic regime due to the inviscid nature of Cart3D\cite{Kiris2011}. Cart3D, USM3D and Overflow were then compared against three wind tunnel tests with scaled vehicles, each with slightly different shroud or base shapes. Only one vehicle configuration produced results good enough for comparison\cite{Kiris2011}, showing high Cart3D error in the subsonic and transonic regimes. Cart3D was reported to exhibit maximums of 33\% error in axial force and a 17\% error in normal force in the subsonic regimes, 20\% error in axial force and 21\% error in axial force in the transsonic regime, and 19\% error in axial force and 12\% error in normal force in the supersonic regime, when compared to experimental results. In the supersonic regime, the axial force underpredicts consistently, and much of the axial force error is likely due to a lack of viscous effects in Cart3D. 
+Kiris et al. compare between experimental data and CFD codes to assess their performance on the Ares V\cite{Kiris2011}. Cart3D is compared to the Overflow and USM3D RANS solvers, on a full scale Ares V model with conditions matching those expected during flight. In this comparison an axial force difference of maximum 10\% was found, present in the supersonic regime due to the inviscid nature of Cart3D\cite{Kiris2011}. Cart3D, USM3D and Overflow were then compared against three wind tunnel tests with scaled vehicles, each with slightly different shroud or base shapes. Only one vehicle configuration produced results good enough for comparison\cite{Kiris2011}, showing high Cart3D error in the subsonic and transonic regimes. Cart3D was reported to exhibit maximums of 33\% error in axial force and a 17\% error in normal force in the subsonic regimes, 20\% error in axial force and 21\% error in axial force in the transsonic regime, and 19\% error in axial force and 12\% error in normal force in the supersonic regime, when compared to experimental results. In the supersonic regime, the axial force underpredicts consistently, and much of the axial force error is likely due to a lack of viscous effects in Cart3D. 
 
 A study by Ward et al.\cite{Ward2018} compares Cart3D results to experimental results for a blunt body at hypersonic speeds, a lifting body vehicle at subsonic and supersonic speeds, and a hypersonic accelerator test geometry at hypersonic speeds. Ward et al. provide a method for viscous correction of the Cart3D results, and also compare this with experimental results, focusing on the amount that drag error is able to be corrected. In this study Cart3d was found to predict trends in drag coefficients well for all tested cases both subsonic and supersonic, although with a consistent underprediction of 15-25\% in drag coefficient due to a lack of viscous effects\cite{Ward2018}. When corrected for viscous effects, the drag coefficient was found to agree closely with the experimental results at supersonic and hypersonic speeds, with error reducing to less than 10\% for the hypersonic accelerator test vehicle, and less than 11\% for the lifting body at supersonic speed\cite{Ward2018}. Drag error at high angles of attack at subsonic speeds was still found to be large, at 38\%, however, at angles of attack under 5$^\circ$ the error reduced significantly, matching the experimental results to within 16\%. 
 
@@ -645,15 +641,13 @@ The C-REST engines are modelled in this work using a dataset developed using a c
 
 
 \subsection{Quantification of Aerodynamic and Propulsion Uncertainty Effects}
-XXX Attach a derscription of exactly what im doing, like what pescetelli and maddock have
 
-\subsubsection{Quantification of Uncertainty Magnitudes}
 
-The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been developed based on the errors described in the studies analysed Sections \ref{sec:aerounc} \& \ref{sec:propunc}. 
+The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been developed in Sections \ref{sec:aerounc} \& \ref{sec:propunc}, based on studies comparing the modelling techniques used in this study to higher fidelity techniques and experimental data.  
 
 %-note that it is assumed that only the moments on the SPARTAN are affected, and not the flaps
 
-\begin{table}
+\begin{table}[ht]
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline  Uncertainty & Subsonic & Transonic  & Supersonic/Hypersonic \\ 
@@ -669,33 +663,21 @@ The uncertainty margins of the aerodynamic and propulsive data for the represent
 \end{table}
 
 
-	%\hline  Third Stage $C_a$ & - & - &  34.5\% \\ 
-	%\hline  Third Stage $C_n$ &  -& - & 8.9\% \\ 
-	%\hline  Third Stage $C_M$ & - & - & 17.4\%  \\ 
-	%\hline  Third Stage $I_{SP}$ & - & - & 1.3\%  \\ 
 
-\subsubsection{Variation Study}
-In order to quantify the effects of the uncertainty in the aerodynamic and propulsion models, a Monte Carlo variation study is carried out using a Latin Hypercube Sampling technique. A sample size of 85 runs was used, distributed using Matlab's \textsf{lhsdesign} function. 
-%-2 sigma variation? normalised spread?
-
--running more LHC tests to add to this to see if it is a normal dist
 \begin{figure}[ht]
-\centering
-\includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/LHC}
-\caption{The distribution of optimised payload-to-orbit values over the range of LHC determined samples.}
-\label{fig:LHC}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/LHC}
+	\caption{The distribution of optimised payload-to-orbit values over the range of LHC determined samples.}
+	\label{fig:LHC-17bins}
 \end{figure}
+
+In order to quantify the effects of the modelling uncertainty in the aerodynamic and propulsion models, a Monte Carlo variation study is carried out using a Latin Hypercube Sampling technique. A sample size of 100 runs was used, distributed using Matlab's \textsf{lhsdesign} function. This distribution is assumed to be normally distributed, producing a 2-$\sigma$ deviation of $\pm$106.9kg in payload-to-orbit. This deviation illustrates the large uncertainties still present in the modelling of airbreathing launch systems, however, this is to be expected for studied of launch systems that are still early in their conceptual design phases, particularly given the general sensitivity of the payload mass in launch systems to variations in the launch system performance. However, this interval also indicates that producing a positive payload-to-orbit is likely to be possible under the current modelling scheme, although it is evident that more detailed analysis of this system is necessary before an accurate payload-to-orbit value is able to be attained. This said, the payload-to-orbit values calculated in this study are only intended as an indication of the performance possible using this launch system, and are primarily utilised in comparison studies, to produce trends in performance that have been analysed in Chapters XXX and XXX. These performance trends are still valid and useful, even though they fall well within the uncertainty margins of the payload mass and performance of the launch system.
+
 
 
 
 \section{Atmospheric Variations}
-
-%XXX I might need to add this together with aerodynamic uncertainties to get full uncertainty measure? but this is more of a seasonal variation study, not an on-the-day study too...
-
-
-The Earth's atmosphere varies significantly depending on location, and over time. As such, the atmosphere into which the SPARTAN is launched may be considerably different to the atmosphere that is being modelled in this work. 
-The variations in the properties of the atmosphere with geography or time may affect the aerodynamic and engine performance of the launch system significantly, and change the altitude at which the maximum dynamic pressure of the scramjet stage is reached. These variations may have significant impact on the aerodynamic and aerothermal performance of the launch system at a particular altitude, as well as the performance of the propulsion systems of the launch system, particularly the scramjet engines. 
-This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} to calculate the properties of the atmosphere during simulations. The U.S Standard Atmosphere 1976 is based on a collection of data from sites across America, Brazil, Australia, and Russia, with values calculated for annual mean properties at an interpolated latitude of 45$^\circ$\cite{Administration1976}. The properties that are calculated using this atmosphere are subject to seasonal variability, as well as variability due to geographic position. Figure \ref{fig:AtmosphericVariation} shows the variation in temperature and pressure in the 1976 U.S Standard Atmosphere model with altitude. In the higher latitudes maximum and minimum temperatures at altitudes below 25km are seasonal, however at higher altitudes semi-annual and biennial oscillations have a large influence\cite{Administration1976}. The variations shown do not occur at the same time in the same envelopes of the atmosphere; warm temeratures at the surface are associated with cold temperatures near the tropopause, and temperatures near the stratopause are negatively correlated with temperatures near the mesopause\cite{Administration1976}. These oscillations are particularly important in the equatorial regions, where the seasonal variation in temperature is smallest. 
+\subsection{Seasonal and Solar Cycle Based Variations}
 
 \begin{figure}[ht]
 	\centering
@@ -704,160 +686,174 @@ This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} 
 	\label{fig:AtmosphericVariation}
 \end{figure}
 
-The effects of atmospheric variation are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum mean monthly variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface compared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause, as indicated in Figure \ref{fig:AtmosphericVariation}. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated, for a total of four combinations of atmospheric extrema. Optimised trajectories are developed for each combination of these conditions, with properties summarised in Table \ref{tab:atmunc}. Large variations are observed in the cases where the ground and stratosphere properties are at different extremes, resulting in payload-to-orbit variations of +12.5kg when ground temperature is at a maximum and stratospheric temperature is at a minimum, and -16.8kg when ground temperature is at a minimum and stratospheric temperature is at a maximum. Maximum ground temperature (and minimum density) corresponds to minimum tropopause temperature (and maximum density). This causes the scramjet stage to be able to fly higher, and burn fuel faster at higher altitude. Minimum stratopause temperature (and maximum density) causes the third stage rocket to pull up more rapidly, and spend less time in the atmosphere. The combination of these factors results in a more efficient overall trajectory for the maximum ground temperature, minimum stratosphere temperature case, while the opposite is true for the minimum ground temperature, maximum stratosphere temperature case. For the other two cases, where tropopause density and stratopause densiy are at alternating extrema, these effects counteract one another, and result in little performance variation. 
-When both the ground and stratospheric conditions are at the same extremes, a payload-to-orbit variation of only +0.6kg is observed when both temperatures are at a minimum, and -3.8kg when both temperatures are at a maximum.
+The Earth's atmosphere varies significantly depending on location, and over time. Seasons, solar cycles, and general weather effects all contribute to these variations, which are numerous and difficult to predict. As such, the atmosphere into which the SPARTAN is launched may be considerably different to the atmosphere that is being modelled in this work. 
+Atmospheric variations may affect the aerodynamic and engine performance of the launch system significantly, and change the altitude at which the maximum dynamic pressure of the scramjet stage is reached. These variations may have significant impact on the aerodynamic and aerothermal performance of the launch system at a particular altitude, as well as the performance of the propulsion systems of the launch system, particularly the scramjet engines. 
+This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} to calculate the properties of the atmosphere during simulations. The U.S Standard Atmosphere 1976 is based on a collection of data from sites across America, Brazil, Australia, and Russia, with values calculated for annual mean properties at an interpolated latitude of 45$^\circ$\cite{Administration1976}. The properties that are calculated using this atmosphere are subject to seasonal variability, as well as variability due to geographic position. Figure \ref{fig:AtmosphericVariation} shows the variation in temperature and pressure in the 1976 U.S Standard Atmosphere model with altitude. In the higher latitudes maximum and minimum temperatures at altitudes below 25km are seasonal, however at higher altitudes semi-annual and biennial oscillations have a large influence\cite{Administration1976}. The variations shown do not occur at the same time in the same envelopes of the atmosphere; warm temeratures at the surface are associated with cold temperatures near the tropopause, and temperatures near the stratopause are negatively correlated with temperatures near the mesopause\cite{Administration1976}. These oscillations are particularly important in the equatorial regions, where the seasonal variation in temperature is smallest. 
+
+
+
 
 \begin{table}[ht]
-\centering
-
-\begin{tabular}{l c c c c c} 
-	\hline \textbf{Trajectory Condition}
-	& Standard
-	& Min$T_{G}$ 
-	& Max$T_{G}$
-	& Min$T_{G}$
-	& Max$T_{G}$
-	\\
-&
-	&  Min$T_{S}$
-	& Min$T_{S}$
-	&Max$T_{S}$
-	& Max$T_{S}$
-	\\
-	\hline \textbf{Payload to Orbit (kg)}
-	& \textbf{\PayloadToOrbitqStandard}
-	& \textbf{\PayloadToOrbitMinTGroundMinTStrat}
-	& \textbf{\PayloadToOrbitMaxTGroundMinTStrat}
-	& \textbf{\PayloadToOrbitMinTGroundMaxTStrat}
-	& \textbf{\PayloadToOrbitMaxTGroundMaxTStrat}
-	\\
-	\textbf{Total $\eta_{exergy}$ (\%)}
-	& \textbf{\totalExergyEffqStandard}
-	& \textbf{\totalExergyEffMinTGroundMinTStrat}
-	& \textbf{\totalExergyEffMaxTGroundMinTStrat}
-	& \textbf{\totalExergyEffMinTGroundMaxTStrat}
-	& \textbf{\totalExergyEffMaxTGroundMaxTStrat}
-	\\
-	\hline 
-	\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\firstExergyEffqStandard}
-	& \textbf{\firstExergyEffMinTGroundMinTStrat}
-	& \textbf{\firstExergyEffMaxTGroundMinTStrat}
-	& \textbf{\firstExergyEffMinTGroundMaxTStrat}
-	& \textbf{\firstExergyEffMaxTGroundMaxTStrat}
-	\\
-	\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-	& \firstsecondSeparationAltqStandard
-	& \firstsecondSeparationAltMinTGroundMinTStrat
-	& \firstsecondSeparationAltMaxTGroundMinTStrat
-	& \firstsecondSeparationAltMinTGroundMaxTStrat
-	& \firstsecondSeparationAltMaxTGroundMaxTStrat
-	\\
-	\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-	& \firstsecondSeparationvqStandard
-	& \firstsecondSeparationvMinTGroundMinTStrat
-	& \firstsecondSeparationvMaxTGroundMinTStrat
-	& \firstsecondSeparationvMinTGroundMaxTStrat
-	& \firstsecondSeparationvMaxTGroundMaxTStrat
-	\\
-	\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-	& \firstsecondSeparationgammaqStandard
-	& \firstsecondSeparationgammaMinTGroundMinTStrat
-	& \firstsecondSeparationgammaMaxTGroundMinTStrat
-	& \firstsecondSeparationgammaMinTGroundMaxTStrat
-	& \firstsecondSeparationgammaMaxTGroundMaxTStrat
-	\\
-	\hline 
-	\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\secondExergyEffqStandard}
-	& \textbf{\secondExergyEffMinTGroundMinTStrat}
-	& \textbf{\secondExergyEffMaxTGroundMinTStrat}
-	& \textbf{\secondExergyEffMinTGroundMaxTStrat}
-	& \textbf{\secondExergyEffMaxTGroundMaxTStrat}
-	\\
-	\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-	& \secondthirdSeparationAltqStandard
-	& \secondthirdSeparationAltMinTGroundMinTStrat
-	& \secondthirdSeparationAltMaxTGroundMinTStrat
-	& \secondthirdSeparationAltMinTGroundMaxTStrat
-	& \secondthirdSeparationAltMaxTGroundMaxTStrat
-	\\
-	\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-	& \secondthirdSeparationvqStandard
-	& \secondthirdSeparationvMinTGroundMinTStrat
-	& \secondthirdSeparationvMaxTGroundMinTStrat
-	& \secondthirdSeparationvMinTGroundMaxTStrat
-	& \secondthirdSeparationvMaxTGroundMaxTStrat
-	\\
-	\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-	& \secondthirdSeparationgammaqStandard
-	& \secondthirdSeparationgammaMinTGroundMinTStrat
-	& \secondthirdSeparationgammaMaxTGroundMinTStrat
-	& \secondthirdSeparationgammaMinTGroundMaxTStrat
-	& \secondthirdSeparationgammaMaxTGroundMaxTStrat
-	\\
-	\textbf{2$^{nd}$ Stage Flight Time (s)}
-	& \secondFlightTimeqStandard
-	& \secondFlightTimeMinTGroundMinTStrat
-	& \secondFlightTimeMaxTGroundMinTStrat
-	& \secondFlightTimeMinTGroundMaxTStrat
-	& \secondFlightTimeMaxTGroundMaxTStrat
-	\\
-	\textbf{2$^{nd}$ Stage Distance Flown (km)}
-	& \SecondDistqStandard
-	& \SecondDistMinTGroundMinTStrat
-	& \SecondDistMaxTGroundMinTStrat
-	& \SecondDistMinTGroundMaxTStrat
-	& \SecondDistMaxTGroundMaxTStrat
-	\\
-	\textbf{2$^{nd}$ Stage Return Fuel (kg)}
-	& \returnFuelqStandard
-	& \returnFuelMinTGroundMinTStrat
-	& \returnFuelMaxTGroundMinTStrat
-	& \returnFuelMinTGroundMaxTStrat
-	& \returnFuelMaxTGroundMaxTStrat
-	\\
-	\textbf{2$^{nd}$ Stage Return Distance (km)}
-	& \returnDistqStandard
-	& \returnDistMinTGroundMinTStrat
-	& \returnDistMaxTGroundMinTStrat
-	& \returnDistMinTGroundMaxTStrat
-	& \returnDistMaxTGroundMaxTStrat
-	\\
-	\hline 
-	\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\thirddExergyEffqStandard}
-	& \textbf{\thirddExergyEffMinTGroundMinTStrat}
-	& \textbf{\thirddExergyEffMaxTGroundMinTStrat}
-	& \textbf{\thirddExergyEffMinTGroundMaxTStrat}
-	& \textbf{\thirddExergyEffMaxTGroundMaxTStrat}
-	\\
-	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-	& \thirdqOverFiveqStandard
-	& \thirdqOverFiveMinTGroundMinTStrat
-	& \thirdqOverFiveMaxTGroundMinTStrat
-	& \thirdqOverFiveMinTGroundMaxTStrat
-	& \thirdqOverFiveMaxTGroundMaxTStrat
-	\\
-	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-	& \thirdmFuelqStandard
-	& \thirdmFuelMinTGroundMinTStrat
-	& \thirdmFuelMaxTGroundMinTStrat
-	& \thirdmFuelMinTGroundMaxTStrat
-	& \thirdmFuelMaxTGroundMaxTStrat
-	\\
-	\hline 
-\end{tabular} 
-
-\label{tab:atmunc}
-	\caption{Optimised trajectory properties with atmospheric uncertainty variations.}
+	\centering
 	
+	\begin{tabular}{l c c c c c} 
+		\hline \textbf{Trajectory Condition}
+		& Standard
+		& Min$T_{G}$ 
+		& Max$T_{G}$
+		& Min$T_{G}$
+		& Max$T_{G}$
+		\\
+		&
+		&  Min$T_{S}$
+		& Min$T_{S}$
+		&Max$T_{S}$
+		& Max$T_{S}$
+		\\
+		\hline \textbf{Payload to Orbit (kg)}
+		& \textbf{\PayloadToOrbitqStandard}
+		& \textbf{\PayloadToOrbitMinTGroundMinTStrat}
+		& \textbf{\PayloadToOrbitMaxTGroundMinTStrat}
+		& \textbf{\PayloadToOrbitMinTGroundMaxTStrat}
+		& \textbf{\PayloadToOrbitMaxTGroundMaxTStrat}
+		\\
+		\textbf{Total $\eta_{exergy}$ (\%)}
+		& \textbf{\totalExergyEffqStandard}
+		& \textbf{\totalExergyEffMinTGroundMinTStrat}
+		& \textbf{\totalExergyEffMaxTGroundMinTStrat}
+		& \textbf{\totalExergyEffMinTGroundMaxTStrat}
+		& \textbf{\totalExergyEffMaxTGroundMaxTStrat}
+		\\
+		\hline 
+		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\firstExergyEffqStandard}
+		& \textbf{\firstExergyEffMinTGroundMinTStrat}
+		& \textbf{\firstExergyEffMaxTGroundMinTStrat}
+		& \textbf{\firstExergyEffMinTGroundMaxTStrat}
+		& \textbf{\firstExergyEffMaxTGroundMaxTStrat}
+		\\
+		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
+		& \firstsecondSeparationAltqStandard
+		& \firstsecondSeparationAltMinTGroundMinTStrat
+		& \firstsecondSeparationAltMaxTGroundMinTStrat
+		& \firstsecondSeparationAltMinTGroundMaxTStrat
+		& \firstsecondSeparationAltMaxTGroundMaxTStrat
+		\\
+		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
+		& \firstsecondSeparationvqStandard
+		& \firstsecondSeparationvMinTGroundMinTStrat
+		& \firstsecondSeparationvMaxTGroundMinTStrat
+		& \firstsecondSeparationvMinTGroundMaxTStrat
+		& \firstsecondSeparationvMaxTGroundMaxTStrat
+		\\
+		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
+		& \firstsecondSeparationgammaqStandard
+		& \firstsecondSeparationgammaMinTGroundMinTStrat
+		& \firstsecondSeparationgammaMaxTGroundMinTStrat
+		& \firstsecondSeparationgammaMinTGroundMaxTStrat
+		& \firstsecondSeparationgammaMaxTGroundMaxTStrat
+		\\
+		\hline 
+		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\secondExergyEffqStandard}
+		& \textbf{\secondExergyEffMinTGroundMinTStrat}
+		& \textbf{\secondExergyEffMaxTGroundMinTStrat}
+		& \textbf{\secondExergyEffMinTGroundMaxTStrat}
+		& \textbf{\secondExergyEffMaxTGroundMaxTStrat}
+		\\
+		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
+		& \secondthirdSeparationAltqStandard
+		& \secondthirdSeparationAltMinTGroundMinTStrat
+		& \secondthirdSeparationAltMaxTGroundMinTStrat
+		& \secondthirdSeparationAltMinTGroundMaxTStrat
+		& \secondthirdSeparationAltMaxTGroundMaxTStrat
+		\\
+		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
+		& \secondthirdSeparationvqStandard
+		& \secondthirdSeparationvMinTGroundMinTStrat
+		& \secondthirdSeparationvMaxTGroundMinTStrat
+		& \secondthirdSeparationvMinTGroundMaxTStrat
+		& \secondthirdSeparationvMaxTGroundMaxTStrat
+		\\
+		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
+		& \secondthirdSeparationgammaqStandard
+		& \secondthirdSeparationgammaMinTGroundMinTStrat
+		& \secondthirdSeparationgammaMaxTGroundMinTStrat
+		& \secondthirdSeparationgammaMinTGroundMaxTStrat
+		& \secondthirdSeparationgammaMaxTGroundMaxTStrat
+		\\
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeqStandard
+		& \secondFlightTimeMinTGroundMinTStrat
+		& \secondFlightTimeMaxTGroundMinTStrat
+		& \secondFlightTimeMinTGroundMaxTStrat
+		& \secondFlightTimeMaxTGroundMaxTStrat
+		\\
+		\textbf{2$^{nd}$ Stage Distance Flown (km)}
+		& \SecondDistqStandard
+		& \SecondDistMinTGroundMinTStrat
+		& \SecondDistMaxTGroundMinTStrat
+		& \SecondDistMinTGroundMaxTStrat
+		& \SecondDistMaxTGroundMaxTStrat
+		\\
+		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
+		& \returnFuelqStandard
+		& \returnFuelMinTGroundMinTStrat
+		& \returnFuelMaxTGroundMinTStrat
+		& \returnFuelMinTGroundMaxTStrat
+		& \returnFuelMaxTGroundMaxTStrat
+		\\
+		\textbf{2$^{nd}$ Stage Return Distance (km)}
+		& \returnDistqStandard
+		& \returnDistMinTGroundMinTStrat
+		& \returnDistMaxTGroundMinTStrat
+		& \returnDistMinTGroundMaxTStrat
+		& \returnDistMaxTGroundMaxTStrat
+		\\
+		\hline 
+		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\thirddExergyEffqStandard}
+		& \textbf{\thirddExergyEffMinTGroundMinTStrat}
+		& \textbf{\thirddExergyEffMaxTGroundMinTStrat}
+		& \textbf{\thirddExergyEffMinTGroundMaxTStrat}
+		& \textbf{\thirddExergyEffMaxTGroundMaxTStrat}
+		\\
+		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
+		& \thirdqOverFiveqStandard
+		& \thirdqOverFiveMinTGroundMinTStrat
+		& \thirdqOverFiveMaxTGroundMinTStrat
+		& \thirdqOverFiveMinTGroundMaxTStrat
+		& \thirdqOverFiveMaxTGroundMaxTStrat
+		\\
+		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
+		& \thirdmFuelqStandard
+		& \thirdmFuelMinTGroundMinTStrat
+		& \thirdmFuelMaxTGroundMinTStrat
+		& \thirdmFuelMinTGroundMaxTStrat
+		& \thirdmFuelMaxTGroundMaxTStrat
+		\\
+		\hline 
+	\end{tabular} 
+	
+
+	\caption{Optimised trajectory properties with atmospheric uncertainty variations.}
+		\label{tab:atmunc}
 	
 \end{table}
+
+
+
+The effects of seasonal and solar cycle-based atmospheric variations are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum mean monthly variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface compared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause, as indicated in Figure \ref{fig:AtmosphericVariation}. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated, for a total of four combinations of atmospheric extrema. Optimised trajectories are developed for each combination of these conditions, with properties summarised in Table \ref{tab:atmunc}. Large variations are observed in the cases where the ground and stratosphere properties are at different extremes, resulting in payload-to-orbit variations of +12.5kg when ground temperature is at a maximum and stratospheric temperature is at a minimum, and -16.8kg when ground temperature is at a minimum and stratospheric temperature is at a maximum. Maximum ground temperature (and minimum density) corresponds to minimum tropopause temperature (and maximum density). This causes the scramjet stage to be able to fly higher, and burn fuel faster at higher altitude. Minimum stratopause temperature (and maximum density) causes the third stage rocket to pull up more rapidly, and spend less time in the atmosphere. The combination of these factors results in a more efficient overall trajectory for the maximum ground temperature, minimum stratosphere temperature case, while the opposite is true for the minimum ground temperature, maximum stratosphere temperature case. For the other two cases, where tropopause density and stratopause densiy are at alternating extrema, these effects counteract one another, and result in little performance variation. 
+When both the ground and stratospheric conditions are at the same extremes, a payload-to-orbit variation of only +0.6kg is observed when both temperatures are at a minimum, and -3.8kg when both temperatures are at a maximum.
+
+The deviations in payload mass-to-orbit due to seasonal and solar cycle atmospheric variations are considered 'on-the-day' variations, that must be considered in tandem with launch location, direction and date, as well as wind and weather. For the purposes of this study, these atmospheric variations are not included in the uncertainty magnitude of the calculated payload-to-orbit, but are considered variables that must be taken into account when planning a launch mission. 
+
+\subsection{Localised Variability}
+% Wuilberq covers this well
+
+In addition to the seasonal and solar cycle-based variations in atmospheric properties, there is localised variability in the atmosphere that may have significant effects on the flight of hypersonic launch vehicles. For example, during space shuttle entry, the density of the air was observed to vary by up to 19\% in only a few seconds\cite{Hale2002}. During the entry of the space shuttle, the effects of these density shears were identified as being crucial to the understanding of future hypersonic aircraft, along with the effects of electrical charges at high altitudes, and the effects of very high altitude clouds. Localised atmospheric variability may have large effects on an airbreathing hypersonic launch system, due to the requirement of flying at maximum dynamic pressure for long periods of time. Rapid atmospheric variations may require significant control to compensate for, and may change the performance of the scramjet engines significantly in a short period of time. The effects of these localised variabilities in atmospheric properties are beyond the scope of this study to quantify, however, it must be acknowledged that the atmosphere may vary rapidly during flight, and taken into account during detailed vehicle and control system design. 
 	
 
-	
-	
 
 
 

@@ -8090,6 +8090,41 @@
     \field{year}{1987}
   \endentry
 
+  \entry{Hale2002}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HNW}{%
+         family={Hale},
+         familyi={H\bibinitperiod},
+         given={N\bibnamedelima Wayne},
+         giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={Lamotte},
+         familyi={L\bibinitperiod},
+         given={Nicole},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Garner},
+         familyi={G\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HNWLNGT1}
+    \strng{fullhash}{HNWLNGT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{11th International Space Planes and Hypersonic Systems
+  and Technologies Conference}
+    \field{title}{{Operational Experience with Hypersonic Entry of the Space
+  Shuttle}}
+    \list{location}{1}{%
+      {Orleans, France}%
+    }
+    \field{year}{2002}
+  \endentry
+
   \entry{Carlson1972}{article}{}
     \name{author}{2}{}{%
       {{hash=CHW}{%

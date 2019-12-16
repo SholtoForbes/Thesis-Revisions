@@ -758,7 +758,6 @@ To calculate the dynamics of the third stage, the fuel tanks have been approxima
 
 
 \subsection{Heat Shield Sizing}
-XXX change cork density/thickness
 
 The third stage rocket is separated from the scramjet accelerator at a high dynamic pressure, after which it spends some time accelerating in-atmosphere before reaching exoatmospheric conditions. The time spent within a high dynamic pressure environment creates a large amount of heat loading, which must be mitigated by heat shielding. The heat shielding must be capable of withstanding the extremely high heat and structural loading necessary to protect the third stage rocket internals and payload, as well as being lightweight, as the payload-to-orbit is extremely sensitive to the mass of the third stage, and cost effective, as increasing the cost of the third stage directly increases launch cost due to it being expendable. 
 
@@ -771,8 +770,8 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 			\centering
 \begin{tabular}{|c|c|c|c|}
 	\hline  Part & Density & Geometry & mass \\ 
-	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 50mm diameter cylinder, spherical tip & \textcolor{red}{10.0}kg \\ 
-		\hline C-C Cone & $\rho_{CC} = 1593$  kg/m$^3$ & 10.8mm thick, conical & \textcolor{red}{89.7}kg \\ 
+	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 50mm diameter cylinder, spherical tip & 10.0kg \\ 
+		\hline C-C Cone & $\rho_{CC} = 1593$  kg/m$^3$ & 10.8mm thick, conical & 89.7kg \\ 
 			\hline Phenolic Cork Cylinder & $\rho_{Phenolic Cork} = 512$  kg/m$^3$ & 3.1mm thick, cylindrical & 24.9kg \\ 
 	\hline 
 \end{tabular} 
@@ -934,7 +933,7 @@ During the first-second stage separation the first stage and cowling will requir
 
 The separation of the third stage rocket is likely to be particularly challenging, requiring separating the third stage from the scramjet-powered accelerator while retaining control authority over both vehicles, and ensuring that there is no significant risk of contact between the vehicles. This work assumes that the third stage is contained within the airbreathing stage, similar to some previous designs of the SPARTAN launch system\cite{Jazra2013}. However, other design strategies of multi-stage airbreathing launchers support the upper stage on top of\cite{Gong2014,Tsuchiya2005} or below\cite{Takahashi1997} the airbreathing stage, or contain upper stages within a cavity on the back of the vehicle\cite{Preller2017b,Mehta2001,Wilhite1991}. Each of these methods has positives as well as drawbacks, that must be considered throughout the design process.
 The storage of the third stage within the main body of the scramjet-powered accelerator during the ascent phase, necessitating a release mechanism such as retractable panels or a hinged fuselage section. This method of release is also likely to require an ejection mechanism, to impart a force onto the third stage and create distance between the stages. Additionally, it is possible that it would be necessary to ignite the third stage before it is fully released from the SPARTAN, due to the lack of a control mechanism for the third stage without the rocket engine ignited. 
-Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in an uncovered cavity on the back of the airbreathing vehicle (as was done for some iterations of the SPARTAN \textcolor{red}{XXX Cite}) mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
+Storing the third stage outside the body of the airbreathing stage would necessitate the third stage being designed for additional thermal protection and possibly structural strength, and would likely reduce the aerodynamic performance of the airbreathing stage. Storing the upper stage in an uncovered cavity on the back of the airbreathing vehicle mitigates some of the aerodynamic and thermal drawbacks, but introduces complications during fly-back, when the cavity on the upper side of the airbreathing vehicle is open. This cavity may have significant impact on the aerodynamics of the vehicle during fly-back, potentially increasing the drag and changing the aerodynamic moments of the vehicle significantly. 
 The methods of staging of a launch system of this type must be considered carefully in future design studies, taking into account the controllability of the launch system, along with the aerodynamic and aerothermal properties of each stage. 
 
 %\textcolor{red}{XXX Need to reference section in alternate trajectories where I do variation in return drag}
@@ -960,7 +959,8 @@ Likely impacts on design:
 
 \subsection{Aerodynamic and Propulsion Modelling Simplifications}
 
-The aerodynamic and propulsive properties of the launch system that have been presented in this section are modelled using medium and low fidelity methods. These methods bring with them an associated uncertainty in the values that are calculated for the aerodynamic and propulsive performance of a vehicle, including those presented in Figures \textcolor{red}{XXX-XXX, XXX-XXX and XXX-XXX}. These uncertainties are estimated in Appendix \textcolor{red}{XXX}, with the final values replicated in Table \ref{tab:AppendixUncertaintyCopy}. The presence of these uncertainties may mean that the performance of the vehicle is significantly different to expected, and may even be infeasible with its current design. \textcolor{red}{XXX detail here what was done in uncertainty appendix and summarise results. Have something on atmospheric uncertainties here too.}
+The aerodynamic and propulsive properties of the launch system that have been presented in this section are modelled using medium and low fidelity methods. These methods bring with them an associated uncertainty in the values that are calculated for the aerodynamic and propulsive performance of a vehicle, including those presented in Figures \textcolor{red}{XXX-XXX, XXX-XXX and XXX-XXX}. These uncertainties are estimated in Appendix \textcolor{red}{XXX}, with the final values replicated in Table \ref{tab:AppendixUncertaintyCopy}. The presence of these uncertainties may mean that the performance of the vehicle is significantly different to expected, producing significantly different payloads-to-orbit to those calculated. A Monte-Carlo study is conducted in Appendix XXX using these uncertainty bounds, producing a 2-$\sigma$ deviation of $\pm$106.9kg in payload-to-orbit due to aerodynamic and propulsion modelling uncertainties.
+
 
 \begin{table}[ht]
 	\centering
@@ -968,8 +968,8 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 		\hline  Uncertainty & Subsonic & Transonic  & Supersonic/Hypersonic \\ 
 		\hline  1$^{st}$ \& 3$^{rd}$ Stage $I_{SP}$ & 1.3\% & 1.3\% &  1.3\% \\ 
 		\hline  Scramjet $I_{SP}$ & - & - &  25\% \\ 
-		\hline   $C_L$ & 16.5\% & 28.7\% & 1.3\% \\  
-		\hline   $C_D$ & 20\% & 18\% & 11\% \\  
+		\hline   $C_L$ & 17\% & 28.7\% & 12\% \\  
+		\hline   $C_D$ & 33\% & 21\% & 11\% \\  
 		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 		\hline 
 	\end{tabular}
@@ -977,13 +977,12 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 	\label{tab:AppendixUncertaintyCopy}
 \end{table}
 
-\textcolor{red}{XXX need to include somethning about LHC results, and how my analysis is still valid in the presence of uncertainty}
 
-\textcolor{red}{XXX fom ingo: However, we have assessed the impact of these simplifications as far as is possible at this preliminary design stage, and can conclude that our overall findings are correct. Meaning that our findings still hold for a real vehicle. - will need to change this a bit, but same gist}  
+
 
 	\section{Summary}	
-	\textcolor{red}{XXX Update summary, see below?}
-	
+	\textcolor{red}{XXX Update summary}
+	% XXX SEE below?
 	
 	%*/ as part of the conclusion you should also consider discussing methodology you have applied. I.e. an additional contribution of this chapter is providing a process of how to develop mass and aerodynamics data for a launch systems. This is valuable for anyone wanting to design their own launch vehicle. So you should highlight this as one of the contributions from this part of your thesis.
 	
