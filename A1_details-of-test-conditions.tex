@@ -358,13 +358,6 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		& \thirdqOverFiveheatLimFifteenHundred
 		& \thirdqOverFiveheatLimFourteenHundred
 		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAheatLimStandard
-		& \thirdmaxAoAheatLimSeventeenHundred
-		& \thirdmaxAoAheatLimSixteenHundred
-		& \thirdmaxAoAheatLimFifteenHundred
-		& \thirdmaxAoAheatLimFourteenHundred
-		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelheatLimStandard
 		& \thirdmFuelheatLimSeventeenHundred
@@ -476,9 +469,6 @@ To explore the design of the third stage TPS, various properties of the C-C on t
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveTPSreduced
-		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoATPSreduced
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelTPSreduced
@@ -1135,8 +1125,9 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 
 
 		\chapter{Alternate Trajectory Cases}
-		\section{Trajectory With Decreased Third Stage TPS Mass}
-		\textcolor{red}{XXX Add here as a design variation for reviewer}
+		
+		\section{Sensitivity Study for a Launcher Design Varied for Uncertainty}
+		\textcolor{red}{XXX do a 'worst case' launcher design under uncertainty (not necessarily just bad payload, more varied a lot) and show that sensitivity study still holds.}
 		
 		\section{Trajectory With Variation in Return Drag}
 		I should maybe do a variation of just the return drag - "the performance of the launch system may be significantly different on the ascent and return trajectories (in addition to the engine flowpaths)"
@@ -1199,9 +1190,6 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 	& \thirdqOverFiveqconstrainedNoReturn
 	\\
-	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-	& \thirdmaxAoAqconstrainedNoReturn
-	\\
 	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 	& \thirdmFuelqconstrainedNoReturn
 	\\
@@ -1243,6 +1231,9 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 
 
 \section{Sonic Boom Ground Effects}
+\textcolor{red}{XXX update this}
+
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/6_FlyBack/OverPressureResponse}
@@ -1272,6 +1263,7 @@ These overpressures indicate that overflight of populated areas may not be reaso
 
 
 \section{Alternate Launch Location}
+\textcolor{red}{XXX update this}
 
 In this section, an alternate southerly launch is investigated for the rocket-scramjet-rocket launch system, in the case that flight over Papua is not possible. This launch occurs from Streaky Bay, the possible location of a launch site being developed by Southern Launch Australia\cite{Council2016}. The maximum payload-to-orbit has been calculated from this launch site using LODESTAR. Figure \ref{fig:GroundTrackAlternate} shows the ground track of this optimised trajectory, and Table \ref{tab:summaryalternate} details a summary of the key trajectory parameters. The shape of this optimised trajectory is very similar to the optimal trajectory of the launch system launched from the Northern Territory (Case 11). The first stage initially pitches towards the west, separating the SPARTAN in a westerly direction. the SPARTAN then performs a banking manoeuvre to the south, and a pull-up before third stage release. After separation, the SPARTAN exhibits initial turn, boost-skip and approach phases during fly-back, with the scramjet engine igniting three times at the troughs of the first three skips, in the same manner as when launching northerly. A higher payload to orbit is achieved when launching from a southerly location, attaining a total of \PayloadToOrbitAlternate kg of payload-to-orbit, an increase of +2.9\% compared to northerly launch. This payload increase is caused by the rotation of the Earth hindering, rather than assisting, when launching into a retrograde orbit, making launch from a more southerly point desirable. 
 
@@ -1340,9 +1332,6 @@ In this section, an alternate southerly launch is investigated for the rocket-sc
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveAlternate
-		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAAlternate
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelAlternate
@@ -1841,14 +1830,6 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \thirdqOverFivevCdOneHundredSeven
 		& \thirdqOverFivevCdOneHundredFifteen
 		&-0.24
-		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAvCdTwenty
-		& \thirdmaxAoAvCdFifty
-		& \thirdmaxAoAvCdStandard
-		& \thirdmaxAoAvCdOneHundredSeven
-		& \thirdmaxAoAvCdOneHundredFifteen
-		& -
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelvCdTwenty

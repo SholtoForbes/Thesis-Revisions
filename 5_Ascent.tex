@@ -13,6 +13,7 @@
 
 		\textcolor{red}{XXX Include uncertainties in this section in some way}
 	
+		\textcolor{red}{XXX third stage propulsion energy updated, section not updated}
 	
 This chapter presents a maximum payload-to-orbit trajectory optimisation for the SPARTAN launch system. 
 This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), and delivers a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectory solutions for this launch system.
@@ -107,9 +108,6 @@ In addition, the designs and aerodynamic simulations of each vehicle of the laun
 	
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFiveConstqNoReturn
-		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAConstqNoReturn
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelConstqNoReturn
@@ -249,9 +247,6 @@ These results indicate that the fuel mass utilised by the first stage has an opt
 	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 	& \thirdqOverFiveStandardNoReturn
 	\\
-	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-	& \thirdmaxAoAStandardNoReturn
-	\\
 	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 	& \thirdmFuelStandardNoReturn
 	\\
@@ -330,8 +325,29 @@ stage vehicle designs.
 
 \section{Energy Usage Analysis}\label{sec:exergy1}
 
+%\textcolor{red}{XXX  it might be better to describe propulsion inefficiencies as availability losses, or irreversibility. see https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150009419.pdf,  need to look at Exergy Analysis
+%	and Design Optimization for Aerospace Vehicles and
+%	Systems} - I think for my application propulsion inefficicneies is an ok term
 
-\begin{table}[ht] % updated 15/8/19, note, ive just rounded the numbers, even though they dont quite add up right, seems most logical
+
+% From wikipedia: Specific impulse is often used as the unit of efficiency for rockets, since in the case of the rocket, there is a direct relation between specific impulse, specific fuel consumption and exhaust velocity. This direct relation is not generally present for airbreathing engines, and so specific impulse is less used in the literature. 
+% hard to directly compare... and Isp is not directly efficiency. Also scramjet is obtaining energy from air. 
+
+% These lowered propulsion losses are due to the scramjet accelerator's engines utilising atmospheric oxygen as an oxidiser, resulting in a higher propulsion system efficiency.
+% I think this is wrong, airbreathing doesnt allow better FUEL uilisation necessarily, but doesnt need to store oxidiser.
+
+% Remember higher IsP is lower efficiency for rockets
+
+% 
+%https://web.stanford.edu/~cantwell/AA103_Course_Material/RocketPerformanceNotes_J_Dyer.pdf
+% https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150009419.pdf
+
+% think of a 'hovering' case, where all ther losses wuld be availability and propulsion losses, all energy just going into exhaust rater than rocket. This makes sense for the trends in the third stage. 
+
+% remember to think of efficiency as instantaneous.
+
+
+\begin{table}[ht] % updated 29/12/19, note, ive just rounded the numbers, even though they dont quite add up right, seems most logical
 	\centering
 	\begin{tabular}{l c c} 
 		\hline \textbf{Trajectory Condition}
@@ -357,10 +373,13 @@ stage vehicle designs.
 		\textcolor{red}{KE + PE of 1$^{st}$ Stage Structural Mass} 
 		& \WoneConstqNoReturn \% (1.86 GJ) & \WoneStandardNoReturn \% (2.04 GJ)
 		\\ 
-		\textcolor{red}{Propulsion Inefficiency} 
-		& \PlossoneCombinedConstqNoReturn (181.84 GJ) \% & \PlossoneCombinedStandardNoReturn \% (180.95 GJ)
+		\textcolor{red}{KE + PE of 1$^{st}$ Stage Fuel Mass} 
+		& \WmFoneConstqNoReturn \% (5.00 GJ) & \WmFoneStandardNoReturn \% (5.39 GJ)
 		\\ 
-		\textbf{scramjet accelerator Fuel Exergy} 
+		\textcolor{red}{Propulsion Inefficiency} 
+		& \PlossoneConstqNoReturn \% (176.83 GJ) & \PlossoneStandardNoReturn \% (175.56 GJ)
+		\\ 
+		\textbf{Scramjet Accelerator Fuel Exergy} 
 		& \textbf{\secondEnergyConstqNoReturn} GJ & \textbf{\secondEnergyStandardNoReturn} GJ
 		\\
 		\textcolor{blue}{KE + PE of Payload}
@@ -370,39 +389,52 @@ stage vehicle designs.
 		& \secondWnextStageConstqNoReturn \% (9.31 GJ) & \secondWnextStageStandardNoReturn \% (7.85 GJ)
 		\\
 		\textcolor{red}{Overcoming Drag}
-		& \WDsecondConstqNoReturn \% (35.00 GJ) & \WDsecondStandardNoReturn \% (38.26 GJ)
+		& \WDsecondConstqNoReturn \% (35.00 GJ) & \WDsecondStandardNoReturn \% (38.08 GJ)
 		\\
 		\textcolor{red}{KE + PE of scramjet accelerator Structural Mass}  
-		& \WsecondConstqNoReturn \% (14.40 GJ) & \WsecondStandardNoReturn \% (12.39 GJ)
+		& \WsecondConstqNoReturn \% (14.41 GJ) & \WsecondStandardNoReturn \% (12.39 GJ)
+		\\
+		\textcolor{red}{KE + PE of scramjet accelerator Fuel Mass}  
+		& \WmFsecondConstqNoReturn \% (2.49 GJ) & \WmFsecondStandardNoReturn \% (2.49 GJ)
 		\\
 		\textcolor{red}{Propulsion Inefficiency}  
-		& \PlosssecondCombinedConstqNoReturn \% (128.37 GJ) & \PlosssecondCombinedStandardNoReturn \% (128.49 GJ)
+		& \PlosssecondConstqNoReturn \% (125.88 GJ) & \PlosssecondStandardNoReturn \% (126.01 GJ)
 		\\
 		
-		\textbf{Third Stage Fuel Exergy}  
+		\textbf{Third Stage In-Atmosphere Fuel Exergy}  
 		& \textbf{\thirdEnergyConstqNoReturn}  GJ & \textbf{\thirdEnergyStandardNoReturn}  GJ
 		\\
 		\textcolor{blue}{KE + PE of Payload}  
-		&\thirddExergyEffConstqNoReturn \% (3.33 GJ) &\thirddExergyEffStandardNoReturn \% (5.33 GJ)
+		&\thirddExergyEffAtmConstqNoReturn \% (1.15 GJ) &\thirddExergyEffAtmStandardNoReturn \% (0.73 GJ)
 		\\
 		\textcolor{red}{Overcoming Drag}  
-		& \WDthreeConstqNoReturn \% (2.98 GJ) & \WDthreeStandardNoReturn \% (0.11 GJ)
+		& \WDthreeConstqNoReturn \% (2.99 GJ) & \WDthreeStandardNoReturn \% (0.11 GJ)
 		\\
 		\textcolor{red}{KE + PE  of 3$^{rd}$ Stage Structural Mass}  
-		& \WthreeConstqNoReturn \% (10.49 GJ) & \WthreeStandardNoReturn \% (10.59 GJ)
+		& \WthreeConstqNoReturn \% (3.49 GJ) & \WthreeStandardNoReturn \% (1.34 GJ)
 		\\
-		
+	
+		\textcolor{red}{KE + PE  of 3$^{rd}$ Stage Fuel Mass}  
+		& \WmFthreeConstqNoReturn \% (15.18 GJ) & \WmFthreeStandardNoReturn \% (9.28 GJ)
+		\\
 		\textcolor{red}{KE + PE of Heat Shield}  
-		
 		& \WHSthreeConstqNoReturn \% (2.96 GJ) & \WHSthreeStandardNoReturn \% (1.22 GJ)
 		\\
-		
 		\textcolor{red}{Propulsion Inefficiency}  
-		& \PlossthreeCombinedConstqNoReturn \% (15.25 GJ) & \PlossthreeCombinedStandardNoReturn \% (17.07 GJ)
+		& \PlossthreeConstqNoReturn \% (2.01 GJ) & \PlossthreeStandardNoReturn \% (4.10 GJ)
+		\\
+		\textbf{Circularisation and Hohman Transfer Fuel Exergy}  
+		& \textbf{\HTExergyConstqNoReturn}  GJ & \textbf{\HTExergyStandardNoReturn}  GJ
+		\\
+		\textcolor{blue}{KE + PE of Payload}  
+		& \HTeffConstqNoReturn \% (2.18 GJ) & \HTeffStandardNoReturn \% (4.60 GJ)
+		\\
+		\textcolor{red}{All Other Energy Losses}  
+		& \HTlossConstqNoReturn \% (6.58 GJ) & \HTlossStandardNoReturn \% (14.46 GJ)
 		\\
 		\hline 
 	\end{tabular} 
-	\caption{An energy usage breakdown of the ascent trajectories, both with, and without, the scramjet accelerator constrained to constant dynamic pressure (Cases 1 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'. \textcolor{red}{XXX fix all to be same s.f.}}
+	\caption{An energy usage breakdown of the ascent trajectories, both with, and without, the scramjet accelerator constrained to constant dynamic pressure (Cases 1 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'.}
 	\label{tab:effStandardNoReturn}
 \end{table}
 
@@ -420,8 +452,11 @@ An energy usage analysis is conducted on the maximum payload-to-orbit launch tra
  where $v_g$ is the exhaust velocity, and $v_0$ is the velocity of the vehicle.
  At low rocket velocities there is a large difference between the flight speed of the vehicle, and the exhaust velocity of the rocket engine, resulting in low propulsion efficiencies, and consequently high propulsive inefficiency losses. 
  The propulsive losses of the first stage rocket decrease when the scramjet accelerator is not constrained to a constant dynamic pressure trajectory, as a consequence of the additional acceleration obtained from the larger fuel exergy. 
- However, due to the first stage rocket starting from rest, the first stage rocket always loses a large portion of its exergy to propulsion inefficiency.  
+ However, due to the first stage rocket starting from rest, the first stage rocket always loses a large portion of its exergy to propulsion inefficiencies.  
  
+ 
+ The scramjet accelerator loses a large amount of its exergy to overcoming drag, due to the scramjet accelerator accelerating at high speeds within the atmosphere, at high dynamic pressures. 
+ The drag losses of the scramjet accelerator flying a trajectory with no dynamic pressure constraint are higher than those of the scramjet accelerator flying a constant dynamic pressure trajectory, at \WDsecondStandardNoReturn\%, compared to \WDsecondConstqNoReturn\%. This is due to the additional manoeuvring of the scramjet accelerator during the pull-up before third stage release when the dynamic pressure is not constrained, which requires high angles of attack, and increases drag significantly. 
 The energy imparted upon the payload and third stage rocket during the scramjet accelerator's acceleration is decreased significantly when the scramjet accelerator is allowed to deviate from 50kPa dynamic pressure, reducing from \textcolor{red}{9.31}GJ to \textcolor{red}{7.85}GJ, a decrease of \textcolor{red}{-15.7}\%. This energy is traded-off during the pull-up manoeuvre, by utilising the superior aerodynamics of the scramjet accelerator to manoeuvre into flight conditions that are favourable for the separation of the third stage, improving the efficiency of the third stage ascent. Even though less energy is imparted upon the third stage before separation, a release from the end of a scramjet accelerator pull-up enables the third stage to impart significantly more energy onto the payload, at \textcolor{red}{5.33}GJ, compared to \textcolor{red}{3.33}GJ when released from 50kPa, an increase of \textcolor{red}{+60.1}\%, with a significantly increased exergy efficiency of \thirddExergyEffStandardNoReturn \%.  
 
 The additional energy efficiency of the third stage comes from a decrease in the energy lost due to drag, as well as a decrease in the energy imparted upon the heat shield. 
@@ -429,25 +464,12 @@ The energy lost from the third stage overcoming drag is dependent on the amount 
 The energy lost accelerating the heat shield is also significantly larger when released from the scramjet accelerator flying a constant dynamic pressure trajectory, at \WHSthreeConstqNoReturn \% of the fuel exergy, compared to only \WHSthreeStandardNoReturn \% when the third stage is released after a pull-up of the scramjet accelerator. This is due to the third stage spending considerably more time in a high dynamic pressure environment when released from a constant dynamic pressure trajectory, requiring the heat shield for longer, so that more kinetic and potential energy is imparted upon the heat shield during acceleration. However, the energy losses due to the propulsion inefficiency of the third stage are higher when released from the end of a scramjet accelerator pull-up, compared to the trajectory constrained to constant dynamic pressure. This is due to the third stage being released at lower velocity, from the end of a scramjet accelerator pull-up manoeuvre, resulting in a lower efficiency as illustrated in Equation \ref{eq:rocketeff}. This indicates that there is a trade-off between the propulsion inefficiencies of the third stage, and the drag and heat shield energy losses.
 
 
-The propulsion inefficiency losses of the scramjet accelerator are relatively low, compared to those of the first stage.
-These lowered propulsion losses are due to the scramjet accelerator's engines utilising atmospheric oxygen as an oxidiser, resulting in a higher propulsion system efficiency.
-%\cite{Spittle2003}:
-%\begin{equation}
-%\eta_P = \frac{2}{1\,+\,v_g/v_0}. 
-%\end{equation}
- However, the scramjet accelerator loses a large amount of its exergy to overcoming drag. These high drag losses are due to the scramjet accelerator accelerating at high speeds within the atmosphere, at high dynamic pressures, and serve to partially offset the reduced energy losses due to the high propulsive efficiency of the scramjet accelerator. 
- The drag losses of the scramjet accelerator flying a trajectory with no dynamic pressure constraint are higher than those of the scramjet accelerator flying a constant dynamic pressure trajectory, at \WDsecondStandardNoReturn\%, compared to \WDsecondConstqNoReturn\%. This is due to the additional manoeuvring of the scramjet accelerator during the pull-up before third stage release when the dynamic pressure is not constrained, which requires high angles of attack, and increases drag significantly. 
- 
- The propulsive energy losses of the third stage are also low, compared to the first stage rocket. This is due to the larger velocity of the third stage, compared to the first stage, which increases the propulsive efficiency of the third stage rocket.
- 
-
 
  
 
   
 
 \section{Sensitivity Analysis}\label{sec:sensitivityNoReturn}
-\textcolor{red}{XXX add first stage thrust and mass variation? ... maybe if i think its worth it}
 
 \textcolor{red}{XXX I need more justification and estimation of variance (can maybe look at dawids and other shape optimisation papers to get an idea?) I also need to focus this partly in terms of uncertainties}
 
@@ -456,7 +478,6 @@ These lowered propulsion losses are due to the scramjet accelerator's engines ut
 \textcolor{red}{XXX I need to make clear that this analysis isnt just 'what are the number differences' but mostly 'is the trajectory optimisation valid across vehicle designs'}
 
 
-\textcolor{red}{XXX remove max aoa form tables}
 
 \textcolor{red}{The launch system studied in this work is intended to be representative of a three stage, rocket-scramjet-rocket, small satellite launch system, to be used to inform future vehicle designs. It is anticipated that the design of the launch system will change significantly before a optimal, or even practically feasible, iteration is reached. Additionally, this study models the launch system using medium and low fidelity methods, which may be significant sources of error on the final optimised trajectory.  
 	To quantify how variations in a the design of a stage or variations in the performance of a stage due to modelling error may affect the performance of the launch system, it is useful to conduct a sensitivity analysis on the launch system.}
@@ -471,152 +492,151 @@ All optimised trajectories within this section use the full amount of fuel avail
 
 
 \subsection{Case 3: Maximum Dynamic Pressure Sensitivity}\label{sec:qvariation}
+\textcolor{red}{XXX I will need to redo cases that use plossthree. Then check all plossthrees and wthrees}
 
+\textcolor{red}{XXX I need to update ALL tables, because sensitivities are wrong. None updated as of 20/12/19}
 
-\begin{table}[ht!]
+\begin{table}[ht!] % Updated 29/12/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition  \qquad  $q_{max}$: }
-		&40kPa
 		&45kPa
+		&47.5kPa
 		&50kPa
+		& 52.5kPa
 		& 55kPa
-		& 60kPa
 		& $\Delta/\Delta$\%q
 	\\
 	\hline \textbf{Payload to Orbit (kg)}
-	& \textbf{\PayloadToOrbitqFortyNoReturn}
 	& \textbf{\PayloadToOrbitqFortyFiveNoReturn}
+	& \textbf{\PayloadToOrbitqFortySevenNoReturn}
 	& \textbf{\PayloadToOrbitqStandardNoReturn}
+	& \textbf{\PayloadToOrbitqFiftyTwoNoReturn}
 	& \textbf{\PayloadToOrbitqFiftyFiveNoReturn}
-	& \textbf{\PayloadToOrbitqSixtyNoReturn}
-	&\textbf{0.4}
+	&\textbf{0.9}
 	\\
 	\textbf{Payload Variation (\%)}
-	& \PayloadVarqFortyNoReturn
 	& \PayloadVarqFortyFiveNoReturn
+	& \PayloadVarqFortySevenNoReturn
 	& \PayloadVarqStandardNoReturn
+	& \PayloadVarqFiftyTwoNoReturn
 	& \PayloadVarqFiftyFiveNoReturn
-	& \PayloadVarqSixtyNoReturn
-	&0.2
+	&0.59
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
-	& \textbf{\totalExergyEffqFortyNoReturn}
 	& \textbf{\totalExergyEffqFortyFiveNoReturn}
+	& \textbf{\totalExergyEffqFortySevenNoReturn}
 	& \textbf{\totalExergyEffqStandardNoReturn}
+	& \textbf{\totalExergyEffqFiftyTwoNoReturn}
 	& \textbf{\totalExergyEffqFiftyFiveNoReturn}
-	& \textbf{\totalExergyEffqSixtyNoReturn}
-	& \textbf{3e-05}
+	& \textbf{8e-05}
 	\\
 	\hline 
 	\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\firstExergyEffqFortyNoReturn}
 	& \textbf{\firstExergyEffqFortyFiveNoReturn}
+	& \textbf{\firstExergyEffqFortySevenNoReturn}
 	& \textbf{\firstExergyEffqStandardNoReturn}
+	& \textbf{\firstExergyEffqFiftyTwoNoReturn}
 	& \textbf{\firstExergyEffqFiftyFiveNoReturn}
-	& \textbf{\firstExergyEffqSixtyNoReturn}
-	& \textbf{-0.002}
+	& \textbf{0.003}
 	\\
-
 	\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-	& \firstsecondSeparationAltqFortyNoReturn
 	& \firstsecondSeparationAltqFortyFiveNoReturn
+	& \firstsecondSeparationAltqFortySevenNoReturn
 	& \firstsecondSeparationAltqStandardNoReturn
+	& \firstsecondSeparationAltqFiftyTwoNoReturn
 	& \firstsecondSeparationAltqFiftyFiveNoReturn
-	& \firstsecondSeparationAltqSixtyNoReturn
 	&-0.06
 	\\
 	\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-	& \firstsecondSeparationvqFortyNoReturn
 	& \firstsecondSeparationvqFortyFiveNoReturn
+	& \firstsecondSeparationvqFortySevenNoReturn
 	& \firstsecondSeparationvqStandardNoReturn
+	& \firstsecondSeparationvqFiftyTwoNoReturn
 	& \firstsecondSeparationvqFiftyFiveNoReturn
-	& \firstsecondSeparationvqSixtyNoReturn
-	& -
+	&0.72
 	\\
 	\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-	& \firstsecondSeparationgammaqFortyNoReturn
 	& \firstsecondSeparationgammaqFortyFiveNoReturn
+	& \firstsecondSeparationgammaqFortySevenNoReturn
 	& \firstsecondSeparationgammaqStandardNoReturn
+	& \firstsecondSeparationgammaqFiftyTwoNoReturn
 	& \firstsecondSeparationgammaqFiftyFiveNoReturn
-	& \firstsecondSeparationgammaqSixtyNoReturn
-	&-0.13
+	&0.03
 	\\
 	\hline 
 	\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\secondExergyEffqFortyNoReturn}
 	& \textbf{\secondExergyEffqFortyFiveNoReturn}
+	& \textbf{\secondExergyEffqFortySevenNoReturn}
 	& \textbf{\secondExergyEffqStandardNoReturn}
+	& \textbf{\secondExergyEffqFiftyTwoNoReturn}
 	& \textbf{\secondExergyEffqFiftyFiveNoReturn}
-	& \textbf{\secondExergyEffqSixtyNoReturn}
-	& \textbf{0.008}
+	& -
 	\\
-
 	\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-	& \secondthirdSeparationAltqFortyNoReturn
 	& \secondthirdSeparationAltqFortyFiveNoReturn
+	& \secondthirdSeparationAltqFortySevenNoReturn
 	& \secondthirdSeparationAltqStandardNoReturn
+	& \secondthirdSeparationAltqFiftyTwoNoReturn
 	& \secondthirdSeparationAltqFiftyFiveNoReturn
-	& \secondthirdSeparationAltqSixtyNoReturn
-	&-0.02
+	& -
 	\\
 	\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-	& \secondthirdSeparationvqFortyNoReturn
 	& \secondthirdSeparationvqFortyFiveNoReturn
+	& \secondthirdSeparationvqFortySevenNoReturn
 	& \secondthirdSeparationvqStandardNoReturn
+	& \secondthirdSeparationvqFiftyTwoNoReturn
 	& \secondthirdSeparationvqFiftyFiveNoReturn
-	& \secondthirdSeparationvqSixtyNoReturn
-	&1.56
+	& -
 	\\
 	\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-	& \secondthirdSeparationgammaqFortyNoReturn
 	& \secondthirdSeparationgammaqFortyFiveNoReturn
+	& \secondthirdSeparationgammaqFortySevenNoReturn
 	& \secondthirdSeparationgammaqStandardNoReturn
+	& \secondthirdSeparationgammaqFiftyTwoNoReturn
 	& \secondthirdSeparationgammaqFiftyFiveNoReturn
-	& \secondthirdSeparationgammaqSixtyNoReturn
-	&0.03
+	&0.1
+	\\
+	\textbf{2$^{nd}$ Stage Flight Time (s)}
+	& \secondFlightTimeqFortyFiveNoReturn
+	& \secondFlightTimeqFortySevenNoReturn
+	& \secondFlightTimeqStandardNoReturn
+	& \secondFlightTimeqFiftyTwoNoReturn
+	& \secondFlightTimeqFiftyFiveNoReturn
+	&-2.57
 	\\
 	\textbf{2$^{nd}$ Stage Distance Flown (km)}
-	& \SecondDistqFortyNoReturn
 	& \SecondDistqFortyFiveNoReturn
+	& \SecondDistqFortySevenNoReturn
 	& \SecondDistqStandardNoReturn
+	& \SecondDistqFiftyTwoNoReturn
 	& \SecondDistqFiftyFiveNoReturn
-	& \SecondDistqSixtyNoReturn
-	&-7.4
+	&-5.2
 	\\
 	\hline 
 	\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-	& \textbf{\thirddExergyEffqFortyNoReturn}
 	& \textbf{\thirddExergyEffqFortyFiveNoReturn}
+	& \textbf{\thirddExergyEffqFortySevenNoReturn}
 	& \textbf{\thirddExergyEffqStandardNoReturn}
+	& \textbf{\thirddExergyEffqFiftyTwoNoReturn}
 	& \textbf{\thirddExergyEffqFiftyFiveNoReturn}
-	& \textbf{\thirddExergyEffqSixtyNoReturn}
-	& \textbf{0.037}
+	& \textbf{0.095}
 	\\
-
 	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-	& \thirdqOverFiveqFortyNoReturn
 	& \thirdqOverFiveqFortyFiveNoReturn
+	& \thirdqOverFiveqFortySevenNoReturn
 	& \thirdqOverFiveqStandardNoReturn
+	& \thirdqOverFiveqFiftyTwoNoReturn
 	& \thirdqOverFiveqFiftyFiveNoReturn
-	& \thirdqOverFiveqSixtyNoReturn
 	& -
 	\\
-	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-	& \thirdmaxAoAqFortyNoReturn
-	& \thirdmaxAoAqFortyFiveNoReturn
-	& \thirdmaxAoAqStandardNoReturn
-	& \thirdmaxAoAqFiftyFiveNoReturn
-	& \thirdmaxAoAqSixtyNoReturn
-	&0
-	\\
 	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-	& \thirdmFuelqFortyNoReturn
 	& \thirdmFuelqFortyFiveNoReturn
+	& \thirdmFuelqFortySevenNoReturn
 	& \thirdmFuelqStandardNoReturn
+	& \thirdmFuelqFiftyTwoNoReturn
 	& \thirdmFuelqFiftyFiveNoReturn
-	& \thirdmFuelqSixtyNoReturn
-	&-0.37
+	&-0.93
 	\\
 	\hline 
 \end{tabular}  
@@ -628,21 +648,19 @@ All optimised trajectories within this section use the full amount of fuel avail
 
 
 
-To investigate the sensitivity of the vehicle to changes in $q_{max}$, the maximum permissible dynamic pressure is varied by $\pm$10kPa in 5kPa increments, and the flight trajectory optimised, with results shown in Table \ref{tab:qvarnoreturn}, and comparison plots shown in Appendix \ref{sec:app_comparison20}.
-The variation in maximum dynamic pressure has only a small effect on the total exergy efficiency of the system, and hence only a small effect on the payload mass delivered to sun synchronous orbit.  Varying the maximum dynamic pressure by $\pm20\%$ causes a variation of only +0.064\%$\eta$ or -0.069\%$\eta$ in the exergy efficiency of the launch system and a corresponding +7.2kg (+3.82\%) or -7.8kg (-4.11\%) variation in the payload to orbit.  
-The scramjet accelerator pull-up manoeuvres of all cases are similar, with a slight trend of decreasing altitude as the maximum dynamic pressure is increased. Altitudes of \secondthirdSeparationAltqFortyNoReturn km and \secondthirdSeparationAltqSixtyNoReturn km are reached for the 40kPa and 60kPa limited cases respectively, with separation velocities of \secondthirdSeparationvqFortyNoReturn m/s and \secondthirdSeparationvqSixtyNoReturn m/s. The 40kPa limited case flies for 612.1s, significantly longer than the 60kPa limited case, which flies for 468.1s.
+To investigate the sensitivity of the vehicle to changes in $q_{max}$, the maximum permissible dynamic pressure is varied by \textcolor{red}{$\pm$10\%}, and the flight trajectory optimised, with results shown in Table \ref{tab:qvarnoreturn}, and comparison plots shown in Appendix \ref{sec:app_comparison20}.
+The variation in maximum dynamic pressure has only a small effect on the total exergy efficiency of the system, and hence only a small effect on the payload mass delivered to sun synchronous orbit.  Varying the maximum dynamic pressure by \textcolor{red}{$\pm10\%$} causes a variation of only \textcolor{red}{+0.040}\%$\eta$ or \textcolor{red}{-0.147}\%$\eta$ in the exergy efficiency of the launch system and a corresponding \textcolor{red}{+4.3}kg (\PayloadVarqFiftyFiveNoReturn\%) or \textcolor{red}{-16.1}kg (\PayloadVarqFortyFiveNoReturn\%) variation in the payload to orbit.  
+\textcolor{red}{There are no clear trends in the altitudes or velocities of scramjet stage-third stage separation, although the 45kPa limited case has a significantly lower pull-up than the other cases. However, there is a clear trend in separation angle, from \secondthirdSeparationgammaqFortyFiveNoReturn $^\circ$ at 45kPa, to \secondthirdSeparationgammaqFiftyFiveNoReturn $^\circ$ at 55kPa, due to the increased manoeuvrability of the scramjet accelerator stage at higher dynamic pressures. }
+The 45kPa limited case flies for \secondFlightTimeqFortyFiveNoReturn s, significantly longer than the 55kPa limited case, which flies for \secondFlightTimeqFiftyFiveNoReturn s.
 As the dynamic pressure decreases, the size of the altitude raising manoeuvre in the middle of the trajectory decreases. This is due to the increased altitude and angle of attack moving the flight conditions into a region where the specific impulse of the C-REST engines is not homogeneous, so that it is beneficial to fly at maximum dynamic pressure.  
-All trajectories pull-up to similar altitudes, with a relatively small variation in separation velocity of +33m/s (+1.2\%) and -30m/s (-1.1\%).
-This small variation in velocity is despite the increase in air density and decrease in angle of attack required for flight at higher dynamic pressures, both of which increase the mass flow into the engine. Although the thrust output of the C-REST engines increases with dynamic pressure, so does the drag on the vehicle, and the net increase in performance is relatively small (0.008$ \frac{\Delta\%\eta_{exergy}}{\Delta\%q}$). 
-The trade-off between the exergy efficiency of the first and second stages shifts as the dynamic pressure limit is increased, with the first stage rocket becoming less efficient (varying \firstExergyEffqFortyNoReturn\%$\eta$ at 40kPa to \firstExergyEffqSixtyNoReturn\%$\eta$ at 60kPa), while the exergy efficiency of the scramjet accelerator increases (varying from an $\eta_{exergy}$ of \secondExergyEffqFortyNoReturn\%$\eta$ at 40kPa to \secondExergyEffqSixtyNoReturn\%$\eta$ at 60kPa). The decreased altitude of first-second stage separation required for flight close to 60kPa dynamic pressure causes the first stage to pitch more to reach the optimal staging conditions, increasing the drag losses of the first stage from  \WDoneqFortyNoReturn\% at 40kPa maximum dynamic pressure, to \WDoneqSixtyNoReturn\% at 60kPa maximum dynamic pressure. 
-These increased drag losses result in a less efficient first stage trajectory, which partially offsets some of the increased scramjet accelerator performance gained from the flight at higher dynamic pressure. 
+
+As the maximum dynamic pressure increases, the exergy efficiencies of both the first and third stages increase. The first stage efficiency increase is slight, and is due to the first stage needing to manoeuvre less when separating at higher dynamic pressure, due to separating at a higher trajectory angle. This reduced manoeuvring necessary allows the first stage to be throttled less, so that flight time is reduced, and time in relatively inefficient low altitude, high density conditions is lessened. The higher third stage efficiency with increasing dynamic pressure limit is due to the higher energy imparted upon the third stage by the first stage and scramjet accelerator, resulting from the greater efficiency and manoeuvrability of the launch system when able to fly at higher dynamic pressure. When the third stage is separated with more energy, it requires less energy in the inefficient flight regime before circularisation, resulting in an overall more efficient trajectory. 
 
 
 
 \subsection{Case 4: Scramjet Accelerator Drag Sensitivity}\label{sec:dragvariation}
-\textcolor{red}{XXX I should link the number of small skips with what was said previously, these reduce as the drag increases, lending credence to my arguments that they are due to the SPRTAn not being optimised for max q flight}
 
-\begin{table}[ht!] % updated 14/8/19
+\begin{table}[ht!] % updated 28/12/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $C_{d,2}$: 
@@ -776,14 +794,6 @@ These increased drag losses result in a less efficient first stage trajectory, w
 		& \thirdqOverFiveCdOneHundredTenNoReturn
 		& -
 		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoACdNinetyNoReturn
-		& \thirdmaxAoACdNinetyFiveNoReturn
-		& \thirdmaxAoACdStandardNoReturn
-		& \thirdmaxAoACdOneHundredFiveNoReturn
-		& \thirdmaxAoACdOneHundredTenNoReturn
-		& -
-		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelCdNinetyNoReturn
 		& \thirdmFuelCdNinetyFiveNoReturn
@@ -801,15 +811,19 @@ These increased drag losses result in a less efficient first stage trajectory, w
 To investigate the effect of the vehicle design and uncertainty in aerodynamic performance on the optimal trajectory, the drag of the scramjet accelerator is varied by $\pm10$\%, and an optimised trajectory calculated with dynamic pressure limited to 50kpa. The drag of the scramjet accelerator is varied during both the first stage ascent, as well as the acceleration of the scramjet accelerator. Results are compared to the 100\% drag result in Table \ref{tab:DragVariationNoReturn} with a trajectory path comparison shown in Appendix \ref{sec:app_comparison40}. 
 
 The drag of the scramjet accelerator has a significant effect on the overall exergy efficiency of the system (\textcolor{red}{+0.207}\%$\eta$ at 90\% drag, and \textcolor{red}{-0.170}\%$\eta$ at 110\% drag) and correspondingly, on the maximum payload-to-orbit, \textcolor{red}{+22.6}kg at 90\% drag, a variation of \textcolor{red}{+14.5}\% and \textcolor{red}{-18.6}kg at 110\% drag, a variation of \textcolor{red}{-11.2}\%. The exergy efficiencies of the first stage rocket and the scramjet accelerator are decreased significantly as the drag is increased, from \firstExergyEffCdNinetyNoReturn\%$\eta$ and \secondExergyEffCdNinetyNoReturn\%$\eta$ respectively at 90\% drag, to \firstExergyEffCdOneHundredTenNoReturn\%$\eta$ and \secondExergyEffCdOneHundredTenNoReturn\%$\eta$ respectively at 110\% drag. This reduction in efficiency is due to the increase in energy which must be used to overcome the added drag. 
-The altitude and trajectory angle at the first-second stage separation decrease significantly as the drag is increased. This indicates that the first stage is able to pitch more during its trajectory, as a consequence of accelerating more slowly, as the drag increases. \textcolor{red}{XXX traj angle doesnt}
-The scramjet accelerator trajectory results show that when drag is varied, the optimal trajectories do not change shape significantly, and have similarly sized pull-ups, though as the drag is increased (ie. L/D is decreased), the second stage follows a slightly slower and hence lower flight path, and the scramjet accelerator pulls-up to a higher trajectory angle. The similar shape of the optimal trajectory with variation in the aerodynamics of the scramjet accelerator suggests that sacrificing velocity to increase separation altitude in a pull-up manoeuvre is optimal for multiple vehicle designs, and that the size of this pull-up is consistent with variation in the aerodynamics of the scramjet accelerator. \textcolor{red}{XXX maybe change pull up stuff to 'no clear trend' rather than 'similarluy sized'}
+\textcolor{red}{
+At the first-second stage separation the staging altitude and velocity decrease significantly as the drag is increased, while the trajectory angle increases. This trend is due to the lower and slower trajectory that the first stage flies as drag is increased, requiring less manoeuvring. }
+
+
+The scramjet accelerator trajectory results show that when drag is varied, the optimal trajectories do not change shape significantly, and pull-up to similar altitudes. Although as the drag is increased (ie. L/D is decreased), the second stage follows a slightly slower and hence lower flight path, and the scramjet accelerator pulls-up to a higher trajectory angle. The similar shape of the optimal trajectory with variation in the aerodynamics of the scramjet accelerator suggests that sacrificing velocity to increase separation altitude in a pull-up manoeuvre is optimal for multiple vehicle designs, and that the size of this pull-up is consistent with variation in the aerodynamics of the scramjet accelerator. 
+
 As the drag of the scramjet accelerator increases, the exergy efficiency of the third stage shows a corresponding decrease, from \thirddExergyEffCdNinetyNoReturn\%$\eta$ at 90\% drag, to \thirddExergyEffCdOneHundredTenNoReturn\%$\eta$ at 110\% drag.
-This is primarily due to the lower velocity of scramjet accelerator-third stage separation at higher drag, which results in a decreased third stage propulsive efficiency (illustrated by Equation \ref{eq:rocketeff}). This decreased propulsive efficiency in turn increases the losses due to propulsive inefficiency during the operation of the third stage, from \PlossthreeCombinedCdNinetyNoReturn\% at $C_D$=90\%, to \PlossthreeCombinedCdOneHundredTenNoReturn\% at $C_D$=110\%.
+This is primarily due to the lower velocity of scramjet accelerator-third stage separation at higher drag, which results in a decreased third stage propulsive efficiency (illustrated by Equation \ref{eq:rocketeff}). This decreased propulsive efficiency in turn increases the losses due to propulsive inefficiency during the operation of the third stage, from \PlossthreeCdNinetyNoReturn\% at $C_D$=90\%, to \PlossthreeCdOneHundredTenNoReturn\% at $C_D$=110\%.
 
 
 \subsection{Case 5: C-REST Specific Impulse Sensitivity}\label{sec:ispsensitivitynoflyback}
 
-\begin{table}[ht!] % updated 14/8/19
+\begin{table}[ht!] % updated 30/12/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $I_{SP,2}$:
@@ -943,14 +957,6 @@ This is primarily due to the lower velocity of scramjet accelerator-third stage 
 		& \thirdqOverFiveIspOneHundredTenNoReturn
 		& -
 		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAIspNinetyNoReturn
-		& \thirdmaxAoAIspNinetyFiveNoReturn
-		& \thirdmaxAoAIspStandardNoReturn
-		& \thirdmaxAoAIspOneHundredFiveNoReturn
-		& \thirdmaxAoAIspOneHundredTenNoReturn
-		& -
-		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelIspNinetyNoReturn
 		& \thirdmFuelIspNinetyFiveNoReturn
@@ -960,7 +966,7 @@ This is primarily due to the lower velocity of scramjet accelerator-third stage 
 		&-2.2
 		\\
 		\hline 
-	\end{tabular}  
+	\end{tabular} 
 
 	
 	\caption{Comparison of key trajectory parameters with variations in the specific impulse of the C-REST engines (Case 5).}
@@ -972,163 +978,155 @@ The increased C-REST specific impulse does not vary the first stage performance 
 The lack of a clear trend in the first stage release point indicates that the efficiency trade-off between the first stage and the scramjet accelerator is not significantly affected by the efficiency of the scramjet accelerator, and is primarily driven by the capabilities of the first stage rocket. 
 
 Varying the specific impulse of the C-REST engines has a considerable effect on the exergy efficiency of the scramjet accelerator, causing the efficiency to increase by \textcolor{red}{+0.758}\%$\eta$ (\textcolor{red}{+14.7}\%) at 110\%$I_{SP}$ and decrease by \textcolor{red}{-0.555}\%$\eta$ (\textcolor{red}{-12.6}\%) at 90\% $I_{SP}$. 
-Increasing the specific impulse of the C-REST engines allows the scramjet accelerator to accelerate more over the flight time, increasing the velocity at second-third stage separation significantly. The propulsive inefficiency losses of the scramjet accelerator decrease from \PlosssecondCombinedIspNinetyNoReturn\% at 90\% $I_{SP}$, to \PlosssecondCombinedIspOneHundredTenNoReturn \% at 110\% $I_{SP}$. However, the drag losses, and the energy needed to accelerate the structural mass of the third stage, increase from \WDsecondIspNinetyNoReturn\% and \WsecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \WDsecondIspOneHundredTenNoReturn\% and \WsecondIspOneHundredTenNoReturn\% of the scramjet accelerator's total exergy at 110\% $I_{SP}$, partially offsetting the increased performance. These increased losses are due to the additional velocity at the end of the trajectory causing increased drag, and requiring more kinetic energy to be imparted upon the structural mass of the scramjet accelerator. 
+Increasing the specific impulse of the C-REST engines allows the scramjet accelerator to accelerate more over the flight time, increasing the velocity at second-third stage separation significantly. The propulsive inefficiency losses of the scramjet accelerator decrease from \PlosssecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \PlosssecondIspOneHundredTenNoReturn \% at 110\% $I_{SP}$. However, the drag losses, and the energy needed to accelerate the structural mass of the third stage, increase from \WDsecondIspNinetyNoReturn\% and \WsecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \WDsecondIspOneHundredTenNoReturn\% and \WsecondIspOneHundredTenNoReturn\% of the scramjet accelerator's total exergy at 110\% $I_{SP}$, partially offsetting the increased performance. These increased losses are due to the additional velocity at the end of the trajectory causing increased drag, and requiring more kinetic energy to be imparted upon the structural mass of the scramjet accelerator. 
  Varying the specific impulse does not change the optimal second-third stage separation altitude significantly, however the increased velocity allows this altitude to be reached by the scramjet accelerator with less trajectory angle variation during the pull-up. Increasing the specific impulse allows the third stage to successfully reach orbit from a lower trajectory angle release point, as low as \secondthirdSeparationgammaIspOneHundredTenNoReturn$^\circ$ at 110\% $I_{SP}$, while decreasing the specific impulse requires a higher release point, up to \secondthirdSeparationgammaIspNinetyNoReturn$^\circ$ at 90\% $I_{SP}$.
-The exergy efficiency of the third stage is increased as the specific impulse of the scramjet accelerator increases, increasing by \textcolor{red}{+2.454}\%$\eta$ at 110\% $I_{SP}$, and decreasing by \textcolor{red}{-1.879}\%$\eta$ at 90\% $I_{SP}$. This is due to the significantly decreased propulsive losses of the third stage when released at a higher velocity, \PlossthreeCombinedIspOneHundredTenNoReturn\% (\textcolor{red}{15.90} GJ) at 110\%$I_{SP}$, compared to \PlossthreeCombinedIspNinetyNoReturn\% (\textcolor{red}{17.89} GJ) at 90\%$I_{SP}$. 
+The exergy efficiency of the third stage is increased as the specific impulse of the scramjet accelerator increases, increasing by \textcolor{red}{+2.454}\%$\eta$ at 110\% $I_{SP}$, and decreasing by \textcolor{red}{-1.879}\%$\eta$ at 90\% $I_{SP}$. This is due to the significantly decreased propulsive losses of the third stage when released at a higher velocity, \PlossthreeIspOneHundredTenNoReturn\% at 110\%$I_{SP}$, compared to \PlossthreeIspNinetyNoReturn\% at 90\%$I_{SP}$. 
 
-\subsection{Case 6: scramjet accelerator Mass Sensitivity}\label{sec:SpartanMassnoreturn}
-\textcolor{red}{XXX change to 10\%}
+\subsection{Case 6: Scramjet Accelerator Mass Sensitivity}\label{sec:SpartanMassnoreturn}
+
 
 \begin{table}[ht]
 	\centering
 	
-	\begin{tabular}{l c c c c c c} % updated 14/8/19 - but for only 5% variation
+	\begin{tabular}{l c c c c c c} % updated 30/12/19
 	\hline \textbf{Trajectory Condition  \qquad  $m_{2}$: }
+	&90\%
 	&95\%
-	&97.5\%
 	&100\%
-	& 102.5\%
 	& 105\%
+	& 110\%
 	& $\Delta/\Delta$\%q
 		\\
 		\hline \textbf{Payload to Orbit (kg)}
+		& \textbf{\PayloadToOrbitmSPARTANNinetyNoReturn}
 		& \textbf{\PayloadToOrbitmSPARTANNinetyFiveNoReturn}
-		& \textbf{\PayloadToOrbitmSPARTANNinetySevenFiveNoReturn}
 		& \textbf{\PayloadToOrbitmSPARTANStandardNoReturn}
-		& \textbf{\PayloadToOrbitmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\PayloadToOrbitmSPARTANOneHundredFiveNoReturn}
+		& \textbf{\PayloadToOrbitmSPARTANOneHundredTenNoReturn}
 		&\textbf{-1.3}
 		\\
 		\textbf{Payload Variation (\%)}
+		& \PayloadVarmSPARTANNinetyNoReturn
 		& \PayloadVarmSPARTANNinetyFiveNoReturn
-		& \PayloadVarmSPARTANNinetySevenFiveNoReturn
 		& \PayloadVarmSPARTANStandardNoReturn
-		& \PayloadVarmSPARTANOneHundredTwoFiveNoReturn
 		& \PayloadVarmSPARTANOneHundredFiveNoReturn
-		&-0.83
+		& \PayloadVarmSPARTANOneHundredTenNoReturn
+		&-0.86
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
+		& \textbf{\totalExergyEffmSPARTANNinetyNoReturn}
 		& \textbf{\totalExergyEffmSPARTANNinetyFiveNoReturn}
-		& \textbf{\totalExergyEffmSPARTANNinetySevenFiveNoReturn}
 		& \textbf{\totalExergyEffmSPARTANStandardNoReturn}
-		& \textbf{\totalExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\totalExergyEffmSPARTANOneHundredFiveNoReturn}
+		& \textbf{\totalExergyEffmSPARTANOneHundredTenNoReturn}
 		& \textbf{-0.00012}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\firstExergyEffmSPARTANNinetyNoReturn}
 		& \textbf{\firstExergyEffmSPARTANNinetyFiveNoReturn}
-		& \textbf{\firstExergyEffmSPARTANNinetySevenFiveNoReturn}
 		& \textbf{\firstExergyEffmSPARTANStandardNoReturn}
-		& \textbf{\firstExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\firstExergyEffmSPARTANOneHundredFiveNoReturn}
+		& \textbf{\firstExergyEffmSPARTANOneHundredTenNoReturn}
 		& \textbf{-0.021}
 		\\
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
+		& \firstsecondSeparationAltmSPARTANNinetyNoReturn
 		& \firstsecondSeparationAltmSPARTANNinetyFiveNoReturn
-		& \firstsecondSeparationAltmSPARTANNinetySevenFiveNoReturn
 		& \firstsecondSeparationAltmSPARTANStandardNoReturn
-		& \firstsecondSeparationAltmSPARTANOneHundredTwoFiveNoReturn
 		& \firstsecondSeparationAltmSPARTANOneHundredFiveNoReturn
+		& \firstsecondSeparationAltmSPARTANOneHundredTenNoReturn
 		&-0.06
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
+		& \firstsecondSeparationvmSPARTANNinetyNoReturn
 		& \firstsecondSeparationvmSPARTANNinetyFiveNoReturn
-		& \firstsecondSeparationvmSPARTANNinetySevenFiveNoReturn
 		& \firstsecondSeparationvmSPARTANStandardNoReturn
-		& \firstsecondSeparationvmSPARTANOneHundredTwoFiveNoReturn
 		& \firstsecondSeparationvmSPARTANOneHundredFiveNoReturn
-		&-7.07
+		& \firstsecondSeparationvmSPARTANOneHundredTenNoReturn
+		&-7.11
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
+		& \firstsecondSeparationgammamSPARTANNinetyNoReturn
 		& \firstsecondSeparationgammamSPARTANNinetyFiveNoReturn
-		& \firstsecondSeparationgammamSPARTANNinetySevenFiveNoReturn
 		& \firstsecondSeparationgammamSPARTANStandardNoReturn
-		& \firstsecondSeparationgammamSPARTANOneHundredTwoFiveNoReturn
 		& \firstsecondSeparationgammamSPARTANOneHundredFiveNoReturn
+		& \firstsecondSeparationgammamSPARTANOneHundredTenNoReturn
 		&0.05
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\secondExergyEffmSPARTANNinetyNoReturn}
 		& \textbf{\secondExergyEffmSPARTANNinetyFiveNoReturn}
-		& \textbf{\secondExergyEffmSPARTANNinetySevenFiveNoReturn}
 		& \textbf{\secondExergyEffmSPARTANStandardNoReturn}
-		& \textbf{\secondExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\secondExergyEffmSPARTANOneHundredFiveNoReturn}
-		& \textbf{-0.011}
+		& \textbf{\secondExergyEffmSPARTANOneHundredTenNoReturn}
+		& \textbf{-0.013}
 		\\
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
+		& \secondthirdSeparationAltmSPARTANNinetyNoReturn
 		& \secondthirdSeparationAltmSPARTANNinetyFiveNoReturn
-		& \secondthirdSeparationAltmSPARTANNinetySevenFiveNoReturn
 		& \secondthirdSeparationAltmSPARTANStandardNoReturn
-		& \secondthirdSeparationAltmSPARTANOneHundredTwoFiveNoReturn
 		& \secondthirdSeparationAltmSPARTANOneHundredFiveNoReturn
-		&-0.06
+		& \secondthirdSeparationAltmSPARTANOneHundredTenNoReturn
+		& -
 		\\
 		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
+		& \secondthirdSeparationvmSPARTANNinetyNoReturn
 		& \secondthirdSeparationvmSPARTANNinetyFiveNoReturn
-		& \secondthirdSeparationvmSPARTANNinetySevenFiveNoReturn
 		& \secondthirdSeparationvmSPARTANStandardNoReturn
-		& \secondthirdSeparationvmSPARTANOneHundredTwoFiveNoReturn
 		& \secondthirdSeparationvmSPARTANOneHundredFiveNoReturn
-		&-6.56
+		& \secondthirdSeparationvmSPARTANOneHundredTenNoReturn
+		&-7.03
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
+		& \secondthirdSeparationgammamSPARTANNinetyNoReturn
 		& \secondthirdSeparationgammamSPARTANNinetyFiveNoReturn
-		& \secondthirdSeparationgammamSPARTANNinetySevenFiveNoReturn
 		& \secondthirdSeparationgammamSPARTANStandardNoReturn
-		& \secondthirdSeparationgammamSPARTANOneHundredTwoFiveNoReturn
 		& \secondthirdSeparationgammamSPARTANOneHundredFiveNoReturn
+		& \secondthirdSeparationgammamSPARTANOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimemSPARTANNinetyNoReturn
 		& \secondFlightTimemSPARTANNinetyFiveNoReturn
-		& \secondFlightTimemSPARTANNinetySevenFiveNoReturn
 		& \secondFlightTimemSPARTANStandardNoReturn
-		& \secondFlightTimemSPARTANOneHundredTwoFiveNoReturn
 		& \secondFlightTimemSPARTANOneHundredFiveNoReturn
+		& \secondFlightTimemSPARTANOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
+		& \SecondDistmSPARTANNinetyNoReturn
 		& \SecondDistmSPARTANNinetyFiveNoReturn
-		& \SecondDistmSPARTANNinetySevenFiveNoReturn
 		& \SecondDistmSPARTANStandardNoReturn
-		& \SecondDistmSPARTANOneHundredTwoFiveNoReturn
 		& \SecondDistmSPARTANOneHundredFiveNoReturn
-		&-5.74
+		& \SecondDistmSPARTANOneHundredTenNoReturn
+		&-5.7
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\thirddExergyEffmSPARTANNinetyNoReturn}
 		& \textbf{\thirddExergyEffmSPARTANNinetyFiveNoReturn}
-		& \textbf{\thirddExergyEffmSPARTANNinetySevenFiveNoReturn}
 		& \textbf{\thirddExergyEffmSPARTANStandardNoReturn}
-		& \textbf{\thirddExergyEffmSPARTANOneHundredTwoFiveNoReturn}
 		& \textbf{\thirddExergyEffmSPARTANOneHundredFiveNoReturn}
-		& \textbf{-0.128}
+		& \textbf{\thirddExergyEffmSPARTANOneHundredTenNoReturn}
+		& \textbf{-0.132}
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
+		& \thirdqOverFivemSPARTANNinetyNoReturn
 		& \thirdqOverFivemSPARTANNinetyFiveNoReturn
-		& \thirdqOverFivemSPARTANNinetySevenFiveNoReturn
 		& \thirdqOverFivemSPARTANStandardNoReturn
-		& \thirdqOverFivemSPARTANOneHundredTwoFiveNoReturn
 		& \thirdqOverFivemSPARTANOneHundredFiveNoReturn
-		& -
-		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAmSPARTANNinetyFiveNoReturn
-		& \thirdmaxAoAmSPARTANNinetySevenFiveNoReturn
-		& \thirdmaxAoAmSPARTANStandardNoReturn
-		& \thirdmaxAoAmSPARTANOneHundredTwoFiveNoReturn
-		& \thirdmaxAoAmSPARTANOneHundredFiveNoReturn
+		& \thirdqOverFivemSPARTANOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
+		& \thirdmFuelmSPARTANNinetyNoReturn
 		& \thirdmFuelmSPARTANNinetyFiveNoReturn
-		& \thirdmFuelmSPARTANNinetySevenFiveNoReturn
 		& \thirdmFuelmSPARTANStandardNoReturn
-		& \thirdmFuelmSPARTANOneHundredTwoFiveNoReturn
 		& \thirdmFuelmSPARTANOneHundredFiveNoReturn
-		&1.31
+		& \thirdmFuelmSPARTANOneHundredTenNoReturn
+		&1.35
 		\\
 		\hline 
 	\end{tabular}  
@@ -1138,20 +1136,21 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 \end{table}
 
 
-The mass of the scramjet accelerator is varied by $\pm$5\% ($\pm$247.9kg), to investigate the effects of the structural, thermal shielding, and system mass of the scramjet accelerator on the performance of the launch system. A mass variation of only 5\% is investigated, in order to prevent the first-second stage separation velocity from dropping unacceptably low. A summary of the key parameters of each trajectory is detailed in Table \ref{tab:comparison100}, with comparison plots shown in Appendix \ref{sec:app_comparison100}.
-Variation in the mass of the scramjet accelerator causes the maximum payload-to-orbit of the launch system to vary by +7.4kg (+3.95\%) at 95\% structural mass and by -7.9kg (-4.16\%) at 105\% structural mass. 
-The exergy efficiency of the first stage rocket decreases as the mass of the scramjet accelerator is increased (-0.224\%$\eta$  at 105\% structural mass) and increases as the mass of the scramjet accelerator is decreased (+0.215\%$\eta$  at 95\% structural mass). As the mass of the scramjet accelerator increases, the acceleration of the first stage decreases, and the propulsive inefficiency losses of the first stage increase, from \PlossoneCombinedmSPARTANNinetyFiveNoReturn\% at 95\% structural mass to \PlossoneCombinedmSPARTANOneHundredFiveNoReturn\% at 105\% structural mass.
-Additionally, the altitude and trajectory angle at first-second stage separation are decreased significantly. This causes the drag losses of the first stage to increase as the mass of the scramjet accelerator is increased, from \WDonemSPARTANNinetyFiveNoReturn\% at 95\% structural mass to \WDonemSPARTANOneHundredFiveNoReturn\% at 105\% structural mass. This increase in drag losses is despite the acceleration of the first stage decreasing, and is due to the first stage using its aerodynamics to manoeuvre more, at higher scramjet accelerator mass values.  
-This increased manoeuvring indicates that as the mass of the scramjet accelerator increases, and the performance of the rocket decreases, it becomes beneficial to trade-off more of the exergy efficiency of the first stage, to benefit the performance of the scramjet accelerator. 
+The structural mass of the scramjet accelerator is varied by \textcolor{red}{$\pm$10\% ($\pm$495.7kg)}, to investigate the effects of the structural, thermal shielding, and system mass of the scramjet accelerator on the performance of the launch system. A summary of the key parameters of each trajectory is detailed in Table \ref{tab:comparison100}, with comparison plots shown in Appendix \ref{sec:app_comparison100}.
+\textcolor{red}{Variation in the mass of the scramjet accelerator causes the maximum payload-to-orbit of the launch system to vary by +13.4kg (\PayloadVarmSPARTANNinetyNoReturn\%) at 90\% structural mass and by -13.7kg (\PayloadVarmSPARTANOneHundredTenNoReturn\%) at 110\% structural mass. 
+ As the mass of the scramjet accelerator increases, the acceleration of the first stage decreases, and the propulsive inefficiency losses of the first stage increase, from \PlossonemSPARTANNinetyNoReturn\% at 90\% structural mass to \PlossonemSPARTANOneHundredTenNoReturn\% at 110\% structural mass. The increased propulsive losses decrease the efficiency of the first stage as the mass of the scramjet accelerator increases.}
 
+\textcolor{red}{
 A higher scramjet accelerator structural mass causes the scramjet accelerator to stay at relatively lower velocities over its trajectory, which results in a higher specific impulse throughout. 
-Varying the structural mass of the scramjet accelerator does not significantly affect the altitude at the end of the pull-up manoeuvre. However, as the mass of the scramjet accelerator is varied, the velocity at scramjet accelerator-third stage separation does change significantly, by +46m/s (+17.1\%) at 95\% structural mass, and -50m/s (-18.6\%) at 105\% structural mass. In order to reach similar altitudes at the end of pull-up, the trajectory angle at the second-third stage separation increases as the structural mass is increased, by +0.3$^\circ$ (+2.8\%) at 105\% structural mass, and decreases as the structural mass is decreased, by -0.2$^\circ$ (-1.9\%), at 95\% structural mass. 
-As the mass of the scramjet accelerator increases, the exergy efficiency of the third stage is decreased, varying by -0.76\%$\eta$ at 105\% structural mass, and as the scramjet accelerator mass is decreased, the exergy efficiency of the third stage is increased, varying by +0.722\%$\eta$ at 95\% structural mass, due to increased propulsive efficiency from being released at a higher velocity. 
+Varying the structural mass of the scramjet accelerator generally lowers the altitude at the end of the pull-up manoeuvre slightly. In addition, as the mass of the scramjet accelerator is varied, the velocity at scramjet accelerator-third stage separation varies significantly, by +73m/s (+2.8\%) at 90\% structural mass, and -69m/s (-2.6\%) at 110\% structural mass. }
+
+\textcolor{red}{
+As the mass of the scramjet accelerator increases, the exergy efficiency of the third stage is decreased, varying by -1.350\%$\eta$ at 110\% structural mass, and as the scramjet accelerator mass is decreased, the exergy efficiency of the third stage is increased, varying by +1.313\%$\eta$ at 90\% structural mass, due to increased propulsive efficiency from being released at a higher velocity. }
 
 
 \subsection{Case 7: Scramjet Accelerator Fuel Mass Sensitivity} \label{sec:fuelmassNoReturn}
 
-\begin{table}[!ht] % updated 14/9/19
+\begin{table}[!ht] % updated 30/12/19
 \begin{tabular}{l c c c c c c} 
 	\hline \textbf{Trajectory Condition}   \qquad  $m_{f,2}$:
 	&90\%
@@ -1284,14 +1283,6 @@ As the mass of the scramjet accelerator increases, the exergy efficiency of the 
 	& \thirdqOverFivemFuelOneHundredTenNoReturn
 	&0.07
 	\\
-	\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-	& \thirdmaxAoAmFuelNinetyNoReturn
-	& \thirdmaxAoAmFuelNinetyFiveNoReturn
-	& \thirdmaxAoAmFuelStandardNoReturn
-	& \thirdmaxAoAmFuelOneHundredFiveNoReturn
-	& \thirdmaxAoAmFuelOneHundredTenNoReturn
-	& -
-	\\
 	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 	& \thirdmFuelmFuelNinetyNoReturn
 	& \thirdmFuelmFuelNinetyFiveNoReturn
@@ -1321,13 +1312,9 @@ One again, as the second-third stage release velocity increases, the exergy effi
 
 \subsection{Case 8: Third Stage Mass Sensitivity}\label{sec:m3noReturn}
 
-\textcolor{red}{XXX relate this to increase of third stage thrust and its associated increase in engine mass, as per examiners comment... cant really do this because this includes fuel, maybe just put a note where I increase the engine mass that it directly subtracts from payload mass} % note that pressure fed rockets are fed by pressurised gas, so all tanks hopefully wont need to change
 
-\textcolor{red}{XXX I need to completely redo this, because there is no clear trend in payload...}
 
-\textcolor{red}{or not..  the decrease in payload with increased mass is probably due to the 10 degree limit on aoa, in addition to the way that the engine was sized - look at general trend in time over 50kPa}
-
-\begin{table}[ht] % updated 14/9/19
+\begin{table}[ht] % updated 30/12/19
 	\centering
 	
 	\begin{tabular}{l c c c c c c} 
@@ -1462,14 +1449,6 @@ One again, as the second-third stage release velocity increases, the exergy effi
 		& \thirdqOverFivemThreeOneHundredTenNoReturn
 		& -
 		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoAmThreeNinetyNoReturn
-		& \thirdmaxAoAmThreeNinetyFiveNoReturn
-		& \thirdmaxAoAmThreeStandardNoReturn
-		& \thirdmaxAoAmThreeOneHundredFiveNoReturn
-		& \thirdmaxAoAmThreeOneHundredTenNoReturn
-		& -
-		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelmThreeNinetyNoReturn
 		& \thirdmFuelmThreeNinetyFiveNoReturn
@@ -1489,164 +1468,156 @@ The total mass of the third stage rocket is varied by $\pm10\%$, to investigate 
 The mass of the heat shield is unchanged at \textcolor{red}{124.6}kg, and the structural mass is assumed to contribute to 9\% of the remaining mass (so that the structural mass varies by $\pm10\%$). The remaining mass which is varied consists of a flexible combination of fuel and payload mass, in the same manner as all other cases. 
 This mass variation investigates the effects of the third stage internal layout on the trajectory of the launch system, quantifying the consequences of fitting additional fuel, payload and structure within the available space.
 
-Varying the mass of the third stage rocket by $\pm10\%$ varies the maximum payload-to-orbit by +7.4kg (3.96\%) and -10.2kg (-5.36\%). 
-The majority of the additional mass is used for fuel and structural mass, with only 2.1\% of the added third stage mass utilised for payload. The payload mass percentage of the additional mass is less than the payload mass percentage of the standard third stage, without heat shield, 6.0\%, indicating that as mass is added to the internals of the third stage, the payload efficiency of the third stage decreases.
- As the mass of the third stage increases, the altitude and trajectory angle of the first-second stage separation point decrease, as was observed previously when the mass of the scramjet accelerator is increased. 
- The scramjet accelerator pulls-up to similar altitudes as the third stage mass is varied, however, the velocity at the second-third stage separation is decreased by -75m/s (-2.8\%) at 110\% third stage mass, and increased by +65m/s (+2.4\%) at 90\% third stage mass. 
- Consequently, a larger trajectory angle is required during the scramjet accelerator's pull-up manoeuvre as the third stage mass is increased, increasing by +0.9$^\circ$ (+8.3\%) at 110\% third stage mass, and decreasing by -0.4$^\circ$ (-3.7\%) at 90\% third stage mass. 
-As the mass of the third stage is varied by $\pm10\%$, the exergy efficiency of the scramjet accelerator varies by +0.340\%$\eta$ (+7.2\%) and -0.414\%$\eta$ (-8.8\%) respectively, and the exergy efficiency of the third stage varies by -0.986\%$\eta$ (-5.3\%) and +0.927\%$\eta$ (+4.9\%) respectively. The increase in the exergy efficiency of the scramjet accelerator at higher third stage masses is due to the scramjet accelerator flying at lower velocities when the third stage mass is higher, resulting in higher specific impulse from the scramjet engines. 
-The decrease in the exergy efficiency of the third stage rocket, as its mass increases, is due to a combination of the additional energy which is needed to accelerate the added structural mass, and the decreased velocity at separation, which decreases the propulsive efficiency of the third stage. 
+\textcolor{red}{Interestingly, there is no linear trend in the overall performance of the launch system with variations in the mass of the third stage. The payload mass and efficiency decrease when third stage mass is decreased, by -14.5kg (\PayloadVarmThreeNinetyNoReturn\%) at 90\% mass, but also decrease when third stage mass in increased, by -48.4kg (\PayloadVarmThreeOneHundredTenNoReturn\%). 
+	The first stage responds in the same manner as the other mass variation cases, with decreased separation altitude and velocity, and increased separation angle as mass increases. The sceamjet accelerator stage also exhibits similar trends to other mass variation cases when the mass of the third stage is reduced; pulling up to similar conditions, with the exception of a reduced separation velocity as mass increases. However, when the third stage mass is decreased, the scramjet accelerator-third stage separation altitude is decreased significantly, to \secondthirdSeparationAltmThreeOneHundredTenNoReturn km at 110\% third stage mass compared to \secondthirdSeparationAltStandardNoReturn km at standard mass, and the velocity is increased to \secondthirdSeparationvmThreeOneHundredTenNoReturn m/s, an increase of 118m/s compared to the standard mass case. In addition, the third stage exhibits nonlinear performance variation, with its exergy efficiency decreasing only slightly (-0.093$\eta$\%) between 90\% mass variation and the standard mass, but decreasing very significantly as mass is increased further (by -6.006$\eta$\% at 110\% mass). When the mass is lowered, the third stage is more efficient, due to being separated at a higher velocity, and accelerating faster, however, there is less fuel exergy to use, resulting in an overall less efficient trajectory. When the mass in increased there is a distinct drop-off point in efficiency, due to the thrust of the third stage struggling to lift and accelerate the higher starting mass of the third stage past a certain point. Although the fuel exergy is increased, the performance of the third stage is too poor to be sufficiently compensated for by the scramjet accelerator, and the overall efficiency is reduced significantly. 
+}
 
-
+\textcolor{red}{This highly nonlinear trend indicates that there is a 'sweet spot' in the design of the third stage rocket in regards to mass and internal density. Beyond a certain point, adding more fuel, (and associated structure) within the third stage will no longer increase performance, without an associated increase in thrust or aerodynamic performance.}
 
 \subsection{Case 9: Third Stage Specific Impulse Sensitivity}\label{sec:isp3NoReturn}
-\textcolor{red}{XXX change to 10\%}
-\begin{table}[ht]
-	%note: these are labelled T3, but are actually Isp3. 
+
+\begin{table}[ht] % updated 30/12/19
+
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $I_{SP,3}$:
+		&90\%
 		&95\%
-		&97.5\%
 		&100\%
-		&102.5\%
 		&105\%
+		&111\%
 		& $\Delta/\Delta$/\%$I_{SP,3}$
 		\\
 		\hline \textbf{Payload to Orbit (kg)}
-		& \textbf{\PayloadToOrbitTThreeNinetyNoReturn}
-		& \textbf{\PayloadToOrbitTThreeNinetyFiveNoReturn}
-		& \textbf{\PayloadToOrbitTThreeStandardNoReturn}
-		& \textbf{\PayloadToOrbitTThreeOneHundredFiveNoReturn}
-		& \textbf{\PayloadToOrbitTThreeOneHundredTenNoReturn}
-		&\textbf{4.6}
+		& \textbf{\PayloadToOrbitISPThreeNinetyNoReturn}
+		& \textbf{\PayloadToOrbitISPThreeNinetyFiveNoReturn}
+		& \textbf{\PayloadToOrbitISPThreeStandardNoReturn}
+		& \textbf{\PayloadToOrbitISPThreeOneHundredFiveNoReturn}
+		& \textbf{\PayloadToOrbitISPThreeOneHundredTenNoReturn}
+		&\textbf{11.6}
 		\\
 		\textbf{Payload Variation (\%)}
-		& \PayloadVarTThreeNinetyNoReturn
-		& \PayloadVarTThreeNinetyFiveNoReturn
-		& \PayloadVarTThreeStandardNoReturn
-		& \PayloadVarTThreeOneHundredFiveNoReturn
-		& \PayloadVarTThreeOneHundredTenNoReturn
-		&2.43
+		& \PayloadVarISPThreeNinetyNoReturn
+		& \PayloadVarISPThreeNinetyFiveNoReturn
+		& \PayloadVarISPThreeStandardNoReturn
+		& \PayloadVarISPThreeOneHundredFiveNoReturn
+		& \PayloadVarISPThreeOneHundredTenNoReturn
+		&7.43
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
-		& \textbf{\totalExergyEffTThreeNinetyNoReturn}
-		& \textbf{\totalExergyEffTThreeNinetyFiveNoReturn}
-		& \textbf{\totalExergyEffTThreeStandardNoReturn}
-		& \textbf{\totalExergyEffTThreeOneHundredFiveNoReturn}
-		& \textbf{\totalExergyEffTThreeOneHundredTenNoReturn}
-		& \textbf{0.00041}
+		& \textbf{\totalExergyEffISPThreeNinetyNoReturn}
+		& \textbf{\totalExergyEffISPThreeNinetyFiveNoReturn}
+		& \textbf{\totalExergyEffISPThreeStandardNoReturn}
+		& \textbf{\totalExergyEffISPThreeOneHundredFiveNoReturn}
+		& \textbf{\totalExergyEffISPThreeOneHundredTenNoReturn}
+		& \textbf{0.00106}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\firstExergyEffTThreeNinetyNoReturn}
-		& \textbf{\firstExergyEffTThreeNinetyFiveNoReturn}
-		& \textbf{\firstExergyEffTThreeStandardNoReturn}
-		& \textbf{\firstExergyEffTThreeOneHundredFiveNoReturn}
-		& \textbf{\firstExergyEffTThreeOneHundredTenNoReturn}
+		& \textbf{\firstExergyEffISPThreeNinetyNoReturn}
+		& \textbf{\firstExergyEffISPThreeNinetyFiveNoReturn}
+		& \textbf{\firstExergyEffISPThreeStandardNoReturn}
+		& \textbf{\firstExergyEffISPThreeOneHundredFiveNoReturn}
+		& \textbf{\firstExergyEffISPThreeOneHundredTenNoReturn}
 		& -
 		\\
-	
 		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-		& \firstsecondSeparationAltTThreeNinetyNoReturn
-		& \firstsecondSeparationAltTThreeNinetyFiveNoReturn
-		& \firstsecondSeparationAltTThreeStandardNoReturn
-		& \firstsecondSeparationAltTThreeOneHundredFiveNoReturn
-		& \firstsecondSeparationAltTThreeOneHundredTenNoReturn
+		& \firstsecondSeparationAltISPThreeNinetyNoReturn
+		& \firstsecondSeparationAltISPThreeNinetyFiveNoReturn
+		& \firstsecondSeparationAltISPThreeStandardNoReturn
+		& \firstsecondSeparationAltISPThreeOneHundredFiveNoReturn
+		& \firstsecondSeparationAltISPThreeOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-		& \firstsecondSeparationvTThreeNinetyNoReturn
-		& \firstsecondSeparationvTThreeNinetyFiveNoReturn
-		& \firstsecondSeparationvTThreeStandardNoReturn
-		& \firstsecondSeparationvTThreeOneHundredFiveNoReturn
-		& \firstsecondSeparationvTThreeOneHundredTenNoReturn
+		& \firstsecondSeparationvISPThreeNinetyNoReturn
+		& \firstsecondSeparationvISPThreeNinetyFiveNoReturn
+		& \firstsecondSeparationvISPThreeStandardNoReturn
+		& \firstsecondSeparationvISPThreeOneHundredFiveNoReturn
+		& \firstsecondSeparationvISPThreeOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-		& \firstsecondSeparationgammaTThreeNinetyNoReturn
-		& \firstsecondSeparationgammaTThreeNinetyFiveNoReturn
-		& \firstsecondSeparationgammaTThreeStandardNoReturn
-		& \firstsecondSeparationgammaTThreeOneHundredFiveNoReturn
-		& \firstsecondSeparationgammaTThreeOneHundredTenNoReturn
+		& \firstsecondSeparationgammaISPThreeNinetyNoReturn
+		& \firstsecondSeparationgammaISPThreeNinetyFiveNoReturn
+		& \firstsecondSeparationgammaISPThreeStandardNoReturn
+		& \firstsecondSeparationgammaISPThreeOneHundredFiveNoReturn
+		& \firstsecondSeparationgammaISPThreeOneHundredTenNoReturn
 		& -
 		\\
 		\hline 
 		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\secondExergyEffTThreeNinetyNoReturn}
-		& \textbf{\secondExergyEffTThreeNinetyFiveNoReturn}
-		& \textbf{\secondExergyEffTThreeStandardNoReturn}
-		& \textbf{\secondExergyEffTThreeOneHundredFiveNoReturn}
-		& \textbf{\secondExergyEffTThreeOneHundredTenNoReturn}
-		& \textbf{0.002}
+		& \textbf{\secondExergyEffISPThreeNinetyNoReturn}
+		& \textbf{\secondExergyEffISPThreeNinetyFiveNoReturn}
+		& \textbf{\secondExergyEffISPThreeStandardNoReturn}
+		& \textbf{\secondExergyEffISPThreeOneHundredFiveNoReturn}
+		& \textbf{\secondExergyEffISPThreeOneHundredTenNoReturn}
+		& -
 		\\
-	
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-		& \secondthirdSeparationAltTThreeNinetyNoReturn
-		& \secondthirdSeparationAltTThreeNinetyFiveNoReturn
-		& \secondthirdSeparationAltTThreeStandardNoReturn
-		& \secondthirdSeparationAltTThreeOneHundredFiveNoReturn
-		& \secondthirdSeparationAltTThreeOneHundredTenNoReturn
+		& \secondthirdSeparationAltISPThreeNinetyNoReturn
+		& \secondthirdSeparationAltISPThreeNinetyFiveNoReturn
+		& \secondthirdSeparationAltISPThreeStandardNoReturn
+		& \secondthirdSeparationAltISPThreeOneHundredFiveNoReturn
+		& \secondthirdSeparationAltISPThreeOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-		& \secondthirdSeparationvTThreeNinetyNoReturn
-		& \secondthirdSeparationvTThreeNinetyFiveNoReturn
-		& \secondthirdSeparationvTThreeStandardNoReturn
-		& \secondthirdSeparationvTThreeOneHundredFiveNoReturn
-		& \secondthirdSeparationvTThreeOneHundredTenNoReturn
-		&0.48
-		\\
-		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-		& \secondthirdSeparationgammaTThreeNinetyNoReturn
-		& \secondthirdSeparationgammaTThreeNinetyFiveNoReturn
-		& \secondthirdSeparationgammaTThreeStandardNoReturn
-		& \secondthirdSeparationgammaTThreeOneHundredFiveNoReturn
-		& \secondthirdSeparationgammaTThreeOneHundredTenNoReturn
+		& \secondthirdSeparationvISPThreeNinetyNoReturn
+		& \secondthirdSeparationvISPThreeNinetyFiveNoReturn
+		& \secondthirdSeparationvISPThreeStandardNoReturn
+		& \secondthirdSeparationvISPThreeOneHundredFiveNoReturn
+		& \secondthirdSeparationvISPThreeOneHundredTenNoReturn
 		& -
 		\\
-	
+		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
+		& \secondthirdSeparationgammaISPThreeNinetyNoReturn
+		& \secondthirdSeparationgammaISPThreeNinetyFiveNoReturn
+		& \secondthirdSeparationgammaISPThreeStandardNoReturn
+		& \secondthirdSeparationgammaISPThreeOneHundredFiveNoReturn
+		& \secondthirdSeparationgammaISPThreeOneHundredTenNoReturn
+		& -
+		\\
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeISPThreeNinetyNoReturn
+		& \secondFlightTimeISPThreeNinetyFiveNoReturn
+		& \secondFlightTimeISPThreeStandardNoReturn
+		& \secondFlightTimeISPThreeOneHundredFiveNoReturn
+		& \secondFlightTimeISPThreeOneHundredTenNoReturn
+		& -
+		\\
 		\textbf{2$^{nd}$ Stage Distance Flown (km)}
-		& \SecondDistTThreeNinetyNoReturn
-		& \SecondDistTThreeNinetyFiveNoReturn
-		& \SecondDistTThreeStandardNoReturn
-		& \SecondDistTThreeOneHundredFiveNoReturn
-		& \SecondDistTThreeOneHundredTenNoReturn
+		& \SecondDistISPThreeNinetyNoReturn
+		& \SecondDistISPThreeNinetyFiveNoReturn
+		& \SecondDistISPThreeStandardNoReturn
+		& \SecondDistISPThreeOneHundredFiveNoReturn
+		& \SecondDistISPThreeOneHundredTenNoReturn
 		& -
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\thirddExergyEffTThreeNinetyNoReturn}
-		& \textbf{\thirddExergyEffTThreeNinetyFiveNoReturn}
-		& \textbf{\thirddExergyEffTThreeStandardNoReturn}
-		& \textbf{\thirddExergyEffTThreeOneHundredFiveNoReturn}
-		& \textbf{\thirddExergyEffTThreeOneHundredTenNoReturn}
-		& \textbf{0.484}
+		& \textbf{\thirddExergyEffISPThreeNinetyNoReturn}
+		& \textbf{\thirddExergyEffISPThreeNinetyFiveNoReturn}
+		& \textbf{\thirddExergyEffISPThreeStandardNoReturn}
+		& \textbf{\thirddExergyEffISPThreeOneHundredFiveNoReturn}
+		& \textbf{\thirddExergyEffISPThreeOneHundredTenNoReturn}
+		& \textbf{1.199}
 		\\
-	
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-		& \thirdqOverFiveTThreeNinetyNoReturn
-		& \thirdqOverFiveTThreeNinetyFiveNoReturn
-		& \thirdqOverFiveTThreeStandardNoReturn
-		& \thirdqOverFiveTThreeOneHundredFiveNoReturn
-		& \thirdqOverFiveTThreeOneHundredTenNoReturn
-		& -
-		\\
-		\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-		& \thirdmaxAoATThreeNinetyNoReturn
-		& \thirdmaxAoATThreeNinetyFiveNoReturn
-		& \thirdmaxAoATThreeStandardNoReturn
-		& \thirdmaxAoATThreeOneHundredFiveNoReturn
-		& \thirdmaxAoATThreeOneHundredTenNoReturn
+		& \thirdqOverFiveISPThreeNinetyNoReturn
+		& \thirdqOverFiveISPThreeNinetyFiveNoReturn
+		& \thirdqOverFiveISPThreeStandardNoReturn
+		& \thirdqOverFiveISPThreeOneHundredFiveNoReturn
+		& \thirdqOverFiveISPThreeOneHundredTenNoReturn
 		& -
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-		& \thirdmFuelTThreeNinetyNoReturn
-		& \thirdmFuelTThreeNinetyFiveNoReturn
-		& \thirdmFuelTThreeStandardNoReturn
-		& \thirdmFuelTThreeOneHundredFiveNoReturn
-		& \thirdmFuelTThreeOneHundredTenNoReturn
-		&-4.59
+		& \thirdmFuelISPThreeNinetyNoReturn
+		& \thirdmFuelISPThreeNinetyFiveNoReturn
+		& \thirdmFuelISPThreeStandardNoReturn
+		& \thirdmFuelISPThreeOneHundredFiveNoReturn
+		& \thirdmFuelISPThreeOneHundredTenNoReturn
+		&-11.61
 		\\
 		\hline 
 	\end{tabular} 
@@ -1654,20 +1625,17 @@ The decrease in the exergy efficiency of the third stage rocket, as its mass inc
 	\label{tab:comparison90}
 \end{table}
 
-The specific impulse of the third stage rocket is varied between 95-105\% in order to investigate the effect of the rocket engine efficiency on the payload-to-orbit. Appendix \ref{sec:app_comparison90} presents comparison plots of the optimised trajectories, and Table \ref{tab:comparison90} details key trajectory parameters. 
-The specific impulse variation has a significant effect on the trajectory of the system, and the payload-to-orbit, increasing the payload by +45.9kg (+24.29\%) at 105\% $I_{sp}$, and decreasing the payload by -45.9kg (-24.22\%) at 95\% $I_{sp}$. 
+The specific impulse of the third stage rocket is varied by $\pm$10\% in order to investigate the effect of the rocket engine efficiency on the payload-to-orbit. Appendix \ref{sec:app_comparison90} presents comparison plots of the optimised trajectories, and Table \ref{tab:comparison90} details key trajectory parameters. 
+The specific impulse variation has a significant effect on the trajectory of the system, and the payload-to-orbit, increasing the payload by \textcolor{red}{+91.7}kg (\PayloadVarISPThreeOneHundredTenNoReturn\%) at 110\% $I_{sp}$, and decreasing the payload by \textcolor{red}{-143.9kg} (\PayloadVarISPThreeOneHundredTenNoReturn\%) at 90\% $I_{sp}$. 
 
-Though the effect of the specific impulse of the third stage on the maximum payload-to-orbit is large, the majority of the improved efficiency comes from the circularisation and Hohmann transfer manoeuvres, where increasing the specific impulse results in significantly less fuel mass usage, which directly translates to additional payload. Varying the specific impulse of the third stage only changes the in-atmosphere trajectory of the third stage slightly, varying the velocity of the third stage before circularisation by only +55.7m/s (+1.5\%) at 105\%$I_{sp}$ and -28.1m/s (-0.7\%) at 95\% $I_{sp}$. 
+\textcolor{red}{
 The third stage specific impulse variation has no direct influence on the trajectory of the first stage rocket, and the first-second stage separation conditions are relatively consistent across the thrust levels simulated.
-As the specific impulse of the third stage is varied, the size and shape of the scramjet accelerator's trajectory and pull-up manoeuvre are only slightly affected by the specific impulse of the third stage rocket engine, with no consistent trend. 
- However, the exergy efficiency and velocity of the scramjet accelerator increase as the third stage specific impulse is increased, by +0.031\%$\eta$ (+0.66\%) and +7m/s (+0.26\%) respectively at 105\% $I_{SP}$, and decrease as the third stage specific impulse is decreased, by -0.014\%$\eta$ (-0.30\%) and -3m/s (-0.11\%) respectively at 95\% $I_{SP}$. 
- In addition, the energy losses due to propulsive inefficiency of the third stage are decreased as the specific impulse is increased, to \PlossthreeCombinedTThreeOneHundredTenNoReturn\% at 105\% $I_{SP}$, compared to \PlossthreeCombinedTThreeNinetyNoReturn\% at 95\% $I_{SP}$, due to the more rapid acceleration of the third stage.
- This trend indicates that as the specific impulse, and propulsion efficiency, of the third stage increase, it is beneficial to fly a trajectory with a slightly smaller pull-up manoeuvre (`smaller' indicating a lower combined altitude and trajectory angle).
+As the specific impulse of the third stage is reduced, the pull-up of the scramjet accelerator becomes much lower and the separation is significantly faster, however, this is not a linear trend as specific impulse is increased. This nonlinearity is similar to the situation observed when the third stage mass is varied (Case 8), in that the decreased performance of the third stage immediately after separation results in more severe performance effects past a certain point. In this case, as the specific impulse of the third stage is increased, the pull-up manoeuvre of the scramjet accelerator becomes relatively consistent, and the overall performance variation is less significant with variations in the third stage specific impulse. This consistency past a certain point indicates that there is a distinct cutoff of third stage efficiency for the launch system, below which the scramjet accelerator must compensate for reduced third stage performance. 
+}
 
 
 
 \subsection{Case 10: Third Stage Drag Sensitivity}
-\textcolor{red}{I should potentially change lift instead of drag here, or change to 10\% (i think i should keep it as drag, the small effect of drag is pretty useful to know..)}
 \begin{table}[ht] % updated 19/8/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
@@ -1693,7 +1661,7 @@ As the specific impulse of the third stage is varied, the size and shape of the 
 			& \PayloadVarCdThreeStandardNoReturn
 			& \PayloadVarCdThreeOneOneHundredFiveNoReturn
 			& \PayloadVarCdThreeOneHundredTenNoReturn
-			&-0.01
+			&-0.02
 			\\
 			\textbf{Total $\eta_{exergy}$ (\%)}
 			& \textbf{\totalExergyEffCdThreeNinetyNoReturn}
@@ -1792,7 +1760,7 @@ As the specific impulse of the third stage is varied, the size and shape of the 
 			& \textbf{\thirddExergyEffCdThreeStandardNoReturn}
 			& \textbf{\thirddExergyEffCdThreeOneOneHundredFiveNoReturn}
 			& \textbf{\thirddExergyEffCdThreeOneHundredTenNoReturn}
-			& \textbf{-0.001}
+			& \textbf{-0.003}
 			\\
 			\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 			& \thirdqOverFiveCdThreeNinetyNoReturn
@@ -1800,15 +1768,7 @@ As the specific impulse of the third stage is varied, the size and shape of the 
 			& \thirdqOverFiveCdThreeStandardNoReturn
 			& \thirdqOverFiveCdThreeOneOneHundredFiveNoReturn
 			& \thirdqOverFiveCdThreeOneHundredTenNoReturn
-			&-0.03
-			\\
-			\textbf{3$^{rd}$ Stage max $\alpha$ (deg)}
-			& \thirdmaxAoACdThreeNinetyNoReturn
-			& \thirdmaxAoACdThreeNinetyFiveNoReturn
-			& \thirdmaxAoACdThreeStandardNoReturn
-			& \thirdmaxAoACdThreeOneOneHundredFiveNoReturn
-			& \thirdmaxAoACdThreeOneHundredTenNoReturn
-			& -
+			&-0.07
 			\\
 			\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 			& \thirdmFuelCdThreeNinetyNoReturn
@@ -1816,7 +1776,7 @@ As the specific impulse of the third stage is varied, the size and shape of the 
 			& \thirdmFuelCdThreeStandardNoReturn
 			& \thirdmFuelCdThreeOneOneHundredFiveNoReturn
 			& \thirdmFuelCdThreeOneHundredTenNoReturn
-			&0.01
+			&0.03
 			\\
 			\hline 
 		\end{tabular} 
@@ -1825,15 +1785,17 @@ As the specific impulse of the third stage is varied, the size and shape of the 
 	
 \end{table}
 
-The coefficient of drag of the third stage rocket is varied by $\pm20\%$ to investigate the effects of the third stage design and sizing on the performance of the launch system. Table \ref{tab:comparison70} details the key trajectory parameters of each optimised trajectory, and Appendix \ref{sec:app_comparison70} shows trajectory comparison plots. The third stage drag is found to have only a very small effect on the performance of the launch system, varying the payload to orbit by only +0.9kg (+0.50\%) at 120\%Cd and -0.8kg (-0.40\%) at 80\%Cd. This indicates that the aerodynamic properties of the third stage rocket do not contribute significantly to the performance of the system. 
+The coefficient of drag of the third stage rocket is varied by \textcolor{red}{$\pm10\%$} to investigate the effects of the third stage design and sizing on the performance of the launch system. Table \ref{tab:comparison70} details the key trajectory parameters of each optimised trajectory, and Appendix \ref{sec:app_comparison70} shows trajectory comparison plots. The third stage drag is found to have only a very small effect on the performance of the launch system, varying the payload to orbit by only \textcolor{red}{+0.2kg (+\PayloadVarCdThreeNinetyNoReturn\%) at 90\%Cd and -0.3kg (\PayloadVarCdThreeOneHundredTenNoReturn\%) at 1100\%Cd.} This indicates that the aerodynamic properties of the third stage rocket do not contribute significantly to the performance of the system. 
 
-The first stage trajectory is not affected by variations in the drag of the third stage. 
-The scramjet accelerator exhibits a slightly higher pull-up as the drag of the third stage is increased by 20\%, increasing altitude by +0.51km (+1.2\%), and trajectory angle at separation by +0.4$^\circ$ (+3.7\%) trajectory angle, while decreasing the separation velocity by -10.0m/s (-0.37\%). Conversely, decreasing the drag of the third stage by 20\% decreases the altitude at second-third stage separation by -1.0km (-2.5\%), decreases the trajectory angle at separation by -0.6$^\circ$ (-5.6\%), and increases the velocity by +17m/s (+0.6\%). 
-Increasing the drag of the third stage by 20\% causes a decrease in the exergy efficiency of the scramjet accelerator of -0.036\%$\eta$ (-0.76\%), and a decrease in the efficiency of the third stage of -0.068\%$\eta$ (-0.36\%), while decreasing the drag of the third stage by 20\% causes an increase in the exergy efficiency of the scramjet accelerator of +0.060\%$\eta$ (+1.27\%), and an increase in the third stage efficiency of +0.082\%$\eta$ (+0.44\%). 
-As the drag of the third stage increases, the scramjet accelerator pulls-up to a higher altitude so that the third stage spends less time in a high dynamic pressure environment, where the increased drag has a significant effect, mitigating the energy loss due to the increased drag. The higher pull-up of the scramjet accelerator with the third stage drag increased by 20\%, decreases the time that the third stage spends above 5kPa dynamic pressure by -2.4s (-16.9\%), resulting in drag losses of \WDthreeCdThreeOneHundredTenNoReturn\% (0.19 GJ), while the lower pull-up of the scramjet accelerator when the third stage drag is decreased by 20\% increases the time spent at greater than 5kPa dynamic pressure by +2.5s (+17.6\%), resulting in drag losses of \WDthreeCdThreeNinetyNoReturn\% (0.22 GJ). This indicates that as the drag of the third stage is increased, the optimal pull-up manoeuvre is increased so as to more than compensate for the additional energy losses, trading off the efficiency of the scramjet accelerator to do so. 
+\textcolor{red}{ 
+Neither the first stage or the scramjet accelerator trajectory are affected significantly by variations in the drag of the third stage. 
+The decreased third stage drag, and associated more rapid acceleration, decreases the time that the third stage spends above 5kPa dynamic pressure by -0.5s (-6.8\%), resulting in drag losses of \WDthreeCdThreeNinetyNoReturn\%, while increasing the drag of the third stage by 10\% increases the time spent at greater than 5kPa dynamic pressure by +0.9s (+12.3\%), resulting in drag losses of \WDthreeCdThreeOneHundredTenNoReturn\%. }
 
 
 \section{Comparison of Design Parameters}\label{sec:comparisonNoReturn}
+
+-XXX I need to note in the cases where the variation is not too linear, like dynamic pressure, that the relationships and comparative worth of design parameters is dependent on the value
+- particularly between third stage mass and Isp, there would possibly be a sweet spot in the engine chosen, that gives good performance without lots of mass. 
 
 \begin{figure}[ht!]
 	\centering
