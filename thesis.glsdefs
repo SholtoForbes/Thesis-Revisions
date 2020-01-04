@@ -1,0 +1,30 @@
+\ifglsentryexists{ex}{}%
+{%
+\gls@defglossaryentry{ex}%
+{%
+name={sample},%
+sort={sample},%
+type={main},%
+first={sample},%
+firstplural={samples},%
+text={sample},%
+plural={samples},%
+description={an example},%
+descriptionplural={an example},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

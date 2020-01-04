@@ -2,13 +2,7 @@
 
 \cleardoublepage
 \chapter{Optimised Trajectory Including Fly-Back}\label{chapter:Flyback}
-
-\textcolor{red}{XXXI should be clear that the method of calculating the payload mass to orbit does not affect the optimised trajectory}
 \textcolor{red}{ XXX Its interesting if the SPARTAN is flying close to its min q at first hump}
-
-\textcolor{red}{XXX sort out SPARTAN nomenclature}
-
-\textcolor{red}{XXX third stage propulsion energy updated, section not updated}
 	
 This chapter presents the maximum payload-to-orbit trajectory of the rocket-scramjet-rocket launch system, with the fly-back of the scramjet accelerator included within the optimal trajectory calculation performed by LODESTAR. 
 Flying back the scramjet accelerator for landing at the initial launch site is one of the primary enabling factors in the cost efficient operation of the launch system. If the scramjet accelerator is launched onto a trajectory from which it is not able to fly-back, it must perform a downrange landing, likely at an Indonesian airfield when launched northerly from north Australia. This would necessitate transporting the scramjet accelerator back to Australia, a costly and time consuming process, and would require for international landing facilities to be available. 
@@ -559,7 +553,7 @@ However, in all cases, increasing the maximum dynamic pressure improves the mano
 \subsection{Case 13: Scramjet Accelerator Drag Sensitivity with Fly-Back}\label{sec:dragvar}
 
 
-\begin{table}[ht]% updated 14/8/19
+\begin{table}[ht]% updated 31/12/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $C_{d,2}$:
@@ -715,20 +709,23 @@ However, in all cases, increasing the maximum dynamic pressure improves the mano
 		& \thirdmFuelCdStandard
 		& \thirdmFuelCdOneHundredFive
 		& \thirdmFuelCdOneHundredTen
-		&1.77
+		& 1.77
 		\\
 		\hline 
 	\end{tabular} 
+	\caption{Comparison of key trajectory parameters with variation in the drag of the scramjet accelerator, with fly-back (Case 13).}
+	\label{tab:comparison41}
+\end{table}
 
 
 The coefficient of drag is varied by $\pm$10\% to investigate the effect of variation in the aerodynamic design of the scramjet accelerator on the performance of the launch system, when the fly-back of the scramjet accelerator is included. Appendix \ref{sec:app_comparison41} presents trajectory comparison plots, and Table \ref{tab:comparison41} compares key parameters of each trajectory. 
 Increasing the drag of the scramjet accelerator by 10\% decreases the payload-to-orbit by \textcolor{red}{-18.5}kg (\textcolor{red}{-14.0}\%), while decreasing the drag by 10\% increases the payload-to-orbit by \textcolor{red}{+17.3}kg (\textcolor{red}{+13.1}\%). 
-The sensitivity to variations in the scramjet accelerator's aerodynamics is decreased when compared to the sensitivity study with no fly-back, down to -1.5 $\frac{\Delta kg}{\Delta\% C_{d}}$ (-0.9$\frac{\Delta \%}{\Delta\% C_{d}}$) compared to -1.9$\frac{\Delta kg}{\Delta\% C_{d}}$  (-0.99$\frac{\Delta \%}{\Delta\% C_{d}}$). \textcolor{red}{XXX update this}
-This is due to the increased drag decreasing the total acceleration, which in turn generally decreases the ground distance necessary to cover during the fly-back, partially offsetting the detrimental effects of the increased drag on the performance of the launch system. The 95\% drag case is the exception to the trend in fly-back distance. This case exhibits different trade-offs between the ascent and fly-back of the scramjet accelerator, manoeuvring less so that a more efficient ascent trajectory is flown, while requiring a longer, and less fuel efficient fly-back. \textcolor{red}{XXX check}
+The sensitivity to variations in the scramjet accelerator's aerodynamics is decreased slightly when compared to the sensitivity study with no fly-back, down to \textcolor{red}{-1.8} $\frac{\Delta kg}{\Delta\% C_{d}}$ compared to -2.0$\frac{\Delta kg}{\Delta\% C_{d}}$.
+\textcolor{red}{This is due to the increased drag decreasing the total acceleration, which in turn decreases the ground distance necessary to cover during the fly-back, from \returnDistCdNinety km at 90\% drag, to \returnDistCdOneHundredTen km at 110\% drag, partially offsetting the detrimental effects of the increased drag on the performance of the launch system. }
 
-The exergy efficiencies of all three stages are decreased significantly as the drag of the scramjet accelerator is increased. This decrease in efficiency is due to the increased drag losses of the first stage and scramjet accelerator, \WDoneCdOneHundredTen\% and \WDsecondCdOneHundredTen\% respectively at 110\%$C_D$, compared to \WDoneCdNinety\% and \WDsecondCdNinety\% respectively at 90\%$C_D$, and the increased propulsive inefficiency losses of the third stage when released from a lower velocity, \PlossthreeCombinedCdOneHundredTen\% at 110\%$C_D$, compared to \PlossthreeCombinedCdNinety \% at 90\%$C_D$.
+The exergy efficiencies of all three stages are decreased significantly as the drag of the scramjet accelerator is increased. This decrease in efficiency is due to the increased drag losses of the first stage and scramjet accelerator, \WDoneCdOneHundredTen\% and \WDsecondCdOneHundredTen\% respectively at 110\%$C_D$, compared to \WDoneCdNinety\% and \WDsecondCdNinety\% respectively at 90\%$C_D$, and the increased propulsive inefficiency losses of the third stage when released from a lower velocity, \PlossthreeCdOneHundredTen\% at 110\%$C_D$, compared to \PlossthreeCdNinety \% at 90\%$C_D$.
 As was observed in the drag sensitivity study with no fly-back in Section \ref{sec:dragvariation}, the second-third stage separation angle shows an increase as the drag is increased, by \textcolor{red}{+0.9}$^\circ$ (\textcolor{red}{+7.1}\%) at 110\% drag, and decreasing by \textcolor{red}{-0.5}$^\circ$ (\textcolor{red}{-3.9}\%) at 90\% drag. In addition, the altitude of the second-third stage separation shows a clear trend, decreasing as the drag of the scramjet accelerator is increased, by \textcolor{red}{-0.98}km (-\textcolor{red}{2.29}\%) at 110\% drag, and increasing slightly as the drag is decreased, by \textcolor{red}{+0.27}km (\textcolor{red}{+0.63}\%) at 90\% drag.  
-The release altitude and trajectory angle serve to initiate the first skip of the return trajectory in a consistent manner, so that the shape of the initial skip is very similar with drag variation. In all cases the angle of attack is reduced to 0$^\circ$ immediately during return to lessen the size of the initial skip, and is then raised to close to the maximum of 10$^\circ$ to prevent the dynamic pressure limit being exceeded. This consistency indicates that the initial skip of the return flight is driving the conditions at second-third stage release, and that it is primarily the control and structural limitations, rather than the aerodynamics of the scramjet accelerator, which determine the shape of this skip.  \textcolor{red}{XXX check this}
+The release altitude and trajectory angle serve to initiate the first skip of the return trajectory in a consistent manner, so that the shape of the initial skip is very similar with drag variation. In all cases the angle of attack is reduced to 0$^\circ$ immediately during return to lessen the size of the initial skip, and is then raised to close to the maximum of 10$^\circ$ to prevent the dynamic pressure limit being exceeded. This consistency indicates that the initial skip of the return flight is driving the conditions at second-third stage release, and that it is primarily the control and structural limitations, rather than the aerodynamics of the scramjet accelerator, which determine the shape of this skip.
 
 
 \subsection{Case 14: C-REST Specific Impulse Sensitivity with Fly-Back}
@@ -917,7 +914,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 \subsection{Case 15: Scramjet Accelerator Mass Sensitivity with Fly-Back}\label{sec:m2var}
 
 
-\begin{table}[ht] % UPDATED 17/12/19
+\begin{table}[ht] % UPDATED 31/12/19
 \centering
 \begin{tabular}{l c c c c c c} 
 	\hline \textbf{Trajectory Condition}   \qquad  $m_{2}$:
@@ -934,7 +931,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \textbf{\PayloadToOrbitmSPARTANStandard}
 	& \textbf{\PayloadToOrbitmSPARTANOneHundredFive}
 	& \textbf{\PayloadToOrbitmSPARTANOneHundredTen}
-	&\textbf{-2.8}
+	&\textbf{-1.4}
 	\\
 	\textbf{Payload Variation (\%)}
 	& \PayloadVarmSPARTANNinety
@@ -942,7 +939,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \PayloadVarmSPARTANStandard
 	& \PayloadVarmSPARTANOneHundredFive
 	& \PayloadVarmSPARTANOneHundredTen
-	&-2.1
+	&-1.05
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffmSPARTANNinety}
@@ -950,7 +947,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \textbf{\totalExergyEffmSPARTANStandard}
 	& \textbf{\totalExergyEffmSPARTANOneHundredFive}
 	& \textbf{\totalExergyEffmSPARTANOneHundredTen}
-	& \textbf{-0.00029}
+	& \textbf{-0.00015}
 	\\
 	\hline 
 	\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -959,7 +956,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \textbf{\firstExergyEffmSPARTANStandard}
 	& \textbf{\firstExergyEffmSPARTANOneHundredFive}
 	& \textbf{\firstExergyEffmSPARTANOneHundredTen}
-	& \textbf{-0.035}
+	& \textbf{-0.017}
 	\\
 	\textbf{Separation Alt, 1$\rightarrow$2 (km)}
 	& \firstsecondSeparationAltmSPARTANNinety
@@ -967,7 +964,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \firstsecondSeparationAltmSPARTANStandard
 	& \firstsecondSeparationAltmSPARTANOneHundredFive
 	& \firstsecondSeparationAltmSPARTANOneHundredTen
-	&-0.11
+	&-0.05
 	\\
 	\textbf{Separation v, 1$\rightarrow$2 (m/s)}
 	& \firstsecondSeparationvmSPARTANNinety
@@ -975,7 +972,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \firstsecondSeparationvmSPARTANStandard
 	& \firstsecondSeparationvmSPARTANOneHundredFive
 	& \firstsecondSeparationvmSPARTANOneHundredTen
-	&-13.29
+	&-6.64
 	\\
 	\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
 	& \firstsecondSeparationgammamSPARTANNinety
@@ -983,7 +980,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \firstsecondSeparationgammamSPARTANStandard
 	& \firstsecondSeparationgammamSPARTANOneHundredFive
 	& \firstsecondSeparationgammamSPARTANOneHundredTen
-	&0.23
+	&0.11
 	\\
 	\hline 
 	\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
@@ -992,7 +989,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \textbf{\secondExergyEffmSPARTANStandard}
 	& \textbf{\secondExergyEffmSPARTANOneHundredFive}
 	& \textbf{\secondExergyEffmSPARTANOneHundredTen}
-	& \textbf{-0.029}
+	& \textbf{-0.014}
 	\\
 	\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 	& \secondthirdSeparationAltmSPARTANNinety
@@ -1000,7 +997,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \secondthirdSeparationAltmSPARTANStandard
 	& \secondthirdSeparationAltmSPARTANOneHundredFive
 	& \secondthirdSeparationAltmSPARTANOneHundredTen
-	&-0.17
+	&-0.09
 	\\
 	\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
 	& \secondthirdSeparationvmSPARTANNinety
@@ -1008,7 +1005,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \secondthirdSeparationvmSPARTANStandard
 	& \secondthirdSeparationvmSPARTANOneHundredFive
 	& \secondthirdSeparationvmSPARTANOneHundredTen
-	&-14.52
+	&-7.26
 	\\
 	\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 	& \secondthirdSeparationgammamSPARTANNinety
@@ -1024,7 +1021,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \secondFlightTimemSPARTANStandard
 	& \secondFlightTimemSPARTANOneHundredFive
 	& \secondFlightTimemSPARTANOneHundredTen
-	&5.11
+	&2.55
 	\\
 	\textbf{2$^{nd}$ Stage Distance Flown (km)}
 	& \SecondDistmSPARTANNinety
@@ -1048,7 +1045,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \returnDistmSPARTANStandard
 	& \returnDistmSPARTANOneHundredFive
 	& \returnDistmSPARTANOneHundredTen
-	&-36.25
+	&-18.12
 	\\
 	\hline 
 	\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1057,7 +1054,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \textbf{\thirddExergyEffmSPARTANStandard}
 	& \textbf{\thirddExergyEffmSPARTANOneHundredFive}
 	& \textbf{\thirddExergyEffmSPARTANOneHundredTen}
-	& \textbf{-0.273}
+	& \textbf{-0.137}
 	\\
 	\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 	& \thirdqOverFivemSPARTANNinety
@@ -1065,7 +1062,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \thirdqOverFivemSPARTANStandard
 	& \thirdqOverFivemSPARTANOneHundredFive
 	& \thirdqOverFivemSPARTANOneHundredTen
-	&0.28
+	&0.14
 	\\
 	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 	& \thirdmFuelmSPARTANNinety
@@ -1073,7 +1070,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \thirdmFuelmSPARTANStandard
 	& \thirdmFuelmSPARTANOneHundredFive
 	& \thirdmFuelmSPARTANOneHundredTen
-	&2.77
+	&1.39
 	\\
 	\hline 
 \end{tabular} 
@@ -1082,22 +1079,23 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 \end{table}
 
 
-The mass of the scramjet accelerator is varied by $\pm$5\% to investigate the sensitivity of the launch system performance to the structural mass of the second stage, with the inclusion of scramjet accelerator fly-back. As in Section \ref{sec:SpartanMassnoreturn}, the mass is varied by only $\pm$5\% in order to limit the variation in the velocity of the first-second separation.
+The mass of the scramjet accelerator is varied by \textcolor{red}{$\pm$10}\% to investigate the sensitivity of the launch system performance to the structural mass of the second stage, with the inclusion of scramjet accelerator fly-back. As in Section \ref{sec:SpartanMassnoreturn}, the mass is varied by only \textcolor{red}{$\pm$10}\% in order to limit the variation in the velocity of the first-second separation.
 Table \ref{tab:comparison101} details key parameters of each trajectory, and Appendix \ref{sec:app_comparison101} shows comparison plots.
-Varying the structural mass of the scramjet accelerator yields a change in maximum payload-mass to orbit of +7.2kg (+4.22\%) at 95\% mass, and -6.0kg (-3.56\%) at 105\% mass. 
+Varying the structural mass of the scramjet accelerator yields a change in maximum payload-mass to orbit of +\textcolor{red}{12.6}kg (+\textcolor{red}{9.5}\%) at 90\% mass, and -\textcolor{red}{14.9}kg (-\textcolor{red}{11.3}\%) at 110\% mass. 
 
-The first-second separation conditions show no significant trend with variation in the mass of the scramjet accelerator, except for differing velocities due to the first stage accelerating a varied total mass.
-As observed in Section \ref{sec:SpartanMassnoreturn}, the structural mass of the scramjet accelerator is increased, the exergy efficiency of the first stage decreases, from 8.780\%$\eta$ at 95\% structural mass, to 8.356\%$\eta$ at 105\% structural mass. This is due to the first stage rocket not accelerating as quickly as the mass of the scramjet accelerator is increased, causing the propulsive efficiency of the first stage to decrease (illustrated by Equation \ref{eq:rocketeff}).
- However, the sensitivity of the exergy efficiency of the first stage rocket to variation in the mass of the scramjet accelerator is lower when compared to the sensitivity study with no fly-back (described in Section \ref{sec:SpartanMassnoreturn}), at -0.028$\frac{\Delta \%\eta}{\Delta\% m_{scramjet accelerator}}$, compared to -0.043 $\frac{\Delta \%\eta}{\Delta\% m_{scramjet accelerator}}$ with no fly-back. Additionally, this exergy efficiency variation is solely due to variations in the propulsive efficiency of the first stage, with no consistent variation in drag losses. This indicates that the mass of the scramjet accelerator does not cause an efficiency trade-off between the first stage and the scramjet accelerator, when the fly-back of the scramjet accelerator is included. This is in contrast to the trade-off observed in the sensitivity study without fly-back, in Section \ref{sec:SpartanMassnoreturn}, and is due to the first-second separation conditions being partly determined by the requirement of the scramjet accelerator to bank when the fly-back is included. 
- 
- As was observed in Section \ref{sec:SpartanMassnoreturn}, the lower velocity of first-second separation means that when the scramjet accelerator mass is increased, the velocity range over which the scramjet accelerator is accelerating is lower. This is beneficial for the specific impulse of the C-REST engines, which exhibit higher $I_{SP}$ at lower velocities. For this reason, when the scramjet accelerator mass is increased, the specific impulse of the scramjet accelerator stays high for longer, above 500s $I_{SP}$ for 278.8s of its trajectory at 105\% mass, compared to 254.4s above 500s $I_{SP}$ at 95\% mass. 
+
+\textcolor{red}{
+As observed in Section \ref{sec:SpartanMassnoreturn}, increasing the structural mass of the scramjet accelerator decreases the altitude of first stage-scramjet accelerator separation, and decreases the velocity and trajectory angle. 
+In addition, increasing the structural mass of the scramjet accelerator decreases the exergy efficiency of the first stage rocket, due to the first stage rocket not accelerating as quickly as the mass of the scramjet accelerator is increased, causing the propulsive efficiency of the first stage to decrease (illustrated by Equation \ref{eq:rocketeff}).}
+
+ As was observed in Section \ref{sec:SpartanMassnoreturn}, the lower velocity of first-second separation means that when the scramjet accelerator mass is increased, the velocity range over which the scramjet accelerator is accelerating is lower. This is beneficial for the specific impulse of the C-REST engines, which exhibit higher $I_{SP}$ at lower velocities. For this reason, when the scramjet accelerator mass is increased, the net specific impulse of the scramjet accelerator stays high for longer in the main segment of the trajectory, above 500s $I_{SP}$ for \textcolor{red}{441}s of its trajectory at 110\% mass, compared to \textcolor{red}{265}s above 500s $I_{SP}$ at 90\% mass. 
 However, the higher scramjet accelerator mass decreases the overall acceleration of the scramjet accelerator, in turn decreasing the efficiency of the third stage due to increased propulsive losses.
-In contrast to the mass sensitivity study without fly-back, the second-third stage separation point shows a trend of decreasing altitude, of -0.06$\frac{\Delta km}{\Delta\% m_{scramjet accelerator}}$. As was observed when the drag of the scramjet accelerator was varied in Section \ref{sec:dragvar}, this is in order to maintain a consistently sized initial skip during the return trajectory.
+In contrast to the mass sensitivity study without fly-back, the second-third stage separation point shows a trend of decreasing altitude, of -0.09$\frac{\Delta km}{\Delta\% m_{scramjet accelerator}}$. As was observed when the drag of the scramjet accelerator was varied in Section \ref{sec:dragvar}, this is in order to maintain a consistently sized initial skip during the return trajectory.
 
 
 \subsection{Case 16: Scramjet Accelerator Fuel Mass Sensitivity with Fly-Back}
 
-\begin{table}[ht]%updated 14/8/19
+\begin{table}[ht]%updated 31/12/19
 	\centering
 \begin{tabular}{l c c c c c c} 
 	\hline \textbf{Trajectory Condition}   \qquad  $m_{f,2}$:
@@ -1265,7 +1263,9 @@ The fuel mass of the scramjet accelerator is varied by $\pm$10\%, to investigate
 Appendix \ref{sec:app_comparison111} shows plots comparing each trajectory, and Table \ref{tab:comparison111} details comparisons of key trajectory parameters. 
 When the fuel mass within the scramjet accelerator is increased by 10\%, the payload to orbit increases by \textcolor{red}{+6.4}kg (\textcolor{red}{+4.8}\%) and when the fuel mass is decreased by 10\%, the payload mass reduces by \textcolor{red}{-6.1}g (\textcolor{red}{-4.6}\%). The magnitude of the payload-to-orbit sensitivity is very similar to the sensitivity observed without fly-back, in Section \ref{sec:fuelmassNoReturn}, indicating that the addition of fly-back does not have a significant effect on the sensitivity of the launch system to variations in the fuel mass of the scramjet accelerator. 
 
-The first stage shows no significant trend in its trajectory when the fuel mass of the scramjet accelerator is varied, besides a decrease in the overall acceleration due to the additional mass. This is in contrast to the trends observed in Section \ref{sec:fuelmassNoReturn}, and is due to the additional factor of the banking of the scramjet accelerator driving the first-second separation conditions, as observed in Section \ref{sec:m2var}.
+
+\textcolor{red}{
+The first stage shows similar trends in its trajectory when the fuel mass of the scramjet accelerator is varied to the trends observed with no fly-back in Section \ref{sec:fuelmassNoReturn}.}
 As in Section \ref{sec:fuelmassNoReturn}, increasing the fuel mass of the scramjet accelerator decreases the exergy efficiency of the scramjet accelerator, by \textcolor{red}{-0.112}\%$\eta$ (\textcolor{red}{-2.98}\%) at 110\% fuel mass, and decreasing the fuel mass of the scramjet accelerator increases its exergy efficiency, by \textcolor{red}{+0.159}\%$\eta$ (\textcolor{red}{+4.23}\%) at 90\% fuel mass. Once again, the overall exergy efficiency of the system shows no distinct trend. 
 As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of acceleration causing the specific impulse of the C-REST engines to decrease. However, the overall energy availability is increased by the additional fuel mass, resulting in more overall exergy. This results in the overall energy imparted upon the third stage by the scramjet accelerator increasing, from \secondExergythirdStagemFuelNinety GJ at 90\% $m_{f}$, to \secondExergythirdStagemFuelOneHundredTen GJ at 110\% $m_{f}$, in turn increasing the payload-to-orbit.
 
@@ -1273,8 +1273,8 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 
 
 \subsection{Case 17: Third Stage Mass Sensitivity with Fly-Back}
-\textcolor{red}{XXX this is weird, redo? but the no-flyback case has the same trend... its probably because I have a 10 degree limit on aoa}
-\begin{table}[ht]% updated 14/8/19
+
+\begin{table}[ht]% updated 31/12/19
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $m_{3}$:
@@ -1438,19 +1438,15 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 	\label{tab:comparison81}
 \end{table}
 
-The mass of the third stage rocket is varied by $\pm$10\%, to investigate the effects of the internal mass density of the third stage rocket, when the fly-back of the scramjet accelerator is included. Table \ref{tab:comparison81} details key trajectory parameters, and Appendix \ref{sec:app_comparison81} shows trajectory comparison plots. As in Section \ref{sec:m3noReturn}, the varied mass is a combination of the fuel and structural mass of the third stage, and payload mass, representing the density of the components within the third stage. As previously, the heat shield mass is not varied, the structural mass held at 9\% of the total, non-heat shield mass, and the remaining mass variation is a combination of fuel and payload mass.
+The mass of the third stage rocket is varied by $\pm$10\%, to investigate the effects of the internal mass density of the third stage rocket when the fly-back of the scramjet accelerator is included. Table \ref{tab:comparison81} details key trajectory parameters, and Appendix \ref{sec:app_comparison81} shows trajectory comparison plots. As in Section \ref{sec:m3noReturn}, the varied mass is a combination of the fuel and structural mass of the third stage, and payload mass, representing the density of the components within the third stage. As previously, the heat shield mass is not varied, the structural mass held at 9\% of the total, non-heat shield mass, and the remaining mass variation is a combination of fuel and payload mass.
 
-Increasing the third stage mass by 10\% causes a corresponding increase in the payload-to-orbit of +9.9kg (+5.76\%), while decreasing the third stage mass by 10\% causes a decrease in payload-to-orbit of -9.4kg (-5.54\%). 
-This payload-to-orbit mass sensitivity is slightly higher than the third stage mass sensitivity without fly-back, detailed in Section \ref{sec:m3noReturn}. In addition, the payload-to-orbit is lower when the fly-back of the scramjet accelerator is included, resulting in a significantly higher percentage payload increase, at 0.56$\frac{\Delta m_{payload}}{\Delta\%m_3}$, compared to 0.47$\frac{\Delta m_{payload}}{\Delta\%m_3}$ without fly-back. 
-Similarly to the sensitivity study without fly-back, in Section \ref{sec:m3noReturn}, the exergy efficiency of the scramjet accelerator increases as the mass of the third stage increases, by +0.337\%$\eta$ (+8.4\%) at 110\% $m_3$, and decreases when the third stage mass is decreased, by -0.236\%$\eta$ (-5.9\%) at 90\% $m_3$.
-This trend is caused by the higher third stage mass decreasing the acceleration of the scramjet accelerator, so that overall, the specific impulse of the scramjet accelerator stays higher. 
-The sensitivity of the exergy efficiency of the scramjet accelerator is lower when fly-back is included, at $0.029\frac{\Delta\%\eta}{\Delta\%m_3}$, compared to $0.037\frac{\Delta\%\eta}{\Delta\%m_3}$ without fly-back. This lowered sensitivity is due to the efficiency of the fly-back relying on the performance of the scramjet accelerator alone, which is not directly affected by variations in the third stage mass.  
- The exergy efficiency sensitivity of the third stage is also decreased to -$0.071\frac{\Delta\%\eta}{\Delta\%m_3}$ when fly-back is included, compared to -$0.095\frac{\Delta\%\eta}{\Delta\%m_3}$ without fly-back. 
-However, this lowered efficiency trend still results in an increased payload mass-to-orbit sensitivity compared to the trajectory case without fly-back. This is due to the lower payload-to-orbit when fly-back is included, which results in more fuel within the third stage, and consequently that each percentage of exergy efficiency gained or lost results in a larger total payload mass change. 
+\textcolor{red}{
+As was observed in Section \ref{sec:m3noReturn}, there is no linear trends with variation in third stage mass. Once again, when the third stage mass is reduced, the payload mass is reduced, by -12.2kg (-9.2\%), and when the third stage mass is increased, the payload mass is also reduced, by a larger -45.2kg (-34.2\%). Once again, the pull-up of the scramjet accelerator is relatively consistent when the third stage mass is reduced, but is lowered significantly when the third stage mass is increased, to compensate for the reduced performance of the third stage. The magnitude of the response is very similar to the sensitivities with no fly-back, indicating that the fly-back does not significantly effect the sensitivity of the launch system performance with variations in the mass of the third stage rocket. 
+}
+
 
 \subsection{Case 18: Third Stage Specific Impulse Sensitivity with Fly-Back}
 
-\textcolor{red}{XXX I should probably keep this as 5\% variation - or not... negative payload isnt really that bad, and it is interesting...}
 
 \begin{table}[ht]
 
@@ -1617,22 +1613,20 @@ However, this lowered efficiency trend still results in an increased payload mas
 	\label{tab:isp3}
 \end{table}
 
-The specific impulse of the third stage rocket is varied by $\pm$5\% to investigate the sensitivity of the launch system to the performance of the third stage rocket, when the fly-back of the scramjet accelerator is included. 
-Table \ref{tab:isp3} shows selected performance indicators, while Appendix \ref{sec:app_comparison91} shows comparison plots of the maximum payload-to-orbit trajectory at each third stage specific impulse. 
+The specific impulse of the third stage rocket is varied by $\pm$10\% to investigate the sensitivity of the launch system to the performance of the third stage rocket, when the fly-back of the scramjet accelerator is included. 
+Table \ref{tab:isp3} shows selected performance indicators, while Appendix \ref{sec:app_comparison91} shows comparison plots of the maximum payload-to-orbit trajectory at each third stage specific impulse. \textcolor{red}{Negative payload-to-orbit is produced at 90\% specific impulse, indicating that it is not possible for the third stage to reach the required orbit at this specific impulse. }
 
-The sensitivity of the optimal trajectory to the third stage specific impulse with scramjet accelerator fly-back is very similar to that observed in the sensitivity study with no scramjet accelerator fly-back, in Section \ref{sec:isp3NoReturn}, with a sensitivity of 4.6$\frac{\Delta m_{payload}}{\Delta\%I_{SP,3}}$ variation. 
- These similar sensitivities indicate that the fly-back does not considerably effect the sensitivity of the launch system to variations in the third stage specific impulse, and that the third stage specific impulse has a consistent magnitude of effect at lower separation velocities. 
-The trajectory of the first stage does not change significantly as the specific impulse of the third stage is varied. 
-The exergy efficiency of the first stage shows a slight trend, however, this is very small. 
-The trajectory scramjet accelerator shows no distinct trends as the specific impulse of the third stage is varied, except for a general decrease in the third stage separation angle.
-As the specific impulse of the third stage is increased, second-third stage separation angle and the angle of attack schedule of the third stage are modified, so that 90km altitude is reached at circularisation conditions in all cases. This causes an increase in specific impulse to result in more time spent in-atmosphere, with the third stage spending 14.9s at dynamic pressures greater than 5kPa at 105\% $I_{SP}$, compared to 12.1s at 95\% $I_{SP}$. 
+The sensitivity of the optimal trajectory to the third stage specific impulse with scramjet accelerator fly-back is very similar to that observed in the sensitivity study with no scramjet accelerator fly-back, in Section \ref{sec:isp3NoReturn}, with a sensitivity of \textcolor{red}{11}$\frac{\Delta m_{payload}}{\Delta\%I_{SP,3}}$ variation. 
+These similar sensitivities indicate that the fly-back does not considerably effect the sensitivity of the launch system to variations in the third stage specific impulse, and that the third stage specific impulse has a consistent magnitude of effect at lower separation velocities. 
+
+\textcolor{red}{As observed in Section \ref{sec:isp3NoReturn}, there is a distinct cutoff as the specific impulse is lowered, at which the third stage no longer has the required performance to raise altitude consistently and exit the atmosphere effectively. Once again, the scramjet accelerator must compensate for the reduced third stage performance by lowering the pull-up at the end of its trajectory, increasing the velocity and decreasing the trajectory angle at separation so that a greater velocity is achieved at separation and the aerodynamics of the third stage are used more extensively.} 
 
 
 
 
 
 
-\section{Comparison of Sensitivities with Fly-Back}
+\section{Comparison of Design Parameters with Fly-Back}
 %0.4/(50*0.01)/(1.5/(4957*0.01)) calculated like this
 
 \begin{figure}[th]
@@ -1644,15 +1638,11 @@ As the specific impulse of the third stage is increased, second-third stage sepa
 
 The sensitivities of the performance of the launch system, including the fly-back of the scramjet accelerator, to a variety of design parameters have been presented in the preceding sections. Figure \ref{fig:BarChartreturn} shows a relative comparison of the payload-to-orbit sensitivity for each design parameter, by percentage. The magnitude of each sensitivity is also compared with the sensitivity of the launch system performance without fly-back, detailed in Section \ref{sec:comparisonNoReturn}.
 
-The sensitivity of the launch system to the maximum dynamic pressure is unchanged when fly-back is included. However, the slight decrease in the sensitivity of the launch system to the structural mass of the scramjet accelerator, to -1.4$\frac{\Delta kg}{\Delta\%m_{scramjet accelerator}}$, means that the potential beneficial effects of reducing the maximum dynamic pressure of the scramjet accelerator are reduced slightly. So long as the mass of the scramjet accelerator reduces by 28.3kg for each 1kPa reduction in the maximum dynamic pressure, the performance of the launch system will improve.
- The sensitivity of the launch system to the specific impulse of the scramjet accelerator is decreased significantly when the fly-back of the scramjet accelerator is included, to 1.7$\frac{\Delta kg}{\Delta\%I_{SP,scramjet accelerator}}$, a decrease of -0.5$\frac{\Delta kg}{\Delta\%I_{SP,scramjet accelerator}}$ (-22.7\%) compared to the sensitivity without fly-back. The sensitivity of the launch system to the scramjet accelerator's structural mass is also decreased, to -1.4$\frac{\Delta kg}{\Delta\%m_{scramjet accelerator}}$. Comparing these sensitivities, it is apparent that if the specific impulse of the scramjet accelerator can be increased by 1\% with less than 1.21\% (60.0kg) increase in the total mass of the scramjet accelerator, then the overall performance of the launch system will be improved.  
-Similarly, the sensitivity of the launch system to variation in the drag of the scramjet accelerator is reduced, to -1.5$\frac{\Delta kg}{\Delta\%C_{d,scramjet accelerator}}$. Comparing this sensitivity with the sensitivity to the structural mass of the scramjet accelerator, the specific impulse of the C-REST engines must be improved by 1\% while increasing the drag of the scramjet accelerator by less than 1.13\% due to shape variation, in order for the overall performance change to be beneficial. 
+The sensitivity of the launch system to the \textcolor{red}{structural mass of the scramjet accelerator} is unchanged when fly-back is included. However, the increaase in the sensitivity of the launch system to the \textcolor{red}{maximum allowable dynamic pressure}, to \textcolor{red}{1.4}$\frac{\Delta kg}{\Delta\%q_{max}}$, means that the potential beneficial effects of reducing the maximum dynamic pressure of the scramjet accelerator are increased. So long as the mass of the scramjet accelerator \textcolor{red}{is increased} by less than \textcolor{red}{114.4}kg for each 1kPa \textcolor{red}{increase} in the maximum dynamic pressure, the performance of the launch system will improve.
+ The sensitivity of the launch system to the specific impulse of the scramjet accelerator is decreased significantly when the fly-back of the scramjet accelerator is included, to \textcolor{red}{1.7}$\frac{\Delta kg}{\Delta\%I_{SP,scramjet accelerator}}$, a decrease of \textcolor{red}{-0.5}$\frac{\Delta kg}{\Delta\%I_{SP,scramjet accelerator}}$ (\textcolor{red}{-22.7}\%) compared to the sensitivity without fly-back, while the sensitivity of the launch system to the scramjet accelerator's structural mass is unchanged, at \textcolor{red}{-1.3}$\frac{\Delta kg}{\Delta\%m_{scramjet accelerator}}$. Comparing these sensitivities, it is apparent that if the specific impulse of the scramjet accelerator can be increased by 1\% with less than \textcolor{red}{64.8kg} increase in the total mass of the scramjet accelerator, then the overall performance of the launch system will be improved.  
+Similarly, the sensitivity of the launch system to variation in the drag of the scramjet accelerator is reduced, to \textcolor{red}{-1.8}$\frac{\Delta kg}{\Delta\%C_{d,scramjet accelerator}}$. Comparing this sensitivity with the sensitivity to the \textcolor{red}{C-REST specific impulse}, the specific impulse of the C-REST engines must be improved by 1\% while increasing the drag of the scramjet accelerator by less than \textcolor{red}{0.9}\% due to shape variation, in order for the overall performance change to be beneficial. 
 
-The decreased sensitivity of the launch system performance to the structural mass of the scramjet accelerator, along with the unchanged fuel mass sensitivity, means that so long as 1kg of fuel mass can be added with less than 1.59kg of structural mass added, the performance of the launch system will improve. Additionally, the decreased sensitivity of the launch system to the drag of the scramjet accelerator means that so long as 1kg of fuel can be added to the scramjet accelerator, with a drag increase of less than 0.030\% due to increased size, then the maximum payload-to-orbit will increase. 
-Lastly, comparing the increased third stage mass sensitivity, of 1$\frac{\Delta kg}{\Delta\%m_{3}}$, with the decreased scramjet accelerator drag sensitivity, shows that if the size of the third stage can be increased so that the third stage mass increases by 1kg, while the size of the scramjet accelerator's fuselage is varied so that the increase in scramjet accelerator drag is less than 0.020\%, the maximum payload-to-orbit will be improved. 
-
-
-
+The \textcolor{red}{unchanged} sensitivity of the launch system performance to the structural mass of the scramjet accelerator, along with the decreased fuel mass sensitivity, means that so long as 1kg of fuel mass can be added with less than \textcolor{red}{1.5}kg of structural mass added, the performance of the launch system will improve. Additionally, the decreased sensitivity of the launch system to the drag of the scramjet accelerator means that so long as 1kg of fuel can be added to the scramjet accelerator, with a drag increase of less than 0.021\% due to increased size, then the maximum payload-to-orbit will increase \textcolor{red}{(assuming lift is unchanged)}. 
 
 
 \section{Summary}
