@@ -15,12 +15,12 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces The scramjet accelerator of the SPARTAN, as designed by Preller\cite {Preller2018a}.\relax }}{46}{figure.caption.33}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces The flight trajectory of the SPARTAN. a) shows the physical trajectory and b) shows the forces on the vehicle and performance indicators.\relax }}{47}{figure.caption.34}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces The third stage rocket of the rocket-scramjet-rocket launch system\cite {Preller2017b}.\relax }}{48}{figure.caption.35}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces The third stage trajectory of the SPARTAN launch system\cite {Preller2018a}.\relax }}{48}{figure.caption.36}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The third stage trajectory of the SPARTAN launch system\cite {Preller2018a}.\relax }}{49}{figure.caption.36}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{52}{figure.caption.39}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of \textsf {h} and \textsf {p} collocation methods\cite {Kelly2015}.\relax }}{53}{figure.caption.40}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{55}{figure.caption.42}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{59}{figure.caption.45}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite {Sagerman2017}. \leavevmode {\color {red}XXX Change this picture to something more relevant}\relax }}{60}{figure.caption.46}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{60}{figure.caption.45}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparisons of Cart3D with experimental data and the FUN3D Navier-Stokes CFD solver. P1, P2 and P3 indicate pressure tap locations. Modified from Sagerman et al.\cite {Sagerman2017}. \leavevmode {\color {red}XXX Change this picture to something more relevant}\relax }}{61}{figure.caption.46}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The launch process of the rocket-scramjet-rocket launch system, presented in simplified form.\relax }}{64}{figure.caption.47}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces the SPARTAN launch system, top view, showing the scramjet accelerator and first stage. \relax }}{65}{figure.caption.48}
@@ -71,88 +71,88 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Net Isp contours for the scramjet accelerator at Mach numbers from 5-9, showing flight conditions for an optimised trajectory with no constraints (Case 2) and a constant dynamic pressure trajectory (Case 1). \relax }}{135}{figure.caption.115}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces The specific impulse of the C-REST engines, plotted for inlet temperature (T1) and inlet Mach number (M1). Data points are shown in black.\relax }}{135}{figure.caption.116}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory (Case 2).\relax }}{136}{figure.caption.117}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces The sensitivity of the key design parameters of the launch system.\relax }}{151}{figure.caption.127}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The sensitivity of the key design parameters of the launch system.\relax }}{150}{figure.caption.127}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Maximum payload-to-orbit trajectory path with the inclusion of scramjet accelerator fly-back (Case 11). Initial heading angle of \leavevmode {\color {red}3.3}$^\circ $.\relax }}{156}{figure.caption.128}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces The first stage of the optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{158}{figure.caption.130}
 \contentsline {figure}{\numberline {7.3}{\ignorespaces The acceleration of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{159}{figure.caption.131}
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Net $I_{SP}$ contours for the scramjet accelerator at Mach numbers between 5.5 and 8.5, showing the optimised trajectory path (Case 11). \relax }}{160}{figure.caption.132}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces The third stage trajectory of an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{162}{figure.caption.133}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces The fly-back trajectory of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory (Case 11). \relax }}{163}{figure.caption.134}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces The sensitivity of the key design parameters of the launch system, including scramjet accelerator fly-back. Red and green coloured areas indicate decreases or increases in the magnitude of sensitivity respectively, compared to the sensitivity study without scramjet accelerator fly-back in Section \ref {sec:comparisonNoReturn}.\relax }}{177}{figure.caption.146}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces The third stage trajectory of an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{161}{figure.caption.133}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces The fly-back trajectory of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory (Case 11). \relax }}{162}{figure.caption.134}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces The sensitivity of the key design parameters of the launch system, including scramjet accelerator fly-back. Red and green coloured areas indicate decreases or increases in the magnitude of sensitivity respectively, compared to the sensitivity study without scramjet accelerator fly-back in Section \ref {sec:comparisonNoReturn}.\relax }}{176}{figure.caption.146}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces The points chosen for thermal analysis, selected for the potential of high heat loading.\relax }}{214}{figure.caption.150}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Temperature time histories on the scramjet accelerator.\relax }}{216}{figure.caption.151}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Temperature time histories on the third stage rocket with time.\relax }}{217}{figure.caption.152}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.\relax }}{220}{figure.caption.156}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces The points chosen for thermal analysis, selected for the potential of high heat loading.\relax }}{212}{figure.caption.150}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Temperature time histories on the scramjet accelerator.\relax }}{214}{figure.caption.151}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Temperature time histories on the third stage rocket with time.\relax }}{215}{figure.caption.152}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.\relax }}{218}{figure.caption.156}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The distribution of optimised payload-to-orbit values over the range of LHC determined samples.\relax }}{231}{figure.caption.162}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Variation in temperature and density in the 1976 U.S Standard Atmosphere Model\cite {Administration1976}. Arrows indicate lowest and highest mean monthly values obtained at any location, and dashed lines indicate one-percent extremes.\relax }}{232}{figure.caption.163}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The distribution of optimised payload-to-orbit values over the range of LHC determined samples.\relax }}{229}{figure.caption.162}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Variation in temperature and density in the 1976 U.S Standard Atmosphere Model\cite {Administration1976}. Arrows indicate lowest and highest mean monthly values obtained at any location, and dashed lines indicate one-percent extremes.\relax }}{230}{figure.caption.163}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The solution to the Brachistochrone problem, solved in GPOPS-2\cite {Rao2010}.\relax }}{236}{figure.caption.166}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces \relax }}{239}{figure.caption.169}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces \relax }}{239}{figure.caption.170}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces \relax }}{240}{figure.caption.171}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces \relax }}{241}{figure.caption.172}
-\contentsline {figure}{\numberline {C.6}{\ignorespaces The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). the phases are shown in each subfigure as follows: a) first stage rocket, b) SPARTAN acceleration, c) SPARTAN fly-back and d) third stage.\relax }}{242}{figure.caption.173}
-\contentsline {figure}{\numberline {C.7}{\ignorespaces The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11).\relax }}{243}{figure.caption.174}
-\contentsline {figure}{\numberline {C.8}{\ignorespaces The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.\relax }}{244}{figure.caption.175}
-\contentsline {figure}{\numberline {C.9}{\ignorespaces The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.\relax }}{245}{figure.caption.176}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The solution to the Brachistochrone problem, solved in GPOPS-2\cite {Rao2010}.\relax }}{234}{figure.caption.166}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces \relax }}{237}{figure.caption.169}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces \relax }}{237}{figure.caption.170}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces \relax }}{238}{figure.caption.171}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces \relax }}{239}{figure.caption.172}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). the phases are shown in each subfigure as follows: a) first stage rocket, b) SPARTAN acceleration, c) SPARTAN fly-back and d) third stage.\relax }}{240}{figure.caption.173}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11).\relax }}{241}{figure.caption.174}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.\relax }}{242}{figure.caption.175}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.\relax }}{243}{figure.caption.176}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces The transformation to a normalised interpolation scheme.\relax }}{247}{figure.caption.177}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces CART3D flow result for the SPARTAN, at Mach 1.1, 6$^\circ $ angle of attack.\relax }}{248}{figure.caption.178}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces CART3D flow result for the SPARTAN, at Mach 3, 6$^\circ $ angle of attack.\relax }}{249}{figure.caption.179}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Adapted mesh of the SPARTAN at Mach 6 3$^\circ $ angle of attack.\relax }}{249}{figure.caption.180}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Adapted mesh around the SPARTAN and first stage vehicles, flying at Mach 2, -1$^\circ $ angle of attack.\relax }}{250}{figure.caption.181}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces The performance of the SPARTAN during the boost phase. Light blue indicates that the scramjet engines are turned on.\relax }}{251}{figure.caption.182}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces The transformation to a normalised interpolation scheme.\relax }}{245}{figure.caption.177}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces CART3D flow result for the SPARTAN, at Mach 1.1, 6$^\circ $ angle of attack.\relax }}{246}{figure.caption.178}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces CART3D flow result for the SPARTAN, at Mach 3, 6$^\circ $ angle of attack.\relax }}{247}{figure.caption.179}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Adapted mesh of the SPARTAN at Mach 6 3$^\circ $ angle of attack.\relax }}{247}{figure.caption.180}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Adapted mesh around the SPARTAN and first stage vehicles, flying at Mach 2, -1$^\circ $ angle of attack.\relax }}{248}{figure.caption.181}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces The performance of the SPARTAN during the boost phase. Light blue indicates that the scramjet engines are turned on.\relax }}{249}{figure.caption.182}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system constrained to 50kPa between Mach numbers 6 to 8, under power of the first stage rocket.\relax }}{255}{figure.caption.184}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the SPARTAN, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{258}{figure.caption.185}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{259}{figure.caption.186}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces The level of population annoyance with increasing overpressure.\relax }}{260}{figure.caption.187}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces The sonic boom overpressure on the ground, for the optimised trajectory path (Case 11).\relax }}{260}{figure.caption.188}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay.\relax }}{261}{figure.caption.189}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system constrained to 50kPa between Mach numbers 6 to 8, under power of the first stage rocket.\relax }}{253}{figure.caption.184}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the SPARTAN, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{256}{figure.caption.185}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{257}{figure.caption.186}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces The level of population annoyance with increasing overpressure.\relax }}{258}{figure.caption.187}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces The sonic boom overpressure on the ground, for the optimised trajectory path (Case 11).\relax }}{258}{figure.caption.188}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay.\relax }}{259}{figure.caption.189}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{264}{figure.caption.191}
-\contentsline {figure}{\numberline {F.2}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{265}{figure.caption.192}
-\contentsline {figure}{\numberline {F.3}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.\relax }}{266}{figure.caption.193}
-\contentsline {figure}{\numberline {F.4}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.\relax }}{267}{figure.caption.194}
-\contentsline {figure}{\numberline {F.5}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{268}{figure.caption.195}
-\contentsline {figure}{\numberline {F.6}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{269}{figure.caption.196}
-\contentsline {figure}{\numberline {F.7}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.\relax }}{270}{figure.caption.197}
-\contentsline {figure}{\numberline {F.8}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.\relax }}{271}{figure.caption.198}
-\contentsline {figure}{\numberline {F.9}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{272}{figure.caption.199}
-\contentsline {figure}{\numberline {F.10}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{273}{figure.caption.200}
-\contentsline {figure}{\numberline {F.11}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.\relax }}{274}{figure.caption.201}
-\contentsline {figure}{\numberline {F.12}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{275}{figure.caption.202}
-\contentsline {figure}{\numberline {F.13}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.\relax }}{276}{figure.caption.203}
-\contentsline {figure}{\numberline {F.14}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{277}{figure.caption.204}
-\contentsline {figure}{\numberline {F.15}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the drag of the third stage.\relax }}{278}{figure.caption.205}
-\contentsline {figure}{\numberline {F.16}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.\relax }}{279}{figure.caption.206}
-\contentsline {figure}{\numberline {F.17}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{280}{figure.caption.207}
-\contentsline {figure}{\numberline {F.18}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{281}{figure.caption.208}
-\contentsline {figure}{\numberline {F.19}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{282}{figure.caption.209}
-\contentsline {figure}{\numberline {F.20}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.\relax }}{283}{figure.caption.210}
-\contentsline {figure}{\numberline {F.21}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.\relax }}{284}{figure.caption.211}
-\contentsline {figure}{\numberline {F.22}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the drag of the SPARTAN.\relax }}{285}{figure.caption.212}
-\contentsline {figure}{\numberline {F.23}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{286}{figure.caption.213}
-\contentsline {figure}{\numberline {F.24}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{287}{figure.caption.214}
-\contentsline {figure}{\numberline {F.25}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the specific impulse of the SPARTAN.\relax }}{288}{figure.caption.215}
-\contentsline {figure}{\numberline {F.26}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.\relax }}{289}{figure.caption.216}
-\contentsline {figure}{\numberline {F.27}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.\relax }}{290}{figure.caption.217}
-\contentsline {figure}{\numberline {F.28}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the mass of the SPARTAN.\relax }}{291}{figure.caption.218}
-\contentsline {figure}{\numberline {F.29}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{292}{figure.caption.219}
-\contentsline {figure}{\numberline {F.30}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{293}{figure.caption.220}
-\contentsline {figure}{\numberline {F.31}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the fuel mass of the SPARTAN.\relax }}{294}{figure.caption.221}
-\contentsline {figure}{\numberline {F.32}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.\relax }}{295}{figure.caption.222}
-\contentsline {figure}{\numberline {F.33}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{296}{figure.caption.223}
-\contentsline {figure}{\numberline {F.34}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the mass of the third stage.\relax }}{297}{figure.caption.224}
-\contentsline {figure}{\numberline {F.35}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.\relax }}{298}{figure.caption.225}
-\contentsline {figure}{\numberline {F.36}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{299}{figure.caption.226}
-\contentsline {figure}{\numberline {F.37}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the specific impulse of the third stage.\relax }}{300}{figure.caption.227}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{262}{figure.caption.191}
+\contentsline {figure}{\numberline {F.2}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{263}{figure.caption.192}
+\contentsline {figure}{\numberline {F.3}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.\relax }}{264}{figure.caption.193}
+\contentsline {figure}{\numberline {F.4}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.\relax }}{265}{figure.caption.194}
+\contentsline {figure}{\numberline {F.5}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{266}{figure.caption.195}
+\contentsline {figure}{\numberline {F.6}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{267}{figure.caption.196}
+\contentsline {figure}{\numberline {F.7}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.\relax }}{268}{figure.caption.197}
+\contentsline {figure}{\numberline {F.8}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.\relax }}{269}{figure.caption.198}
+\contentsline {figure}{\numberline {F.9}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{270}{figure.caption.199}
+\contentsline {figure}{\numberline {F.10}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{271}{figure.caption.200}
+\contentsline {figure}{\numberline {F.11}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.\relax }}{272}{figure.caption.201}
+\contentsline {figure}{\numberline {F.12}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{273}{figure.caption.202}
+\contentsline {figure}{\numberline {F.13}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.\relax }}{274}{figure.caption.203}
+\contentsline {figure}{\numberline {F.14}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{275}{figure.caption.204}
+\contentsline {figure}{\numberline {F.15}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the drag of the third stage.\relax }}{276}{figure.caption.205}
+\contentsline {figure}{\numberline {F.16}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.\relax }}{277}{figure.caption.206}
+\contentsline {figure}{\numberline {F.17}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{278}{figure.caption.207}
+\contentsline {figure}{\numberline {F.18}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{279}{figure.caption.208}
+\contentsline {figure}{\numberline {F.19}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the maximum dynamic pressure of the SPARTAN.\relax }}{280}{figure.caption.209}
+\contentsline {figure}{\numberline {F.20}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.\relax }}{281}{figure.caption.210}
+\contentsline {figure}{\numberline {F.21}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.\relax }}{282}{figure.caption.211}
+\contentsline {figure}{\numberline {F.22}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the drag of the SPARTAN.\relax }}{283}{figure.caption.212}
+\contentsline {figure}{\numberline {F.23}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{284}{figure.caption.213}
+\contentsline {figure}{\numberline {F.24}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.\relax }}{285}{figure.caption.214}
+\contentsline {figure}{\numberline {F.25}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the specific impulse of the SPARTAN.\relax }}{286}{figure.caption.215}
+\contentsline {figure}{\numberline {F.26}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.\relax }}{287}{figure.caption.216}
+\contentsline {figure}{\numberline {F.27}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.\relax }}{288}{figure.caption.217}
+\contentsline {figure}{\numberline {F.28}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the mass of the SPARTAN.\relax }}{289}{figure.caption.218}
+\contentsline {figure}{\numberline {F.29}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{290}{figure.caption.219}
+\contentsline {figure}{\numberline {F.30}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.\relax }}{291}{figure.caption.220}
+\contentsline {figure}{\numberline {F.31}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the fuel mass of the SPARTAN.\relax }}{292}{figure.caption.221}
+\contentsline {figure}{\numberline {F.32}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.\relax }}{293}{figure.caption.222}
+\contentsline {figure}{\numberline {F.33}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{294}{figure.caption.223}
+\contentsline {figure}{\numberline {F.34}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the mass of the third stage.\relax }}{295}{figure.caption.224}
+\contentsline {figure}{\numberline {F.35}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.\relax }}{296}{figure.caption.225}
+\contentsline {figure}{\numberline {F.36}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{297}{figure.caption.226}
+\contentsline {figure}{\numberline {F.37}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the specific impulse of the third stage.\relax }}{298}{figure.caption.227}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the viscous drag of the SPARTAN.\relax }}{303}{figure.caption.229}
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of third stage ascent trajectories with variation in the viscous drag of the SPARTAN.\relax }}{304}{figure.caption.230}
-\contentsline {figure}{\numberline {G.3}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the viscous drag of the SPARTAN.\relax }}{305}{figure.caption.231}
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Comparison of SPARTAN ascent trajectories with variation in the viscous drag of the SPARTAN.\relax }}{301}{figure.caption.229}
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of third stage ascent trajectories with variation in the viscous drag of the SPARTAN.\relax }}{302}{figure.caption.230}
+\contentsline {figure}{\numberline {G.3}{\ignorespaces Comparison of SPARTAN return trajectories with variation in the viscous drag of the SPARTAN.\relax }}{303}{figure.caption.231}

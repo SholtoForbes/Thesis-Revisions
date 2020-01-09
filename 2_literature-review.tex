@@ -38,6 +38,7 @@ Lastly, a study is presented on the methods of aerodynamic modelling that may be
     \textcolor{red}{
   \section{Hypersonic Airbreathing Launch Systems and Trajectories}\label{sec:AscentTrajectories}
 }
+\textcolor{red}{XXX have I got the first detailed analysis of a multi stage airbreathing trajectory? can point out that none of the multi stage trajectory analyses are particularly in-depth and are often (all?) part of mdos. My argument could be that a pull-up has not been investigates as optimal when separating from scramjet to rocket powered stages? or from airbreathing to rocket power stages? Also, a scramjet stage hasnt been shown as capable of return under own power?}
   
 %\textcolor{red}{XXX from reviewer: "Significantly expanding Section 2.4 include a more thorough review of air-breathing access to space systems with a particular focus on underlying technologies and their respective strengths and limitations." "Expanding Section 2.5 and 2.6 (on launchers and trajectories) with a focus on critically reviewing the range of methodologies/ constraints/ key assumptions adopted by various authors in developing trajectories for single and multiple-stage to orbit systems. Specific emphasis should be placed on highlighting the shortcomings, methodologies, cost functions, and constraints used in these approaches and how the present work seeks to address them."}
     
@@ -276,8 +277,11 @@ For SSTO vehicles a pull-up manoeuvre is a trade-off between the altitude at air
 
   	
   \textcolor{red}{
-  \subsection{Two-Stage Launch Systems}
+  \subsection{Two-Stage Launch Systems} \label{sec:twostagelaunchers}
 }
+
+% For claim of first detailed examination of the optimal trajectory of a multi-stage vehicle, see comments in each table. 
+
 
 \afterpage{
 \begin{landscape}
@@ -315,7 +319,7 @@ For SSTO vehicles a pull-up manoeuvre is a trade-off between the altitude at air
 	
 	
 	\hline \small 
-	\textbf{JAXA TSTO Spaceplane}\cite{Tsuchiya2005}\newline\newline
+	\textbf{JAXA TSTO Spaceplane}\cite{Fujikawa2017}\newline\newline
 	Fujikawa et al.\cite{Fujikawa2017} have developed a spaceplane as a feasibility study on TSTO fully-reusable launch for JAXA. 
 	
 	% (NOTE: 2DOF no return)? end text of p 272 in interesting}
@@ -338,7 +342,7 @@ For SSTO vehicles a pull-up manoeuvre is a trade-off between the altitude at air
 	
 	$\cdot$\textbf{Launch:} Horizontal. 
 	
-	$\cdot$\textbf{Airbreathing trajectory:} Flight at maximum dynamic pressure for periods, with manoeuvres performed to lower dynamic pressure in order to optimise the performance of the RBCC engines. Pull-up during scramjet operation, possibly to optimise separation point.
+	$\cdot$\textbf{Airbreathing trajectory:} Majority of flight is at less than maximum dynamic pressure in order to improve the performance of the RBCC engines due to external nozzle effects. A pull-up is performed during scramjet operation, explained as part of the RBCC performance improvement.
 
 	
 	$\cdot$\textbf{Return trajectory:} Not simulated. 
@@ -525,7 +529,7 @@ Quicksat was designed by SpaceWorks Engineering and the Air Force Research Lab a
 	
 	$\cdot$The maximum dynamic pressure pf 1800psf (86.2kPa) is flown during ramjet and scramjet operation, for maximum engine performance. 
 	
-	$\cdot$At Mach 10, pull-up occurs under scramjet power, in order to reach staging conditions of 95psf (4.5kPa) dynamic pressure. 
+	$\cdot$At Mach 10, pull-up occurs under scram-rocket power, reaching staging conditions of 95psf (4.5kPa) dynamic pressure. It is stated that under pure scramjet power, flight would be at maximum dynamic pressure. 
 	
 	$\cdot$The upper stage injects into orbit using rocket boosters. 
 	
@@ -543,7 +547,8 @@ However, the opposite is true for the orbiter stage. The much smaller size of th
 For this reason, some of the TSTO systems shown in Table XXX opt for partial reusability, where the booster stage is reused, but the orbiter stage is discarded. This allows for the largest, most costly, and most easily reused portion of the launch system to be returned, while the orbiter stage may be designed to be low-cost and disposable, and in general designed to be more akin to a traditional rocket, and less like a 'spaceplane'. 
 
 
-The trajectories of TSTO airbreathing launch systems, where available, are relatively similar to those of SSTO launch systems. As shown in Table \textcolor{red}{XXX}, all of the TSTO systems that have gone through detailed design are launched horizontally, and most fly at the maximum dynamic pressure boundary for the majority of the duration of hypersonic airbreathing flight. The exception to this is the JAXA TSTO launcher, which flies at a higher altitude to increase the performance of its airbreathing engines. Near the end of airbreathing operation, a pull-up is generally performed, similarly to the pull-up observed in SSTO launchers, before stage separation. However, this pull-up is not universally performed, and when it is, it occurs to very different extents and generally is driven by the structural or thermal limits of the orbiter stage. 
+The trajectories of TSTO airbreathing launch systems, where available, are relatively similar to those of SSTO launch systems. As shown in Table \textcolor{red}{XXX}, all of the TSTO systems that have gone through detailed design are launched horizontally, and most fly at the maximum dynamic pressure boundary for the majority of the duration of hypersonic airbreathing flight. The exception to this is the JAXA TSTO launcher, which flies at a higher altitude to increase the performance of its particular airbreathing engines. Near the end of airbreathing operation, a pull-up is generally performed, similarly to the pull-up observed in SSTO launchers, before stage separation. However, this pull-up is not universally performed, and when it is, it occurs to very different extents and generally is driven by the structural or thermal limits of the orbiter stage. 
+\textcolor{red}{XXX I done like the transition here, paragraph is awkward, and it is unclear why I am talking about optimality}
 This variety of staging points is due to the location of the staging point being determined by a multitude of factors stemming from the design and configuration of the launch system. The optimal separation point is determined by a trade-off between;
 \begin{itemize}
 	\item the high efficiency of the scramjet engines;
@@ -555,7 +560,7 @@ This variety of staging points is due to the location of the staging point being
 All of these factors must be considered in order to generate an optimal trajectory. In addition, the staging point may be significantly limited by vehicle design factors. 
 The structural or thermal requirements of the launch system, particularly of the upper-stage, can significantly limit the staging point. If the upper-stage is not designed to withstand significant dynamic pressures or thermal loads, then a separation in low-density air is necessary. 
 There has been a number of studies which have identified a pull-up manoeuvre as being advantageous for a multi-stage system in order to decrease the dynamic pressure of the vehicle at airbreathing-rocket stage separation\cite{Tsuchiya2005,Wilhite1991,Mehta2001}. 
-In the studies by Tsuchiya et al.\cite{Tsuchiya2005} and Wilhite et al.\cite{Wilhite1991}, decreased dynamic pressure is necessary for the successful operation of the orbital rocket stages, of the systems under investigation. In these studies the airbreathing stages pull-up to the maximum allowable dynamic pressure for the rocket-powered orbital stages. When the orbital stages are able to operate, stage separation occurs. These pull-up manoeuvres demonstrate the advantages of a pull-up for the operation of the orbital stages, allowing the aerodynamic and thermal loading on the vehicle to be reduced. 
+In the studies by Tsuchiya et al.\cite{Tsuchiya2005} and Wilhite et al.\cite{Wilhite1991}, decreased dynamic pressure is necessary for the successful operation of the orbital rocket stages. In these studies the airbreathing stages pull-up to the maximum allowable dynamic pressure for the rocket-powered orbital stages. When the orbital stages are able to operate, stage separation occurs. These pull-up manoeuvres demonstrate the advantages of a pull-up for the operation of the orbital stages, allowing the aerodynamic and thermal loading on the vehicle to be reduced. 
 Another challenge inherent to multi-stage airbreathing launch systems is the dynamics of the stage separation itself. This stage separation often occurs in-atmosphere, at relatively low trajectory angles. This separation is a key factor in the design of each stage, particularly the time when the upper stage engine must be ignited to ensure appropriate control and speed after separation. This separation also results in vehicle-vehicle aerodynamic interactions between the stages of the launch system as they separate. Here vehicle shock-shock interactions can cause significant changes to aerodynamic forces and moments, requiring appropriate control approaches and vehicle shape design\cite{mochammad,Kudo2005}. 
 These separation effects are not generally taken into account in the early stages of launch vehicle conceptualisation, as they can be considered as secondary to an overall trajectory design and optimisation in the early stages of design.  % XXX cite? wont be able to find one.. also check
 However these separation effects are likely to be significant, and a multi-stage vehicle must be carefully analysed in the later stages of vehicle design using CFD and experimental analysis, along with an iterative design process, to ensure that appropriate control authority can be maintained during and after separation\cite{mochammad}. 
@@ -565,10 +570,11 @@ However these separation effects are likely to be significant, and a multi-stage
 While the stage separation point of a multi-stage launch system is often considered to be determined by the design dependent constraints of the launch system, the design process is iterative, and the design of a launch vehicle must also be based upon the trajectory path that is considered most efficient.
 In the launch vehicles that have been studied, a pull-up is often considered the 'optimal' flight path. This is frequently determined during a multidisciplinary design optimisation, where the trajectory and vehicle design are optimised together, with a pull-up generally occuring to the aerothermal limits of the second stage vehicle. This makes it impractical to determine which features of the trajectory are optimal in isolation, and which are dependent on vehicle design. 
 Mehta \& Bowles\cite{Mehta2001} prescribe a 2g pull-up in order to ``lower dynamic pressures and to achieve the optimal launching flight path angle for the orbiter vehicle". This prescribed manoeuvre indicates that a pull-up before airbreathing-rocket transition is considered the optimal trajectory in isolation, although the specific optimal conditions are not investigated. 
-The antithesis to the consideration of a pull-up as optimal is presented by launcher studies that do not perform a pull-up, where the maximum dynamic pressure flight during airbreathing operation of a TSTO launch system is considered to produce maximum efficiency. 
+\textcolor{red}{XXX I also need to state here that pull-ups are considered under rocker or scram-rocket operation, like in XCALIBUR study}
+The antithesis to the consideration of a pull-up as optimal is presented by launcher studies that do not perform a pull-up, where the maximum dynamic pressure flight during airbreathing operation of a TSTO launch system is considered to produce maximum efficiency. \textcolor{red}{XCALIBUR study states this too, that if pure scramjets were used, flight would be at max q}
  This is the case for the Tohoku University Launcher, as well as the Starsaber. The Tohoku University Launcher maintains constant dynamic pressure until separation, and the rocket stage is performs the pull-up to orbit under its own power, while the Starsaber transitions to rocket mode during constant dynamic pressure flight, and pulls up under rocket power. This may indicate that it is preferable for the booster vehicle to stay close to maximum dynamic pressure during airbreathing operation, when it is able to do so. This is supported by a study by Staufenbiel\cite{Staufenbiel2000}, which investigated the effects of staging conditions on a second stage rocket in isolation, and concluded that "higher Mach numbers are preferable to increasing the flight-path angle above values of a few degrees". However, this study did not include an airbreathing stage optimisation, and specifically stated that the airbreathing stage must be included to determine optimal separation conditions\cite{Staufenbiel2000}. 
 Clearly there is some discrepancy between whether a pull-up is considered optimal for a multi-stage launch system without consideration of vehicle design effects. 
-These staging discrepancies, along with the varying trajectory shapes of TSTO launch systems in general, indicate that the trajectory of multi-stage airbreathing launch systems is heavily dependant on the general of the launch system, particularly the engines being used. It is certain that the trajectory and the design of multi-stage launch systems are heavily interlinked, and that both must be understood well before a detailed design is able to be achieved. 
+These staging discrepancies, along with the varying trajectory shapes of TSTO launch systems in general, indicate that the trajectory of multi-stage airbreathing launch systems is heavily dependant on the general of the launch system, particularly the engines being used. It is certain that the trajectory and the design of multi-stage launch systems are heavily interlinked, and that both must be understood well before a detailed design is able to be achieved. \textcolor{red}{I need to state here that an airbreathing pull-up has not been directly shown to be optimal for a multi-stage system}
 
 
   \textcolor{red}{

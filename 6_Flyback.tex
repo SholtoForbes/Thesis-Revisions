@@ -2,7 +2,6 @@
 
 \cleardoublepage
 \chapter{Optimised Trajectory Including Fly-Back}\label{chapter:Flyback}
-\textcolor{red}{ XXX Its interesting if the SPARTAN is flying close to its min q at first hump}
 	
 This chapter presents the maximum payload-to-orbit trajectory of the rocket-scramjet-rocket launch system, with the fly-back of the scramjet accelerator included within the optimal trajectory calculation performed by LODESTAR. 
 Flying back the scramjet accelerator for landing at the initial launch site is one of the primary enabling factors in the cost efficient operation of the launch system. If the scramjet accelerator is launched onto a trajectory from which it is not able to fly-back, it must perform a downrange landing, likely at an Indonesian airfield when launched northerly from north Australia. This would necessitate transporting the scramjet accelerator back to Australia, a costly and time consuming process, and would require for international landing facilities to be available. 
@@ -106,14 +105,10 @@ The benefits of flying back the scramjet accelerator to its initial launch site,
 	\caption{The first stage of the optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). }
 	\label{fig:FirstStageStandard}
 \end{figure}
-When the fly-back of the scramjet accelerator is included in the trajectory optimisation, the shape of the ascent trajectory of the launch system is altered significantly, compared to the ascent-only trajectory, detailed in Chapter \ref{chapter:Ascent}.
+When the fly-back of the scramjet accelerator is included in the trajectory optimisation, the shape of the ascent trajectory of the launch system is \textcolor{red}{not} altered significantly when compared to the ascent-only trajectory, detailed in Chapter \ref{chapter:Ascent}.
  The first stage initially pitches towards the east, beginning at a heading angle of \textcolor{red}{-12.45}$^\circ$.
- After pitchover, the first stage gradually reduces the angle of attack to a minimum of -0.47$^\circ$ at 30.9s flight time, in order to make small adjustments to the pitch profile while the velocity is low. After this, the first stage angle of attack returns to 0$^\circ$ at 42.9s flight time, and is maintained for 16.4s. \textcolor{red}{XXX update all this first stage stuff}
- The angle of attack is then reduced, to a minimum of -3.58$^\circ$ in order to adjust the altitude and trajectory angle, before increasing back to 0$^\circ$ at first-second stage separation. 
+ After pitchover, the \textcolor{red}{angle of attack is maintained at 0$^\circ$ for 35.6s, before it is reduced gradually to -3.9$^\circ$ at 71.9s} in order to adjust the altitude and trajectory angle, before increasing back to 0$^\circ$ at first-second stage separation. 
  The scramjet accelerator is released in an easterly direction, at a heading angle of \textcolor{red}{2.16}$^\circ$, an altitude of \firstsecondSeparationAltStandard km, and a trajectory angle of \firstsecondSeparationgammaStandard $^\circ$. 
- The altitude of first-second stage separation is 3.02km (+12.5\%) higher than the first-second stage separation point with no fly-back, with a trajectory angle at separation which is +2.5$^\circ$ (+80.6\%) higher. 
- This higher release point requires less aerodynamic manoeuvring of the first stage, and enables the first stage to be efficiently launched with a higher fuel mass of 17943kg, an increase of +758kg (+4.4\%) compared to the trajectory without fly-back. This additional fuel increases the total acceleration of the first stage, \textcolor{red}{XXX change all this too}
- in turn increasing the exergy efficiency of the first stage rocket by +0.308\%$\eta$ (+4.9\%) due to a higher propulsion efficiency, and allowing the first stage to achieve a higher velocity at separation (an increase of +64m/s, +4.3\%). 
  
   \begin{figure}[!ht] % updated 14/8/19
   	\centering
@@ -121,8 +116,7 @@ When the fly-back of the scramjet accelerator is included in the trajectory opti
   	\caption{The acceleration of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). }
   	\label{fig:SecondStageStandard}
   \end{figure}
-  \textcolor{red}{XXX change the first part of this}
- The higher altitude, larger trajectory angle, and increased velocity at the first-second stage separation point causes an altitude raising manoeuvre at the beginning of the scramjet accelerator's acceleration, which is significantly higher than the altitude raising manoeuvre with no fly-back. This altitude raising manoeuvre takes the scramjet accelerator to an altitude of \textcolor{red}{32.3}km at \textcolor{red}{47.1}s, and decreases the dynamic pressure of the scramjet accelerator to \textcolor{red}{14.9}kPa, allowing time for the bank angle of the scramjet accelerator to be increased. 
+The altitude raising manoeuvre \textcolor{red}{after the first stage-scramjet accelerator separation} takes the scramjet accelerator to an altitude of \textcolor{red}{32.3}km at \textcolor{red}{47.1}s, and decreases the dynamic pressure of the scramjet accelerator to \textcolor{red}{14.9}kPa, \textcolor{red}{reaching close to the lower limit of operation of the scramjet engines,} \textcolor{red}{during which time} the bank angle of the scramjet accelerator is increased. 
  After the first-second stage separation, the bank angle is increased, at the maximum change rate, to \textcolor{red}{52.2}$^\circ$, which aids the scramjet accelerator in decreasing its altitude. As the altitude of the scramjet accelerator begins to reduce, the bank angle \textcolor{red}{reduces} and the angle of attack is raised to \textcolor{red}{3.9}$^\circ$ to increase lift, slowing the descent of the scramjet accelerator. 
  The bank angle then begins to increase once more, and as the scramjet accelerator reaches close to its maximum dynamic pressure at \textcolor{red}{122.5}s, the bank angle reaches its maximum of \textcolor{red}{66.2}$^\circ$. 
 
@@ -340,9 +334,7 @@ The lower, slower separation point when fly-back is included causes the losses o
 
 \section{Design Sensitivity Analysis}\label{sec:sensitivity}
 
-\textcolor{red}{XXX make the argument that these parametetrs are for trjectory studues and to inform designers on criticality of coefficients}
-\textcolor{red}{XXX remove max aoa}
-It has been shown that the fly-back of the scramjet accelerator has a significant effect on the performance of the rocket-scramjet-rocket launch system, and that the maximum payload-to-orbit optimised trajectory changes significantly to compensate for the additional requirement of successfully returning the scramjet accelerator stage. This section investigates the sensitivity of the launch system to changes in the vehicle design, with the fly-back of the scramjet accelerator included. This sensitivity study varies the following:
+It has been shown that the fly-back of the scramjet accelerator has a significant effect on the performance of the rocket-scramjet-rocket launch system, and that the maximum payload-to-orbit optimised trajectory changes significantly to compensate for the additional requirement of successfully returning the scramjet accelerator stage. This section investigates the sensitivity of the launch system to changes in the vehicle design, with the fly-back of the scramjet accelerator included, \textcolor{red}{in order to investigate the response of the optimised trajectory to variations in the design of the launch system, and to inform future design decisions.} This sensitivity study varies the following parameters by $\pm$10\%:
 \begin{itemize}
 	\item Case 12: Dynamic Pressure, 
 	\item Case 13: Specific Impulse,
@@ -352,22 +344,16 @@ It has been shown that the fly-back of the scramjet accelerator has a significan
 	\item Case 17: Third Stage Mass,
 	\item Case 18: Third Stage Thrust.
 \end{itemize}
-As in Section \ref{sec:sensitivityNoReturn}, the effect of third stage drag is negligible. For this reason, variation in the third stage drag is omitted from this study. 
+As in Section \ref{sec:sensitivityNoReturn}, the effect of third stage drag is negligible. For this reason, variation in the third stage drag is omitted in this section. 
 
-The launch system is able to successfully place a small satellite in orbit for every performance condition which has been tested, while returning the scramjet accelerator to its initial launch location for landing. 
+The launch system is able to successfully place a small satellite in orbit for every performance condition that has been tested, while returning the scramjet accelerator to its initial launch location for landing. 
 Every maximum payload-to-orbit optimised trajectory exhibits considerable banking during the scramjet accelerator's ascent trajectory, as well as a pull-up of the scramjet accelerator before third stage release. 
 In every case the optimised return flight path exhibits initial turn, boost-skip and approach phases. 
-However, the height, and duration of the second skip of the return phase varies between cases, exhibiting no clear trend across the majority of the sensitivity studies which have been performed.
-
-The first-second stage separation angle and altitude show no clear trend in any of the sensitivity studies performed, except for the third stage mass variation, in contrast to the sensitivity studies with no fly-back, detailed in Section \ref{sec:sensitivityNoReturn}, in which the scramjet accelerator mass and drag parameters change the first stage separation point significantly. All of the optimised trajectory solutions show a distinct initial altitude raising manoeuvre performed by the scramjet accelerator, however, the size is inconsistent across optimised trajectory solutions, indicating that this manoeuvre is no longer solely a product of an efficiency trade-off between the first stage pitching and scramjet accelerator engine efficiency.
-In the maximum payload-to-orbit optimised trajectories calculated during the sensitivity analysis, it is observed that the trajectory angle at the first-second stage separation varies significantly between the optimised trajectories, with no discernible trend. When the scramjet accelerator is released at a high trajectory angle, the first stage is able to use more fuel, and fly a more efficient trajectory. In contrast to the trajectory with no fly-back,
-releasing the scramjet accelerator at a higher trajectory angle and altitude causes it to spend a significant amount of time in a low dynamic pressure environment, giving time for the bank angle to increase. The high bank angle is utilised during the descent of the scramjet accelerator onto the maximum dynamic pressure path, to rapidly change the heading of the scramjet accelerator. This mitigates some of the reduction in efficiency caused by a higher first-second separation point.
- A lower release angle results in the first stage flying a slightly less efficient trajectory. However, a lower release angle also results in the scramjet accelerator using its fuel more rapidly, and manoeuvring more at the beginning of its trajectory, which results in the fly-back requiring less fuel. 
-The trade-off between first stage efficiency and the initial operational efficiency of the scramjet accelerator appears to be close, and 
-for each particular trajectory optimisation one or the other is favoured with no clear trend. 
 
 
-It is also observed that there are two distinct return trajectory shapes for the return trajectory of the scramjet accelerator. The more common return trajectory shape has been shown in the preceding section, and consists of three or more large skips to begin the return trajectory. The second trajectory shape exhibits a small second skip, with the first two burns very closely spaced, or combined into one longer burn. An example of this second type of return trajectory is shown in Figure \ref{fig:ReturnComparison10}. During the first two burns, a higher bank angle is maintained when compared to the large skip trajectory shape, however, after the first two burns are completed, the bank angle is reduced more rapidly. 
+
+
+There are two distinct return trajectory shapes for the return trajectory of the scramjet accelerator. The more common return trajectory shape has been shown in the preceding section, and consists of three or more large skips to begin the return trajectory. The second trajectory shape exhibits a small second skip, with the first two burns very closely spaced, or combined into one longer burn. An example of this second type of return trajectory is shown in Figure \ref{fig:ReturnComparison}. During the first two burns, a higher bank angle is maintained when compared to the large skip trajectory shape, however, after the first two burns are completed, the bank angle is reduced more rapidly. 
 During simulations, it was observed that on occasion, the optimal return trajectory type would change as the initial guess or problem setup was altered, with no significant change in the payload-to-orbit capabilities of the launch system. This variability suggests that there is minimal difference between the two shapes of return trajectory, and that both can potentially lead to efficient return flights. 
 
 
@@ -1629,6 +1615,8 @@ These similar sensitivities indicate that the fly-back does not considerably eff
 \section{Comparison of Design Parameters with Fly-Back}
 %0.4/(50*0.01)/(1.5/(4957*0.01)) calculated like this
 
+% XXXX updated prior to 8/1 when discrepancies were found in results
+
 \begin{figure}[th]
 	\centering
 	\includegraphics[width=0.99\linewidth]{figures/6_FlyBack/BarChart}
@@ -1648,13 +1636,12 @@ The \textcolor{red}{unchanged} sensitivity of the launch system performance to t
 \section{Summary}
 
 In this chapter, the maximum payload-to-orbit trajectory for the SPARTAN rocket-scramjet-rocket system has been calculated, with the inclusion of the fly-back of the scramjet accelerator stage. It was found that this launch system is able to deliver \PayloadToOrbitStandard kg of payload to sun synchronous orbit, while successfully returning the scramjet-powered stage to the initial launch site. 
-This return flight decreases the payload-to-orbit by -19.0kg (-10\%), but removes the need for the costly and time consuming transportation of the scramjet accelerator after launch, which would be necessary if landing at a downrange location.
-During the return flight, the scramjet engines are powered on three times, in total using \returnFuelStandard kg of fuel for the return flight, 17.2\% of the scramjet accelerator's total fuel.
+This return flight decreases the payload-to-orbit by \textcolor{red}{-24.3kg (-15.5\%)}, but removes the need for the costly and time consuming transportation of the scramjet accelerator after launch that would be necessary if landing at a downrange location.
+During the return flight, the scramjet engines are powered on three times, in total using \returnFuelStandard kg of fuel for the return flight, \textcolor{red}{16.5}\% of the scramjet accelerator's total fuel.
 
 It was found that when the fly-back of the scramjet accelerator is included in the optimal trajectory calculation, the first stage of the launch system pitches in an easterly direction. 
-The launch system exhibits a first-second separation point of \firstsecondSeparationAltStandard km, an increase of 3.0km when compared to the maximum payload-to-orbit trajectory with no fly-back, and a trajectory angle of \firstsecondSeparationgammaStandard $^\circ$, an increase of 2.5$^\circ$. 
-This higher separation point allows the first stage to efficiently use 17943kg of fuel, as well as increasing its exergy efficiency to \firstExergyEffStandard \%$\eta$, increases of +758kg (+4.4\%) and +0.308\%$\eta$ (+4.9\%) respectively when compared to the maximum payload-to-orbit trajectory with no fly-back.
-In addition to increasing the fuel and exergy efficiency of the first stage, the higher first-second separation serves to increase the altitude of the scramjet accelerator at the beginning of its trajectory. This allows the scramjet accelerator time to increase its bank angle, so that when the scramjet accelerator descends it is able to change its heading angle rapidly. The scramjet accelerator maintains a high bank angle throughout its trajectory, executing a banking manoeuvre, and staying close to its maximum dynamic pressure. 
+The launch system exhibits a first-second separation point of \firstsecondSeparationAltStandard km and a trajectory angle of \firstsecondSeparationgammaStandard $^\circ$, \textcolor{red}{similar to the maximum payload-to-orbit trajectory with no fly-back. 
+In addition to increasing exergy efficiency of the first stage, when the return flight is included} the higher first-second separation point allows the scramjet accelerator time to increase its bank angle, so that when the scramjet accelerator descends it is able to change its heading angle rapidly. The scramjet accelerator maintains a high bank angle throughout its trajectory, executing a banking manoeuvre, and staying close to its maximum dynamic pressure. 
 This banking manoeuvre requires higher angles of attack, increasing the drag of the scramjet accelerator, but also reduces the ground distance necessary for the return of the scramjet accelerator, decreasing the amount of fuel necessary for fly-back and increasing the overall efficiency of the scramjet accelerator. 
 At the end of its acceleration, the scramjet accelerator was found to exhibit a pull-up manoeuvre before the separation of the third stage, in a similar fashion to the maximum payload-to-orbit trajectory with no fly-back. 
 
@@ -1663,9 +1650,9 @@ The initial turn takes place immediately after separation, and consists of the s
 During the boost-skip phase the scramjet accelerator exhibits multiple `skipping' manoeuvres. These skipping manoeuvres have been shown in previous literature to extend the flight range of hypersonic vehicles\cite{Moshman2014,Darby2011,Toso2015,Tetlow1992,Eggers1957,Kanda2007,Chai2015}, and serve to reduce the amount of fuel used during the fly-back.
 In addition, the skipping manoeuvres allow the scramjet engines to be powered on at the points where the specific impulse of the C-REST engines are highest, maximising the performance of the scramjet accelerator, and minimising the fuel necessary for return. 
 During the approach phase, the trajectory of the scramjet accelerator is smoothed, and the scramjet accelerator glides to the landing point. 
- The optimal trajectory terminates when scramjet accelerator reaches 1km altitude at a velocity of 120m/s. After this point, it is assumed that the scramjet accelerator lands on a traditional runway.  
+ The optimal trajectory terminates when scramjet accelerator reaches 0.1km altitude at a velocity of \textcolor{red}{95.2}m/s. After this point, it is assumed that the scramjet accelerator lands on a traditional runway.  
 This result indicates that it is feasible to return a hypersonic launch vehicle separated at a high Mach number to its initial launch site, and that a cost efficient mission profile for a rocket-scramjet-rocket launch system is attainable.  
 
 The sensitivity of the launch system to various design parameters has been investigated. 
-The payload-to-orbit sensitivity of the launch system to variations in the specific impulse, drag and structural mass of the scramjet accelerator was found to decrease when fly-back is included, compared to the sensitivity study with no fly-back. This decreased sensitivity indicates that the fly-back of the scramjet accelerator offsets some of the payload-to-orbit variation due to changes in these parameters. 
-It was found that the first-second separation conditions do not exhibit clear trends with scramjet accelerator performance when fly-back is included, in contrast to the trade-offs observed in Section \ref{sec:sensitivityNoReturn}. The disappearance of these trends indicates that when the fly-back of the scramjet accelerator is included, the first-second separation point is determined by a more complex trade-off. This trade-off involves the banking and manoeuvrability of the scramjet accelerator at the start of its acceleration, which affects the efficiency of the return flight. 
+The payload-to-orbit sensitivity of the launch system to variations in the specific impulse, drag, structural mass and fuel mass of the scramjet accelerator was found to decrease when fly-back is included, compared to the sensitivity study with no fly-back. This decreased sensitivity indicates that the fly-back of the scramjet accelerator offsets some of the payload-to-orbit variation due to changes in these parameters, \textcolor{red}{particularly due to increased velocity at third stage separation making the return flight of the scramjet accelerator more difficult}. \textcolor{red}{However, the sensitivity to the maximum dynamic pressure was found to increase, due to the more rapid fuel use when dynamic pressure is increased lowering the flight time of the scramjet accelerator, in turn reducing the distance flown during return.}
+
