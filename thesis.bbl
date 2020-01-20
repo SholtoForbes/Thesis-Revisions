@@ -253,65 +253,56 @@
 
   \entry{Smart2009a}{article}{}
     \name{author}{2}{}{%
-      {{hash=SMV}{%
-         family={Suraweera},
-         familyi={S\bibinitperiod},
-         given={Milinda\bibnamedelima V.},
-         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
          given={Michael\bibnamedelima K.},
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
+      {{hash=TMR}{%
+         family={Tetlow},
+         familyi={T\bibinitperiod},
+         given={Matthew\bibnamedelima R.},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{SMVSMK1}
-    \strng{fullhash}{SMVSMK1}
+    \strng{namehash}{SMKTMR1}
+    \strng{fullhash}{SMKTMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    A shock tunnel investigation of a scramjet with a
-  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
-  elliptical combustor has been$\backslash$nconducted at conditions simulating
-  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
-  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
-  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
-  began with a rearward facing step around its perimeter,$\backslash$nand was
-  followed by a constant area and diverging section. The
-  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
-  fuel was$\backslash$ninjected either through multiple portholes on the
-  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
-  at the combustor entrance,$\backslash$nor a combination of the two. All
-  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
-  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
-  Fuel injection in the intake produced$\backslash$nrobust combustion and good
-  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
-  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
-  was observed for fuel injection at the step at all
-  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
-  injection$\backslash$nwas observed to have the best performance. These
-  experimental results$\backslash$ndemonstrate that REST scramjets, designed
-  for access-to-space applications,$\backslash$ncan operate efficiently at
-  conditions below the design Mach number.%
+    Scramjet engines promise signiﬁcantly higher speciﬁc impulse than
+  rockets during the hypersonic phase of low- Earth-orbit insertion
+  trajectories. Despite this, scramjets are not used on any current systems due
+  to the difﬁculty of operating over the large Mach number envelope required
+  by this accelerating trajectory. The key to taking advantage of airbreathing
+  hypersonic engines for low-Earth-orbit insertion is to develop a multistage
+  system that makes use of the scramjet only within its high-performance
+  regime. A multistage rocket-scramjet-rocket system that accepts this
+  limitation has therefore been examined. This system includes a solid rocket
+  boost to Mach 6, a near-term Mach 612 hydrogen-fueled scramjet engine to
+  propel a reusable second stage, and a liquid-fueled ﬁnal-stage rocket.
+  Trajectory calculations for a system scaled to deliver approximately 100 kg
+  to a 200 km equatorial orbit indicate payload mass fractions of approximately
+  1.5\% with the use of a scramjet stage designed for low drag and efﬁcient
+  packaging. The goal of this work is to guide the future development of
+  scramjets by identifying the areas that will make the most signiﬁcant
+  improvement to their use for space access.%
     }
     \verb{doi}
-    \verb 10.2514/1.37946
+    \verb 10.2514/1.38784
     \endverb
-    \field{isbn}{9781563479373}
-    \field{issn}{0748-4658}
-    \field{number}{3}
-    \field{pages}{555\bibrangedash 564}
-    \field{title}{{Shock-Tunnel Experiments with a Mach 12
-  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/1.37946
-    \endverb
-    \field{volume}{25}
+    \field{isbn}{1563478269}
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{117\bibrangedash 125}
+    \field{title}{{Orbital Delivery of Small Payloads Using Hypersonic
+  Airbreathing Propulsion}}
+    \field{volume}{46}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MSmart2009.pdf:pdf
     \endverb
-    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2009}
   \endentry
 
@@ -617,34 +608,1126 @@
     \field{year}{1994}
   \endentry
 
-  \entry{Rao2009}{article}{}
+  \entry{Kors1988}{article}{}
     \name{author}{1}{}{%
-      {{hash=RA}{%
-         family={Rao},
+      {{hash=KDL}{%
+         family={Kors},
+         familyi={K\bibinitperiod},
+         given={David\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KDL1}
+    \strng{fullhash}{KDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Major advances in air breathing/combined cycle propulsion for hypersonic
+  flight during the past three decades are reviewed. A proliferation of
+  combined cycle concepts were identified and studied in sufficient detail to
+  permit trade-off analyses to be conducted during the 1950's and 1960's.
+  During the two decades from approximately 1965 to 1985 only limited research
+  was conducted on hypersonic air breathing propulsion. Summarized results of
+  these studies are reviewed, which represent the broad data base for recent
+  advances in combined cycle propulsion. The remainder of this paper discusses
+  propulsion related technology issues which must be addressed in future
+  combined cycle development programs. © 1988.%
+    }
+    \verb{doi}
+    \verb 10.1016/0094-5765(88)90099-9
+    \endverb
+    \field{issn}{00945765}
+    \field{number}{C}
+    \field{pages}{191\bibrangedash 200}
+    \field{title}{{Combined cycle propulsion for hypersonic flight}}
+    \field{volume}{18}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/kors1988.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{1988}
+  \endentry
+
+  \entry{Argus}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OJR}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={J\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BPX}{%
+         family={Bellini},
+         familyi={B\bibinitperiod},
+         given={P\bibnamedelima X},
+         giveni={P\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OJRBPX1}
+    \strng{fullhash}{OJRBPX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{AIAA 98-1557 Argus , a Highly Reusable SSTO Rocket- Based
+  Combined Cycle Launch Vehicle with Maglifter Launch Assist Georgia Institute
+  of Technology Atlanta , GA AIAA 8th International Space Planes and Hypersonic
+  Systems and Technologies Conference April }}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Argus.pdf:pdf
+    \endverb
+    \field{year}{1998}
+  \endentry
+
+  \entry{Powell1991}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PRW}{%
+         family={Powell},
+         familyi={P\bibinitperiod},
+         given={Richard\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CCI}{%
+         family={Cruz},
+         familyi={C\bibinitperiod},
+         given={Christopher\bibnamedelima I.},
+         giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=NJC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={J.\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PRW+1}
+    \strng{fullhash}{PRWSJDCCINJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Simulations are conducted to investigate a proposed NASA launch vehicle
+  that is fully reusable, takes off horizontally, and uses airbreathing
+  propulsion in a single stage. The propulsion model is based on a cycle
+  analysis method, and the vehicle is assumed to be a rigid structure with
+  distributed fuel, operating under a range of atmospheric conditions. The
+  program to optimize simulated trajectories (POST) is modified to include a
+  predictor-corrector guidance capability and then used to generate the
+  trajectories. Significant errors are encountered during the unpowered coast
+  phase due to uncertainty in the atmospheric density profile. The amount of
+  ascent propellant needed is shown to be directly related to the thrust-vector
+  angle and the location of the center of gravity of the vehicle because of the
+  importance of aim-drag losses to total ideal velocity.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.20719
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{4}
+    \field{pages}{834\bibrangedash 839}
+    \field{title}{{Ascent performance of an air-breathing horizontal-takeoff
+  launch vehicle}}
+    \field{volume}{14}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/powell.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{annotation}{%
+    This is a single stage vehicle which coasts to apogee%
+    }
+    \field{year}{1991}
+  \endentry
+
+  \entry{Trefny1999}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=TC}{%
+         family={Trefny},
+         familyi={T\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TC1}
+    \strng{fullhash}{TC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{35th Joint Propulsion Conference and Exhibit}
+    \verb{doi}
+    \verb 10.2514/6.1999-2730
+    \endverb
+    \field{number}{May}
+    \field{title}{{An Air-Breathing Concept Launch Vehicle for
+  Single-Stage-to-Orbit}}
+    \list{location}{1}{%
+      {Los Angeles, CA}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Trefny.pdf:pdf
+    \endverb
+    \field{year}{1999}
+  \endentry
+
+  \entry{Roche2000}{report}{}
+    \name{author}{2}{}{%
+      {{hash=RJM}{%
+         family={Roche},
          familyi={R\bibinitperiod},
-         given={Av},
+         given={Joseph\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KDN}{%
+         family={Kosareo},
+         familyi={K\bibinitperiod},
+         given={Daniel\bibnamedelima N},
+         giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RJMKDN1}
+    \strng{fullhash}{RJMKDN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In support of NASA's Air-Breathing Launch Vehicle (ABLV) study, a 25 000-1b
+  payload version of the GTX (formerly Trailblazer) reference vehicle concept
+  was developed. The GTX is a vertical lift-off, reusable,
+  single-stage-to-orbit launch vehicle concept that uses hypersonic
+  air-breathing propulsion in a rocket-based combined-cycle (RBCC) propulsion
+  system to reduce the required propellant fraction. To achieve this goal the
+  vehicle and propulsion system must be well integrated both aerodynamically
+  and structurally to reduce weight. This study demonstrates the volumetric and
+  structural efficiency of a vertical takeoff, horizontal landing, hyper- sonic
+  vehicle with a circular cross section. A departure from the lifting body
+  concepts, this design philosophy is even extended to the engines, which have
+  semicircular nacelles symmetrically mounted on the vehicle. Mate- rial
+  candidates with a potential for lightweight and simplicity have been selected
+  from a set of near term tech- nologies (5 to 10 years). To achieve the
+  mission trajectory, preliminary weight estimates show the vehicle's gross
+  lift-off weight is 1.26x106 lb. The structural configuration of the GTX
+  vehicle and its propulsion system%
+    }
+    \field{booktitle}{Access}
+    \field{number}{January 2001}
+    \field{title}{{Structural Sizing of a 25000-Lb Payload , Air-Breathing
+  Launch Vehicle for Single-Stage-To-Orbit}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/Roche.pdf:pdf
+    \endverb
+    \field{type}{techreport}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Pescetelli2012}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=PF}{%
+         family={Pescetelli},
+         familyi={P\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Minisci},
+         familyi={M\bibinitperiod},
+         given={Edmondo},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Maddock},
+         familyi={M\bibinitperiod},
+         given={Christie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TI}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PF+1}
+    \strng{fullhash}{PFMEMCTIBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper addresses the design of ascent trajectories for a hybrid-engine,
+  high performance, unmanned, single-stage-to-orbit vehicle for payload
+  deployment into low Earth orbit. A hybrid optimisation technique that couples
+  a population-based, stochastic algorithm with a deterministic, gradient-based
+  technique is used to maximize the final vehicle mass in low Earth orbit after
+  accounting for operational constraints on the dynamic pressure, Mach number
+  and maximum axial and normal accelerations. The control search space is first
+  explored by the population-based algorithm, which uses a single shooting
+  method to evaluate the performance of candidate solutions. The resultant
+  optimal control law and corresponding trajectory are then further refined by
+  a direct collocation method based on finite elements in time. Two distinct
+  operational phases, one using an air-breathing propulsion mode and the second
+  using rocket propulsion, are considered. The presence of uncertainties in the
+  atmospheric and vehicle aerodynamic models are considered in order to
+  quantify their effect on the performance of the vehicle. Firstly, the
+  deterministic optimal control law is re-integrated after introducing
+  uncertainties into the models. The proximity of the final solutions to the
+  target states are analysed statistically. A second analysis is then
+  performed, aimed at determining the best performance of the vehicle when
+  these uncertainties are included directly in the optimisation. The
+  statistical analysis of the results obtained are summarized by an expectancy
+  curve which represents the probable vehicle performance as a function of the
+  uncertain system parameters. This analysis can be used during the preliminary
+  phase of design to yield valuable insights into the robustness of the
+  performance of the vehicle to uncertainties in the specification of its
+  parameters. © 2012 by Richard E Brown, Edmondo Minisci, Christie Maddock,
+  Ian Taylor, Fabrizio Pescetelli.%
+    }
+    \field{booktitle}{18th AIAA/3AF International Space Planes and Hypersonic
+  Systems and Technologies Conference}
+    \verb{doi}
+    \verb 10.2514/6.2012-5828
+    \endverb
+    \field{isbn}{978-1-60086-931-0}
+    \field{number}{September}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{{Ascent Trajectory Optimisation for a Single-Stage-to-Orbit
+  Vehicle with Hybrid Propulsion}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2012-5828
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/Pescetelli.pdf:pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Young2006}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=YD}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kokan},
+         familyi={K\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tanner},
+         familyi={T\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Tanner},
+         familyi={T\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Wilhite},
+         familyi={W\bibinitperiod},
+         given={Alan},
          giveni={A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RA1}
-    \strng{fullhash}{RA1}
+    \strng{namehash}{YD+1}
+    \strng{fullhash}{YDKTTCCITCWA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{978-0-87703-557-2}
-    \field{pages}{497\bibrangedash 528}
-    \field{title}{{A survey of numerical methods for optimal control}}
+    \field{abstract}{%
+    Lazarus is an unmanned single stage reusable launch vehicle concept
+  utilizing advanced propulsion concepts such as rocket based combined cycle
+  engine (RBCC) and high energy density material (HEDM) propellants. These
+  advanced propulsion elements make the Lazarus launch vehicle both feasible
+  and viable in today's highly competitive market. The Lazarus concept is
+  powered by six rocket based combined cycle engines. These engines are
+  designed to operate with HEDM fuel and liquid oxygen (LOX). During
+  atmospheric flight the LOX is augmented by air traveling through the engines
+  and the resulting propellant mass fractions make single stage to orbit (SSTO)
+  possible. A typical hindrance to SSTO vehicles are the large wings and
+  landing gear necessary for takeoff of a fully fueled vehicle. The Lazarus
+  concept addresses this problem by using a sled to take off horizontally. This
+  sled accelerates the vehicle to over 500 mph using the launch vehicle engines
+  and a propellant cross feed system. This propellant feed system allows the
+  vehicle to accelerate using its own propulsion system without carrying the
+  necessary fuel required while it is attached to the sled. Lazarus is designed
+  to deliver 5,000 lbs of payload to a 100 nmi x 100 nmi x 28.5° orbit due
+  East out of Kennedy Space Center (KSC). This mission design allows for rapid
+  redeployment of small orbital assets with little launch preparation. Lazarus
+  is also designed for a secondary strike mission. The high speed and long
+  range inherent in a SSTO launch vehicle make it an ideal global strike
+  platform. Details of the conceptual design process used for Lazarus are
+  included in this paper. The disciplines used in the design include
+  aerodynamics, configuration, propulsion design, trajectory, mass properties,
+  cost, operations, reliability and safety. Each of these disciplines was
+  computed using a conceptual design tool similar to that used in industry.
+  These disciplines were then combined into an integrated design process and
+  used to minimize the gross weight of the Lazarus design. Nomenclature
+  $\alpha$ = angle-of-attack, ° AFRSI = Advanced Flexible Reusable Surface
+  Insulation CAD = computer aided design CER = cost estimating relationship c L
+  = coefficient of lift DDT\&E = design, development, test, \& evaluation DoD =
+  Department of Defense DSM = Design Structure Matrix EMA = electro-mechanical
+  actuators ESR = ejector scram-rocket GLOW = gross lift-off weight GRC = Glenn
+  Research Center HEDM = high energy density matter HTHL = horizontal takeoff,
+  horizontal landing IOC = initial operating capability Isp = specific impulse,
+  sec KSC = Kennedy Space Center LCC = life cycle cost LOX = liquid oxygen MECO
+  = main engine cutoff MER = mass estimating relationship MR = mass ratio
+  (gross weight / burnout weight) MSFC = Marshall Space Flight Center OMS =
+  orbital maneuvering system PEF = propellant packaging efficiency q = dynamic
+  pressure, psf RBCC = rocket based combined-cycle RCS = reaction control
+  system RLV = reusable launch vehicle SSTO = single-stage-to-orbit TFU =
+  theoretical first unit TPS = thermal protection system TUFI = Toughened
+  Unipiece Fibrous Insulation UHTC = Ultra-High Temperature Ceramic%
+    }
+    \field{booktitle}{14th AIAA/AHI Space Planes and Hypersonic Systems and
+  Technologies Conference}
+    \verb{doi}
+    \verb 10.2514/6.2006-8099
+    \endverb
+    \field{isbn}{978-1-62410-050-5}
+    \field{pages}{1\bibrangedash 15}
+    \field{title}{{Lazarus: A SSTO Hypersonic Vehicle Concept Utilizing RBCC
+  and HEDM Propulsion Technologies}}
     \verb{url}
-    \verb http://vdol.mae.ufl.edu/ConferencePublications/trajectorySurveyAAS.pd
+    \verb http://arc.aiaa.org/doi/10.2514/6.2006-8099
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/young.pdf:pdf
+    \endverb
+    \field{year}{2006}
+  \endentry
+
+  \entry{Bradford2000}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BJ}{%
+         family={Bradford},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OJ}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bechtel},
+         familyi={B\bibinitperiod},
+         given={Ryan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Cormier},
+         familyi={C\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Messitt},
+         familyi={M\bibinitperiod},
+         given={Donald},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJOJBRCTMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb doi:10.2514/6.2000-5136
+    \endverb
+    \field{number}{September}
+    \field{title}{{Exploration of the design space for the ABLV-GT SSTO
+  reusable launch vehicle}}
+    \verb{url}
+    \verb http://dx.doi.org/10.2514/6.2000-5136
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
+    \verb vision/Bradford.pdf:pdf
+    \endverb
+    \field{journaltitle}{Space 2000 Conference and Exposition}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Hyperion}{article}{}
+    \name{author}{6}{}{%
+      {{hash=OJ}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bradford},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Charania},
+         familyi={C\bibinitperiod},
+         given={Ashraf},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Ledsinger},
+         familyi={L\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={McCormick},
+         familyi={M\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sorensen},
+         familyi={S\bibinitperiod},
+         given={Kirk},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OJ+1}
+    \strng{fullhash}{OJBJCALLMDSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    This paper reports the findings of a conceptual launch vehicle design study
+  performed by members of the Space Systems Design Laboratory at Georgia Tech.
+  Hyperion is a conceptual design for an advanced reusable launch vehicle in
+  the Vision Vehicle class. It is a horizontal takeoff, horizontal landing
+  single-stage-to-orbit (SSTO) vehicle utilizing LOX/LH2 ejector scramjet
+  rocket-based combined cycle (RBCC) propulsion. Hyperion is designed to
+  deliver 20,000 lb. to low earth orbit from Kennedy Space Center. Gross weight
+  is estimated to be 800,700 lb. and dry weight is estimated to be 123,250 lb.
+  for this mission. Preliminary analysis suggests that, with sufficient launch
+  traffic, Hyperion recurring launch costs will be under \$200 per lb. of
+  payload delivered to low earth orbit. However, non-recurring costs including
+  development cost and acquisition of three airframes, is expected to be nearly
+  \$10.7B. The internal rate of return is only expected to be 8.24\%. Details
+  of the concept design including external and internal configuration, mass
+  properties, engine performance, trajectory analysis, aeroheating results, and
+  concept cost assessment are given. Highlights of the distributed,
+  collaborative design approach and a summary of trade study results are also
+  provided. NOMENCLATURE C t thrust coefficient I sp specific impulse (sec.) I*
+  equivalent trajectory averaged I sp (sec.) MR mass ratio (gross
+  weight/burnout weight) q dynamic pressure (psf) T/W e installed engine
+  thrust-to-weight%
+    }
+    \verb{doi}
+    \verb 10.2514/6.1999-4944
+    \endverb
+    \field{title}{{Hyperion - An SSTO vision vehicle concept utilizing
+  rocket-based combined cycle propulsion}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Hyperion.pdf:pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{Wilhite1991}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WAW}{%
+         family={Wilhite},
+         familyi={W\bibinitperiod},
+         given={Alan\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=EWC}{%
+         family={Engelund},
+         familyi={E\bibinitperiod},
+         given={Walter\bibnamedelima C.},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SDO}{%
+         family={Stanley},
+         familyi={S\bibinitperiod},
+         given={Douglas\bibnamedelima O.},
+         giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=NJC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={J\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WAW+1}
+    \strng{fullhash}{WAWEWCSDONJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Horizontal takeoff and landing two-stage systems with an airbreathing first
+  stage and rocket second stage are evaluated for staging Mach numbers that
+  range from 5 to 14. All systems are evaluated with advanced technologies
+  being developed in the NASP Program and sized to the same mission
+  requirements. With these advanced technologies, the two-stage systems are
+  heavier than the single stage. The weights of the two-stage systems are
+  closely related to staging. Using a rocket on the first stage to accelerate
+  from the turboramjet limit of Mach 6 to Mach 10 signiificantly decreases dry
+  weight as compared to the Mach 6-staged system. The optimum dry weight
+  staging Mach number for the scramjet two-stage system is Mach 12. At a 40
+  percent weight growth (current technology level), the scramjet two-stage
+  systems are half the weight and less sensitive to weight changes than the
+  single stage, but still require substantial technology development in the
+  areas of inlets, nozzles, ramjet propulsion, active cooling, and
+  high-temperature structures.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.26399
+    \endverb
+    \field{issn}{0022-4650}
+    \field{number}{1}
+    \field{pages}{31\bibrangedash 39}
+    \field{title}{{Technology and staging effects on two-stage-to-orbit
+  systems}}
+    \field{volume}{31}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Wilhite.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Fujikawa2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FT}{%
+         family={Fujikawa},
+         familyi={F\bibinitperiod},
+         given={Takahiro},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Tsuchiya},
+         familyi={T\bibinitperiod},
+         given={Takeshi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tomioka},
+         familyi={T\bibinitperiod},
+         given={Sadatake},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{combined cycle engine,conceptual design study,future space
+  transportation system,multidisciplinary design
+  optimization,rocket-based,two-stage-to-orbit reusable launch vehicle}
+    \strng{namehash}{FTTTTS1}
+    \strng{fullhash}{FTTTTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A fully reusable two-stage-to-orbit launch vehicle with ethanol-fueled
+  rocket-based combined cycle (RBCC) engines has been studied in Japan as a
+  promising option for future space transportation system. In this paper, a
+  conceptual design study of such a vehicle is conducted using
+  multidisciplinary design optimization (MDO) techniques in order to clarify a
+  technology goal for related technology development activities. An MDO
+  framework composed of coupled analysis disciplines (vehicle geometry, mass
+  property, aerodynamics, propulsion, and trajectory) is constructed. In
+  particular, consideration is given to the development of a simplified
+  numerical model for evaluating the airframe-propulsion integration that can
+  be incorporated into MDO studies, in contrast to costly CFD simulations.
+  Vehicle design and ascent trajectory are then simultaneously optimized with
+  the aim of minimizing the gross mass of the mated vehicle (booster and
+  orbiter). The gross mass of the obtained optimal design is 581 t for the
+  assumed mission of transporting an 800 kg payload into a low Earth orbit. A
+  detailed inspection of the solution reveals that an external nozzle of the
+  engines enhances not only the propulsion performance, but also longitudinal
+  static stability of the vehicle during hypersonic flight.%
+    }
+    \verb{doi}
+    \verb 10.2322/tjsass.60.265
+    \endverb
+    \field{issn}{0549-3811}
+    \field{number}{5}
+    \field{pages}{265\bibrangedash 275}
+    \field{title}{{Multidisciplinary Design Optimization of a
+  Two-Stage-to-Orbit Reusable Launch Vehicle with Ethanol-Fueled Rocket-Based
+  Combined Cycle Engines}}
+    \field{volume}{60}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Fujikawa.pdf:pdf
+    \endverb
+    \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
+  Space Sciences}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Mehta2001}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MUB}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={Unmeel\bibnamedelima B.},
+         giveni={U\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BJV}{%
+         family={Bowles},
+         familyi={B\bibinitperiod},
+         given={Jeffrey\bibnamedelima V.},
+         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MUBBJV1}
+    \strng{fullhash}{MUBBJV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A two-stage-to-orbit (TSTO) spaceplane concept developed in 1993
+  is$\backslash$nrevisited, and new information is provided to assist in the
+  development$\backslash$nof the next-generation space transportation vehicles.
+  The design$\backslash$nphilosophy, TSTO spaceplane concept, and the design
+  method are briefly$\backslash$ndescribed. A trade study between cold and hot
+  structures leads to$\backslash$nthe choice of cold structures with external
+  thermal protection systems.$\backslash$nThe optimal Mach number for staging
+  the second stage of the TSTO$\backslash$nspaceplane (with air-breathing
+  propulsion on the first stage) is$\backslash$n10, based on life-cycle cost
+  analysis. The performance and specification$\backslash$nof a
+  prototype/experimental (P/X) TSTO spaceplane with a
+  turbo/ram/scramjet$\backslash$npropulsion system and built-in growth
+  potential are presented and$\backslash$ndiscussed. The internal rate of
+  return on investment is the highest$\backslash$nfor the proposed TSTO
+  spaceplane, vis-a-vis a single-stage-to-orbit$\backslash$n(SSTO) rocket
+  vehicle and a TSTO spaceplane without built-in growth.$\backslash$nAdditional
+  growth potentials for the proposed spaceplane are suggested.$\backslash$nThis
+  spaceplane can substantially decrease access-to-space cost
+  and$\backslash$nrisk, and increase safety and reliability in the near term.
+  It can$\backslash$nbe a serious candidate for the next-generation space
+  transportation$\backslash$nsystem.%
+    }
+    \verb{doi}
+    \verb 10.2514/2.5886
+    \endverb
+    \field{issn}{0748-4658}
+    \field{number}{6}
+    \field{pages}{1149\bibrangedash 1161}
+    \field{title}{{Two-Stage-to-Orbit Spaceplane Concept with Growth
+  Potential}}
+    \field{volume}{17}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Mehta2001.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Takahashi1997}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TS}{%
+         family={Takahashi},
+         familyi={T\bibinitperiod},
+         given={Shinei},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mizobata},
+         familyi={M\bibinitperiod},
+         given={Kazuhide},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Sawada},
+         familyi={S\bibinitperiod},
+         given={Keisuke},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TSMKSK1}
+    \strng{fullhash}{TSMKSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A conceptual study of Japan’s unmanned two-stage-to-orbit launch vehicle
+  is described. The rst stage of the vehicle is reusable and has a wing-body
+  configuration and air-breathing engines as the propulsion system. The second
+  stage is expendable and rocket powered and is mounted under the fuselage of
+  the first stage. The assumed mission is to deliver a 2-ton payload to a
+  300-km circular orbit at various inclination angles. There is an acceptable
+  set of launch, landing, and emergency landing sites along the coast of the
+  Japanese islands, and the corresponding ight paths including those for
+  emergency landings can be de ned for several selected cases. Emphasis is
+  placed on showing the geographic advantage of Japan, which it is surrounded
+  by sea and with territory that stretches in a northeasterly direction. The
+  method of staging separation is also described.%
+    }
+    \verb{doi}
+    \verb 10.2514/2.3280
+    \endverb
+    \field{issn}{0022-4650}
+    \field{number}{5}
+    \field{pages}{628\bibrangedash 635}
+    \field{title}{{Conceptual Study of a Two-Stage, Air-Breathing Reusable
+  Launch Vehicle}}
+    \field{volume}{34}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Takahashi.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{annotation}{%
+    a pull-up to reduce dynamic pressure%
+    }
+    \field{year}{1997}
+  \endentry
+
+  \entry{Aberleen}{book}{}
+    \name{author}{1}{}{%
+      {{hash=vdAL}{%
+         prefix={van\bibnamedelima den},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Aberleen},
+         familyi={A\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{ALvd1}
+    \strng{fullhash}{ALvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9783319444703}
+    \field{pages}{176\bibrangedash 179}
+    \field{title}{{Spaceplane HERMES: Europe ’ s Dream of Independent Manned
+  Spaceflight Luc van den Abeelen}}
+    \list{location}{1}{%
+      {Cham, Switzerland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/2017\_Book\_Spacepl
+    \verb aneHERMES.pdf:pdf
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{Germain2001}{article}{}
+    \name{author}{6}{}{%
+      {{hash=GBS}{%
+         family={Germain},
+         familyi={G\bibinitperiod},
+         given={B\bibnamedelima St},
+         giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=OJR}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={J\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Mcintire},
+         familyi={M\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=ND}{%
+         family={Nelson},
+         familyi={N\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=WJ}{%
+         family={Weglian},
+         familyi={W\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=LL}{%
+         family={Ledsinger},
+         familyi={L\bibinitperiod},
+         given={L},
+         giveni={L},
+      }}%
+    }
+    \strng{namehash}{GBS+1}
+    \strng{fullhash}{GBSOJRMJNDWJLL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{July}
+    \field{title}{{AIAA 2001-3516 Starsaber : A Small Payload-Class TSTO
+  Vehicle Concept Utilizing Rocket-Based Combined Cycle Propulsion Georgia
+  Institute of Technology 37 th AIAA / ASME / SAE / ASEE Joint Propulsion
+  Conference And Exhibit Salt Lake City , Utah}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Starsaber.pdf:pdf
+    \endverb
+    \field{journaltitle}{Earth}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Eklund2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ED}{%
+         family={Eklund},
+         familyi={E\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+    }
+    \strng{namehash}{ED1}
+    \strng{fullhash}{ED1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    In order to counter newly emerging threats and offensive posturing from
+  hostile countries, the United States military has identified responsive space
+  access as a necessary capability to provide security and defense for the
+  nation. An option for enabling quick, on- demand space access involves
+  reusable transportation elements. Specifically, elements that incorporate
+  air-breathing propulsion systems to provide multi-role mission capabilities,
+  loiter capability, flyout, and abort options. These capabilities are not
+  generally possible on systems that only utilize rocket propulsion systems. In
+  support of this vision, the Air Force Research Lab has initiated concept
+  development studies in the area of combined-cycle propulsion systems applied
+  to reusable launch vehicles. The first product from this study has resulted
+  in the design of a space operations vehicle (SOV) referred to as the
+  Quicksat. This SOV is the first element of a two-stage launch vehicle concept
+  that uses combined-cycle air- breathing propulsion. The nominal system
+  launches and lands horizontally in addition to using non-cryogenic
+  propellants for improved operability in support of on-demand and responsive
+  launch scenarios. Additionally, the unique vehicle is capable of supporting
+  at least three unique missions: a) space maneuvering vehicle (SMV) delivery
+  to orbit, b) a hypersonic strike mission, and c) cargo delivery to LEO and
+  polar orbits.%
+    }
+    \verb{doi}
+    \verb 10.2514/6.2004-5950
+    \endverb
+    \field{number}{September}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{{Quicksat: A Two Stage to Orbit Reusable Launch Vehicle
+  Utilizing Air Breathing Propulsion for Responsive Space Access}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/QuickSat.pdf:pdf
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{Bradford2002}{article}{}
+    \name{author}{6}{}{%
+      {{hash=BJE}{%
+         family={Bradford},
+         familyi={B\bibinitperiod},
+         given={J\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=Ca}{%
+         family={Charania},
+         familyi={C\bibinitperiod},
+         given={a},
+         giveni={a},
+      }}%
+      {{hash=OJR}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={J\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Graham},
+         familyi={G\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=ES}{%
+         family={Engineering},
+         familyi={E\bibinitperiod},
+         given={Spaceworks},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GUSa}{%
+         family={Ga},
+         familyi={G\bibinitperiod},
+         given={U\bibnamedelima S\bibnamedelima a},
+         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJE+1}
+    \strng{fullhash}{BJECaOJRGMESGUSa1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{XCALIBUR : A VERTICAL TAKEOFF TSTO RLV CONCEPT WITH A HEDM
+  UPPERSTAGE AND A SCRAM-ROCKET BOOSTER 53rd International Astronautical
+  Congress The World Space Congress - 2002 10-19 Oct 2002 / Houston , Texas}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Xcalibur.pdf:pdf
+    \endverb
+    \field{journaltitle}{Director}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Kimura1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KT}{%
+         family={Kimura},
+         familyi={K\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=SK}{%
+         family={Sawada},
+         familyi={S\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+    }
+    \strng{namehash}{KTSK1}
+    \strng{fullhash}{KTSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/2.3500
+    \endverb
+    \field{issn}{00224650}
+    \field{number}{5}
+    \field{pages}{675\bibrangedash 680}
+    \field{title}{{Three-Stage Launch System with Scramjets}}
+    \field{volume}{36}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kimura1999.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Preller2018a}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={Preller},
+         familyi={P\bibinitperiod},
+         given={Dawid},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PD1}
+    \strng{fullhash}{PD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
+  Hypersonic Airbreathing Accelerating Vehicle}}
+    \list{institution}{1}{%
+      {The University of Queensland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/s804635\_fina
+    \verb l\_thesis.pdf:pdf
+    \endverb
+    \field{type}{Ph.D Dissertation}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Mcclinton2008}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MCR}{%
+         family={Mcclinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCR1}
+    \strng{fullhash}{MCR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    H. Julian Allen made an important observation in the 1958 21st Wright
+  Brothers Lecture 1: Progress in aeronautics has been brought about more by
+  revolutionary than evolutionary changes in methods of propulsion. Numerous
+  studies performed over the past 50 years show potential benefits of higher
+  speed flight systems for aircraft, missiles and spacecraft. These vehicles
+  will venture past classical supersonic speed, into hypersonic speed, where
+  perfect gas laws no longer apply. The revolutionary method of propulsion
+  which makes this possible is the Supersonic Combustion RAMJET, or SCRAMJET
+  engine. Will revolutionary applications of air-breathing propulsion in the
+  21st century make space travel routine and intercontinental travel as easy as
+  intercity travel is today? This presentation will reveal how this high speed
+  propulsion system works, what type of aerospace systems will benefit,
+  highlight challenges to development, discuss historic development (in the US
+  as an example), highlight accomplishments of the X-43 scramjet-powered
+  aircraft, and present what needs to be done next to complete this technology
+  development.%
+    }
+    \field{pages}{1\bibrangedash 1\bibrangedash 1\bibrangedash 32}
+    \field{title}{{High Speed / Hypersonic Aircraft Propulsion Technology
+  Development}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/McClinton2.pdf:pdf
+    \endverb
+    \field{journaltitle}{Advances on Propulsion Technology for High-Speed
+  Aircraft}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Bulirsch1995}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BR}{%
+         family={Bulirsch},
+         familyi={B\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+      {{hash=CK}{%
+         family={Chudej},
+         familyi={C\bibinitperiod},
+         given={K},
+         giveni={K},
+      }}%
+    }
+    \keyw{Navette spatiale,Optimisation,Optimizaci\'{o}n,Optimization,Space
+  shuttle,Trajectoire,Trajectory,Transbordador espacial,Trayectoria}
+    \strng{namehash}{BRCK1}
+    \strng{fullhash}{BRCK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{0342-068X}
+    \field{number}{1}
+    \field{pages}{55\bibrangedash 60}
+    \field{title}{{Combined optimization of trajectory and stage separation of
+  a hypersonic two-stage space vehicle}}
+    \field{volume}{19}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/bulirsch1995.pdf:pd
     \verb f
     \endverb
-    \field{volume}{135}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/AppData/Local/Mendeley Ltd./Mendeley D
-    \verb esktop/Downloaded/Rao - 2009 - A survey of numerical methods for opti
-    \verb mal control.pdf:pdf
+    \field{journaltitle}{Zeitschrift f\"{u}r Flugwissenschaften und
+  Weltraumforschung}
+    \field{year}{1995}
+  \endentry
+
+  \entry{BBC}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{BBC}
+    \field{title}{{Australia's hypersonic plane for a new space race}}
+    \verb{url}
+    \verb http://www.bbc.com/future/story/20161117-australias-hypersonic-spacep
+    \verb lane-for-a-new-space-race
     \endverb
-    \field{journaltitle}{Advances in the Astronautical Sciences}
-    \field{year}{2009}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Betts1998}{article}{}
@@ -691,19 +1774,6 @@
     \endverb
     \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
     \field{year}{1998}
-  \endentry
-
-  \entry{BBC}{misc}{}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{BBC}
-    \field{title}{{Australia's hypersonic plane for a new space race}}
-    \verb{url}
-    \verb http://www.bbc.com/future/story/20161117-australias-hypersonic-spacep
-    \verb lane-for-a-new-space-race
-    \endverb
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
   \endentry
 
   \entry{BlueOrigin}{misc}{}
@@ -1818,60 +2888,6 @@
     \field{year}{2014}
   \endentry
 
-  \entry{Bradford2000}{article}{}
-    \name{author}{5}{}{%
-      {{hash=BJ}{%
-         family={Bradford},
-         familyi={B\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=OJ}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BR}{%
-         family={Bechtel},
-         familyi={B\bibinitperiod},
-         given={Ryan},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=CT}{%
-         family={Cormier},
-         familyi={C\bibinitperiod},
-         given={Tim},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=MD}{%
-         family={Messitt},
-         familyi={M\bibinitperiod},
-         given={Donald},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BJ+1}
-    \strng{fullhash}{BJOJBRCTMD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb doi:10.2514/6.2000-5136
-    \endverb
-    \field{number}{September}
-    \field{title}{{Exploration of the design space for the ABLV-GT SSTO
-  reusable launch vehicle}}
-    \verb{url}
-    \verb http://dx.doi.org/10.2514/6.2000-5136
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/Bradford.pdf:pdf
-    \endverb
-    \field{journaltitle}{Space 2000 Conference and Exposition}
-    \field{year}{2000}
-  \endentry
-
   \entry{Dalle2011}{article}{}
     \name{author}{3}{}{%
       {{hash=DD}{%
@@ -2073,102 +3089,88 @@
     \endverb
   \endentry
 
-  \entry{WCC}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+  \entry{Olds1998}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=OJ}{%
+         family={Olds},
+         familyi={O\bibinitperiod},
+         given={J.R.},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=PSZ}{%
-         family={Pinckney},
-         familyi={P\bibinitperiod},
-         given={S\bibnamedelima Zane},
-         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=MJD}{%
-         family={Mcminn},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      {{hash=BI}{%
+         family={Budianto},
+         familyi={B\bibinitperiod},
+         given={I.a.},
+         giveni={I\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SJDPSZMJD1}
-    \strng{fullhash}{SJDPSZMJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
-  Configuration Model :}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
-    \endverb
-    \field{journaltitle}{Simulation}
-    \field{year}{1990}
-  \endentry
-
-  \entry{Powell1991}{article}{}
-    \name{author}{4}{}{%
-      {{hash=PRW}{%
-         family={Powell},
-         familyi={P\bibinitperiod},
-         given={Richard\bibnamedelima W.},
-         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D.},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=CCI}{%
-         family={Cruz},
-         familyi={C\bibinitperiod},
-         given={Christopher\bibnamedelima I.},
-         giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-      {{hash=NJC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={J.\bibnamedelima C.},
-         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PRW+1}
-    \strng{fullhash}{PRWSJDCCINJC1}
+    \strng{namehash}{OJBI1}
+    \strng{fullhash}{OJBI1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    Simulations are conducted to investigate a proposed NASA launch vehicle
-  that is fully reusable, takes off horizontally, and uses airbreathing
-  propulsion in a single stage. The propulsion model is based on a cycle
-  analysis method, and the vehicle is assumed to be a rigid structure with
-  distributed fuel, operating under a range of atmospheric conditions. The
-  program to optimize simulated trajectories (POST) is modified to include a
-  predictor-corrector guidance capability and then used to generate the
-  trajectories. Significant errors are encountered during the unpowered coast
-  phase due to uncertainty in the atmospheric density profile. The amount of
-  ascent propellant needed is shown to be directly related to the thrust-vector
-  angle and the location of the center of gravity of the vehicle because of the
-  importance of aim-drag losses to total ideal velocity.%
+    Future space transportation vehicles may well rely on high speed
+  airbreathing propulsion (ramjets and scramjets) to supply much of their
+  motive power. Because of the tradeoff relationship between engine thrust and
+  vehicle airframe weight, ascent trajectories are typically simulated using a
+  constant dynamic pressure phase during airbreathing acceleration. That is,
+  dynamic pressure is increased to benefit vehicle thrust up to some fixed
+  limit imposed by the vehicle structure. The constant dynamic pressure portion
+  of the trajectory typically begins around Mach 2 or 3 and continues to the
+  maximum airbreathing Mach number or until some convective aeroheating limit
+  is reached. This paper summarizes comparative research on three candidate
+  guidance methods suitable for simulating constant dynamic pressure
+  trajectories. These are generalized acceleration steering, linear feedback
+  control, and cubic polynomial control. All methods were implemented in POST
+  (Program to Optimize Simulated Trajectories) — an industry standard
+  trajectory simulation code. Both quantitative and qualitative comparisons of
+  these methods (i.e. in terms of computer processing time, number of required
+  iterations for convergence, sensitivity to quality of initial values,
+  accuracy and program robustness) are presented. Of the three methods, the
+  linear feedback control approach is found to be the most efficient and
+  robust, with good accuracy.%
     }
+    \field{booktitle}{Aerospace Sciences Meeting \& Exhibit}
     \verb{doi}
-    \verb 10.2514/3.20719
+    \verb 10.2514/6.1998-302
     \endverb
-    \field{issn}{0731-5090}
-    \field{number}{4}
-    \field{pages}{834\bibrangedash 839}
-    \field{title}{{Ascent performance of an air-breathing horizontal-takeoff
-  launch vehicle}}
-    \field{volume}{14}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/powell.pdf:pdf
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{{Constant Dynamic Pressure Trajectory Simulation with POST}}
+    \verb{url}
+    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.25.6506\&amp
+    \verb ;rep=rep1\&amp;type=pdf
     \endverb
-    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-    \field{annotation}{%
-    This is a single stage vehicle which coasts to apogee%
+    \list{location}{1}{%
+      {Reno, NV}%
     }
-    \field{year}{1991}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/JOlds1998.pdf:pdf
+    \endverb
+    \field{annotation}{%
+    this is a fairly good discussion of the constant dynamic pressure
+  trajectory%
+    }
+    \field{year}{1998}
+  \endentry
+
+  \entry{Mooij}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={Mooij},
+         familyi={M\bibinitperiod},
+         given={Erwin},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pringer}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Modeling and Optimization in Space Engineering}}
+    \field{year}{2019}
   \endentry
 
   \entry{Lu1993}{article}{}
@@ -2212,36 +3214,38 @@
     \field{year}{1993}
   \endentry
 
-  \entry{Aberleen}{book}{}
-    \name{author}{1}{}{%
-      {{hash=vdAL}{%
-         prefix={van\bibnamedelima den},
-         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
-         family={Aberleen},
-         familyi={A\bibinitperiod},
-         given={Luc},
-         giveni={L\bibinitperiod},
+  \entry{WCC}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PSZ}{%
+         family={Pinckney},
+         familyi={P\bibinitperiod},
+         given={S\bibnamedelima Zane},
+         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{ALvd1}
-    \strng{fullhash}{ALvd1}
+    \strng{namehash}{SJDPSZMJD1}
+    \strng{fullhash}{SJDPSZMJD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{9783319444703}
-    \field{pages}{176\bibrangedash 179}
-    \field{title}{{Spaceplane HERMES: Europe ’ s Dream of Independent Manned
-  Spaceflight Luc van den Abeelen}}
-    \list{location}{1}{%
-      {Cham, Switzerland}%
-    }
+    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
+  Configuration Model :}}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/2017\_Book\_Spacepl
-    \verb aneHERMES.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
     \endverb
-    \field{year}{2017}
+    \field{journaltitle}{Simulation}
+    \field{year}{1990}
   \endentry
 
   \entry{HyperX}{article}{}
@@ -2308,532 +3312,6 @@
     \field{year}{2005}
   \endentry
 
-  \entry{Roche2000}{report}{}
-    \name{author}{2}{}{%
-      {{hash=RJM}{%
-         family={Roche},
-         familyi={R\bibinitperiod},
-         given={Joseph\bibnamedelima M},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=KDN}{%
-         family={Kosareo},
-         familyi={K\bibinitperiod},
-         given={Daniel\bibnamedelima N},
-         giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RJMKDN1}
-    \strng{fullhash}{RJMKDN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In support of NASA's Air-Breathing Launch Vehicle (ABLV) study, a 25 000-1b
-  payload version of the GTX (formerly Trailblazer) reference vehicle concept
-  was developed. The GTX is a vertical lift-off, reusable,
-  single-stage-to-orbit launch vehicle concept that uses hypersonic
-  air-breathing propulsion in a rocket-based combined-cycle (RBCC) propulsion
-  system to reduce the required propellant fraction. To achieve this goal the
-  vehicle and propulsion system must be well integrated both aerodynamically
-  and structurally to reduce weight. This study demonstrates the volumetric and
-  structural efficiency of a vertical takeoff, horizontal landing, hyper- sonic
-  vehicle with a circular cross section. A departure from the lifting body
-  concepts, this design philosophy is even extended to the engines, which have
-  semicircular nacelles symmetrically mounted on the vehicle. Mate- rial
-  candidates with a potential for lightweight and simplicity have been selected
-  from a set of near term tech- nologies (5 to 10 years). To achieve the
-  mission trajectory, preliminary weight estimates show the vehicle's gross
-  lift-off weight is 1.26x106 lb. The structural configuration of the GTX
-  vehicle and its propulsion system%
-    }
-    \field{booktitle}{Access}
-    \field{number}{January 2001}
-    \field{title}{{Structural Sizing of a 25000-Lb Payload , Air-Breathing
-  Launch Vehicle for Single-Stage-To-Orbit}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/Roche.pdf:pdf
-    \endverb
-    \field{type}{techreport}
-    \field{year}{2000}
-  \endentry
-
-  \entry{Trefny1999}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=TC}{%
-         family={Trefny},
-         familyi={T\bibinitperiod},
-         given={Charles},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TC1}
-    \strng{fullhash}{TC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{35th Joint Propulsion Conference and Exhibit}
-    \verb{doi}
-    \verb 10.2514/6.1999-2730
-    \endverb
-    \field{number}{May}
-    \field{title}{{An Air-Breathing Concept Launch Vehicle for
-  Single-Stage-to-Orbit}}
-    \list{location}{1}{%
-      {Los Angeles, CA}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Trefny.pdf:pdf
-    \endverb
-    \field{year}{1999}
-  \endentry
-
-  \entry{Young2006}{inproceedings}{}
-    \name{author}{6}{}{%
-      {{hash=YD}{%
-         family={Young},
-         familyi={Y\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=KT}{%
-         family={Kokan},
-         familyi={K\bibinitperiod},
-         given={Timothy},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=TC}{%
-         family={Tanner},
-         familyi={T\bibinitperiod},
-         given={Christopher},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=CI}{%
-         family={Clark},
-         familyi={C\bibinitperiod},
-         given={Ian},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=TC}{%
-         family={Tanner},
-         familyi={T\bibinitperiod},
-         given={Christopher},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=WA}{%
-         family={Wilhite},
-         familyi={W\bibinitperiod},
-         given={Alan},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{YD+1}
-    \strng{fullhash}{YDKTTCCITCWA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Lazarus is an unmanned single stage reusable launch vehicle concept
-  utilizing advanced propulsion concepts such as rocket based combined cycle
-  engine (RBCC) and high energy density material (HEDM) propellants. These
-  advanced propulsion elements make the Lazarus launch vehicle both feasible
-  and viable in today's highly competitive market. The Lazarus concept is
-  powered by six rocket based combined cycle engines. These engines are
-  designed to operate with HEDM fuel and liquid oxygen (LOX). During
-  atmospheric flight the LOX is augmented by air traveling through the engines
-  and the resulting propellant mass fractions make single stage to orbit (SSTO)
-  possible. A typical hindrance to SSTO vehicles are the large wings and
-  landing gear necessary for takeoff of a fully fueled vehicle. The Lazarus
-  concept addresses this problem by using a sled to take off horizontally. This
-  sled accelerates the vehicle to over 500 mph using the launch vehicle engines
-  and a propellant cross feed system. This propellant feed system allows the
-  vehicle to accelerate using its own propulsion system without carrying the
-  necessary fuel required while it is attached to the sled. Lazarus is designed
-  to deliver 5,000 lbs of payload to a 100 nmi x 100 nmi x 28.5° orbit due
-  East out of Kennedy Space Center (KSC). This mission design allows for rapid
-  redeployment of small orbital assets with little launch preparation. Lazarus
-  is also designed for a secondary strike mission. The high speed and long
-  range inherent in a SSTO launch vehicle make it an ideal global strike
-  platform. Details of the conceptual design process used for Lazarus are
-  included in this paper. The disciplines used in the design include
-  aerodynamics, configuration, propulsion design, trajectory, mass properties,
-  cost, operations, reliability and safety. Each of these disciplines was
-  computed using a conceptual design tool similar to that used in industry.
-  These disciplines were then combined into an integrated design process and
-  used to minimize the gross weight of the Lazarus design. Nomenclature
-  $\alpha$ = angle-of-attack, ° AFRSI = Advanced Flexible Reusable Surface
-  Insulation CAD = computer aided design CER = cost estimating relationship c L
-  = coefficient of lift DDT\&E = design, development, test, \& evaluation DoD =
-  Department of Defense DSM = Design Structure Matrix EMA = electro-mechanical
-  actuators ESR = ejector scram-rocket GLOW = gross lift-off weight GRC = Glenn
-  Research Center HEDM = high energy density matter HTHL = horizontal takeoff,
-  horizontal landing IOC = initial operating capability Isp = specific impulse,
-  sec KSC = Kennedy Space Center LCC = life cycle cost LOX = liquid oxygen MECO
-  = main engine cutoff MER = mass estimating relationship MR = mass ratio
-  (gross weight / burnout weight) MSFC = Marshall Space Flight Center OMS =
-  orbital maneuvering system PEF = propellant packaging efficiency q = dynamic
-  pressure, psf RBCC = rocket based combined-cycle RCS = reaction control
-  system RLV = reusable launch vehicle SSTO = single-stage-to-orbit TFU =
-  theoretical first unit TPS = thermal protection system TUFI = Toughened
-  Unipiece Fibrous Insulation UHTC = Ultra-High Temperature Ceramic%
-    }
-    \field{booktitle}{14th AIAA/AHI Space Planes and Hypersonic Systems and
-  Technologies Conference}
-    \verb{doi}
-    \verb 10.2514/6.2006-8099
-    \endverb
-    \field{isbn}{978-1-62410-050-5}
-    \field{pages}{1\bibrangedash 15}
-    \field{title}{{Lazarus: A SSTO Hypersonic Vehicle Concept Utilizing RBCC
-  and HEDM Propulsion Technologies}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/6.2006-8099
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/young.pdf:pdf
-    \endverb
-    \field{year}{2006}
-  \endentry
-
-  \entry{Hyperion}{article}{}
-    \name{author}{6}{}{%
-      {{hash=OJ}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BJ}{%
-         family={Bradford},
-         familyi={B\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=CA}{%
-         family={Charania},
-         familyi={C\bibinitperiod},
-         given={Ashraf},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=LL}{%
-         family={Ledsinger},
-         familyi={L\bibinitperiod},
-         given={Laura},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=MD}{%
-         family={McCormick},
-         familyi={M\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=SK}{%
-         family={Sorensen},
-         familyi={S\bibinitperiod},
-         given={Kirk},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OJ+1}
-    \strng{fullhash}{OJBJCALLMDSK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper reports the findings of a conceptual launch vehicle design study
-  performed by members of the Space Systems Design Laboratory at Georgia Tech.
-  Hyperion is a conceptual design for an advanced reusable launch vehicle in
-  the Vision Vehicle class. It is a horizontal takeoff, horizontal landing
-  single-stage-to-orbit (SSTO) vehicle utilizing LOX/LH2 ejector scramjet
-  rocket-based combined cycle (RBCC) propulsion. Hyperion is designed to
-  deliver 20,000 lb. to low earth orbit from Kennedy Space Center. Gross weight
-  is estimated to be 800,700 lb. and dry weight is estimated to be 123,250 lb.
-  for this mission. Preliminary analysis suggests that, with sufficient launch
-  traffic, Hyperion recurring launch costs will be under \$200 per lb. of
-  payload delivered to low earth orbit. However, non-recurring costs including
-  development cost and acquisition of three airframes, is expected to be nearly
-  \$10.7B. The internal rate of return is only expected to be 8.24\%. Details
-  of the concept design including external and internal configuration, mass
-  properties, engine performance, trajectory analysis, aeroheating results, and
-  concept cost assessment are given. Highlights of the distributed,
-  collaborative design approach and a summary of trade study results are also
-  provided. NOMENCLATURE C t thrust coefficient I sp specific impulse (sec.) I*
-  equivalent trajectory averaged I sp (sec.) MR mass ratio (gross
-  weight/burnout weight) q dynamic pressure (psf) T/W e installed engine
-  thrust-to-weight%
-    }
-    \verb{doi}
-    \verb 10.2514/6.1999-4944
-    \endverb
-    \field{title}{{Hyperion - An SSTO vision vehicle concept utilizing
-  rocket-based combined cycle propulsion}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Hyperion.pdf:pdf
-    \endverb
-    \field{year}{2013}
-  \endentry
-
-  \entry{Argus}{article}{}
-    \name{author}{2}{}{%
-      {{hash=OJR}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={J\bibnamedelima R},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=BPX}{%
-         family={Bellini},
-         familyi={B\bibinitperiod},
-         given={P\bibnamedelima X},
-         giveni={P\bibinitperiod\bibinitdelim X\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OJRBPX1}
-    \strng{fullhash}{OJRBPX1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{AIAA 98-1557 Argus , a Highly Reusable SSTO Rocket- Based
-  Combined Cycle Launch Vehicle with Maglifter Launch Assist Georgia Institute
-  of Technology Atlanta , GA AIAA 8th International Space Planes and Hypersonic
-  Systems and Technologies Conference April }}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Argus.pdf:pdf
-    \endverb
-    \field{year}{1998}
-  \endentry
-
-  \entry{Olds1998}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=OJ}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={J.R.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BI}{%
-         family={Budianto},
-         familyi={B\bibinitperiod},
-         given={I.a.},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OJBI1}
-    \strng{fullhash}{OJBI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Future space transportation vehicles may well rely on high speed
-  airbreathing propulsion (ramjets and scramjets) to supply much of their
-  motive power. Because of the tradeoff relationship between engine thrust and
-  vehicle airframe weight, ascent trajectories are typically simulated using a
-  constant dynamic pressure phase during airbreathing acceleration. That is,
-  dynamic pressure is increased to benefit vehicle thrust up to some fixed
-  limit imposed by the vehicle structure. The constant dynamic pressure portion
-  of the trajectory typically begins around Mach 2 or 3 and continues to the
-  maximum airbreathing Mach number or until some convective aeroheating limit
-  is reached. This paper summarizes comparative research on three candidate
-  guidance methods suitable for simulating constant dynamic pressure
-  trajectories. These are generalized acceleration steering, linear feedback
-  control, and cubic polynomial control. All methods were implemented in POST
-  (Program to Optimize Simulated Trajectories) — an industry standard
-  trajectory simulation code. Both quantitative and qualitative comparisons of
-  these methods (i.e. in terms of computer processing time, number of required
-  iterations for convergence, sensitivity to quality of initial values,
-  accuracy and program robustness) are presented. Of the three methods, the
-  linear feedback control approach is found to be the most efficient and
-  robust, with good accuracy.%
-    }
-    \field{booktitle}{Aerospace Sciences Meeting \& Exhibit}
-    \verb{doi}
-    \verb 10.2514/6.1998-302
-    \endverb
-    \field{pages}{1\bibrangedash 13}
-    \field{title}{{Constant Dynamic Pressure Trajectory Simulation with POST}}
-    \verb{url}
-    \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.25.6506\&amp
-    \verb ;rep=rep1\&amp;type=pdf
-    \endverb
-    \list{location}{1}{%
-      {Reno, NV}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/JOlds1998.pdf:pdf
-    \endverb
-    \field{annotation}{%
-    this is a fairly good discussion of the constant dynamic pressure
-  trajectory%
-    }
-    \field{year}{1998}
-  \endentry
-
-  \entry{Pescetelli2012}{inproceedings}{}
-    \name{author}{5}{}{%
-      {{hash=PF}{%
-         family={Pescetelli},
-         familyi={P\bibinitperiod},
-         given={Fabrizio},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=ME}{%
-         family={Minisci},
-         familyi={M\bibinitperiod},
-         given={Edmondo},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=MC}{%
-         family={Maddock},
-         familyi={M\bibinitperiod},
-         given={Christie},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=TI}{%
-         family={Taylor},
-         familyi={T\bibinitperiod},
-         given={Ian},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=BR}{%
-         family={Brown},
-         familyi={B\bibinitperiod},
-         given={Richard},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PF+1}
-    \strng{fullhash}{PFMEMCTIBR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper addresses the design of ascent trajectories for a hybrid-engine,
-  high performance, unmanned, single-stage-to-orbit vehicle for payload
-  deployment into low Earth orbit. A hybrid optimisation technique that couples
-  a population-based, stochastic algorithm with a deterministic, gradient-based
-  technique is used to maximize the final vehicle mass in low Earth orbit after
-  accounting for operational constraints on the dynamic pressure, Mach number
-  and maximum axial and normal accelerations. The control search space is first
-  explored by the population-based algorithm, which uses a single shooting
-  method to evaluate the performance of candidate solutions. The resultant
-  optimal control law and corresponding trajectory are then further refined by
-  a direct collocation method based on finite elements in time. Two distinct
-  operational phases, one using an air-breathing propulsion mode and the second
-  using rocket propulsion, are considered. The presence of uncertainties in the
-  atmospheric and vehicle aerodynamic models are considered in order to
-  quantify their effect on the performance of the vehicle. Firstly, the
-  deterministic optimal control law is re-integrated after introducing
-  uncertainties into the models. The proximity of the final solutions to the
-  target states are analysed statistically. A second analysis is then
-  performed, aimed at determining the best performance of the vehicle when
-  these uncertainties are included directly in the optimisation. The
-  statistical analysis of the results obtained are summarized by an expectancy
-  curve which represents the probable vehicle performance as a function of the
-  uncertain system parameters. This analysis can be used during the preliminary
-  phase of design to yield valuable insights into the robustness of the
-  performance of the vehicle to uncertainties in the specification of its
-  parameters. © 2012 by Richard E Brown, Edmondo Minisci, Christie Maddock,
-  Ian Taylor, Fabrizio Pescetelli.%
-    }
-    \field{booktitle}{18th AIAA/3AF International Space Planes and Hypersonic
-  Systems and Technologies Conference}
-    \verb{doi}
-    \verb 10.2514/6.2012-5828
-    \endverb
-    \field{isbn}{978-1-60086-931-0}
-    \field{number}{September}
-    \field{pages}{1\bibrangedash 18}
-    \field{title}{{Ascent Trajectory Optimisation for a Single-Stage-to-Orbit
-  Vehicle with Hybrid Propulsion}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/6.2012-5828
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/papers found for re
-    \verb vision/Pescetelli.pdf:pdf
-    \endverb
-    \field{year}{2012}
-  \endentry
-
-  \entry{Mooij}{book}{}
-    \name{author}{1}{}{%
-      {{hash=ME}{%
-         family={Mooij},
-         familyi={M\bibinitperiod},
-         given={Erwin},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Pringer}%
-    }
-    \strng{namehash}{ME1}
-    \strng{fullhash}{ME1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Modeling and Optimization in Space Engineering}}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Wilhite1991}{article}{}
-    \name{author}{4}{}{%
-      {{hash=WAW}{%
-         family={Wilhite},
-         familyi={W\bibinitperiod},
-         given={Alan\bibnamedelima W.},
-         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=EWC}{%
-         family={Engelund},
-         familyi={E\bibinitperiod},
-         given={Walter\bibnamedelima C.},
-         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-      {{hash=SDO}{%
-         family={Stanley},
-         familyi={S\bibinitperiod},
-         given={Douglas\bibnamedelima O.},
-         giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod},
-      }}%
-      {{hash=NJC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={J\bibnamedelima C.},
-         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{WAW+1}
-    \strng{fullhash}{WAWEWCSDONJC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Horizontal takeoff and landing two-stage systems with an airbreathing first
-  stage and rocket second stage are evaluated for staging Mach numbers that
-  range from 5 to 14. All systems are evaluated with advanced technologies
-  being developed in the NASP Program and sized to the same mission
-  requirements. With these advanced technologies, the two-stage systems are
-  heavier than the single stage. The weights of the two-stage systems are
-  closely related to staging. Using a rocket on the first stage to accelerate
-  from the turboramjet limit of Mach 6 to Mach 10 signiificantly decreases dry
-  weight as compared to the Mach 6-staged system. The optimum dry weight
-  staging Mach number for the scramjet two-stage system is Mach 12. At a 40
-  percent weight growth (current technology level), the scramjet two-stage
-  systems are half the weight and less sensitive to weight changes than the
-  single stage, but still require substantial technology development in the
-  areas of inlets, nozzles, ramjet propulsion, active cooling, and
-  high-temperature structures.%
-    }
-    \verb{doi}
-    \verb 10.2514/3.26399
-    \endverb
-    \field{issn}{0022-4650}
-    \field{number}{1}
-    \field{pages}{31\bibrangedash 39}
-    \field{title}{{Technology and staging effects on two-stage-to-orbit
-  systems}}
-    \field{volume}{31}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Wilhite.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{1991}
-  \endentry
-
   \entry{Tsuchiya2005}{article}{}
     \name{author}{2}{}{%
       {{hash=TT}{%
@@ -2887,345 +3365,6 @@
     \endverb
     \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2005}
-  \endentry
-
-  \entry{Fujikawa2017}{article}{}
-    \name{author}{3}{}{%
-      {{hash=FT}{%
-         family={Fujikawa},
-         familyi={F\bibinitperiod},
-         given={Takahiro},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=TT}{%
-         family={Tsuchiya},
-         familyi={T\bibinitperiod},
-         given={Takeshi},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=TS}{%
-         family={Tomioka},
-         familyi={T\bibinitperiod},
-         given={Sadatake},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \keyw{combined cycle engine,conceptual design study,future space
-  transportation system,multidisciplinary design
-  optimization,rocket-based,two-stage-to-orbit reusable launch vehicle}
-    \strng{namehash}{FTTTTS1}
-    \strng{fullhash}{FTTTTS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A fully reusable two-stage-to-orbit launch vehicle with ethanol-fueled
-  rocket-based combined cycle (RBCC) engines has been studied in Japan as a
-  promising option for future space transportation system. In this paper, a
-  conceptual design study of such a vehicle is conducted using
-  multidisciplinary design optimization (MDO) techniques in order to clarify a
-  technology goal for related technology development activities. An MDO
-  framework composed of coupled analysis disciplines (vehicle geometry, mass
-  property, aerodynamics, propulsion, and trajectory) is constructed. In
-  particular, consideration is given to the development of a simplified
-  numerical model for evaluating the airframe-propulsion integration that can
-  be incorporated into MDO studies, in contrast to costly CFD simulations.
-  Vehicle design and ascent trajectory are then simultaneously optimized with
-  the aim of minimizing the gross mass of the mated vehicle (booster and
-  orbiter). The gross mass of the obtained optimal design is 581 t for the
-  assumed mission of transporting an 800 kg payload into a low Earth orbit. A
-  detailed inspection of the solution reveals that an external nozzle of the
-  engines enhances not only the propulsion performance, but also longitudinal
-  static stability of the vehicle during hypersonic flight.%
-    }
-    \verb{doi}
-    \verb 10.2322/tjsass.60.265
-    \endverb
-    \field{issn}{0549-3811}
-    \field{number}{5}
-    \field{pages}{265\bibrangedash 275}
-    \field{title}{{Multidisciplinary Design Optimization of a
-  Two-Stage-to-Orbit Reusable Launch Vehicle with Ethanol-Fueled Rocket-Based
-  Combined Cycle Engines}}
-    \field{volume}{60}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Fujikawa.pdf:pdf
-    \endverb
-    \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
-  Space Sciences}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Mehta2001}{article}{}
-    \name{author}{2}{}{%
-      {{hash=MUB}{%
-         family={Mehta},
-         familyi={M\bibinitperiod},
-         given={Unmeel\bibnamedelima B.},
-         giveni={U\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=BJV}{%
-         family={Bowles},
-         familyi={B\bibinitperiod},
-         given={Jeffrey\bibnamedelima V.},
-         giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MUBBJV1}
-    \strng{fullhash}{MUBBJV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A two-stage-to-orbit (TSTO) spaceplane concept developed in 1993
-  is$\backslash$nrevisited, and new information is provided to assist in the
-  development$\backslash$nof the next-generation space transportation vehicles.
-  The design$\backslash$nphilosophy, TSTO spaceplane concept, and the design
-  method are briefly$\backslash$ndescribed. A trade study between cold and hot
-  structures leads to$\backslash$nthe choice of cold structures with external
-  thermal protection systems.$\backslash$nThe optimal Mach number for staging
-  the second stage of the TSTO$\backslash$nspaceplane (with air-breathing
-  propulsion on the first stage) is$\backslash$n10, based on life-cycle cost
-  analysis. The performance and specification$\backslash$nof a
-  prototype/experimental (P/X) TSTO spaceplane with a
-  turbo/ram/scramjet$\backslash$npropulsion system and built-in growth
-  potential are presented and$\backslash$ndiscussed. The internal rate of
-  return on investment is the highest$\backslash$nfor the proposed TSTO
-  spaceplane, vis-a-vis a single-stage-to-orbit$\backslash$n(SSTO) rocket
-  vehicle and a TSTO spaceplane without built-in growth.$\backslash$nAdditional
-  growth potentials for the proposed spaceplane are suggested.$\backslash$nThis
-  spaceplane can substantially decrease access-to-space cost
-  and$\backslash$nrisk, and increase safety and reliability in the near term.
-  It can$\backslash$nbe a serious candidate for the next-generation space
-  transportation$\backslash$nsystem.%
-    }
-    \verb{doi}
-    \verb 10.2514/2.5886
-    \endverb
-    \field{issn}{0748-4658}
-    \field{number}{6}
-    \field{pages}{1149\bibrangedash 1161}
-    \field{title}{{Two-Stage-to-Orbit Spaceplane Concept with Growth
-  Potential}}
-    \field{volume}{17}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Mehta2001.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Propulsion and Power}
-    \field{year}{2001}
-  \endentry
-
-  \entry{Takahashi1997}{article}{}
-    \name{author}{3}{}{%
-      {{hash=TS}{%
-         family={Takahashi},
-         familyi={T\bibinitperiod},
-         given={Shinei},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=MK}{%
-         family={Mizobata},
-         familyi={M\bibinitperiod},
-         given={Kazuhide},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=SK}{%
-         family={Sawada},
-         familyi={S\bibinitperiod},
-         given={Keisuke},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TSMKSK1}
-    \strng{fullhash}{TSMKSK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A conceptual study of Japan’s unmanned two-stage-to-orbit launch vehicle
-  is described. The rst stage of the vehicle is reusable and has a wing-body
-  configuration and air-breathing engines as the propulsion system. The second
-  stage is expendable and rocket powered and is mounted under the fuselage of
-  the first stage. The assumed mission is to deliver a 2-ton payload to a
-  300-km circular orbit at various inclination angles. There is an acceptable
-  set of launch, landing, and emergency landing sites along the coast of the
-  Japanese islands, and the corresponding ight paths including those for
-  emergency landings can be de ned for several selected cases. Emphasis is
-  placed on showing the geographic advantage of Japan, which it is surrounded
-  by sea and with territory that stretches in a northeasterly direction. The
-  method of staging separation is also described.%
-    }
-    \verb{doi}
-    \verb 10.2514/2.3280
-    \endverb
-    \field{issn}{0022-4650}
-    \field{number}{5}
-    \field{pages}{628\bibrangedash 635}
-    \field{title}{{Conceptual Study of a Two-Stage, Air-Breathing Reusable
-  Launch Vehicle}}
-    \field{volume}{34}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Takahashi.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{annotation}{%
-    a pull-up to reduce dynamic pressure%
-    }
-    \field{year}{1997}
-  \endentry
-
-  \entry{Germain2001}{article}{}
-    \name{author}{6}{}{%
-      {{hash=GBS}{%
-         family={Germain},
-         familyi={G\bibinitperiod},
-         given={B\bibnamedelima St},
-         giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=OJR}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={J\bibnamedelima R},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=MJ}{%
-         family={Mcintire},
-         familyi={M\bibinitperiod},
-         given={J},
-         giveni={J},
-      }}%
-      {{hash=ND}{%
-         family={Nelson},
-         familyi={N\bibinitperiod},
-         given={D},
-         giveni={D},
-      }}%
-      {{hash=WJ}{%
-         family={Weglian},
-         familyi={W\bibinitperiod},
-         given={J},
-         giveni={J},
-      }}%
-      {{hash=LL}{%
-         family={Ledsinger},
-         familyi={L\bibinitperiod},
-         given={L},
-         giveni={L},
-      }}%
-    }
-    \strng{namehash}{GBS+1}
-    \strng{fullhash}{GBSOJRMJNDWJLL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{July}
-    \field{title}{{AIAA 2001-3516 Starsaber : A Small Payload-Class TSTO
-  Vehicle Concept Utilizing Rocket-Based Combined Cycle Propulsion Georgia
-  Institute of Technology 37 th AIAA / ASME / SAE / ASEE Joint Propulsion
-  Conference And Exhibit Salt Lake City , Utah}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Starsaber.pdf:pdf
-    \endverb
-    \field{journaltitle}{Earth}
-    \field{year}{2001}
-  \endentry
-
-  \entry{Eklund2012}{article}{}
-    \name{author}{1}{}{%
-      {{hash=ED}{%
-         family={Eklund},
-         familyi={E\bibinitperiod},
-         given={D},
-         giveni={D},
-      }}%
-    }
-    \strng{namehash}{ED1}
-    \strng{fullhash}{ED1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In order to counter newly emerging threats and offensive posturing from
-  hostile countries, the United States military has identified responsive space
-  access as a necessary capability to provide security and defense for the
-  nation. An option for enabling quick, on- demand space access involves
-  reusable transportation elements. Specifically, elements that incorporate
-  air-breathing propulsion systems to provide multi-role mission capabilities,
-  loiter capability, flyout, and abort options. These capabilities are not
-  generally possible on systems that only utilize rocket propulsion systems. In
-  support of this vision, the Air Force Research Lab has initiated concept
-  development studies in the area of combined-cycle propulsion systems applied
-  to reusable launch vehicles. The first product from this study has resulted
-  in the design of a space operations vehicle (SOV) referred to as the
-  Quicksat. This SOV is the first element of a two-stage launch vehicle concept
-  that uses combined-cycle air- breathing propulsion. The nominal system
-  launches and lands horizontally in addition to using non-cryogenic
-  propellants for improved operability in support of on-demand and responsive
-  launch scenarios. Additionally, the unique vehicle is capable of supporting
-  at least three unique missions: a) space maneuvering vehicle (SMV) delivery
-  to orbit, b) a hypersonic strike mission, and c) cargo delivery to LEO and
-  polar orbits.%
-    }
-    \verb{doi}
-    \verb 10.2514/6.2004-5950
-    \endverb
-    \field{number}{September}
-    \field{pages}{1\bibrangedash 20}
-    \field{title}{{Quicksat: A Two Stage to Orbit Reusable Launch Vehicle
-  Utilizing Air Breathing Propulsion for Responsive Space Access}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/QuickSat.pdf:pdf
-    \endverb
-    \field{year}{2012}
-  \endentry
-
-  \entry{Bradford2002}{article}{}
-    \name{author}{6}{}{%
-      {{hash=BJE}{%
-         family={Bradford},
-         familyi={B\bibinitperiod},
-         given={J\bibnamedelima E},
-         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=Ca}{%
-         family={Charania},
-         familyi={C\bibinitperiod},
-         given={a},
-         giveni={a},
-      }}%
-      {{hash=OJR}{%
-         family={Olds},
-         familyi={O\bibinitperiod},
-         given={J\bibnamedelima R},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=GM}{%
-         family={Graham},
-         familyi={G\bibinitperiod},
-         given={M},
-         giveni={M},
-      }}%
-      {{hash=ES}{%
-         family={Engineering},
-         familyi={E\bibinitperiod},
-         given={Spaceworks},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=GUSa}{%
-         family={Ga},
-         familyi={G\bibinitperiod},
-         given={U\bibnamedelima S\bibnamedelima a},
-         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
-  a\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BJE+1}
-    \strng{fullhash}{BJECaOJRGMESGUSa1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{XCALIBUR : A VERTICAL TAKEOFF TSTO RLV CONCEPT WITH A HEDM
-  UPPERSTAGE AND A SCRAM-ROCKET BOOSTER 53rd International Astronautical
-  Congress The World Space Congress - 2002 10-19 Oct 2002 / Houston , Texas}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Xcalibur.pdf:pdf
-    \endverb
-    \field{journaltitle}{Director}
-    \field{year}{2002}
   \endentry
 
   \entry{mochammad}{thesis}{}
@@ -3287,66 +3426,6 @@
     \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
   Space Sciences}
     \field{year}{2005}
-  \endentry
-
-  \entry{Kimura1999}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KT}{%
-         family={Kimura},
-         familyi={K\bibinitperiod},
-         given={T},
-         giveni={T},
-      }}%
-      {{hash=SK}{%
-         family={Sawada},
-         familyi={S\bibinitperiod},
-         given={K},
-         giveni={K},
-      }}%
-    }
-    \strng{namehash}{KTSK1}
-    \strng{fullhash}{KTSK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/2.3500
-    \endverb
-    \field{issn}{00224650}
-    \field{number}{5}
-    \field{pages}{675\bibrangedash 680}
-    \field{title}{{Three-Stage Launch System with Scramjets}}
-    \field{volume}{36}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kimura1999.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{1999}
-  \endentry
-
-  \entry{Preller2018a}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=PD}{%
-         family={Preller},
-         familyi={P\bibinitperiod},
-         given={Dawid},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PD1}
-    \strng{fullhash}{PD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
-  Hypersonic Airbreathing Accelerating Vehicle}}
-    \list{institution}{1}{%
-      {The University of Queensland}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/s804635\_fina
-    \verb l\_thesis.pdf:pdf
-    \endverb
-    \field{type}{Ph.D Dissertation}
-    \field{year}{2018}
   \endentry
 
   \entry{Jazra2013}{article}{}
@@ -3947,6 +4026,36 @@
     \endverb
     \field{journaltitle}{Arxiv}
     \field{year}{2015}
+  \endentry
+
+  \entry{Rao2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={Av},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RA1}
+    \strng{fullhash}{RA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-87703-557-2}
+    \field{pages}{497\bibrangedash 528}
+    \field{title}{{A survey of numerical methods for optimal control}}
+    \verb{url}
+    \verb http://vdol.mae.ufl.edu/ConferencePublications/trajectorySurveyAAS.pd
+    \verb f
+    \endverb
+    \field{volume}{135}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/AppData/Local/Mendeley Ltd./Mendeley D
+    \verb esktop/Downloaded/Rao - 2009 - A survey of numerical methods for opti
+    \verb mal control.pdf:pdf
+    \endverb
+    \field{journaltitle}{Advances in the Astronautical Sciences}
+    \field{year}{2009}
   \endentry
 
   \entry{Fasano2013}{book}{}
@@ -6469,6 +6578,70 @@
     \field{journaltitle}{Collection of Technical Papers - 25th AIAA Aerodynamic
   Measurement Technology and Ground Testing Conference}
     \field{year}{2006}
+  \endentry
+
+  \entry{Smart2009b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SMV}{%
+         family={Suraweera},
+         familyi={S\bibinitperiod},
+         given={Milinda\bibnamedelima V.},
+         giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMVSMK1}
+    \strng{fullhash}{SMVSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A shock tunnel investigation of a scramjet with a
+  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
+  elliptical combustor has been$\backslash$nconducted at conditions simulating
+  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
+  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
+  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
+  began with a rearward facing step around its perimeter,$\backslash$nand was
+  followed by a constant area and diverging section. The
+  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
+  fuel was$\backslash$ninjected either through multiple portholes on the
+  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
+  at the combustor entrance,$\backslash$nor a combination of the two. All
+  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
+  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
+  Fuel injection in the intake produced$\backslash$nrobust combustion and good
+  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
+  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
+  was observed for fuel injection at the step at all
+  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
+  injection$\backslash$nwas observed to have the best performance. These
+  experimental results$\backslash$ndemonstrate that REST scramjets, designed
+  for access-to-space applications,$\backslash$ncan operate efficiently at
+  conditions below the design Mach number.%
+    }
+    \verb{doi}
+    \verb 10.2514/1.37946
+    \endverb
+    \field{isbn}{9781563479373}
+    \field{issn}{0748-4658}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 564}
+    \field{title}{{Shock-Tunnel Experiments with a Mach 12
+  Rectangular-to-Elliptical Shape-Transition Scramjet at Offdesign Conditions}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/1.37946
+    \endverb
+    \field{volume}{25}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2009a.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{year}{2009}
   \endentry
 
   \entry{Administration1976}{book}{}

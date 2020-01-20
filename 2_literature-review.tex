@@ -2,7 +2,7 @@
 
 \cleardoublepage
 \chapter{Literature review}\label{chapter:literature-review}
-
+  \textcolor{red}{XXX need to format vehicle tables, like I have for the JAXA TSTO}
 
   \textcolor{red}{
   The study of airbreathing access-to-space systems has been undertaken in some form since the early days of space flight. The prospect of the efficient, cost effective, and reusable space access that airbreathing launch may provide is enticing, and many man-hours and billions of dollars has been expended researching airbreathing launch vehicles. However, airbreathing launch is yet to be realised, due to the large scientific and engineering challenges involved in sending an object to space using airbreathing propulsion. Research is ongoing across many fields and disciplines to develop the designs of airbreathing launch vehicles, including the designs of subsystems such as engines, thermal protection systems, and control systems that can cope with the unique requirements of sustained hypersonic flight. 
@@ -271,10 +271,11 @@ Constant dynamic pressure flight advantageous for an airbreathing accelerator du
 Although a constant dynamic pressure trajectory is likely to produce high efficiency flight for the high speed airbreathing portion of an ascent trajectory, there are a variety of factors that must be considered in designing the trajectory of a launch system. 
 For example, a constant dynamic pressure flight may produce suboptimal conditions for the switch from airbreathing engines to rocket power for exoatmospheric flight, causing the pull-up manoeuvres that have been noted. 
 At the end of airbreathing operation it is often more optimal for the vehicle to fly at less than maximum dynamic pressure for a time during airbreathing engine operation, allowing the trajectory angle and altitude to be raised before the rocket engines are powered-on. 
-This trajectory shape trades off the performance of the airbreathing engines for altitude before the rocket engines are powered on fully, and has been shown to be the optimal trajectory throughout the studies of the vehicles covered in Table XXX\cite{Powell1991,Trefny1999,Roche2000,Pescetelli2012,Young2006,Bradford2000}, as well as for generic trajectory optimisation studies that do not develop a detailed vehicle design\cite{Pescetelli2012,Mooij,Lu1993}.
+This trajectory shape trades off the performance of the airbreathing engines for altitude before the rocket engines are powered on fully, and has been shown to be the optimal trajectory throughout the studies of the vehicles covered in Table XXX\cite{Argus,Powell1991,Trefny1999,Roche2000,Pescetelli2012,Young2006,Bradford2000,Hyperion}, as well as for generic trajectory optimisation studies that do not develop a detailed vehicle design\cite{Pescetelli2012,Mooij,Lu1993}.
 A pull-up was found to be optimal for vehicles where the rocket engines are not ignited until circularization altitude\cite{Powell1991,Lu1993}, vehicles where the rocket engine is ignited immediately after airbreathing engine cut-off\cite{Trefny1999,Roche2000,Pescetelli2012} as well as for vehicles which operate in combined scramjet-rocket mode\cite{Young2006,Bradford2000}.
 For SSTO vehicles a pull-up manoeuvre is a trade-off between the altitude at airbreathing engine cut-off and the velocity achievable at cut-off. Due to the entire vehicle being lifted into orbit, this generally becomes a relatively simple problem of engine efficiency. The airbreathing engine is used for its high efficiency, until the dynamic pressure drops below the operable limit of the airbreathing engine, or until the thrust provided by the airbreathing engine is significantly counteracted by the effects of drag and gravity. 
 
+ \textcolor{red}{XXX I need something short about return trajectories, how they arent considered in these?}
   	
   \textcolor{red}{
   \subsection{Two-Stage Launch Systems} \label{sec:twostagelaunchers}
@@ -368,7 +369,7 @@ For SSTO vehicles a pull-up manoeuvre is a trade-off between the altitude at air
 	
 	$\cdot$Horizontal launch.
 	
-	$\cdot$Acceleration before the hypersonic regime is achieved steadily, with an increase in altitude at the transsonic 'pinch point' to reduce dynamic pressure. 
+	$\cdot$Acceleration before the hypersonic regime is achieved steadily, with an increase in altitude at the transonic 'pinch point' to reduce dynamic pressure. 
 	
 	$\cdot$During the hypersonic regime, a constant dynamic pressure of 2100lb/ft2 (100.5kPa) until Mach 10.
 	
@@ -540,6 +541,8 @@ Quicksat was designed by SpaceWorks Engineering and the Air Force Research Lab a
 \end{landscape}
 }
 
+\textcolor{red}{XXX Need to take into account bulirsch1995}
+
 The most studied alternative to single-stage-to-orbit for an airbreathing launch vehicle is the two-stage-to-orbit configuration. Table XXX provides a summary of the TSTO airbreathing launch systems that have gone through a detailed design process, along with their key design and trajectory features. The TSTO configuration generally separates the launch system into an airbreathing or airbreathing/rocket-powered 'booster' stage, and a rocket-powered 'orbiter' stage. This configuration allows for the separation of the booster stage after the airbreathing engines have ceased to be used. This separation removes a large fraction of the system mass, because airbreathing engines are generally complex and heavy systems. As a consequence of this mass reduction, the rocket engines used for the final acceleration to orbit may be considerably smaller, and therefore cheaper and lighter, while the inefficient mass scaling of the airbreathing engine systems may be mitigated. 
 A variety array of engine architectures can be observed in the TSTO vehicles shown in Table XXX. The booster stages are universally powered, at least in part, by airbreathing engines. RBCC engines are common, however some designs eschew the use of rocket engines in the booster stage altogether. This is possible due to the lessened emphasis on mass efficiency, enabling the use of multiple efficient, but relatively low-speed engines.
 The separation of the booster stage in multi-stage launch systems also allows for a relatively simpler return and landing of the booster stage, when compared to single-stage launch systems. The booster stage is separated at significantly less than orbital velocity, decreasing the structural and heating loads that it experiences during return flight. This lessens the weight of the TPS systems necessary for the booster vehicle, and simplifies the return process.
@@ -567,14 +570,20 @@ However these separation effects are likely to be significant, and a multi-stage
 
 \textcolor{red}{XXX I need to reqrite this a bit, include that MDO trajectories are often simplistic, and make it sound less like MDOs are just too complex to analyse..}
 
+\textcolor{red}{XXX I need to refocud this on to whether the trajectories are optimised or not, and what they show. Show that there is not concensus}
+
 While the stage separation point of a multi-stage launch system is often considered to be determined by the design dependent constraints of the launch system, the design process is iterative, and the design of a launch vehicle must also be based upon the trajectory path that is considered most efficient.
-In the launch vehicles that have been studied, a pull-up is often considered the 'optimal' flight path. This is frequently determined during a multidisciplinary design optimisation, where the trajectory and vehicle design are optimised together, with a pull-up generally occuring to the aerothermal limits of the second stage vehicle. This makes it impractical to determine which features of the trajectory are optimal in isolation, and which are dependent on vehicle design. 
+In the launch vehicles that have been studied, a pull-up is often considered the 'optimal' flight path. 
+While the optimal trajectory of a TSTO spaceplane has been investigated in isolation by Bulirsch and Chudej\cite{Bulirsch1995}, who indicate that a small pull-up under airbreathing power is optimal, but that constant dynamic pressure flight is not payload-optimal, the trajectories of these launchers are generally determined during a multidisciplinary design optimisation, where the trajectory and vehicle design are optimised together, with a pull-up generally occuring to the aerothermal limits of the second stage vehicle. This makes it impractical to determine which features of the trajectory are optimal in isolation, and which are dependent on vehicle design.  \textcolor{red}{XXX done know if I like this argument}
 Mehta \& Bowles\cite{Mehta2001} prescribe a 2g pull-up in order to ``lower dynamic pressures and to achieve the optimal launching flight path angle for the orbiter vehicle". This prescribed manoeuvre indicates that a pull-up before airbreathing-rocket transition is considered the optimal trajectory in isolation, although the specific optimal conditions are not investigated. 
 \textcolor{red}{XXX I also need to state here that pull-ups are considered under rocker or scram-rocket operation, like in XCALIBUR study}
 The antithesis to the consideration of a pull-up as optimal is presented by launcher studies that do not perform a pull-up, where the maximum dynamic pressure flight during airbreathing operation of a TSTO launch system is considered to produce maximum efficiency. \textcolor{red}{XCALIBUR study states this too, that if pure scramjets were used, flight would be at max q}
  This is the case for the Tohoku University Launcher, as well as the Starsaber. The Tohoku University Launcher maintains constant dynamic pressure until separation, and the rocket stage is performs the pull-up to orbit under its own power, while the Starsaber transitions to rocket mode during constant dynamic pressure flight, and pulls up under rocket power. This may indicate that it is preferable for the booster vehicle to stay close to maximum dynamic pressure during airbreathing operation, when it is able to do so. This is supported by a study by Staufenbiel\cite{Staufenbiel2000}, which investigated the effects of staging conditions on a second stage rocket in isolation, and concluded that "higher Mach numbers are preferable to increasing the flight-path angle above values of a few degrees". However, this study did not include an airbreathing stage optimisation, and specifically stated that the airbreathing stage must be included to determine optimal separation conditions\cite{Staufenbiel2000}. 
-Clearly there is some discrepancy between whether a pull-up is considered optimal for a multi-stage launch system without consideration of vehicle design effects. 
+Clearly there is some discrepancy between whether a pull-up is considered optimal for a multi-stage launch system without consideration of vehicle design effects.
+\textcolor{red}{XXX not a great argument} 
 These staging discrepancies, along with the varying trajectory shapes of TSTO launch systems in general, indicate that the trajectory of multi-stage airbreathing launch systems is heavily dependant on the general of the launch system, particularly the engines being used. It is certain that the trajectory and the design of multi-stage launch systems are heavily interlinked, and that both must be understood well before a detailed design is able to be achieved. \textcolor{red}{I need to state here that an airbreathing pull-up has not been directly shown to be optimal for a multi-stage system}
+
+\textcolor{red}{XXX I need to add something here about none of these doing proper investigations of the optimal trajectory shape or trade-offs}
 
 
   \textcolor{red}{
@@ -993,7 +1002,7 @@ High fidelity methods consist of Navier-Stokes CFD solvers such as Eilmer3/4\cit
 
 \subsubsection{Cart3D}\label{sec:Cart3d}
 \textcolor{red}{XXX Validate low mach no. paper and maybe discuss inviscid code at low mach numbers more (due to examiner comment)}
-\textcolor{red}{XXX Abenayake paper shows that cart is relatively accurate at high mach no.s but not so accurate at low M and doesnt have right trends at transsonic. Abenayake also estimates errors}
+\textcolor{red}{XXX Abenayake paper shows that cart is relatively accurate at high mach no.s but not so accurate at low M and doesnt have right trends at transonic. Abenayake also estimates errors}
 \textcolor{red}{XXX line this section up with uncertainty section (also line missile datcom section up)}
 Cart3D is an inviscid Euler solver CFD package, designed for use during preliminary vehicle design and analysis\cite{Almosnino2016}. Cart3D is computationally efficient and requires only a surface triangulation of the vehicle being analysed to initiate a simulation. Cart3D is utilised in this study due to its efficiency and ease of use, along with its demonstrated accuracy for hypersonic flow calculations\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a}. Cart3D features adjoint mesh adaptation, and uses cartesian `cut-cells' which intersect the surface, allowing complex geometries to be analysed automatically. The mesh automatically refines as the simulation progresses, reducing error. The absence of a requirement for a user generated mesh allows Cart3D to be easily applied to complex launch vehicle designs, as well as allowing for simple modification of control surface deflections and flight conditions. 
 Cart3D has been used extensively for aerodynamic simulations in preliminary design, including analysis of the plumes of the Skylon spaceplane\cite{Mehta2016}, HIFiRE-5\cite{Kimmel2010}, and in low sonic boom shape optimisations\cite{Aftosmis2011}. 
@@ -1004,6 +1013,8 @@ Cart3D has been used extensively for aerodynamic simulations in preliminary desi
 \label{fig:Skylon-Cart3D}
 \end{figure}
 Cart3D has shown good agreement when compared to experimental results for winged boosters at hypersonic speeds\cite{Sagerman2017}, as well as supersonic missiles\cite{Abeynayake} and aircraft\cite{Aftosmis2011}, and lifting bodies across wide Mach number ranges\cite{Almosnino2016a}.
+
+\textcolor{red}{XXX Change this bit}
 In addition, good agreement has been shown between Cart3D, experimental results, and full Navier-Stokes solutions for the HIFIRE-1 hypersonic test payload\cite{Sagerman2017}. The model of the HIFIRE-1 and pressure coefficient results at each pressure tap are shown in Figure \ref{fig:Cart3DComparisons}. 
 Good agreement is shown between Cart3D and experimental results at all nearly all tested locations, with the exception at an identified area of shock-induced boundary layer separation, which an inviscid solution does not capture\cite{Sagerman2017}. 
 This indicates that Cart3D matches experimental results well in regions where the flow can be closely approximated by an inviscid analysis, however, regions of separation cause the accuracy of Cart3D to diverge significantly. 

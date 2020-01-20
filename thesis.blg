@@ -2,13 +2,9 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: biblatex.bst
 Database file #1: thesis-blx.bib
 Database file #2: library.bib
-Repeated entry---line 2418 of file library.bib
+Repeated entry---line 737 of file library.bib
  : @techreport{firefly
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3170 of file library.bib
- : @article{Smart2009a
- :                    ,
-I'm skipping whatever remains of this entry
 Biblatex version: 3.3
-(There were 2 error messages)
+(There was 1 error message)

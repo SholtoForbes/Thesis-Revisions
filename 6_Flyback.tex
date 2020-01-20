@@ -16,7 +16,7 @@ In addition, if a launch site is used from which there is no downrange landing s
 	\label{fig:GroundTrackStandard}
 \end{figure}
 
-The fly-back of the scramjet accelerator requires turning-around the scramjet accelerator after third stage separation, covering the necessary ground distance for return, and decelerating to reduce the speed of the scramjet accelerator to landing approach velocity, while maintaining a suitable descent angle to allow for a controlled approach. 
+The fly-back of the scramjet accelerator requires turning-around the scramjet accelerator after third stage separation, covering the necessary ground distance for return, and decelerating to reduce the speed of the scramjet accelerator to landing approach speed, while maintaining a suitable descent angle to allow for a controlled approach. 
 The return of the scramjet accelerator to the initial launch site is included in the optimisation process to assess whether it is possible for the fly-back of the scramjet accelerator to be achieved as a part of the launch process, and to maximise the overall payload-to-orbit efficiency of the launch system. This is compared to the optimised, maximum payload-to-orbit trajectory without fly-back (detailed in Chapter \ref{chapter:Ascent}) to assess the detrimental effects of the fly-back on the performance of the launch system. 
 A sensitivity analysis is conducted, in a similar fashion to Chapter \ref{chapter:Ascent}. 
 This sensitivity analysis allows the influence of the fly-back of the scramjet accelerator on the design sensitivities of the launch system to be analysed.
@@ -91,7 +91,7 @@ This sensitivity analysis allows the influence of the fly-back of the scramjet a
 
 LODESTAR is used to optimise the trajectory of the rocket-scramjet-rocket launch system, including the return of the scramjet accelerator to its initial launch site. The optimised trajectory is shown in Figure \ref{fig:GroundTrackStandard}. 
 The rocket-scramjet-rocket launch system is shown to be able to successfully launch a small satellite to sun synchronous orbit, 
-while flying-back the scramjet accelerator to the initial launch site location, and approaching the landing site at appropriately low altitude and velocity to allow for landing. 
+while flying-back the scramjet accelerator to the initial launch site location, and approaching the landing site at appropriately low altitude and speed to allow for landing. 
 The optimised trajectory attains a payload mass to SSO of \PayloadToOrbitStandard kg, a \textcolor{red}{-24.3}kg (\textcolor{red}{-15.5}\%) reduction in payload mass compared to the optimised ascent-only trajectory, detailed in Chapter \ref{chapter:Ascent}. 
 The benefits of flying back the scramjet accelerator to its initial launch site, compared to the alternative of transporting the scramjet accelerator back to the launch site from a remote landing, are likely to far outweigh this associated reduction in payload. 
 
@@ -137,9 +137,9 @@ This indicates that the angle of attack, and consequently the allowable bank ang
 
 The higher angles of attack flown by the scramjet accelerator also have the consequence of decreasing the net specific impulse of the scramjet accelerator during its acceleration, with the maximum specific impulse being decreased by -\textcolor{red}{3.4}\%.
 The overall exergy efficiency of the scramjet accelerator is decreased, to \secondExergyEffStandard\%$\eta$, a decrease of \textcolor{red}{-0.643}\%$\eta$ (\textcolor{red}{-14.6}\%) compared to the maximum payload-to-orbit trajectory with no fly-back. This exergy efficiency decrease is due partially to the decrease in the specific impulse of the scramjet engines, but more significantly is attributed to the fuel necessary for the return flight resulting in less fuel being available for the ascent of the scramjet accelerator, and thus less `useful' work being attained from the total fuel mass.
-A total fuel mass of \textcolor{red}{1304.2}kg is used during the scramjet accelerator's acceleration, out of a total of 1562kg of available fuel. This reduction in fuel mass used, along with the reduction in net specific impulse due to the higher angle of attack values, reduces the velocity at second-third stage separation by \textcolor{red}{-134.0}m/s (\textcolor{red}{-5.1}\%) compared to the maximum payload-to-orbit case with no scramjet accelerator fly-back. The scramjet accelerator pulls up to \secondthirdSeparationAltStandard km altitude and \secondthirdSeparationgammaStandard $^\circ$ trajectory angle before the second-third stage separation, a difference of only \textcolor{red}{-0.94}km (\textcolor{red}{-2.1}\%) and \textcolor{red}{+0.4}$^\circ$ (\textcolor{red}{+3.3}\%) compared to the maximum payload-to-orbit trajectory without fly-back, indicating that the inclusion of fly-back does not have a large effect on the magnitude of the pull-up manoeuvre. 
+A total fuel mass of \textcolor{red}{1304.2}kg is used during the scramjet accelerator's acceleration, out of a total of 1562kg of available fuel. This reduction in fuel mass used, along with the reduction in net specific impulse due to the higher angle of attack values, reduces the speed at second-third stage separation by \textcolor{red}{-134.0}m/s (\textcolor{red}{-5.1}\%) compared to the maximum payload-to-orbit case with no scramjet accelerator fly-back. The scramjet accelerator pulls up to \secondthirdSeparationAltStandard km altitude and \secondthirdSeparationgammaStandard $^\circ$ trajectory angle before the second-third stage separation, a difference of only \textcolor{red}{-0.94}km (\textcolor{red}{-2.1}\%) and \textcolor{red}{+0.4}$^\circ$ (\textcolor{red}{+3.3}\%) compared to the maximum payload-to-orbit trajectory without fly-back, indicating that the inclusion of fly-back does not have a large effect on the magnitude of the pull-up manoeuvre. 
 
-The exergy efficiency of the third stage is decreased by \textcolor{red}{-2.386}\%$\eta$ (\textcolor{red}{-15.4}\%) when compared to the maximum payload-to-orbit trajectory with no scramjet accelerator fly-back. This lowered efficiency is primarily due to the lower velocity of the third stage release, which increases the losses of the third stage due to propulsive inefficiencies. 
+The exergy efficiency of the third stage is decreased by \textcolor{red}{-2.386}\%$\eta$ (\textcolor{red}{-15.4}\%) when compared to the maximum payload-to-orbit trajectory with no scramjet accelerator fly-back. This lowered efficiency is primarily due to the lower speed of the third stage release, which increases the losses of the third stage due to propulsive inefficiencies. 
 
 
 \begin{figure}[ht!]% updated 14/8/19
@@ -192,11 +192,13 @@ It is notable that the \textcolor{red}{angle of attack is controlled in this way
 
 After the final small skip, at \textcolor{red}{1046.0}s flight time, the angle of attack is adjusted, so that a gradual, controlled descent is initiated. 
 After the skip phase, as the vehicle is approaching Mach 1, the angle of attack is reduced gradually to bring the scramjet accelerator down below 1km altitude, in a controlled manner. At \textcolor{red}{1455.0}s, the bank angle is increased, in order to perform a final adjustment of the heading angle, to bring the scramjet accelerator to the desired end location. 
-The scramjet accelerator drops below 1km altitude at \textcolor{red}{-17.0}$^\circ$ trajectory angle and \textcolor{red}{95.2}m/s velocity (Mach 0.28). It is assumed that the scramjet accelerator is able to perform a landing manoeuvre after this point. 
+The scramjet accelerator drops below 1km altitude at \textcolor{red}{-17.0}$^\circ$ trajectory angle and a speed of \textcolor{red}{95.2}m/s (Mach 0.28). It is assumed that the scramjet accelerator is able to perform a landing manoeuvre after this point. 
 
 
-
-
+\textcolor{red}{
+	\section{Discussion of Uncertainties}
+	}
+\textcolor{red}{XXX put a little comparison with section without return here}
 
 \section{Energy Usage Analysis}
 
@@ -320,7 +322,7 @@ An energy usage analysis is conducted for a maximum payload-to-orbit trajectory,
 
 
 The fly-back of the scramjet accelerator reduces the fuel, and thus the fuel exergy, available to the scramjet accelerator during ascent.
-This lower exergy, along with the altered manoeuvrability needs of the scramjet accelerator when the fly-back is included, results in a raising of the altitude and trajectory angle at the first-second stage separation. The increased altitude and trajectory angle at separation increases the fuel mass that the first stage rocket is able to use efficiently, and also increases the exergy efficiency of the first stage, partly compensating for the decrease in the efficiency of the scramjet accelerator due to fly-back. Overall, when the fly-back is included, more of the exergy of the first stage is utilised imparting energy upon the combination of the payload and the successive stages, at \textcolor{red}{6.92}\% (\textcolor{red}{13.97} GJ), compared to \textcolor{red}{6.87}\% (\textcolor{red}{13.87} GJ) without scramjet accelerator fly-back. This is due to the rocket flying a more efficient trajectory, with lower drag and propulsive losses, terminating at a higher altitude and velocity.
+This lower exergy, along with the altered manoeuvrability needs of the scramjet accelerator when the fly-back is included, results in a raising of the altitude and trajectory angle at the first-second stage separation. The increased altitude and trajectory angle at separation increases the fuel mass that the first stage rocket is able to use efficiently, and also increases the exergy efficiency of the first stage, partly compensating for the decrease in the efficiency of the scramjet accelerator due to fly-back. Overall, when the fly-back is included, more of the exergy of the first stage is utilised imparting energy upon the combination of the payload and the successive stages, at \textcolor{red}{6.92}\% (\textcolor{red}{13.97} GJ), compared to \textcolor{red}{6.87}\% (\textcolor{red}{13.87} GJ) without scramjet accelerator fly-back. This is due to the rocket flying a more efficient trajectory, with lower drag and propulsive losses, terminating at a higher altitude and speed.
 
 
 
@@ -361,7 +363,8 @@ During simulations, it was observed that on occasion, the optimal return traject
 
 
 \subsection{Case 12: Maximum Dynamic Pressure Sensitivity with Fly-Back}
-\begin{table}[ht]% updated 30/12/19
+-xxx not updated
+\begin{table}[ht]% updated 11/1/20
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $q_{max}$:
@@ -371,156 +374,148 @@ During simulations, it was observed that on occasion, the optimal return traject
 		&52.5kPa
 		&55kPa
 		& $\Delta/\Delta$/\%$q_{max}$
-		\\
-		\hline \textbf{Payload to Orbit (kg)}
-		& \textbf{\PayloadToOrbitqForty}
-		& \textbf{\PayloadToOrbitqFortyFive}
-		& \textbf{\PayloadToOrbitqStandard}
-		& \textbf{\PayloadToOrbitqFiftyFive}
-		& \textbf{\PayloadToOrbitqSixty}
-		&\textbf{1.4}
-		\\
-		\textbf{Payload Variation (\%)}
-		& \PayloadVarqForty
-		& \PayloadVarqFortyFive
-		& \PayloadVarqStandard
-		& \PayloadVarqFiftyFive
-		& \PayloadVarqSixty
-		&1.09
-		\\
-		\textbf{Total $\eta_{exergy}$ (\%)}
-		& \textbf{\totalExergyEffqForty}
-		& \textbf{\totalExergyEffqFortyFive}
-		& \textbf{\totalExergyEffqStandard}
-		& \textbf{\totalExergyEffqFiftyFive}
-		& \textbf{\totalExergyEffqSixty}
-		& \textbf{0.00014}
-		\\
-		\hline 
-		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\firstExergyEffqForty}
-		& \textbf{\firstExergyEffqFortyFive}
-		& \textbf{\firstExergyEffqStandard}
-		& \textbf{\firstExergyEffqFiftyFive}
-		& \textbf{\firstExergyEffqSixty}
-		& -
-		\\
-		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-		& \firstsecondSeparationAltqForty
-		& \firstsecondSeparationAltqFortyFive
-		& \firstsecondSeparationAltqStandard
-		& \firstsecondSeparationAltqFiftyFive
-		& \firstsecondSeparationAltqSixty
-		&-0.09
-		\\
-		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-		& \firstsecondSeparationvqForty
-		& \firstsecondSeparationvqFortyFive
-		& \firstsecondSeparationvqStandard
-		& \firstsecondSeparationvqFiftyFive
-		& \firstsecondSeparationvqSixty
-		& -
-		\\
-		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-		& \firstsecondSeparationgammaqForty
-		& \firstsecondSeparationgammaqFortyFive
-		& \firstsecondSeparationgammaqStandard
-		& \firstsecondSeparationgammaqFiftyFive
-		& \firstsecondSeparationgammaqSixty
-		& -
-		\\
-		\hline 
-		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\secondExergyEffqForty}
-		& \textbf{\secondExergyEffqFortyFive}
-		& \textbf{\secondExergyEffqStandard}
-		& \textbf{\secondExergyEffqFiftyFive}
-		& \textbf{\secondExergyEffqSixty}
-		& -
-		\\
-		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-		& \secondthirdSeparationAltqForty
-		& \secondthirdSeparationAltqFortyFive
-		& \secondthirdSeparationAltqStandard
-		& \secondthirdSeparationAltqFiftyFive
-		& \secondthirdSeparationAltqSixty
-		& -
-		\\
-		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-		& \secondthirdSeparationvqForty
-		& \secondthirdSeparationvqFortyFive
-		& \secondthirdSeparationvqStandard
-		& \secondthirdSeparationvqFiftyFive
-		& \secondthirdSeparationvqSixty
-		& -
-		\\
-		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-		& \secondthirdSeparationgammaqForty
-		& \secondthirdSeparationgammaqFortyFive
-		& \secondthirdSeparationgammaqStandard
-		& \secondthirdSeparationgammaqFiftyFive
-		& \secondthirdSeparationgammaqSixty
-		& -
-		\\
-		\textbf{2$^{nd}$ Stage Flight Time (s)}
-		& \secondFlightTimeqForty
-		& \secondFlightTimeqFortyFive
-		& \secondFlightTimeqStandard
-		& \secondFlightTimeqFiftyFive
-		& \secondFlightTimeqSixty
-		&-5.73
-		\\
-		\textbf{2$^{nd}$ Stage Distance Flown (km)}
-		& \SecondDistqForty
-		& \SecondDistqFortyFive
-		& \SecondDistqStandard
-		& \SecondDistqFiftyFive
-		& \SecondDistqSixty
-		&-8.33
-		\\
-		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
-		& \returnFuelqForty
-		& \returnFuelqFortyFive
-		& \returnFuelqStandard
-		& \returnFuelqFiftyFive
-		& \returnFuelqSixty
-		& -
-		\\
-		\textbf{2$^{nd}$ Stage Return Distance (km)}
-		& \returnDistqForty
-		& \returnDistqFortyFive
-		& \returnDistqStandard
-		& \returnDistqFiftyFive
-		& \returnDistqSixty
-		& -
-		\\
-		\hline 
-		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\thirddExergyEffqForty}
-		& \textbf{\thirddExergyEffqFortyFive}
-		& \textbf{\thirddExergyEffqStandard}
-		& \textbf{\thirddExergyEffqFiftyFive}
-		& \textbf{\thirddExergyEffqSixty}
-		& \textbf{0.146}
-		\\
-		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-		& \thirdqOverFiveqForty
-		& \thirdqOverFiveqFortyFive
-		& \thirdqOverFiveqStandard
-		& \thirdqOverFiveqFiftyFive
-		& \thirdqOverFiveqSixty
-		& -
-		\\
-		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-		& \thirdmFuelqForty
-		& \thirdmFuelqFortyFive
-		& \thirdmFuelqStandard
-		& \thirdmFuelqFiftyFive
-		& \thirdmFuelqSixty
-		&-1.44
-		\\
-		\hline 
-	\end{tabular} 
+			\\
+			\hline \textbf{Payload to Orbit (kg)}
+			& \textbf{\PayloadToOrbitqForty}
+			& \textbf{\PayloadToOrbitqFortyFive}
+			& \textbf{\PayloadToOrbitqStandard}
+			& \textbf{\PayloadToOrbitqFiftyFive}
+			& \textbf{\PayloadToOrbitqSixty}
+			&\textbf{1.4}
+			\\
+			\textbf{Total $\eta_{exergy}$ (\%)}
+			& \textbf{\totalExergyEffqForty}
+			& \textbf{\totalExergyEffqFortyFive}
+			& \textbf{\totalExergyEffqStandard}
+			& \textbf{\totalExergyEffqFiftyFive}
+			& \textbf{\totalExergyEffqSixty}
+			& \textbf{0.00014}
+			\\
+			\hline 
+			\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
+			& \textbf{\firstExergyEffqForty}
+			& \textbf{\firstExergyEffqFortyFive}
+			& \textbf{\firstExergyEffqStandard}
+			& \textbf{\firstExergyEffqFiftyFive}
+			& \textbf{\firstExergyEffqSixty}
+			& -
+			\\
+			\textbf{Separation Alt, 1$\rightarrow$2 (km)}
+			& \firstsecondSeparationAltqForty
+			& \firstsecondSeparationAltqFortyFive
+			& \firstsecondSeparationAltqStandard
+			& \firstsecondSeparationAltqFiftyFive
+			& \firstsecondSeparationAltqSixty
+			&-0.09
+			\\
+			\textbf{Separation v, 1$\rightarrow$2 (m/s)}
+			& \firstsecondSeparationvqForty
+			& \firstsecondSeparationvqFortyFive
+			& \firstsecondSeparationvqStandard
+			& \firstsecondSeparationvqFiftyFive
+			& \firstsecondSeparationvqSixty
+			& -
+			\\
+			\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
+			& \firstsecondSeparationgammaqForty
+			& \firstsecondSeparationgammaqFortyFive
+			& \firstsecondSeparationgammaqStandard
+			& \firstsecondSeparationgammaqFiftyFive
+			& \firstsecondSeparationgammaqSixty
+			& -
+			\\
+			\hline 
+			\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
+			& \textbf{\secondExergyEffqForty}
+			& \textbf{\secondExergyEffqFortyFive}
+			& \textbf{\secondExergyEffqStandard}
+			& \textbf{\secondExergyEffqFiftyFive}
+			& \textbf{\secondExergyEffqSixty}
+			& -
+			\\
+			\textbf{Separation Alt, 2$\rightarrow$3 (km)}
+			& \secondthirdSeparationAltqForty
+			& \secondthirdSeparationAltqFortyFive
+			& \secondthirdSeparationAltqStandard
+			& \secondthirdSeparationAltqFiftyFive
+			& \secondthirdSeparationAltqSixty
+			& -
+			\\
+			\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
+			& \secondthirdSeparationvqForty
+			& \secondthirdSeparationvqFortyFive
+			& \secondthirdSeparationvqStandard
+			& \secondthirdSeparationvqFiftyFive
+			& \secondthirdSeparationvqSixty
+			& -
+			\\
+			\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
+			& \secondthirdSeparationgammaqForty
+			& \secondthirdSeparationgammaqFortyFive
+			& \secondthirdSeparationgammaqStandard
+			& \secondthirdSeparationgammaqFiftyFive
+			& \secondthirdSeparationgammaqSixty
+			& -
+			\\
+			\textbf{2$^{nd}$ Stage Flight Time (s)}
+			& \secondFlightTimeqForty
+			& \secondFlightTimeqFortyFive
+			& \secondFlightTimeqStandard
+			& \secondFlightTimeqFiftyFive
+			& \secondFlightTimeqSixty
+			&-5.73
+			\\
+			\textbf{2$^{nd}$ Stage Distance Flown (km)}
+			& \SecondDistqForty
+			& \SecondDistqFortyFive
+			& \SecondDistqStandard
+			& \SecondDistqFiftyFive
+			& \SecondDistqSixty
+			&-8.33
+			\\
+			\textbf{2$^{nd}$ Stage Return Fuel (kg)}
+			& \returnFuelqForty
+			& \returnFuelqFortyFive
+			& \returnFuelqStandard
+			& \returnFuelqFiftyFive
+			& \returnFuelqSixty
+			& -
+			\\
+			\textbf{2$^{nd}$ Stage Return Distance (km)}
+			& \returnDistqForty
+			& \returnDistqFortyFive
+			& \returnDistqStandard
+			& \returnDistqFiftyFive
+			& \returnDistqSixty
+			& -
+			\\
+			\hline 
+			\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
+			& \textbf{\thirddExergyEffqForty}
+			& \textbf{\thirddExergyEffqFortyFive}
+			& \textbf{\thirddExergyEffqStandard}
+			& \textbf{\thirddExergyEffqFiftyFive}
+			& \textbf{\thirddExergyEffqSixty}
+			& \textbf{0.146}
+			\\
+			\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
+			& \thirdqOverFiveqForty
+			& \thirdqOverFiveqFortyFive
+			& \thirdqOverFiveqStandard
+			& \thirdqOverFiveqFiftyFive
+			& \thirdqOverFiveqSixty
+			& -
+			\\
+			\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
+			& \thirdmFuelqForty
+			& \thirdmFuelqFortyFive
+			& \thirdmFuelqStandard
+			& \thirdmFuelqFiftyFive
+			& \thirdmFuelqSixty
+			&-1.44
+			\\
+			\hline 
+		\end{tabular} 
 	\caption{Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the scramjet accelerator, with fly-back (Case 12).}
 	\label{tab:qvarreturn}
 \end{table}
@@ -557,14 +552,6 @@ However, in all cases, increasing the maximum dynamic pressure improves the mano
 		& \textbf{\PayloadToOrbitCdOneHundredFive}
 		& \textbf{\PayloadToOrbitCdOneHundredTen}
 		&\textbf{-1.8}
-		\\
-		\textbf{Payload Variation (\%)}
-		& \PayloadVarCdNinety
-		& \PayloadVarCdNinetyFive
-		& \PayloadVarCdStandard
-		& \PayloadVarCdOneHundredFive
-		& \PayloadVarCdOneHundredTen
-		&-1.34
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffCdNinety}
@@ -736,14 +723,6 @@ The release altitude and trajectory angle serve to initiate the first skip of th
 		& \textbf{\PayloadToOrbitIspOneHundredTen}
 		&\textbf{1.7}
 		\\
-		\textbf{Payload Variation (\%)}
-		& \PayloadVarIspNinety
-		& \PayloadVarIspNinetyFive
-		& \PayloadVarIspStandard
-		& \PayloadVarIspOneHundredFive
-		& \PayloadVarIspOneHundredTen
-		&1.27
-		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffIspNinety}
 		& \textbf{\totalExergyEffIspNinetyFive}
@@ -898,9 +877,9 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 
 
 \subsection{Case 15: Scramjet Accelerator Mass Sensitivity with Fly-Back}\label{sec:m2var}
+-xxx not updated
 
-
-\begin{table}[ht] % UPDATED 31/12/19
+\begin{table}[ht] % UPDATED 11/1/20
 \centering
 \begin{tabular}{l c c c c c c} 
 	\hline \textbf{Trajectory Condition}   \qquad  $m_{2}$:
@@ -918,14 +897,6 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \textbf{\PayloadToOrbitmSPARTANOneHundredFive}
 	& \textbf{\PayloadToOrbitmSPARTANOneHundredTen}
 	&\textbf{-1.4}
-	\\
-	\textbf{Payload Variation (\%)}
-	& \PayloadVarmSPARTANNinety
-	& \PayloadVarmSPARTANNinetyFive
-	& \PayloadVarmSPARTANStandard
-	& \PayloadVarmSPARTANOneHundredFive
-	& \PayloadVarmSPARTANOneHundredTen
-	&-1.05
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffmSPARTANNinety}
@@ -983,7 +954,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \secondthirdSeparationAltmSPARTANStandard
 	& \secondthirdSeparationAltmSPARTANOneHundredFive
 	& \secondthirdSeparationAltmSPARTANOneHundredTen
-	&-0.09
+	& -
 	\\
 	\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
 	& \secondthirdSeparationvmSPARTANNinety
@@ -1048,7 +1019,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 	& \thirdqOverFivemSPARTANStandard
 	& \thirdqOverFivemSPARTANOneHundredFive
 	& \thirdqOverFivemSPARTANOneHundredTen
-	&0.14
+	& -
 	\\
 	\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 	& \thirdmFuelmSPARTANNinety
@@ -1064,6 +1035,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 \label{tab:comparison101}
 \end{table}
 
+-xxx lost 2-3 separation alt sensitivity and 3rd stage over 5kpa sensitivity
 
 The mass of the scramjet accelerator is varied by \textcolor{red}{$\pm$10}\% to investigate the sensitivity of the launch system performance to the structural mass of the second stage, with the inclusion of scramjet accelerator fly-back. As in Section \ref{sec:SpartanMassnoreturn}, the mass is varied by only \textcolor{red}{$\pm$10}\% in order to limit the variation in the velocity of the first-second separation.
 Table \ref{tab:comparison101} details key parameters of each trajectory, and Appendix \ref{sec:app_comparison101} shows comparison plots.
@@ -1099,14 +1071,6 @@ In contrast to the mass sensitivity study without fly-back, the second-third sta
 	& \textbf{\PayloadToOrbitmFuelOneHundredFive}
 	& \textbf{\PayloadToOrbitmFuelOneHundredTen}
 	&\textbf{0.6}
-	\\
-	\textbf{Payload Variation (\%)}
-	& \PayloadVarmFuelNinety
-	& \PayloadVarmFuelNinetyFive
-	& \PayloadVarmFuelStandard
-	& \PayloadVarmFuelOneHundredFive
-	& \PayloadVarmFuelOneHundredTen
-	&0.47
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffmFuelNinety}
@@ -1259,8 +1223,8 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 
 
 \subsection{Case 17: Third Stage Mass Sensitivity with Fly-Back}
-
-\begin{table}[ht]% updated 31/12/19
+-xxx not updated
+\begin{table}[ht]% updated 11/1/20
 	\centering
 	\begin{tabular}{l c c c c c c} 
 		\hline \textbf{Trajectory Condition}   \qquad  $m_{3}$:
@@ -1277,14 +1241,6 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 		& \textbf{\PayloadToOrbitmThreeStandard}
 		& \textbf{\PayloadToOrbitmThreeOneHundredFive}
 		& \textbf{\PayloadToOrbitmThreeOneHundredTen}
-		& -
-		\\
-		\textbf{Payload Variation (\%)}
-		& \PayloadVarmThreeNinety
-		& \PayloadVarmThreeNinetyFive
-		& \PayloadVarmThreeStandard
-		& \PayloadVarmThreeOneHundredFive
-		& \PayloadVarmThreeOneHundredTen
 		& -
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
@@ -1433,8 +1389,8 @@ As was observed in Section \ref{sec:m3noReturn}, there is no linear trends with 
 
 \subsection{Case 18: Third Stage Specific Impulse Sensitivity with Fly-Back}
 
-
-\begin{table}[ht]
+-xxx not updated
+\begin{table}[ht]%11/1/20
 
 	\centering
 	\begin{tabular}{l c c c c c c} 
@@ -1453,14 +1409,6 @@ As was observed in Section \ref{sec:m3noReturn}, there is no linear trends with 
 		& \textbf{\PayloadToOrbitISPThreeOneHundredFive}
 		& \textbf{\PayloadToOrbitISPThreeOneHundredTen}
 		&\textbf{11}
-		\\
-		\textbf{Payload Variation (\%)}
-		& \PayloadVarISPThreeNinety
-		& \PayloadVarISPThreeNinetyFive
-		& \PayloadVarISPThreeStandard
-		& \PayloadVarISPThreeOneHundredFive
-		& \PayloadVarISPThreeOneHundredTen
-		&8.31
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffISPThreeNinety}
@@ -1583,7 +1531,7 @@ As was observed in Section \ref{sec:m3noReturn}, there is no linear trends with 
 		& \thirdqOverFiveISPThreeStandard
 		& \thirdqOverFiveISPThreeOneHundredFive
 		& \thirdqOverFiveISPThreeOneHundredTen
-		&-4.98
+		& -
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelISPThreeNinety
@@ -1598,6 +1546,7 @@ As was observed in Section \ref{sec:m3noReturn}, there is no linear trends with 
 	\caption{Comparison of key trajectory parameters with variation in the specific impulse of the third stage, with fly-back (Case 18).}
 	\label{tab:isp3}
 \end{table}
+-xxx lost 3rd stage over 5kpa trend
 
 The specific impulse of the third stage rocket is varied by $\pm$10\% to investigate the sensitivity of the launch system to the performance of the third stage rocket, when the fly-back of the scramjet accelerator is included. 
 Table \ref{tab:isp3} shows selected performance indicators, while Appendix \ref{sec:app_comparison91} shows comparison plots of the maximum payload-to-orbit trajectory at each third stage specific impulse. \textcolor{red}{Negative payload-to-orbit is produced at 90\% specific impulse, indicating that it is not possible for the third stage to reach the required orbit at this specific impulse. }

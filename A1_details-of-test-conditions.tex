@@ -383,7 +383,7 @@ The aerothermal effects on a launch vehicle may also be reduced by limiting the 
 As such, to investigate the effects of limiting the maximum aerothermal heating on the SPARTAN's scramjet accelerator in a computationally efficient manner, the stagnation point heat flux is calculated in-loop using a cold wall approximation ($T_W/T_{AW} \approx 0$). This calculation of the heat flux is conservative, however it is useful for applying limits to the heat loading for optimal trajectory investigation. Stagnation point heat flux limits of 1700, 1600, 1500 and 1400kW are applied, based on the maximum non-limited stagnation point heat flux calculated using a cold-wall approximation, of 1770kW. Optimised trajectories calculated with these heat flux limits applied to the scramjet accelerator stage are presented in Table \ref{tab:stagLim}, and the trajectories of the scramjet stages are shown in Figure \ref{fig:SecondStageheatlimComparison}. 
 
 From Table \ref{tab:stagLim} and Figure \ref{fig:SecondStageheatlimComparison} it can be observed that limiting the stagnation point heat flux has a significant effect on the optimised trajectory. However, it is also evident that the effects of the 1700kW and 1600kW limits are small, compared to the effects of 1500kW and 1400kW limits. 
-This sharp change in trajectory shapes is caused by a distinct cut-off point at which the scramjet stage is no longer able to perform the manoeuvres necessary to perform a pull-up. When stagnation point heat flux is limited to 1700 or 1600kW, the scramjet stage compensates by flying a slower, higher trajectory after release from the first stage rocket, reaching maximum dynamic pressure later, and performing a larger pull-up. This flight path limits the velocity of the scramjet stage and manoeuvres into a favourable position, while still performing a pull-up manoeuvre. In these cases, maximum heat flux is only reached at the start of the pull-up manoeuvre. However, when the stagnation point heating rate is limited to 1500kW or 1400kW, the trajectory changes significantly. For these limits, the beginning of the scramjet stage trajectory conforms with the non-limited optimal flight path, but the stagnation point heating limit causes the scramjet stage to leave maximum dynamic pressure and climb in the middle of the trajectory, reducing efficiency and manoeuvrability, and removing the ability of the scramjet accelerator stage to perform a pull-up manoeuvre. This cut-off point is primarily driven by the lower limit on the velocity of the scramjet accelerator during flight, which limits the start-of-trajectory manoeuvres performed to enable the pull-up in the 1700kW and 1600kW heating limited trajectories. 
+This sharp change in trajectory shapes is caused by a distinct cut-off point at which the scramjet stage is no longer able to perform the manoeuvres necessary to perform a pull-up. When stagnation point heat flux is limited to 1700 or 1600kW, the scramjet stage compensates by flying a slower, higher trajectory after release from the first stage rocket, reaching maximum dynamic pressure later, and performing a larger pull-up. This flight path limits the speed of the scramjet stage and manoeuvres into a favourable position, while still performing a pull-up manoeuvre. In these cases, maximum heat flux is only reached at the start of the pull-up manoeuvre. However, when the stagnation point heating rate is limited to 1500kW or 1400kW, the trajectory changes significantly. For these limits, the beginning of the scramjet stage trajectory conforms with the non-limited optimal flight path, but the stagnation point heating limit causes the scramjet stage to leave maximum dynamic pressure and climb in the middle of the trajectory, reducing efficiency and manoeuvrability, and removing the ability of the scramjet accelerator stage to perform a pull-up manoeuvre. This cut-off point is primarily driven by the lower limit on the speed of the scramjet accelerator during flight, which limits the start-of-trajectory manoeuvres performed to enable the pull-up in the 1700kW and 1600kW heating limited trajectories. 
 
 Generally, these optimised trajectory results indicate that heating limits imposed on the trajectory of the scramjet accelerator vehicle result in the vehicle flying a significantly less efficient trajectory in order to reduce heat loads. For small heating limitations this may be suitable, however, in general, it would be preferable to design the vehicle so that it is able to fly close to an optimal payload-to-orbit flight path without heating limits. 
 
@@ -584,15 +584,15 @@ Abeynayake \& Agon assess two missile geometries; a conventional missile at tran
 In this comparison study Cart3D was not able to match experimental trends closely in the subsonic and transonic regimes. Errors of up to 80.2\% in drag are observed in the subsonic regime for an unconventional missile geometry\cite{Abeynayake2013a}, although observing that the CFD++ result is much closer to the experimental result, it follows that the drag error in Cart3D likely diminishes significantly at angle of attack values between -5$^\circ$ and 5$^\circ$. In the supersonic regime, Cart3D appears to closely match the experimental lift and drag trends, with an underprediction in the magnitude of the drag forces due to the absence of viscous forces. 
 Cart3D had poor results when computing pitching moment, although it was occasionally able to match the magnitude of the pitching moment well Cart3D was not able to match the experimental pitching moment trends for either vehicle\cite{Abeynayake2013a}. The work by Abeynayake \& Agon indicates that the uncertainties associated with Cart3D are significant, particularly at angle of attack values greater than 5 in the subsonic and transonic regimes, and that it does not estimate pitching moment trends well. However, a portion of the uncertainty magnitudes are associated with the inviscid nature of Cart3D, particularly in the drag forces in the supersonic and hypersonic regimes.
 
-Kiris et al. compare between experimental data and CFD codes to assess their performance on the Ares V\cite{Kiris2011}. Cart3D is compared to the Overflow and USM3D RANS solvers, on a full scale Ares V model with conditions matching those expected during flight. In this comparison an axial force difference of maximum 10\% was found, present in the supersonic regime due to the inviscid nature of Cart3D\cite{Kiris2011}. Cart3D, USM3D and Overflow were then compared against three wind tunnel tests with scaled vehicles, each with slightly different shroud or base shapes. Only one vehicle configuration produced results good enough for comparison\cite{Kiris2011}, showing high Cart3D error in the subsonic and transonic regimes. Cart3D was reported to exhibit maximums of 33\% error in axial force and a 17\% error in normal force in the subsonic regimes, 20\% error in axial force and 21\% error in axial force in the transsonic regime, and 19\% error in axial force and 12\% error in normal force in the supersonic regime, when compared to experimental results. In the supersonic regime, the axial force underpredicts consistently, and much of the axial force error is likely due to a lack of viscous effects in Cart3D. 
+Kiris et al. compare between experimental data and CFD codes to assess their performance on the Ares V\cite{Kiris2011}. Cart3D is compared to the Overflow and USM3D RANS solvers, on a full scale Ares V model with conditions matching those expected during flight. In this comparison an axial force difference of maximum 10\% was found, present in the supersonic regime due to the inviscid nature of Cart3D\cite{Kiris2011}. Cart3D, USM3D and Overflow were then compared against three wind tunnel tests with scaled vehicles, each with slightly different shroud or base shapes. Only one vehicle configuration produced results good enough for comparison\cite{Kiris2011}, showing high Cart3D error in the subsonic and transonic regimes. Cart3D was reported to exhibit maximums of 33\% error in axial force and a 17\% error in normal force in the subsonic regimes, 20\% error in axial force and 21\% error in axial force in the transonic regime, and 19\% error in axial force and 12\% error in normal force in the supersonic regime, when compared to experimental results. In the supersonic regime, the axial force underpredicts consistently, and much of the axial force error is likely due to a lack of viscous effects in Cart3D. 
 
 A study by Ward et al.\cite{Ward2018} compares Cart3D results to experimental results for a blunt body at hypersonic speeds, a lifting body vehicle at subsonic and supersonic speeds, and a hypersonic accelerator test geometry at hypersonic speeds. Ward et al. provide a method for viscous correction of the Cart3D results, and also compare this with experimental results, focusing on the amount that drag error is able to be corrected. In this study Cart3d was found to predict trends in drag coefficients well for all tested cases both subsonic and supersonic, although with a consistent underprediction of 15-25\% in drag coefficient due to a lack of viscous effects\cite{Ward2018}. When corrected for viscous effects, the drag coefficient was found to agree closely with the experimental results at supersonic and hypersonic speeds, with error reducing to less than 10\% for the hypersonic accelerator test vehicle, and less than 11\% for the lifting body at supersonic speed\cite{Ward2018}. Drag error at high angles of attack at subsonic speeds was still found to be large, at 38\%, however, at angles of attack under 5$^\circ$ the error reduced significantly, matching the experimental results to within 16\%. 
 
 
-The three studies investigated here are used to assign uncertainties to the aerodynamic coefficients computed by Cart3D. These uncertainties are separated by subsonic, transsonic and supersonic/hypersonic regimes, because it is evident that Cart3D shows significantly varied and uncorrelated errors in each regime. Generally, the maximum of the error values reported is used as an approximation of the upper uncertainty bound for a given coefficient and regime. 
+The three studies investigated here are used to assign uncertainties to the aerodynamic coefficients computed by Cart3D. These uncertainties are separated by subsonic, transonic and supersonic/hypersonic regimes, because it is evident that Cart3D shows significantly varied and uncorrelated errors in each regime. Generally, the maximum of the error values reported is used as an approximation of the upper uncertainty bound for a given coefficient and regime. 
   Note that while the values reported by Abeynayake \& Agon\cite{Abeynayake2013a} are non-dimensionalised relative accuracies, it is assumed here that the mean values reported indicate the accuracy of Cart3D. 
   
-  In the subsonic and transsonic regimes Abenayake \& Agon and Kiris etl al. find that Cart3D is not capable of predicting the trends of the aerodynamic data well\cite{Abeynayake2013a,Kiris2011}, and as such the uncertainty values for coefficients in these regimes are set to the maximum error values observed within the operable regions across the investigated works, when data is available.
+  In the subsonic and transonic regimes Abenayake \& Agon and Kiris etl al. find that Cart3D is not capable of predicting the trends of the aerodynamic data well\cite{Abeynayake2013a,Kiris2011}, and as such the uncertainty values for coefficients in these regimes are set to the maximum error values observed within the operable regions across the investigated works, when data is available.
   The subsonic drag uncertainty is set as 33\%, and lift uncertainty is set to 17\%, matching the  maximum error observed by Kiris et al.\cite{Kiris2011} in the axial and normal forces in this regime. 
 The pitching moment error in the subsonic regime is not stated in any of the works analysed, so the average relative error for all Cart3D coefficients at subsonic speeds reported by Abeynayake \& Agon\cite{Abeynayake2013a}, 23\%, is used.
 The drag uncertainty in the transonic regime is set to 21\%, to match the axial force error reported by Kiris et al.\cite{Kiris2011}, and the lift and pitching moment uncertainties in this regime are set to 28.7\% and 67.1\% respectively, to match the mean relative error reported by Abenayake \& Agon\cite{Abeynayake2013a}. 
@@ -661,7 +661,7 @@ The uncertainty margins of the aerodynamic and propulsive data for the represent
 	\label{fig:LHC-17bins}
 \end{figure}
 
-In order to quantify the effects of the modelling uncertainty in the aerodynamic and propulsion models, a Monte Carlo variation study is carried out using a Latin Hypercube Sampling technique. A sample size of 100 runs was used, distributed using Matlab's \textsf{lhsdesign} function. This distribution is assumed to be normally distributed, producing a 2-$\sigma$ deviation of $\pm$106.9kg in payload-to-orbit. This deviation illustrates the large uncertainties still present in the modelling of airbreathing launch systems, however, this is to be expected for studied of launch systems that are still early in their conceptual design phases, particularly given the general sensitivity of the payload mass in launch systems to variations in the launch system performance. However, this interval also indicates that producing a positive payload-to-orbit is likely to be possible under the current modelling scheme, although it is evident that more detailed analysis of this system is necessary before an accurate payload-to-orbit value is able to be attained. This said, the payload-to-orbit values calculated in this study are only intended as an indication of the performance possible using this launch system, and are primarily utilised in comparison studies, to produce trends in performance that have been analysed in Chapters XXX and XXX. These performance trends are still valid and useful, even though they fall well within the uncertainty margins of the payload mass and performance of the launch system.
+In order to quantify the effects of the modelling uncertainty in the aerodynamic and propulsion models, a Monte Carlo variation study is carried out using a Latin Hypercube Sampling technique to create a series of discrete points. A sample size of 100 runs was used, distributed using Matlab's \textsf{lhsdesign} function. This distribution is assumed to be normally distributed, producing a 2-$\sigma$ deviation of $\pm$106.9kg in payload-to-orbit. 
 
 
 
@@ -877,9 +877,9 @@ $\dot{v} = g*sin(u)$.
 \begin{table}
 	\centering
 	\begin{tabular}{|c|c|}
-		\hline Primal Variables  & x Position\\& y Position\\& Velocity\\ 
+		\hline Primal Variables  & x Position\\& y Position\\& Speed\\ 
 		\hline Control Variables  & Angle of Descent\\ 
-		\hline Initial Constraints  & Velocity\\ & x Position\\ & y Position\\
+		\hline Initial Constraints  & Speed\\ & x Position\\ & y Position\\
 		\hline Terminal Constraints &  x Position\\ & y Position\\
 		\hline Path Constraints & None \\ 
 		\hline Target Cost & Minimum Time \\ 
@@ -1114,6 +1114,8 @@ Figures \ref{fig:M3AoA6GRID} and \ref{fig:CARTmesh} show adapted meshes for Cart
 
 \FloatBarrier
 \section{Performance of the SPARTAN During Fly-Back}
+\textcolor{red}{XXX Update this}
+
 Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during the boost phase, described in Section \ref{sec:boost}. 
 
 \begin{figure}[ht]
@@ -1133,12 +1135,12 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 		I should maybe do a variation of just the return drag - "the performance of the launch system may be significantly different on the ascent and return trajectories (in addition to the engine flowpaths)"
 		
 		\section{Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}\label{sec:Appendix_qconst}
-		\textcolor{red}{XXX update this, make sure to update values too, used in ascent section}
+	
 		The maximum payload-to-orbit trajectory of the launch system with no SPARTAN fly-back (Case 2) was found to involve a significant altitude raising manoeuvre in the middle of the acceleration trajectory of the SPARTAN. Discerning the benefits of this altitude raising manoeuvre proved complex, requiring a trajectory to be calculated in which the altitude raising manoeuvre is prevented from occurring. This section describes an optimised trajectory in which the middle section of the SPARTAN's acceleration is constrained to flight at maximum dynamic pressure. 
 		
 		 This trajectory was optimised for maximum payload-to-orbit, with a 50kPa dynamic constraint between Mach numbers of 6 and 8, the region in which the altitude raising manoeuvre was observed to occur. This constraint successfully removed the altitude raising manoeuvre from the maximum payload-to-orbit optimised trajectory, allowing for a comparison to be made to quantify the benefits of the altitude raising manoeuvre. This comparison is made in Section \ref{sec:optimisednoreturn}. Figures \ref{fig:FirstStageqConstrained68},  \ref{fig:SecondStageqConstrained68} and \ref{fig:ThirdStageqConstrained68} show the maximum payload-to-orbit trajectory constrained to 50kPa between Mach numbers 6 to 8, and Table \ref{tab:constrained68} details key parameters of the trajectory. 
 		
-	\begin{table}[ht]
+	\begin{table}[ht]% updated 12/1/20
 	\centering
 \begin{tabular}{l c } 
 	\hline \textbf{Trajectory Condition}
@@ -1202,21 +1204,21 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 		
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/10-qconstrained/FirstStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode10-qconstrained/FirstStageStandard}
 \caption{The optimised maximum payload-to-orbit trajectory of the launch system constrained to 50kPa between Mach numbers 6 to 8, under power of the first stage rocket.}
 \label{fig:FirstStageqConstrained68}
 \end{figure}
 		
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/10-qconstrained/SecondStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode10-qconstrained/SecondStageStandard}
 \caption{The optimised maximum payload-to-orbit trajectory of the SPARTAN, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:SecondStageqConstrained68}
 \end{figure}
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/10-qconstrained/ThirdStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode10-qconstrained/ThirdStageStandard}
 \caption{The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:ThirdStageqConstrained68}
 \end{figure}
@@ -1358,14 +1360,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 		
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode20/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode20/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:SecondStageComparison1}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode20/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode20/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:ThirdStageComparison1}
 \end{figure}
@@ -1377,14 +1379,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode40/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode40/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:SecondStageComparison3}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode40/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode40/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:ThirdStageComparison3}
 \end{figure}
@@ -1395,14 +1397,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode30/SecondStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode30/SecondStageComparison}
 	\caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:SecondStageComparison2}
 	
 \end{figure}
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode30/ThirdStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode30/ThirdStageComparison}
 	\caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:ThirdStageComparison2}
 \end{figure}
@@ -1412,14 +1414,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode100/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode100/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:SecondStageComparison4}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode100/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode100/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:ThirdStageComparison4}
 \end{figure}
@@ -1428,14 +1430,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 7: SPARTAN Fuel Mass Sensitivity Comparison}\label{sec:app_comparison110}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode110/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode110/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:SecondStageComparison5}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode110/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode110/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:ThirdStageComparison5}
 \end{figure}
@@ -1445,7 +1447,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode80/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode80/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.}
 \label{fig:SecondStageComparison6}
 \end{figure}
@@ -1453,7 +1455,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode80/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode80/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.}
 \label{fig:ThirdStageComparison6}
 \end{figure}
@@ -1464,14 +1466,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode90/SecondStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode90/SecondStageComparison}
 	\caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.}
 	\label{fig:SecondStageComparison7}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode90/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode90/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ThirdStageComparison7}
 \end{figure}
@@ -1481,7 +1483,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode70/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode70/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the drag of the third stage.}
 \label{fig:SecondStageComparison8}
 \end{figure}
@@ -1489,7 +1491,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode70/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode70/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.}
 \label{fig:ThirdStageComparison8}
 \end{figure}
@@ -1501,21 +1503,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 12: Dynamic Pressure Sensitivity Comparison}\label{sec:app_comparison21}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode21/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode21/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:SecondStageComparison9}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode21/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode21/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:ThirdStageComparison9}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode21/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode21/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:ReturnComparison}
 \end{figure}
@@ -1527,21 +1529,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 13: SPARTAN Drag Sensitivity Comparison}\label{sec:app_comparison41}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode41/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode41/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:SecondStageComparison11}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode41/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode41/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:ThirdStageComparison11}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode41/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode41/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the drag of the SPARTAN.}
 \label{fig:ReturnComparison11}
 \end{figure}
@@ -1551,21 +1553,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 14:SPARTAN Specific Impulse Sensitivity Comparison}\label{sec:app_comparison31}
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode31/SecondStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode31/SecondStageComparison}
 	\caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:SecondStageComparison10}
 \end{figure}
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode31/ThirdStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode31/ThirdStageComparison}
 	\caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:ThirdStageComparison10}
 \end{figure}
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode31/ReturnComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode31/ReturnComparison}
 	\caption{Comparison of SPARTAN return trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:ReturnComparison10}
 \end{figure}
@@ -1575,21 +1577,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode101/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode101/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:SecondStageComparison12}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode101/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode101/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:ThirdStageComparison12}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode101/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode101/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the mass of the SPARTAN.}
 \label{fig:ReturnComparison12}
 \end{figure}
@@ -1600,21 +1602,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode111/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode111/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:SecondStageComparison13}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode111/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode111/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:ThirdStageComparison13}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode111/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode111/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:ReturnComparison13}
 \end{figure}
@@ -1625,14 +1627,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 17: Third Stage Mass Sensitivity Comparison}\label{sec:app_comparison81}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode81/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode81/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.}
 \label{fig:SecondStageComparison14}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode81/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode81/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.}
 \label{fig:ThirdStageComparison14}
 \end{figure}
@@ -1641,7 +1643,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode81/ReturnComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode81/ReturnComparison}
 	\caption{Comparison of SPARTAN return trajectories with variation in the mass of the third stage.}
 	\label{fig:ReturnComparison14}
 \end{figure}
@@ -1651,7 +1653,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode91/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode91/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:SecondStageComparison15}
 \end{figure}
@@ -1659,7 +1661,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode91/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode91/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ThirdStageComparison15}
 \end{figure}
@@ -1667,7 +1669,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/reprocessed/mode91/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode91/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ReturnComparison15}
 \end{figure}

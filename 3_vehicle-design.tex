@@ -4,6 +4,7 @@
 \chapter{Modelling of Launch System Dynamics}\label{chapter:Design}
 % XXX Check this intro, as well as applicability statement, with Ingo
 
+\textcolor{red}{ XXX I need to make sure I don’t have any references left to 70\% throttle}
 
 \textcolor{red}{This work aims to study the optimised trajectory and performance of a rocket-scramjet-rocket launch system, requiring the dynamics of a launcher to be modelled in some detail, based on a representative design.
 	This chapter presents the design and modelling of a representative rocket-scramjet-rocket launch system, in which the scramjet stage is reusable for multiple launches. 
@@ -33,7 +34,7 @@
 
 
  Figure \ref{fig:Trajsimple} shows a simplified representation of the launch trajectory for the vehicle simulated in this study.
- The launch system is launched vertically under rocket power, from a traditional small rocket launch facility. The scramjet accelerator is mounted to the front of the first stage rocket allowing the scramjet accelerator to take the brunt of the aerodynamic forces and heating, as well as allowing the use of the control surfaces of the scramjet accelerator. During first stage rocket operation, the launch system pitches rapidly, reaching close to horizontal flight to allow the scramjet accelerator to stay at high dynamic pressure conditions. The scramjet accelerator is accelerated to its minimum operating velocity of approximately Mach 5, at which point separation occurs. The scramjet accelerator's four scramjet engines are ignited, and the scramjet accelerator is accelerated through the atmosphere, reaching approximately Mach 9. At this point, the specific impulse of the scramjet engines, and thus the efficiency of the scramjet accelerator, have decreased, and the third stage rocket is separated. The third stage rocket accelerates and performs a pull-up, before cutting its engine and coasting out of the atmosphere. Once the rocket is exoatmospheric, the engine is reignited, performing first a circularisation burn, and then a Hohmann transfer to the intended orbit. Meanwhile, the scramjet accelerator banks and executes a fly-back manoeuvre to return to its initial launch site. The scramjet accelerator extends landing gear, and lands on a traditional runway in the style of a conventional aircraft. The scramjet accelerator is able to be rapidly refurbished and remounted for further launches. To fulfil the requirements of this trajectory, the scramjet accelerator must be able to fly and manoeuvre from velocities greater than Mach 9 to landing, as well as being able to withstand high structural and heating loads without significant deterioration.
+ The launch system is launched vertically under rocket power, from a traditional small rocket launch facility. The scramjet accelerator is mounted to the front of the first stage rocket allowing the scramjet accelerator to take the brunt of the aerodynamic forces and heating, as well as allowing the use of the control surfaces of the scramjet accelerator. During first stage rocket operation, the launch system pitches rapidly, reaching close to horizontal flight to allow the scramjet accelerator to stay at high dynamic pressure conditions. The scramjet accelerator is accelerated to its minimum operating speed of approximately Mach 5, at which point separation occurs. The scramjet accelerator's four scramjet engines are ignited, and the scramjet accelerator is accelerated through the atmosphere, reaching approximately Mach 9. At this point, the specific impulse of the scramjet engines, and thus the efficiency of the scramjet accelerator, have decreased, and the third stage rocket is separated. The third stage rocket accelerates and performs a pull-up, before cutting its engine and coasting out of the atmosphere. Once the rocket is exoatmospheric, the engine is reignited, performing first a circularisation burn, and then a Hohmann transfer to the intended orbit. Meanwhile, the scramjet accelerator banks and executes a fly-back manoeuvre to return to its initial launch site. The scramjet accelerator extends landing gear, and lands on a traditional runway in the style of a conventional aircraft. The scramjet accelerator is able to be rapidly refurbished and remounted for further launches. To fulfil the requirements of this trajectory, the scramjet accelerator must be able to fly and manoeuvre from speeds greater than Mach 9 to landing, as well as being able to withstand high structural and heating loads without significant deterioration.
  
  The launch configuration of the SPARTAN is shown in Figures \ref{fig:NoInternal} \& \ref{fig:INTERNALS}. 
  The size and external design of the scramjet accelerator are used exactly as defined for the Baseline vehicle designed by Preller \& Smart\cite{Preller2017b}. Both the first and third stage rockets are designed in this study, and are sized around the Baseline vehicle. 
@@ -124,7 +125,7 @@ In previous studies, a similar heat shielding has been assumed to provide adequa
 \textcolor{red}{
 \subsection{Propulsion}\label{sec:propulsion}
 }
-The scramjet accelerator is powered by four underslung scramjet engines, fuelled by liquid hydrogen. These engines are Rectangular To Elliptical Shape Transition (REST) engines, configured to allow for a conical forebody (C-REST). REST engines have a rectangular to elliptical shape transition inlet, and an elliptical combustor, offering simplicity in design as well as reduced thermal loading and viscous drag compared to scramjets with planar geometries\cite{Suraweera2009}.  REST engines are also specifically designed to operate over a wide range of Mach numbers, and at off design conditions, making them particularly applicable to use on scramjet accelerator vehicles. REST engines have been shown experimentally to operate successfully at off design conditions\cite{Smart2006,Smart2009a}, and have shown good agreements with numerical CFD models\cite{Smart2009a}
+The scramjet accelerator is powered by four underslung scramjet engines, fuelled by liquid hydrogen. These engines are Rectangular To Elliptical Shape Transition (REST) engines, configured to allow for a conical forebody (C-REST). REST engines have a rectangular to elliptical shape transition inlet, and an elliptical combustor, offering simplicity in design as well as reduced thermal loading and viscous drag compared to scramjets with planar geometries\cite{Suraweera2009}.  REST engines are also specifically designed to operate over a wide range of Mach numbers, and at off design conditions, making them particularly applicable to use on scramjet accelerator vehicles. REST engines have been shown experimentally to operate successfully at off design conditions\cite{Smart2006,Smart2009b}, and have shown good agreements with numerical CFD models\cite{Smart2009b}
 
 
 \subsubsection{Propulsion Modelling}\label{sec:Propulsion}
@@ -664,7 +665,7 @@ The thrust and specific impulse of the Merlin 1-C are determined by interpolatio
     	\label{fig:FirstStageAero}
     \end{figure}
   The aerodynamics of the launch system during first stage flight are calculated in a similar manner to those of the scramjet accelerator without the first stage rocket, as detailed in Section \ref{sec:aero}. 
-  The aerodynamics of the scramjet accelerator and first stage rocket are calculated using Cart3D and corrected for viscous effects. The first stage aerodynamics are modelled between angles of attack of 0$^\circ$ to -5$^\circ$, as the first stage will be flying at negative angle of attack to induce faster pitch-over. Mach numbers from 0.2 to 5.1 (second stage separation velocity) are simulated. Figure \ref{fig:CARTcontour} shows an example Cart3D simulation case, at Mach 2, -1$^\circ$ angle of attack. The coefficient of lift, drag and aerodynamic moment are tabulated for each simulation. Figure \ref{fig:FirstStageAero} shows the lift and drag coefficients of the first stage, as well as the lift-over-drag, across the simulated Mach Numbers and angles of attack. Above -1$^\circ$ angle of attack, the L/D of the first stage is generally greater than 0, meaning that lift is being gained in the positive vertical direction, and that the angle of attack must be lower than 1$^\circ$ to assist pitching.
+  The aerodynamics of the scramjet accelerator and first stage rocket are calculated using Cart3D and corrected for viscous effects. The first stage aerodynamics are modelled between angles of attack of 0$^\circ$ to -5$^\circ$, as the first stage will be flying at negative angle of attack to induce faster pitch-over. Mach numbers from 0.2 to 5.1 (second stage separation speed) are simulated. Figure \ref{fig:CARTcontour} shows an example Cart3D simulation case, at Mach 2, -1$^\circ$ angle of attack. The coefficient of lift, drag and aerodynamic moment are tabulated for each simulation. Figure \ref{fig:FirstStageAero} shows the lift and drag coefficients of the first stage, as well as the lift-over-drag, across the simulated Mach Numbers and angles of attack. Above -1$^\circ$ angle of attack, the L/D of the first stage is generally greater than 0, meaning that lift is being gained in the positive vertical direction, and that the angle of attack must be lower than 1$^\circ$ to assist pitching.
   At Mach numbers over Mach 2, the absolute magnitude of the L/D generally increases as the Mach number increases. This is caused by the decreased effects of the engines unstarting, in turn reducing the drag of the engines at higher Mach numbers, as observed in the aerodynamics of the scramjet accelerator in Section \ref{sec:SPARTAN}. 
    Note that absolute magnitude is the metric used for `good' L/D, as the angles of attack are negative. 
   
@@ -959,25 +960,7 @@ Likely impacts on design:
 
 \subsection{Aerodynamic and Propulsion Modelling Simplifications}
 
-The aerodynamic and propulsive properties of the launch system that have been presented in this section are modelled using medium and low fidelity methods. These methods bring with them an associated uncertainty in the values that are calculated for the aerodynamic and propulsive performance of a vehicle, including those presented in Figures \textcolor{red}{XXX-XXX, XXX-XXX and XXX-XXX}. These uncertainties are estimated in Appendix \textcolor{red}{XXX}, with the final values replicated in Table \ref{tab:AppendixUncertaintyCopy}. The presence of these uncertainties may mean that the performance of the vehicle is significantly different to expected, producing significantly different payloads-to-orbit to those calculated. A Monte-Carlo study is conducted in Appendix XXX using these uncertainty bounds, producing a 2-$\sigma$ deviation of $\pm$106.9kg in payload-to-orbit due to aerodynamic and propulsion modelling uncertainties.
-
-
-\begin{table}[ht]
-	\centering
-	\begin{tabular}{|c|c|c|c|}
-		\hline  Uncertainty & Subsonic & Transonic  & Supersonic/Hypersonic \\ 
-		\hline  1$^{st}$ \& 3$^{rd}$ Stage $I_{SP}$ & 1.3\% & 1.3\% &  1.3\% \\ 
-		\hline  Scramjet $I_{SP}$ & - & - &  25\% \\ 
-		\hline   $C_L$ & 17\% & 28.7\% & 12\% \\  
-		\hline   $C_D$ & 33\% & 21\% & 11\% \\  
-		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
-		\hline 
-	\end{tabular}
-	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of the SPARTAN, calculated in Appendix \textcolor{red}{XXX}.}
-	\label{tab:AppendixUncertaintyCopy}
-\end{table}
-
-
+XXX make this just a small mention at the start
 
 
 	\section{Summary}	
