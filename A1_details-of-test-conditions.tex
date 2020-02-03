@@ -6,7 +6,7 @@
 %\textcolor{red}{XXX note: layers might be at different temps, tested temps may not be exceeded.}
 
 
-The thermal protection of a hypersonic launch system is essential to its operation, and resisting the aerothermal loading produced during launch is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The modified SPARTAN launch system in this study uses nearly the same thermal protection that is used in previous SPARTAN studies, which has been assumed to be able to protect the SPARTAN throughout its launch trajectory\cite{Preller2018a}. However, no detailed thermal analysis of the SPARTAN has been carried out to date. This section aims to analyse the thermal protection system of the SPARTAN, in order to determine whether it is sufficient for operation to a first approximation. In this section, the heat flux over the trajectory is modelled at various locations on the SPARTAN and third stage, and integrated over the trajectory using 1-D heat conduction analysis to determine the efficacy of the thermal protection system. In addition, the design of the SPARTAN's TPS is investigated to provide an indication of the sensitivity of the temperatures produced during launch to critical TPS design parameters. 
+The thermal protection of a hypersonic launch system is essential to its operation, and managing the aerothermal loading produced during flight is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The modified SPARTAN launch system in this study uses nearly the same thermal protection that is used in previous SPARTAN studies, which has been assumed to be able to protect the SPARTAN throughout its launch trajectory\cite{Preller2018a}. However, no detailed thermal analysis of the SPARTAN has been carried out to date. This section aims to analyse the thermal protection system of the SPARTAN, in order to determine whether it is sufficient for operation to a first approximation. In this section, the heat flux over the trajectory is modelled at various locations on the SPARTAN and third stage, and analysed transiently for the duration of the flight using 1-D heat conduction analysis to determine the efficacy of the thermal protection system. In addition, the design of the representative launch system's thermal protection system (TPS) is investigated to provide an indication of the sensitivity of the temperatures produced during flight to critical TPS design parameters. 
 
 
 %\textcolor{red}{XXX I dont know how to express why reynolds analogy is not valid.. is it just radiating shock layer effects? Then why would it be specific to a part of the leading edge that isnt near the shock?}
@@ -20,7 +20,7 @@ The heat transfer coefficients on the body of the vehicle are computed using Rey
 c_h = \frac{c_f}{2s},
 \end{equation}
 where $c_f$ is the coefficient of friction and $s$ is the Reynold's analogy factor, assumed to be 1.16\cite{Ward2018}. 
-This solution is performed within the viscous solver VC3D, at specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are judged to be locations of potential high heat loads on the vehicles, and are examined as likely worst-case examples for thermal analysis. 
+The value of $c_f$ is determined using the viscous solver VC3D, at specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are judged to be locations of potential high heat loads on the vehicles, and are examined as likely worst-case examples for thermal analysis. 
 
 \begin{figure}[!ht]
 	
@@ -52,15 +52,15 @@ The heating at the leading edge is given by a weighted average correlation betwe
 \begin{equation}
 q_{LE} = (\frac{1}{2}q_s^2 \cos^2(\Lambda) + q_{FP}^2 \sin^2(\Lambda))^{1/2},
 \end{equation}
-where $\Lambda$ is the wing sweep angle, and the equation for a flat plate is calculated assuming turbulent flow under 2962m/s as:
+where $\Lambda$ is the wing sweep angle, and the heat flux for a flat plate is calculated using the correlation:
 \begin{equation}
 q_{FP} = k_2\rho^{N_3}V^{N_4},
 \end{equation}
-where $N_3 = 3.37$, $N_4 = 0.8$ and
+where $N_3 = 3.37$, $N_4 = 0.8$ for turbulent flow <2963m/s\cite{Dirkx,Tauber2008}, and
 \begin{equation}
 k_2 = 3.35 \times 10^{-4} \cos^{1.78}(\theta) \sin^{1.6}(\theta) x_T^{-1/5} (\frac{T_w}{556})^{-1/4} (1 - 1.11\frac{T_w}{T_{aw}}),
 \end{equation}
-where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, the aeroheating is calculated at the start of the wing, providing a worst case scenario for the heating rate on the leading edge. 
+where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, in this study the aeroheating is calculated at the start of the wing, providing a worst case scenario for the heating rate on the leading edge. 
 
 
 
@@ -1011,7 +1011,7 @@ This section presents an example of the convergence and verification of a trajec
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\linewidth]{../LODESTAR_FINAL/Results/mode11/MeshHistory}
+	\includegraphics[width=0.8\linewidth]{../LODESTAR-revisions/Results/mode11/MeshHistory}
 	\caption{The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with SPARTAN fly-back (Case 11). the phases are shown in each subfigure as follows: a) first stage rocket, b) SPARTAN acceleration, c) SPARTAN fly-back and d) third stage.}
 	\label{fig:MeshHistory}
 \end{figure}
@@ -1024,7 +1024,7 @@ The mesh history of the optimal trajectory solution is shown in Figure \ref{fig:
 After a trajectory has been calculated, it must be verified to ensure that the optimal control solver has converged correctly. Details on this verification are provided in Section \ref{sec:verification}. Figure \ref{fig:HamiltonianStandard} shows the Hamiltonian time history for the optimised trajectory solution of Case 11. For an optimal solution to be found, the Hamiltonian should be equal to 0 at all points over every phase. In a practical solution, a Hamiltonian close to 0 is acceptable, which is observable over all phases in the optimised solution. The Hamiltonian is close to 0 at all points of the trajectory, indicating that an optimal solution has been found. 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/HamiltonianStandard}
+	\includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode11/HamiltonianStandard}
 	\caption{The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11).}
 	\label{fig:HamiltonianStandard}
 \end{figure}
@@ -1036,7 +1036,7 @@ It can be observed that all errors in the dynamic constraints are very small. Th
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/VerificationStandard}
+	\includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode11/VerificationStandard}
 	\caption{The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.}
 	\label{fig:VerificationStandard}
 \end{figure}
@@ -1045,7 +1045,7 @@ The final verification step is a forward simulation of each phase. This forward 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/ForwardErrorStandard}
+	\includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode11/ForwardErrorStandard}
 	\caption{The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with SPARTAN fly-back (Case 11). Normalised to the range of each state.}
 	\label{fig:ForwardErrorStandard}
 \end{figure}
@@ -1120,7 +1120,7 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{../LODESTAR_FINAL/Results/mode11/returnIspStandard}
+	\includegraphics[width=0.7\linewidth]{../LODESTAR-revisions/Results/mode11/returnIspStandard}
 	\caption{The performance of the SPARTAN during the boost phase. Light blue indicates that the scramjet engines are turned on.}
 	\label{fig:returnIspStandard}
 \end{figure}
@@ -1204,21 +1204,21 @@ Figure \ref{fig:returnIspStandard} shows the performance of the SPARTAN during t
 		
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode10-qconstrained/FirstStageStandard}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/FirstStageStandard}
 \caption{The optimised maximum payload-to-orbit trajectory of the launch system constrained to 50kPa between Mach numbers 6 to 8, under power of the first stage rocket.}
 \label{fig:FirstStageqConstrained68}
 \end{figure}
 		
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode10-qconstrained/SecondStageStandard}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/SecondStageStandard}
 \caption{The optimised maximum payload-to-orbit trajectory of the SPARTAN, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:SecondStageqConstrained68}
 \end{figure}
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode10-qconstrained/ThirdStageStandard}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/ThirdStageStandard}
 \caption{The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:ThirdStageqConstrained68}
 \end{figure}
@@ -1249,7 +1249,7 @@ Even when a hypersonic vehicle is flying at high altitudes, the overpressures on
 When the SPARTAN is launched to a sun synchronous orbit from the Equatorial Launch Australia launch site, it flies over a significant portion of Papua. Fortunately, Papua is sparsely populated, and the number of towns flown over by the SPARTAN will be low. However the effects on these population centres may still be significant. In order to assess the impact of the SPARTAN's flight, the magnitude of the overpressure from its sonic booms must be calculated. 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.9\linewidth]{../LODESTAR_FINAL/Results/mode11/OverPressureStandard}
+	\includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode11/OverPressureStandard}
 	\caption{The sonic boom overpressure on the ground, for the optimised trajectory path (Case 11).}
 	\label{fig:OverPressureStandard}
 \end{figure}
@@ -1265,14 +1265,13 @@ These overpressures indicate that overflight of populated areas may not be reaso
 
 
 \section{Alternate Launch Location}
-\textcolor{red}{XXX update this}
 
-In this section, an alternate southerly launch is investigated for the rocket-scramjet-rocket launch system, in the case that flight over Papua is not possible. This launch occurs from Streaky Bay, the possible location of a launch site being developed by Southern Launch Australia\cite{Council2016}. The maximum payload-to-orbit has been calculated from this launch site using LODESTAR. Figure \ref{fig:GroundTrackAlternate} shows the ground track of this optimised trajectory, and Table \ref{tab:summaryalternate} details a summary of the key trajectory parameters. The shape of this optimised trajectory is very similar to the optimal trajectory of the launch system launched from the Northern Territory (Case 11). The first stage initially pitches towards the west, separating the SPARTAN in a westerly direction. the SPARTAN then performs a banking manoeuvre to the south, and a pull-up before third stage release. After separation, the SPARTAN exhibits initial turn, boost-skip and approach phases during fly-back, with the scramjet engine igniting three times at the troughs of the first three skips, in the same manner as when launching northerly. A higher payload to orbit is achieved when launching from a southerly location, attaining a total of \PayloadToOrbitAlternate kg of payload-to-orbit, an increase of +2.9\% compared to northerly launch. This payload increase is caused by the rotation of the Earth hindering, rather than assisting, when launching into a retrograde orbit, making launch from a more southerly point desirable. 
+In this section, an alternate southerly launch is investigated for the rocket-scramjet-rocket launch system, in the case that flight over Papua is not possible. This launch occurs from Streaky Bay, the possible location of a launch site being developed by Southern Launch Australia\cite{Council2016}. The maximum payload-to-orbit has been calculated from this launch site using LODESTAR. Figure \ref{fig:GroundTrackAlternate} shows the ground track of this optimised trajectory, and Table \ref{tab:summaryalternate} details a summary of the key trajectory parameters. The shape of this optimised trajectory is very similar to the optimal trajectory of the launch system launched from the Northern Territory (Case 11). The first stage initially pitches towards the west, separating the scramjet accelerator in a westerly direction. the scramjet accelerator then performs a banking manoeuvre to the south, and a pull-up before third stage release. After separation, the scramjet accelerator exhibits initial turn, boost-skip and approach phases during fly-back, with the scramjet engine igniting three times at the troughs of the first three skips, in the same manner as when launching northerly. A higher payload to orbit is achieved when launching from a southerly location, attaining a total of \PayloadToOrbitAlternate kg of payload-to-orbit, an increase of +2.1\% compared to northerly launch. This payload increase is caused by the rotation of the Earth hindering, rather than assisting, when launching into a retrograde orbit, making launch from a more southerly point desirable. 
 
 
 \begin{figure}[th]
 	\centering
-	\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode01/GroundTrackAlternate}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode01/GroundTrackAlternate}
 	\caption{The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay.}
 	\label{fig:GroundTrackAlternate}
 \end{figure}
@@ -1360,14 +1359,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 		
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode20/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode20/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:SecondStageComparison1}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode20/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode20/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:ThirdStageComparison1}
 \end{figure}
@@ -1379,14 +1378,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode40/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode40/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:SecondStageComparison3}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode40/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode40/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:ThirdStageComparison3}
 \end{figure}
@@ -1397,14 +1396,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode30/SecondStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode30/SecondStageComparison}
 	\caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:SecondStageComparison2}
 	
 \end{figure}
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode30/ThirdStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode30/ThirdStageComparison}
 	\caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:ThirdStageComparison2}
 \end{figure}
@@ -1414,14 +1413,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode100/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode100/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:SecondStageComparison4}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode100/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode100/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:ThirdStageComparison4}
 \end{figure}
@@ -1430,14 +1429,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 7: SPARTAN Fuel Mass Sensitivity Comparison}\label{sec:app_comparison110}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode110/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode110/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:SecondStageComparison5}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode110/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode110/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:ThirdStageComparison5}
 \end{figure}
@@ -1447,7 +1446,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode80/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode80/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.}
 \label{fig:SecondStageComparison6}
 \end{figure}
@@ -1455,7 +1454,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode80/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode80/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.}
 \label{fig:ThirdStageComparison6}
 \end{figure}
@@ -1466,14 +1465,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode90/SecondStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode90/SecondStageComparison}
 	\caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.}
 	\label{fig:SecondStageComparison7}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode90/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode90/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ThirdStageComparison7}
 \end{figure}
@@ -1483,7 +1482,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode70/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode70/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the drag of the third stage.}
 \label{fig:SecondStageComparison8}
 \end{figure}
@@ -1491,7 +1490,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode70/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode70/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.}
 \label{fig:ThirdStageComparison8}
 \end{figure}
@@ -1503,21 +1502,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 12: Dynamic Pressure Sensitivity Comparison}\label{sec:app_comparison21}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode21/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode21/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:SecondStageComparison9}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode21/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode21/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:ThirdStageComparison9}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode21/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode21/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the maximum dynamic pressure of the SPARTAN.}
 \label{fig:ReturnComparison}
 \end{figure}
@@ -1529,21 +1528,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 13: SPARTAN Drag Sensitivity Comparison}\label{sec:app_comparison41}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode41/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode41/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:SecondStageComparison11}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode41/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode41/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the SPARTAN.}
 \label{fig:ThirdStageComparison11}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode41/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode41/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the drag of the SPARTAN.}
 \label{fig:ReturnComparison11}
 \end{figure}
@@ -1553,21 +1552,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 14:SPARTAN Specific Impulse Sensitivity Comparison}\label{sec:app_comparison31}
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode31/SecondStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode31/SecondStageComparison}
 	\caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:SecondStageComparison10}
 \end{figure}
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode31/ThirdStageComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode31/ThirdStageComparison}
 	\caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:ThirdStageComparison10}
 \end{figure}
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode31/ReturnComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode31/ReturnComparison}
 	\caption{Comparison of SPARTAN return trajectories with variation in the specific impulse of the SPARTAN.}
 	\label{fig:ReturnComparison10}
 \end{figure}
@@ -1577,21 +1576,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode101/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode101/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:SecondStageComparison12}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode101/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode101/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the SPARTAN.}
 \label{fig:ThirdStageComparison12}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode101/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode101/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the mass of the SPARTAN.}
 \label{fig:ReturnComparison12}
 \end{figure}
@@ -1602,21 +1601,21 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode111/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode111/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:SecondStageComparison13}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode111/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode111/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:ThirdStageComparison13}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode111/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode111/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the fuel mass of the SPARTAN.}
 \label{fig:ReturnComparison13}
 \end{figure}
@@ -1627,14 +1626,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \subsection{Case 17: Third Stage Mass Sensitivity Comparison}\label{sec:app_comparison81}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode81/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode81/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the mass of the third stage.}
 \label{fig:SecondStageComparison14}
 \end{figure}
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode81/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode81/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.}
 \label{fig:ThirdStageComparison14}
 \end{figure}
@@ -1643,7 +1642,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode81/ReturnComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode81/ReturnComparison}
 	\caption{Comparison of SPARTAN return trajectories with variation in the mass of the third stage.}
 	\label{fig:ReturnComparison14}
 \end{figure}
@@ -1653,7 +1652,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode91/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode91/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:SecondStageComparison15}
 \end{figure}
@@ -1661,7 +1660,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode91/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode91/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ThirdStageComparison15}
 \end{figure}
@@ -1669,18 +1668,18 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/results/mode91/ReturnComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode91/ReturnComparison}
 \caption{Comparison of SPARTAN return trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ReturnComparison15}
 \end{figure}
 
 
 \chapter{Viscous Drag Variation}
-\textcolor{red}{XXX Will need to redo this with variation for all stages}
+%\textcolor{red}{XXX Will need to consider redoing this with variation for all stages}
 
-This section presents the sensitivity of the launch system performance to variations in the viscous drag of the SPARTAN. This sensitivity analysis is intended as a reference, to indicate the magnitude of variations in the viscous drag of the SPARTAN due to variations in modelling methods, and is unlikely to be indicative of any physical design variations.
-The viscous drag component of the SPARTAN's aerodynamics is calculated using flat plate correlations, which require an estimation of the laminar to turbulent transition point on the body of the SPARTAN\cite{Ward2018}. This transition point is difficult to estimate to a high degree of accuracy, and can have a significant effect on the viscous drag of an aircraft\cite{Ward2018}.
-The viscous drag component of the SPARTAN's aerodynamics is varied, in order to assess the impact of the viscous drag model used. Optimal trajectories are calculated with the viscous drag set at levels of 20\%, 50\%, 107\% and 115\% of the baseline, which correspond to the possible viscous drag range due to transition point variation. Table \ref{tab:viscous} details key trajectory parameters of the optimised trajectories, and Figures \ref{fig:SecondStageComparison-}, \ref{fig:ThirdStageComparison-} and \ref{fig:ReturnComparison-} show comparison plots of the optimised trajectories. The sensitivity of the launch system to the viscous drag of the SPARTAN is shown to be relatively low, as the deviations in the viscous drag model are expected to be small, relative to the range tested. This low sensitivity indicating that the modelling process of the viscous drag is unlikely to have a large effect on the accuracy of the maximum payload-to-orbit solution.
+This section presents the sensitivity of the launch system performance to variations in the viscous drag of the scramjet accelerator. This sensitivity analysis is intended as a reference, to indicate the magnitude of variations in the viscous drag of the SPARTAN due to variations in modelling methods, and is unlikely to be indicative of any physical design variations.
+The viscous drag component of the scramjet accelerator's aerodynamics is calculated using flat plate correlations, which require an estimation of the laminar to turbulent transition point on the body of the scramjet accelerator\cite{Ward2018}. This transition point is difficult to estimate to a high degree of accuracy, and can have a significant effect on the viscous drag of an aircraft\cite{Ward2018}.
+The viscous drag component of the scramjet accelerator's aerodynamics is varied, in order to assess the impact of the viscous drag model used. Optimal trajectories are calculated with the viscous drag set at levels of 20\%, 50\%, 107\% and 115\% of the baseline, which correspond to the possible viscous drag range due to transition point variation. Table \ref{tab:viscous} details key trajectory parameters of the optimised trajectories, and Figures \ref{fig:SecondStageComparison-}, \ref{fig:ThirdStageComparison-} and \ref{fig:ReturnComparison-} show comparison plots of the optimised trajectories. The sensitivity of the launch system to the viscous drag of the SPARTAN is shown to be relatively low, as the deviations in the viscous drag model are expected to be small, relative to the range tested. This low sensitivity indicating that the modelling process of the viscous drag is unlikely to have a large effect on the accuracy of the maximum payload-to-orbit solution.
 
 \begin{table}[ht]
 	\centering
@@ -1699,15 +1698,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \textbf{\PayloadToOrbitvCdStandard}
 		& \textbf{\PayloadToOrbitvCdOneHundredSeven}
 		& \textbf{\PayloadToOrbitvCdOneHundredFifteen}
-		&\textbf{-2.5}
-		\\
-		\textbf{Payload Variation (\%)}
-		& \PayloadVarvCdTwenty
-		& \PayloadVarvCdFifty
-		& \PayloadVarvCdStandard
-		& \PayloadVarvCdOneHundredSeven
-		& \PayloadVarvCdOneHundredFifteen
-		&-0.31
+		&\textbf{-2.3}
 		\\
 		\textbf{Total $\eta_{exergy}$ (\%)}
 		& \textbf{\totalExergyEffvCdTwenty}
@@ -1715,7 +1706,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \textbf{\totalExergyEffvCdStandard}
 		& \textbf{\totalExergyEffvCdOneHundredSeven}
 		& \textbf{\totalExergyEffvCdOneHundredFifteen}
-		& \textbf{-0.00024}
+		& \textbf{-0.00022}
 		\\
 		\hline 
 		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -1757,7 +1748,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \textbf{\secondExergyEffvCdStandard}
 		& \textbf{\secondExergyEffvCdOneHundredSeven}
 		& \textbf{\secondExergyEffvCdOneHundredFifteen}
-		& \textbf{-0.064}
+		& \textbf{-0.069}
 		\\
 		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
 		& \secondthirdSeparationAltvCdTwenty
@@ -1773,7 +1764,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \secondthirdSeparationvvCdStandard
 		& \secondthirdSeparationvvCdOneHundredSeven
 		& \secondthirdSeparationvvCdOneHundredFifteen
-		&-33.84
+		&-14.63
 		\\
 		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
 		& \secondthirdSeparationgammavCdTwenty
@@ -1781,7 +1772,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \secondthirdSeparationgammavCdStandard
 		& \secondthirdSeparationgammavCdOneHundredSeven
 		& \secondthirdSeparationgammavCdOneHundredFifteen
-		&-0.1
+		&0.09
 		\\
 		\textbf{2$^{nd}$ Stage Flight Time (s)}
 		& \secondFlightTimevCdTwenty
@@ -1797,7 +1788,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \SecondDistvCdStandard
 		& \SecondDistvCdOneHundredSeven
 		& \SecondDistvCdOneHundredFifteen
-		& -
+		&-4.06
 		\\
 		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
 		& \returnFuelvCdTwenty
@@ -1813,7 +1804,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \returnDistvCdStandard
 		& \returnDistvCdOneHundredSeven
 		& \returnDistvCdOneHundredFifteen
-		&-21.35
+		&-18.78
 		\\
 		\hline 
 		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
@@ -1822,7 +1813,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \textbf{\thirddExergyEffvCdStandard}
 		& \textbf{\thirddExergyEffvCdOneHundredSeven}
 		& \textbf{\thirddExergyEffvCdOneHundredFifteen}
-		& \textbf{-0.249}
+		& \textbf{-0.226}
 		\\
 		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
 		& \thirdqOverFivevCdTwenty
@@ -1830,7 +1821,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \thirdqOverFivevCdStandard
 		& \thirdqOverFivevCdOneHundredSeven
 		& \thirdqOverFivevCdOneHundredFifteen
-		&-0.24
+		&-0.11
 		\\
 		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
 		& \thirdmFuelvCdTwenty
@@ -1838,7 +1829,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 		& \thirdmFuelvCdStandard
 		& \thirdmFuelvCdOneHundredSeven
 		& \thirdmFuelvCdOneHundredFifteen
-		&-32.96
+		&2.32
 		\\
 		\hline 
 	\end{tabular} 
@@ -1849,13 +1840,13 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode51/SecondStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode51/SecondStageComparison}
 \caption{Comparison of SPARTAN ascent trajectories with variation in the viscous drag of the SPARTAN.}
 \label{fig:SecondStageComparison-}
 \end{figure}
 \begin{figure}[!th]
 \centering
-\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode51/ThirdStageComparison}
+\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode51/ThirdStageComparison}
 \caption{Comparison of third stage ascent trajectories with variation in the viscous drag of the SPARTAN.}
 \label{fig:ThirdStageComparison-}
 \end{figure}
@@ -1863,7 +1854,7 @@ The viscous drag component of the SPARTAN's aerodynamics is varied, in order to 
 
 \begin{figure}[!th]
 	\centering
-	\includegraphics[width=1\linewidth]{../LODESTAR_FINAL/Results/mode51/ReturnComparison}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode51/ReturnComparison}
 	\caption{Comparison of SPARTAN return trajectories with variation in the viscous drag of the SPARTAN.}
 	\label{fig:ReturnComparison-}
 \end{figure}
