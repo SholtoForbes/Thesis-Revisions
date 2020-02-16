@@ -1,6 +1,8 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
+\glossentry{Airbreathing Launch System}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsignore{209}}}%
 \glossentry{Aerodynamic Loads}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsignore{209}}}%
 \glossentry{Aerothermal Loading}{\glossaryentrynumbers{\relax 

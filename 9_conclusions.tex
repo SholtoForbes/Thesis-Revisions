@@ -1,97 +1,67 @@
 % conclusions.tex
 
 \cleardoublepage
-\chapter{Conclusions}
-
-The purpose of this work was to design and investigate the \textcolor{red}{optimal} launch trajectory of a partially-reusable, rocket-scramjet-rocket, small satellite launch system. 
-The trajectory of this launch system was optimised for maximum payload-to-orbit, and characterised in order to determine the key performance parameters of the launch system. 
-This aim was achieved through the completion of the set of objectives detailed as follows:
-
-\vspace{10pt}
-	\emph{Development of a detailed design and aerodynamic simulation for a rocket-scramjet-rocket launch system.}
-	
-	In order to create a representative model for a trajectory simulation, the design of a rocket-scramjet-rocket launch system was developed. This launch system was designed around the SPARTAN scramjet-powered accelerator, which is in development by The University of Queensland \textcolor{red}{and Hypersonix}. A first stage rocket was designed, to accelerate the \textcolor{red}{scramjet accelerator} to its minimum operating speed of Mach 5. This first stage was based upon the Falcon-1e, scaled down lengthwise to \textcolor{red}{9}.5m.
-	A third stage rocket was designed, based around the Kestrel upper stage rocket motor for cost effectiveness. This third stage was sized to fit within the fuselage of the \textcolor{red}{scramjet accelerator}, to be \textcolor{red}{8.7}m long, and \textcolor{red}{1.1}m wide. The heat shield necessary for atmospheric flight, and the internal fuel tanks of the third stage were sized to a total mass of 3300kg. The fuel tanks of the \textcolor{red}{scramjet accelerator} were resized, to accommodate this redesigned third stage. 
-
-The aerodynamics of the launch system were calculated using Cart3D, an inviscid CFD package, and modified using a viscous correction for accuracy. The aerodynamics of the launch system were calculated across the operable regimes of the vehicles, which for the \textcolor{red}{scramjet accelerator} included both engine-on and engine-off conditions, across a range of Mach numbers from 0.2 to 10. The control surfaces of the scramjet accelerator were modelled, and the aerodynamics of the \textcolor{red}{scramjet accelerator} simulated with flaps deployed. A variable centre of gravity model was created for the \textcolor{red}{launch system}, to model the changes in the vehicle dynamics during flight. The aerodynamics of the \textcolor{red}{scramjet accelerator} were calculated at multiple centre of gravity positions, and a trimmed aerodynamic database was created. 
-
-	\vspace{10pt}
-\emph{Calculation of the maximum payload-to-orbit trajectory for a rocket-scramjet-rocket launch system using optimal control, with and without fly-back.}
-
-\textcolor{red}{This study represents the first time that an optimal launch trajectory has been calculated for an airbreathing three-stage launch system.}
-In order to calculate the maximum payload-to-orbit trajectory of the launch system, a software package was created to simulate and optimise launch system trajectories, designated LODESTAR. LODESTAR utilises GPOPS-2, a pseudospectral method optimal control solver, and simulates the trajectory of each stage of the launch system in a geodetic rotational reference frame. 
-LODESTAR optimises the entire trajectory of the launch system simultaneously, so that the performance trade-offs between the stages are captured accurately.
-
-
-A mission profile has been developed for the \textcolor{red}{representative} rocket-scramjet-rocket launch system for which to calculate this optimal trajectory, launching a satellite to sun synchronous orbit from the Northern Territory, Australia. 
-Initially, the trajectory of the launch system was developed with the assumption that the \textcolor{red}{scramjet accelerator} lands at a location downrange.
-A mission case was developed in which the scramjet accelerator stage of the launch vehicle was constrained to flight at its maximum dynamic pressure. \textcolor{red}{This is a common assumption for the maximum efficiency trajectory for airbreathing launch systems; because it maximises the thrust of the airbreathing stage, and as such it provides a useful} a baseline trajectory case for comparison. This constant dynamic pressure trajectory was found to be capable of delivering \PayloadToOrbitConstqNoReturn kg to sun synchronous orbit. 
-The maximum payload-to-orbit trajectory of the launch system was then calculated. It was found that, when flying the payload-optimised trajectory, the launch system is capable of delivering \PayloadToOrbitStandardNoReturn kg of payload to sun synchronous orbit, an increase of \textcolor{red}{59.1}\% over the simulation with the \textcolor{red}{scramjet accelerator} constrained to constant dynamic pressure. 
-Three key features were observed in the trajectory; a higher first stage-\textcolor{red}{scramjet accelerator} separation point, an altitude raising manoeuvre in the centre of the \textcolor{red}{scramjet accelerator}'s trajectory, and a pull-up before \textcolor{red}{scramjet accelerator}-third stage separation.
-The altitude raising manoeuvre in the centre of the \textcolor{red}{scramjet accelerator}'s trajectory was observed occur in a region of homogeneity in the performance of the \textcolor{red}{scramjet accelerator}, increasing the efficiency of the \textcolor{red}{scramjet accelerator} by +\textcolor{red}{0.3}\%. 
-The improvement in payload-to-orbit was found to result primarily from the stage separation conditions, as a consequence of favourable trade-offs between the efficiencies of the stages of the launch system.
-The higher first stage-\textcolor{red}{scramjet accelerator} separation point was found to decrease the amount of turning which the first stage must perform,
- \textcolor{red}{reducing the necessary throttling, and increasing the efficiency of the first stage}. 
- Similarly, a pull-up before the \textcolor{red}{scramjet accelerator}-third stage separation decreases the amount of turning which the third stage must perform, and enables the third stage to gain altitude much more rapidly, causing it to spend significantly less flight time at high dynamic pressure. 
-This reduced exposure to high dynamic pressure reduces the energy losses due to the aerodynamic drag of the third stage, as well as reducing the amount of energy imparted upon the heat shield, by allowing it to be jettisoned earlier. 
-The altitude increasing manoeuvres at the stage separations were found to result in the exergy efficiency of the \textcolor{red}{scramjet accelerator} decreasing by -0.\textcolor{red}{719}\%$\eta$ (-\textcolor{red}{14.04}\%). However, this reduction in the efficiency of the \textcolor{red}{scramjet accelerator} is a trade-off for increases in the exergy efficiencies of the first and third stages, of +\textcolor{red}{0.623}\%$\eta$ (+\textcolor{red}{9.96\%}) and +\textcolor{red}{6.013}\%$\eta$ (+\textcolor{red}{63.20}\%) respectively, resulting in a significantly higher overall efficiency.
-
-
-The mission definition was adjusted, to include a constraint of the \textcolor{red}{scramjet accelerator} flying back to the initial launch site after the separation of the third stage. 
-The optimised maximum payload-to-orbit trajectory profile was calculated, and it was found that the launch system is capable of delivering \PayloadToOrbitStandard kg of payload to sun synchronous orbit, while returning the \textcolor{red}{scramjet accelerator} to the initial launch site. This result shows that it is feasible to return a scramjet-powered accelerator to its initial launch site, with only a -\textcolor{red}{24.3}kg (-\textcolor{red}{15.5}\%) reduction in the payload mass-to-orbit.
-	The inclusion of the fly-back of the \textcolor{red}{scramjet accelerator} was found to alter the shape of the ascent trajectory significantly. When the fly-back was included, the first stage was found to initially pitch towards the east. The \textcolor{red}{scramjet accelerator} was then observed to bank heavily, executing a heading angle change manoeuvre during its acceleration. No altitude raising manoeuvre was observed during this banking acceleration, due to the higher angles of attack while banking resulting in flight at the \textcolor{red}{scramjet accelerator}'s maximum dynamic pressure being optimal. 
-When the fly-back was included, the \textcolor{red}{scramjet accelerator} was still observed to perform a pull-up manoeuvre before third stage separation, of a similar magnitude to the pull-up manoeuvre performed with no fly-back. 
-The optimal fly-back of the \textcolor{red}{scramjet accelerator} was found to require the ignition of the scramjet engines, and was observed to exhibit three distinct phases, an initial turn, a boost-skip, and an approach. 
-During the initial turn, the bank angle of the \textcolor{red}{scramjet accelerator} is increased rapidly, in order to manoeuvre the heading angle of the \textcolor{red}{scramjet accelerator} back towards its initial launch site. 
-After this initial turn, the boost-skip phase is initiated, consisting of multiple skipping manoeuvres. These skipping manoeuvres serve both to increase the range of the \textcolor{red}{scramjet accelerator} during its return, minimising the fuel necessary for the fly-back, as well as to improve the specific impulse of the scramjet engines.
- The scramjet engines were observed to be ignited at the trough of each skip, as soon as the \textcolor{red}{scramjet accelerator} accelerates above the minimum operable Mach number of the C-REST engines. At this point of the skipping manoeuvres, the specific impulse of the scramjet engines is highest, so that igniting the scramjet engines at this point minimises the fuel necessary for the return flight. 
- After the scramjets were ignited a total of three times, three unpowered skips were performed, decreasing in size sequentially. Finally, the skips ceased entirely, beginning a steady descent and approach to the landing site. 
- In total, \returnFuelStandard kg of fuel was used during the fly-back, \textcolor{red}{16.5}\% of the \textcolor{red}{scramjet accelerator}'s total fuel mass.
-	
-	These maximum payload-to-orbit trajectory profiles, that have been calculated using LODESTAR, are non-intuitive, and involve complex trade-offs between the efficiencies of each stage of the launch system, as well as the fly-back of the \textcolor{red}{scramjet accelerator}. The design of these optimised flight paths is made possible through the use of the pseudospectral method of optimal control, coupled with accurate propulsion and aerodynamic modelling.  
-	These trajectory profiles improve the performance of the launch system, and can assist in directing future design decisions for partially-airbreathing, multi-stage launch systems. Particularly of interest is the optimal pull-up of the \textcolor{red}{scramjet accelerator, before the release of the third stage. 
-	The pull-up, as well as directly increasing payload-to-orbit, significantly lowers the dynamic pressures experienced by the third stage rocket, an important factor when designing the thermal protection and structure of the third stage. It is likely that the mass of the heat shielding of the third stage will be able to be reduced significantly due to the reduced thermal and structural loading, and that the control of the third stage will be made more simple due to the decreased aerodynamic forces and moments experienced.
-	In addition to the significant altitude-raising manoeuvre at the first stage-scramjet accelerator separation, these deviations from maximum dynamic pressure indicate that it is imperative to design the scramjet engines of a three-stage launch system to be operable at low dynamic pressure, and at high angle of attack. The multiple restarts observed during the return trajectory also indicate the importance of being able to restart the scramjet engines rapidly. }
-	
-	
-	
-	\vspace{10pt}
-	\emph{Analysis of the sensitivity of the maximum payload-to-orbit trajectory to variations in key design parameters of the launch system.}
-	
-Eight key design parameters of the launch system were modified, and the sensitivities of the maximum payload-to-orbit trajectory were studied.
-The parameters varied were: the maximum dynamic pressure of the \textcolor{red}{scramjet accelerator}, the fuel mass within the \textcolor{red}{scramjet accelerator}, the drag of the \textcolor{red}{scramjet accelerator} , the specific impulse of the \textcolor{red}{scramjet accelerator}, the mass of the \textcolor{red}{scramjet accelerator}, the drag of the third stage, the specific impulse of the third stage, and the mass of the third stage. 
-These parameters were varied for trajectories both with, and without, \textcolor{red}{scramjet accelerator} fly-back. 
 \textcolor{red}{
- When fly-back was included, the sensitivity to most design parameters was observed to decrease, due to the fly-back distance counteracting some of the effects of the design variations. However, the sensitivity to maximum dynamic pressure was observed to significantly increase, as the complex coupled nature of the ascent and fly-back meant that the maximum dynamic pressure had a more significant effect on the overall trajectory.} 
+\chapter{Conclusions}
+}
 
-It was found that the ability of the first stage to pitch, determined by the acceleration of the launch system, is the primary driver of the first stage-\textcolor{red}{scramjet accelerator} separation conditions. The first stage-\textcolor{red}{scramjet accelerator} separation altitude was observed to \textcolor{red}{increase, and the separation angle was observed to decrease, when the acceleration during first stage operation was increased}, due to the better pitching ability of the first stage \textcolor{red}{after accelerating more rapidly.}
-When the efficiency of the \textcolor{red}{scramjet accelerator} was increased, the efficiency of the third stage was also observed to increase, \textcolor{red}{and vice versa}. This increased efficiency trend was due to the increased speed at the \textcolor{red}{scramjet accelerator}-third stage separation point, which improves the propulsive efficiency of the third stage rocket. \textcolor{red}{The exception to this trend was found when the fuel mass of either stage was varied, resulting in a larger mass, and decreased efficiency, but a higher total exergy.}
-Variations in the efficiency of the third stage past a certain point were found to produce no significant variation in the trajectory of the \textcolor{red}{first stage or scramjet accelerator, but had by far the highest relative influence on the payload-to-orbit, in part due to the particular importance of the specific impulse during the Hohmann transfer. However, at low specific impulses, the third stage was observed to have difficulty exiting the atmosphere, requiring a very low and level release point in order to use its aerodynamics effectively. This trend was also observed in the third stage mass sensitivity, where payload-to-orbit was observed to increase until a distinct cutoff point as the mass of the third stage was increased, after which it decreased drastically, because the third stage once again experienced difficulties exiting the atmosphere. This indicates that achieving a suitable thrust-to-mass ratio for atmospheric exit after release from the end of a pull-up manoeuvre is crucial for efficient third stage operation. } 
+The purpose of this work was to aid in the development of multi-stage airbreathing launch systems by designing and investigating the optimal launch trajectory of a partially-reusable, rocket-scramjet-rocket, small satellite launch system. 
+In order to calculate this trajectory, the design of a representative rocket-scramjet-rocket launch system for small satellite launch was developed, and modelled in detail. This launch system was designed around the SPARTAN scramjet-powered accelerator, which is in development by The University of Queensland and Hypersonix. The engine performance, aerodynamics, controls, and mass model of the launch system were calculated, and integrated into a software package that was created to simulate and optimise launch system trajectories. This software package was designated LODESTAR, and was based on the generic GPOPS-2 program, a pseudospectral method optimal control solver. LODESTAR was designed to simulate the trajectory of each stage of the launch system in a geodetic rotational reference frame, optimising the entire trajectory of the launch system simultaneously for maximum payload-to-orbit, so that the performance trade-offs between the stages are captured accurately.
+\textcolor{red}{XXX I need something about uncertainties and thermal}
 
-The sensitivities of all significantly coupled design parameters were compared, and their relative quantities assessed to \textcolor{red}{provide insights for future launch system designs}. Of these comparisons, the relationship between the maximum dynamic pressure and the structural mass of the \textcolor{red}{scramjet accelerator} was found to be of particular interest. 
-It was found that the sensitivity of the launch system to the maximum dynamic pressure of the \textcolor{red}{scramjet accelerator} is relatively low, indicating that it may be advantageous to design the \textcolor{red}{scramjet accelerator} to fly at a lower maximum dynamic pressure, in order to reduce heat shielding and structural mass. It was found that if the mass of the \textcolor{red}{scramjet accelerator} can be reduced by greater than -\textcolor{red}{68.6}kg per -1kPa reduction in maximum dynamic pressure (or -\textcolor{red}{106.7}kg per 1kPa when fly-back is included) then a larger payload-to-orbit will be achieved.
- 
+Optimised trajectories were simulated using the representative launch system for maximum payload-to-orbit, achieving the first optimal launch trajectories that have been calculated for an airbreathing three-stage launch system. LODESTAR was able to calculate trajectories that were non-intuitive, removing the need for trial and error and allowing insights into the performance of the rocket-scramjet-rocket launch system. 
+Initially, the trajectory of the launch system was developed with the assumption that the scramjet accelerator lands at a location downrange.
+For comparison purposes, the scramjet accelerator stage of the launch vehicle was first constrained to flight at its maximum dynamic pressure;  a common assumption for the maximum efficiency trajectory for airbreathing launch systems.
+The maximum payload-to-orbit trajectory of the launch system was then calculated with no dynamic pressure restriction, and was found to be capable of delivering \PayloadToOrbitStandardNoReturn kg of payload to sun synchronous orbit, an increase of 59.1\% over the simulation with the scramjet accelerator constrained to constant dynamic pressure, although the scramjet accelerator was still observed to fly close to its maximum dynamic pressure for the majority of scramjet engine operation. 
+Three key features were observed in the trajectory that were not present in a trajectory constrained to constant dynamic pressure; an altitude raising manoeuvre in the centre of the scramjet accelerator's trajectory, a higher first stage-scramjet accelerator separation point, and a pull-up before scramjet accelerator-third stage separation.
 
-This investigation into the sensitivity of the optimised trajectory to variations in the design parameters of the launch system has provided insights into the shape of the optimised trajectory, and allowed the effects of the modified design parameters to be quantified. These findings can be used to predict the maximum payload-to-orbit trajectories of future launch systems, as well as how design changes may affect the performance of the launch system utilised in this study. 
+
+The altitude raising manoeuvre in the centre of the scramjet accelerator's trajectory was observed to occur in a region of relative homogeneity in the performance of the scramjet accelerator, increasing the efficiency of the scramjet accelerator by +0.3\%. This indicates that the optimal performance of the scramjet accelerator vehicle may not always be achieved at maximum dynamic pressure.  
+However, the effect of this altitude raising on maximum payload-to-orbit is small, and it is the stage separation points that have the most effect on the performance of the launch system.
+The higher first stage-scramjet accelerator separation point is unique to a three-stage launch system, and was found to decrease the amount of turning that must be performed by the first stage,
+reducing the necessary throttling and increasing the efficiency of the first stage.
+ Finally, and most importantly, the pull-up before the scramjet accelerator-third stage separation decreases the amount of turning which the third stage must perform, and enables the third stage to gain altitude much more rapidly, causing it to spend significantly less flight time at high dynamic pressure. 
+This reduced exposure to high dynamic pressure reduces the energy losses due to the aerodynamic drag of the third stage, as well as reducing the amount of energy imparted upon the heat shield, by allowing it to be jettisoned earlier. This pull-up is similar to the pull-up observed in some two-stage systems, with scramjet-rocket transition occuring at a much lower altitude than was observed in single-stage systems. However, this is the first time that a pull-up under airbreathing operation after a mostly constant dynamic pressure trajectory has been explicitly shown to maximise performance in a multi-stage launch system.
+
+The manoeuvres at the stage separations were performed in order to utilise the superior aerodynamic performance of the scramjet accelerator stage, and were found to result in the exergy efficiency of the scramjet accelerator decreasing by -0.719\%$\eta$ (-14.04\%). However, this reduction in the efficiency of the scramjet accelerator is a trade-off for increases in the exergy efficiencies of the first and third stages, of +0.623\%$\eta$ (+9.96\%) and +6.013\%$\eta$ (+63.20\%) respectively, resulting in a significantly higher overall efficiency. These deviations from maximum dynamic pressure indicate that it is imperative to design the scramjet engines of a three-stage launch system to be operable at low dynamic pressure, and at high angle of attack, and that the scramjet accelerator vehicle must be designed with manoeuvrability and controllability in mind.
+
+The fly-back of the scramjet accelerator to the initial launch site after the separation of the third stage was included in the problem definition, and maximum payload-to-orbit trajectories calculated. 
+It was found that the launch system is capable of delivering \PayloadToOrbitStandard kg of payload to sun synchronous orbit, while successfully returning the scramjet accelerator to its initial launch site. This optimal trajectory shows that it is feasible to return a scramjet-powered accelerator to its initial launch site under only scramjet power, the first time that this has been shown for a multi-stage launch system, with only a relatively small (-15.5\%) reduction in the payload mass-to-orbit.
+	The inclusion of the fly-back of the scramjet accelerator was found to alter the shape of the ascent trajectory significantly: Altitude-raising manoeuvres before the stage separations were still performed, of similar magnitudes to the manoeuvres performed with no fly-back, however, a significant heading change was performed during launch to minimise the distance required to fly-back, requiring heavy banking during the operation of the scramjet accelerator. 
+The optimal fly-back of the scramjet accelerator required the ignition of the scramjet engines, and was observed to exhibit three distinct phases, an initial turn, a boost-skip, and an approach. 
+These manoeuvres serve to increase the range of the scramjet accelerator during its return, minimising the fuel necessary for the fly-back by allowing efficient heading changes, improving the specific impulse of the scramjet engines during operation, and enhancing the aerodynamic efficiency during return.
+ In total, \returnFuelStandard kg of fuel was used during the fly-back, 16.5\% of the scramjet accelerator's total fuel mass. The multiple restarts observed during the return trajectory indicate the importance of being able to restart the scramjet engines rapidly, and both the ascent and return trajectories further emphasise the need for the scramjet accelerator stage to be manoeuvrable and controllable. 
+	
+	
+	
+After the optimised trajectories were calculated, eight key design parameters of the launch system were modified, and the sensitivities of the maximum payload-to-orbit trajectory studied in order to assess the sensitivity of the optimised trajectory, and predict how design changes may affect the performance of the launch system utilised in this study.3
+The parameters varied were; the maximum dynamic pressure of the scramjet accelerator; the drag coefficients of the scramjet accelerator and third stage; the specific impulses of the scramjet accelerator and third stage; and the structural and fuel masses of the scramjet accelerator and the third stage. 
+These parameters were varied for trajectories both with and without scramjet accelerator fly-back, and when the fly-back was included, the sensitivity to most design parameters was observed to decrease due to the fly-back distance counteracting some of the effects of the design variations. However, the sensitivity to maximum dynamic pressure was observed to significantly increase, as the complex coupled nature of the ascent and fly-back meant that the maximum dynamic pressure had a more prominent effect on the overall trajectory. 
+
+It was found that the ability of the first stage to pitch, determined by the acceleration of the launch system, is the primary driver of the first stage-scramjet accelerator separation conditions. 
+When the efficiency of the scramjet accelerator was increased, the efficiency of the third stage was also observed to increase, and vice versa. The exception to this trend was found when the fuel mass of either stage was varied, resulting in a larger mass and decreased efficiency, but a higher total exergy.
+When the performance of the third stage was decreased past a certain point, the third stage was observed to have difficulty exiting the atmosphere, requiring a very low and level release point in order to use its aerodynamics effectively, resulting in a distinct cutoff point in overall performance. This indicates that achieving a suitable performance for atmospheric exit after release from the end of a pull-up manoeuvre is crucial for efficient third stage operation.  
+Comparing the sensitivities of significantly coupled design parameters allowed the effects of the modified design parameters to be quantified, and it was found that the relationship between the maximum dynamic pressure and the structural mass of the scramjet accelerator was of particular interest. 
+The sensitivity of the launch system to the maximum dynamic pressure of the scramjet accelerator was found to be relatively low, indicating that it may be advantageous to design the scramjet accelerator to fly at a lower maximum dynamic pressure in order to reduce heat shielding and structural mass. 
+
+The maximum payload-to-orbit trajectory profiles that have been developed are non-intuitive, involving complex trade-offs between the efficiencies of each stage of the launch system, as well as the fly-back of the scramjet accelerator. The design of these optimised flight paths is made possible through the use of the pseudospectral method of optimal control, coupled with accurate and robust propulsion and aerodynamic modelling.  
+The trajectory profiles and analyses that have been developed in this work can be used to inform and give insight into the flight paths of future launch systems, and can assist in directing future design decisions for airbreathing, multi-stage launch systems. 
 
 
   \chapter{Recommendations for future work}
-   \textcolor{red}{XXX DO THIS SECTION AFTER DOING INGOS CORRECTIONS}
-  \textcolor{red}{XXX I should get way more specific here, will help to clarify why I havent done a full design study}
-  \textcolor{red}{XXX add cavity simulations}
   	
  This work on the calculation of a maximum payload-to-orbit trajectory for a rocket-scramjet-rocket launch system was carried out to determine the behaviour and sensitivities of such a launch system, in order to inform future launch vehicle designs. 
-  \textcolor{red}{While a launch system design was carried out, to create a representative launch system for performance assessment, it was not the intent of this work to assert that this launch system is anything more than a very preliminary design, nor to make significant design modifications based on the optimised trajectory results.}
+  While a launch system design was carried out, to create a representative launch system for performance assessment, it was not the intent of this work to assert that this launch system is anything more than a very preliminary design, nor to make significant design modifications based on the optimised trajectory results.
  As such, a number of improvements to the design of the launch system as well as some outstanding research questions were identified during the course of this work.
  In order to build upon this work and advance our knowledge of reusable, partially-airbreathing launch systems, the following research directions are suggested:
 
-%\begin{itemize}
+%\begin{itemize
 \vspace{10pt}
 \textit{Controllability studies of all three vehicles of the launch system.}
 
  \noindent
-During this work, \textcolor{red}{the angles of attack of the vehicles within the launch system were constrained} to values which were estimated to represent the realistic control limits of each vehicle, \textcolor{red}{and the centre of gravity was controlled by switching which of the fuel tanks was being drawn from}. \textcolor{red}{However, it was observed that during the maximum payload-to-orbit the scramjet accelerator becomes aerodynamically unstable.}
-A controllability study of all three stages would improve the accuracy of the vehicle simulation models, and introduce more realistic control limits to the trajectory optimisation.  \textcolor{red}{XXX expand this with more specifics, eg MPC as mentioned in control uncertainty appendix}
+During this work, the angles of attack of the vehicles within the launch system were constrained to values which were estimated to represent the realistic control limits of each vehicle, and the centre of gravity was controlled by switching which of the fuel tanks was being drawn from. However, it was observed that during the maximum payload-to-orbit the scramjet accelerator becomes aerodynamically unstable.
+A controllability study of all three stages would improve the accuracy of the vehicle simulation models, and introduce more realistic control limits to the trajectory optimisation.  XXX expand this with more specifics, eg MPC as mentioned in control uncertainty appendix
 -separation
 -redesign
 
@@ -99,7 +69,56 @@ A controllability study of all three stages would improve the accuracy of the ve
  \textit{Design of a fly-back first stage booster.}
  
  \noindent
- During this work, the first stage booster is assumed to be expendable, to enable a simple design process. However, in the future it is likely that the first stage of the launch system will be required to be reusable for the launch system to be economically feasible. As such, a first stage booster must be designed and sized which is capable of accelerating the \textcolor{red}{scramjet accelerator} to operational speeds, as well as returning to the initial launch site after separation at Mach 5. 
+ During this work, the first stage booster is assumed to be expendable, to enable a simple design process. However, in the future it is likely that the first stage of the launch system will be required to be reusable for the launch system to be economically feasible. As such, a first stage booster must be designed and sized which is capable of accelerating the scramjet accelerator to operational speeds, as well as returning to the initial launch site after separation at Mach 5. 
+
+\vspace{10pt}
+\textcolor{red}{
+	\textit{Further launch system design.}
+}
+
+\noindent
+-more MDO
+-take pull-up and other manoeuvres into account
+-max q vs structural mass trade-off and other trade-offs
+
+\vspace{10pt}
+\textcolor{red}{
+\textit{Detailed internal design analysis of all stages.}
+}
+
+\noindent
+This study necessarily utilises a simplified model for internal structures. However, this study has also found that it is necessary to fly this type of airbreathing launch system close to its structural and thermal limits. To ensure that a launch system of this type is being designed in a realisable manner, it will be necessary to model the internals of all stages in detail, including layout, structural connections, and internal thermal management.  
+
+\vspace{10pt}
+\textcolor{red}{
+	\textit{Detailed controllability analysis and control system design.}
+}
+
+\noindent
+
+\vspace{10pt}
+\textcolor{red}{
+	\textit{Stage separation analysis and mechanism design.}
+}
+
+\noindent
+
+-should include consequences of separation method, such as simualtions of cavity during return
+
+\vspace{10pt}
+\textcolor{red}{
+	\textit{Detailed scramjet engine analysis and uncertainty quantification.}
+}
+
+\noindent
+
+\vspace{10pt}
+\textcolor{red}{
+	\textit{Third stage engine design analysis.}
+}
+
+\noindent
+-choice of third stage engine / design of engine with scaling
 
 \vspace{10pt}
  \textit{Cost analysis of the launch system.}
@@ -111,8 +130,10 @@ A primary driver for a realistic launch system is its overall performance, as a 
  \textit{Multi-disciplinary design optimisation sizing of the launch system.}
 
  \noindent
-During this work, the first and third stages of the launch system were designed around the previously sized \textcolor{red}{scramjet accelerator} vehicle, and the dimensions and performance of the \textcolor{red}{scramjet accelerator} were kept fixed (apart from during sensitivity studies).
+ XXX Change this and integrate into the above
+ 
+During this work, the first and third stages of the launch system were designed around the previously sized scramjet accelerator vehicle, and the dimensions and performance of the scramjet accelerator were kept fixed (apart from during sensitivity studies).
 The development and characterisation of the maximum payload-to-orbit trajectory of the rocket-scramjet-rocket launch system paves the way for a multi-disciplinary design optimisation, of all three stages concurrently. A multi-disciplinary design optimisation of the system would allow the sizing, design, and relative performance of the three stages to be optimised, taking into account the variation in the maximum payload-to-orbit trajectory path.  
-%\end{itemize}
+%\end{itemize
 
 

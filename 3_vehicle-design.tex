@@ -4,8 +4,6 @@
 \chapter{Modelling of Launch System Dynamics}\label{chapter:Design}
 % XXX Check this intro, as well as applicability statement, with Ingo
 
-\textcolor{red}{ XXX I need to make sure I don’t have any references left to 70\% throttle}
-
 \textcolor{red}{This work aims to study the optimised trajectory and performance of a rocket-scramjet-rocket launch system, requiring the dynamics of a launcher to be modelled in some detail, based on a representative design.
 	This chapter presents the design and modelling of a representative rocket-scramjet-rocket launch system, in which the scramjet stage is reusable for multiple launches. 
 		This rocket-scramjet-rocket launch system is designed to launch small satellites to a 567km altitude sun-synchronous orbit and is based on the SPARTAN launch system concept, originally designed by Jazra, Preller \& Smart\cite{Preller2017b,Jazra2013}, and now being developed by The University of Queensland and Hypersonix.
@@ -464,7 +462,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 		
 		
 		
-		\subsubsection{Viscous Correction}
+		\subsubsection{Viscous Correction}\label{sec:viscous}
 		
 		\begin{figure}[ht]
 			\begin{subfigure}{.5\textwidth}
@@ -771,7 +769,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 			\centering
 \begin{tabular}{|c|c|c|c|}
 	\hline  Part & Density & Geometry & mass \\ 
-	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 50mm diameter cylinder, spherical tip & 10.0kg \\ 
+	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 142mm diameter, 20mm thick hemispherical tip & 10.0kg \\ 
 		\hline C-C Cone & $\rho_{CC} = 1593$  kg/m$^3$ & 10.8mm thick, conical & 89.7kg \\ 
 			\hline Phenolic Cork Cylinder & $\rho_{Phenolic Cork} = 512$  kg/m$^3$ & 3.1mm thick, cylindrical & 24.9kg \\ 
 	\hline 
@@ -886,7 +884,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 \section{Modelling and Design Simplifications}  % XXX this is one for ingo to look at in particular, the location of this and how it fits in + discussion on controlinstability + section on aero and propulsion
 }
 
-\textcolor{red}{XXX Make the imacts seciton share the same general sentence formats}
+\textcolor{red}{XXX Make the imacts secitons in each subheading share the same general sentence formats}
 
 The representative launch system in this study is based on the SPARTAN\cite{Preller2017b}, as it is the most mature concept for a small satellite launch system using scramjets in the public domain. However, the system is still at the preliminary design phase, meaning that the design, as well as system and sub-system models still incorporate significant simplifications and have not been fully developed. These simplified models and design methodologies are necessary and appropriate for preliminary system and trajectory analysis, allowing the trajectories in this work to be developed and a wide range of launch system parameters to be investigated. However, the effects of the simplifications within this analysis must be acknowledged.
 The modelling and design simplifications have been considered in two parts; the simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Appendix \textcolor{red}{XXX}; while the design related simplifications that particularly affect the control, staging, and mass modelling of the launch system are considered here. The effects of the simplifications in this section are not quantified, but the sensitivity studies in Sections XXX and XXX give an indication as to the implications of variations of the effected performance and design parameters.
@@ -931,9 +929,13 @@ Likely impacts on design:
 
 \subsection{Staging Effects}\label{sec:stagingSimp}
 
-A rocket-scramjet-rocket multi-stage launch system will require stage separations at high Mach numbers, into high dynamic pressure conditions. These stage separations may induce aerodynamic forces and moments on the stages of the launch system that are significantly different to the nominal flight regime of each stage, and will need to be carefully studied and mitigated for a launch system of this type to be feasible. It is possible that the design of the launch system may be significantly driven by the ability of the launch system to stage successfully at high dynamic pressure conditions. 
 
-During the first-second stage separation the first stage and cowling will require separation while flying at low trajectory angles, at high dynamic pressure. For the first and second stages to separate cleanly, the first stage and cowling must decelerate more rapidly than the second stage scramjet. This manoeuvre must be executed in a controlled manner, because there must be no risk of adverse contact between the stages. Clean separation may be challenging, and may require ignition of the scramjet engines prior to the release of the first stage. 
+A particular challenge inherent to multi-stage airbreathing launch systems is the dynamics of the stage separation itself. This stage separation often occurs in-atmosphere, at relatively low trajectory angles. This separation is a key factor in the design of each stage, particularly the time when the upper stage engine must be ignited to ensure appropriate control and speed after separation. This separation also results in vehicle-vehicle aerodynamic interactions between the stages of the launch system as they separate. These stage separations may induce aerodynamic forces and moments on the stages of the launch system that are significantly different to the nominal flight regime of each stage, and will need to be carefully studied and mitigated for a launch system of this type to be feasible\cite{mochammad,Kudo2005}. 
+These separation effects are not generally taken into account in the early stages of launch vehicle conceptualisation, as they can be considered as secondary to an overall trajectory design and optimisation in the early stages of design.  % XXX cite? wont be able to find one.. also check
+However these separation effects are likely to be significant, and a multi-stage vehicle must be carefully analysed in the later stages of vehicle design using CFD and experimental analysis, along with an iterative design process, to ensure that appropriate control authority can be maintained during and after separation\cite{mochammad}. 
+It is possible that the design of the launch system may be significantly driven by the ability of the launch system to stage successfully at high dynamic pressure conditions. 
+
+During the first-second stage separation of the representative launch system the first stage and cowling will require separation while flying at low trajectory angles, at high dynamic pressure. For the first and second stages to separate cleanly, the first stage and cowling must decelerate more rapidly than the second stage scramjet. This manoeuvre must be executed in a controlled manner, because there must be no risk of adverse contact between the stages. Clean separation may be challenging, and may require ignition of the scramjet engines prior to the release of the first stage. 
 
 The separation of the third stage rocket is likely to be particularly challenging, requiring separating the third stage from the scramjet-powered accelerator while retaining control authority over both vehicles, and ensuring that there is no significant risk of contact between the vehicles. The configuration of the vehicles during launch is particularly important for separation, and will need to be investigated thoroughly in the future, when detailed designs of three-stage airbreathing launch systems are progressed. This work assumes that the third stage is contained within the airbreathing stage, similar to some previous designs of the SPARTAN launch system\cite{Jazra2013} and the Starsaber\cite{Germain2001}. However, other design strategies of multi-stage airbreathing launchers support the upper stage on top of\cite{Gong2014,Tsuchiya2005} or below\cite{Takahashi1997} the airbreathing stage, or contain upper stages within a cavity on the back of the vehicle\cite{Preller2017b,Mehta2001,Wilhite1991}. Each of these methods has positives as well as drawbacks, that must be considered throughout the design process.
 The storage of the third stage within the main body of the scramjet-powered accelerator during the ascent phase, as is done in this study, with a cowl covering the third stage storage area, necessitates a release mechanism such as retractable panels or a hinged fuselage section. This method of release is also likely to require an ejection mechanism, to impart a force onto the third stage and create separation between the stages. Additionally, it is possible that it would be necessary to ignite the third stage before it is fully released from the scramjet accelerator, due to the lack of a control mechanism for the third stage without the rocket engine ignited. 
