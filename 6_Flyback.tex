@@ -363,7 +363,7 @@ During simulations, it was observed that on occasion, the optimal return traject
 
 
 \subsection{Case 12: Maximum Dynamic Pressure Sensitivity with Fly-Back}
--xxx not updated
+
 \begin{table}[ht]% updated 11/1/20
 	\centering
 	\begin{tabular}{l c c c c c c} 
@@ -523,12 +523,12 @@ During simulations, it was observed that on occasion, the optimal return traject
 
 The maximum dynamic pressure allowable during flight is varied by $\pm$10\% in order to determine the sensitivity of the launch system to the structural and thermal limitations of the scramjet accelerator.  
 Table \ref{tab:qvarreturn} shows a summary of the key parameters of each optimised trajectory, and trajectory comparison plots are shown in Appendix \ref{sec:app_comparison21}. The variation in each trajectory parameter per \% of the dynamic pressure is shown, if there is a clear trend. The payload-to-orbit of the launch system improves by \textcolor{red}{+5.5}kg (\textcolor{red}{+4.2}\%) at 55kPa, and decreases by \textcolor{red}{-22.2}kg (\textcolor{red}{-16.8}\%) at 45kPa.
-The overall exergy efficiency of the system increases as the maximum dynamic pressure increases, by \textcolor{red}{+0.051}\%$\eta$ at 55kPa, and decreases as the maximum dynamic pressure decreases, by \textcolor{red}{-0.225}\%$\eta$ at 45kpa. 
+The overall exergy efficiency of the system increases as the maximum dynamic pressure increases, by \textcolor{red}{+0.049}\%$\eta$ at 55kPa, and decreases as the maximum dynamic pressure decreases, by \textcolor{red}{-0.227}\%$\eta$ at 45kpa. 
 No significant variation is observed between sensitivity studies with or without the fly-back included in the sensitivity of the launch system to the maximum dynamic pressure of the scramjet accelerator, by percentage.
 
 \textcolor{red}{
 When fly-back is included, no trends are observed in the exergy efficiencies of the first stage or scramjet accelerator due to maximum dynamic pressure variation. Compared to the sensitivity study with no fly-back, the trade-offs between the efficiencies of the stages include the manoeuvrability of the scramjet accelerator, which dictates the fuel used during the return flight. This additional factor produces more complicated energy trade-offs, resulting in differing optimal trajectory shapes, with slightly different tradeoffs between the stages as the dynamic pressure is varied due to the nonlinearities in the different engine efficiencies and vehicle performances at each dynamic pressure limit.
-However, in all cases, increasing the maximum dynamic pressure improves the manoeuvring capabilities of the scramjet accelerator and increases the acceleration rate during ascent, which leads to a reduced flight time (-25.0s, -4.9\% at 55kPa, and +88.7, +17.4\% at 45kPa), and less ground coverage (-48.8km, -5.6\% at 55kPa, and +125.4km, 14.4\%, at 45kPa). Increasing the dynamic pressure limit generally allows for a higher scramjet accelerator-third stage release angle due to increased manoeuvrability. In all cases increasing the dynamic pressure limit increases the efficiency of the third stage rocket, also generally reducing the time that the third stage spends flying in greater than 5kPa dynamic pressure. }
+However, in all cases, increasing the maximum dynamic pressure improves the manoeuvring capabilities of the scramjet accelerator and increases the acceleration rate during ascent, which leads to a reduced flight time (-23.1s at 55kPa, and +90.6s at 45kPa), and less ground coverage (-46.1km at 55kPa, and +128.1km at 45kPa). Increasing the dynamic pressure limit generally allows for a higher scramjet accelerator-third stage release angle due to increased manoeuvrability. In all cases increasing the dynamic pressure limit increases the efficiency of the third stage rocket, also generally reducing the time that the third stage spends flying in greater than 5kPa dynamic pressure. }
 
 
 \subsection{Case 13: Scramjet Accelerator Drag Sensitivity with Fly-Back}\label{sec:dragvar}
@@ -877,7 +877,6 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 
 
 \subsection{Case 15: Scramjet Accelerator Mass Sensitivity with Fly-Back}\label{sec:m2var}
--xxx not updated
 
 \begin{table}[ht] % UPDATED 11/1/20
 \centering
@@ -1035,7 +1034,7 @@ The exergy efficiency of the third stage rocket increases as the exergy efficien
 \label{tab:comparison101}
 \end{table}
 
--xxx lost 2-3 separation alt sensitivity and 3rd stage over 5kpa sensitivity
+
 
 The mass of the scramjet accelerator is varied by \textcolor{red}{$\pm$10}\% to investigate the sensitivity of the launch system performance to the structural mass of the second stage, with the inclusion of scramjet accelerator fly-back. As in Section \ref{sec:SpartanMassnoreturn}, the mass is varied by only \textcolor{red}{$\pm$10}\% in order to limit the variation in the velocity of the first-second separation.
 Table \ref{tab:comparison101} details key parameters of each trajectory, and Appendix \ref{sec:app_comparison101} shows comparison plots.
@@ -1043,12 +1042,10 @@ Varying the structural mass of the scramjet accelerator yields a change in maxim
 
 
 \textcolor{red}{
-As observed in Section \ref{sec:SpartanMassnoreturn}, increasing the structural mass of the scramjet accelerator decreases the altitude of first stage-scramjet accelerator separation, and decreases the velocity and trajectory angle. 
+As observed in Section \ref{sec:SpartanMassnoreturn}, increasing the structural mass of the scramjet accelerator generally decreases the altitude of first stage-scramjet accelerator separation, and decreases the velocity and trajectory angle. 
 In addition, increasing the structural mass of the scramjet accelerator decreases the exergy efficiency of the first stage rocket, due to the first stage rocket not accelerating as quickly as the mass of the scramjet accelerator is increased, causing the propulsive efficiency of the first stage to decrease (illustrated by Equation \ref{eq:rocketeff}).}
-
  As was observed in Section \ref{sec:SpartanMassnoreturn}, the lower velocity of first-second separation means that when the scramjet accelerator mass is increased, the velocity range over which the scramjet accelerator is accelerating is lower. This is beneficial for the specific impulse of the C-REST engines, which exhibit higher $I_{SP}$ at lower velocities. For this reason, when the scramjet accelerator mass is increased, the net specific impulse of the scramjet accelerator stays high for longer in the main segment of the trajectory, above 500s $I_{SP}$ for \textcolor{red}{441}s of its trajectory at 110\% mass, compared to \textcolor{red}{265}s above 500s $I_{SP}$ at 90\% mass. 
 However, the higher scramjet accelerator mass decreases the overall acceleration of the scramjet accelerator, in turn decreasing the efficiency of the third stage due to increased propulsive losses.
-In contrast to the mass sensitivity study without fly-back, the second-third stage separation point shows a trend of decreasing altitude, of -0.09$\frac{\Delta km}{\Delta\% m_{scramjet accelerator}}$. As was observed when the drag of the scramjet accelerator was varied in Section \ref{sec:dragvar}, this is in order to maintain a consistently sized initial skip during the return trajectory.
 
 
 \subsection{Case 16: Scramjet Accelerator Fuel Mass Sensitivity with Fly-Back}
@@ -1223,7 +1220,7 @@ As in Section \ref{sec:fuelmassNoReturn}, this is due to the increased period of
 
 
 \subsection{Case 17: Third Stage Mass Sensitivity with Fly-Back}
--xxx not updated
+
 \begin{table}[ht]% updated 11/1/20
 	\centering
 	\begin{tabular}{l c c c c c c} 
@@ -1546,7 +1543,7 @@ As was observed in Section \ref{sec:m3noReturn}, there is no linear trends with 
 	\caption{Comparison of key trajectory parameters with variation in the specific impulse of the third stage, with fly-back (Case 18).}
 	\label{tab:isp3}
 \end{table}
--xxx lost 3rd stage over 5kpa trend
+
 
 The specific impulse of the third stage rocket is varied by $\pm$10\% to investigate the sensitivity of the launch system to the performance of the third stage rocket, when the fly-back of the scramjet accelerator is included. 
 Table \ref{tab:isp3} shows selected performance indicators, while Appendix \ref{sec:app_comparison91} shows comparison plots of the maximum payload-to-orbit trajectory at each third stage specific impulse. \textcolor{red}{Negative payload-to-orbit is produced at 90\% specific impulse, indicating that it is not possible for the third stage to reach the required orbit at this specific impulse. }
