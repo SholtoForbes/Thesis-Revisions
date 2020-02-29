@@ -92,38 +92,40 @@ The optimal trajectory shape of a multi-stage rocket-scramjet-rocket system is s
   \clearpage
   \section{Thesis Outline and Contributions}
 
-    \textcolor{red}{XXX Update}
+    \textcolor{red}{
+    \subsubsection*{Chapter 2 - Background}
+}
+	Contextual background is presented to frame the objectives of this work. To inform on the current developments in the industry, details are provided on the current state of space launch systems, with a particular focus on small satellite launchers. An overview of scramjet engines is provided to illustrate their potential advantages, followed by an outline of the launch system design process to position this work within the conceptual and preliminary design space.
 
-    \subsubsection*{Chapter 2 - Literature Review}
-
-      A review of literature related to the various aspects of this study is presented. The theory behind scramjet propulsion is outlined, followed by a background of reusable and small satellite launch systems. A review of the trajectories of partially-airbreathing launch systems is presented, comparing the optimised trajectories of various conceptual vehicles. An overview of optimal control techniques is presented, with particular emphasis on the pseudospectral method of solving optimal control problems, which is employed within this study. Lastly, an overview of the optimal control and aerodynamic solvers that are used in this study is presented.
+    \subsubsection*{Chapter 3 - Literature Review}
+\texttt{}
+      A review of literature related to the various aspects of this study is presented. A review of the \textcolor{red}{designs and }trajectories of partially-airbreathing launch systems is presented, comparing various \textcolor{red}{single-stage, two-stage and three-stage} conceptual vehicles. \textcolor{red}{It is determined that the optimal flight path for a multi-stage airbreathing launch system has not been well defined, and that for three-stage vehicles the optimal flight path has not been investigated. The SPARTAN launch vehicle is investigated in detail, as the most well defined three-stage airbreathing launch system design. The fly-backs and maximum-range trajectories of multiple hypersonic launch systems and gliders are investigated to determine the feasibility of return and the possible trajectory characteristics.} \textcolor{red}{To facilitate the development of an optimised trajectory, }an overview of optimal control techniques is presented, with particular emphasis on the pseudospectral method of solving optimal control problems, which is employed within this study. Lastly, \textcolor{red}{the available methods of aerodynamic analysis are analysed, and details of Cart3D, the fluid dynamics analysis tool that is used in this study, are investigated}.
       
 
-    \subsubsection*{Chapter 3 - Launch Vehicle Design and Simulation}
+    \subsubsection*{Chapter 4 - Modelling of Launch System Dynamics}
 
-      The design, aerodynamics and engine models of all three stages are detailed. the SPARTAN scramjet-powered stage is presented first, followed by the first and third stages. The design of each stage is shown, along with sizing and mass breakdowns. The propulsion model used for each stage is detailed, along with the modelling and interpolation schemes used. The aerodynamic characteristics and simulation methodology of each stage is presented, and the process for trimming each vehicle is specified. 
+      The design of a representative three-stage launch system is presented, and the aerodynamics and engine models of all three stages are detailed. The scramjet accelerator stage based on the SPARTAN is presented first, followed by the first and third stages. The design of each stage is shown, along with sizing and mass breakdowns. The propulsion model used for each stage is detailed, along with the modelling and interpolation schemes used. The aerodynamic characteristics and simulation methodology of each stage is presented, and the process for trimming each vehicle is specified. \textcolor{red}{Finally, the modelling simplifications present in the design are discussed.}
       
       
-      \subsubsection*{Chapter 4 - LODESTAR}
+      \subsubsection*{Chapter 5 - Trajectory Modelling and Optimisation}
       
-      The method used for the simulation and optimisation of the trajectory is presented, including the details of the trajectory analysis program, LODESTAR, which has been developed for this study. The specifics of the optimal control methodology are presented. The simulation methodology is detailed, along with the construction of the optimal control simulation for the mission used in this study. The specific set-up of the optimal control program is detailed for each trajectory stage, specifying the costs and constraints which drive the optimal control solver. Finally, the methods for validating the final solutions are specified.
+      The method used for the simulation and optimisation of the trajectory is presented, including the details of the trajectory analysis program, LODESTAR, that has been developed for this study. The specifics of the optimal control methodology are presented. The simulation methodology is detailed, along with the construction of the optimal control simulation for the mission used in this study. The specific set-up of the optimal control program is detailed for each trajectory stage, specifying the costs and constraints that drive the optimal control solver. Finally, the methods for analysing and validating the final solutions are specified.
       
-      \subsubsection*{Chapter 5 - Optimised Ascent Trajectory}
+      \subsubsection*{Chapter 6 - Optimised Ascent Trajectory}
       
-Optimised trajectories, designed using LODESTAR, are presented. A trajectory is designed in which the SPARTAN flies at a constant dynamic pressure, for comparison purposes. 
+Optimised trajectories for the representative launch system, calculated using LODESTAR, are presented. \textcolor{red}{These trajectories represent the first optimised trajectories that have been developed for a three-stage airbreathing launch system.} A trajectory is designed in which the scramjet accelerator is constrained to flight at a constant dynamic pressure, for comparison purposes. 
  A maximum payload-to-orbit trajectory is created and it is found that an increase in altitude at the stage separation points significantly improves payload-to-orbit.
- This trajectory is compared and contrasted to the constant dynamic pressure trajectory to determine the sources of the performance increase.  
- Key vehicle design parameters are varied. The trends in maximised payload-to-orbit and trajectory shape are analysed to study the relative impact of the design parameters on the performance of the launch system. 
+ This trajectory is compared and contrasted to the constant dynamic pressure trajectory to determine the sources of the performance increase. \textcolor{red}{Crucial performance parameters are analysed, including the energy usage of each stage of the launch system, the first time that a multi-stage airbreathing launch system trajectory has been analysed to this level of detail.} 
+ Key vehicle design parameters are varied, and the trends in maximised payload-to-orbit and trajectory shape are analysed to study the relative impact of the design parameters on the performance of the launch system. 
  
  
       
-      \subsubsection*{Chapter 6 - Optimised Trajectory Including Fly-Back}
+      \subsubsection*{Chapter 7 - Optimised Trajectory Including Fly-Back}
       
-      The trajectory of the launch system is optimised for maximum payload-to-orbit, including the fly-back of the SPARTAN to its initial launch location. 
-      It is found to be necessary to reignite the scramjet engines during the return flight of the SPARTAN to achieve fly-back.
-      the SPARTAN is found to bank during acceleration to lessen the fuel consumed during the return flight.
-      The trajectories with, and without, fly-back are compared to determine the impact of SPARTAN fly-back on the performance of the launch system
-      In a similar fashion to Chapter 5, the effects of key vehicle parameters on the optimised trajectory are studied. The sensitivity of the optimised trajectory and payload-to-orbit are analysed, with emphasis on how the fly-back trajectory is affected by the varied vehicle parameters.
+      The trajectory of the launch system is optimised for maximum payload-to-orbit, including the fly-back of the scramjet accelerator to its initial launch location. \textcolor{red}{This trajectory represents the first time that the fly-back of a stage under scramjet power has been modelled, and the first time that the optimised trajectories of a three-stage system have included fly-back}. 
+      It is found to be necessary to reignite the scramjet engines during the return flight, and the scramjet accelerator is found to bank during acceleration to lessen the fuel consumed.
+      The trajectories with, and without, fly-back are compared to determine the impact of scramjet accelerator fly-back on the performance of the launch system, along with key performance parameters. 
+      In a similar fashion to Chapter 5, the effects of vehicle parameters on the optimised trajectory are studied. The sensitivity of the optimised trajectory and payload-to-orbit are analysed, with emphasis on how the fly-back trajectory is affected by the varied vehicle parameters.
       
      
       
@@ -143,26 +145,28 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     
   
     
-    \begin{figure}[ht]
-    	\centering
-    	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/LaunchVehicles}
-    	\caption{Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite{BlueOrigin}.}
-    	\label{fig:LaunchVehicles}
-    \end{figure}
+   
     
-    Launch system technologies have progressed rapidly over the last 60 years. From the early vehicles based on intercontinental ballistic missile technology such as the Thor based launch systems, capable of launching 40-400kg to LEO in the 1960s, to the more modern Atlas V based systems of the 2000s capable of launching 9750-18500kg to LEO\cite{Kendall2010}. 
+    The progress of launch system technologies over the last 60 years has been rapid. From the early vehicles based on intercontinental ballistic missile technology such as the Thor based launch systems, capable of launching 40-400kg to LEO in the 1950s, to the more modern Atlas V based systems of the 2000s capable of launching 9750-18500kg to LEO\cite{Kendall2010}. 
+         \begin{figure}[ht]
+         	\centering
+         	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/LaunchVehicles}
+         	\caption{Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite{BlueOrigin}.}
+         	\label{fig:LaunchVehicles}
+         \end{figure}
     The materials, propulsion technology, aerodynamics and guidance algorithms have all improved significantly, enabling  rockets to become more efficient, cheaper to produce, and more reliable. As the demand for satellite launches grows, and the cost of development of launchers becomes cheaper, the potential for profiting from space launches increases. 
     This has driven a large portion of the space flight industry to move towards privatisation, with a heavy focus on reusable technology. 
-    \begin{figure}[ht]
-    	\centering
-    	\includegraphics[width=1\linewidth]{"figures/2_literature-review/FalconTrajectory"}
-    	\caption{The trajectory of the Falcon Heavy\cite{FalconHeavy}.}
-    	\label{fig:FalconTrajectory}
-    \end{figure}
+        \begin{figure}[ht]
+        	\centering
+        	\includegraphics[width=1\linewidth]{"figures/2_literature-review/FalconTrajectory"}
+        	\caption{The trajectory of the Falcon Heavy\cite{FalconHeavy}.}
+        	\label{fig:FalconTrajectory}
+        \end{figure}
+
     
     Reusable launch technology has been possible for many years, in the form of the space shuttle. However, the space shuttle was weighed down by large launch costs and operational complexity, and was not a commercial success\cite{Launius2006}. Recently, reusable launchers have become the focus of many of the largest private launch companies, as reusability becomes more achievable due to technological advances\cite{Foust2018,Mosher2018}. The SpaceX Falcon 9 and Falcon Heavy have been demonstrated on multiple occasions, landing booster stages successfully, and re-flying reused boosters multiple times\cite{Foust2018}. In the near future the Blue Origin New Glenn is planned\cite{Foust2018}, with potentially the Airbus Adeline to follow (to be used on the Ariane 6)\cite{Adeline}. The Falcon and New Glenn launchers are large rockets, and are shown in Figure \ref{fig:LaunchVehicles} in a size comparison with other, expendable rocket systems, including the Ariane 5, which is projected to be similarly sized to the Ariane 6. 
      
-    
+
     
     
     
@@ -193,9 +197,9 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     			\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|}
     				
     				\hline  \textbf{Launcher} & \textbf{Company} & \textbf{Country} & \textbf{Payload Capacity} & \textbf{Cost/Kg} (USD) & \textbf{Availability }& \textbf{Stages \& Propulsion} & \textbf{Reusability}  \\ 
-    				\hline  Electron\cite{Electron} & RocketLab & NZ/USA & 150Kg to SSO & \$32,600 & Available & Rocket-rocket & No \\ 
+    				\hline  Electron\cite{Electron} & RocketLab & NZ/USA & 150Kg to SSO & \$32,600 & Available & Rocket-rocket & No  \\ 
     				
-    				\hline Bloostar\cite{Bloostar} & Zero2Infinity & Spain & 100kg to SSO & \$40,000 &  - & Balloon-rocket-rocket-rocket & No \\ 
+    				\hline Bloostar\cite{Bloostar} & Zero2Infinity & Spain & 100kg to SSO & \$40,000 &  - & Balloon-rocket-rocket-rocket & No - Partial Planned\\ 
     				
     				\hline Eris\cite{Gilmour} & Gilmour Space Technologies & Aus/SG& 380kg to LEO  &\$23,000-38,000   & Q4 2020 && No\\ 
     				\hline Intrepid-1\cite{Intrepid} & Rocket Crafters  & USA & 376kg to SSO & \$23,936 & Q1 2019 & Rocket-rocket & No \\ 
@@ -222,16 +226,14 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     These small satellite launch systems are mostly expendable, aiming to reduce costs by creating a launch system which is as cost-efficient as possible to produce and launch\cite{Niederstrasser2015}. This often entails making use of conventional, well-tested designs, combined with state of the art manufacturing techniques, such as 3-D printing\cite{Niederstrasser2015,Gilmour}. This method allows for rapid development, although it has an intrinsic cost limit due to the requirement of manufacturing a new launch system for each launch. 
     
     \textcolor{red}{If small satellite systems are able to be designed to be reusable, the cost of launch would be able to be brought down further. However, designing a small satellite for reusability is more complex than for a larger rocket system. The systems used to manoeuvre exoatmospherically and decelerate like the Falcon or New Glenn or fly-back like the Adeline take a relatively higher mass margin as the size of the launcher decreases, in turn increasing the mass, and decreasing the cost efficiency of the launcher. If a cost efficient, reusable design for a small satellite launcher is to be produced, it is likely that a technology must be developed that is specifically geared towards small satellite launch. 
-    One of the most promising technologies currently under development, that may enable reusable small satellite launch systems, is high speed airbreathing engines\cite{Smart2009}, in particular the hypersonic scramjet engine.}
+    One of the most promising technologies currently under development that may enable reusable small satellite launch systems is high speed airbreathing engines\cite{Smart2009}, in particular the hypersonic scramjet engine.}
     
  
     
     \section{Scramjets}
     
-    -XXX have something about how sensitive scramjet engines are
-    
-    A Scramjet, or supersonic combustion ramjet, is an airbreathing engine design which combusts air at supersonic speeds and is capable of high Mach number operation. 
-    Across their operating range, scramjets offer much higher specific impulse than rockets, the only other propulsion system capable of operating efficiently at hypersonic speeds\cite{Billig1993,Cook2003}.
+    A Scramjet, or supersonic combustion ramjet, is an airbreathing engine design that combusts air at supersonic speeds and is capable of high Mach number operation. 
+    Across their operating range, scramjets offer much higher specific impulse than rockets, and require significantly less propellant mass\cite{Billig1993,Cook2003}.
     Scramjets compress air without moving parts, using geometry changes within the engine\cite{Curran2001a}, as well as on the forebody of the vehicle to create inlet shocks which provide the compression required for combustion\cite{Smart2012}. After combustion, the combustion products are expanded through a thrust nozzle, schematically shown in Figure \ref{fig:scramjet}. This is similar in operation to a ramjet engine, though a scramjet does not generate a normal shock, allowing supersonic air to enter the combustor. Maintaining supersonic speeds throughout the engine allows scramjets to operate efficiently at Mach numbers of 5 and greater. 
     Scramjets were proposed in the 1940's\cite{Curran2001} and found to be capable of positive net thrust in 1993\cite{Paull1993}, but have yet to be developed to a level which would allow for commercial application. 
     Though scramjets are still in-development, the potential advantages which they offer over rockets for certain applications are driving their development in a number of institutions\cite{Curran2001b}.
@@ -243,7 +245,7 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     \end{figure}
     
     Scramjet engines are suitable for a number of applications where sustained flight or acceleration is desired at high Mach numbers. 
-    The high efficiency of scramjet engines means that significantly less propellant (fuel + oxidiser) is used during flight compared to rocket engines, and consequently, that a much smaller fraction of a scramjet-powered vehicle consists of propellant mass\cite{Curran2003}. 
+    The high efficiency of scramjet engines, and the lack of needing to carry oxidiser on-board, means that significantly less propellant is used during flight compared to rocket engines, and consequently, that a much smaller fraction of a scramjet-powered vehicle consists of propellant mass\cite{Curran2003}. 
     The smaller fuel mass fraction of a vehicle powered by scramjet engines mitigates the mass of the vehicle systems, allowing features such as wings, control surfaces, landing gear, and passenger transport capabilities to be included in the vehicle design\cite{Curran2003}. 
     
     \begin{figure}[ht]
@@ -253,14 +255,14 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     	\label{fig:Scramjet-Efficiency}
     \end{figure}
     
-    Theoretically, the operable range of scramjets is wide\cite{Smart2007a}; the specific impulse of a scramjet decreases with velocity, until it is equal to rockets around Mach 19\cite{Fry2004}, as shown in Figure \ref{fig:Scramjet-Efficiency}. 
+    Theoretically, the operable range of scramjets is wide\cite{Smart2007a}. Scramjets are operable at hypersonic speeds around Mach 5, and the specific impulse of a scramjet decreases with speed until it is equal to rockets around Mach 19\cite{Fry2004}, as shown in Figure \ref{fig:Scramjet-Efficiency}. 
     However, in practical designs, the operating range for a scramjet engine is far more limited. 
     For a fixed geometry scramjet, the operable region is constrained by the geometries of the forebody of the vehicle, the inlet, and the combustor of the scramjet engine\cite{Smart2010}.  
     The Mach number range of a scramjet engine varies by design, but Mach number ranges of 5-10\cite{Preller2017b}, 7-11\cite{Dalle2014} and 6-10\cite{Bradford2000} have been suggested as appropriate operable regimes for scramjet-powered launch vehicles.
     The operable range of scramjet engines can be improved with mechanisms to vary the geometry of the inlet during flight\cite{Dalle2011}. However, the systems necessary for variable geometry inlets add weight and complexity to the scramjet engine, and can be detrimental to overall system performance\cite{Smart2010}. 
     
-    \textcolor{red}{The inclusion of scramjet engines for high efficiency operation in the hypersonic regime may be considerably advantageous for small satellite launch systems. However, the incorporation of these engines within a launch vehicle requires significant additional design complexity over tradition all-rocket systems, due to their unique operational constraint: the requirement to fly in-atmosphere for long periods, at hypersonic speeds. This means that a launch system incorporating scramjet engines must be designed to fly aerodynamically, balancing lift and drag with thrust and aerodynamic control. 
-    This is a significantly different design philosophy when compared to traditional all-rocket launch systems, that generally want to exit the atmosphere as quickly as possible, and minimise drag losses while doing so. Because of this significant difference in operation, the designs of airbreathing launch vehicles are likely to be radically different from traditional rocket systems. Novel designs must be developed for airbreathing launch systems, that take advantage of the unique advantages offered by airbreathing engines, while overcoming the challenges that they introduce. 
+    \textcolor{red}{The inclusion of scramjet engines for high efficiency operation in the hypersonic regime may be considerably advantageous for small satellite launch systems. However, the incorporation of these engines within a launch vehicle requires significant additional design complexity over tradition all-rocket systems, due to their unique operational constraint; the requirement to fly in-atmosphere for long periods, at hypersonic speeds. This means that a launch system incorporating scramjet engines must be designed to fly aerodynamically, balancing lift, drag, and aerodynamic control with the varying thrust of the scramjet engine, which is extremely sensitive to flight conditions. 
+    This is a significantly different design philosophy when compared to traditional all-rocket launch systems, which generally want to exit the atmosphere as quickly as possible, and minimise drag losses while doing so. Because of this significant difference in operation, the designs of airbreathing launch vehicles are likely to be radically different from traditional rocket systems. Novel designs must be developed for airbreathing launch systems, that take advantage of the unique advantages offered by airbreathing engines, while overcoming the challenges that they introduce. 
     	}
     
     
@@ -271,7 +273,7 @@ Optimised trajectories, designed using LODESTAR, are presented. A trajectory is 
     	\section{The Launch System Design Process}
     }
     %ingo really specfically distinuish airbreatrhing from rocket, ie design is much more complex
-    
+    \noindent
     The design of any launch system is a complex, multi-faceted process, that involves many areas of engineering and scientific expertise. This work aims to design a trajectory for an airbreathing launch system, however, developing a trajectory for a launch system is simply a part of the design process, although it is an integral step in the early launch vehicle design. The analysis of the trajectory of a launch system enables the designers to understand the performance characteristics of the launch system, and drives design decisions that are made throughout the development process. 
     
      Figure \ref{fig:DesignFlow} illustrates the general design process flow for a launch system as defined by NASA\cite{Blair2001}, in which the design stages involve a repeated iterative process between the overall launch system design and compartmentalised design tasks. This compartmentalisation takes place firstly by separating the

@@ -47,93 +47,56 @@ The sensitivity of the launch system to the maximum dynamic pressure of the scra
 The maximum payload-to-orbit trajectory profiles that have been developed are non-intuitive, involving complex trade-offs between the efficiencies of each stage of the launch system, as well as the fly-back of the scramjet accelerator. The design of these optimised flight paths is made possible through the use of the pseudospectral method of optimal control, coupled with accurate and robust propulsion and aerodynamic modelling.  
 The trajectory profiles and analyses that have been developed in this work can be used to inform and give insight into the flight paths of future launch systems, and can assist in directing future design decisions for airbreathing, multi-stage launch systems. 
 
-
+\textcolor{red}{
   \chapter{Recommendations for future work}
+}
   	
- This work on the calculation of a maximum payload-to-orbit trajectory for a rocket-scramjet-rocket launch system was carried out to determine the behaviour and sensitivities of such a launch system, in order to inform future launch vehicle designs. 
-  While a launch system design was carried out, to create a representative launch system for performance assessment, it was not the intent of this work to assert that this launch system is anything more than a very preliminary design, nor to make significant design modifications based on the optimised trajectory results.
+ This work on the calculation of a maximum payload-to-orbit trajectory for a rocket-scramjet-rocket launch system was carried out to inform future launch vehicle designs by determining the behaviour and sensitivities of such a launch system. 
+  Although a representative launch system for performance assessment was created, it was not the intent of this work to assert that this launch system is anything more than a very preliminary design, nor to make significant design modifications based on the optimised trajectory results.
  As such, a number of improvements to the design of the launch system as well as some outstanding research questions were identified during the course of this work.
  In order to build upon this work and advance our knowledge of reusable, partially-airbreathing launch systems, the following research directions are suggested:
 
-%\begin{itemize
-\vspace{10pt}
-\textit{Controllability studies of all three vehicles of the launch system.}
-
- \noindent
-During this work, the angles of attack of the vehicles within the launch system were constrained to values which were estimated to represent the realistic control limits of each vehicle, and the centre of gravity was controlled by switching which of the fuel tanks was being drawn from. However, it was observed that during the maximum payload-to-orbit the scramjet accelerator becomes aerodynamically unstable.
-A controllability study of all three stages would improve the accuracy of the vehicle simulation models, and introduce more realistic control limits to the trajectory optimisation.  XXX expand this with more specifics, eg MPC as mentioned in control uncertainty appendix
--separation
--redesign
 
 \vspace{10pt}
  \textit{Design of a fly-back first stage booster.}
  
  \noindent
- During this work, the first stage booster is assumed to be expendable, to enable a simple design process. However, in the future it is likely that the first stage of the launch system will be required to be reusable for the launch system to be economically feasible. As such, a first stage booster must be designed and sized which is capable of accelerating the scramjet accelerator to operational speeds, as well as returning to the initial launch site after separation at Mach 5. 
+ During this work, the first stage booster is assumed to be expendable, to enable a simple design process. However, in the future it is likely that the first stage of the launch system will be required to be reusable for the launch system to be economically feasible. As such, a first stage booster must be designed and sized to be capable of accelerating the scramjet accelerator to operational speeds, as well as returning to the initial launch site after separation at Mach 5. 
 
 \vspace{10pt}
-\textcolor{red}{
-	\textit{Further launch system design.}
-}
+	\textit{Further three-stage launch system design.}
 
 \noindent
--more MDO
--take pull-up and other manoeuvres into account
--max q vs structural mass trade-off and other trade-offs
+The development and characterisation of the maximum payload-to-orbit trajectory of a rocket-scramjet-rocket launch system paves the way for a detailed design optimisation of all three stages concurrently.
+While some analysis of the potential design impacts of the payload-to-orbit optimised trajectory on the launch system design was carried out in this work, a full redesign and analysis of the representative three-stage launch system is outside the scope of this study. In addition, some of the design approximations used in this study are necessarily simplified. Future studies will need to be conducted that develop detailed launch system designs while making use of the trajectory shapes, interstage performance trade-offs, and design parameter sensitivities that have been investigated in this study. These future design studies may either be in the form of multidisciplinary design optimisations, or detailed design studies, each of which will use the conclusions of this work differently. 
 
 \vspace{10pt}
-\textcolor{red}{
 \textit{Detailed internal design analysis of all stages.}
-}
 
 \noindent
-This study necessarily utilises a simplified model for internal structures. However, this study has also found that it is necessary to fly this type of airbreathing launch system close to its structural and thermal limits. To ensure that a launch system of this type is being designed in a realisable manner, it will be necessary to model the internals of all stages in detail, including layout, structural connections, and internal thermal management.  
+This study necessarily utilises a simplified model for internal structures. However, this study has also found that it is necessary to fly a multi-stage airbreathing launch system close to its structural and thermal limits during a payload-to-orbit optimised trajectory. To ensure that a launch system of this type is being designed in a realisable manner, it will be necessary for future design studies to model the internals of all stages in detail, including layout, structural connections, and internal thermal management.  
 
 \vspace{10pt}
-\textcolor{red}{
 	\textit{Detailed controllability analysis and control system design.}
-}
 
 \noindent
+During this work the launch system was modelled in three degrees of freedom, and the angles of attack of the launch system stages were constrained to values that were estimated to represent the realistic control limits of each vehicle. However, it was observed that during the maximum payload-to-orbit, the scramjet accelerator and third stage rocket become aerodynamically unstable.
+A controllability study and detailed system design of all three stages is necessary to improve the accuracy of the vehicle simulation models, and ensure that the launch system is able to operate effectively over its trajectory. This analysis and design will necessarily include an investigation of the CG and aerodynamics of the launch system, a 6DOF simulation of the launch system throughout its launch trajectory, the application of MPC or other advanced controller designs, and the analysis and design of physical control systems that are able to satisfy the control requirements of the maximum payload-to-orbit trajectory. 
+
 
 \vspace{10pt}
-\textcolor{red}{
 	\textit{Stage separation analysis and mechanism design.}
-}
-
+	
 \noindent
+The representative launch system studied in this work was designed to have the third stage rocket contained within the scramjet accelerator, and was assumed to have instantaneous, controlled separation at both the first-second and second-third stage separation points. Future detailed design studies must necessarily investigate the mechanics of these stage separations, including detailed designs of the mechanisms of the separation, high fidelity analysis of the aerodynamics and control during separation, and analysis of post-separation consequences.
 
--should include consequences of separation method, such as simualtions of cavity during return
-
-\vspace{10pt}
-\textcolor{red}{
-	\textit{Detailed scramjet engine analysis and uncertainty quantification.}
-}
-
-\noindent
-
-\vspace{10pt}
-\textcolor{red}{
-	\textit{Third stage engine design analysis.}
-}
-
-\noindent
--choice of third stage engine / design of engine with scaling
 
 \vspace{10pt}
  \textit{Cost analysis of the launch system.}
 
  \noindent
-A primary driver for a realistic launch system is its overall performance, as a function of payload-to-orbit, launch flexibility, and launch cost. In order for a new style of launch system to be properly characterised, a bottom-up cost model estimate is necessary. A bottom-up cost model estimate would allow for the primary cost drivers to be identified, down to a subsystem level. This should include an in-depth analysis of the operational needs and economics of running a launch service provider.
+A primary driver for a realistic launch system is its overall performance, as a function of payload-to-orbit, launch flexibility, and launch cost. In order for three-stage airbreathing launch systems to be properly characterised, a bottom-up cost model estimate is necessary, allowing for the primary cost drivers to be identified down to a subsystem level. This should include an in-depth analysis of the operational needs and economics of running a launch service provider, along with an analysis of projected demand.
 
-\vspace{10pt}
- \textit{Multi-disciplinary design optimisation sizing of the launch system.}
 
- \noindent
- XXX Change this and integrate into the above
- 
-During this work, the first and third stages of the launch system were designed around the previously sized scramjet accelerator vehicle, and the dimensions and performance of the scramjet accelerator were kept fixed (apart from during sensitivity studies).
-The development and characterisation of the maximum payload-to-orbit trajectory of the rocket-scramjet-rocket launch system paves the way for a multi-disciplinary design optimisation, of all three stages concurrently. A multi-disciplinary design optimisation of the system would allow the sizing, design, and relative performance of the three stages to be optimised, taking into account the variation in the maximum payload-to-orbit trajectory path.  
-%\end{itemize
 
 

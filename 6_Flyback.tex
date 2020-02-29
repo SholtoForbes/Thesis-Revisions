@@ -32,6 +32,8 @@ This sensitivity analysis allows the influence of the fly-back of the scramjet a
 	\hline \textbf{Payload to Orbit (kg)}
 	& \textbf{\PayloadToOrbitStandard}
 	\\
+	& \small(-125.3, +101.4)
+	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffStandard}
 	\\
@@ -196,9 +198,18 @@ The scramjet accelerator drops below 1km altitude at \textcolor{red}{-17.0}$^\ci
 
 
 \textcolor{red}{
-	\section{Discussion of Uncertainties}
-	}
-\textcolor{red}{XXX put a little comparison with section without return here}
+	\section{Discussion of Uncertainties}}
+\noindent
+A Monte-Carlo study is conducted, using the same uncertainty magnitudes as in Section \ref{sec:unc}, with more detail available in Appendix \ref{sec:uncquant}. A confidence interval of 6.8-233.6kg in payload-to-orbit is calculated from this Monte-Carlo study using the percentile method. This confidence interval is similar in magnitude to the confidence interval with no fly-back presented in Section \ref{sec:unc}, and similarly illustrates the relatively large uncertainties present due to possible variations in launch system performance. Once again, however, this interval is entirely positive, indicating that it is likely that some payload-to-orbit can be achieved. 
+
+\textcolor{red}{
+	\section{Discussion of Aerothermal Heating}}\label{sec:therm2}
+\noindent
+The aerothermal heating on the scramjet accelerator and third stage rocket during flight has been investigated in Appendix \ref{sec:therm}. On the scramjet accelerator, the temperature on the windward surfaces of the tungsten nose and the Carbon-Carbon wing leading edge reach 2015.1K and 1665.8K respectively. 
+These locations are assumed to have no direct thermal connection to the internal insulation, and the temperatures that have been observed are within the operational regimes of the external heat shielding materials, which for the purposes of this study are considered sufficient for shielding during flight.
+Various locations on the body of the scramjet accelerator are investigated, with the interior of the nose cone reaching a maximum of 1363.1K, the cowl 1384.9K, the wing 1326.4K, and the tail 1142.3K on the inner surface of the heat shielding.
+These temperatures are well within the operational regime of the C-C external heat shielding material, although the internal temperatures are at the limits of the operational regime of the internal multilayer insulation, which is nominally designed for operation in the 900-1100$^\circ$C (1173-1373K) range.
+Temperatures on the nose and body of the third stage rocket are investigated and found to be significantly lower than those experienced by the scramjet accelerator. The nose tip of the third stage reaches a maximum inner surface temperature of 953.5K, while the nose cone and body reach maximum temperatures of 475.9K and 779.8K respectively. These relatively low temperatures indicate that the current heat shielding design is likely appropriate for resisting the thermal loading experienced by the third stage rocket.
 
 \section{Energy Usage Analysis}
 

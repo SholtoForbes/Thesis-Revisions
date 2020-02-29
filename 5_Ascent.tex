@@ -7,9 +7,7 @@
 	
 %	\textcolor{red}{XXX check all sig figs after all results are done, and see what they need to be, and reduce some if necessary}
 
-	%	\textcolor{red}{XXX Include uncertainties in this section in some way}
-	
-	\textcolor{red}{XXX Include thermal analysis somehow}
+
 	
 This chapter presents a maximum payload-to-orbit trajectory optimisation for the SPARTAN launch system. 
 This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), and delivers a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectory solutions for this launch system.
@@ -39,6 +37,8 @@ The following trajectories are developed:
 	\newline$\rightarrow$ Comparison of optimised trajectories allows the effects of the aerodynamic design of the third stage on the launch system performance to be investigated.
 \end{itemize}
 These optimised trajectory cases allow the benefits of flying an optimised trajectory to be quantified, and allow the impact of key design parameters on the performance of the launch system to be characterised. 
+
+ \textcolor{red}{These optimised trajectories are presented in the following sections, along with key performance indicators and their sensitivities. These are presented to a number of significant figures judged necessary to adequately present the trajectory results and sensitivities to the accuracy of the trajectory simulation, with the caveat that the launch system modelling carries with it significant uncertainties.}
   
 
 \section{Case 1: Constant Dynamic Pressure Trajectory}
@@ -111,7 +111,7 @@ In addition, the designs and aerodynamic simulations of each vehicle of the laun
 		\hline 
 	\end{tabular} 
 	
-	\caption{Summary of the key results from a maximum payload-to-orbit trajectory with the scramjet accelerator constrained to 50kPa (Case 1). \textcolor{red}{XXX about sig figs: the high number of sig figs have been included to highlight trends in the variation section. I should porentially argue that a high number of significant figures are included for this, but make note that the results are still subject to significant sources of error? Can explain with something like: these are not intended to represent the accuracy of the model, but rather the fidelity of the simulation and optimisation ?}}
+	\caption{Summary of the key results from a maximum payload-to-orbit trajectory with the scramjet accelerator constrained to 50kPa (Case 1).}
 	\label{tab:constqsummary} % updated 14/8/19
 \end{table}
 \begin{figure}[ht!] % updated 14/8/19
@@ -193,6 +193,8 @@ The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, \textcolo
 	\\
 	\hline \textbf{Payload to Orbit (kg)}
 	& \textbf{\PayloadToOrbitStandardNoReturn}
+	\\
+	& \small(-147.6, +82.4)
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffStandardNoReturn}
@@ -311,11 +313,11 @@ The reduced time that the rocket must spend in a high dynamic pressure environme
 
 
 \textcolor{red}{
-	\section{Discussion of Uncertainties}
+	\section{Discussion of Uncertainties}\label{sec:unc}
 }
 
 
-The aerodynamic and propulsive properties of the launch system that have been presented in this section are modelled using medium and low fidelity methods essential to allow full system trajectory simualtions in the available time-frame. These methods bring with them an associated uncertainty in the values that are calculated for the aerodynamic and propulsive performance of a vehicle, including those presented in Figures \textcolor{red}{XXX-XXX, XXX-XXX and XXX-XXX}. These uncertainties are estimated in Appendix \textcolor{red}{XXX} from previous studies that have compared the medium-to-low fidelity tools used to analyse propulsion and aerodynamics with high fidelity tools and experimental results. Previous error magnitudes are used to estimate the error magnitudes in the current study, with the maximum applicable error magnitude being used. The final values obtained from this study are replicated in Table \ref{tab:AppendixUncertaintyCopy}. The presence of these uncertainties may mean that the performance of the vehicle is significantly different to expected, producing significantly different payloads-to-orbit to those calculated. 
+The aerodynamic and propulsive properties of the launch system that have been presented in this section are modelled using medium and low fidelity methods essential to allow full system trajectory optimisation to be carried out efficiently. These methods bring with them an associated uncertainty in the values that are calculated for the aerodynamic and propulsive performance of a vehicle, including those presented in Sections \ref{sec:propulsion}-\ref{sec:trimmedongineoff}, \ref{sec:firststageaero}, and \ref{sec:thirdstageprop}-\ref{sec:thirdstageaero}. These uncertainties are estimated in Appendix \ref{sec:aerounc} from previous studies that have compared the medium-to-low fidelity tools used to analyse propulsion and aerodynamics with high fidelity tools and experimental results. Previous error magnitudes are used to estimate the error magnitudes in the current study, with the maximum applicable error magnitude being used. The final values obtained from this study are replicated in Table \ref{tab:AppendixUncertaintyCopy}. The presence of these uncertainties may mean that the performance of the vehicle is significantly different to expected, producing significantly different payloads-to-orbit to those calculated. 
 
 \begin{table}[ht]
 	\centering
@@ -328,13 +330,13 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 		\hline 
 	\end{tabular}
-	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling, calculated in Appendix \textcolor{red}{XXX}.}
+	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling, determined in Appendix \ref{tab:AppendixUncertaintyCopy}.}
 	\label{tab:AppendixUncertaintyCopy}
 \end{table}
 
 
-A Monte-Carlo study is conducted in using these uncertainty bounds, with some further details available in Appendix XXX. The parameters in \ref{tab:AppendixUncertaintyCopy} are independently varied according to a Latin Hypercube analysis method to create a series of distinct cases, with each parameter in each regime multiplied by a constant within the uncertainty range, and maximum payload-to-orbit trajectories developed for each perturbed case. 
-This study produces a 2-$\sigma$ deviation of $\pm$XXXkg \textcolor{red}{XXX Update this or change to bounds to match appendix if necessary} in payload-to-orbit due to aerodynamic and propulsion modelling uncertainties, illustrating the large uncertainties still present in the modelling of airbreathing launch systems, however, this is to be expected when using low-to-medium fidelity tools as is the norm in the conceptual design phases, particularly given the general sensitivity of the payload mass in launch systems to variations in the launch system performance. However, this interval also indicates that producing a positive payload-to-orbit is likely to be possible under the current modelling scheme, although it is evident that more detailed analysis of this system is necessary before an accurate payload-to-orbit value is able to be attained. This said, the payload-to-orbit values calculated in this study are only intended as an indication of the performance possible using this launch system. The primary usefulness of these trajectories is in the studies of the optimal trajectory shape and performance trade-offs, and the comparison studies of the trends in performance that have been analysed in Chapters XXX and XXX. 
+A Monte-Carlo study is conducted in using these uncertainty bounds, with further details available in Appendix \ref{sec:uncquant}. The parameters in \ref{tab:AppendixUncertaintyCopy} are independently varied according to a Latin Hypercube analysis method to create a series of distinct cases, with each parameter in each regime multiplied by a constant within the uncertainty range, and maximum payload-to-orbit trajectories developed for each perturbed case. 
+Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-238.8kg in payload-to-orbit due to aerodynamic and propulsion modelling uncertainties, illustrating the large uncertainties still present in the modelling of airbreathing launch systems that are to be expected when using low-to-medium fidelity tools, as is the norm in the conceptual design phases, particularly given the general sensitivity of the payload mass in launch systems to variations in the launch system performance. However, this interval also indicates that producing a positive payload-to-orbit is likely to be possible under the current modelling scheme, although it is evident that more detailed analysis of this system is necessary before an accurate payload-to-orbit value is able to be attained. This said, the payload-to-orbit values calculated in this study are only intended as an indication of the performance possible using this launch system. The primary usefulness of these trajectories is in the studies of the optimal trajectory shape and performance trade-offs, and the comparison studies of the trends in performance that have been analysed in Chapters \ref{sec:sensitivityNoReturn} and \ref{sec:sensitivity}. 
 %-XXX change this to no-return uncertainty
 
 \section{Energy Usage Analysis}\label{sec:exergy1}
@@ -487,7 +489,6 @@ The energy lost accelerating the heat shield is also significantly larger when r
   
 
 \section{Sensitivity Analysis}\label{sec:sensitivityNoReturn}
-\textcolor{red}{XXX payload variation percentages and exergy efficiency percentages? will all be wrong. Remove all and replace commands. Check all other values are being calculated correctly.}
 
 \textcolor{red}{The launch system studied in this work is intended to be representative of a three stage, rocket-scramjet-rocket, small satellite launch system, to be used to inform future vehicle designs. It is anticipated that the design of the launch system will change significantly before a optimal, or even practically feasible, iteration is reached. 
 	To quantify how variations in a the design of a stage or variations in the performance of a stage due to modelling error may affect the performance of the launch system, it is useful to conduct a sensitivity analysis on the launch system}, in which selected design parameters of the launch system are varied, and the effects on the optimised maximum payload-to-orbit trajectory of the launch system are investigated. \textcolor{red}{The variations of the maximum payload-to-orbit trajectory, and the sensitivity of the payload-to-orbit to the various design parameters can then be used to inform future design decisions, and give useful insights into the coupled performance effects between the stages of the launch system.} 

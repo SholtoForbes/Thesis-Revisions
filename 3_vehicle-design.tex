@@ -89,7 +89,7 @@ The scramjet accelerator design is presented first, as the design of the scramje
 		\caption{Mass breakdown of the modified scramjet accelerator vehicle.}
 		\label{tab:MassBreakdown}
 		\end{table}
-This study assumes that the third stage is stored within the fuselage of the scramjet accelerator for simplicity. It is assumed that the release mechanism for the third stage is able to be situated within the available space surrounding the third stage, however the release mechanism, as well as the change in the aerodynamics of the vehicle during staging,  is not considered further in this study \textcolor{red}{(see Section XXX for a discussion of the major simplifications within the launch system model)}. %- modelling uncertainties and simplifications)}
+This study assumes that the third stage is stored within the fuselage of the scramjet accelerator for simplicity. It is assumed that the release mechanism for the third stage is able to be situated within the available space surrounding the third stage, however the release mechanism, as well as the change in the aerodynamics of the vehicle during staging,  is not considered further in this study \textcolor{red}{(see Section \ref{sec:simpl} for a discussion of the major simplifications within the launch system model)}. %- modelling uncertainties and simplifications)}
 		
 		
 		% LH2 density
@@ -100,7 +100,7 @@ The resized fuel tanks hold a total of 1562kg of LH2 fuel. This assumes an LH2 d
 The mass of the fuel tanks is scaled, by surface area, from Dawid Preller's Baseline vehicle model\cite{Preller2017b}, giving a total fuel tank mass of 179.4kg.
 		
 		\textcolor{red}{
-			\subsection{Thermal Protection}
+			\subsection{Thermal Protection}\label{sec:therm1}
 				}
 			%- I need to frame this as a reference vehicle based on the SPARTAN
 			%-it is assumed that thye SPARTAN will be capable of flying at const q, as in previous studies
@@ -117,8 +117,7 @@ The mass of the fuel tanks is scaled, by surface area, from Dawid Preller's Base
 		%ie. stagnation points are calculated to see if the TPS will hold other points are calculated to see if 1000C is exceeded on insulated side 
 
 \textcolor{red}{For this study the thermal protection system has been adapted from the thermal protection system used by Preller\cite{Preller2018a}}. The scramjet accelerator is thermally protected by a 11.3mm thick Carbon-Carbon aeroshell, with an alumina-borosilicate mat/ stainless steel multilayer insulator at the connection points between the aeroshell and the aluminium internal structure\cite{Preller2018a}. The nose tip of the scramjet accelerator is protected by 40mm thick tungsten, weighing 92kg, to provide rapid heat dissipation and sink in the area of greatest heating. For the purposes of this work it is assumed that the external shell is not connected to the internal structure close to points of large heating such as leading edges, and is structurally independent in these regions. 
-In previous studies, a similar heat shielding has been assumed to provide adequate protection for the scramjet accelerator flying along a constant dynamic pressure trajectory\cite{Preller2018a}, and this assumption is used in the main body of this work. The thermal properties of the launch system are investigated further in Section \textcolor{red}{XXX} and it is concluded that a more advanced thermal protection system may be necessary. However, the full redesign of the thermal protection system of the SPARTAN is beyond the scope of this report, particularly as this is currently an area of significant research effort, and there are many possibly viable options for the cooling of hypersonic systems. 
-\textcolor{red}{XXX re-write this after analysis is complete}
+In previous studies, a similar heat shielding has been assumed to provide adequate protection for the scramjet accelerator flying along a constant dynamic pressure trajectory\cite{Preller2018a}, and this assumption is used in the main body of this work. The thermal properties of the launch system are investigated further in Section \ref{sec:therm2} and Appendix \ref{sec:therm}.
 
 \textcolor{red}{
 \subsection{Propulsion}\label{sec:propulsion}
@@ -769,9 +768,9 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 			\centering
 \begin{tabular}{|c|c|c|c|}
 	\hline  Part & Density & Geometry & mass \\ 
-	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & 142mm diameter, 20mm thick hemispherical tip & 10.0kg \\ 
+	\hline  Tungsten Nose & $\rho_{Tungsten} = 19250$  kg/m$^3$ & Hemispherical 142mm diameter, 20mm thick & 10.0kg \\ 
 		\hline C-C Cone & $\rho_{CC} = 1593$  kg/m$^3$ & 10.8mm thick, conical & 89.7kg \\ 
-			\hline Phenolic Cork Cylinder & $\rho_{Phenolic Cork} = 512$  kg/m$^3$ & 3.1mm thick, cylindrical & 24.9kg \\ 
+			\hline Phenolic Cork Body & $\rho_{Phenolic Cork} = 512$  kg/m$^3$ & 3.1mm thick, cylindrical & 24.9kg \\ 
 	\hline 
 \end{tabular} 
 \caption{Third stage heat shield breakdown.} % updated 12/8/19
@@ -779,7 +778,7 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 \end{table}
 		
 		\textcolor{red}{
-		\subsection{Propulsion}
+		\subsection{Propulsion}\label{sec:thirdstageprop}
 	}
 	
 	The propulsion system for the third stage rocket in previous studies has been modelled after the RL-10-3A\cite{Preller2018a}. However, the Rl-10-3A is an expensive, pump-fed engine designed for the upper stages of large launch vehicles. For the expendable upper stage of a small launch system, a cheap engine will be required, as the cost of this engine will have a large bearing on the cost efficiency of the launch system as a whole. This study redesigns the third stage rocket, so that it is more cost effective, and uses a more modern engine.  
@@ -881,13 +880,13 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 		
 
 \textcolor{red}{
-\section{Modelling and Design Simplifications}  % XXX this is one for ingo to look at in particular, the location of this and how it fits in + discussion on controlinstability + section on aero and propulsion
+\section{Modelling and Design Simplifications}\label{sec:simpl}  % XXX this is one for ingo to look at in particular, the location of this and how it fits in + discussion on controlinstability + section on aero and propulsion
 }
 
 \textcolor{red}{XXX Make the imacts secitons in each subheading share the same general sentence formats}
 
 The representative launch system in this study is based on the SPARTAN\cite{Preller2017b}, as it is the most mature concept for a small satellite launch system using scramjets in the public domain. However, the system is still at the preliminary design phase, meaning that the design, as well as system and sub-system models still incorporate significant simplifications and have not been fully developed. These simplified models and design methodologies are necessary and appropriate for preliminary system and trajectory analysis, allowing the trajectories in this work to be developed and a wide range of launch system parameters to be investigated. However, the effects of the simplifications within this analysis must be acknowledged.
-The modelling and design simplifications have been considered in two parts; the simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Appendix \textcolor{red}{XXX}; while the design related simplifications that particularly affect the control, staging, and mass modelling of the launch system are considered here. The effects of the simplifications in this section are not quantified, but the sensitivity studies in Sections XXX and XXX give an indication as to the implications of variations of the effected performance and design parameters.
+The modelling and design simplifications have been considered in two parts; the simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Sections \textcolor{red}{XXX}; while the design related simplifications that particularly affect the control, staging, and mass modelling of the launch system are considered here. The effects of the simplifications in this section are not quantified, but the sensitivity studies in Sections XXX and XXX give an indication as to the implications of variations of the effected performance and design parameters.
 The following sections address the effects of the currently open design choices and simplifications present in this study, and how they may affect the findings from the current work. 
 
 \subsection{Control}
@@ -963,28 +962,18 @@ Likely impacts on design:
 	\item Variation in the mass and mass distribution of the launch system as detailed models are developed. 
 \end{itemize}
 
-\subsection{Aerodynamic and Propulsion Modelling Simplifications}
 
-XXX make this just a small mention at the start
-
-
+\textcolor{red}{
 	\section{Summary}	
-	\textcolor{red}{XXX Update summary}
-	% XXX SEE below?
-	
-	%*/ as part of the conclusion you should also consider discussing methodology you have applied. I.e. an additional contribution of this chapter is providing a process of how to develop mass and aerodynamics data for a launch systems. This is valuable for anyone wanting to design their own launch vehicle. So you should highlight this as one of the contributions from this part of your thesis.
-	
-	%*/ Overall, have a look at the chapter narrative. There are a few sections that are repeated. This then creates confusion, as it is not clear which approach is used to perform a certain part of the analysis. - need to have a look through section for this
+}
 	
 	
-	
-	
-	In this chapter, the design and simulation of a rocket-scramjet-rocket launch system was presented, based on the SPARTAN launch system. 
-	The design of the first stage is based on the first stage of the Falcon-1e, scaled down to \textcolor{red}{9.5m}. The third stage is designed around the SpaceX Kestrel engine, with the fuel tanks of the scramjet accelerator resized to accommodate for the new third stage size. 
+	In this chapter, the design and simulation of a representative rocket-scramjet-rocket launch system was presented, based around a modified version of the scramjet accelerator of the SPARTAN launch system. 
+	The design of the first stage is based on the first stage of the Falcon-1e, scaled down to \textcolor{red}{9.5m}, while the third stage is designed around the use of a modified SpaceX Kestrel engine, with the fuel tanks of the scramjet accelerator resized from the baseline SPARTAN design to accommodate for the new third stage size. 
 	 Mass breakdowns and key design features have been detailed for all three stages, including fuel ratios and structural mass fractions.
-	 The aerodynamic databases of all three stages were presented and analysed, and the process for generating these databases was detailed. 
-	 The CFD simulations of each stage in Cart3D have been detailed, including the process of verifying the convergence of each solution. 
-	 The propulsion modelling of the C-REST scramjet engines was presented, along with the schemes used to generate smooth, second order continuous interpolations of the engine data. 
-	The process for generating the trimmed aerodynamic databases for the scramjet accelerator has been presented, including the calculation of the control surface aerodynamics, and the calculation of the variable centre of gravity of the scramjet accelerator. The thrust vectoring control for the first and third stages was detailed.
+	 The aerodynamic databases of all three stages were presented and analysed, and the processes for generating these databases were detailed. 
+	 The CFD simulations of each stage in Cart3D have been presented, including the process of verifying the convergence of each solution. 
+	 The propulsion modelling of the C-REST scramjet engines was presented, along with the schemes used to generate smooth, second order continuous interpolations of the engine data, an important aspect of vehicle modelling for trajectory optimisation. 
+	The process for determining the control of each stage was presented, including the process for generating the trimmed aerodynamic databases for the scramjet accelerator, the thrust vectoring of the first and third stages, and the calculation of the variable centre of gravity of all three stages. Finally, the simplifications and approximations that have been made throughout the modelling and design were discussed, along with their possible impacts on the performance of the launch system.
 	
 	
