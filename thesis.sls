@@ -2,5 +2,5 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{V}\relax \glsresetentrylist %
 \glossentry{v}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsignore{211}}}%
+		\setentrycounter[]{page}\glsignore{213}}}%
 \end{theglossary}\glossarypostamble

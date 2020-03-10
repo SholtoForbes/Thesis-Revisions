@@ -7,7 +7,7 @@
 \textcolor{red}{This work aims to study the optimised trajectory and performance of a rocket-scramjet-rocket launch system, requiring the dynamics of a launcher to be modelled in some detail, based on a representative design.
 	This chapter presents the design and modelling of a representative rocket-scramjet-rocket launch system, in which the scramjet stage is reusable for multiple launches. 
 		This rocket-scramjet-rocket launch system is designed to launch small satellites to a 567km altitude sun-synchronous orbit and is based on the SPARTAN launch system concept, originally designed by Jazra, Preller \& Smart\cite{Preller2017b,Jazra2013}, and now being developed by The University of Queensland and Hypersonix.
-		the SPARTAN launch system is used as the basis for a representative launch system within this study because it is the only rocket-scramjet-rocket launch system undergoing design, 
+		The SPARTAN launch system is used as the basis for a representative launch system within this study because it is the only rocket-scramjet-rocket launch system undergoing design, 
 		 and it is up-to-date technologically because it is currently in the research and design process. In addition, the SPARTAN is relatively mature when compared to other small, multi-stage systems, with multiple studies dedicated to its design, which is based on the experimentally tested REST scramjet engines.   
 	The rocket-scramjet-rocket launch system described in this chapter is used as a representative model for a partially-airbreathing, partially-reusable, three-stage small satellite launcher. The optimal trajectory results and performance analysis produced are expected to be directly applicable to future iterations of the SPARTAN, as well as generally applicable, at least in part, to other multi-stage airbreathing launch systems that use a 'space-plane' type design. }
 	
@@ -34,9 +34,9 @@
  Figure \ref{fig:Trajsimple} shows a simplified representation of the launch trajectory for the vehicle simulated in this study.
  The launch system is launched vertically under rocket power, from a traditional small rocket launch facility. The scramjet accelerator is mounted to the front of the first stage rocket allowing the scramjet accelerator to take the brunt of the aerodynamic forces and heating, as well as allowing the use of the control surfaces of the scramjet accelerator. During first stage rocket operation, the launch system pitches rapidly, reaching close to horizontal flight to allow the scramjet accelerator to stay at high dynamic pressure conditions. The scramjet accelerator is accelerated to its minimum operating speed of approximately Mach 5, at which point separation occurs. The scramjet accelerator's four scramjet engines are ignited, and the scramjet accelerator is accelerated through the atmosphere, reaching approximately Mach 9. At this point, the specific impulse of the scramjet engines, and thus the efficiency of the scramjet accelerator, have decreased, and the third stage rocket is separated. The third stage rocket accelerates and performs a pull-up, before cutting its engine and coasting out of the atmosphere. Once the rocket is exoatmospheric, the engine is reignited, performing first a circularisation burn, and then a Hohmann transfer to the intended orbit. Meanwhile, the scramjet accelerator banks and executes a fly-back manoeuvre to return to its initial launch site. The scramjet accelerator extends landing gear, and lands on a traditional runway in the style of a conventional aircraft. The scramjet accelerator is able to be rapidly refurbished and remounted for further launches. To fulfil the requirements of this trajectory, the scramjet accelerator must be able to fly and manoeuvre from speeds greater than Mach 9 to landing, as well as being able to withstand high structural and heating loads without significant deterioration.
  
- The launch configuration of the SPARTAN is shown in Figures \ref{fig:NoInternal} \& \ref{fig:INTERNALS}. 
+ The launch configuration of the representative launch system is shown in Figures \ref{fig:NoInternal} \& \ref{fig:INTERNALS}. 
  The size and external design of the scramjet accelerator are used exactly as defined for the Baseline vehicle designed by Preller \& Smart\cite{Preller2017b}. Both the first and third stage rockets are designed in this study, and are sized around the Baseline vehicle. 
- The first stage rocket has not previously been designed, and as such is created for this study, while the third stage is redesigned to use a SpaceX Kestrel engine. This third stage design replaces the third stage used in previous SPARTAN studies, which was powered by a Pratt \& Whitney RL-10-3A engine\cite{Preller2017b}. The pump-fed RL-10-3A engine was deemed too costly, and it has been replaced by a significantly cheaper pressure-fed Kestrel engine in this study.  
+ The first stage rocket has not previously been designed, and as such is created for this study, while the third stage is redesigned to use a SpaceX Kestrel engine. This third stage design replaces the third stage used within the SPARTAN, which was powered by a Pratt \& Whitney RL-10-3A engine\cite{Preller2017b}. The pump-fed RL-10-3A engine was deemed too costly, and it has been replaced by a significantly cheaper pressure-fed Kestrel engine in this study.  
  The internal layout of the scramjet accelerator has been reconfigured around this redesigned third stage. 
  This launch system weighs a total of \textcolor{red}{28355}kg, and is 32.44m long. 
  
@@ -47,14 +47,14 @@ The scramjet accelerator design is presented first, as the design of the scramje
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.85\linewidth]{figures/3_vehicle_design/NoInternal}
-	\caption{the SPARTAN launch system, top view, showing the scramjet accelerator and first stage. }
+	\caption{the representative launch system, top view, showing the scramjet accelerator and first stage. }
 	\label{fig:NoInternal}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.85\linewidth]{figures/3_vehicle_design/INTERNALS}
-	\caption{the SPARTAN launch system, side view, showing the scramjet accelerator and fuel tanks, along with the third and first stages. }
+	\caption{the representative launch system, side view, showing the scramjet accelerator and fuel tanks, along with the third and first stages. }
 	\label{fig:INTERNALS}
 \end{figure}
 
@@ -212,7 +212,7 @@ In the available database, the C-REST engine was modelled to a nozzle exit area 
 		
 		
 		
-In order for the trajectory of the SPARTAN to be successfully simulated and optimised, the aerodynamics of the scramjet accelerator must be calculated for the large range of flight conditions experienced during its acceleration and return flights. 
+In order for the trajectory of the scramjet accelerator to be successfully simulated and optimised, the aerodynamics of the scramjet accelerator must be calculated for the large range of flight conditions experienced during its acceleration and return flights. 
 The aerodynamics of the scramjet accelerator are calculated at set flight conditions covering the breadth of necessary conditions, and the results are tabulated in databases. During trajectory simulations, the aerodynamics of the scramjet accelerator are determined by interpolation over the aerodynamic databases using bivariate splines, and the drag and lift produced are calculated using the standard definition of the aerodynamic coefficients:
 
 \begin{equation}
@@ -256,10 +256,8 @@ Finally, the viscous contributions to the aerodynamics of the scramjet accelerat
 	\label{fig:Pointwise}
 \end{figure}
 
-The aerodynamics of the SPARTAN have been calculated using Cart3D, an inviscid CFD package used in the preliminary design of aerospace vehicles. Cart3D utilises adjoint mesh adaption with a Cartesian cut-cells approach to produce an iteratively refined mesh to fit a flow solution. Cart3D is used to generate the aerodynamic database of the SPARTAN due to its applicability in both the subsonic
-and supersonic regimes, and its robustness across multiple flow solutions\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a,Gomez2004}. Cart3D has previously been used to
-analyse hypersonic vehicles, and has shown relatively good agreement with experimental data across multiple studies\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a}, as described in Sections \ref{sec:Cart3d} \& \textcolor{red}{\ref{sec:aerounc}}.
-\textcolor{red}{XXX Check these citations and bring this statement into line with lit review and appendix}
+The aerodynamics of the scramjet accelerator have been calculated using Cart3D, an inviscid CFD package used in the preliminary design of aerospace vehicles. Cart3D utilises adjoint mesh adaption with a Cartesian cut-cells approach to produce an iteratively refined mesh to fit a flow solution. Cart3D is used to generate the aerodynamic database of the scramjet accelerator due to its applicability in all regimes, and its robustness across multiple flow solutions\cite{Sagerman2017,Abeynayake,Aftosmis2011,Almosnino2016a,Gomez2004,Ward2018,Kiris2011}. Cart3D has previously been used to
+analyse hypersonic vehicles, and has shown fair agreement with experimental data across multiple studies\cite{Abeynayake2013a,Ward2018,Kiris2011}, as described in Appendix \textcolor{red}{\ref{sec:aerounc}}.
 
 \begin{figure}[ht]
 	\begin{subfigure}{.5\textwidth}
@@ -344,7 +342,7 @@ Where $^*$ indicates the nondimensionalised input to Cart3D. This nondimensional
 		
 		
 		\subsubsection{Centre of Gravity Analysis}
-		The centre of gravity locations of the SPARTAN are calculated using CREO. For simplicity, it is assumed that structural, systems and landing gear masses are homogeneously distributed throughout the centre fuselage of the scramjet accelerator. 
+		The centre of gravity locations of the scramjet accelerator are calculated using CREO. For simplicity, it is assumed that structural, systems and landing gear masses are homogeneously distributed throughout the centre fuselage of the scramjet accelerator. 
 		The calculated centre of gravity for the scramjet accelerator full of fuel and including the third stage rocket is \textcolor{red}{15.24m} along the body length. The centre of gravity varies as fuel is depleted throughout the acceleration phase, and at third stage release, changing the flap deflections required for trim. \textcolor{red}{These centre of gravity variations are shown in Figure \ref{fig:CentreOfGravity}}. The cylindrical fuel tanks \textcolor{red}{(shown underneath the third stage in Figure \ref{fig:INTERNALS})} are depleted first, in order to shift the centre of gravity forward, and improve the aerodynamic stability of the scramjet accelerator during the majority of flight. Depleting fuel from the cylindrical fuel tanks first would likely also serve to reduce fuel slosh during flight, although the fuel slosh is not modelled in this study, and it is assumed that the centre of gravity of each individual tank remains constant. After the cylindrical tanks have been depleted, the fuel in the conical tank within the nose is used. The third stage is released at the end of acceleration, and the centre of gravity changes significantly. When the third stage is released there is still fuel stored in the conical tank for flyback, during which centre of gravity change must also be modelled. 
 		Consequently, trimmed aerodynamic databases are created for centre of gravity conditions of; 
 		\begin{itemize}
@@ -617,7 +615,7 @@ given separation point, are very closely coupled to the available fuel mass.
 		\hline  $A_{e}$ & $0.552m^2$ \\ 
 		\hline 
 	\end{tabular} 
-	\caption{First Stage Engine Properties\cite{Wade2017}. \textcolor{red}{XXX Include uncertainties}}
+	\caption{First Stage Engine Properties\cite{Wade2017}.}
 	\label{tab:1stStageEngine}
 \end{table}
 The thrust and specific impulse of the Merlin 1-C are determined by interpolation between the sea level and vacuum specific impulse of the Merlin 1-C, shown in Table \ref{tab:1stStageEngine}, with ambient pressure. Thrust scaling is determined by linear pressure scaling using nozzle exit area, $T = T_{SL} + (p_e - p_{SL})A_e$. 
@@ -658,7 +656,7 @@ The thrust and specific impulse of the Merlin 1-C are determined by interpolatio
     		\caption{L/D.}
     		\label{fig:LD-EFirstStage}
     	\end{subfigure}
-    	\caption{The aerodynamic characteristics of the SPARTAN stack.  Coefficients correspond to a reference area of 62.77m$^2$.}
+    	\caption{The aerodynamic characteristics of the representative launch system.  Coefficients correspond to a reference area of 62.77m$^2$.}
     	\label{fig:FirstStageAero}
     \end{figure}
   The aerodynamics of the launch system during first stage flight are calculated in a similar manner to those of the scramjet accelerator without the first stage rocket, as detailed in Section \ref{sec:aero}. 
@@ -686,13 +684,13 @@ The thrust and specific impulse of the Merlin 1-C are determined by interpolatio
 
 	\textcolor{red}{\section{The Third Stage Rocket}\label{sec:ThirdStageBaseline}}
 
-	\begin{figure}
+	\begin{figure}[ht]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/3_vehicle_design/3rdStage}
 \caption{The third stage rocket, showing major internal features. }
 \label{fig:3rdStage}
 \end{figure}
-
+\noindent
 The third stage rocket is an expendable portion of the launch system, tasked with delivering the payload to its final orbital position. 
   The third stage is released from the scramjet accelerator at a flight speed of approximately Mach 9, after which it must fly within the atmosphere for a time, performing a significant altitude raising manoeuvre to achieve orbital flight\cite{Preller2017b}. 
   In previous studies, the third stage of the SPARTAN was designed around a pump-fed RL-10-3A engine\cite{Preller2017b}, and was designed to fit into a cavity on the back of the fuselage of the vehicle\cite{Preller2017b}. For the representative launch vehicle in this work a new third stage is designed, to reduce cost, and to integrate within the fuselage of the scramjet accelerator. 
@@ -883,10 +881,9 @@ Tungsten is used at the tip of the nose cone, the area of maximum heat loading. 
 \section{Modelling and Design Simplifications}\label{sec:simpl}  % XXX this is one for ingo to look at in particular, the location of this and how it fits in + discussion on controlinstability + section on aero and propulsion
 }
 
-\textcolor{red}{XXX Make the imacts secitons in each subheading share the same general sentence formats}
-
+\noindent
 The representative launch system in this study is based on the SPARTAN\cite{Preller2017b}, as it is the most mature concept for a small satellite launch system using scramjets in the public domain. However, the system is still at the preliminary design phase, meaning that the design, as well as system and sub-system models still incorporate significant simplifications and have not been fully developed. These simplified models and design methodologies are necessary and appropriate for preliminary system and trajectory analysis, allowing the trajectories in this work to be developed and a wide range of launch system parameters to be investigated. However, the effects of the simplifications within this analysis must be acknowledged.
-The modelling and design simplifications have been considered in two parts; the simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Sections \textcolor{red}{XXX}; while the design related simplifications that particularly affect the control, staging, and mass modelling of the launch system are considered here. The effects of the simplifications in this section are not quantified, but the sensitivity studies in Sections XXX and XXX give an indication as to the implications of variations of the effected performance and design parameters.
+The modelling and design simplifications have been considered in two parts; the simplifications in the performance modelling produce the uncertainties captured in the sensitivity study carried out in Sections \ref{sec:sensitivityNoReturn} and \ref{sec:sensitivity}; while the design related simplifications that particularly affect the control, staging, and mass modelling of the launch system are considered here. The effects of the simplifications in this section are not quantified, but the sensitivity studies give an indication as to the implications of variations of the effected performance and design parameters.
 The following sections address the effects of the currently open design choices and simplifications present in this study, and how they may affect the findings from the current work. 
 
 \subsection{Control}
@@ -896,7 +893,7 @@ The following sections address the effects of the currently open design choices 
 
 %\textcolor{red}{XXX Note, references are for laminar flows}
 
-The control surfaces of the representative launch system in this study are based on previous iterations of the SPARTAN\cite{Preller2017b}, and are modelled as large rectangular flaps. These flaps trim the vehicle during flight, and deflect significantly. These flaps experience large forces, and will need strong and resilient actuators to be able to hold deflection for long periods of time. In future iterations of a launch systems of this type, it may be necessary to design any aerodynamically controlled stages so that the necessary deflections of the control surfaces are minimised, through careful design of the aerodynamic profile and centre of gravity location.
+The control surfaces of the representative launch system in this study are based on the SPARTAN\cite{Preller2017b}, and are modelled as large rectangular flaps. These flaps trim the vehicle during flight, and deflect significantly. These flaps experience large forces, and will need strong and resilient actuators to be able to hold deflection for long periods of time. In future iterations of a launch systems of this type, it may be necessary to design any aerodynamically controlled stages so that the necessary deflections of the control surfaces are minimised, through careful design of the aerodynamic profile and centre of gravity location.
 
 In addition to the possible limitations arising from the actuation mechanism, the control surfaces of the vehicle may experience design limitations due to the design and placement of the control surface.
 A control surface deflected in a supersonic flow acts as a compression ramp, with an incidence angle that changes rapidly at the flap hinge. Depending on the flow conditions, wall temperature adverse pressure gradient and boundary layer stability, the shock at the flap may cause the boundary layer to separate, causing a recirculation bubble, along with a separation shock that reattaches on the control surface\cite{Marini2001}. This recirculation bubble decreases the pressure in the region that it is present on the control surface, while the separation shock increases the shear stress directly downstream of its reattachment\cite{Marini2001}. These effects may reduce the effectiveness of the control surfaces at higher deflection angles, changing the deflection necessary to achieve trim and potentially increasing drag significantly. In addition, the reattachment of the shock will cause a high temperature region on the control surface, that may need to be accounted for during the design of the thermal protection system of the control surface. 
@@ -912,14 +909,14 @@ Likely impacts on design:
 
 
 \subsubsection{Control Modelling}
-In order to effectively apply the Pseudospectral method of optimal control for the purposes of this work, a point mass model is used in all phases of simulation, with the control surface deflections of the scramjet accelerator and thrust vectoring of the first and third stages modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. However, all three stages of the representative launch system designed in this study are aerodynamically unstable for portions of their trajectories. Sections XXX and XXX identify the end of the first stage and scramjet stage trajectories as unstable, as well as the majority of fly-back and third stage trajectories.
+In order to effectively apply the Pseudospectral method of optimal control for the purposes of this work, a point mass model is used in all phases of simulation, with the control surface deflections of the scramjet accelerator and thrust vectoring of the first and third stages modified throughout the trajectory to trim the vehicle, assuming that the entire aerodynamics performance is known prior to flight. However, all three stages of the representative launch system designed in this study are aerodynamically unstable for portions of their trajectories. Sections \ref{sec:constq}, \ref{sec:optimisednoreturn} and \ref{sec:case11}  identify the end of the first stage and scramjet stage trajectories as unstable, as well as the majority of fly-back and third stage trajectories.
 For the purposes of this study, the design of the representative launch system as presented is regarded to be sufficient for a preliminary trajectory analysis. This is appropriate for an early trajectory analysis that is meant as an initial analysis of optimal fight paths. 
 However, it is likely that in the future a highly detailed study of a three-stage airbreathing launch system's design and control strategy must be undertaken, to determine the practicality of controlling this launch system during flight, and in particular the viability of thrust vector control. The controllability will be heavily interdependent on the vehicle design, and the trajectories that a launch system of this type is able to fly may be limited by the controllability of the stages of the launch system. In particular, the portions of the trajectory during which the vehicles of the launch system have been determined to be aerodynamically unstable may be difficult to control in a practical manner, and should be considered carefully for future designs of launch systems of this type. 
 Exploring this further is one of the items identified under future work.
 
 Likely impacts on design:
 \begin{itemize}[noitemsep,topsep=0pt]
-	\item If the control authority or stability of the vehicle is insufficient to adequately fly a nominal trajectory, it would be necessary for design variations to improve control authority or stability, with follow-on effects to vehicle aerodynamic performance. The control surfaces and/or thrust vectoring controls may have to be redesigned, affecting the mass and aerodynamic properties of the vehicle. 
+	\item Necessity for control system redesign if the control authority or stability of the vehicle is insufficient to adequately fly a nominal trajectory, with follow-on effects to vehicle aerodynamic performance and mass properties.
 \end{itemize}
 	
 
@@ -954,7 +951,7 @@ Likely impacts on design:
 \subsection{Mass Model Simplifications}
 
 This study uses a simplified mass model of the representative launch system, utilising design studies of the SPARTAN vehicle\cite{Preller2017b} that are based on statistical models and models of a representative winged-cone vehicle\cite{Preller2018}, and a scaled model of the Falcon 1e\cite{Vehicle2008}. In addition, the mass model distribution of the launch system in this study assumes a homogeneous distribution of subsystem and structural masses when calculating centre of gravity, and the rotational inertia of the launch system are not modelled.
-Simplified mass models are the norm for preliminary system analysis\textcolor{red}{XXXX Cite here all studies where trajectories were simulated}, however, these mass models do carry with them some uncertainty margin. These uncertainty margins are not directly estimated in this work due to the lack of data or reference studies available for launch systems of this type and size. 
+Simplified mass models are the norm for preliminary system analysis\cite{Argus,Powell1991,Trefny1999,Roche2000,Pescetelli2012,Young2006,Bradford2000,Hyperion,Wilhite1991,Fujikawa2017,Mehta2001,Takahashi1997,Germain2001,Eklund2012,Bradford2002,Kimura1999,Preller2018a}, however, these mass models do carry with them some uncertainty margin. These uncertainty margins are not directly estimated in this work due to the lack of data or reference studies available for launch systems of this type and size. 
 In future design studies, the subsystems of the vehicles and interface mechanisms will need to be modelled in detail, and positioned so that good control characteristics are obtained. The relationship between the control characteristics of the vehicle and its internal design will need to be investigated, and this will be thoroughly coupled with the separation dynamics of the launch system. 
 
 Likely impacts on design:
@@ -967,7 +964,7 @@ Likely impacts on design:
 	\section{Summary}	
 }
 	
-	
+	\noindent
 	In this chapter, the design and simulation of a representative rocket-scramjet-rocket launch system was presented, based around a modified version of the scramjet accelerator of the SPARTAN launch system. 
 	The design of the first stage is based on the first stage of the Falcon-1e, scaled down to \textcolor{red}{9.5m}, while the third stage is designed around the use of a modified SpaceX Kestrel engine, with the fuel tanks of the scramjet accelerator resized from the baseline SPARTAN design to accommodate for the new third stage size. 
 	 Mass breakdowns and key design features have been detailed for all three stages, including fuel ratios and structural mass fractions.

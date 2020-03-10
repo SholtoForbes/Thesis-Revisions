@@ -102,7 +102,7 @@ One of the primary functions of LODESTAR is to interface with the optimal contro
 \noindent The cost function, $J$, defines the target of the optimisation problem. 
 This cost function may be any function which is defined by the states or controls of the optimisation problem. The cost function is defined as follows:
 \begin{equation} \label{eq:cost}
-J(t,\textbf{x}(t),\textbf{u}(t)) = M[t,\textbf{x}(t_f),\textbf{u}(t_f)] +   \int_{t_0}^{t_f} P[\textbf{x}(t),\textbf{u}(t)] dt, \quad t \in [t_0,t_f],
+J(t,\textbf{x}(t),\textbf{u}(t)) = M[t,\textbf{x}(t_f),\textbf{u}(t_f)] +   \int_{t_0}^{t_f} L[\textbf{x}(t),\textbf{u}(t)] dt, \quad t \in [t_0,t_f],
 \end{equation}
 where $M$ is the terminal cost function and $P$ is the time integrated cost. 
 
@@ -229,7 +229,7 @@ During the vertical launch the rocket is assumed to need no control, and is held
 	\centering
 	\begin{tabular}{|c|c|c|}
 		\hline \textbf{Variable Group}  & \textbf{Associated Variables} & \textbf{Value/Range}\\
-		\hline Initial Constraints  & Speed (v) & 30m/s\\ & Altitude (z)& 30m \\ & Latitude ($\phi$)  & $-12.16^\circ$ \\& Longitude ($\xi$) & 136.75$^\circ$\\ & Trajectory Angle ($\gamma$) & 89.9$^\circ$\\ & Angle of Attack ($\alpha$)& 0$^\circ$\\
+		\hline Initial Constraints   & Altitude (z)& 30m \\ & Speed (v) & 15m/s\\ & Trajectory Angle ($\gamma$) & 89.9$^\circ$\\ & Latitude ($\phi$)  & $-12.16^\circ$ \\& Longitude ($\xi$) & 136.75$^\circ$\\  & Angle of Attack ($\alpha$)& 0$^\circ$\\
 		\hline Terminal Constraints & $\textbf{x}_{f,\textrm{\rom{2}}} - \textbf{x}_{0,\textrm{\rom{3}}}$ & 0\\ & $t_{f,\textrm{\rom{2}}} - t_{0,\textrm{\rom{3}}}$ & 0\\
 		\hline Path Constraints & Dynamic Pressure ($q$) & 0kPa - 50kPa\\ 
 		\hline Control Variables & $\ddot{\alpha}$ & $\pm0.029^\circ/s^2$\\ & $\dot{T}$ & $\pm0.05$/s\\ 
@@ -258,22 +258,22 @@ Allowing the initial fuel mass to vary increases the flexibility of the optimal 
 		\hline \textbf{Variable Group}  & \textbf{Associated Variables} & \textbf{Value/Range}\\
 		\hline Initial Constraints  & Fuel Mass ($m_F$) & 1562kg\\ 
 		Terminal Constraints & $\textbf{x}_{f,\textrm{\rom{2}}} - \textbf{x}_{0,\textrm{\rom{3}}}$ & 0\\ & $t_{f,\textrm{\rom{2}}} - t_{0,\textrm{\rom{3}}}$ & 0\\
-		\hline Terminal Constraints & Altitude (z) & 0 - 45km\\ & Trajectory Angle ($\gamma$)& 0 - 15$^\circ$\\  & Bank Angle ($\eta$)& 0$^\circ$\\  & $\textbf{x}_{f,\textrm{\rom{3}}} - \textbf{x}_{0,\textrm{\rom{4}}}$ & 0\\ & $t_{f,\textrm{\rom{3}}} - t_{0,\textrm{\rom{4}}}$ & 0\\
+		\hline Terminal Constraints & Altitude (z) & 0 - 45km\\ & Trajectory Angle ($\gamma$)& 0 - 20$^\circ$\\  & Bank Angle ($\eta$)& 0$^\circ$\\  & $\textbf{x}_{f,\textrm{\rom{3}}} - \textbf{x}_{0,\textrm{\rom{4}}}$ & 0\\ & $t_{f,\textrm{\rom{3}}} - t_{0,\textrm{\rom{4}}}$ & 0\\
 		 & $\textbf{x}_{f,\textrm{\rom{3}}} - \textbf{x}_{0,\textrm{\rom{5}}}$ & 0\\ & $t_{f,\textrm{\rom{3}}} - t_{0,\textrm{\rom{5}}}$ & 0\\
 		\hline Path Constraints & Dynamic Pressure& 0 - 50kPa\\ 
 		\hline Target Cost (Optional) & Dynamic Pressure$^*$ & $(q-50000)^2/50000$\\ 
 		\hline Control Variables & $\dot{\alpha}$ &  $\pm0.5^\circ$/s\\  & $\dot{\eta}$ &  $\pm1^\circ$/s\\ 
-		\hline State Variables & Altitude (z) & 0 - 50km\\ & Speed (v)& 10 - 3000m/s\\ & Trajectory Angle ($\gamma$)& $-28.6^\circ$ - $15^\circ$\\   & Latitude ($\phi$) &$\pm28.6^\circ$ \\  & Longitude ($\xi$)& $114.6^\circ$ - $171.9^\circ$\\   & Heading Angle ($\zeta$)& $-240^\circ$ - $360^\circ$ \\  & Fuel Mass ($m_F$)& 0 - 1562kg \\  & Angle of Attack ($\alpha$)&  0$^\circ$ - $10^\circ$ \\  & Bank Angle $\eta$& $-1^\circ$ - $90^\circ$ \\  
+		\hline State Variables & Altitude (z) & 0 - 50km\\ & Speed (v)& 10 - 3000m/s\\ & Trajectory Angle ($\gamma$)& $-10^\circ$ - $20^\circ$\\   & Latitude ($\phi$) &$\pm28.6^\circ$ \\  & Longitude ($\xi$)& $114.6^\circ$ - $171.9^\circ$\\   & Heading Angle ($\zeta$)& $-240^\circ$ - $360^\circ$ \\  & Fuel Mass ($m_F$)& 0 - 1562kg \\  & Angle of Attack ($\alpha$)&  0$^\circ$ - $10^\circ$ \\  & Bank Angle $\eta$& $-1^\circ$ - $90^\circ$ \\  
 		\hline 
 	\end{tabular} 
-	\caption{Optimisation setup of the second stage ascent. $^*$ This is only used in the constant dynamic pressure simulation. \textcolor{red}{XXX Check these, particularly traj angle}}
+	\caption{Optimisation setup of the second stage ascent. $^*$ This is only used in the constant dynamic pressure simulation.}
 	\label{tab:SPARTANascentsetup}
 \end{table}
 
-The second stage ascent phase consists of the acceleration of the SPARTAN scramjet-powered vehicle, controlled using the SPARTAN's angle of attack and bank angle. The optimisation setup of this phase is detailed in Table \ref{tab:SPARTANascentsetup}.
+The second stage ascent phase consists of the acceleration of the scramjet accelerator, controlled using angle of attack and bank angle. The optimisation setup of this phase is detailed in Table \ref{tab:SPARTANascentsetup}.
 The propulsion, lift, and drag of the vehicle are obtained from interpolation of the C-RESTM10 and trimmed aerodynamics databases described in Sections \ref{sec:propulsion}, \ref{sec:trimmedongineon}, and \ref{sec:trimmedongineoff}. 
 During the ascent, the engines are assumed to be operating at the maximum thrust, corresponding to the maximum equivalence ratio at all times. This equivalence ratio is 1 in most sections of the trajectory, except at low Mach numbers where the possibility of unstart and choking necessitates a reduction in equivalence ratio. This trajectory is constrained by a maximum dynamic pressure of 50kPa, corresponding to the maximum structural limits of the vehicle. 
-The control variables are set as the rate of change of angle of attack, and the rate of change of bank angle. Using the derivatives of the angle of attack and bank angle as the control variables serves to smooth the angle of attack and bank angle by constraining the change rates. The angle of attack is constrained to 10$^\circ$, approximated as a reasonable upper bound to the angle of attack, and the limit to which the aerodynamic characteristics of the SPARTAN are modelled. The bank angle is constrained to a maximum of 90$^\circ$, as it is assumed that the SPARTAN is not able to invert. The bank angle is also constrained to positive values only (ie. the heading angle may only increase) as the SPARTAN is launched from the ELA launch site at Nhulunbuy, and it is preferable to launch to the northeast or east to avoid overflying populated areas. 
+The control variables are set as the rate of change of angle of attack, and the rate of change of bank angle. Using the derivatives of the angle of attack and bank angle as the control variables serves to smooth the angle of attack and bank angle by constraining the change rates. The angle of attack is constrained to 10$^\circ$, approximated as a reasonable upper bound to the angle of attack, and conforming to studies of the SPARTAN. The bank angle is constrained to a maximum of 90$^\circ$, as it is assumed that the scramjet accelerator is not able to invert. The bank angle is also constrained to positive values only (ie. the heading angle may only increase) as the scramjet accelerator is launched from the ELA launch site at Nhulunbuy, and it is preferable to launch to the northeast or east to avoid overflying populated areas. 
 
 A cost function can be included during this phase, shown in Table \ref{tab:SPARTANascentsetup}, when flying a constant dynamic pressure trajectory is desired. This cost function is smooth and approaches 0 at the target dynamic pressure, allowing the third stage cost function of payload mass to still be active, while prioritising flying at constant dynamic pressure. 
 
@@ -296,14 +296,14 @@ A cost function can be included during this phase, shown in Table \ref{tab:SPART
 	
 \end{table}
 
-After releasing the third stage rocket, the scramjet-powered second stage must return back to the initial launch site. During this return flight, the SPARTAN is able to use its engines if necessary to ensure that it is able to return successfully. 
-During the fly-back, the SPARTAN cannot exceed its dynamic pressure limit of 50kPa. 
- The end state is constrained to a minimum of $-20^\circ$ trajectory angle, which is assumed to be an appropriate lower bound on the trajectory angle for approach to a landing strip. The altitude is constrained to less than 1km at the end point to ensure that the SPARTAN is approaching landing altitude.
- The velocity at the termination of the return trajectory is left variable. Constraining the end velocity may over-constrain the optimisation problem, and it is assumed that for a payload-to-orbit optimised trajectory the SPARTAN will end its return at a low speed, so that the energy necessary for return is minimised. 
+After releasing the third stage rocket, the scramjet-powered second stage must return back to the initial launch site. During this return flight, the scramjet accelerator is able to use its engines if necessary to ensure that it is able to return successfully. 
+During the fly-back, the scramjet accelerator cannot exceed its dynamic pressure limit of 50kPa. 
+ The end state is constrained to a minimum of $-20^\circ$ trajectory angle, which is assumed to be an appropriate lower bound on the trajectory angle for approach to a landing strip. The altitude is constrained to less than 1km at the end point to ensure that the scramjet accelerator is approaching landing altitude.
+ The velocity at the termination of the return trajectory is left variable. Constraining the end velocity may over-constrain the optimisation problem, and it is assumed that for a payload-to-orbit optimised trajectory the scramjet accelerator will end its return at a low speed, so that the energy necessary for return is minimised. 
  
  
  
- The aerodynamics of the SPARTAN during fly-back are determined by interpolation of the engine-on and engine-off trimmed data sets described in Section \ref{sec:aero}.
+ The aerodynamics of the scramjet accelerator during fly-back are determined by interpolation of the engine-on and engine-off trimmed data sets described in Section \ref{sec:aero}.
 During the return, the C-REST engines are able to be throttled on and off. 
  As the scramjet engines are throttled on, the aerodynamics are assumed to vary linearly between the aerodynamics calculated by the engine-off and engine-on datasets. 
 The throttle setting is defined as a state variable, with range between 0 and 1, where 1 represents the maximum equivalence ratio at that point. The corresponding fuel mass flow rate is scaled linearly with the throttle:  
@@ -323,10 +323,10 @@ and the thrust of the engine is assumed to scale linearly with the fuel mass flo
 		\hline \textbf{Variable Group}  & \textbf{Associated Variables} & \textbf{Value/Range}\\	\hline Initial Constraints  & Total Mass (m) & 3300kg\\ 
 		& $\textbf{x}_{f,\textrm{\rom{3}}} - \textbf{x}_{0,\textrm{\rom{5}}}$ & 0\\ & $t_{f,\textrm{\rom{3}}} - t_{0,\textrm{\rom{5}}}$ & 0\\
 		\hline Terminal Constraints & Alt$_{f,\textrm{\rom{6}}}$ & $\geq$90km\\ & Heading Angle ($\zeta$) $_{\textrm{\rom{6}}}$ & 97.64$^\circ$\\  & Angle of Attack ($\alpha$) & 0$^\circ$\\
-		\hline Path Constraints & Angle of Attack ($\alpha$) & Maximum $F_N$\\  & Thrust Vector Angle & $\pm8^\circ$\\ 
+		\hline Path Constraints  & Thrust Vector Angle & $\pm8^\circ$\\ 
 		\hline Target Cost & Payload-to-Orbit & Payload Calculated in Phase \rom{7}\\ 
 		\hline Control Variables & $\dot{\alpha}$ & $\pm1^\circ$\\ 
-		\hline State Variables & Altitude (z) & 30 - 84km\\ & Speed (v)& 10 - 8000m/s\\ & Trajectory Angle ($\gamma$)& $-5^\circ$ - 30$^\circ$ \\   & Latitude ($\phi$) &$\pm28.6^\circ$ \\   & Heading Angle ($\zeta$)& $80^\circ$ - 120$^\circ$\\  & Total Mass (m)& 0kg - 3300kg \\  & Angle of Attack ($\alpha$)&  $-5^\circ$ - 0$^\circ$\\ 
+		\hline State Variables & Altitude (z) & 30 - 84km\\ & Speed (v)& 10 - 8000m/s\\ & Trajectory Angle ($\gamma$)& $-5^\circ$ - 30$^\circ$ \\   & Latitude ($\phi$) &$\pm28.6^\circ$ \\   & Heading Angle ($\zeta$)& $80^\circ$ - 120$^\circ$\\  & Total Mass (m)& 0kg - 3300kg \\  & Angle of Attack ($\alpha$)&  $0^\circ$ - 10$^\circ$\\ 
 		\hline 
 	\end{tabular} 
 	\caption{Optimisation setup of the third stage powered ascent.}

@@ -1776,32 +1776,6 @@
     \field{year}{1998}
   \endentry
 
-  \entry{BlueOrigin}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=LS}{%
-         family={Lewin},
-         familyi={L\bibinitperiod},
-         given={Sarah},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LS1}
-    \strng{fullhash}{LS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Space.com}
-    \field{title}{{Blue Origin Announces Big 'New Glenn' Rocket for Satellite
-  \& Crew Launches}}
-    \verb{url}
-    \verb https://www.space.com/34034-blue-origin-new-glenn-rocket-for-satellit
-    \verb es-people.html
-    \endverb
-    \field{year}{2016}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
   \entry{Kendall2010}{misc}{}
     \name{author}{2}{}{%
       {{hash=KR}{%
@@ -1828,6 +1802,32 @@
     \verb n-and-now-50-years-of-evolution/
     \endverb
     \field{year}{2010}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
+  \endentry
+
+  \entry{BlueOrigin}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Lewin},
+         familyi={L\bibinitperiod},
+         given={Sarah},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Space.com}
+    \field{title}{{Blue Origin Announces Big 'New Glenn' Rocket for Satellite
+  \& Crew Launches}}
+    \verb{url}
+    \verb https://www.space.com/34034-blue-origin-new-glenn-rocket-for-satellit
+    \verb es-people.html
+    \endverb
+    \field{year}{2016}
     \field{urlday}{21}
     \field{urlmonth}{06}
     \field{urlyear}{2018}
@@ -3089,6 +3089,145 @@
     \endverb
   \endentry
 
+  \entry{WCC}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PSZ}{%
+         family={Pinckney},
+         familyi={P\bibinitperiod},
+         given={S\bibnamedelima Zane},
+         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJDPSZMJD1}
+    \strng{fullhash}{SJDPSZMJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
+  Configuration Model :}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
+    \endverb
+    \field{journaltitle}{Simulation}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Lu1993}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An inverse dynamics approach for trajectory optimization is proposed. This
+  technique can be useful in many difficult trajectory optimization and control
+  problems. The application of the approach is exemplified by ascent trajectory
+  optimization for an aerospace plane. Both minimum-fuel and minimax types of
+  performance indices are considered. When rocket augmentation is available for
+  ascent, it is shown that accurate orbital insertion can be achieved through
+  the inverse control of the rocket in the presence of disturbances.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.21073
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{4}
+    \field{pages}{726\bibrangedash 732}
+    \field{title}{{Inverse dynamics approach to trajectory optimization for an
+  aerospace plane}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
+    \endverb
+    \field{volume}{16}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{year}{1993}
+  \endentry
+
+  \entry{HyperX}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MCR}{%
+         family={McClinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RVL}{%
+         family={Rausch},
+         familyi={R\bibinitperiod},
+         given={Vincent\bibnamedelima L.},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MU}{%
+         family={Metha},
+         familyi={M\bibinitperiod},
+         given={Unmeel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCR+1}
+    \strng{fullhash}{MCRRVLSRJMUNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
+  provided a major, essential demonstration of the capability of the
+  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
+  design tools and vision vehicles. This flight was a crucial step toward
+  establishing air-breathing hypersonic propulsion for application to
+  space-launch vehicles and other hypersonic systems. This paper examines the
+  significance of the flight test in advancing the state-of-the science and
+  provides a strategic vision for achieving the dream for safe, efficient and
+  reliable space access with air-breathing propulsion in the near future,
+  through use of more near term approaches. Published by Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.actaastro.2005.03.061
+    \endverb
+    \field{issn}{00945765}
+    \field{number}{2-8}
+    \field{pages}{614\bibrangedash 622}
+    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
+    \field{volume}{57}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{2005}
+  \endentry
+
   \entry{Olds1998}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=OJ}{%
@@ -3173,145 +3312,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{Lu1993}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LP}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LP1}
-    \strng{fullhash}{LP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    An inverse dynamics approach for trajectory optimization is proposed. This
-  technique can be useful in many difficult trajectory optimization and control
-  problems. The application of the approach is exemplified by ascent trajectory
-  optimization for an aerospace plane. Both minimum-fuel and minimax types of
-  performance indices are considered. When rocket augmentation is available for
-  ascent, it is shown that accurate orbital insertion can be achieved through
-  the inverse control of the rocket in the presence of disturbances.%
-    }
-    \verb{doi}
-    \verb 10.2514/3.21073
-    \endverb
-    \field{issn}{0731-5090}
-    \field{number}{4}
-    \field{pages}{726\bibrangedash 732}
-    \field{title}{{Inverse dynamics approach to trajectory optimization for an
-  aerospace plane}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
-    \endverb
-    \field{volume}{16}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-    \field{year}{1993}
-  \endentry
-
-  \entry{WCC}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=PSZ}{%
-         family={Pinckney},
-         familyi={P\bibinitperiod},
-         given={S\bibnamedelima Zane},
-         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=MJD}{%
-         family={Mcminn},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJDPSZMJD1}
-    \strng{fullhash}{SJDPSZMJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
-  Configuration Model :}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
-    \endverb
-    \field{journaltitle}{Simulation}
-    \field{year}{1990}
-  \endentry
-
-  \entry{HyperX}{article}{}
-    \name{author}{5}{}{%
-      {{hash=MCR}{%
-         family={McClinton},
-         familyi={M\bibinitperiod},
-         given={Charles\bibnamedelima R.},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=RVL}{%
-         family={Rausch},
-         familyi={R\bibinitperiod},
-         given={Vincent\bibnamedelima L.},
-         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SRJ}{%
-         family={Shaw},
-         familyi={S\bibinitperiod},
-         given={Robert\bibnamedelima J.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MU}{%
-         family={Metha},
-         familyi={M\bibinitperiod},
-         given={Unmeel},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=NC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCR+1}
-    \strng{fullhash}{MCRRVLSRJMUNC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
-  provided a major, essential demonstration of the capability of the
-  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
-  design tools and vision vehicles. This flight was a crucial step toward
-  establishing air-breathing hypersonic propulsion for application to
-  space-launch vehicles and other hypersonic systems. This paper examines the
-  significance of the flight test in advancing the state-of-the science and
-  provides a strategic vision for achieving the dream for safe, efficient and
-  reliable space access with air-breathing propulsion in the near future,
-  through use of more near term approaches. Published by Elsevier Ltd.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.actaastro.2005.03.061
-    \endverb
-    \field{issn}{00945765}
-    \field{number}{2-8}
-    \field{pages}{614\bibrangedash 622}
-    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
-    \field{volume}{57}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
-    \endverb
-    \field{journaltitle}{Acta Astronautica}
-    \field{year}{2005}
-  \endentry
-
   \entry{Tsuchiya2005}{article}{}
     \name{author}{2}{}{%
       {{hash=TT}{%
@@ -3367,67 +3367,6 @@
     \field{year}{2005}
   \endentry
 
-  \entry{mochammad}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=AM}{%
-         family={{Agoes Moelyadi}},
-         familyi={A\bibinitperiod},
-         given={Mochammad},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AM1}
-    \strng{fullhash}{AM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Stage Separation Aerodynamics of Future Space Transport
-  Systems}}
-    \list{institution}{1}{%
-      {Technischen Universit\"{a}t M\"{u}nchen}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/mochammad.pdf:pdf
-    \endverb
-    \field{type}{phdthesis}
-    \field{year}{2006}
-  \endentry
-
-  \entry{Kudo2005}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KK}{%
-         family={Kudo},
-         familyi={K\bibinitperiod},
-         given={Kenji},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=KT}{%
-         family={Kanda},
-         familyi={K\bibinitperiod},
-         given={Takeshi},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \keyw{aerospace plane,pitching moment,staging,trajectory,unstart}
-    \strng{namehash}{KKKT1}
-    \strng{fullhash}{KKKT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2322/tjsass.48.129
-    \endverb
-    \field{issn}{0549-3811}
-    \field{number}{161}
-    \field{pages}{129\bibrangedash 134}
-    \field{title}{{Staging of Two-Stage-to-Orbit Aerospace Plane}}
-    \field{volume}{48}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kudo.pdf:pdf
-    \endverb
-    \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
-  Space Sciences}
-    \field{year}{2005}
-  \endentry
-
   \entry{Jazra2013}{article}{}
     \name{author}{3}{}{%
       {{hash=JT}{%
@@ -3471,6 +3410,15 @@
     \endverb
     \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2013}
+  \endentry
+
+  \entry{Hypersonix}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{{Hypersonix}}
+    \verb{url}
+    \verb https://hypersonix.space/
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{Moshman2014}{article}{}
@@ -6075,58 +6023,7 @@
     \field{urlyear}{2018}
   \endentry
 
-  \entry{Sagerman2017}{article}{}
-    \name{author}{4}{}{%
-      {{hash=SDG}{%
-         family={Sagerman},
-         familyi={S\bibinitperiod},
-         given={Denton\bibnamedelima G.},
-         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-      {{hash=RMP}{%
-         family={Rumpfkeil},
-         familyi={R\bibinitperiod},
-         given={Markus\bibnamedelima P.},
-         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=HBM}{%
-         family={Hellman},
-         familyi={H\bibinitperiod},
-         given={Barry\bibnamedelima M.},
-         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=DN}{%
-         family={Dasque},
-         familyi={D\bibinitperiod},
-         given={Nastassja},
-         giveni={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SDG+1}
-    \strng{fullhash}{SDGRMPHBMDN1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/6.2017-0264
-    \endverb
-    \field{isbn}{978-1-62410-447-3}
-    \field{number}{January}
-    \field{pages}{1\bibrangedash 22}
-    \field{title}{{Comparisons of Measured and Modeled Aero-thermal
-  Distributions for Complex Hypersonic Configurations}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/6.2017-0264
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Sagerman-et-al.-201
-    \verb 7-Comparisons-of-Measured-and-Modeled-Aero-thermal-Distributions-for-
-    \verb Complex-Hypersonic-Configurations.pdf:pdf
-    \endverb
-    \field{journaltitle}{55th AIAA Aerospace Sciences Meeting}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Abeynayake}{inproceedings}{}
+  \entry{Abeynayake2013a}{article}{}
     \name{author}{2}{}{%
       {{hash=AD}{%
          family={Abeynayake},
@@ -6146,138 +6043,125 @@
     \strng{fullhash}{ADAA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{20th International Congress on Modelling and Simulation}
+    \field{number}{December}
     \field{pages}{1\bibrangedash 6}
     \field{title}{{Comparison of computational and semi-empirical aerodynamics
   tools for making fit-for-purpose modelling decisions}}
-    \list{location}{1}{%
-      {Adelaide, Australia}%
-    }
     \verb{file}
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
     \endverb
     \field{year}{2013}
   \endentry
 
-  \entry{Aftosmis2011}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=AMJ}{%
-         family={Aftosmis},
-         familyi={A\bibinitperiod},
-         given={Michael\bibnamedelima J.},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+  \entry{Kiris2011}{article}{}
+    \name{author}{10}{}{%
+      {{hash=KC}{%
+         family={Kiris},
+         familyi={K\bibinitperiod},
+         given={Cetin},
+         giveni={C\bibinitperiod},
       }}%
-      {{hash=NM}{%
-         family={Nemec},
-         familyi={N\bibinitperiod},
-         given={Marian},
+      {{hash=HJ}{%
+         family={Housman},
+         familyi={H\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gusman},
+         familyi={G\bibinitperiod},
+         given={Marshall},
          giveni={M\bibinitperiod},
       }}%
-      {{hash=CSE}{%
-         family={Cliff},
-         familyi={C\bibinitperiod},
-         given={Susan\bibnamedelima E.},
-         giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+      {{hash=SD}{%
+         family={Schauerhamer},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
       }}%
-    }
-    \strng{namehash}{AMJNMCSE1}
-    \strng{fullhash}{AMJNMCSE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    We consider analysis and design of low sonic-boom aircraft through the use
-  of an invis- cid, embedded-boundary Cartesian mesh method. Adjoint error
-  estimation and adaptive meshing are used in the analysis portion of this
-  study to determine resolution requirements of the computational domain, while
-  adjoint-based gradients in conjunction with a parallel optimization framework
-  are used for design. Two analysis examples are presented. The first is a
-  verification study that shows excellent accuracy of mesh converged pressure
-  sig- nals when sampled both on-track and off-track at distances of 1.8 body
-  lengths on meshes with \~{}13 million cells. The second is a validation study
-  of a low-boom model that shows close agreement between wind tunnel
-  experiments and off-body pressure signals computed via our Cartesian
-  approach. The optimization example uses an inverse design approach to
-  re-shape a low-boom Mach 1.6 aircraft traveling at 45,000 ft. A detailed
-  parametric model is constructed in the RAGE modeler with approximately 180
-  parameters used as design variables. Optimization reduced the perceived
-  ground noise level by \~{}10 dB to a rating of 76.7 PLdB while maintaining
-  the lift and drag performance of the aircraft. Our discussion shows that for
-  functionals with certain common forms, the adjoint solution provides a de-
-  tailed bookkeeping that can highlight specific regions of the aircraft that
-  contribute to the cost function. In such cases, examination of the adjoint
-  solution directly highlights critical portions of the model, encouraging
-  designers to efficiently select design variables.%
-    }
-    \field{booktitle}{29th AIAA Applied Aerodynamics Conference 2011}
-    \verb{doi}
-    \verb doi:10.2514/6.2011-3500
-    \endverb
-    \field{isbn}{9781624101458}
-    \field{number}{June}
-    \field{pages}{1\bibrangedash 17}
-    \field{title}{{Adjoint-based low-boom design with Cart3D}}
-    \verb{url}
-    \verb http://www.scopus.com/inward/record.url?eid=2-s2.0-84872373928\&partn
-    \verb erID=tZOtx3y1
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Aftosmis2011.pdf:pd
-    \verb f
-    \endverb
-    \field{year}{2011}
-  \endentry
-
-  \entry{Almosnino2016a}{article}{}
-    \name{author}{1}{}{%
-      {{hash=AD}{%
-         family={Almosnino},
+      {{hash=DK}{%
+         family={Deere},
+         familyi={D\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={Elmiligui},
+         familyi={E\bibinitperiod},
+         given={Alaa},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AHK}{%
+         family={Abdol-Hamid},
+         familyi={A\bibinitperiod-H\bibinitperiod},
+         given={Khaled},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Parlette},
+         familyi={P\bibinitperiod},
+         given={Ed},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Andrews},
          familyi={A\bibinitperiod},
-         given={D},
-         giveni={D},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Blevins},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{Aerodynamics,Computational results,Convergence behaviors,Hypersonic
-  flow,Lateral aerodynamics,Lift,Lifting bodies,NASA,Prediction of aerodynamic
-  characteristics,Preliminary design,Specific heat,Specific heat
-  ratio,Supersonic aircraft,Wind tunnels,Wind-tunnel data}
-    \strng{namehash}{AD1}
-    \strng{fullhash}{AD1}
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCHJGMSDDKEAAHKPEAMBJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
-    An Adjoint-based Euler solver is used to calculate the flow on NASA’s
-  HL-20 lifting body configuration. The study covers a full Mach range from low
-  subsonic (M=0.3) to hypersonic (up to M=20). Longitudinal and lateral
-  aerodynamic coefficients are calculated. Convergence behavior of the solver
-  is discussed with emphasis on the impact of the HL-20 base flow in subsonic
-  and transonic Mach numbers. Hypersonic flow cases are then studied in detail,
-  with incidence reaching 50 degrees. Computational considerations pertaining
-  to hypersonic flow and the impact of modifying the specific heat ratio are
-  discussed. Representative numerical flow visualizations are included for each
-  flow regime and flow features are discussed. Computational results show good
-  agreement with wind-tunnel data and a second computational method. The study
-  demonstrates the conceptual and preliminary design power of the current
-  Euler-Adjoint solver when applied to complex reentry geometries across their
-  full flight Mach range. © 2016, American Institute of Aeronautics and
-  Astronautics Inc, AIAA. All rights reserved.%
+    In support of NASA's next generation heavy lift launch vehicle (HLLV), a
+  simulation protocol has been developed to generate databases of the
+  aerodynamic force and moment coefficients for HLLV ascent. The simulation
+  protocol has been established and validated with a series of computational
+  analyses that ensure best practices are achieved. Results of the sensitivity
+  analyses using a full-scale Ares V flight vehicle are next applied in a
+  validation study with three scaled-down Ares V wind tunnel test articles.
+  Three independent computational fluid dynamic (CFD) flow solvers were
+  included in the study. These included OVERFLOW, a viscous Reynolds Averaged
+  Navier-Stokes (RANS) solver for structured overset grids, USM3D, a viscous
+  RANS solver for unstructured tetrahedral grids, and Cart3D, an inviscid Euler
+  solver using unstructured Cartesian grids and adjoint-based adaptive mesh
+  refinement. First, a series of tests was independently performed for each
+  applicable CFD code, including a grid convergence study and sensitivity
+  studies of turbulence models and convective flux discretization methods. Once
+  the proper grid resolution, physical models, and numerical parameters were
+  determined for each of the codes, the process was continued with a
+  code-to-code comparison. Each CFD code was applied to the Ares V flight
+  vehicle at several points in the ascent trajectory, with all three codes
+  obtaining consistent force and moment predictions. Finally, an extensive
+  validation of the CFD approach was performed, in which the three codes were
+  used to generate aero-databases of force and moment coefficients for three
+  distinct Ares V wind tunnel test articles. These computations were performed
+  concurrent to the experimental databases generated in the 14-inch wind tunnel
+  at Marshall Space Flight Center (MSFC). Comparisons of the CFD results with
+  the experimental data are reported and the viscous flow results compare well.
+  Copyright © 2011 by the American Institute of Aeronautics and Astronautics,
+  Inc.%
     }
     \verb{doi}
-    \verb 10.2514/6.2016-3266
+    \verb 10.2514/6.2011-16
     \endverb
-    \field{isbn}{9781624104374 (ISBN)}
-    \field{number}{June}
-    \field{title}{{Assessment of an inviscid euler-adjoint solver for
-  prediction of aerodynamic characteristics of the NASA HL-20 lifting body}}
-    \verb{url}
-    \verb https://www.scopus.com/inward/record.uri?eid=2-s2.0-84980371959\&part
-    \verb nerID=40\&md5=1b304aabaad2976daf4d0742d5bdc6ba
-    \endverb
+    \field{pages}{1\bibrangedash 21}
+    \field{title}{{Best practices for aero-database CFD simulations of ares V
+  ascent}}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Almosnino2016-2.pdf
-    \verb :pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kiris2011.pdf:pdf
     \endverb
-    \field{journaltitle}{34th AIAA Applied Aerodynamics Conference, 2016}
-    \field{year}{2016}
+    \field{journaltitle}{49th AIAA Aerospace Sciences Meeting Including the New
+  Horizons Forum and Aerospace Exposition}
+    \field{year}{2011}
   \endentry
 
   \entry{Mehta2016}{article}{}
@@ -6390,76 +6274,72 @@
     \field{year}{2010}
   \endentry
 
-  \entry{Gomez2004}{article}{}
-    \name{author}{8}{}{%
-      {{hash=GR}{%
-         family={Gomez},
-         familyi={G\bibinitperiod},
-         given={Reynaldo},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=VD}{%
-         family={Vicker},
-         familyi={V\bibinitperiod},
-         given={Darby},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=RS}{%
-         family={Rogers},
-         familyi={R\bibinitperiod},
-         given={Stuart},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=AM}{%
+  \entry{Aftosmis2011}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=AMJ}{%
          family={Aftosmis},
          familyi={A\bibinitperiod},
-         given={Michael},
+         given={Michael\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nemec},
+         familyi={N\bibinitperiod},
+         given={Marian},
          giveni={M\bibinitperiod},
       }}%
-      {{hash=CW}{%
-         family={Chan},
+      {{hash=CSE}{%
+         family={Cliff},
          familyi={C\bibinitperiod},
-         given={William},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=MR}{%
-         family={Meakin},
-         familyi={M\bibinitperiod},
-         given={Robert},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Murman},
-         familyi={M\bibinitperiod},
-         given={Scott},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Murman},
-         familyi={M\bibinitperiod},
-         given={Scott},
-         giveni={S\bibinitperiod},
+         given={Susan\bibnamedelima E.},
+         giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GR+1}
-    \strng{fullhash}{GRVDRSAMCWMRMSMS1}
+    \strng{namehash}{AMJNMCSE1}
+    \strng{fullhash}{AMJNMCSE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We consider analysis and design of low sonic-boom aircraft through the use
+  of an invis- cid, embedded-boundary Cartesian mesh method. Adjoint error
+  estimation and adaptive meshing are used in the analysis portion of this
+  study to determine resolution requirements of the computational domain, while
+  adjoint-based gradients in conjunction with a parallel optimization framework
+  are used for design. Two analysis examples are presented. The first is a
+  verification study that shows excellent accuracy of mesh converged pressure
+  sig- nals when sampled both on-track and off-track at distances of 1.8 body
+  lengths on meshes with \~{}13 million cells. The second is a validation study
+  of a low-boom model that shows close agreement between wind tunnel
+  experiments and off-body pressure signals computed via our Cartesian
+  approach. The optimization example uses an inverse design approach to
+  re-shape a low-boom Mach 1.6 aircraft traveling at 45,000 ft. A detailed
+  parametric model is constructed in the RAGE modeler with approximately 180
+  parameters used as design variables. Optimization reduced the perceived
+  ground noise level by \~{}10 dB to a rating of 76.7 PLdB while maintaining
+  the lift and drag performance of the aircraft. Our discussion shows that for
+  functionals with certain common forms, the adjoint solution provides a de-
+  tailed bookkeeping that can highlight specific regions of the aircraft that
+  contribute to the cost function. In such cases, examination of the adjoint
+  solution directly highlights critical portions of the model, encouraging
+  designers to efficiently select design variables.%
+    }
+    \field{booktitle}{29th AIAA Applied Aerodynamics Conference 2011}
     \verb{doi}
-    \verb 10.2514/6.2004-2226
+    \verb doi:10.2514/6.2011-3500
     \endverb
-    \field{isbn}{978-1-62410-031-4}
-    \field{pages}{1\bibrangedash 15}
-    \field{title}{{STS-107 Investigation Ascent CFD Support}}
+    \field{isbn}{9781624101458}
+    \field{number}{June}
+    \field{pages}{1\bibrangedash 17}
+    \field{title}{{Adjoint-based low-boom design with Cart3D}}
     \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/6.2004-2226
+    \verb http://www.scopus.com/inward/record.url?eid=2-s2.0-84872373928\&partn
+    \verb erID=tZOtx3y1
     \endverb
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gomez-et-al.-2004-S
-    \verb TS-107-Investigation-Ascent-CFD-Support.pdf:pdf
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Aftosmis2011.pdf:pd
+    \verb f
     \endverb
-    \field{journaltitle}{34th AIAA Fluid Dynamics Conference and Exhibit}
-    \field{year}{2004}
+    \field{year}{2011}
   \endentry
 
   \entry{Suraweera2009}{article}{}
@@ -6728,6 +6608,215 @@
     \field{urlday}{01}
     \field{urlmonth}{02}
     \field{urlyear}{2017}
+  \endentry
+
+  \entry{Sagerman2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SDG}{%
+         family={Sagerman},
+         familyi={S\bibinitperiod},
+         given={Denton\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=RMP}{%
+         family={Rumpfkeil},
+         familyi={R\bibinitperiod},
+         given={Markus\bibnamedelima P.},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HBM}{%
+         family={Hellman},
+         familyi={H\bibinitperiod},
+         given={Barry\bibnamedelima M.},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Dasque},
+         familyi={D\bibinitperiod},
+         given={Nastassja},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SDG+1}
+    \strng{fullhash}{SDGRMPHBMDN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/6.2017-0264
+    \endverb
+    \field{isbn}{978-1-62410-447-3}
+    \field{number}{January}
+    \field{pages}{1\bibrangedash 22}
+    \field{title}{{Comparisons of Measured and Modeled Aero-thermal
+  Distributions for Complex Hypersonic Configurations}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/6.2017-0264
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Sagerman-et-al.-201
+    \verb 7-Comparisons-of-Measured-and-Modeled-Aero-thermal-Distributions-for-
+    \verb Complex-Hypersonic-Configurations.pdf:pdf
+    \endverb
+    \field{journaltitle}{55th AIAA Aerospace Sciences Meeting}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Abeynayake}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AD}{%
+         family={Abeynayake},
+         familyi={A\bibinitperiod},
+         given={Dineth},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Agon},
+         familyi={A\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{cart3d,cfd,comparison,missile datcom,validation,wind tunnel}
+    \strng{namehash}{ADAA1}
+    \strng{fullhash}{ADAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{20th International Congress on Modelling and Simulation}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{{Comparison of computational and semi-empirical aerodynamics
+  tools for making fit-for-purpose modelling decisions}}
+    \list{location}{1}{%
+      {Adelaide, Australia}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{Almosnino2016a}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AD}{%
+         family={Almosnino},
+         familyi={A\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+    }
+    \keyw{Aerodynamics,Computational results,Convergence behaviors,Hypersonic
+  flow,Lateral aerodynamics,Lift,Lifting bodies,NASA,Prediction of aerodynamic
+  characteristics,Preliminary design,Specific heat,Specific heat
+  ratio,Supersonic aircraft,Wind tunnels,Wind-tunnel data}
+    \strng{namehash}{AD1}
+    \strng{fullhash}{AD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An Adjoint-based Euler solver is used to calculate the flow on NASA’s
+  HL-20 lifting body configuration. The study covers a full Mach range from low
+  subsonic (M=0.3) to hypersonic (up to M=20). Longitudinal and lateral
+  aerodynamic coefficients are calculated. Convergence behavior of the solver
+  is discussed with emphasis on the impact of the HL-20 base flow in subsonic
+  and transonic Mach numbers. Hypersonic flow cases are then studied in detail,
+  with incidence reaching 50 degrees. Computational considerations pertaining
+  to hypersonic flow and the impact of modifying the specific heat ratio are
+  discussed. Representative numerical flow visualizations are included for each
+  flow regime and flow features are discussed. Computational results show good
+  agreement with wind-tunnel data and a second computational method. The study
+  demonstrates the conceptual and preliminary design power of the current
+  Euler-Adjoint solver when applied to complex reentry geometries across their
+  full flight Mach range. © 2016, American Institute of Aeronautics and
+  Astronautics Inc, AIAA. All rights reserved.%
+    }
+    \verb{doi}
+    \verb 10.2514/6.2016-3266
+    \endverb
+    \field{isbn}{9781624104374 (ISBN)}
+    \field{number}{June}
+    \field{title}{{Assessment of an inviscid euler-adjoint solver for
+  prediction of aerodynamic characteristics of the NASA HL-20 lifting body}}
+    \verb{url}
+    \verb https://www.scopus.com/inward/record.uri?eid=2-s2.0-84980371959\&part
+    \verb nerID=40\&md5=1b304aabaad2976daf4d0742d5bdc6ba
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Almosnino2016-2.pdf
+    \verb :pdf
+    \endverb
+    \field{journaltitle}{34th AIAA Applied Aerodynamics Conference, 2016}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Gomez2004}{article}{}
+    \name{author}{8}{}{%
+      {{hash=GR}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={Reynaldo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VD}{%
+         family={Vicker},
+         familyi={V\bibinitperiod},
+         given={Darby},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rogers},
+         familyi={R\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Aftosmis},
+         familyi={A\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Meakin},
+         familyi={M\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Murman},
+         familyi={M\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Murman},
+         familyi={M\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GR+1}
+    \strng{fullhash}{GRVDRSAMCWMRMSMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/6.2004-2226
+    \endverb
+    \field{isbn}{978-1-62410-031-4}
+    \field{pages}{1\bibrangedash 15}
+    \field{title}{{STS-107 Investigation Ascent CFD Support}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/6.2004-2226
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gomez-et-al.-2004-S
+    \verb TS-107-Investigation-Ascent-CFD-Support.pdf:pdf
+    \endverb
+    \field{journaltitle}{34th AIAA Fluid Dynamics Conference and Exhibit}
+    \field{year}{2004}
   \endentry
 
   \entry{Pandya2004}{article}{}
@@ -7186,6 +7275,67 @@
     \endverb
     \field{journaltitle}{Aerospace Science and Technology}
     \field{year}{2001}
+  \endentry
+
+  \entry{mochammad}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=AM}{%
+         family={{Agoes Moelyadi}},
+         familyi={A\bibinitperiod},
+         given={Mochammad},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM1}
+    \strng{fullhash}{AM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Stage Separation Aerodynamics of Future Space Transport
+  Systems}}
+    \list{institution}{1}{%
+      {Technischen Universit\"{a}t M\"{u}nchen}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/mochammad.pdf:pdf
+    \endverb
+    \field{type}{phdthesis}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Kudo2005}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KK}{%
+         family={Kudo},
+         familyi={K\bibinitperiod},
+         given={Kenji},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kanda},
+         familyi={K\bibinitperiod},
+         given={Takeshi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{aerospace plane,pitching moment,staging,trajectory,unstart}
+    \strng{namehash}{KKKT1}
+    \strng{fullhash}{KKKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2322/tjsass.48.129
+    \endverb
+    \field{issn}{0549-3811}
+    \field{number}{161}
+    \field{pages}{129\bibrangedash 134}
+    \field{title}{{Staging of Two-Stage-to-Orbit Aerospace Plane}}
+    \field{volume}{48}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kudo.pdf:pdf
+    \endverb
+    \field{journaltitle}{Transactions of the Japan Society for Aeronautical and
+  Space Sciences}
+    \field{year}{2005}
   \endentry
 
   \entry{Gong2014}{article}{}
@@ -7974,6 +8124,25 @@
     \field{year}{2008}
   \endentry
 
+  \entry{htdt}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JIH}{%
+         family={Jahn},
+         familyi={J\bibinitperiod},
+         given={Ingo\bibnamedelima H.},
+         giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JIH1}
+    \strng{fullhash}{JIH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{HTDT Code Repository}}
+    \verb{url}
+    \verb https://bitbucket.org/uqturbine/htdt/src
+    \endverb
+  \endentry
+
   \entry{Kourtides}{article}{}
     \name{author}{4}{}{%
       {{hash=KDa}{%
@@ -8074,147 +8243,6 @@
     \endverb
     \field{journaltitle}{Chinese Journal of Aeronautics}
     \field{year}{2018}
-  \endentry
-
-  \entry{Abeynayake2013a}{article}{}
-    \name{author}{2}{}{%
-      {{hash=AD}{%
-         family={Abeynayake},
-         familyi={A\bibinitperiod},
-         given={Dineth},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=AA}{%
-         family={Agon},
-         familyi={A\bibinitperiod},
-         given={Alan},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \keyw{cart3d,cfd,comparison,missile datcom,validation,wind tunnel}
-    \strng{namehash}{ADAA1}
-    \strng{fullhash}{ADAA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{December}
-    \field{pages}{1\bibrangedash 6}
-    \field{title}{{Comparison of computational and semi-empirical aerodynamics
-  tools for making fit-for-purpose modelling decisions}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/abeynayake.pdf:pdf
-    \endverb
-    \field{year}{2013}
-  \endentry
-
-  \entry{Kiris2011}{article}{}
-    \name{author}{10}{}{%
-      {{hash=KC}{%
-         family={Kiris},
-         familyi={K\bibinitperiod},
-         given={Cetin},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=HJ}{%
-         family={Housman},
-         familyi={H\bibinitperiod},
-         given={Jeffrey},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=GM}{%
-         family={Gusman},
-         familyi={G\bibinitperiod},
-         given={Marshall},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=SD}{%
-         family={Schauerhamer},
-         familyi={S\bibinitperiod},
-         given={Daniel},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=DK}{%
-         family={Deere},
-         familyi={D\bibinitperiod},
-         given={Karen},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=EA}{%
-         family={Elmiligui},
-         familyi={E\bibinitperiod},
-         given={Alaa},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=AHK}{%
-         family={Abdol-Hamid},
-         familyi={A\bibinitperiod-H\bibinitperiod},
-         given={Khaled},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=PE}{%
-         family={Parlette},
-         familyi={P\bibinitperiod},
-         given={Ed},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Andrews},
-         familyi={A\bibinitperiod},
-         given={Mark},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=BJ}{%
-         family={Blevins},
-         familyi={B\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KC+1}
-    \strng{fullhash}{KCHJGMSDDKEAAHKPEAMBJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In support of NASA's next generation heavy lift launch vehicle (HLLV), a
-  simulation protocol has been developed to generate databases of the
-  aerodynamic force and moment coefficients for HLLV ascent. The simulation
-  protocol has been established and validated with a series of computational
-  analyses that ensure best practices are achieved. Results of the sensitivity
-  analyses using a full-scale Ares V flight vehicle are next applied in a
-  validation study with three scaled-down Ares V wind tunnel test articles.
-  Three independent computational fluid dynamic (CFD) flow solvers were
-  included in the study. These included OVERFLOW, a viscous Reynolds Averaged
-  Navier-Stokes (RANS) solver for structured overset grids, USM3D, a viscous
-  RANS solver for unstructured tetrahedral grids, and Cart3D, an inviscid Euler
-  solver using unstructured Cartesian grids and adjoint-based adaptive mesh
-  refinement. First, a series of tests was independently performed for each
-  applicable CFD code, including a grid convergence study and sensitivity
-  studies of turbulence models and convective flux discretization methods. Once
-  the proper grid resolution, physical models, and numerical parameters were
-  determined for each of the codes, the process was continued with a
-  code-to-code comparison. Each CFD code was applied to the Ares V flight
-  vehicle at several points in the ascent trajectory, with all three codes
-  obtaining consistent force and moment predictions. Finally, an extensive
-  validation of the CFD approach was performed, in which the three codes were
-  used to generate aero-databases of force and moment coefficients for three
-  distinct Ares V wind tunnel test articles. These computations were performed
-  concurrent to the experimental databases generated in the 14-inch wind tunnel
-  at Marshall Space Flight Center (MSFC). Comparisons of the CFD results with
-  the experimental data are reported and the viscous flow results compare well.
-  Copyright © 2011 by the American Institute of Aeronautics and Astronautics,
-  Inc.%
-    }
-    \verb{doi}
-    \verb 10.2514/6.2011-16
-    \endverb
-    \field{pages}{1\bibrangedash 21}
-    \field{title}{{Best practices for aero-database CFD simulations of ares V
-  ascent}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Kiris2011.pdf:pdf
-    \endverb
-    \field{journaltitle}{49th AIAA Aerospace Sciences Meeting Including the New
-  Horizons Forum and Aerospace Exposition}
-    \field{year}{2011}
   \endentry
 
   \entry{Davidian1987}{article}{}
