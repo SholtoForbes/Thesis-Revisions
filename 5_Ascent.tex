@@ -6,18 +6,19 @@
 %	\textcolor{red}{XXX NOTE third stage has very small thrust vector angle, turns out that the force is pretty close to the CG}
 	
 %	\textcolor{red}{XXX check all sig figs after all results are done, and see what they need to be, and reduce some if necessary}
-
+\textcolor{red}{XXX Think about the formatting of the figure labels, ie Case : }
 
 	
-This chapter presents a maximum payload-to-orbit trajectory optimisation for the representative launch system. 
+This chapter presents a maximum payload-to-orbit trajectory optimisation for the representative launch system described in Chapter \ref{chapter:Design}. 
 This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), and delivers a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectory solutions for this launch system.
-First, a trajectory solution is calculated in which the scramjet accelerator flies at constant dynamic pressure. This trajectory is calculated to serve as a baseline for comparisons, as previous studies have assumed that flying the scramjet accelerator at its maximum allowable dynamic pressure would produce the best overall system performance\cite{Preller2017b}. An optimal payload-to-orbit trajectory is then developed, and the trajectory shape compared and contrasted to the constant dynamic pressure trajectory.
+First, a trajectory solution is calculated in which the scramjet accelerator flies at constant dynamic pressure of 50kPa. This trajectory is calculated to serve as a baseline for comparisons, as previous studies have assumed that flying the scramjet accelerator at its maximum allowable dynamic pressure would produce the best overall system performance\cite{Preller2017b}. Next, an optimal payload-to-orbit trajectory is developed, and the trajectory shape compared and contrasted to the constant dynamic pressure trajectory.
 Lastly, a sensitivity study is performed, by varying key performance parameters of the launch system and investigating the effects of each parameter on the performance of the launch system. 
 
+\textcolor{red}{XXX I should maybe change these first two to be clearer - they are both optimised for payload to orbit, but 1 is constrained and 1 isnt. Perhaps I should make a remark beforehand than ALL of these are optimised for payload to orbit, im just changinf constraints / parameters. I should make a special note that the unconstrained case is referref to as the 'maximum payload-to-orbit trajectory'}
 The following trajectories are developed: 
 \begin{itemize}
 	
-	\item Case 1: $q = $ 50kPa fixed scramjet accelerator trajectory. \newline$\rightarrow$ This trajectory provides a baseline trajectory for comparison purposes.
+	\item Case 1: 50kPa fixed dynamic pressure scramjet accelerator trajectory. \newline$\rightarrow$ This trajectory provides a baseline trajectory for comparison purposes.
 	\item Case 2: Trajectory optimised for payload-to-orbit, $q_{max} = $ 50kPa. \newline$\rightarrow$ This trajectory demonstrates improved performance through trajectory optimisation.
 	\item Case 3: Variation of maximum allowable dynamic pressure between $q_{max} = $ 45kPa \& $q_{max} = $ 55kPa. 
 	\newline$\rightarrow$ Comparison of optimised trajectories allows the influence of the scramjet accelerator's ability to withstand aerodynamic forces on the launch system performance to be investigated.
@@ -38,21 +39,21 @@ The following trajectories are developed:
 \end{itemize}
 These optimised trajectory cases allow the benefits of flying an optimised trajectory to be quantified, and allow the impact of key design parameters on the performance of the launch system to be characterised. 
 
- \textcolor{red}{These optimised trajectories are presented in the following sections, along with key performance indicators and their sensitivities. These are presented to a number of significant figures judged necessary to adequately present the trajectory results and sensitivities to the accuracy of the trajectory simulation, with the caveat that the launch system modelling carries with it significant uncertainties.}
+ \textcolor{red}{These optimised trajectories are presented in the following sections, along with key performance indicators and their sensitivities. These are presented to a number of significant figures judged necessary to adequately present the trajectory results and sensitivities to the accuracy of the trajectory simulation, with the caveat that the launch system modelling carries with it significant uncertainties as described in Appendix \ref{Appendix:unc}.}
   
 
 \section{Case 1: Constant Dynamic Pressure Trajectory}\label{sec:constq}
 
 \begin{figure}[ht]% updated 15/8/19
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/GroundTrackConstq}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode900/GroundTrackConstq}
 	\caption{Maximum payload-to-orbit trajectory path with the scramjet accelerator flying at constant dynamic pressure (Case 1). Initial heading angle \textcolor{red}{91.4}$^\circ$.}
 	\label{fig:GroundTrackConstq}
 \end{figure}
 
 The first trajectory that is produced using LODESTAR is a maximum payload-to-orbit trajectory in which the scramjet accelerator flies a constant dynamic pressure path, at its maximum allowable dynamic pressure of 50kPa. In order to drive the scramjet accelerator towards a constant dynamic pressure path, the cost function detailed in Table \ref{tab:SPARTANascentsetup} is utilised. In addition to the dynamic pressure cost function, the maximum payload-to-orbit cost function is also active on the third stage phase, so that once the scramjet accelerator flies close to 50kPa, the third stage will fly a maximum payload-to-orbit trajectory from the termination of the scramjet accelerator's constant dynamic pressure path.
 Previous studies have assumed that flying the scramjet accelerator at constant dynamic pressure will produce the best possible system performance\cite{Preller2017b}. Because of this assumption, a constant dynamic pressure trajectory is produced to serve as a baseline for comparison with the maximum payload-to-orbit optimised trajectory. Producing a constant dynamic pressure trajectory also serves to verify that LODESTAR is able to calculate a trajectory in which the scramjet accelerator flies at a fixed dynamic pressure for the duration of its flight. 
-In addition, the designs and aerodynamic simulations of each vehicle of the launch system have been improved in this work, compared to previous studies\cite{Preller2017b}. In this work, the internal design of the scramjet accelerator has been modified (as described in Section \ref{sec:SPARTAN}), the third stage design has been modified significantly (as described in Section \ref{sec:ThirdStageBaseline}), the first stage is included (as described in Section \ref{sec:firststage}), and Cart3D\cite{CART3D} is used for aerodynamic calculations (as detailed in Section \ref{sec:aero}). Simulating a constant dynamic pressure verifies that the first stage is able to reach the maximum dynamic pressure of the scramjet accelerator, and that the scramjet accelerator is able to fly at its maximum dynamic pressure within its control and aerodynamic limits. This verification ensures that any deviations from the scramjet accelerator's maximum dynamic pressure when flying a maximum payload-to-orbit trajectory serve to improve the performance of the system, rather than being a result of the problem setup or design constraints. 
+In addition, the designs and aerodynamic simulations of each vehicle of the launch system have been improved in this work, compared to previous studies\cite{Preller2017b}. In this work, the internal design of the scramjet accelerator has been modified (as described in Section \ref{sec:SPARTAN}), the third stage design has been modified significantly (as described in Section \ref{sec:ThirdStageBaseline}), the first stage is included (as described in Section \ref{sec:firststage}), and Cart3D\cite{CART3D} is used for aerodynamic calculations (as detailed in Section \ref{sec:aero}). Simulating a constant dynamic pressure verifies that the first stage is able to reach the maximum dynamic pressure of the scramjet accelerator, and that the scramjet accelerator is able to fly at its maximum dynamic pressure within its control and aerodynamic limits. This verification ensures that any deviations from the scramjet accelerator's maximum dynamic pressure in subsequent optimised trajectories serve to improve the performance of the system, rather than being a result of the problem setup or design constraints. 
 
 \begin{table}[ht]% updated 14/8/19
 	\centering
@@ -116,7 +117,7 @@ In addition, the designs and aerodynamic simulations of each vehicle of the laun
 \end{table}
 \begin{figure}[ht!] % updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/FirstStageConstq}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode900/FirstStageConstq}
 	\caption{The first stage trajectory of the launch system, with the scramjet accelerator constrained to flight at constant dynamic pressure (Case 1).}
 	\label{fig:FirstStageConstq}
 \end{figure}
@@ -130,7 +131,7 @@ The first stage rocket achieves an exergy efficiency of \firstExergyEffConstqNoR
 
 \begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/SecondStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode900/SecondStageConstq}
 \caption{The constant dynamic pressure flight path of the scramjet accelerator (Case 1).}
 \label{fig:SecondStageConstq}
 \end{figure}
@@ -143,12 +144,12 @@ Third stage release occurs at \textcolor{red}{591.4s flight time}, at \secondthi
 
 \begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190809T122214mode900/ThirdStageConstq}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode900/ThirdStageConstq}
 \caption{The third stage trajectory of the launch system, with the scramjet accelerator constrained to flight at constant dynamic pressure (Case 1).}
 \label{fig:ThirdStageConstq}
 \end{figure}
 
-Figure \ref{fig:ThirdStageConstq} shows the corresponding third stage atmospheric exit trajectory after release, evaluated as described in Chapter \ref{chapter:LODESTAR}. The \textcolor{red}{flight path of the} third stage released from a constant dynamic pressure trajectory, shown in Figure \ref{fig:ThirdStageConstq}, stays close to horizontal for the first \textcolor{red}{12}s of flight. This slow ascent leads to the rocket spending a large amount of time at low altitude, in a high drag environment, spending \thirdqOverFiveConstqNoReturn s at over 5kPa dynamic pressure. The angle of attack increases gradually to a maximum of \textcolor{red}{10}$^\circ$ at \textcolor{red}{27.8}s \textcolor{red}{and is then maintained at the maximum 10$^\circ$ until 111.7s, when the angle of attack is reduced slightly, increased to the maximum briefly, and finally reduced to 0$^\circ$ for burnout at 146.2s}. The dynamic pressure of the third stage rocket reduces to 10kPa at \textcolor{red}{188.2}s, at which point the heat shield is discarded. The rocket coasts to a trajectory angle of 0$^\circ$, which is reached at a total flight time of \textcolor{red}{827.6}s. The trajectory terminates at 90km, the lowest allowable altitude for circularisation. 
+Figure \ref{fig:ThirdStageConstq} shows the corresponding third stage atmospheric exit trajectory after release, evaluated as described in Chapter \ref{chapter:LODESTAR}. The \textcolor{red}{flight path of the} third stage released from a constant dynamic pressure trajectory, shown in Figure \ref{fig:ThirdStageConstq}, stays close to horizontal for the first \textcolor{red}{12}s of flight, and then pitches up slowly. This slow ascent leads to the rocket spending a large amount of time at low altitude, in a high drag environment, spending \thirdqOverFiveConstqNoReturn s at over 5kPa dynamic pressure. The angle of attack increases gradually to a maximum of \textcolor{red}{10}$^\circ$ at \textcolor{red}{27.8}s \textcolor{red}{and is then maintained at the maximum 10$^\circ$ until 111.7s, when the angle of attack is reduced slightly, increased to the maximum briefly, and finally reduced to 0$^\circ$ for burnout at 146.2s}. The dynamic pressure of the third stage rocket reduces to 10kPa at \textcolor{red}{188.2}s, at which point the heat shield is discarded. The rocket coasts to a trajectory angle of 0$^\circ$, which is reached at a total flight time of \textcolor{red}{827.6}s. The trajectory terminates at 90km, the lowest allowable altitude for circularisation. 
 When this altitude is reached, the trajectory is circularised and a Hohmann transfer manoeuvre is performed to reach sun synchronous orbit.
 
 
@@ -159,7 +160,7 @@ When this altitude is reached, the trajectory is circularised and a Hohmann tran
 \section{Case 2: Optimised Ascent Trajectory}\label{sec:optimisednoreturn}
 
 This section presents the maximum payload-to-orbit trajectory for the rocket-scramjet-rocket launch system, with the scramjet accelerator able to deviate from its maximum dynamic pressure. 
-The optimal trajectory shape for a 50kPa dynamic pressure limited trajectory is shown in Figure \ref{fig:GroundTrackStandardNoReturn}, with detailed trajectory information for each stage shown in Figures \ref{fig:FirstStageStandardNoReturn} - \ref{fig:ThirdStageStandardNoReturn}, and key results summarised in Table \ref{tab:summaryStandardNoReturn}. The maximum payload-to-orbit trajectory shape involves the scramjet accelerator performing altitude raising manoeuvres, where the dynamic pressure of the scramjet accelerator is lowered from its maximum of 50kPa. These manoeuvres serve either to increase the net specific impulse of the scramjet accelerator, or to trade-off the efficiency of the scramjet accelerator in order to increase the efficiency of the first and third stages. 
+The optimal trajectory shape for a 50kPa dynamic pressure limited trajectory is shown in Figure \ref{fig:GroundTrackStandardNoReturn}, with detailed trajectory information for each stage shown in Figures \ref{fig:FirstStageStandardNoReturn} - \ref{fig:ThirdStageStandardNoReturn}, and key results summarised in Table \ref{tab:summaryStandardNoReturn}. The maximum payload-to-orbit trajectory shape involves the scramjet accelerator deviating from maximum dynamic pressure at multiple points. These manoeuvres serve either to increase the net specific impulse of the scramjet accelerator, or to trade-off the efficiency of the scramjet accelerator in order to increase the efficiency of the first and third stages. 
 This payload-to-orbit optimised trajectory is able to deliver \PayloadToOrbitStandardNoReturn kg of payload to heliocentric orbit, an increase of \textcolor{red}{59.1}\% over the constant, 50kPa dynamic pressure result (Case 1).
 
 \begin{figure}[ht!]%updated 15/8/19
@@ -167,22 +168,22 @@ This payload-to-orbit optimised trajectory is able to deliver \PayloadToOrbitSta
 	
 	
 	\centering
-	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/GroundTrackStandard}
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode10/GroundTrackStandard}
 	\caption{The optimised maximum payload-to-orbit trajectory of the launch system (Case 2).}
 	\label{fig:GroundTrackStandardNoReturn}
 \end{figure}
 
 
-The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, \textcolor{red}{flies a different} trajectory to that of the first stage releasing the scramjet accelerator onto a constant dynamic pressure trajectory.
+The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, \textcolor{red}{flies a different} trajectory to that of the Case 1, in which the first stage releases the scramjet accelerator onto a constant dynamic pressure trajectory.
 \begin{figure}[ht!]% updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/FirstStageStandard}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode10/FirstStageStandard}
 	\caption{The optimised maximum payload-to-orbit trajectory of the launch system under power of the first stage rocket (Case 2).}
 	\label{fig:FirstStageStandardNoReturn}
 \end{figure}
- The trajectory angle at the separation of the scramjet accelerator is \secondthirdSeparationgammaqStandardNoReturn$^\circ$, rather than the trajectory angle of \secondthirdSeparationgammaConstqNoReturn$^\circ$ required for the scramjet accelerator to fly a constant dynamic pressure trajectory. Additionally, the altitude at first-second stage separation is raised to \firstsecondSeparationAltStandardNoReturn km, an increase of \textcolor{red}{0.68}km compared to the separation point of a scramjet accelerator flying at constant 50kPa dynamic pressure. This higher release angle and altitude causes the altitude of the scramjet accelerator to initially increase, and consequently for its dynamic pressure to decrease. This increased trajectory angle at separation is the consequence of a trade-off between the efficiency of the scramjet accelerator and the efficiency of the first stage. \textcolor{red}{In particular, while the first stage is still throttled down twice, at 19.7s and 62.7s, it is throttled down for much less total time than the first stage separating onto a constant dynamic pressure trajectory. }
- The efficiency of the first stage is increased to \firstExergyEffStandardNoReturn\%$\eta$ due to the increased acceleration \textcolor{red}{that this reduced throttling affords}, an overall improvement of \textcolor{red}{+0.623\%$\eta$ (+9.96\%)} compared to the first stage separating the scramjet accelerator at 50kPa conditions. 
- During the maximum payload-to-orbit trajectory, the first stage rocket releases the scramjet accelerator at a speed of \firstsecondSeparationvStandardNoReturn m/s, an increase of \textcolor{red}{5.7}\% compared to the first stage releasing the scramjet accelerator onto a constant dynamic pressure trajectory.
+ The trajectory angle at the separation of the scramjet accelerator is \secondthirdSeparationgammaqStandardNoReturn$^\circ$, rather than the trajectory angle of \secondthirdSeparationgammaConstqNoReturn$^\circ$ required for the scramjet accelerator to fly a constant dynamic pressure trajectory. Additionally, the altitude at first-second stage separation is raised to \firstsecondSeparationAltStandardNoReturn km, an increase of \textcolor{red}{0.68}km compared to Case 1. This higher release angle and altitude causes the altitude of the scramjet accelerator to initially increase, and consequently for its dynamic pressure to decrease. This increased trajectory angle at separation is the consequence of a trade-off between the efficiency of the scramjet accelerator and the efficiency of the first stage. \textcolor{red}{In particular, while the first stage is still throttled down twice, at 19.7s and 62.7s, it is throttled down for much less total time than the first stage separating onto a constant dynamic pressure trajectory. }
+ The exergy efficiency of the first stage is increased to \firstExergyEffStandardNoReturn\%$\eta$ due to the increased acceleration \textcolor{red}{that this reduced throttling affords}, an overall improvement of \textcolor{red}{+0.623\%$\eta$ (+9.96\%)} compared to Case 1. 
+ During the Case 2, the first stage rocket releases the scramjet accelerator at a speed of \firstsecondSeparationvStandardNoReturn m/s, an increase of \textcolor{red}{5.7}\% compared to Case 1.
 
 
 \begin{table}[ht]% updated 14/8/19
@@ -193,8 +194,6 @@ The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, \textcolo
 	\\
 	\hline \textbf{Payload to Orbit (kg)}
 	& \textbf{\PayloadToOrbitStandardNoReturn}
-	\\
-	& \small(-147.6, +82.4)
 	\\
 	\textbf{Total $\eta_{exergy}$ (\%)}
 	& \textbf{\totalExergyEffStandardNoReturn}
@@ -255,20 +254,20 @@ The first stage, shown in Figure \ref{fig:FirstStageStandardNoReturn}, \textcolo
 
 \begin{figure}[ht!]% updated 14/8/19
 \centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/SecondStageStandard}
-\caption{The optimised maximum payload-to-orbit trajectory of the scramjet accelerator (Case 2).}
+\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode10/SecondStageStandard}
+\caption{The optimised maximum payload-to-orbit trajectory of the scramjet accelerator (Case 2). \textcolor{red}{XXX Change no of DP in all traj figures}}
 \label{fig:SecondStageStandardNoReturn}
 \end{figure}
 
 
 
 After the initial deviation from the maximum dynamic pressure, the scramjet accelerator returns to 50kPa dynamic pressure for a time. 
-At \textcolor{red}{184.9} seconds flight time, the altitude of the trajectory is again raised, and the dynamic pressure decreased, to a minimum of \textcolor{red}{43.0}kPa. In this region the net specific impulse of the scramjet accelerator is relatively homogeneous with respect to changes in dynamic pressure, as can be observed in the specific impulse of the C-REST engines in Figure \ref{fig:IspStandard}. The homogeneity between flight conditions means that the variation in engine performance with flight conditions is small and that flying at the maximum dynamic pressure in this region does not maximise the specific impulse from the C-REST engines. Figure \ref{fig:NetIspStandardNoReturn} shows that while the optimised trajectory differs significantly from a constant dynamic pressure trajectory, both achieve similar net specific impulses during the acceleration phase of flight, with the exception of the initial trajectory conditions at Mach 5, where the efficiency of the scramjet accelerator is traded for first stage rocket performance. 
-Appendix \ref{sec:Appendix_qconst} details a maximum payload-to-orbit trajectory in which the scramjet accelerator is constrained to 50kPa between Mach 6-8, to prevent the altitude raising manoeuvre from taking place. This constrained trajectory allows for the magnitude of the performance gain from the altitude raising manoeuvre to be quantified. 
+At \textcolor{red}{184.9} seconds flight time, the altitude of the trajectory is again raised, and the dynamic pressure decreased, to a minimum of \textcolor{red}{43.0}kPa. In this region ($M_0 \approx 7.5$) the net specific impulse of the scramjet accelerator is relatively homogeneous with respect to changes in dynamic pressure, as can be observed in the specific impulse of the C-REST engines in Figure \ref{fig:IspStandard}. The homogeneity between flight conditions means that the variation in engine performance with flight conditions is small and that flying at the maximum dynamic pressure in this region does not maximise the specific impulse from the C-REST engines compared to the drag reductions that can be attained through flight at lower dynamic pressure. Figure \ref{fig:NetIspStandardNoReturn} compared Case 1 and Case 2, and shows that while the optimised trajectory differs significantly from a constant dynamic pressure trajectory, both achieve similar net specific impulses during the acceleration phase of flight, with the exception of the initial trajectory conditions at Mach 5, where the efficiency of the scramjet accelerator is traded for first stage rocket performance. 
+Appendix \ref{sec:Appendix_qconst} details a complementary maximum payload-to-orbit trajectory in which the scramjet accelerator is constrained to 50kPa between Mach 6-8, to prevent the altitude raising manoeuvre from taking place. This constrained trajectory allows for the magnitude of the performance gain from the altitude raising manoeuvre to be quantified. 
 Overall, the altitude raising manoeuvre results in a slight increase in net specific impulse, compared to the trajectory constrained to maximum $q$, increasing the overall efficiency of the launch system from \totalExergyEffqconstrainedNoReturn \%$\eta$ to \totalExergyEffStandardNoReturn\%$\eta$. This is a relatively minor variation, and the payload-to-orbit benefits of this altitude raising manoeuvre are correspondingly small; 
-the optimised trajectory exhibits a payload-to-orbit increase of 0.5kg compared to the trajectory constrained to 50kPa between Mach 6-8, a difference of only 0.3\%.
+Case 2 exhibits a payload-to-orbit increase of 0.5kg compared to Case 1 between Mach 6-8, a difference of only 0.3\%.
 However, it is important to note that, while its benefits are small, the altitude raising manoeuvre is consistently observed in all maximum payload-to-orbit optimised trajectories in which dynamic pressure is unconstrained, and this manoeuvre is similar to the manoeuvres observed by Fujikawa et al.\cite{Fujikawa2017} is their study of the Jaxa TSTO Spaceplane, though to a much lesser extent. 
-Also, despite its small benefit to payload-to-orbit, this altitude raising manoeuvre is significant as it reduces the heating and structural loading on the scramjet accelerator. 
+Also, despite its small benefit to payload-to-orbit, this altitude raising manoeuvre has the added benefit of reducing the heating and structural loading on the scramjet accelerator. 
 
 
 
@@ -276,15 +275,15 @@ Also, despite its small benefit to payload-to-orbit, this altitude raising manoe
 
 \begin{figure}[ht!]% updated 14/8/19 - note, modified point location for Mach 8.5 so not to be during pull-up
 	\centering
-	\includegraphics[width=\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/NetIspStandard}
+	\includegraphics[width=\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode10/NetIspStandard}
 	\caption{Net Isp contours for the scramjet accelerator at Mach numbers from 5-9, showing flight conditions for an optimised trajectory with no constraints (Case 2) and a constant dynamic pressure trajectory (Case 1). }
 	\label{fig:NetIspStandardNoReturn}
 \end{figure}
 
 \begin{figure}[ht!]% updated 14/8/19 
 	\centering
-	\includegraphics[width=0.8\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/IspStandard}
-	\caption{The specific impulse of the C-REST engines, plotted for inlet temperature (T1) and inlet Mach number (M1). Data points are shown in black.}
+	\includegraphics[width=0.8\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode10/IspStandard}
+	\caption{The specific impulse of the C-REST engines, plotted for inlet temperature (T1) and inlet Mach number (M1). Data points are shown in black. }
 	\label{fig:IspStandard}
 \end{figure}
 
@@ -296,27 +295,26 @@ At \textcolor{red}{319.4}s, the scramjet accelerator returns to flight at close 
 At high Mach numbers, flight in a lower dynamic pressure environment results in less thrust output from the scramjet engines, as well as an increase in angle of attack and flap deflection angle to compensate for the additional lift required. Due to this, less overall acceleration is obtained compared to the fixed dynamic pressure result. Separation occurs at a speed of \secondthirdSeparationvStandardNoReturn m/s, a decrease of \textcolor{red}{145.0}m/s (\textcolor{red}{-5.2}\%). However, at the same time separation altitude increases by \textcolor{red}{11.65}km (+\textcolor{red}{36.2}\%) to \secondthirdSeparationAltqStandardNoReturn km, resulting in a decrease in separation dynamic pressure to \secondthirdSeparationqStandardNoReturn kPa. 
 \begin{figure}[ht!]% updated 14/8/19
 	\centering
-	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20190723T125843mode10/ThirdStageStandard}
+	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode10/ThirdStageStandard}
 	\caption{The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory (Case 2).}
 	\label{fig:ThirdStageStandardNoReturn}
 \end{figure}
 The scramjet stage pull-up assists the rocket in manoeuvring to exoatmospheric altitude by increasing the altitude and angle at separation, utilising the superior aerodynamics and manoeuvrability of the scramjet accelerator. The increase in release angle, to the optimal angle of \secondthirdSeparationgammaStandardNoReturn$^\circ$, significantly reduces the turning that is required by the rocket as evident from comparing Fig \ref{fig:ThirdStageConstq} and \ref{fig:ThirdStageStandardNoReturn}. 
-Overall, the altitude raising manoeuvres that the scramjet accelerator performs result in a decrease in the exergy efficiency of the scramjet accelerator to \secondExergyEffStandardNoReturn\%$\eta$, a total decrease of \textcolor{red}{-0.719}\%$\eta$ (-\textcolor{red}{14.04}\%) compared to the scramjet accelerator flying at a constant dynamic pressure. However, the optimised trajectory drastically increases the exergy efficiency of the third stage, to \thirddExergyEffStandardNoReturn\%$\eta$, an overall increase of +\textcolor{red}{6.013}\%$\eta$ (\textcolor{red}{+63.20}\%) compared to the third stage released from the scramjet accelerator flying a fixed dynamic pressure trajectory.  
+Overall, the altitude raising manoeuvres that the scramjet accelerator performs result in a decrease in the exergy efficiency of the scramjet accelerator to \secondExergyEffStandardNoReturn\%$\eta$, a total decrease of \textcolor{red}{-0.719}\%$\eta$ (-\textcolor{red}{14.04}\%) compared to Case 1; the scramjet accelerator flying at a constant dynamic pressure. However, Case 2 drastically increases the exergy efficiency of the third stage, to \thirddExergyEffStandardNoReturn\%$\eta$, an overall increase of +\textcolor{red}{6.013}\%$\eta$ (\textcolor{red}{+63.20}\%) compared Case 1.  
 Along with the increased efficiency of the first stage, this exergy trade-off leads to the total exergy efficiency of the launch system increasing, from \totalExergyEffConstqNoReturn\%$\eta$ to \totalExergyEffStandardNoReturn\%$\eta$. 
 
 \textcolor{red}{
- This pull-up under airbreathing power is somewhat similar to the pull-ups that were observed in some of the previous studies of multi-stage airbreathing launch systems in Section \ref{sec:twostagelaunchers}, namely the LaRC Turboramjet\cite{Wilhite1991}, the JAXA TSTO Spaceplane\cite{Fujikawa2017}, and the XCALIBUR\cite{Bradford2002}. However, all of these pull-ups were either performed specifically to lower dynamic pressure for the orbiter stage\cite{Wilhite1991,Bradford2002}, or to improve the operation of the airbreathing engines\cite{Fujikawa2017}. The pull-up in this study is shown to directly improve the efficiency of the launch system, without improving the performance of the scramjet engines. This indicates that in addition to separation conditions that are beneficial for the design of the orbiter identified in these previous studies, the pull-up at the end of the airbreathing trajectory can directly improve the payload-to-orbit performance of the launch system. }
+ This pull-up, lowering the dynamic pressure from maximum under airbreathing power, is somewhat similar to the pull-ups that were observed in some of the previous studies of multi-stage airbreathing launch systems in Section \ref{sec:twostagelaunchers}, namely the LaRC Turboramjet\cite{Wilhite1991}, the JAXA TSTO Spaceplane\cite{Fujikawa2017}, and the XCALIBUR\cite{Bradford2002}. All of these pull-ups were either performed specifically to lower dynamic pressure for the orbiter stage\cite{Wilhite1991,Bradford2002}, or to improve the operation of the airbreathing engines\cite{Fujikawa2017}. In contrast, the pull-up in this study directly improves the efficiency of the launch system, without improving the performance of the scramjet engines, by trading-off efficiency between the airbreathing and rocket stages. This indicates the aerodynamics of the scramjet-powered stage may be utilised to achieve separation conditions that can directly improve the payload-to-orbit performance of the launch system. }
 
-The trajectory of the third stage rocket after release from an optimised scramjet trajectory is shown in Figure \ref{fig:ThirdStageStandardNoReturn}. Release at a higher, more optimal angle, reduces the aerodynamic moment necessary to trim the vehicle. In turn, this reduced moment reduces the necessary thrust vector angle significantly. The third stage rocket is released at a high trajectory angle, and continuously gains altitude, avoiding the close-to-horizontal flight required by the fixed dynamic pressure release (Case 1).
+The trajectory of the third stage rocket after release from an optimised scramjet trajectory is shown in Figure \ref{fig:ThirdStageStandardNoReturn}. Release at a higher, more optimal angle, reduces the aerodynamic moment necessary to trim the vehicle. In turn, this reduced moment reduces the necessary thrust vector angle significantly. The third stage rocket is released at a high trajectory angle, and continuously gains altitude, avoiding the close-to-horizontal flight required by Case 1, where it is released at a fixed 50kPa dynamic pressure.
 Due to the higher altitude and release angle, the third stage rocket is released at a lower dynamic pressure, \secondthirdSeparationqCdStandardNoReturn kPa compared to \secondthirdSeparationqConstqNoReturn kPa, and spends much less time flying in a high dynamic pressure environment, \thirdqOverFiveStandard s at over 5kPa dynamic pressure rather than \thirdqOverFiveConstqNoReturn s. 
-The reduced time that the rocket must spend in a high dynamic pressure environment, and the decrease in the maximum dynamic pressure that the rocket stage experiences, may allow the structural mass and heat shielding necessary to achieve exoatmospheric flight to be decreased, and may enable higher payload to orbit. \textcolor{red}{This possible improvement in payload-to-orbit is explored further in Appendix \ref{sec:TPSredesign}. In addition to improved payload-to-orbit, releasing the rocket at lower dynamic pressure reduces the thrust vector angle significantly, to below 1$^\circ$, compared to the angles of close to 7$^\circ$ reached during ascent after release from a scramjet accelerator flying at constant dynamic pressure. These reduced thrust vector angles would likely improve the controllability of the third stage rocket considerably, although detailed investigation of the controllability of the third stage rocket is beyond the scope of this study.} 
+The reduced time that the rocket must spend in a high dynamic pressure environment, and the decrease in the maximum dynamic pressure that the rocket stage experiences, may allow the structural mass and heat shielding necessary to achieve exoatmospheric flight to be decreased, and may enable higher payload to orbit. \textcolor{red}{This possible improvement in payload-to-orbit is explored further in Appendix \ref{sec:TPSredesign}. In addition to improved payload-to-orbit, releasing the rocket at lower dynamic pressure reduces the thrust vector angle significantly, to below 1$^\circ$, compared to the angles of close to 7$^\circ$ required for Case 1, where the third stage is ascending after release at 50kPa dynamic pressure. These reduced thrust vector angles would likely improve the controllability of the third stage rocket considerably, although detailed investigation of the controllability of the third stage rocket is beyond the scope of this study.} 
 
 
 \textcolor{red}{
-	\section{Discussion of Uncertainties}\label{sec:unc}
+	\section{Case 2: Modelling of Uncertainties}\label{sec:unc}
 }
-
-
+\noindent
 The aerodynamic and propulsive properties of the launch system that have been presented in this section are modelled using medium and low fidelity methods essential to allow full system trajectory optimisation to be carried out efficiently. These methods bring with them an associated uncertainty in the values that are calculated for the aerodynamic and propulsive performance of a vehicle, including those presented in Sections \ref{sec:propulsion}-\ref{sec:trimmedongineoff}, \ref{sec:firststageaero}, and \ref{sec:thirdstageprop}-\ref{sec:thirdstageaero}. These uncertainties are estimated in Appendix \ref{sec:aerounc} from previous studies that have compared the medium-to-low fidelity tools used to analyse propulsion and aerodynamics with high fidelity tools and experimental results. Previous error magnitudes are used to estimate the error magnitudes in the current study, with the maximum applicable error magnitude being used. The final values obtained from this study are replicated in Table \ref{tab:AppendixUncertaintyCopy}. The presence of these uncertainties may mean that the performance of the vehicle is significantly different to expected, producing significantly different payloads-to-orbit to those calculated. 
 
 \begin{table}[ht]
@@ -330,27 +328,22 @@ The aerodynamic and propulsive properties of the launch system that have been pr
 		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 		\hline 
 	\end{tabular}
-	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling, determined in Appendix \ref{tab:AppendixUncertaintyCopy}.}
+	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling (copy of Table \ref{tab:AppendixUncertainty}, see Appendix \ref{tab:AppendixUncertaintyCopy} for details).}
 	\label{tab:AppendixUncertaintyCopy}
 \end{table}
 
 
-A Monte-Carlo study is conducted in using these uncertainty bounds, with further details available in Appendix \ref{sec:uncquant}. The parameters in \ref{tab:AppendixUncertaintyCopy} are independently varied according to a Latin Hypercube analysis method to create a series of distinct cases, with each parameter in each regime multiplied by a constant within the uncertainty range, and maximum payload-to-orbit trajectories developed for each perturbed case. 
-Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-238.8kg in payload-to-orbit due to aerodynamic and propulsion modelling uncertainties, illustrating the large uncertainties still present in the modelling of airbreathing launch systems that are to be expected when using low-to-medium fidelity tools, as is the norm in the conceptual design phases, particularly given the general sensitivity of the payload mass in launch systems to variations in the launch system performance. However, this interval also indicates that producing a positive payload-to-orbit is likely to be possible under the current modelling scheme, although it is evident that more detailed analysis of this system is necessary before an accurate payload-to-orbit value is able to be attained. This said, the payload-to-orbit values calculated in this study are only intended as an indication of the performance possible using this launch system. The primary usefulness of these trajectories is in the studies of the optimal trajectory shape and performance trade-offs, and the comparison studies of the trends in performance that have been analysed in Chapters \ref{sec:sensitivityNoReturn} and \ref{sec:sensitivity}. 
-%-XXX change this to no-return uncertainty
+A Monte-Carlo study is conducted in using these uncertainty bounds, with further details available in Appendix \ref{sec:uncquant}. For this, the parameters in \ref{tab:AppendixUncertaintyCopy} are independently varied according to a Latin Hypercube analysis method to create a series of distinct cases, with each parameter in each regime multiplied by a constant within the uncertainty range, and maximum payload-to-orbit trajectories developed for each perturbed case. 
+Analysis using the percentile method yields a 97.5\% confidence interval for Case 2 of 8.8-238.8kg in payload-to-orbit due to aerodynamic and propulsion modelling uncertainties (probability densities are shown in Figure \ref{fig:PDFNoReturn}), illustrating the large uncertainties still present in the modelling of airbreathing launch systems that are to be expected when using low-to-medium fidelity tools, as is the norm in the conceptual design phases, particularly given the general sensitivity of the payload mass in launch systems to variations in the launch system performance. However, this interval also indicates that producing a positive payload-to-orbit is likely to be possible under the current modelling scheme, although it is evident that more detailed analysis of this system is necessary before an accurate payload-to-orbit value is able to be attained. This said, the payload-to-orbit values calculated in this study are only intended as an indication of the performance possible using this launch system. The primary usefulness of these trajectories is in the studies of the optimal trajectory shape and performance trade-offs, which hold under the presence of uncertainty. 
 
 \section{Energy Usage Analysis}\label{sec:exergy1}
 
-%\textcolor{red}{XXX  it might be better to describe propulsion inefficiencies as availability losses, or irreversibility. see https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150009419.pdf,  need to look at Exergy Analysis
-%	and Design Optimization for Aerospace Vehicles and
-%	Systems} - I think for my application propulsion inefficicneies is an ok term
+%\textcolor{red}{XXX for availability losses see ROCKET PROPULSION ELEMENTS p37
+%https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150009419.pdf,  need to look at Exergy Analysis	and Design Optimization for Aerospace Vehicles and	Systems, Analysis of Energy Utilization for Chemical Rockets, Exergy analysis of rocket systems Gilbert, Propulsive  Efficiency  from an Energy Utilization  Standpoint - good for bridge between exergy and propulsive efficiency - LOOK AT SUMMARY OF THIS}
 
 
 % From wikipedia: Specific impulse is often used as the unit of efficiency for rockets, since in the case of the rocket, there is a direct relation between specific impulse, specific fuel consumption and exhaust velocity. This direct relation is not generally present for airbreathing engines, and so specific impulse is less used in the literature. 
 % hard to directly compare... and Isp is not directly efficiency. Also scramjet is obtaining energy from air. 
-
-% These lowered propulsion losses are due to the scramjet accelerator's engines utilising atmospheric oxygen as an oxidiser, resulting in a higher propulsion system efficiency.
-% I think this is wrong, airbreathing doesnt allow better FUEL uilisation necessarily, but doesnt need to store oxidiser.
 
 % Remember higher IsP is lower efficiency for rockets
 
@@ -366,12 +359,17 @@ Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-
 
 % oberth effect for interest
 
+% Remember that I have only included rocket efficiency equation here and mostly discussed this. Airbreathing propulsive efficiency is a little different, but will also generally get better as it goes faster (1SUPERSONIC COMBUSTION RAMJET: ANALYSIS ON FUEL OPTIONS - Barone thesis)
+
+% I think Isp is how well it uses its propellant mass, and efficiency is how well is uses its energy to propel that propellant mass - go over this, checking rocket propulsion elements and https://ocw.mit.edu/ans7870/16/16.unified/propulsionS04/UnifiedPropulsion3/UnifiedPropulsion3.htm
+
 \begin{table}[ht] % updated 29/12/19, note, ive just rounded the numbers, even though they dont quite add up right, seems most logical
 	\centering
 	\begin{tabular}{l c c} 
-		\hline \textbf{Trajectory Condition}
-		&50kpa Constant $q$
-		&No $q$ Constraint
+		& \textbf{Case 1} & \textbf{Case 2} \\
+		\hline \textbf{Trajectory}
+		& 50kpa Constant $q$
+		& No $q$ Constraint
 		\\
 		\textbf{First Stage Fuel Exergy} 
 		&\textbf{\firstEnergyConstqNoReturn} GJ
@@ -395,7 +393,7 @@ Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-
 		\textcolor{red}{KE + PE of 1$^{st}$ Stage Fuel Mass} 
 		& \WmFoneConstqNoReturn \% (5.00 GJ) & \WmFoneStandardNoReturn \% (5.39 GJ)
 		\\ 
-		\textcolor{red}{Propulsion Inefficiency} 
+		\textcolor{red}{Availability Losses}  
 		& \PlossoneConstqNoReturn \% (176.83 GJ) & \PlossoneStandardNoReturn \% (175.56 GJ)
 		\\ 
 		\textbf{Scramjet Accelerator Fuel Exergy} 
@@ -416,11 +414,12 @@ Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-
 		\textcolor{red}{KE + PE of scramjet accelerator Fuel Mass}  
 		& \WmFsecondConstqNoReturn \% (2.49 GJ) & \WmFsecondStandardNoReturn \% (2.49 GJ)
 		\\
-		\textcolor{red}{Propulsion Inefficiency}  
+		\textcolor{red}{Availability Losses}  
 		& \PlosssecondConstqNoReturn \% (125.88 GJ) & \PlosssecondStandardNoReturn \% (126.01 GJ)
 		\\
 		
-		\textbf{Third Stage In-Atmosphere Fuel Exergy}  
+		\textbf{Third Stage}& & \\
+		\textbf{In-Atmosphere Fuel Exergy} 
 		& \textbf{\thirdEnergyConstqNoReturn}  GJ & \textbf{\thirdEnergyStandardNoReturn}  GJ
 		\\
 		\textcolor{blue}{KE + PE of Payload}  
@@ -439,7 +438,7 @@ Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-
 		\textcolor{red}{KE + PE of Heat Shield}  
 		& \WHSthreeConstqNoReturn \% (2.96 GJ) & \WHSthreeStandardNoReturn \% (1.22 GJ)
 		\\
-		\textcolor{red}{Propulsion Inefficiency}  
+		\textcolor{red}{Availability Losses}   
 		& \PlossthreeConstqNoReturn \% (2.01 GJ) & \PlossthreeStandardNoReturn \% (4.10 GJ)
 		\\
 		\textbf{Circularisation and Hohman Transfer Fuel Exergy}  
@@ -453,34 +452,34 @@ Analysis using the percentile method yields a 97.5\% confidence interval of 8.8-
 		\\
 		\hline 
 	\end{tabular} 
-	\caption{An energy usage breakdown of the ascent trajectories, both with, and without, the scramjet accelerator constrained to constant dynamic pressure (Cases 1 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'.}
+	\caption{An energy usage breakdown of the ascent trajectories, both with, and without, the scramjet accelerator constrained to constant dynamic pressure (Cases 1 \& 2). The energy expenditures of each phase are shown, with blue indicating a 'productive' energy usage, whereas red indicates energy 'wastage'.}
 	\label{tab:effStandardNoReturn}
 \end{table}
 
 
 
-An energy usage analysis is conducted on the maximum payload-to-orbit launch trajectories, both with, and without the scramjet accelerator constrained to constant dynamic pressure flight (Cases 1 \& 2). This is performed in order to understand the primary sources of energy loss for each stage, and to compare the trajectories optimised with, and without the scramjet accelerator constrained to constant dynamic pressure. An energy usage breakdown of each of each stage is compared in Table \ref{tab:effStandardNoReturn}. The energy usage breakdown compares: the energy used to accelerate the payload, $\Delta KE_{payload} + \Delta PE_{payload}$; the energy imparted to the successive stages, $\Delta KE_{next stage} + \Delta PE_{next stage}$; the energy used overcoming drag, $\int_{t_0}^{t_f} v\,D \, dt$; the energy used imparting energy to the structural mass of each stage, which is separated, $\Delta KE_{discarded} + \Delta PE_{discarded}$; and the energy lost due to propulsion inefficiency. 
+An energy usage analysis is conducted on the maximum payload-to-orbit launch trajectories, both with, and without the scramjet accelerator constrained to constant dynamic pressure flight (Cases 1 \& 2). This is performed in order to understand the primary sources of energy loss for each stage, and to compare the trajectories optimised with, and without the scramjet accelerator constrained to constant dynamic pressure. An energy usage breakdown of each of each stage is compared in Table \ref{tab:effStandardNoReturn}. The energy usage breakdown compares: the energy used to accelerate the payload, $\Delta KE_{payload} + \Delta PE_{payload}$; the energy imparted to the successive stages, $\Delta KE_{next stage} + \Delta PE_{next stage}$; the energy used overcoming drag, $\int_{t_0}^{t_f} v\,D \, dt$; the energy used imparting energy to the structural mass of each stage, which is separated, $\Delta KE_{discarded} + \Delta PE_{discarded}$; and the availability losses (irreversibilities) which primarily comprise of: 1. The internal cycle and mechanical losses of the vehicle, and 2. The losses in the wake of the vehicle, largely made up of losses due to the energy imparted on to the vehicle exhaust\cite{Riggins2019,Riggins2013}. These availability losses make up a significant part of the losses in all stages, dominating in the first stage and scramjet accelerator, and lessening in the third stage rocket, as expected for multi-stage launch systems\cite{Riggins2019,Riggins2013,Gilbert2015}. 
 
 
 
  The efficiency of the first stage rocket increases when the first-second stage separation altitude and trajectory angle are raised, in the trajectory with no dynamic pressure constraint. 
- This is due to the lower propulsive efficiency of rockets at low speeds, illustrated by the equation for the propulsive efficiency of a rocket\cite{RPE}:
+  This is due to the unconstrained rocket in Case 2 being able to fly higher, reducing drag losses, and increasing its speed (and thus kinetic energy). 
+  This additional speed also decreases the availability losses of the first stage rocket due to a decrease in the residual kinetic energy of the exhaust gases, with an associated increase in propulsion efficiency, illustrated by the equation for the propulsive efficiency of a rocket\cite{RPE}:
  \begin{equation}\label{eq:rocketeff}
  \eta_P = \frac{2\,v_0/v_g}{1\,+\,(v_0/v_g)^2}, 
  \end{equation}
  where $v_g$ is the exhaust velocity, and $v_0$ is the velocity of the vehicle.
- At low rocket velocities there is a large difference between the flight speed of the vehicle, and the exhaust velocity of the rocket engine, resulting in low propulsion efficiencies, and consequently high propulsive inefficiency losses. 
- The propulsive losses of the first stage rocket decrease when the scramjet accelerator is not constrained to a constant dynamic pressure trajectory, as a consequence of the additional acceleration obtained from the larger fuel exergy. 
- However, due to the first stage rocket starting from rest, the first stage rocket always loses a large portion of its exergy to propulsion inefficiencies.  
+ At higher rocket velocities there is a smaller difference between the flight speed of the vehicle, and the exhaust velocity of the rocket engine, resulting in higher propulsion efficiencies, and consequently lower availability losses. 
+ However, due to the first stage rocket starting from rest, the first stage rocket always loses a large portion of its exergy to irreversible propulsion inefficiency.  
  
  
  The scramjet accelerator loses a large amount of its exergy to overcoming drag, due to the scramjet accelerator accelerating at high speeds within the atmosphere, at high dynamic pressures. 
- The drag losses of the scramjet accelerator flying a trajectory with no dynamic pressure constraint are higher than those of the scramjet accelerator flying a constant dynamic pressure trajectory, at \WDsecondStandardNoReturn\%, compared to \WDsecondConstqNoReturn\%. This is due to the additional manoeuvring of the scramjet accelerator during the pull-up before third stage release when the dynamic pressure is not constrained, which requires high angles of attack, and increases drag significantly. 
-The energy imparted upon the payload and third stage rocket during the scramjet accelerator's acceleration is decreased significantly when the scramjet accelerator is allowed to deviate from 50kPa dynamic pressure, reducing from \textcolor{red}{9.31}GJ to \textcolor{red}{7.85}GJ, a decrease of \textcolor{red}{-15.7}\%. This energy is traded-off during the pull-up manoeuvre, by utilising the superior aerodynamics of the scramjet accelerator to manoeuvre into flight conditions that are favourable for the separation of the third stage, improving the efficiency of the third stage ascent. Even though less energy is imparted upon the third stage before separation, a release from the end of a scramjet accelerator pull-up enables the third stage to impart significantly more energy onto the payload, at \textcolor{red}{5.33}GJ, compared to \textcolor{red}{3.33}GJ when released from 50kPa, an increase of \textcolor{red}{+60.1}\%, with a significantly increased exergy efficiency of \thirddExergyEffStandardNoReturn \%.  
+ The drag losses of the scramjet accelerator flying a trajectory with no dynamic pressure constraint in Case 2 are higher than those of the scramjet accelerator flying a constant dynamic pressure trajectory in Case 1, at \WDsecondStandardNoReturn\%, compared to \WDsecondConstqNoReturn\%. This is due to the additional manoeuvring of the scramjet accelerator during the pull-up before third stage release when the dynamic pressure is not constrained, which requires high angles of attack, and increases drag significantly. 
+The energy imparted upon the payload and third stage rocket during the scramjet accelerator's acceleration is decreased significantly when the scramjet accelerator is allowed to deviate from 50kPa dynamic pressure, reducing from \textcolor{red}{9.31}GJ to \textcolor{red}{7.85}GJ, a decrease of \textcolor{red}{-15.7}\%. This energy is traded-off during the pull-up manoeuvre, by utilising the superior aerodynamics of the scramjet accelerator to manoeuvre into flight conditions that are favourable for the separation of the third stage, improving the efficiency of the third stage ascent. Even though less energy is imparted upon the third stage before separation, a release from the end of a scramjet accelerator pull-up in Case 2 enables the third stage to impart significantly more energy onto the payload, at \textcolor{red}{5.33}GJ, compared to \textcolor{red}{3.33}GJ when released from 50kPa in case 1, an increase of \textcolor{red}{+60.1}\%, with a significantly increased exergy efficiency of \thirddExergyEffStandardNoReturn \%.  
 
-The additional energy efficiency of the third stage comes from a decrease in the energy lost due to drag, as well as a decrease in the energy imparted upon the heat shield. 
-The energy lost from the third stage overcoming drag is dependent on the amount of time that the rocket spends in the atmosphere, and comprises \WDthreeConstqNoReturn \% of the fuel exergy when released at 50kPa, and \WDthreeStandardNoReturn \% when released after a pull-up of the scramjet accelerator.
-The energy lost accelerating the heat shield is also significantly larger when released from the scramjet accelerator flying a constant dynamic pressure trajectory, at \WHSthreeConstqNoReturn \% of the fuel exergy, compared to only \WHSthreeStandardNoReturn \% when the third stage is released after a pull-up of the scramjet accelerator. This is due to the third stage spending considerably more time in a high dynamic pressure environment when released from a constant dynamic pressure trajectory, requiring the heat shield for longer, so that more kinetic and potential energy is imparted upon the heat shield during acceleration. However, the energy losses due to the propulsion inefficiency of the third stage are higher when released from the end of a scramjet accelerator pull-up, compared to the trajectory constrained to constant dynamic pressure. This is due to the third stage being released at lower speed, from the end of a scramjet accelerator pull-up manoeuvre, resulting in a lower efficiency as illustrated in Equation \ref{eq:rocketeff}. This indicates that there is a trade-off between the propulsion inefficiencies of the third stage, and the drag and heat shield energy losses.
+The additional energy efficiency of the third stage (which is split into in-atmosphere and exo-atmospheric manoeuvres in Table \ref{tab:effStandardNoReturn}) comes from less time spent in-atmosphere. This results in a decrease in the energy lost due to drag, as well as a decrease in the energy imparted upon the heat shield. 
+The energy lost from the third stage overcoming drag is dependent on the amount of time that the rocket spends in the atmosphere, and comprises \WDthreeConstqNoReturn \% of the fuel exergy when released at 50kPa in Case 1, and \WDthreeStandardNoReturn \% when released after a pull-up of the scramjet accelerator in Case 2.
+The energy lost accelerating the heat shield is also significantly larger when released from the scramjet accelerator flying a constant dynamic pressure trajectory in Case 1, at 2.96GJ (\WHSthreeConstqNoReturn \%) of the fuel exergy, compared to only 1.22GJ (\WHSthreeStandardNoReturn \%) when the third stage is released after a pull-up of the scramjet accelerator in Case 2. This is due to the third stage spending considerably more time in a high dynamic pressure environment when released from a constant dynamic pressure trajectory, requiring the heat shield for longer, so that more kinetic and potential energy is imparted upon the heat shield during acceleration. However, the energy losses due to the availability loss of the third stage are higher when released from the end of a scramjet accelerator pull-up, compared to the trajectory constrained to constant dynamic pressure. This is due to the third stage being released at lower speed, from the end of a scramjet accelerator pull-up manoeuvre, resulting in a lower propulsive efficiency as illustrated in Equation \ref{eq:rocketeff}. This indicates that there is a trade-off between the propulsion inefficiencies of the third stage, and the drag and heat shield energy losses.
 
 
 
@@ -490,10 +489,10 @@ The energy lost accelerating the heat shield is also significantly larger when r
 
 \section{Sensitivity Analysis}\label{sec:sensitivityNoReturn}
 
-\textcolor{red}{The launch system studied in this work is intended to be representative of a three stage, rocket-scramjet-rocket, small satellite launch system, to be used to inform future vehicle designs. It is anticipated that the design of the launch system will change significantly before a optimal, or even practically feasible, iteration is reached. 
-	To quantify how variations in a the design of a stage or variations in the performance of a stage due to modelling error may affect the performance of the launch system, it is useful to conduct a sensitivity analysis on the launch system}, in which selected design parameters of the launch system are varied, and the effects on the optimised maximum payload-to-orbit trajectory of the launch system are investigated. \textcolor{red}{The variations of the maximum payload-to-orbit trajectory, and the sensitivity of the payload-to-orbit to the various design parameters can then be used to inform future design decisions, and give useful insights into the coupled performance effects between the stages of the launch system.} 
+\textcolor{red}{The launch system studied in this work is intended to be representative of a three stage, rocket-scramjet-rocket, small satellite launch system, to be used to inform future vehicle designs. It is anticipated that the design of the launch system will change significantly before an optimal, or even practically feasible, design is reached. 
+	To quantify how variations in a the design of a stage or variations in the performance of a stage due to modelling error may affect the performance of the launch system, it is useful to conduct a sensitivity analysis on the launch system}, in which selected design parameters of the launch system are varied, and the effects on the optimised maximum payload-to-orbit trajectory of the launch system are investigated.
 The investigation of the key design parameters of the launch system provides a comparative metric, which is used to quantify the relative impact of the vehicle design on the performance of the launch system. The performance trade-offs between the stages are investigated by studying the variation in the optimised trajectory, particularly the stage separation conditions, as the parameters of the launch system design are changed. 
-Trends are developed for each parameter study, quantifying how much the performance factors of the launch system vary per percentage of variation of each design parameter ($\Delta$/$\Delta$\%) \textcolor{red}{via a linear approximation}. This percentage variation gives a general metric for how much each design parameter effects the performance factors of the launch system, \textcolor{red}{when the parameters are varied from the baseline launch vehicle}. However, the relative magnitude of one percent variation of each individual design parameter must be taken into account when making comparisons. 
+Trends are developed for each parameter study, quantifying how much the performance factors of the launch system vary per percentage of variation of each design parameter ($\Delta$/$\Delta$\%) \textcolor{red}{via a linear approximation}. This percentage variation gives a general metric for how much each design parameter effects the performance factors of the launch system, \textcolor{red}{when the parameters are varied from the baseline launch vehicle}. The relative performance impacts of correlated design parameter pairs are compared, using normalised variations for comparison so that the absolute magnitude of a one percent variation of each individual design parameter is taken into account.
 Appendix \ref{sec:Appendix_trajectorycomparisons} shows comparison plots of the scramjet accelerator and third stage trajectories for each parameter variation study, however, the first stage rocket trajectories are very similar and are not compared graphically. Key results including performance factors of each stage and separation conditions are summarised within this section.
 
 
@@ -531,7 +530,7 @@ All optimised trajectories within this section use the full amount of fuel avail
 	& \textbf{\totalExergyEffqStandardNoReturn}
 	& \textbf{\totalExergyEffqFiftyTwoNoReturn}
 	& \textbf{\totalExergyEffqFiftyFiveNoReturn}
-	& \textbf{8e-05}
+	& \textbf{$\bm{8\times10^{-5}}$}
 	\\
 	\hline 
 	\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
@@ -653,7 +652,7 @@ The variation in maximum dynamic pressure has only a small effect on the total e
 The 45kPa limited case flies for \secondFlightTimeqFortyFiveNoReturn s, significantly longer than the 55kPa limited case, which flies for \secondFlightTimeqFiftyFiveNoReturn s.
 As the dynamic pressure decreases, the size of the altitude raising manoeuvre in the middle of the trajectory decreases. This is due to the increased altitude and angle of attack moving the flight conditions into a region where the specific impulse of the C-REST engines is not homogeneous, so that it is beneficial to fly at maximum dynamic pressure.  
 
-As the maximum dynamic pressure increases, the exergy efficiencies of both the first and third stages increase. The first stage efficiency increase is slight, and is due to the first stage needing to manoeuvre less when separating at higher dynamic pressure, due to separating at a higher trajectory angle. This reduced manoeuvring necessary allows the first stage to be throttled less, so that flight time is reduced, and time in relatively inefficient low altitude, high density conditions is lessened. The higher third stage efficiency with increasing dynamic pressure limit is due to the higher energy imparted upon the third stage by the first stage and scramjet accelerator, resulting from the greater efficiency and manoeuvrability of the launch system when able to fly at higher dynamic pressure. When the third stage is separated with more energy, it requires less energy in the inefficient flight regime before circularisation, resulting in an overall more efficient trajectory. 
+As the maximum dynamic pressure increases, the exergy efficiencies of both the first and third stages increase. The first stage efficiency increase is slight, and is due to the first stage needing to manoeuvre less when separating at a higher dynamic pressure and a higher trajectory angle. This reduced manoeuvring allows the first stage to be throttled less, so that flight time is reduced, and time in relatively inefficient low altitude, high density conditions is lessened. However, a higher third stage efficiency is the primary benefit of increasing the dynamic pressure limit. This higher third stage efficiency with increasing dynamic pressure limit is due to the higher energy imparted upon the third stage by the first stage and scramjet accelerator, resulting from the greater efficiency and manoeuvrability of the launch system when able to fly at higher dynamic pressure. When the third stage is separated with more energy, it is generally separated at a higher velocity, improving the propulsive efficiency (illustrated by Equation \ref{eq:rocketeff}). The exception to this is the 45kPa trajectory, where altitude is traded off for velocity at third stage release in order to allow the third stage to achieve orbit. In this case the trade-off of altitude results in the third stage spending significant time in-atmosphere, with high drag losses. 
 
 
 
@@ -803,13 +802,13 @@ To investigate the effect of the vehicle design and uncertainty in aerodynamic p
 
 The drag of the scramjet accelerator has a significant effect on the overall exergy efficiency of the system (\textcolor{red}{+0.207}\%$\eta$ at 90\% drag, and \textcolor{red}{-0.170}\%$\eta$ at 110\% drag) and correspondingly, on the maximum payload-to-orbit, \textcolor{red}{+22.6}kg at 90\% drag, a variation of \textcolor{red}{+14.5}\% and \textcolor{red}{-18.6}kg at 110\% drag, a variation of \textcolor{red}{-11.2}\%. The exergy efficiencies of the first stage rocket and the scramjet accelerator are decreased significantly as the drag is increased, from \firstExergyEffCdNinetyNoReturn\%$\eta$ and \secondExergyEffCdNinetyNoReturn\%$\eta$ respectively at 90\% drag, to \firstExergyEffCdOneHundredTenNoReturn\%$\eta$ and \secondExergyEffCdOneHundredTenNoReturn\%$\eta$ respectively at 110\% drag. This reduction in efficiency is due to the increase in energy which must be used to overcome the added drag. 
 \textcolor{red}{
-At the first-second stage separation the staging altitude and velocity decrease significantly as the drag is increased, while the trajectory angle increases. This trend is due to the lower and slower trajectory that the first stage flies as drag is increased, requiring less manoeuvring. }
+The first-second stage separation staging altitude and velocity decrease significantly as the drag is increased, while the trajectory angle increases. This trend is due to the lower and slower trajectory that the first stage flies as drag is increased, as well as the increased penalty of manoeuvring due to decreased L/D. }
 
 
 The scramjet accelerator trajectory results show that when drag is varied, the optimal trajectories do not change shape significantly, and pull-up to similar altitudes. Although as the drag is increased (ie. L/D is decreased), the second stage follows a slightly slower and hence lower flight path, and the scramjet accelerator pulls-up to a higher trajectory angle. The similar shape of the optimal trajectory with variation in the aerodynamics of the scramjet accelerator suggests that sacrificing velocity to increase separation altitude in a pull-up manoeuvre is optimal for multiple vehicle designs, and that the size of this pull-up is consistent with variation in the aerodynamics of the scramjet accelerator. 
 
 As the drag of the scramjet accelerator increases, the exergy efficiency of the third stage shows a corresponding decrease, from \thirddExergyEffCdNinetyNoReturn\%$\eta$ at 90\% drag, to \thirddExergyEffCdOneHundredTenNoReturn\%$\eta$ at 110\% drag.
-This is primarily due to the lower velocity of scramjet accelerator-third stage separation at higher drag, which results in a decreased third stage propulsive efficiency (illustrated by Equation \ref{eq:rocketeff}). This decreased propulsive efficiency in turn increases the losses due to propulsive inefficiency during the operation of the third stage, from \PlossthreeCdNinetyNoReturn\% at $C_D$=90\%, to \PlossthreeCdOneHundredTenNoReturn\% at $C_D$=110\%.
+This is primarily due to the lower velocity of scramjet accelerator-third stage separation at higher drag, which results in a decreased third stage propulsive efficiency (illustrated by Equation \ref{eq:rocketeff}). This decreased propulsive efficiency in turn increases the availability losses during the operation of the third stage, from \PlossthreeCdNinetyNoReturn\% at $C_D$=90\%, to \PlossthreeCdOneHundredTenNoReturn\% at $C_D$=110\%.
 
 
 \subsection{Case 5: C-REST Specific Impulse Sensitivity}\label{sec:ispsensitivitynoflyback}
@@ -955,15 +954,15 @@ This is primarily due to the lower velocity of scramjet accelerator-third stage 
 	\caption{Comparison of key trajectory parameters with variations in the specific impulse of the C-REST engines (Case 5).}
 	\label{tab:comparison30}
 \end{table}
-
+\noindent
 The specific impulse of the C-REST scramjet engines is varied by $\pm10\%$ to directly investigate the effects of the efficiency of the scramjet engines on the performance of the launch vehicle. A comparison of key trajectory parameters is shown in Table \ref{tab:comparison30}, with comparison plots presented in Appendix \ref{sec:app_comparison30}. The maximum payload-to-orbit varies by \textcolor{red}{+25.3}kg (\textcolor{red}{+16.2}\%) to \textcolor{red}{-19.2}kg (\textcolor{red}{-12.3}\%), and the total exergy efficiency varies by \textcolor{red}{+0.232}\%$\eta$ to \textcolor{red}{-0.175}\%$\eta$, at 110\% $I_{SP}$ and 90\% $I_{SP}$ respectively. 
-The increased C-REST specific impulse does not vary the first stage performance significantly, and the first-second stage separation point stays relatively constant for all cases, except the 110\% $I_{SP}$ case, where the altitude and trajectory angle of the first-second stage separation increase.   
+The increased C-REST specific impulse does not vary the first stage performance significantly, and the first-second stage separation point stays relatively constant for all cases.   
 The lack of a clear trend in the first stage release point indicates that the efficiency trade-off between the first stage and the scramjet accelerator is not significantly affected by the efficiency of the scramjet accelerator, and is primarily driven by the capabilities of the first stage rocket. 
 
 Varying the specific impulse of the C-REST engines has a considerable effect on the exergy efficiency of the scramjet accelerator, causing the efficiency to increase by \textcolor{red}{+0.758}\%$\eta$ (\textcolor{red}{+14.7}\%) at 110\%$I_{SP}$ and decrease by \textcolor{red}{-0.555}\%$\eta$ (\textcolor{red}{-12.6}\%) at 90\% $I_{SP}$. 
-Increasing the specific impulse of the C-REST engines allows the scramjet accelerator to accelerate more over the flight time, increasing the velocity at second-third stage separation significantly. The propulsive inefficiency losses of the scramjet accelerator decrease from \PlosssecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \PlosssecondIspOneHundredTenNoReturn \% at 110\% $I_{SP}$. However, the drag losses, and the energy needed to accelerate the structural mass of the third stage, increase from \WDsecondIspNinetyNoReturn\% and \WsecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \WDsecondIspOneHundredTenNoReturn\% and \WsecondIspOneHundredTenNoReturn\% of the scramjet accelerator's total exergy at 110\% $I_{SP}$, partially offsetting the increased performance. These increased losses are due to the additional velocity at the end of the trajectory causing increased drag, and requiring more kinetic energy to be imparted upon the structural mass of the scramjet accelerator. 
+Increasing the specific impulse of the C-REST engines allows the scramjet accelerator to accelerate more over the flight time, increasing the velocity at second-third stage separation significantly. The availability losses of the scramjet accelerator decrease from \PlosssecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \PlosssecondIspOneHundredTenNoReturn \% at 110\% $I_{SP}$. However, the drag losses, and the energy needed to accelerate the structural mass of the third stage, increase from \WDsecondIspNinetyNoReturn\% and \WsecondIspNinetyNoReturn\% at 90\% $I_{SP}$, to \WDsecondIspOneHundredTenNoReturn\% and \WsecondIspOneHundredTenNoReturn\% of the scramjet accelerator's total exergy at 110\% $I_{SP}$, partially offsetting the increased performance. These increased losses are due to the additional velocity at the end of the trajectory causing increased drag, and requiring more kinetic energy to be imparted upon the structural mass of the scramjet accelerator. 
  Varying the specific impulse does not change the optimal second-third stage separation altitude significantly, however the increased velocity allows this altitude to be reached by the scramjet accelerator with less trajectory angle variation during the pull-up. Increasing the specific impulse allows the third stage to successfully reach orbit from a lower trajectory angle release point, as low as \secondthirdSeparationgammaIspOneHundredTenNoReturn$^\circ$ at 110\% $I_{SP}$, while decreasing the specific impulse requires a higher release point, up to \secondthirdSeparationgammaIspNinetyNoReturn$^\circ$ at 90\% $I_{SP}$.
-The exergy efficiency of the third stage is increased as the specific impulse of the scramjet accelerator increases, increasing by \textcolor{red}{+2.454}\%$\eta$ at 110\% $I_{SP}$, and decreasing by \textcolor{red}{-1.879}\%$\eta$ at 90\% $I_{SP}$. This is due to the significantly decreased propulsive losses of the third stage when released at a higher velocity, \PlossthreeIspOneHundredTenNoReturn\% at 110\%$I_{SP}$, compared to \PlossthreeIspNinetyNoReturn\% at 90\%$I_{SP}$. 
+The exergy efficiency of the third stage is increased as the specific impulse of the scramjet accelerator increases, increasing by \textcolor{red}{+2.454}\%$\eta$ at 110\% $I_{SP}$, and decreasing by \textcolor{red}{-1.879}\%$\eta$ at 90\% $I_{SP}$. This is due to the significantly decreased in-atmosphere availability losses of the third stage when released at a higher velocity, 3.41GJ at 110\%$I_{SP}$, compared to 4.59GJ at 90\%$I_{SP}$, as well as the decreased kinetic and potential energy required by the third stage. 
 
 \subsection{Case 6: Scramjet Accelerator Mass Sensitivity}\label{sec:SpartanMassnoreturn}
 
@@ -1113,14 +1112,14 @@ The exergy efficiency of the third stage is increased as the specific impulse of
 
 The structural mass of the scramjet accelerator is varied by \textcolor{red}{$\pm$10\% ($\pm$495.7kg)}, to investigate the effects of the structural, thermal shielding, and system mass of the scramjet accelerator on the performance of the launch system. A summary of the key parameters of each trajectory is detailed in Table \ref{tab:comparison100}, with comparison plots shown in Appendix \ref{sec:app_comparison100}.
 \textcolor{red}{Variation in the mass of the scramjet accelerator causes the maximum payload-to-orbit of the launch system to vary by +13.3kg (+8.5\%) at 90\% structural mass and by -13.8kg (-8.8\%) at 110\% structural mass. 
- As the mass of the scramjet accelerator increases, the acceleration of the first stage decreases, and the propulsive inefficiency losses of the first stage increase, from \PlossonemSPARTANNinetyNoReturn\% at 90\% structural mass to \PlossonemSPARTANOneHundredTenNoReturn\% at 110\% structural mass. The increased propulsive losses decrease the efficiency of the first stage as the mass of the scramjet accelerator increases.}
+ As the mass of the scramjet accelerator increases, the acceleration of the first stage decreases, and the availability losses of the first stage increase, from \PlossonemSPARTANNinetyNoReturn\% at 90\% structural mass to \PlossonemSPARTANOneHundredTenNoReturn\% at 110\% structural mass. The increased availability losses decrease the efficiency of the first stage as the mass of the scramjet accelerator increases.}
 
 \textcolor{red}{
 A higher scramjet accelerator structural mass causes the scramjet accelerator to stay at relatively lower velocities over its trajectory, which results in a higher specific impulse throughout. 
-Varying the structural mass of the scramjet accelerator generally lowers the altitude at the end of the pull-up manoeuvre slightly. In addition, as the mass of the scramjet accelerator is varied, the velocity at scramjet accelerator-third stage separation varies significantly, by +73m/s (+2.8\%) at 90\% structural mass, and -69m/s (-2.6\%) at 110\% structural mass. }
+Varying the structural mass of the scramjet accelerator generally lowers the altitude at the end of the pull-up manoeuvre slightly, so that more optimal L/D can be maintained for longer. In addition, as the mass of the scramjet accelerator is varied, the velocity at scramjet accelerator-third stage separation varies significantly, by +73m/s (+2.8\%) at 90\% structural mass, and -69m/s (-2.6\%) at 110\% structural mass due to reduced acceleration. }
 
 \textcolor{red}{
-As the mass of the scramjet accelerator increases, the exergy efficiency of the third stage is decreased, varying by -1.358\%$\eta$ at 110\% structural mass, and as the scramjet accelerator mass is decreased, the exergy efficiency of the third stage is increased, varying by +1.305\%$\eta$ at 90\% structural mass, due to increased propulsive efficiency from being released at a higher velocity. }
+As the mass of the scramjet accelerator increases, the exergy efficiency of the third stage is decreased, varying by -1.358\%$\eta$ at 110\% structural mass, and as the scramjet accelerator mass is decreased, the exergy efficiency of the third stage is increased, varying by +1.305\%$\eta$ at 90\% structural mass, primarily due to increased propulsive efficiency from being released at a higher velocity. }
 
 
 \subsection{Case 7: Scramjet Accelerator Fuel Mass Sensitivity} \label{sec:fuelmassNoReturn}
@@ -1274,7 +1273,7 @@ All cases exhibit similar trajectory shapes, with the scramjet accelerator pulli
 As the increased fuel mass directly increases the velocity at the end of the scramjet accelerator's trajectory, the beneficial effects of additional fuel exhibit diminishing returns as the velocity at the end of the scramjet accelerator's trajectory increases, and Isp decreases.
 This diminishing specific impulse causes the exergy efficiency of the scramjet accelerator to decrease by \textcolor{red}{-0.148}\%$\eta$ (\textcolor{red}{-3.4}\%) at 110\% fuel mass, and to increase by \textcolor{red}{+0.175}\%$\eta$ (\textcolor{red}{+4.0}\%) at 90\% fuel mass. 
 However, the addition of extra fuel mass means that there is more total energy available to the scramjet accelerator (\textcolor{red}{206.1} GJ at 110\% fuel mass, compared to \textcolor{red}{168.6} GJ at 90\% fuel mass), and so the scramjet accelerator is able to accelerate more over its trajectory. For this reason, the addition of fuel mass to the scramjet accelerator is beneficial, although the benefits to the payload-to-orbit exhibit diminishing returns. 
-One again, as the second-third stage release velocity increases, the exergy efficiency of the third stage increases due to increased propulsive efficiency. 
+Once again, as the second-third stage release velocity increases, the exergy efficiency of the third stage increases due to increased propulsive efficiency. 
 
 
 \subsection{Case 8: Third Stage Mass Sensitivity}\label{sec:m3noReturn}
@@ -1425,11 +1424,11 @@ The total mass of the third stage rocket is varied by $\pm10\%$, to investigate 
 The mass of the heat shield is unchanged at \textcolor{red}{124.6}kg, and the structural mass is assumed to contribute to 9\% of the remaining mass (so that the structural mass varies by $\pm10\%$). The remaining mass which is varied consists of a flexible combination of fuel and payload mass, in the same manner as all other cases. 
 This mass variation investigates the effects of the third stage internal layout on the trajectory of the launch system, quantifying the consequences of fitting additional fuel, payload and structure within the available space.
 
-\textcolor{red}{Interestingly, there is no linear trend in the overall performance of the launch system with variations in the mass of the third stage. The payload mass and efficiency decrease when third stage mass is decreased, by -14.5kg (-9.3\%) at 90\% mass, but also decrease when third stage mass in increased, by -48.4kg (-30.9\%). 
+\textcolor{red}{Interestingly, there is a non-linear trend in the overall performance of the launch system with variations in the mass of the third stage, with peak performance at 100\% mass. The payload mass and efficiency decrease when third stage mass is decreased, by -14.5kg (-9.3\%) at 90\% mass, but also decrease when third stage mass in increased, by -48.4kg (-30.9\%). 
 	The first stage responds in the same manner as the other mass variation cases, with decreased separation altitude and velocity, and increased separation angle as mass increases. The sceamjet accelerator stage also exhibits similar trends to other mass variation cases when the mass of the third stage is reduced; pulling up to similar conditions, with the exception of a reduced separation velocity as mass increases. However, when the third stage mass is decreased, the scramjet accelerator-third stage separation altitude is decreased significantly, to \secondthirdSeparationAltmThreeOneHundredTenNoReturn km at 110\% third stage mass compared to \secondthirdSeparationAltStandardNoReturn km at standard mass, and the velocity is increased to \secondthirdSeparationvmThreeOneHundredTenNoReturn m/s, an increase of 118m/s compared to the standard mass case. In addition, the third stage exhibits nonlinear performance variation, with its exergy efficiency decreasing only slightly (-0.093$\eta$\%) between 90\% mass variation and the standard mass, but decreasing very significantly as mass is increased further (by -6.006$\eta$\% at 110\% mass). When the mass is lowered, the third stage is more efficient, due to being separated at a higher velocity, and accelerating faster, however, there is less fuel exergy to use, resulting in an overall less efficient trajectory. When the mass in increased there is a distinct drop-off point in efficiency, due to the thrust of the third stage struggling to lift and accelerate the higher starting mass of the third stage past a certain point. Although the fuel exergy is increased, the reduced performance of the third stage is too poor to achieve the lift required for positive altitude change without being compensated for by the scramjet accelerator, and the overall efficiency is reduced significantly. 
 }
 
-\textcolor{red}{This highly nonlinear trend indicates that there is a 'sweet spot' in the design of the third stage rocket in regards to mass and internal density. Beyond a certain point, adding more fuel, (and associated structure) within the third stage will no longer increase performance, without an associated increase in thrust or aerodynamic performance.}
+\textcolor{red}{This highly nonlinear trend indicates that there is a 'sweet spot' in the design of the third stage rocket in regards to mass and internal density, because of the complex performance trade-offs between the stages of the launch system. Beyond a certain point, adding more fuel (and associated structure) to the third stage causes the scramjet accelerator to perform poorly. This reduced performance is compensated for by the scramjet accelerator flying a more efficient trajectory, causing the third stage efficiency to reduce significantly, and offsetting the additional energy added from the extra fuel itself.}
 
 \subsection{Case 9: Third Stage Specific Impulse Sensitivity}\label{sec:isp3NoReturn}
 
@@ -1579,7 +1578,7 @@ The specific impulse variation has a significant effect on the trajectory of the
 
 \textcolor{red}{
 The third stage specific impulse variation has no direct influence on the trajectory of the first stage rocket, and the first-second stage separation conditions are relatively consistent across the thrust levels simulated.
-As the specific impulse of the third stage is reduced, the pull-up of the scramjet accelerator becomes much lower and the separation is significantly faster, however, this is not a linear trend as specific impulse is increased. This nonlinearity is similar to the situation observed when the third stage mass is varied (Case 8), in that the decreased performance of the third stage immediately after separation results in more severe performance effects past a certain point. In this case, as the specific impulse of the third stage is increased, the pull-up manoeuvre of the scramjet accelerator becomes relatively consistent, and the overall performance variation is less significant with variations in the third stage specific impulse. This consistency past a certain point indicates that there is a distinct cutoff of third stage efficiency for the launch system, below which the scramjet accelerator must compensate for reduced third stage performance, and the third stage aerodynamics must be utilised more. This modified staging point indicates that if the performance of the third stage rocket engine is reduced, it may be beneficial to redesign the third stage for greater aerodynamic performance. 
+As the specific impulse of the third stage is reduced, the pull-up of the scramjet accelerator becomes much lower and the separation is significantly faster, using a more efficient scramjet accelerator trajectory to impart significantly more energy on the third stage rocket (5.00GJ at 90\% $I_{SP}$ compared to 4.19GJ at 100\% $I_{SP}$). However, this is not a linear trend as specific impulse is increased. This nonlinearity is similar to the situation observed when the third stage mass is varied (Case 8), in that the decreased performance of the third stage immediately after separation results in more severe performance effects past a certain point. In this case, as the specific impulse of the third stage is increased, the pull-up manoeuvre of the scramjet accelerator becomes relatively consistent, and the overall performance variation is less significant with variations in the third stage specific impulse. This consistency past a certain point indicates that there is a distinct cutoff of third stage efficiency for the launch system, below which the scramjet accelerator must compensate for reduced third stage performance, and the third stage aerodynamics must be utilised more. This modified staging point indicates that if the performance of the third stage rocket engine is reduced, it may be beneficial to redesign the third stage for greater aerodynamic performance. 
 }
 
 
@@ -1727,7 +1726,7 @@ As the specific impulse of the third stage is reduced, the pull-up of the scramj
 	
 \end{table}
 
-The coefficient of drag of the third stage rocket is varied by \textcolor{red}{$\pm10\%$} to investigate the effects of the third stage design and sizing on the performance of the launch system. Table \ref{tab:comparison70} details the key trajectory parameters of each optimised trajectory, and Appendix \ref{sec:app_comparison70} shows trajectory comparison plots. The third stage drag is found to have only a very small effect on the performance of the launch system, varying the payload to orbit by only \textcolor{red}{+0.1kg at 90\%Cd and -0.4kg at 110\%Cd. No other parameters show significant variation with variation in the drag of the third stage rocket. While the payload and overall efficiency shows a very small trend, the trade-offs between the stages are inconsistent, with no clear trends in the optimal trajectory.} This indicates that the aerodynamic properties of the third stage rocket do not contribute significantly to the performance of the system or the optimal trajectory flown. 
+The coefficient of drag of the third stage rocket is varied by \textcolor{red}{$\pm10\%$} to investigate the effects of the third stage design and sizing on the performance of the launch system. Table \ref{tab:comparison70} details the key trajectory parameters of each optimised trajectory, and Appendix \ref{sec:app_comparison70} shows trajectory comparison plots. The third stage drag is found to have only a very small effect on the performance of the launch system, varying the payload to orbit by only \textcolor{red}{+0.1kg at 90\%Cd and -0.4kg at 110\%Cd. No other parameters show significant variation with variation in the drag of the third stage rocket. While the payload and overall efficiency shows a very small trend, the trade-offs between the stages are inconsistent, with no clear trends in the optimal trajectory.} This indicates that the aerodynamic properties of the third stage rocket do not contribute significantly to the performance of the system or the optimal trajectory flown. This is corroborated by the small contributions of the third stage aerodynamic losses to the overall energy losses of the system, as shown for Case 2 in Table \ref{tab:effStandardNoReturn}. 
 
 
 
@@ -1737,20 +1736,21 @@ The coefficient of drag of the third stage rocket is varied by \textcolor{red}{$
 
 \begin{figure}[ht!]
 	\centering
+	\textbf{Payload Variation (kg) Normalised to a 1\% Parameter Variation}\par\medskip
 	\includegraphics[width=0.99\linewidth]{figures/5_Ascent/BarChartRelativePayloadChange}
 	\caption{The sensitivity of the key design parameters of the launch system.}
 	\label{fig:BarChartRelativePayloadChange}
 \end{figure}
-
-The preceding sections calculate the relative sensitivity of the launch system performance to a variety of design parameters. 
+\noindent
+The preceding sections calculate the relative sensitivity of the launch system performance to a variety of design parameters for a nominal dynamic pressure limit of 50kPa. 
 Comparing and contrasting the sensitivity of the launch system to each design parameter allows for the relative impact of each design parameter to be assessed in order to inform future design decisions. 
-Figure \ref{fig:BarChartRelativePayloadChange} shows the change in payload mass per percentage point variation of each design parameter. 
+Figure \ref{fig:BarChartRelativePayloadChange} shows the change in payload mass, normalised to a 1\% variation of each design parameter. 
 This change per percentage variation indicates the magnitude by which the payload-to-orbit varies as each design parameter is varied by $\pm$1\% (signs are shown for positive parameter variations, with negative signs indicating a decrease in performance), and is measure of the sensitivity of the launch system to variations in each design parameter. 
 However, a 1\% variation has a significantly different implication in the context of each individual design parameter, as certain parameters can be adjusted more easily. 
 As such, the change per percentage is most useful when directly assessing each design parameter, and taking into account the associated effects on other, coupled design parameters. 
 
 The maximum dynamic pressure of the scramjet accelerator and the scramjet accelerator mass parameter are coupled directly, because the scramjet accelerator's thermal protective properties and structural strength define the maximum dynamic pressure. This means that the low variance in performance with maximum dynamic pressure may be offset by the variation in the mass of the scramjet accelerator, ie. a lower maximum dynamic pressure requires less structural and thermal protection system mass.
-The relative sensitivities of the launch system to dynamic pressure (\textcolor{red}{0.9}$\frac{\Delta kg}{\Delta\%q_{max}}$), and scramjet accelerator mass ((\textcolor{red}{-1.3}$\frac{\Delta kg}{\Delta\%m_{scramjet accelerator}}$), and their absolute magnitudes (50kPa and 4957kg respectively), allow the sensitivities of these coupled effects to be directly quantified. Comparing these sensitivities implies that so long as decreasing the dynamic pressure by 1kPa allows for a reduction in structural and TPS mass of greater than \textcolor{red}{-68.6kg}, then operating the scramjet accelerator at lower dynamic pressures may be preferable. 
+The relative sensitivities of the launch system to dynamic pressure (\textcolor{red}{0.9}$\frac{\Delta kg}{\Delta\%q_{max}}$), and scramjet accelerator mass (\textcolor{red}{-1.3}$\frac{\Delta kg}{\Delta\%m_{scramjet accelerator}}$), and their absolute magnitudes (50kPa and 4957kg respectively), allow the sensitivities of these coupled effects to be directly quantified. Comparing these sensitivities implies that so long as decreasing the dynamic pressure by 1kPa allows for a reduction in structural and TPS mass of greater than \textcolor{red}{-68.6kg}, then operating the scramjet accelerator at lower dynamic pressures may be preferable. 
 
 The influence of the fuel mass of the scramjet accelerator on the performance of the launch system is relatively low, per percentage variation. However, the fuel mass is only a fraction of the total mass of the scramjet accelerator. This means that relatively small mass changes, by kg, in fuel mass are still significant. 
 When the fuel mass of the scramjet accelerator is increased, the structural mass of the tanks will require a corresponding increase. 
@@ -1782,12 +1782,12 @@ The aerodynamic performance (L/D) of the third stage is shown to have only a ver
 
 In this chapter, LODESTAR was used to design the trajectory of the \textcolor{red}{representative} rocket-scramjet-rocket multi-stage launch system \textcolor{red}{based on the SPARTAN}. 
 A trajectory was simulated in which the scramjet accelerator stage flies at a constant dynamic pressure, producing \PayloadToOrbitConstqNoReturn kg of payload-to-orbit. This trajectory served to verify LODESTAR and the simulation of  the launch system, as well as providing a baseline trajectory for comparison. 
-A trajectory optimised for maximum payload-to-orbit was then calculated, which increased the payload mass to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg (an increase of \textcolor{red}{59.1}\%) compared to the constant dynamic pressure trajectory.
+A trajectory optimised for maximum payload-to-orbit was then calculated, which increased the payload mass to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg (with a 97.5\% confidence interval of 8.8-238.8kg), an increase of \textcolor{red}{59.1}\% compared to a constant dynamic pressure trajectory similar to those explored in previous studies of the SPARTAN\cite{Preller2017b}.
   The optimal flight path indicates that the optimal scramjet flight path for a system transitioning between separate airbreathing and rocket-powered stages involves the scramjet accelerator flying at less than its maximum dynamic pressure at three separate points along the trajectory. 
   Initially, the first-second stage separation occurs at a higher trajectory angle than in the constant dynamic pressure trajectory, causing the scramjet accelerator to fly at lower dynamic pressure, and trading off the exergy efficiency of the scramjet accelerator for an increase in the exergy efficiency and fuel mass of the first stage, for an overall performance gain. 
   The optimal flight path then exhibits an altitude raising manoeuvre in the middle of the trajectory, which improves the exergy efficiency of the scramjet accelerator by a very minor +0.005\%$\eta$ (+0.3\%). 
   Finally, the scramjet accelerator executes a pull-up manoeuvre before the second-third stage separation. This optimal pull-up manoeuvre trades off velocity (a decrease of \textcolor{red}{145.0}m/s) for altitude (an increase of \textcolor{red}{11.65}km) and improved flight path angle (an increase of \textcolor{red}{11.6}$^\circ$). This pull-up manoeuvre, along with the higher first-second stage separation, decreases the exergy efficiency of the scramjet accelerator by -\textcolor{red}{0.719}\%$\eta$ (-\textcolor{red}{14.04}\%) when compared to the constant dynamic pressure case. 
-  However, these conditions improve the exergy efficiency of the third stage rocket significantly, by +\textcolor{red}{6.013}\%$\eta$, an increase of +\textcolor{red}{63.20}\% over the third stage released from a constant dynamic pressure trajectory. \textcolor{red}{While a pull-up manoeuvre under airbreathing operation has been identified as beneficial in previous studies\cite{Wilhite1991,Bradford2002,Fujikawa2017}, these pull-ups were either performed to lower dynamic pressure for the orbiter stage\cite{Wilhite1991,Bradford2002}, or to improve the operation of the airbreathing engines\cite{Fujikawa2017}. This study has shown that a pull-up is directly beneficial to the payload-to-orbit performance of the launch system due to the efficiency trade-offs between the stages of the launch system. This performance improvement is in addition to the possible design benefits due to heat shield and structural mass reduction of the third stage, due to the significantly lowered dynamic pressure at separation of \secondthirdSeparationqStandardNoReturn kPa, a decrease of 47.5 kPa compared to a trajectory with minimum pull-up.}
+  However, these conditions improve the exergy efficiency of the third stage rocket significantly, by +\textcolor{red}{6.013}\%$\eta$, an increase of +\textcolor{red}{63.20}\% over the third stage released from a constant dynamic pressure trajectory. \textcolor{red}{While a pull-up manoeuvre under airbreathing operation has been identified as beneficial in previous studies\cite{Wilhite1991,Bradford2002,Fujikawa2017}, these pull-ups were either performed to lower dynamic pressure for the orbiter stage\cite{Wilhite1991,Bradford2002}, or to improve the operation of the airbreathing engines\cite{Fujikawa2017}. This study has shown that a pull-up is directly beneficial to the payload-to-orbit performance of the launch system due to the efficiency trade-offs between the stages of the launch system. Energy efficiency is traded off between the scramjet accelerator and third stage, with the scramjet accelerator becoming significantly less efficient (Imparting 1.46GJ less energy to the third stage and payload) in order to increase the efficiency of the third stage, in particular reducing the third stage energy expended due to drag from 2.99GJ, to 0.11GJ. This performance improvement is in addition to the possible design benefits due to heat shield and structural mass reduction of the third stage, due to the significantly lowered dynamic pressure at separation of \secondthirdSeparationqStandardNoReturn kPa, a decrease of 42.2 kPa compared to a 50kPa constant dynamic pressure trajectory.}
 
 
 A sensitivity study was conducted, to determine the relative effects of key vehicle design parameters on the optimised trajectory. 

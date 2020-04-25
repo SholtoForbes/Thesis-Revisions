@@ -46,7 +46,7 @@
 These small satellite launchers are currently designed to be single-use and low-cost, however, significant improvements in cost effectiveness and responsiveness may be achieved via the introduction of reusability. Unfortunately, the inclusion of reusability into small launch system designs is significantly more challenging than for larger launchers, and novel design methods may be necessary to achieve reliable and efficient re-use. One possibility for accomplishing reusability in a small launch system is the inclusion of airbreathing propulsion systems.
 
 Airbreathing propulsion systems are extremely efficient, and do not require oxidiser to be carried on-board a launch system, bringing considerable operational and design advantages. 
-However, airbreathing engines also add complexity to a launch system, with intricate subsystems and limited flight regimes. Because of this complexity, and the relative immaturity of airbreathing engine development, airbreathing launch systems are still in the early stages of design, with various configurations being investigated. Of these configurations, multi-stage systems are likely to be the most applicable to small launch systems, due to the favourable effects of stage separation with the restricted mass margins of small launchers. However, a multi-stage design compounds on the complexity of airbreathing launch systems, and the efficiency trade-offs between the stages of multi-stage airbreathing launch systems, particularly three-stage systems, are not well understood. This work aims to aid in the development of multi-stage airbreathing launch systems by developing and studying optimal payload-to-orbit trajectories for a three-stage airbreathing launcher, in order to understand the capabilities of the system and analyse the performance trade-offs between the stages during maximum payload-to-orbit flight.
+However, airbreathing engines also add complexity to a launch system, with intricate subsystems and limited flight regimes. Because of this complexity, and the relative immaturity of airbreathing engine development, airbreathing launch systems are still in the early stages of design, with various configurations being investigated. Of these configurations, multi-stage systems are likely to be the most applicable to small launch systems, due to the favourable effects of stage separation with the restricted mass margins of small launchers. However, a multi-stage design compounds on the complexity of airbreathing launch systems, and the efficiency trade-offs between the stages of multi-stage airbreathing launch systems, particularly for three-stage systems with a fly-back component, are not well understood. This work aims to aid in the development of multi-stage airbreathing launch systems by developing and studying optimal payload-to-orbit trajectories for a three-stage airbreathing launcher, in order to understand the capabilities of the system and analyse the performance trade-offs between the stages during flight of a maximum payload-to-orbit trajectory with a fly-back of the airbreathing stage.
 
 
 
@@ -61,14 +61,14 @@ Launch trajectories are initially simulated assuming that the scramjet accelerat
 The maximum payload-to-orbit trajectory of the launch system is calculated, and is found to differ significantly from the trajectory in which the scramjet accelerator is constrained to constant dynamic pressure. 
  The scramjet accelerator is found to deviate from its maximum dynamic pressure at both stage separation points, and for a segment in the middle of its trajectory.
  The higher separation points result in the efficiency of the scramjet accelerator reducing, but increase the efficiency of the rocket stages, improving the overall efficiency of the system. 
-  Additionally, an altitude raising manoeuvre is performed in a region where the specific impulse of the scramjet engines is relatively homogeneous with varied flight conditions, resulting in a very small performance increase. Overall, flying an optimal trajectory increases the payload-to-orbit of the system launching to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg, an increase of 59.1\% compared to a trajectory in which the scramjet accelerator flies at maximum dynamic pressure.  
+  Additionally, an altitude raising manoeuvre is performed in a region where the specific impulse of the scramjet engines is relatively homogeneous with varied flight conditions, resulting in a further small performance increase. Overall, flying an optimal trajectory increases the payload-to-orbit of the system launching to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg, an increase of 59.1\% compared to a trajectory in which the scramjet accelerator flies at maximum dynamic pressure.  
  
  
- The fly-back of the scramjet accelerator is included within the trajectory optimisation, and a maximum payload-to-orbit flight path to sun synchronous orbit is simulated. 
+ Next, the fly-back of the scramjet accelerator is included within the trajectory optimisation, and simulated to produce a non-intuitive maximum payload-to-orbit flight profile. 
  It is found that the scramjet accelerator is able to achieve fly-back, but that it must ignite its scramjet engines during its return flight, causing the fly-back to become an important consideration in the optimal trajectory design. When the fly-back is included, the first stage pitches easterly, rather than northerly. The scramjet accelerator banks heavily throughout its acceleration to manoeuvre to polar inclination, decreasing the performance of the scramjet accelerator, but also reducing the amount of fuel used during fly-back, for a net performance gain. 
-The fly-back is found to exhibit multiple `skipping' manoeuvres, which serve to increase the range of the scramjet accelerator, minimising the fuel necessary during the return flight. In addition, the scramjet engines are powered on at the troughs of the first three skips, corresponding to the points of highest possible specific impulse. The launch system is able to deliver \PayloadToOrbitStandard kg of payload to sun synchronous orbit while successfully returning the scramjet accelerator to its initial launch site.  
+The fly-back is found to exhibit multiple `skipping' manoeuvres, which serve to increase the range of the scramjet accelerator, minimising the fuel necessary during the return flight. In addition, the scramjet engines are powered on at the troughs of the first three skips, corresponding to the points of highest possible specific impulse. This optimal trajectory for the launch system is able to deliver \PayloadToOrbitStandard kg of payload to sun synchronous orbit while successfully returning the scramjet accelerator to its initial launch site.  
 
-A study is conducted to quantify the sensitivity of the launch system to variations in key design parameters. 
+Finally, a study is conducted to quantify the sensitivity of the launch system to variations in key design parameters. 
 The sensitivities of coupled design parameters are compared, to quantify their relative impacts on the performance of the launch system. The magnitudes of these relative impacts are assessed, and the behaviour of the maximum payload-to-orbit trajectory is investigated as the physical characteristics of the launch system are modified, to provide insights into both the optimised trajectory and the launch vehicle design. 
 
  
@@ -198,115 +198,116 @@ ANZSRC code: 010303 Optimisation, 30\% \newline
 \addcontentsline{toc}{chapter}{Nomenclature}
 \markboth{NOMENCLATURE}{NOMENCLATURE}
 
+\textcolor{red}{XXXX Format, put in alphabetical order, add space before subscripts}
 \noindent
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$t$ & $=$ & Time (s)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\textbf{x}$& $=$ & State Variables\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\textbf{u}$& $=$ & Control Variables\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$q$ & $=$ & Dynamic Pressure (Pa)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$H$ & $=$ & Hamiltonian\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\lambda$ & $=$ & Costate Variables\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\psi$ & $=$ & Equality Constraint Function\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$b$ & $=$ & Bound Constraint Values\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\lambda$ & $=$ & Inequality Constraint Function\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$J$ & $=$ & Total Cost Functional\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$I_{sp}$ & $=$ & Specific Impulse (s)\\ 
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$M$ & $=$ & Mach Number \& Endpoint Cost Function\\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$P$ & $=$ & Pressure (Pa)  \\
 \end{tabular}
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$F$ & $=$ & Force (N)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\rho$ & $=$ & Density (kg/m$^2$)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$R$ & $=$ & Gas Constant (8.314 $J K^{-1} mol^{-1}$)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$D$ & $=$ & Drag (N)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$L$ & $=$ & Lift (N) \& Integrated Cost Function\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$C_L,C_D$ & $=$ & Aerodynamic Coefficients\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\xi$ & $=$ & Longitude (rad)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\phi$ & $=$ & Latitude (rad) \& Equivalence Ratio\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\zeta$ & $=$ & Heading Angle (rad)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$v$ & $=$ & Speed (m/s)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$A$ & $=$ & Reference Area (m$^2$)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$g$ & $=$ & Gravitational Acceleration at Earth's Surface (m/s$^2$)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	
 	
 	$r$ & $=$ & Radius from Earth Centre (m)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\gamma$ & $=$ & flight path angle (rad)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\omega$ & $=$ & Angular Velocity (rad/s)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$a$ & $=$ & Acceleration (m/s$^2$)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$m$ & $=$ & Mass (kg)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$T$ & $=$ & Thrust (N) \& Temperature (K)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$w_{cap}$ & $=$ & Capture Width\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\alpha$ & $=$ & Angle of Attack (rad)\\
 \end{tabular} 	
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\eta$ & $=$ & Efficiency\\
 \end{tabular} 	
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$KE$ & $=$ & Kinetic Energy (J)\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$PE$ & $=$ & Potential Energy (J)\\
 \end{tabular} 
 \newline  	
@@ -315,73 +316,73 @@ ANZSRC code: 010303 Optimisation, 30\% \newline
 	\textit{Subscripts} \\
 \end{tabular} 
 \newline
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$E$ & $=$ & Earth\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$1$ & $=$ & $1^{st}$ Stage Rocket\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$2$ & $=$ & $2^{nd}$ Stage Scramjet Vehicle\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$3$ & $=$ & $3^{rd}$ Stage Rocket\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$\rightarrow$ & = & Stage Transition\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$0$ & $=$ & Initial\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$f$ & $=$ & Final\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$a,b$ & $=$ & Nominal Stage Numbers\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	LOX & $=$ & Liquid Oxygen\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	LH2 & $=$ & Liquid Hydrogen\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	AoA & $=$ & Angle of Attack\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	e & $=$ & Exit\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$SL$ & $=$ & Sea Level\\
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$atm$ & $=$ & Atmospheric\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$vac$ & $=$ & Vacuum\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$LEO$ & $=$ & Low Earth Orbit\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$r$ & $=$ & Radial\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$t$ & $=$ & Tangential\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$p$ & $=$ & Propulsive\\
 	
 \end{tabular} 
-\begin{tabular}{p{1.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{0.9cm}p{0.7cm}p{5.6cm}}
 	\rom{1}-\rom{7} & $=$ & Trajectory Phases\\
 	
 \end{tabular} 

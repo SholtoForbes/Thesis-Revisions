@@ -27,14 +27,14 @@ The value of $c_f$ is determined using the viscous solver VC3D, at specific loca
 \begin{subfigure}{.5\textwidth}
 	\centering
 \includegraphics[width=0.9\linewidth]{figures/A1_uncertainty-analysis/Q_pos}
-\caption{The points examined on the scramjet accelerator.}
+\caption{The locations examined on the scramjet accelerator.}
 \end{subfigure}
 \begin{subfigure}{.5\textwidth}
 	\centering
 \includegraphics[width=0.9\linewidth]{figures/A1_uncertainty-analysis/Q_pos3}
-\caption{The points examined on the third stage rocket.}
+\caption{The locations examined on the third stage rocket.}
 \end{subfigure}
-\caption{The points chosen for thermal analysis, selected for the potential of high heat loading.}
+\caption{The locations chosen for thermal analysis, selected for the potential of high heat loading.}
 \label{fig:Q_pos}
 \end{figure}
 
@@ -239,7 +239,7 @@ The effects of a 10\% variation in any of these properties is not particularly l
 		\hline 
 	\end{tabular}
 	
-	\caption{Inner face temperatures in K on the shroud of the scramjet accelerator with variations in heat shielding properties.}
+	\caption{Inner surface temperatures in kelvin on the shroud of the scramjet accelerator with variations in heat shielding properties.}
 	\label{tab:tpsscramjet}
 	\end{table}
 
@@ -253,7 +253,7 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 		\hline Maximum T (K) & 1384.9 & 1359.3 & 1333.4 & 1307.4 & 1281.2 \\ 
 		\hline
 \end{tabular}	
-\caption{Maximum inner face temperature with a constant rate of heat transfer away from the inner face of the shroud.}
+\caption{Maximum inner surface temperature with a constant rate of heat transfer away from the inner surface of the shroud.}
 \label{tab:regenerativecooling}	
 \end{table}
 
@@ -431,7 +431,7 @@ For small heating limitations this may be suitable, however, in general, it is i
 		\hline 
 	\end{tabular} 
 	
-	\caption{Inner surface temperatures in K with variations in third stage heat shielding properties.}
+	\caption{Inner face temperatures in kelvin with variations in third stage heat shielding properties.}
 	\label{tab:tpsthirdstage}
 \end{table}
 
@@ -565,13 +565,13 @@ These results provide a preliminary heat shielding evaluation and TPS analysis o
 
 
 \textcolor{red}{
-\chapter{Modelling Uncertainties}
+\chapter{Modelling Uncertainties}\label{Appendix:unc}
 }
 
 %-need to take into account that the error magnitudes estimated are only relative error (as above)
 
 %-take into account that the values qoted for abeynayake paper are mean, and that the max errors are higher
-
+\noindent
 This thesis aims to provide new insight into the operability and feasibility of multi-stage launch systems incorporating an air-breathing stage.
 No such launch systems currently exist, and several of the technologies necessary for the successful operation of their systems and subsystems are in the research stage of development.
 This means that reliable performance data is not available, and while every effort has been made to apply accurate vehicle and subsystem models, it is acknowledged that the designs of several subsystems are simplified during the modelling process. These simplifications in the design and modelling are necessary because of the preliminary nature of this analysis, however, it is acknowledged that they will have an impact on the vehicle simulations. 
@@ -685,7 +685,7 @@ The uncertainty margins of the aerodynamic and propulsive data for the represent
 		\hline   $C_M$  & 23\% & 67.1\% &  22.0\% \\ 
 		\hline 
 	\end{tabular}
-	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of the representative launch system in this study. Values are shown to the accuracy measured or reported from their source.}
+	\caption{The uncertainty margins associated with the aerodynamic and propulsive modelling of the representative launch system in this study. Values are shown to the significant figure accuracy reported by their source.}
 	\label{tab:AppendixUncertainty}
 \end{table}
 
@@ -1051,7 +1051,7 @@ This section presents an example of the convergence and verification of a trajec
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{../LODESTAR-revisions/Results/mode11/MeshHistory}
-	\caption{The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). the phases are shown in each re as follows: a) first stage rocket, b) scramjet accelerator acceleration, c) scramjet accelerator fly-back and d) third stage.}
+	\caption{The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). The phases are shown as follows: a) first stage rocket, b) scramjet accelerator acceleration, c) scramjet accelerator fly-back and d) third stage.}
 	\label{fig:MeshHistory}
 \end{figure}
 The mesh history of the optimal trajectory solution is shown in Figure \ref{fig:MeshHistory}. The mesh is updated by GPOPS-2 in each iteration of the optimal solution. It can be observed that the meshes of the first and third stage rockets contain significantly less node points at the final iteration than the meshes of the scramjet accelerator's acceleration and return. This is due to the relatively simple dynamics and shorter flight time of the first and third stages. The first stage shows a cluster of nodes at the beginning of its trajectory, in the subsonic, transonic and low Mach regimes. In this region, the aerodynamics are changing rapidly, and the nodes are clustered to accurately capture the dynamic behaviour of the vehicle. After transition occurs to supersonic flight, the aerodynamics and engine performance of the vehicle change more slowly, and the nodes become more widely spaced. In contrast, the acceleration of the scramjet accelerator shows significant node density throughout. The operation of the scramjet accelerator is complex, as the dynamics of the vehicle and the performance of the scramjet engines vary significantly, even during relatively level flight. For this reason, the nodes of the return flight show even greater density. The trajectory conditions change significantly as the scramjet accelerator performs skipping manoeuvres, and transitions through the various return phases, necessitating high node density to capture the vehicle dynamics, particularly between powered and unpowered flight. The trajectories of the scramjet accelerator also last for a significantly longer time than the rocket trajectories, requiring more total nodes to accurately capture the vehicle dynamics. The third stage shows the least nodes at the final mesh iteration, as the dynamics of the third stage are relatively simple. Some node  clustering is observed in the first part of the trajectory, where the atmospheric density is still significant. 
@@ -1093,8 +1093,8 @@ The final verification step is a forward simulation of each phase. This forward 
 
 
 \chapter{Modelling and Simulation}\label{Appendix:sim}
-\section{Propulsion Interpolation Scheme}
-
+\section{Propulsion Interpolation Scheme}\label{Appendix:interp}
+\noindent
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figures/A1_uncertainty-analysis/interp}
@@ -1241,21 +1241,21 @@ Figure \ref{fig:returnIspStandard} shows the performance of the scramjet acceler
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/FirstStageStandard}
-\caption{The optimised maximum payload-to-orbit trajectory of the launch system constrained to 50kPa between Mach numbers 6 to 8, under power of the first stage rocket.}
+\caption{The first stage trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:FirstStageqConstrained68}
 \end{figure}
 		
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/SecondStageStandard}
-\caption{The optimised maximum payload-to-orbit trajectory of the representative launch system, constrained to 50kPa between Mach numbers 6 to 8.}
+\caption{The scramjet accelerator trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:SecondStageqConstrained68}
 \end{figure}
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/ThirdStageStandard}
-\caption{The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
+\caption{The third stage trajectory of the launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
 \label{fig:ThirdStageqConstrained68}
 \end{figure}
 
@@ -1472,7 +1472,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode20/SecondStageComparison}
-\caption{Comparison of representative launch system ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.}
+\caption{Comparison of scramjet stage ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.}
 \label{fig:SecondStageComparison1}
 \end{figure}
 
@@ -1491,7 +1491,7 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode40/SecondStageComparison}
-\caption{Comparison of representative launch system ascent trajectories with variation in the drag of the scramjet accelerator.}
+\caption{Comparison of scramjet stage ascent trajectories with variation in the drag of the scramjet accelerator.}
 \label{fig:SecondStageComparison3}
 \end{figure}
 

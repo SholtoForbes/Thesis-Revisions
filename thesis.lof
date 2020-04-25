@@ -2,158 +2,159 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces The SPARTAN scramjet-powered accelerator\cite {BBC}.\relax }}{4}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite {BlueOrigin}.\relax }}{9}{figure.caption.28}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The trajectory of the Falcon Heavy\cite {FalconHeavy}.\relax }}{10}{figure.caption.29}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The trajectory of the Ariane featuring Adeline\cite {Adelineb}.\relax }}{11}{figure.caption.30}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces A simple schematic of a scramjet engine\cite {Heiser1994}.\relax }}{14}{figure.caption.32}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Characteristic performance for airbreathing and rocket engines with Mach number\cite {Fry2004}.\relax }}{14}{figure.caption.33}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces The general design process flow for a launch vehicle, adapted from Blair et al\cite {Blair2001}\relax }}{16}{figure.caption.34}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite {BlueOrigin}.\relax }}{11}{figure.caption.28}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The trajectory of the Falcon Heavy\cite {FalconHeavy}.\relax }}{12}{figure.caption.29}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The trajectory of the Ariane featuring Adeline\cite {Adelineb}.\relax }}{13}{figure.caption.30}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces A simple schematic of a scramjet engine\cite {Heiser1994}.\relax }}{16}{figure.caption.32}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Characteristic performance for airbreathing and rocket engines with Mach number\cite {Fry2004}.\relax }}{16}{figure.caption.33}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces The general design process flow for a launch vehicle, adapted from Blair et al\cite {Blair2001}\relax }}{18}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An example airbreathing flight corridor of an airbreathing launch vehicle\cite {Smart2007a}.\relax }}{21}{figure.caption.35}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \leavevmode {\color {red}An illustration of }the optimised maximum range trajectory of a hypersonic vehicle\cite {Chai2015}.\relax }}{46}{figure.caption.39}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The elevons of the SPARTAN\cite {Preller2017b}.\relax }}{47}{figure.caption.40}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The scramjet accelerator of the SPARTAN, as designed by Preller\cite {Preller2018a}.\relax }}{48}{figure.caption.41}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces The flight trajectory of the SPARTAN. a) shows the physical trajectory and b) shows the forces on the vehicle and performance indicators.\relax }}{49}{figure.caption.42}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces The third stage rocket of the rocket-scramjet-rocket launch system\cite {Preller2017b}.\relax }}{50}{figure.caption.43}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces The third stage trajectory of the SPARTAN launch system\cite {Preller2018a}.\relax }}{50}{figure.caption.44}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{53}{figure.caption.47}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of \textsf {h} and \textsf {p} collocation methods\cite {Kelly2015}.\relax }}{54}{figure.caption.48}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{56}{figure.caption.50}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{61}{figure.caption.53}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces An example airbreathing flight corridor of an airbreathing launch vehicle\cite {Smart2007a}.\relax }}{23}{figure.caption.35}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \leavevmode {\color {red}An illustration of }the optimised maximum range trajectory of a hypersonic vehicle\cite {Chai2015}.\relax }}{47}{figure.caption.39}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The elevons of the SPARTAN\cite {Preller2017b}.\relax }}{49}{figure.caption.40}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The scramjet accelerator of the SPARTAN, as designed by Preller\cite {Preller2018a}.\relax }}{49}{figure.caption.41}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The flight trajectory of the SPARTAN. a) shows the physical trajectory and b) shows the forces on the vehicle and performance indicators.\relax }}{50}{figure.caption.42}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The third stage rocket of the rocket-scramjet-rocket launch system\cite {Preller2017b}.\relax }}{51}{figure.caption.43}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The third stage trajectory of the SPARTAN launch system\cite {Preller2018a}.\relax }}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces A comparison of single shooting and multiple shooting\cite {Kelly2015}.\relax }}{55}{figure.caption.47}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of \textsf {h} and \textsf {p} collocation methods\cite {Kelly2015}.\relax }}{56}{figure.caption.48}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of optimisation techniques\cite {Chai2015}. A hypersonic vehicle is optimised for maximum range. The \textsf {hp}-adaptive method can be observed to have produced the most optimal result.\relax }}{58}{figure.caption.50}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha =7.512^\circ $\cite {Mehta2016}. Cell distribution produced by mesh adaptation is shown.\relax }}{63}{figure.caption.52}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The launch process of the rocket-scramjet-rocket launch system, presented in simplified form.\relax }}{64}{figure.caption.54}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces the representative launch system, top view, showing the scramjet accelerator and first stage. \relax }}{65}{figure.caption.55}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces the representative launch system, side view, showing the scramjet accelerator and fuel tanks, along with the third and first stages. \relax }}{65}{figure.caption.56}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The external features of the scramjet accelerator.\relax }}{66}{figure.caption.57}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The locations of conditions relevant to C-REST engine simulation. \relax }}{68}{figure.caption.60}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow conditions after the conical shock generated by the vehicle nose cone as a function of flight Mach number and angle of attack. Figure a) shows the Mach number, b) shows the pressure ratio, and c) shows the temperature ratio following the conical shock, at the engine inlet.\relax }}{69}{figure.caption.61}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Specific impulse of the C-REST engines with input temperature and Mach number. Available data points are indicated. \leavevmode {\color {red}M$_1$ and T$_1$ are the inlet Mach number and temperature, as shown in Figure \ref {fig:SPARTANEngineshock}.}\relax }}{70}{figure.caption.62}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Operable equivalence ratio of the C-REST engines with input temperature and Mach number. Available data points are indicated.\relax }}{71}{figure.caption.63}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces The process for generating aerodynamic databases.\relax }}{72}{figure.caption.64}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Surface triangulation of the scramjet accelerator, generated using Pointwise\cite {Pointwise}.\relax }}{73}{figure.caption.66}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces The convergence of a Cart3D simulation of the scramjet accelerator at Mach 6, 2$^\circ $ angle of attack.\relax }}{74}{figure.caption.67}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces View of the scramjet accelerator surface triangulation showing engine outlet boundaries.\relax }}{75}{figure.caption.69}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces The total thrust output of the scramjet accelerator, including the CRESTM10 database, and Cart3D nozzle and boat tail simulations.\relax }}{76}{figure.caption.70}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The specific impulse of the scramjet accelerator, including the C-rest database, and Cart3D nozzle and boat tail simulations.\relax }}{77}{figure.caption.71}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Centre of gravity positions throughout the flight of the scramjet accelerator. \relax }}{78}{figure.caption.73}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces The forces on the scramjet accelerator during flight.\relax }}{78}{figure.caption.75}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces scramjet accelerator model showing control surfaces.\relax }}{79}{figure.caption.76}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Flap deflection required for trim of the scramjet accelerator. Negative up.\relax }}{80}{figure.caption.77}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Viscous drag coefficient across various Mach numbers.\relax }}{81}{figure.caption.79}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Engine-on Cart3D simulation at Mach 6, 2$^\circ $ angle of attack, and 25km altitude.\relax }}{82}{figure.caption.80}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces The aerodynamic coefficients of the scramjet accelerator with the C-REST engines powered-on at 30km altitude. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of \leavevmode {\color {red}15.24m} (full of fuel, with third stage). \relax }}{83}{figure.caption.81}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Cart3D flow result for the scramjet accelerator, at Mach 6, 2$^\circ $ angle of attack.\relax }}{84}{figure.caption.82}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Aerodynamic Characteristics of the scramjet accelerator with C-REST engine powered-off at an altitude of 30km. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of 15.16m (no third stage, no fuel).\relax }}{85}{figure.caption.83}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Unstarted scramjet engines at mach 3, 2$^\circ $ angle of attack.\relax }}{86}{figure.caption.84}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Cart3D result for the scramjet accelerator and first stage vehicles at Mach 2, -1$^\circ $ angle of attack.\relax }}{86}{figure.caption.86}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces The aerodynamic characteristics of the representative launch system. Coefficients correspond to a reference area of 62.77m$^2$.\relax }}{87}{figure.caption.87}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Thrust vectoring moment balancing of the first stage.\relax }}{88}{figure.caption.88}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces The third stage rocket, showing major internal features. \relax }}{88}{figure.caption.89}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Variation in coefficient of thrust with area ratio\cite {RPE}.\relax }}{93}{figure.caption.96}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Aerodynamic characteristics of the third stage rocket, for a reference area of 0.95m$^2$.\relax }}{94}{figure.caption.97}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Thrust vector moment balancing of the third stage.\relax }}{95}{figure.caption.98}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The launch process of the rocket-scramjet-rocket launch system, presented in simplified form.\relax }}{66}{figure.caption.53}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The representative launch system, top view, showing the scramjet accelerator and first stage. \relax }}{67}{figure.caption.54}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The representative launch system, side view, showing the scramjet accelerator and fuel tanks, along with the third and first stages. \relax }}{67}{figure.caption.55}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The external features of the scramjet accelerator.\relax }}{68}{figure.caption.56}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The locations of conditions relevant to C-REST engine simulation. \relax }}{70}{figure.caption.59}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow conditions after the conical shock generated by the vehicle nose cone as a function of flight Mach number and angle of attack. Figure a) shows the Mach number, b) shows the pressure ratio, and c) shows the temperature ratio following the conical shock, at the engine inlet.\relax }}{71}{figure.caption.60}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Specific impulse of the C-REST engines with input temperature and Mach number. Available data points are indicated. \leavevmode {\color {red}M$_1$ and T$_1$ are the inlet Mach number and temperature, as shown in Figure \ref {fig:SPARTANEngineshock}.}\relax }}{72}{figure.caption.61}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Operable equivalence ratio of the C-REST engines with input temperature and Mach number. Available data points are indicated.\relax }}{73}{figure.caption.62}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Fuel mass flow rate with varying flight conditions. Conditions are shown only up to 50kPa dynamic pressure.\relax }}{74}{figure.caption.63}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The process for generating aerodynamic databases.\relax }}{75}{figure.caption.64}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Surface triangulation of the scramjet accelerator, generated using Pointwise\cite {Pointwise}.\relax }}{76}{figure.caption.66}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The convergence of a Cart3D simulation of the scramjet accelerator at Mach 6, 2$^\circ $ angle of attack.\relax }}{77}{figure.caption.67}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces View of the scramjet accelerator surface triangulation showing engine outlet boundaries.\relax }}{78}{figure.caption.69}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The total thrust output of the scramjet accelerator, including the CRESTM10 database, and Cart3D nozzle and boat tail simulations.\relax }}{79}{figure.caption.70}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The specific impulse of the scramjet accelerator, including the C-rest database, and Cart3D nozzle and boat tail simulations.\relax }}{80}{figure.caption.71}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Viscous drag coefficient across various Mach numbers.\relax }}{81}{figure.caption.73}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Centre of gravity positions for various flight conditions.\relax }}{82}{figure.caption.75}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces The forces on the scramjet accelerator during flight.\relax }}{82}{figure.caption.77}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Scramjet accelerator model showing control surfaces.\relax }}{83}{figure.caption.78}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Flap deflection required for trim of the scramjet accelerator. Negative is flap up.\relax }}{84}{figure.caption.79}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Engine-on Cart3D simulation at Mach 6, 2$^\circ $ angle of attack, and 25km altitude.\relax }}{85}{figure.caption.80}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces The aerodynamic coefficients of the scramjet accelerator with the C-REST engines powered-on at 30km altitude. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of \leavevmode {\color {red}15.24m} (full of fuel, with third stage). \relax }}{86}{figure.caption.81}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Cart3D flow result for the scramjet accelerator with engine off, at Mach 6, 2$^\circ $ angle of attack.\relax }}{87}{figure.caption.82}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Aerodynamic Characteristics of the scramjet accelerator with C-REST engine powered-off at an altitude of 30km. Coefficients correspond to a reference area of 62.77m$^2$ and a centre of gravity of 15.16m (no third stage, no fuel).\relax }}{88}{figure.caption.83}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Unstarted scramjet engines at mach 3, 2$^\circ $ angle of attack.\relax }}{89}{figure.caption.84}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Cart3D result for the scramjet accelerator and first stage vehicles at Mach 2, -1$^\circ $ angle of attack.\relax }}{89}{figure.caption.86}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces The aerodynamic characteristics of the first and second stage stack. Coefficients correspond to a reference area of 62.77m$^2$.\relax }}{90}{figure.caption.87}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Thrust vector moment balancing of the first stage.\relax }}{91}{figure.caption.88}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces The third stage rocket, showing major internal features. \relax }}{91}{figure.caption.89}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Variation in thrust coefficient of thrust with area ratio\cite {RPE}.\relax }}{96}{figure.caption.96}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Aerodynamic characteristics of the third stage rocket, for a reference area of 0.95m$^2$.\relax }}{97}{figure.caption.97}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Thrust vector moment balancing of the third stage.\relax }}{98}{figure.caption.98}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sun synchronous orbit illustration, passing over the equator at the same time each day\cite {NASASSO}.\relax }}{102}{figure.caption.101}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Approximate location of the ELA launch site. Image from Google maps.\relax }}{103}{figure.caption.102}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The Earth-fixed components of the geodetic rotational coordinate system.\relax }}{105}{figure.caption.103}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustration of the phases of the launch profile. Controlled and uncontrolled phases are distinguished. \relax }}{107}{figure.caption.104}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces The Hohmann transfer manoeuvre. $\Delta $V indicates a velocity change due to a burn.\relax }}{115}{figure.caption.110}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.\relax }}{119}{figure.caption.111}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sun synchronous orbit illustration, passing over the equator at the same time each day\cite {NASASSO}.\relax }}{104}{figure.caption.101}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Approximate location of the ELA launch site. Image from Google maps.\relax }}{105}{figure.caption.102}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The Earth-fixed components of the geodetic rotational coordinate system.\relax }}{107}{figure.caption.103}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustration of the phases of the launch profile. Controlled and uncontrolled phases are distinguished. \relax }}{109}{figure.caption.104}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The Hohmann transfer manoeuvre. $\Delta $V indicates a velocity change due to a burn.\relax }}{117}{figure.caption.110}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The process of the rocket-scramjet-rocket trajectory optimisation. Relevant sections are indicated in square brackets at each process step.\relax }}{121}{figure.caption.111}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Maximum payload-to-orbit trajectory path with the scramjet accelerator flying at constant dynamic pressure (Case 1). Initial heading angle \leavevmode {\color {red}91.4}$^\circ $.\relax }}{125}{figure.caption.112}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The first stage trajectory of the launch system, with the scramjet accelerator constrained to flight at constant dynamic pressure (Case 1).\relax }}{127}{figure.caption.114}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The constant dynamic pressure flight path of the scramjet accelerator (Case 1).\relax }}{128}{figure.caption.115}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The third stage trajectory of the launch system, with the scramjet accelerator constrained to flight at constant dynamic pressure (Case 1).\relax }}{129}{figure.caption.116}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system (Case 2).\relax }}{131}{figure.caption.117}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system under power of the first stage rocket (Case 2).\relax }}{132}{figure.caption.118}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the scramjet accelerator (Case 2).\relax }}{134}{figure.caption.120}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Net Isp contours for the scramjet accelerator at Mach numbers from 5-9, showing flight conditions for an optimised trajectory with no constraints (Case 2) and a constant dynamic pressure trajectory (Case 1). \relax }}{135}{figure.caption.121}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces The specific impulse of the C-REST engines, plotted for inlet temperature (T1) and inlet Mach number (M1). Data points are shown in black.\relax }}{135}{figure.caption.122}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory (Case 2).\relax }}{136}{figure.caption.123}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces The sensitivity of the key design parameters of the launch system.\relax }}{151}{figure.caption.134}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Maximum payload-to-orbit trajectory path with the scramjet accelerator flying at constant dynamic pressure (Case 1). Initial heading angle \leavevmode {\color {red}91.4}$^\circ $.\relax }}{127}{figure.caption.112}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The first stage trajectory of the launch system, with the scramjet accelerator constrained to flight at constant dynamic pressure (Case 1).\relax }}{129}{figure.caption.114}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The constant dynamic pressure flight path of the scramjet accelerator (Case 1).\relax }}{131}{figure.caption.115}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The third stage trajectory of the launch system, with the scramjet accelerator constrained to flight at constant dynamic pressure (Case 1).\relax }}{132}{figure.caption.116}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system (Case 2).\relax }}{133}{figure.caption.117}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system under power of the first stage rocket (Case 2).\relax }}{134}{figure.caption.118}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the scramjet accelerator (Case 2). \leavevmode {\color {red}XXX Change no of DP in all traj figures}\relax }}{136}{figure.caption.120}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Net Isp contours for the scramjet accelerator at Mach numbers from 5-9, showing flight conditions for an optimised trajectory with no constraints (Case 2) and a constant dynamic pressure trajectory (Case 1). \relax }}{137}{figure.caption.121}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces The specific impulse of the C-REST engines, plotted for inlet temperature (T1) and inlet Mach number (M1). Data points are shown in black. \relax }}{137}{figure.caption.122}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory (Case 2).\relax }}{138}{figure.caption.123}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces The sensitivity of the key design parameters of the launch system.\relax }}{154}{figure.caption.134}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Maximum payload-to-orbit trajectory path with the inclusion of scramjet accelerator fly-back (Case 11). Initial heading angle of \leavevmode {\color {red}3.3}$^\circ $.\relax }}{156}{figure.caption.135}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The first stage of the optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{158}{figure.caption.137}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces The acceleration of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{159}{figure.caption.138}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Net $I_{SP}$ contours for the scramjet accelerator at Mach numbers between 5.5 and 8.5, showing the optimised trajectory path (Case 11). \relax }}{160}{figure.caption.139}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces The third stage trajectory of an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{161}{figure.caption.140}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces The fly-back trajectory of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory (Case 11). \relax }}{162}{figure.caption.141}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces The sensitivity of the key design parameters of the launch system, including scramjet accelerator fly-back. Red and green coloured areas indicate decreases or increases in the magnitude of sensitivity respectively, compared to the sensitivity study without scramjet accelerator fly-back in Section \ref {sec:comparisonNoReturn}.\relax }}{176}{figure.caption.153}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Maximum payload-to-orbit trajectory path with the inclusion of scramjet accelerator fly-back (Case 11). \relax }}{160}{figure.caption.135}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The first stage of the optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{162}{figure.caption.137}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces The acceleration of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{163}{figure.caption.138}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Net $I_{SP}$ contours for the scramjet accelerator at Mach numbers between 5.5 and 8.5, showing the optimised trajectory path (Case 11). \relax }}{164}{figure.caption.139}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces The third stage trajectory of an optimised maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). \relax }}{165}{figure.caption.140}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces The fly-back trajectory of the scramjet accelerator flying an optimised maximum payload-to-orbit trajectory (Case 11). \relax }}{166}{figure.caption.141}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces The sensitivity of the key design parameters of the launch system, including scramjet accelerator fly-back. Red and green coloured areas indicate decreases or increases in the magnitude of sensitivity respectively, compared to the sensitivity study without scramjet accelerator fly-back in Section \ref {sec:comparisonNoReturn}.\relax }}{181}{figure.caption.153}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces The points chosen for thermal analysis, selected for the potential of high heat loading.\relax }}{216}{figure.caption.157}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Temperature time histories on the scramjet accelerator.\relax }}{219}{figure.caption.158}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Temperature time histories on the third stage rocket with time. \relax }}{220}{figure.caption.159}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.\relax }}{225}{figure.caption.163}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces The locations chosen for thermal analysis, selected for the potential of high heat loading.\relax }}{222}{figure.caption.160}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Temperature time histories on the scramjet accelerator.\relax }}{225}{figure.caption.161}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Temperature time histories on the third stage rocket with time. \relax }}{226}{figure.caption.162}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.\relax }}{231}{figure.caption.166}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces The probability density distribution of optimised payload-to-orbit values over the range of LHC determined samples.\relax }}{235}{figure.caption.173}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Variation in temperature and density in the 1976 U.S Standard Atmosphere Model\cite {Administration1976}. Arrows indicate lowest and highest mean monthly values obtained at any location, and dashed lines indicate one-percent extremes.\relax }}{236}{figure.caption.174}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces The probability density distribution of optimised payload-to-orbit values over the range of LHC determined samples.\relax }}{241}{figure.caption.176}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Variation in temperature and density in the 1976 U.S Standard Atmosphere Model\cite {Administration1976}. Arrows indicate lowest and highest mean monthly values obtained at any location, and dashed lines indicate one-percent extremes.\relax }}{242}{figure.caption.177}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces The solution to the Brachistochrone problem, solved in GPOPS-2\cite {Rao2010}.\relax }}{240}{figure.caption.177}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces The maximum crossrange trajectory solution of the unconstrained shuttle reentry problem.\relax }}{243}{figure.caption.180}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces The control and heating solution of the unconstrained shuttle reentry problem.\relax }}{243}{figure.caption.181}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces The maximum crossrange trajectory solution of the constrained shuttle reentry problem.\relax }}{244}{figure.caption.182}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces The control and heating solution of the constrained shuttle reentry problem.\relax }}{245}{figure.caption.183}
-\contentsline {figure}{\numberline {C.6}{\ignorespaces The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). the phases are shown in each re as follows: a) first stage rocket, b) scramjet accelerator acceleration, c) scramjet accelerator fly-back and d) third stage.\relax }}{246}{figure.caption.184}
-\contentsline {figure}{\numberline {C.7}{\ignorespaces The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with scramjet accelerator fly-back (Case 11).\relax }}{247}{figure.caption.185}
-\contentsline {figure}{\numberline {C.8}{\ignorespaces The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with scramjet accelerator fly-back (Case 11). Normalised to the range of each state.\relax }}{248}{figure.caption.186}
-\contentsline {figure}{\numberline {C.9}{\ignorespaces The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with scramjet accelerator fly-back (Case 11). Normalised to the range of each state.\relax }}{249}{figure.caption.187}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces The solution to the Brachistochrone problem, solved in GPOPS-2\cite {Rao2010}.\relax }}{246}{figure.caption.180}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces The maximum crossrange trajectory solution of the unconstrained shuttle reentry problem.\relax }}{249}{figure.caption.183}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces The control and heating solution of the unconstrained shuttle reentry problem.\relax }}{249}{figure.caption.184}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces The maximum crossrange trajectory solution of the constrained shuttle reentry problem.\relax }}{250}{figure.caption.185}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces The control and heating solution of the constrained shuttle reentry problem.\relax }}{251}{figure.caption.186}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). The phases are shown as follows: a) first stage rocket, b) scramjet accelerator acceleration, c) scramjet accelerator fly-back and d) third stage.\relax }}{252}{figure.caption.187}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces The Hamiltonian time history of each phase of the maximum payload-to-orbit optimised trajectory, with scramjet accelerator fly-back (Case 11).\relax }}{253}{figure.caption.188}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces The error between the integrated dynamics of the system, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with scramjet accelerator fly-back (Case 11). Normalised to the range of each state.\relax }}{254}{figure.caption.189}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces The error between the forward simulated states, and the solution states of each phase of the maximum payload-to-orbit optimised trajectory, with scramjet accelerator fly-back (Case 11). Normalised to the range of each state.\relax }}{255}{figure.caption.190}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces The transformation to a normalised interpolation scheme.\relax }}{251}{figure.caption.188}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces CART3D flow result for the scramjet accelerator, at Mach 1.1, 6$^\circ $ angle of attack.\relax }}{252}{figure.caption.189}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces CART3D flow result for the scramjet accelerator, at Mach 3, 6$^\circ $ angle of attack.\relax }}{253}{figure.caption.190}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Adapted mesh of the scramjet accelerator at Mach 6 3$^\circ $ angle of attack.\relax }}{253}{figure.caption.191}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Adapted mesh around the scramjet accelerator and first stage vehicles, flying at Mach 2, -1$^\circ $ angle of attack.\relax }}{254}{figure.caption.192}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces The performance of the scramjet accelerator during the boost phase. Light blue indicates that the scramjet engines are turned on.\relax }}{255}{figure.caption.193}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces The transformation to a normalised interpolation scheme.\relax }}{257}{figure.caption.191}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces CART3D flow result for the scramjet accelerator, at Mach 1.1, 6$^\circ $ angle of attack.\relax }}{258}{figure.caption.192}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces CART3D flow result for the scramjet accelerator, at Mach 3, 6$^\circ $ angle of attack.\relax }}{259}{figure.caption.193}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Adapted mesh of the scramjet accelerator at Mach 6 3$^\circ $ angle of attack.\relax }}{259}{figure.caption.194}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Adapted mesh around the scramjet accelerator and first stage vehicles, flying at Mach 2, -1$^\circ $ angle of attack.\relax }}{260}{figure.caption.195}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces The performance of the scramjet accelerator during the boost phase. Light blue indicates that the scramjet engines are turned on.\relax }}{261}{figure.caption.196}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system constrained to 50kPa between Mach numbers 6 to 8, under power of the first stage rocket.\relax }}{259}{figure.caption.195}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces The ground track of a payload-to-orbit optimised trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent.\relax }}{259}{figure.caption.198}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces The payload-to-orbit optimised third stage trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent.\relax }}{260}{figure.caption.199}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the representative launch system, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{264}{figure.caption.196}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces The third stage trajectory of the launch system flying the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{265}{figure.caption.197}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces The level of population annoyance with increasing overpressure.\relax }}{266}{figure.caption.201}
-\contentsline {figure}{\numberline {E.7}{\ignorespaces The sonic boom overpressure on the ground, for the optimised trajectory path (Case 11).\relax }}{266}{figure.caption.202}
-\contentsline {figure}{\numberline {E.8}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay.\relax }}{267}{figure.caption.203}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces The first stage trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{265}{figure.caption.198}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces The ground track of a payload-to-orbit optimised trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent.\relax }}{265}{figure.caption.201}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces The payload-to-orbit optimised third stage trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent.\relax }}{266}{figure.caption.202}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces The scramjet accelerator trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{270}{figure.caption.199}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces The third stage trajectory of the launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.\relax }}{271}{figure.caption.200}
+\contentsline {figure}{\numberline {E.6}{\ignorespaces The level of population annoyance with increasing overpressure.\relax }}{272}{figure.caption.204}
+\contentsline {figure}{\numberline {E.7}{\ignorespaces The sonic boom overpressure on the ground, for the optimised trajectory path (Case 11).\relax }}{272}{figure.caption.205}
+\contentsline {figure}{\numberline {E.8}{\ignorespaces The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay.\relax }}{273}{figure.caption.206}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of representative launch system ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.\relax }}{270}{figure.caption.205}
-\contentsline {figure}{\numberline {F.2}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.\relax }}{271}{figure.caption.206}
-\contentsline {figure}{\numberline {F.3}{\ignorespaces Comparison of representative launch system ascent trajectories with variation in the drag of the scramjet accelerator.\relax }}{272}{figure.caption.207}
-\contentsline {figure}{\numberline {F.4}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the Scramjet Accelerator.\relax }}{273}{figure.caption.208}
-\contentsline {figure}{\numberline {F.5}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{274}{figure.caption.209}
-\contentsline {figure}{\numberline {F.6}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{275}{figure.caption.210}
-\contentsline {figure}{\numberline {F.7}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{276}{figure.caption.211}
-\contentsline {figure}{\numberline {F.8}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{277}{figure.caption.212}
-\contentsline {figure}{\numberline {F.9}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{278}{figure.caption.213}
-\contentsline {figure}{\numberline {F.10}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{279}{figure.caption.214}
-\contentsline {figure}{\numberline {F.11}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the third stage.\relax }}{280}{figure.caption.215}
-\contentsline {figure}{\numberline {F.12}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{281}{figure.caption.216}
-\contentsline {figure}{\numberline {F.13}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the third stage.\relax }}{282}{figure.caption.217}
-\contentsline {figure}{\numberline {F.14}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{283}{figure.caption.218}
-\contentsline {figure}{\numberline {F.15}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the drag of the third stage.\relax }}{284}{figure.caption.219}
-\contentsline {figure}{\numberline {F.16}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.\relax }}{285}{figure.caption.220}
-\contentsline {figure}{\numberline {F.17}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.\relax }}{286}{figure.caption.221}
-\contentsline {figure}{\numberline {F.18}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.\relax }}{287}{figure.caption.222}
-\contentsline {figure}{\numberline {F.19}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.\relax }}{288}{figure.caption.223}
-\contentsline {figure}{\numberline {F.20}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the drag of the scramjet accelerator.\relax }}{289}{figure.caption.224}
-\contentsline {figure}{\numberline {F.21}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the scramjet accelerator.\relax }}{290}{figure.caption.225}
-\contentsline {figure}{\numberline {F.22}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the drag of the scramjet accelerator.\relax }}{291}{figure.caption.226}
-\contentsline {figure}{\numberline {F.23}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{292}{figure.caption.227}
-\contentsline {figure}{\numberline {F.24}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{293}{figure.caption.228}
-\contentsline {figure}{\numberline {F.25}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{294}{figure.caption.229}
-\contentsline {figure}{\numberline {F.26}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{295}{figure.caption.230}
-\contentsline {figure}{\numberline {F.27}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{296}{figure.caption.231}
-\contentsline {figure}{\numberline {F.28}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the mass of the scramjet accelerator.\relax }}{297}{figure.caption.232}
-\contentsline {figure}{\numberline {F.29}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{298}{figure.caption.233}
-\contentsline {figure}{\numberline {F.30}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{299}{figure.caption.234}
-\contentsline {figure}{\numberline {F.31}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{300}{figure.caption.235}
-\contentsline {figure}{\numberline {F.32}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the third stage.\relax }}{301}{figure.caption.236}
-\contentsline {figure}{\numberline {F.33}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{302}{figure.caption.237}
-\contentsline {figure}{\numberline {F.34}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the mass of the third stage.\relax }}{303}{figure.caption.238}
-\contentsline {figure}{\numberline {F.35}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the third stage.\relax }}{304}{figure.caption.239}
-\contentsline {figure}{\numberline {F.36}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{305}{figure.caption.240}
-\contentsline {figure}{\numberline {F.37}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the specific impulse of the third stage.\relax }}{306}{figure.caption.241}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of scramjet stage ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.\relax }}{276}{figure.caption.208}
+\contentsline {figure}{\numberline {F.2}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.\relax }}{277}{figure.caption.209}
+\contentsline {figure}{\numberline {F.3}{\ignorespaces Comparison of scramjet stage ascent trajectories with variation in the drag of the scramjet accelerator.\relax }}{278}{figure.caption.210}
+\contentsline {figure}{\numberline {F.4}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the Scramjet Accelerator.\relax }}{279}{figure.caption.211}
+\contentsline {figure}{\numberline {F.5}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{280}{figure.caption.212}
+\contentsline {figure}{\numberline {F.6}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{281}{figure.caption.213}
+\contentsline {figure}{\numberline {F.7}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{282}{figure.caption.214}
+\contentsline {figure}{\numberline {F.8}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{283}{figure.caption.215}
+\contentsline {figure}{\numberline {F.9}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{284}{figure.caption.216}
+\contentsline {figure}{\numberline {F.10}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{285}{figure.caption.217}
+\contentsline {figure}{\numberline {F.11}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the third stage.\relax }}{286}{figure.caption.218}
+\contentsline {figure}{\numberline {F.12}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{287}{figure.caption.219}
+\contentsline {figure}{\numberline {F.13}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the third stage.\relax }}{288}{figure.caption.220}
+\contentsline {figure}{\numberline {F.14}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{289}{figure.caption.221}
+\contentsline {figure}{\numberline {F.15}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the drag of the third stage.\relax }}{290}{figure.caption.222}
+\contentsline {figure}{\numberline {F.16}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.\relax }}{291}{figure.caption.223}
+\contentsline {figure}{\numberline {F.17}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.\relax }}{292}{figure.caption.224}
+\contentsline {figure}{\numberline {F.18}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.\relax }}{293}{figure.caption.225}
+\contentsline {figure}{\numberline {F.19}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.\relax }}{294}{figure.caption.226}
+\contentsline {figure}{\numberline {F.20}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the drag of the scramjet accelerator.\relax }}{295}{figure.caption.227}
+\contentsline {figure}{\numberline {F.21}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the drag of the scramjet accelerator.\relax }}{296}{figure.caption.228}
+\contentsline {figure}{\numberline {F.22}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the drag of the scramjet accelerator.\relax }}{297}{figure.caption.229}
+\contentsline {figure}{\numberline {F.23}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{298}{figure.caption.230}
+\contentsline {figure}{\numberline {F.24}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{299}{figure.caption.231}
+\contentsline {figure}{\numberline {F.25}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the specific impulse of the scramjet accelerator.\relax }}{300}{figure.caption.232}
+\contentsline {figure}{\numberline {F.26}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{301}{figure.caption.233}
+\contentsline {figure}{\numberline {F.27}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the scramjet accelerator.\relax }}{302}{figure.caption.234}
+\contentsline {figure}{\numberline {F.28}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the mass of the scramjet accelerator.\relax }}{303}{figure.caption.235}
+\contentsline {figure}{\numberline {F.29}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{304}{figure.caption.236}
+\contentsline {figure}{\numberline {F.30}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{305}{figure.caption.237}
+\contentsline {figure}{\numberline {F.31}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the fuel mass of the scramjet accelerator.\relax }}{306}{figure.caption.238}
+\contentsline {figure}{\numberline {F.32}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the mass of the third stage.\relax }}{307}{figure.caption.239}
+\contentsline {figure}{\numberline {F.33}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.\relax }}{308}{figure.caption.240}
+\contentsline {figure}{\numberline {F.34}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the mass of the third stage.\relax }}{309}{figure.caption.241}
+\contentsline {figure}{\numberline {F.35}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the third stage.\relax }}{310}{figure.caption.242}
+\contentsline {figure}{\numberline {F.36}{\ignorespaces Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.\relax }}{311}{figure.caption.243}
+\contentsline {figure}{\numberline {F.37}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the specific impulse of the third stage.\relax }}{312}{figure.caption.244}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the viscous drag of the scramjet accelerator.\relax }}{309}{figure.caption.243}
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of third stage ascent trajectories with variation in the viscous drag of the scramjet accelerator.\relax }}{310}{figure.caption.244}
-\contentsline {figure}{\numberline {G.3}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the viscous drag of the scramjet accelerator.\relax }}{311}{figure.caption.245}
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Comparison of scramjet accelerator ascent trajectories with variation in the viscous drag of the scramjet accelerator.\relax }}{315}{figure.caption.246}
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of third stage ascent trajectories with variation in the viscous drag of the scramjet accelerator.\relax }}{316}{figure.caption.247}
+\contentsline {figure}{\numberline {G.3}{\ignorespaces Comparison of scramjet accelerator return trajectories with variation in the viscous drag of the scramjet accelerator.\relax }}{317}{figure.caption.248}

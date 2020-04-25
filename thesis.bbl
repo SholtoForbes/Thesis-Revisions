@@ -2997,32 +2997,6 @@
     \field{year}{2000}
   \endentry
 
-  \entry{Hellman}{report}{}
-    \name{author}{1}{}{%
-      {{hash=HBM}{%
-         family={Hellman},
-         familyi={H\bibinitperiod},
-         given={Barry\bibnamedelima Mark},
-         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HBM1}
-    \strng{fullhash}{HBM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{1\bibrangedash 18}
-    \field{title}{{Comparison of Return to Launch Site Options for a Reusable
-  Booster Stage}}
-    \list{institution}{1}{%
-      {Space Sytems Design Lab, Georgia Institute of technology}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Hellman.pdf:pdf
-    \endverb
-    \field{type}{techreport}
-    \field{year}{2005}
-  \endentry
-
   \entry{Tetlow1992}{article}{}
     \name{author}{4}{}{%
       {{hash=TMR}{%
@@ -3070,6 +3044,32 @@
     \field{year}{1992}
   \endentry
 
+  \entry{Hellman}{report}{}
+    \name{author}{1}{}{%
+      {{hash=HBM}{%
+         family={Hellman},
+         familyi={H\bibinitperiod},
+         given={Barry\bibnamedelima Mark},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HBM1}
+    \strng{fullhash}{HBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{{Comparison of Return to Launch Site Options for a Reusable
+  Booster Stage}}
+    \list{institution}{1}{%
+      {Space Sytems Design Lab, Georgia Institute of technology}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Hellman.pdf:pdf
+    \endverb
+    \field{type}{techreport}
+    \field{year}{2005}
+  \endentry
+
   \entry{NASP}{article}{}
     \name{author}{1}{}{%
       {{hash=PNAs}{%
@@ -3087,145 +3087,6 @@
     \verb{file}
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/NASP.PDF:PDF
     \endverb
-  \endentry
-
-  \entry{WCC}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=PSZ}{%
-         family={Pinckney},
-         familyi={P\bibinitperiod},
-         given={S\bibnamedelima Zane},
-         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=MJD}{%
-         family={Mcminn},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJDPSZMJD1}
-    \strng{fullhash}{SJDPSZMJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
-  Configuration Model :}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
-    \endverb
-    \field{journaltitle}{Simulation}
-    \field{year}{1990}
-  \endentry
-
-  \entry{Lu1993}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LP}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LP1}
-    \strng{fullhash}{LP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    An inverse dynamics approach for trajectory optimization is proposed. This
-  technique can be useful in many difficult trajectory optimization and control
-  problems. The application of the approach is exemplified by ascent trajectory
-  optimization for an aerospace plane. Both minimum-fuel and minimax types of
-  performance indices are considered. When rocket augmentation is available for
-  ascent, it is shown that accurate orbital insertion can be achieved through
-  the inverse control of the rocket in the presence of disturbances.%
-    }
-    \verb{doi}
-    \verb 10.2514/3.21073
-    \endverb
-    \field{issn}{0731-5090}
-    \field{number}{4}
-    \field{pages}{726\bibrangedash 732}
-    \field{title}{{Inverse dynamics approach to trajectory optimization for an
-  aerospace plane}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
-    \endverb
-    \field{volume}{16}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-    \field{year}{1993}
-  \endentry
-
-  \entry{HyperX}{article}{}
-    \name{author}{5}{}{%
-      {{hash=MCR}{%
-         family={McClinton},
-         familyi={M\bibinitperiod},
-         given={Charles\bibnamedelima R.},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=RVL}{%
-         family={Rausch},
-         familyi={R\bibinitperiod},
-         given={Vincent\bibnamedelima L.},
-         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SRJ}{%
-         family={Shaw},
-         familyi={S\bibinitperiod},
-         given={Robert\bibnamedelima J.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MU}{%
-         family={Metha},
-         familyi={M\bibinitperiod},
-         given={Unmeel},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=NC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCR+1}
-    \strng{fullhash}{MCRRVLSRJMUNC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
-  provided a major, essential demonstration of the capability of the
-  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
-  design tools and vision vehicles. This flight was a crucial step toward
-  establishing air-breathing hypersonic propulsion for application to
-  space-launch vehicles and other hypersonic systems. This paper examines the
-  significance of the flight test in advancing the state-of-the science and
-  provides a strategic vision for achieving the dream for safe, efficient and
-  reliable space access with air-breathing propulsion in the near future,
-  through use of more near term approaches. Published by Elsevier Ltd.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.actaastro.2005.03.061
-    \endverb
-    \field{issn}{00945765}
-    \field{number}{2-8}
-    \field{pages}{614\bibrangedash 622}
-    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
-    \field{volume}{57}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
-    \endverb
-    \field{journaltitle}{Acta Astronautica}
-    \field{year}{2005}
   \endentry
 
   \entry{Olds1998}{inproceedings}{}
@@ -3310,6 +3171,145 @@
     \field{labeltitlesource}{title}
     \field{title}{{Modeling and Optimization in Space Engineering}}
     \field{year}{2019}
+  \endentry
+
+  \entry{Lu1993}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An inverse dynamics approach for trajectory optimization is proposed. This
+  technique can be useful in many difficult trajectory optimization and control
+  problems. The application of the approach is exemplified by ascent trajectory
+  optimization for an aerospace plane. Both minimum-fuel and minimax types of
+  performance indices are considered. When rocket augmentation is available for
+  ascent, it is shown that accurate orbital insertion can be achieved through
+  the inverse control of the rocket in the presence of disturbances.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.21073
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{4}
+    \field{pages}{726\bibrangedash 732}
+    \field{title}{{Inverse dynamics approach to trajectory optimization for an
+  aerospace plane}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
+    \endverb
+    \field{volume}{16}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{year}{1993}
+  \endentry
+
+  \entry{WCC}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PSZ}{%
+         family={Pinckney},
+         familyi={P\bibinitperiod},
+         given={S\bibnamedelima Zane},
+         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJDPSZMJD1}
+    \strng{fullhash}{SJDPSZMJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
+  Configuration Model :}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
+    \endverb
+    \field{journaltitle}{Simulation}
+    \field{year}{1990}
+  \endentry
+
+  \entry{HyperX}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MCR}{%
+         family={McClinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RVL}{%
+         family={Rausch},
+         familyi={R\bibinitperiod},
+         given={Vincent\bibnamedelima L.},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MU}{%
+         family={Metha},
+         familyi={M\bibinitperiod},
+         given={Unmeel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCR+1}
+    \strng{fullhash}{MCRRVLSRJMUNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
+  provided a major, essential demonstration of the capability of the
+  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
+  design tools and vision vehicles. This flight was a crucial step toward
+  establishing air-breathing hypersonic propulsion for application to
+  space-launch vehicles and other hypersonic systems. This paper examines the
+  significance of the flight test in advancing the state-of-the science and
+  provides a strategic vision for achieving the dream for safe, efficient and
+  reliable space access with air-breathing propulsion in the near future,
+  through use of more near term approaches. Published by Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.actaastro.2005.03.061
+    \endverb
+    \field{issn}{00945765}
+    \field{number}{2-8}
+    \field{pages}{614\bibrangedash 622}
+    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
+    \field{volume}{57}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{2005}
   \endentry
 
   \entry{Tsuchiya2005}{article}{}
@@ -7166,6 +7166,28 @@
     \field{year}{2018}
   \endentry
 
+  \entry{rutherford}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rocket lab USA}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R3}
+    \strng{fullhash}{R3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
+    \verb{url}
+    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
+    \verb erford-engine-test-fires/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{12}
+    \field{urlmonth}{08}
+    \field{urlyear}{2019}
+  \endentry
+
   \entry{Huzel1967}{book}{}
     \name{author}{2}{}{%
       {{hash=HD}{%
@@ -7202,28 +7224,6 @@
     \verb f:pdf
     \endverb
     \field{year}{1992}
-  \endentry
-
-  \entry{rutherford}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Rocket lab USA}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R3}
-    \strng{fullhash}{R3}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
-    \verb{url}
-    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
-    \verb erford-engine-test-fires/
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{12}
-    \field{urlmonth}{08}
-    \field{urlyear}{2019}
   \endentry
 
   \entry{Marini2001}{article}{}
@@ -8009,6 +8009,102 @@
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Gilbert.pdf:pdf
     \endverb
     \field{year}{2015}
+  \endentry
+
+  \entry{Riggins2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RDW}{%
+         family={Riggins},
+         familyi={R\bibinitperiod},
+         given={David\bibnamedelima W},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Abbas},
+         familyi={A\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wainwright},
+         familyi={W\bibinitperiod},
+         given={Mitchell},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FUSA}{%
+         family={Force},
+         familyi={F\bibinitperiod},
+         given={U\bibnamedelima S\bibnamedelima Air},
+         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDW+1}
+    \strng{fullhash}{RDWAMWMFUSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.A34296
+    \endverb
+    \field{number}{3}
+    \field{title}{{Analysis of Energy Utilization for Chemical Rockets}}
+    \field{volume}{56}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Riggins2019.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Riggins2013}{article}{}
+    \name{author}{5}{}{%
+      {{hash=RDW}{%
+         family={Riggins},
+         familyi={R\bibinitperiod},
+         given={David\bibnamedelima W},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Camberos},
+         familyi={C\bibinitperiod},
+         given={Jose},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wolff},
+         familyi={W\bibinitperiod},
+         given={Mitch},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CTB}{%
+         family={Company},
+         familyi={C\bibinitperiod},
+         given={The\bibnamedelima Boeing},
+         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Beach},
+         familyi={B\bibinitperiod},
+         given={Huntington},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDW+1}
+    \strng{fullhash}{RDWCJWMCTBBH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.B34733
+    \endverb
+    \field{number}{3}
+    \field{title}{{Mission-Integrated Exergy Analysis for Hypersonic Vehicles :
+  Methodology and Application}}
+    \field{volume}{29}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Riggins.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{year}{2013}
   \endentry
 
   \entry{HypersonicGas}{book}{}
