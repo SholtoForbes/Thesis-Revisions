@@ -1,570 +1,11 @@
 % details-of-test-conditions.tex
 
-\textcolor{red}{
-	\chapter{Thermal Analysis}\label{sec:therm}
-}
-%\textcolor{red}{XXX note: layers might be at different temps, tested temps may not be exceeded.}
 
-\noindent
-The thermal protection of a hypersonic launch system is essential to its operation, and managing the aerothermal loading produced during flight is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The representative launch system in this study uses nearly the same thermal protection that is used in studies of the SPARTAN\cite{Preller2018a}. However, no detailed thermal analysis of the SPARTAN has been carried out to date, and as such, it is necessary to analyse the heat shielding of the representative launch system in order to quantify the temperatures on the surface of the vehicles during flight. This section aims to provide a preliminary analysis of the heat shielding of the representative launch vehicle, in order to determine whether it is sufficient for operation to a first approximation. In this section, the heat flux over the trajectory is modelled at various locations on the scramjet accelerator and third stage, and analysed transiently for the duration of the flight using 1-D heat conduction analysis to determine the efficacy of the heat shielding of the representative launch system. The temperatures on both sides of the external heat shield are analysed, to determine if the temperatures will exceed the maximum operable temperatures of the external heat shielding material, and also if the internal temperature will exceed the maximum operable temperature of the multilayer internal insulation. In addition, some aspects of the design of the representative launch system's thermal protection system (TPS) are investigated to provide an indication of the sensitivity of the temperatures produced during flight to critical TPS design parameters. 
 
 
-%\textcolor{red}{XXX I dont know how to express why reynolds analogy is not valid.. is it just radiating shock layer effects? Then why would it be specific to a part of the leading edge that isnt near the shock?}
 
 
-%For the body, the criteria for thermal protection system effectiveness is that the temperature at the internal surface of the thermal protection system does not cause failure in the internal structure. For the nose tips and the wing leading edges it is assumed that the thermal protection system will not be directly attached to the internal insulation and will have their own isolated structure, so that the criteria for thermal protection system success is that the temperature at these points is maintained within the operable limits of the external thermal protection system materials. 
-
-\section{Heat Transfer Calculation}
-The heat transfer coefficients on the body of the vehicle are computed using Reynolds analogy: 
-\begin{equation}
-c_h = \frac{c_f}{2s},
-\end{equation}
-where $c_f$ is the coefficient of friction and $s$ is the Reynold's analogy factor, assumed to be 1.16\cite{Ward2018}. 
-The value of $c_f$ is determined using the viscous solver VC3D, at specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are judged to be locations of potential high heat loads on the vehicles, and are examined as likely worst-case examples for thermal analysis. 
-
-\begin{figure}[!ht]
-	
-\begin{subfigure}{.5\textwidth}
-	\centering
-\includegraphics[width=0.9\linewidth]{figures/A1_uncertainty-analysis/Q_pos}
-\caption{The locations examined on the scramjet accelerator.}
-\end{subfigure}
-\begin{subfigure}{.5\textwidth}
-	\centering
-\includegraphics[width=0.9\linewidth]{figures/A1_uncertainty-analysis/Q_pos3}
-\caption{The locations examined on the third stage rocket.}
-\end{subfigure}
-\caption{The locations chosen for thermal analysis, selected for the potential of high heat loading.}
-\label{fig:Q_pos}
-\end{figure}
-
-The heat transfer at the stagnation point and leading edge of the wings, where Reynold's analogy is not valid due to large pressure gradients in the flow\cite{HypersonicGas}, is estimated using semi-empirical correlations\cite{Dirkx}. At the stagnation point, the heat transfer is given by\cite{Dirkx}:
-\begin{equation}
-q_s = k_1\rho^{N_1}V^{N_2},
-\end{equation}
-where $N_1 = 0.5$ and $N_2 = 3$, and the constant $k$ is\cite{Dirkx}:
-\begin{equation}
-k_1 = \frac{1.83 \times 10^{-4}}{\sqrt{R_n}}(1-\frac{T_w}{T_{aw}}),
-\end{equation}
-where $R_n$ is the nose radius, $T_w$ is the wall temperature, and $T_{aw}$ is the adiabatic wall temperature.
-
-The heating at the leading edge is given by a weighted average correlation between a stagnation point and a flat plate\cite{Dirkx,Tauber2008}:
-\begin{equation}
-q_{LE} = (\frac{1}{2}q_s^2 \cos^2(\Lambda) + q_{FP}^2 \sin^2(\Lambda))^{1/2},
-\end{equation}
-where $\Lambda$ is the wing sweep angle, and the heat flux for a flat plate is calculated using the correlation:
-\begin{equation}
-q_{FP} = k_2\rho^{N_3}V^{N_4},
-\end{equation}
-where $N_3 = 3.37$, $N_4 = 0.8$ for turbulent flow <2963m/s\cite{Dirkx,Tauber2008}, and
-\begin{equation}
-k_2 = 3.35 \times 10^{-4} \cos^{1.78}(\theta) \sin^{1.6}(\theta) x_T^{-1/5} (\frac{T_w}{556})^{-1/4} (1 - 1.11\frac{T_w}{T_{aw}}),
-\end{equation}
-where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, in this study the aeroheating is calculated at the start of the wing, providing a worst case scenario for the heating rate on the leading edge. 
-
-
-
-%\textcolor{red}{XXX Need to put in recognition for Alex \& Ingo for thermal stuff}
-
-\section{Transient Thermal Analysis and Boundary Conditions}
-
-
-In order to determine the temperature that the heat shielding of the representative launch system reaches during launch, the outer heat shielding layer is analysed using the one-dimensional transient heat equation. Utilising the time varying heat flux on the outside of the vehicle and the thermal boundary conditions, the evolution of the temperature profile of the vehicle skin is calculated. 
-This one-dimensional thermal analysis is performed using a modified version of the code {\it SurfaceTemp} distributed as part of the {\it htdt} code repository\cite{htdt}. {\it SurfaceTemp} uses time-marching to solve the transient heat equation, with Heat flux boundary conditions for the outside surface calculated using the instantaneous wall temperatures and the correlations described in section A1, with inside heat flux conditions set as adiabatic. For flat plate locations this results in:  
-\begin{equation}
-\frac{\delta T^2}{\delta x^2} = \frac{\rho \, c}{k} \, \frac{\delta T}{\delta t} \\
-\end{equation}
-with
-\begin{eqnarray}
-q_{outside} &=& \text{Calculated using Eqn. A1.} \\
-q_{inside} &=& 0. 
-\end{eqnarray}
-Corresponding equations in spherical and cylindrical one-dimensional coordinates are solved for the nose stagnation and leading edge regions respectively. 
-
-Setting the inner boundary conditions as adiabatic results in somewhat of a worst case scenario, because the heat load needs to be sustained using the latent heat capacity of the material. This results in the highest temperatures in the heat shielding material, which is particularly relevant to the survivability of the material. If more sophisticated cooling systems are implemented, more detailed analysis is essential as the reduced temperatures will increase heat transfer. 
-
-Table \ref{tab:thermalprops}, summarises the parameters and modelling assumptions used for the analysis points shown in Figure A1. For all cases the standard optimised trajectory with fly-back is used (Case 11, Section \ref{sec:case11}). 
-
-\afterpage{
-\begin{landscape}
-
-	\centering
-	\begin{xltabular}{\linewidth}{|X|X|X|X|X|X|X|}
-	\hline Point & Material & Thermal Conductivity & Specific Heat & Density (kg/m$^3$) & Geometry & Boundary Conditions \\ 
-	\hline Scramjet Accelerator Point \textcolor{red}{1} & Tungsten & 237  & 134 & 19250 & 100mm diameter, 40mm thick hemispherical tip & Outer: Stagnation \newline Inner: Adiabatic \\ 
-	\hline Scramjet Accelerator Point \textcolor{red}{2} & Carbon-Carbon  & 3.55 & 1829 & 1593 & 11.3mm thick, conical (modelled as cylindrical) on nose, flat on body  & Outer: Swept Leading Edge \newline Inner: Adiabatic  \\ 
-	\hline Scramjet Accelerator Points \textcolor{red}{3-6} & Carbon-Carbon  & 3.55 & 1829 & 1593 & 11.3mm thick, conical (modelled as cylindrical) on nose, flat on body  & Outer: Reynolds Analogy \newline Inner: Adiabatic  \\ 
-	\hline Third Stage Point \textcolor{red}{1} & Tungsten & 237  & 134 & 19250 & 142mm diameter, 20mm thick hemispherical tip &  Outer: Stagnation \newline Inner: Adiabatic \\ 
-	\hline Third Stage Point \textcolor{red}{2} & Carbon-Carbon & 3.55 & 1829 & 1593 & 10.8mm thick, conical (modelled as cylindrical) & Outer: Reynolds Analogy \newline Inner: Adiabatic  \\ 
-	\hline Third Stage Point \textcolor{red}{3} & Phenolic Cork & 0.07 & 2100 & 512 & 3.1mm thick, cylindrical  & Outer: Reynolds Analogy \newline Inner: Adiabatic  \\ 
-	\hline 
-\end{xltabular}
-%\caption{Material Properties and Boundary Conditions used for thermal analysis. }
-% \label{tab:thermalprops}
-
-\end{landscape}
-}
-
-The goal of this analysis is to show that the outside surface temperature does not exceed the temperature limit of the respective material and that the inside temperature is reduced sufficiently so that the external heat shielding material can interface with the internal multi-layer insulation.
-
-\section{Thermal Analysis of the Optimised Trajectory With Fly-Back}
- 
-
-\begin{figure}[!ht]
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TNoseReturn}
-		\caption{The temperature time history at the nose (\textcolor{red}{1}.}
-		
-	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TLEReturn}
-		\caption{The temperature time history at the wing leading edge (\textcolor{red}{2}).}
-		
-	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos1Return}
-		\caption{The temperature time history on the nose cone (\textcolor{red}{3}).}
-		
-	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos2Return}
-		\caption{The temperature time history on the cowl (\textcolor{red}{4}).}
-		
-	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos3Return}
-		\caption{The temperature time history on the wing (\textcolor{red}{5}).}
-		
-	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TPos4Return}
-		\caption{The temperature time history on the tail (\textcolor{red}{6}).}
-		
-	\end{subfigure}
-	\caption{Temperature time histories on the scramjet accelerator.}
-	\label{fig:TrajTemp}
-\end{figure}
-
-
- 
-To determine the effectiveness of the heat shielding of the representative launch system, a 1-D heat analysis is conducted using the method described in the preceding sections.
-This analysis gives an indication of the temperature at the specified points around the representative launch system and third stage throughout their trajectories. 
-Figures \ref{fig:TrajTemp} shows the heat responses at the specified locations on the scramjet accelerator over the ascent and return trajectories. The temperature on the outside of the scramjet accelerator raises throughout the acceleration, as expected, peaking just before third stage release. The temperature then generally decreases during descent, with smaller peaks during the 'skipping' manoeuvres, when velocity and dynamic pressure are raised.
-
-On the scramjet accelerator, the tungsten nose reaches 2015.1K, and the Carbon-Carbon wing leading edge reaches 1665.8K. 
-At the nose and leading edge it is assumed that there is no direct thermal connection to the internal insulation by the structure or heat shielding at the regions of maximum heat loads. The maximum heating in these areas are therefore assumed to be limited by the properties of the heat shielding itself. The temperatures that have been observed are within the operational regimes of the external heat shielding materials, and for the purposes of this study are considered sufficient for shielding during flight.
-
-
-\begin{figure}[!ht]
-	\begin{subfigure}{.495\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TNose3}
-		\caption{The temperature time history at the nose (\textcolor{red}{1}).}
-		
-	\end{subfigure}
-	
-	\begin{subfigure}{.495\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/T3onNose}
-		\caption{The temperature time history on the nose cone (\textcolor{red}{2}).}
-		
-	\end{subfigure}
-	
-	\begin{subfigure}{.495\textwidth}
-		\centering
-		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/T3Body}
-		\caption{The temperature time history on the cylindrical body (\textcolor{red}{3}).}
-		
-	\end{subfigure}
-	
-	\caption{Temperature time histories on the third stage rocket with time. }
-	\label{fig:TrajTemp3}
-\end{figure}
-
-On the body of the scramjet accelerator, the interior of the nose cone reaches a maximum of 1363.1K, the cowl 1384.9K, the wing 1326.4K, and the tail 1142.3K on the inner surface of the heat shielding.
-These temperatures are well within the operational regime of the heat shielding material, although the internal temperatures are at the limits of the operational regime of the internal multilayer insulation, which is nominally designed for operation in the 900-1100$^\circ$C (1173-1373K) range. These high temperatures will begin to reduce the mechanical strength of the internal insulation\cite{Kourtides}, and must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. 
-
-In addition to the high temperatures possibly approaching the limits of the multilayer insulation, the high temperatures produced will influence the material used for the internal structure. 
-In analytical studies based on experimental tests of the internal multilayer insulation at 1273K (1000$^\circ$C) approximate surface temperature, the innermost surface of the insulation has been shown to keep temperatures below 546K (273$^\circ$C)\cite{Kourtides} when the multilayer insulation with best performance (silica felt insulation\cite{Kourtides}) is used. Because the internal temperatures are above the experimentally tested temperature, the innermost surface temperature of the insulation is likely to be above 546K, and are likely to be within the range where conventional aluminium alloys begin to lose their mechanical strength. Because of this, it is likely that a high temperature aluminium alloy would be required for the internal structure, at least in the regions of the internal structure that are close to the interface with the external insulation.
-
-%XXX Note: the temp is still increasing on the nose at the end, but I think this is just due to the equations breaking dopwn.. it is pretty much exoatmospheric by that point
-Figure \ref{fig:TrajTemp3} shows the temperature response at the specified locations over the third stage rocket, while the rocket is accelerating with the heat shield attached. The temperatures on the outside of the third stage rocket increase for most of its acceleration, reducing only at the very end, when the angle of attack is reduced, and the atmosphere is extremely thin. 
-The temperatures on the third stage rocket are significantly lower than those experienced by the scramjet accelerator. The nose tip of the third stage reached a maximum inner surface temperature of 953.5K, while the nose cone and body reach maximum temperatures of 475.9K and 779.8K respectively. These relatively low temperatures indicate that the current heat shielding design is appropriate for resisting the thermal loading experienced by the third stage rocket. In fact, the heat shielding may be over-engineered, and it may be possible to reduce the mass of the heat shield by reducing the thickness of the tungsten and C-C protection on the nose, or by changing the material entirely. 
-
-
-%Max temps: T0 T1
-
-%nose:
-%1945.4358   1947.8085 
-
-%LE
-%1665.796    1695.4998 
-
-%on body:
-%Pos 1 - 1361.0127  1435.0191
-%Pos 2 - 1337.0232  1350.7068 
-%pos 3 - 1384.9077  1517.4993 
-%pos 4 - 1142.2337  1290.9281 
-
-
-
-
-
-\section{Thermal Protection Exploration}
-
-The design of the thermal protection systems of the vehicles within an airbreathing launch system is critical to the successful operation of the system. While this work assumes that the TPS is sufficient for operation, the scramjet accelerator stage is flying close to its thermal limits, while the heat loading on the third stage rocket is significantly lower. 
-As the modelling of the launch system improves, its is likely that the TPS will be redesigned and heat shielding redistributed to optimise the weight of each vehicle while accounting for heating distribution. The following sections explore the effect of changing the physical properties of the external heat shielding, applying active cooling, and the impact of imposing peak heat load limits on vehicle performance. 
-
-\subsection{Scramjet Accelerator TPS Design Exploration}
-
-The simplest method of modifying the TPS of the launch system is to modify the properties of the external heat shielding. 
-To illustrate the effects of these variations, the thickness, density, thermal conductivity and specific heat of the C-C heat shield on the scramjet engine shroud (Position \textcolor{red}{4}) are varied by $\pm$10\%. The shroud is chosen in order to measure the effect of the heat shielding properties and design at the region of highest heating with direct connection to the internal insulation. The maximum inner surface temperature recorded is shown in Table \ref{tab:tpsscramjet}. These variations indicate an inner surface temperature sensitivity of -2.7K/\% to variation in thickness, -1.9K/\% to variation in density, and 0.6 K/\% to variation in thermal conductivity when varied from the standard CCAT T-300 properties. 
-The effects of a 10\% variation in any of these properties is not particularly large. This indicates that if the maximum inner surface temperature is to be reduced in an area of high heating through modification of the heat shield, the heat shield design or properties in that area must be modified significantly to produce a significant effect. 
-
-
-%XXX  density is the same as specific heat 
-\begin{table}[ht]
-	\centering
-	\begin{tabular}{|c|c|c|c|c|c|}
-		\hline  & -10\% & -5\% & Standard & +5\% & +10\% \\ 
-		\hline Thickness & 1418.0 & 1401.4 & 1384.9  &   1375.6&   1363.6\\ 
-		\hline Density & 1408.6 &  1396.3  & 1384.9 &  1378.0&  1369.9\\ 
-		\hline Thermal Conductivity &  1380.4 & 1382.9 & 1384.9 &  1388.9& 1393.6\\ 
-		\hline 
-	\end{tabular}
-	
-	\caption{Inner surface temperatures in kelvin on the shroud of the scramjet accelerator with variations in heat shielding properties.}
-	\label{tab:tpsscramjet}
-	\end{table}
-
-If passive TPS is not sufficient, active cooling may be introduced in areas of high heat loads. This active cooling can take many forms, such as regenerative, film, and transpiration cooling\cite{Zhu2018}, all of which are currently being actively studied for applications to hypersonic vehicles. For the most critical areas of high heating on the scramjet body, regenerative cooling is assumed to be the most practical method of active cooling, and the complex effects of this cooling are approximated as a set rate of heat transfer away from the inner face that directly reduces the temperature of the inner face of the heat shielding. Inner face temperatures on the shroud with heat transfer rates from 0 to 20kW away from the inner face are compared in Table \ref{tab:regenerativecooling}. The inner face temperature shows a sensitivity of -5.2 K/kW to a constant rate of heat transfer applied to the inner face. 
-
-
-\begin{table}[ht]
-	\centering
-	\begin{tabular}{|c|c|c|c|c|c|}
-		\hline Heat Transfer Rate & Standard (0kW/m$^2$) & 5kW/m$^2$ & 10kW/m$^2$ & 15kW/m$^2$ & 20kW/m$^2$ \\ 
-		\hline Maximum T (K) & 1384.9 & 1359.3 & 1333.4 & 1307.4 & 1281.2 \\ 
-		\hline
-\end{tabular}	
-\caption{Maximum inner surface temperature with a constant rate of heat transfer away from the inner surface of the shroud.}
-\label{tab:regenerativecooling}	
-\end{table}
-
-
-
-\subsection{Heating limited Trajectory}
-
-\begin{table}[ht]
-	
-	\centering
-	\begin{tabular}{l c c c c c } 
-		\hline \textbf{Trajectory Condition}	q$_2$Lim:
-		& Standard
-		& 1700kW
-		& 1600kW
-		& 1500kW
-		& 1400kW
-		\\
-		\hline \textbf{Payload to Orbit (kg)}
-		& \textbf{\PayloadToOrbitheatLimStandard}
-		& \textbf{\PayloadToOrbitheatLimSeventeenHundred}
-		& \textbf{\PayloadToOrbitheatLimSixteenHundred}
-		& \textbf{\PayloadToOrbitheatLimFifteenHundred}
-		& \textbf{\PayloadToOrbitheatLimFourteenHundred}
-		\\
-		\textbf{Total $\eta_{exergy}$ (\%)}
-		& \textbf{\totalExergyEffheatLimStandard}
-		& \textbf{\totalExergyEffheatLimSeventeenHundred}
-		& \textbf{\totalExergyEffheatLimSixteenHundred}
-		& \textbf{\totalExergyEffheatLimFifteenHundred}
-		& \textbf{\totalExergyEffheatLimFourteenHundred}
-		\\
-		\hline 
-		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\firstExergyEffheatLimStandard}
-		& \textbf{\firstExergyEffheatLimSeventeenHundred}
-		& \textbf{\firstExergyEffheatLimSixteenHundred}
-		& \textbf{\firstExergyEffheatLimFifteenHundred}
-		& \textbf{\firstExergyEffheatLimFourteenHundred}
-		\\
-		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-		& \firstsecondSeparationAltheatLimStandard
-		& \firstsecondSeparationAltheatLimSeventeenHundred
-		& \firstsecondSeparationAltheatLimSixteenHundred
-		& \firstsecondSeparationAltheatLimFifteenHundred
-		& \firstsecondSeparationAltheatLimFourteenHundred
-		\\
-		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-		& \firstsecondSeparationvheatLimStandard
-		& \firstsecondSeparationvheatLimSeventeenHundred
-		& \firstsecondSeparationvheatLimSixteenHundred
-		& \firstsecondSeparationvheatLimFifteenHundred
-		& \firstsecondSeparationvheatLimFourteenHundred
-		\\
-		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-		& \firstsecondSeparationgammaheatLimStandard
-		& \firstsecondSeparationgammaheatLimSeventeenHundred
-		& \firstsecondSeparationgammaheatLimSixteenHundred
-		& \firstsecondSeparationgammaheatLimFifteenHundred
-		& \firstsecondSeparationgammaheatLimFourteenHundred
-		\\
-		\hline 
-		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\secondExergyEffheatLimStandard}
-		& \textbf{\secondExergyEffheatLimSeventeenHundred}
-		& \textbf{\secondExergyEffheatLimSixteenHundred}
-		& \textbf{\secondExergyEffheatLimFifteenHundred}
-		& \textbf{\secondExergyEffheatLimFourteenHundred}
-		\\
-		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-		& \secondthirdSeparationAltheatLimStandard
-		& \secondthirdSeparationAltheatLimSeventeenHundred
-		& \secondthirdSeparationAltheatLimSixteenHundred
-		& \secondthirdSeparationAltheatLimFifteenHundred
-		& \secondthirdSeparationAltheatLimFourteenHundred
-		\\
-		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-		& \secondthirdSeparationvheatLimStandard
-		& \secondthirdSeparationvheatLimSeventeenHundred
-		& \secondthirdSeparationvheatLimSixteenHundred
-		& \secondthirdSeparationvheatLimFifteenHundred
-		& \secondthirdSeparationvheatLimFourteenHundred
-		\\
-		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-		& \secondthirdSeparationgammaheatLimStandard
-		& \secondthirdSeparationgammaheatLimSeventeenHundred
-		& \secondthirdSeparationgammaheatLimSixteenHundred
-		& \secondthirdSeparationgammaheatLimFifteenHundred
-		& \secondthirdSeparationgammaheatLimFourteenHundred
-		\\
-		\textbf{2$^{nd}$ Stage Flight Time (s)}
-		& \secondFlightTimeheatLimStandard
-		& \secondFlightTimeheatLimSeventeenHundred
-		& \secondFlightTimeheatLimSixteenHundred
-		& \secondFlightTimeheatLimFifteenHundred
-		& \secondFlightTimeheatLimFourteenHundred
-		\\
-		\textbf{2$^{nd}$ Stage Distance Flown (km)}
-		& \SecondDistheatLimStandard
-		& \SecondDistheatLimSeventeenHundred
-		& \SecondDistheatLimSixteenHundred
-		& \SecondDistheatLimFifteenHundred
-		& \SecondDistheatLimFourteenHundred
-		\\
-		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
-		& \returnFuelheatLimStandard
-		& \returnFuelheatLimSeventeenHundred
-		& \returnFuelheatLimSixteenHundred
-		& \returnFuelheatLimFifteenHundred
-		& \returnFuelheatLimFourteenHundred
-		\\
-		\textbf{2$^{nd}$ Stage Return Distance (km)}
-		& \returnDistheatLimStandard
-		& \returnDistheatLimSeventeenHundred
-		& \returnDistheatLimSixteenHundred
-		& \returnDistheatLimFifteenHundred
-		& \returnDistheatLimFourteenHundred
-		\\
-		\hline 
-		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\thirddExergyEffheatLimStandard}
-		& \textbf{\thirddExergyEffheatLimSeventeenHundred}
-		& \textbf{\thirddExergyEffheatLimSixteenHundred}
-		& \textbf{\thirddExergyEffheatLimFifteenHundred}
-		& \textbf{\thirddExergyEffheatLimFourteenHundred}
-		\\
-		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-		& \thirdqOverFiveheatLimStandard
-		& \thirdqOverFiveheatLimSeventeenHundred
-		& \thirdqOverFiveheatLimSixteenHundred
-		& \thirdqOverFiveheatLimFifteenHundred
-		& \thirdqOverFiveheatLimFourteenHundred
-		\\
-		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-		& \thirdmFuelheatLimStandard
-		& \thirdmFuelheatLimSeventeenHundred
-		& \thirdmFuelheatLimSixteenHundred
-		& \thirdmFuelheatLimFifteenHundred
-		& \thirdmFuelheatLimFourteenHundred
-		\\
-		\hline 
-	\end{tabular} 
-	\caption{Scramjet stage stagnation point heating limited trajectories, optimised for maximum payload-to-orbit with stagnation point heating calculated using a cold wall approximation. }
-	\label{tab:stagLim}
-\end{table}
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/ArchivedResults/20191126T170823mode151/SecondStageComparison}
-\caption{Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.}
-\label{fig:SecondStageheatlimComparison}
-\end{figure}
-
-
-The aerothermal effects on a launch vehicle may also be reduced by limiting the aeroheating of the vehicle during flight. However, performing a 1-D heat transfer analysis within a trajectory optimisation loop is prohibitively computationally expensive. 
-As such, to investigate the effects of limiting the maximum aerothermal heating on the scramjet accelerator in a computationally efficient manner, the stagnation point heat flux is calculated in-loop using a cold wall approximation where the wall temperature is much smaller than the adiabatic wall temperature ($T_W/T_{AW} \approx 0$)\cite{Dirkx}. This calculation of the heat flux is conservative, however it is useful for applying limits to the heat loading for optimal trajectory investigation. Stagnation point heat flux limits of 1700, 1600, 1500 and 1400kW/m$^2$ are applied, based on the maximum non-limited stagnation point heat flux of 1770kW/m$^2$, calculated using a cold-wall approximation in an optimised trajectory with return (Case 11). Optimised trajectories calculated with these heat flux limits applied to the scramjet accelerator stage are presented in Table \ref{tab:stagLim}, and the trajectories of the scramjet stages are shown in Figure \ref{fig:SecondStageheatlimComparison}. 
-
-From Table \ref{tab:stagLim} and Figure \ref{fig:SecondStageheatlimComparison} it can be observed that limiting the stagnation point heat flux has a significant effect on the optimised trajectory. However, it is also evident that the effects of the 1700kW/m$^2$ and 1600kW/m$^2$ limits are small, compared to the effects of 1500kW/m$^2$ and 1400kW/m$^2$ limits. 
-This sharp change in trajectory shapes is caused by a distinct cut-off point at which the scramjet stage is no longer able to perform the manoeuvres necessary for a pull-up. When stagnation point heat flux is limited to 1700 or 1600kW/m$^2$, the scramjet stage compensates by flying a slower, higher trajectory after release from the first stage rocket, reaching maximum dynamic pressure later, and performing a larger pull-up. This flight path limits the speed of the scramjet stage and manoeuvres into a favourable position, while still performing a pull-up manoeuvre. In these cases, maximum heat flux is only reached at the start of the pull-up manoeuvre. However, when the stagnation point heating rate is limited to 1500kW/m$^2$ or 1400kW/m$^2$, the trajectory changes significantly. For these limits, the beginning of the scramjet stage trajectory conforms with the non-limited optimal flight path, but the stagnation point heating limit causes the scramjet stage to leave maximum dynamic pressure and climb in the middle of the trajectory, reducing efficiency and manoeuvrability, and removing the ability of the scramjet accelerator stage to perform a pull-up manoeuvre. This cut-off point is primarily driven by the lower limit on the speed of the scramjet accelerator during flight, which limits the start-of-trajectory manoeuvres performed to enable the pull-up in the 1700kW/m$^2$ and 1600kW/m$^2$ heating limited trajectories. 
-
-Generally, these optimised trajectory results indicate that heating limits imposed on the trajectory of the scramjet accelerator vehicle result in the vehicle flying a significantly less efficient trajectory in order to reduce heat loads.
-For small heating limitations this may be suitable, however, in general, it is important to design an efficient airbreathing vehicle to be able to tolerate the heat loads required for an optimal payload-to-orbit flight path. 
-
-
-
-\subsection{Third Stage Heat Shielding Design Exploration}\label{sec:thirdstageheat}
-
-\begin{table}[!ht]
-	\centering
-	\begin{tabular}{|c|c|c|c|c|c|}
-		\hline Property & -10\% & -5\% & Standard & +5\% & +10\% \\ 
-		\hline Thickness & 486.4 & 480.7 & 475.9 &  471.7 & 468.1  \\ 
-		\hline Density &  489.9 & 482.6 & 475.9 & 469.6 &  464.3\\ 
-		\hline Thermal Conductivity & 480.0 & 477.9 & 475.9 & 474.1 & 472.5 \\ 
-		\hline 
-	\end{tabular} 
-	
-	\caption{Inner face temperatures in kelvin with variations in third stage heat shielding properties.}
-	\label{tab:tpsthirdstage}
-\end{table}
-
-To explore the design of the third stage heat shielding, various properties of the C-C on the conical nose cone are varied by $\pm$10\%, and the temperature time histories along the optimised payload-to-orbit trajectory with return (Case 11) are calculated. The maximum temperatures observed on the inner surface at the centreline of the nose cone heat shielding are shown in Table \ref{tab:tpsthirdstage}. These variations show an inner surface temperature sensitivity of -0.9 K/\% to variation in thickness, -1.3 K/\% to variation in density, and -0.4 K/\% to variation in thermal conductivity when varied from the standard CCAT T-300 properties. These variations are relatively small, however, part of the reason for this is that the heat transfer, and the temperatures, are relatively low. 
-
-
-
-
-
-
-\subsection{The Effects of a Pull-Up on the Third Stage Heat Shield Design}\label{sec:TPSredesign}
-
-
-\begin{table}[!ht]
-	\centering
-	
-	\begin{tabular}{l c } 
-		\hline \textbf{Payload to Orbit (kg)}
-		& \textbf{\PayloadToOrbitTPSreduced}
-		\\
-		\textbf{Total $\eta_{exergy}$ (\%)}
-		& \textbf{\totalExergyEffTPSreduced}
-		\\
-		\hline 
-		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\firstExergyEffTPSreduced}
-		\\
-		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
-		& \firstsecondSeparationAltTPSreduced
-		\\
-		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
-		& \firstsecondSeparationvTPSreduced
-		\\
-		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
-		& \firstsecondSeparationgammaTPSreduced
-		\\
-		\hline 
-		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\secondExergyEffTPSreduced}
-		\\
-		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
-		& \secondthirdSeparationAltTPSreduced
-		\\
-		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
-		& \secondthirdSeparationvTPSreduced
-		\\
-		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
-		& \secondthirdSeparationgammaTPSreduced
-		\\
-		\textbf{2$^{nd}$ Stage Flight Time (s)}
-		& \secondFlightTimeTPSreduced
-		\\
-		\textbf{2$^{nd}$ Stage Distance Flown (km)}
-		& \SecondDistTPSreduced
-		\\
-		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
-		& \returnFuelTPSreduced
-		\\
-		\textbf{2$^{nd}$ Stage Return Distance (km)}
-		& \returnDistTPSreduced
-		\\
-		\hline 
-		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
-		& \textbf{\thirddExergyEffTPSreduced}
-		\\
-		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
-		& \thirdqOverFiveTPSreduced
-		\\
-		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
-		& \thirdmFuelTPSreduced
-		\\
-		\hline 
-	\end{tabular} 
-	\caption{Summary of a payload-to-orbit optimised trajectory with a 46.2kg third stage heat shield.}
-	\label{tab:heatshieldreduced}
-	
-\end{table}
-
-The third stage rocket used as part of the representational launch system in this study has been designed to be released from the end of a constant dynamic pressure trajectory\cite{Preller2018a}. This third stage rocket has a heat shield mass of 124.6kg. However, a pull-up at the end of the scramjet stage acceleration has been shown in Section \ref{sec:AscentTrajectories} to be an integral part of the payload optimal trajectory for a rocket-scramjet-rocket launch system. In addition to maximising payload, this pull-up also has significant aerothermal benefits for the third stage rocket, reducing the heat loading on the third stage significantly, and potentially allowing for the heat shielding of the third stage to be reduced. When separated from a scramjet stage constrained to constant dynamic pressure (presented in Section \ref{sec:constqReturn}), the third stage rocket exhibits temperatures of 2254.8K on the nose tip, 1511.7K on the nose cone, and 1415.8k on the body, much larger than the temperatures generated by a third stage separated after a pull-up manoeuvre, of 953.5K on the nose tip, 475.9K on the nose cone, and 779.8K on the body. It is likely that the temperatures generated after release from a constant dynamic pressure trajectory would be at the limits of the multilayer insulation, however when released after a pull-up, the temperatures are much lower. While it is desirable to have lower temperatures on the third stage, and lower temperatures may be required for payload survivability, it may also be desirable to redesign the heat shielding of the third stage specifically to take into account the conditions after release from a scramjet stage flying a pull-up. 
-
-To illustrate the effects of redesigning the heat shielding of the third stage rocket, the third stage heat shield thickness is reduced. The effects of the pull-up on the heat shield temperatures are too large to apply the linear sensitivity relationship developed in Section \ref{sec:thirdstageheat}. Because of this, the thicknesses of the nose tip, nose cone and cylindrical body are all reduced proportionally to the comparative reduction in temperature when the third stage is released after a pull-up, when compared to a third stage released without a pull-up. This resulted in a heat shield weighing 46.2kg. An optimised trajectory was produced using this heat shield mass, with results summarised in Table \ref{tab:heatshieldreduced}. The payload-to-orbit increases to \PayloadToOrbitTPSreduced, an increase of 15.3kg (11.6\%) when compared to an optimised trajectory with the full heat shield mass. This increase illustrates the potential payload-to-orbit benefits of a pull-up manoeuvre beyond simply increasing the operational performance of the launch system, by reducing the thermal loading on the third stage, and thus decreasing the necessary heat shielding mass. 
-
-%-const q with fly-back
-%
-%compare max temps to pull-up
-%
-%recuce heat shield thickness by amount corresponding to indicated trend in previous section
-%
-%re-do optimised trajectory with new heat shield mass
-%
-%
-%nose tip:
-%874 - pull-up
-%
-%2163.4634 - constq
-%
-%40\%
-%
-%nosecone:
-%439 - pull-up
-%
-%1336.6335 - const q
-%
-%32.8\%
-%
-%body:
-%
-%377 - pull-up
-%
-%1047.8395 - constq
-%
-%36\%
-%
-%
-%modified heat shield weight: 42.4kg
-%
-%simulation with reduced heat shield: 149.3kg to orbit
-
-
-\section{Summary}
-
-A 1-D heat conduction analysis has been conducted to investigate the aerothermal effects of flying a payload-to-orbit optimised trajectory on the representative launch system. Various points around the scramjet stage and third stage were investigated, either using stagnation point heat transfer correlations for the nose and leading edges, or Stanton numbers computed using Reynold's analogy for points on the body. It was found that the maximum external temperatures on the nose and leading edges of the scramjet stage were very large, at 2015.1K and 1665.8K respectively. On the body of the scramjet accelerator, the interior of the nose cone was found to reach a maximum of 1363.1K, the cowl 1384.9K, the wing 1326.4K, and the tail 1142.3K on the inner surface of the heat shielding. These temperatures are close to the limits of the multilayer internal insulation, and will produce temperatures on the inside surface of the multilayer insulation that approach the limits of typical high temperature aerospace materials. It may be necessary to introduce further methods of mitigating this heating in future designs of this launch system or other airbreathing launch vehicles. To investigate possible mitigation strategies, key properties of the heat shielding of the scramjet-powered stage were varied by $\pm$10\% indicate an inner surface temperature sensitivity of -2.7K/\% to variation in thickness, -1.9K/\% to variation in density, and 0.6 K/\% to variation in thermal conductivity 
-Next, active cooling was approximated by a constant rate of heat transfer away from the inner surface, exhibiting a sensitivity of -5.2 K/(kW/m$^2$). Lastly, heating limitations were imposed on the optimal trajectory, which had only a small effect at limits of 1700 and 1600kW/m$^2$, requiring manoeuvring of the scramjet accelerator at the beginning of the trajectory. However, heating rate limits of 1500 and 1400kW/m$^2$ produced a distinct cutoff point at which the scramjet accelerator could no longer manoeuvre sufficiently at the beginning of the trajectory, so that the trajectory shape followed closely to the dynamic pressure and heating limits, and the performance of the launch system degraded significantly. 
-
-
-The maximum temperatures of the third stage rocket were determined to be much lower, with the nose tip of the third stage reaching a maximum inner surface temperature of 953.5K, the nose cone  475.9K, and the body 779.8K on the inner surface of the heat shielding. These relatively low temperatures indicate that it may be possible to reduce the thickness of the heat shield, or change material properties if so desired. A sensitivity study was conducted on key heat shielding design parameters on the nose cone section of the heat shield, and it was found that the third stage has a nose cone inner surface temperature sensitivity of -0.9 K/\% to variations in thickness, -1.3 K/\% to variations in density, and -0.4 K/\% to variations in thermal conductivity when varied $\pm$10\% from the standard CCAT T-300 properties. 
-
-To illustrate the possible design benefits of the decreased heat loading experienced when the third stage is released from the end of a pull-up manoeuvre, the third stage heat shielding was modified. The third stage heat shielding was reduced in thickness on each segment proportionally to the reduction in temperature  caused by a pull-up manoeuvre, resulting in a heat shield weighing 46.2kg. A trajectory optimised for payload-to-orbit with this heat shield mass increased in payload mass to \PayloadToOrbitTPSreduced kg, a  +15.3 (+11.6\%) increase over a trajectory optimised with the standard heat shield mass.
-
-These results provide a preliminary heat shielding evaluation and TPS analysis of the representative launch system. Initial results indicate that the heat shielding may be assumed to be sufficient for operation, however, more detailed analysis and design is necessary. A thorough design study is necessary to determine the efficacy of a passive TPS, along with a design optimisation taking into account the trade-offs between the heat shielding, the internal multilayer insulation, and internal structure. 
-
-
-\textcolor{red}{
+\textcolor{black}{
 \chapter{Modelling Uncertainties}\label{Appendix:unc}
 }
 
@@ -572,23 +13,14 @@ These results provide a preliminary heat shielding evaluation and TPS analysis o
 
 %-take into account that the values qoted for abeynayake paper are mean, and that the max errors are higher
 \noindent
-This thesis aims to provide new insight into the operability and feasibility of multi-stage launch systems incorporating an air-breathing stage.
-No such launch systems currently exist, and several of the technologies necessary for the successful operation of their systems and subsystems are in the research stage of development.
-This means that reliable performance data is not available, and while every effort has been made to apply accurate vehicle and subsystem models, it is acknowledged that the designs of several subsystems are simplified during the modelling process. These simplifications in the design and modelling are necessary because of the preliminary nature of this analysis, however, it is acknowledged that they will have an impact on the vehicle simulations. 
-This work addresses simplifications and uncertainties in two distinct parts; the simplifications that arise during vehicle design that are investigated in Section \ref{sec:simpl}; and the uncertainties that arise from the modelling of the launch system performance that are studied in this section. 
+This thesis aims to provide new insight into the design and operation of multi-stage launch systems incorporating an air-breathing stage. This includes the design of a representative launch system in Chapter \ref{chapter:Design}, and the simulation of Trajectories in Chapters \ref{chapter:LODESTAR}, \ref{chapter:Ascent}, and \ref{chapter:Flyback}.
+Because no such launch systems currently exist, and several of the technologies necessary for the successful operation of their systems and subsystems are in the research stage of development, reliable performance data is not available. While every effort has been made to apply accurate vehicle and subsystem models, it is acknowledged that the designs of several subsystems are simplified during the modelling process. These simplifications in the design and modelling are necessary because of the preliminary nature of this analysis, however, it is acknowledged that they will have an impact on the vehicle simulations. 
+This work separates simplifications and uncertainties into two distinct parts; the simplifications that arise during vehicle design that are investigated in Section \ref{sec:simpl}; and the uncertainties that arise from the modelling of the launch system performance that are studied in this section. 
 
-The design uncertainties that arise from simplifications during the design process are investigated in Section \ref{sec:simpl}, and affect the vehicle's geometry, structure and internal layout, and mass and mass-distribution. In this work the design process is necessarily simplified, and it is assumed that by making appropriate design choices the nominal vehicle can be constructed (i.e. it is assumed that the designer can achieve the representative design by selecting appropriate materials and layouts), and that the nominal vehicle is capable of flying an appropriate launch trajectory. These simplifications account for the assumptions that lead to this nominal launch system, and in this stage of design it is primarily important for the designer to be aware of the sensitivities and trade-offs between the design choices and performance. 
+The design uncertainties that arise from simplifications during the design process are investigated in Section \ref{sec:simpl}, and affect the vehicle's geometry, structure and internal layout, and mass and mass-distribution. In this work the design process is necessarily simplified, and it is assumed that by making appropriate design choices the nominal vehicle can be constructed (i.e. it is assumed that the designer can achieve the representative design by selecting appropriate materials and layouts), and that the nominal vehicle is capable of flying an appropriate launch trajectory. These simplifications account for the assumptions that lead to this nominal launch system, and in the early stage of design addressed by this thesis it is primarily important for the designer to be aware of the sensitivities and trade-offs between the design choices and performance. 
 
-This section studies the uncertainties that arise during the modelling of the performance of the launch system, that introduce differences between the actual launch system and the ``as-designed" nominal launch system. 
-As the designer has no direct control over these uncertainties (which are both aleatory and epistemic), we need to rely on a-priori experience and a stochastic approach to quantify how the ultimate performance of the vehicle will be different to the ``as designed" simulations. The aim of this chapter is to apply a systematic approach to develop an understanding of how these uncertainties may affect the performance of the launch system. To consider this we first estimate the modelling uncertainties associated with the representative launch vehicle, and then conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise ``known" vehicle.
-
-
-
-
- 
-
-
-
+This section studies the uncertainties that arise during the modelling of the performance of the launch system, that introduce differences between the performance of an actual launch system (the launch system that will eventually be built) and the performance of the ``as-designed" nominal launch system (the launch system that is modelled in this work). 
+As the designer has no direct control over these uncertainties (which are both aleatory and epistemic), we must rely on a-priori experience and a stochastic approach to quantify how the ultimate performance of the vehicle will be different to the ``as designed" simulations. The aim of this chapter is to apply a systematic approach to develop an understanding of how these uncertainties may affect the performance of the launch system. To consider this we first estimate the modelling uncertainties associated with the representative launch vehicle, and then conduct a reduced Monte-Carlo simulation (using Latin Hypercube sampling) to characterise how the modelling errors and simplifications affect the performance of an otherwise ``known" vehicle.
 
 
 
@@ -599,11 +31,11 @@ To estimate the modelling uncertainties that are present in the simulation of th
 The calculation of an optimal flight path in a preliminary design analysis requires a large number of aerodynamic and propulsive simulations in order to cover the possible flight regimes of the launch system. In addition, the analysis of an optimal trajectory does not require high fidelity modelling techniques for useful information to be generated, because it is the general performance of the system that is of interest, rather than the specific performance of the design. Because of these factors, the launch system in this study is analysed using medium and low fidelity modelling techniques chosen for their fitness-for-purpose for optimal trajectory analysis, with an emphasis on computational efficiency as well as accuracy.
 The uncertainties in the propulsive and aerodynamic properties of the launch system modelled in this work must be estimated, as there are no flight test or experimental results available for the representative launch system analysed in this study. In this section an estimate of the aerodynamic and propulsive uncertainties associated with the trajectory optimisations in this work is provided, and a Latin hypercube analysis is carried out to determine the variance in a sample trajectory optimisation and to assess the validity of the optimal trajectory results. 
 
-\subsection{Aerodynamic Uncertainty}
+\subsection{Aerodynamic Uncertainty}\label{sec:aerouncsub}
 
 % XXX Check uncertainty vs error
 
-%\textcolor{red}{XXX I need to make sure this isnt contradicting my lit review at all, and should repeat some of this in my lit review.}
+%\textcolor{black}{XXX I need to make sure this isnt contradicting my lit review at all, and should repeat some of this in my lit review.}
 
 The aerodynamic coefficients of the representative launch system in this work are calculated using an inviscid Euler solver, Cart3D, with a flat plate correction for the viscous forces as outlined in Section \ref{sec:aero}. This is a medium fidelity method, which brings with it a significant associated uncertainty in the aerodynamics of the vehicle, particularly at subsonic and transonic conditions. Although the aerodynamics of the vehicle in this work are not experimentally validated, studies have previously compared Cart3D with experimental data for a number of geometries at various flight conditions. These experimental comparisons are utilised to estimate the uncertainty arising in the aerodynamic coefficients calculated by Cart3D. The first two of these comparison studies do not correct for viscous forces, and so underpredict drag in almost all cases in the supersonic and hypersonic regimes.
 
@@ -611,7 +43,7 @@ The aerodynamic coefficients of the representative launch system in this work ar
 
 %- 'A Low Subsonic Study of the NASA N2A Hybrid Wing-Body Using an Inviscid Euler-Adjoint Solver' has error, but its too hard to estimate the values  from this.. . sagerman gives some specific pressure results, but only some. Dalle and Chan both have some comparisons, but without numbers.  
 
-%\textcolor{red}{XXX be really careful here, the reviewer will know this paper inside out}
+%\textcolor{black}{XXX be really careful here, the reviewer will know this paper inside out}
 \subsubsection{Abeynayake \& Agon}
 Abeynayake \& Agon assess two missile geometries; a conventional missile at transonic and supersonic speeds, and a non-conventional missile that has a cruise missile profile and includes small wings at subsonic speeds\cite{Abeynayake2013a}. Abenayake and Agon estimate the magnitude of the uncertainty of Cart3D in a comparison to experimental results. The uncertainty magnitudes are estimated in relative error, normalised by the average value of data points between 0$^\circ$ and 10$^\circ$ angle of attack for drag, or the value at 10$^\circ$ angle of attack in the case of the lift and pitching moment coefficients\cite{Abeynayake2013a}. Because of this normalisation, and because experimental data is not shown\cite{Abeynayake2013a}, the mean error values reported are used in this study, and it is noted that these relative errors only give an indication of the accuracy of a specific tool\cite{Abeynayake2013a}. It is found that when compared to experimental results, Cart3D has a mean error in drag of 31.3\% for subsonic, 23.5\% for supersonic, and 18.0\% for transonic cases\cite{Abeynayake2013a} when compared to wind tunnel data for the non-conventional missile at angle of attack values between -10$^\circ$ and 10$^\circ$ in the subsonic regime, and the conventional missile at angles of attack of 0$^\circ$ to 10$^\circ$ in the transonic and supersonic regimes. The mean relative error in lift was found to be 16.5\% for subsonic, 1.3\% for supersonic, and 28.7\% for transonic cases\cite{Abeynayake2013a}, and the error in pitching moment 22.0\% for supersonic and 67.1\% for transonic cases, with no subsonic error given\cite{Abeynayake2013a}.
 In this comparison study Cart3D was not able to match experimental trends closely in the subsonic and transonic regimes. Errors of up to 80.2\% in drag are observed in the subsonic regime for an unconventional missile geometry\cite{Abeynayake2013a}, although is is likely that the drag error in Cart3D likely diminishes significantly at angle of attack values between -5$^\circ$ and 5$^\circ$. In the supersonic regime, Cart3D appears to closely match the experimental lift and drag trends, with an underprediction in the magnitude of the drag forces due to the absence of viscous forces. 
@@ -633,7 +65,7 @@ The three studies investigated here are used to assign uncertainties to the aero
 The pitching moment error in the subsonic regime is not stated in any of the works analysed, so the average relative error for all Cart3D coefficients at subsonic speeds reported by Abeynayake \& Agon\cite{Abeynayake2013a}, 23\%, is used.
 The drag uncertainty in the transonic regime is set to 21\%, to match the axial force error reported by Kiris et al.\cite{Kiris2011}, and the lift and pitching moment uncertainties in this regime are set to 28.7\% and 67.1\% respectively, to match the mean relative error reported by Abenayake \& Agon\cite{Abeynayake2013a}. 
 The lift coefficient uncertainty in the supersonic regime is set to 12\%, to match the error reported by Kiris et al.\cite{Kiris2011}, and the pitching moment uncertainty is set as 22.0\%, to match the mean relative error reported by Abeynayake \& Agon\cite{Abeynayake2013a}. 
-In the supersonic regime the ability of Cart3D to predict drag trends improves, with the lack of viscous effects causing a consistent underprediction in axial force while still matching experimental trends when uncorrected\cite{Abeynayake2013a,Ward2018,Kiris2011}. The uncertainty in drag in the supersonic regime is set to 11\%, to match the maximum error observed after viscous correction by Ward et al.\cite{Ward2018}, due to the observations that that the consistent underpredictions observed by Abeynayake \& Agon\cite{Abeynayake2013a} and Kiris et al.\cite{Kiris2011} are primarily due to a lack of viscous effects. The Euclidean correction method outlined by A. Ward was utilised to correct the inviscid aerodynamic coefficients in this study, with viscous aerodynamics provided by A. Ward for this work, warranting the use of the error value for axial force reported after viscous correction in the supersonic/hypersonic regime. 
+In the supersonic regime the ability of Cart3D to predict drag trends improves. Without viscous effects, a consistent underprediction in axial force is observed while experimental trends are still matched\cite{Abeynayake2013a,Ward2018,Kiris2011}. The uncertainty in drag in the supersonic regime is set to 11\%, to match the maximum error observed after viscous correction by Ward et al.\cite{Ward2018}. The studies of Abeynayake \& Agon\cite{Abeynayake2013a} and Kiris et al.\cite{Kiris2011} were not taken into account for this regime due to the observations that that the consistent underpredictions observed in these studies are primarily due to a lack of viscous effects. The Euclidean correction method outlined by A. Ward was utilised to correct the inviscid aerodynamic coefficients in this study, with viscous aerodynamics provided by A. Ward for this work, warranting the use of the error value for axial force reported after viscous correction in the supersonic/hypersonic regime. 
 These uncertainty values are summarised in Table \ref{tab:AppendixUncertainty}, along with the uncertainties in the propulsion systems. 
 
 
@@ -661,7 +93,7 @@ The uncertainty in the specific impulse of 1.30\% is used as the rocket engine p
 
 %Ingo says that I might need to ballpark a number, say 25\%, but that it could be much higher, even 50\% in his optinion. I will need to be very clear here. 
 
-%\textcolor{red}{XXX check with michael about the experimental corrections, is there a reference for it?}
+%\textcolor{black}{XXX check with michael about the experimental corrections, is there a reference for it?}
 %-ask michaael if crest database has experiomental results- ingo thinks that 1D ANalysis is tuned using ground test data. In this case it doesnt make much sense to work out uncertainty from ground test data.
 The C-REST engines are modelled in this work using a dataset developed using a combination of high-fidelity CFD, and quasi 1-D analysis, tuned using experimental results\cite{Jazra2010}. Estimating the error in this model in comparison to a realistic, flight capable scramjet is not feasible, due to the lack of flight test data or full-scale engine ground testing for scramjet engines in the public domain. For the purposes of this study a nominal uncertainty of 25\% is associated with the specific impulse of the scramjet engines based on the experience of the Author's colleagues and supervisors at The University of Queensland's Centre for Hypersonics. This is an estimated uncertainty margin, and it is possible that the uncertainty margin may be higher than this estimated value. However it is probable that if there is errors larger than 25\% in the performance modelling of the scramjet engines, then the design of the system may have to change considerably to be feasible. For this reason, the uncertainty margin of the scramjet specific impulse is kept at 25\% for payload-to-orbit uncertainty margin calculations, and this work is considered to be applicable to airbreathing engines with a performance close to those modelled.
 
@@ -670,7 +102,7 @@ The C-REST engines are modelled in this work using a dataset developed using a c
 % no return CI 8.7730  238.7699
 % return CI 6.8275  233.6294
 
-The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been developed in Sections \ref{sec:aerounc} \& \ref{sec:propunc}, based on studies comparing the modelling techniques used in this study to higher fidelity techniques and experimental data.  
+The uncertainty margins of the aerodynamic and propulsive data for the representative launch system analysed in this study are shown in Table \ref{tab:AppendixUncertainty}. These uncertainty margins have been developed in Sections \ref{sec:aerouncsub} \& \ref{sec:propunc}, based on studies comparing the modelling techniques used in this study to higher fidelity techniques and experimental data.  
 
 %-note that it is assumed that only the moments on the SPARTAN are affected, and not the flaps
 
@@ -701,16 +133,16 @@ The uncertainty margins of the aerodynamic and propulsive data for the represent
 		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/PDFReturn}
 		\caption{With scramjet accelerator return.}
 	\end{subfigure}
-	\caption{The probability density distribution of optimised payload-to-orbit values over the range of LHC determined samples.}
+	\caption{The probability density distribution of optimised payload-to-orbit values over the range of LHC determined samples. \textcolor{black}{Add lines for confidence interval and mean}}
 	\label{fig:PDFNoReturn}
 \end{figure}
 
-In order to quantify the effects of the modelling uncertainty in the aerodynamic and propulsion models, a Monte Carlo variation study is carried out using a Latin Hypercube Sampling technique to create a series of discrete points. A sample size of 100 runs was used, distributed using Matlab's \textsf{lhsdesign} function. Figure \ref{fig:PDFNoReturn} shows the probability density function representations of the payloads-to-orbit for optimised trajectories with, and without return, with 97.5\% confidence intervals of 8.8-238.8kg in payload-to-orbit with no scramjet accelerator return, and 6.8-233.6kg including scramjet accelerator return. 
+In order to quantify the effects on the system performance of these modelling uncertainties in the aerodynamic and propulsion models, a Monte Carlo variation study is carried out using a Latin Hypercube Sampling technique to create a series of discrete points. A sample size of 100 runs was used, distributed using Matlab's \textsf{lhsdesign} function. Figure \ref{fig:PDFNoReturn} shows the probability density function representations of the payloads-to-orbit for optimised trajectories with, and without return, with 97.5\% confidence intervals of 8.8-238.8kg in payload-to-orbit with no scramjet accelerator return, and 6.8-233.6kg including scramjet accelerator return. 
 %calculated using the percentile method which is ok for skewed data sets
 
 
 
-\section{Atmospheric Variations}
+\section{Atmospheric Variations}\label{sec:atmosunc}
 \subsection{Seasonal and Solar Cycle Based Variations}
 
 \begin{figure}[ht]
@@ -731,6 +163,12 @@ This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} 
 	\centering
 	
 	\begin{tabular}{l c c c c c} 
+		& 
+		& A
+		& B
+		& C
+		& D
+		\\
 		\hline \textbf{Trajectory Condition}
 		& Standard
 		& Min$T_{G}$ 
@@ -877,9 +315,9 @@ This study uses the U.S Standard Atmosphere 1976 model\cite{Administration1976} 
 
 
 
-The effects of seasonal and solar cycle-based atmospheric variations are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum mean monthly variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface compared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause, as indicated in Figure \ref{fig:AtmosphericVariation}. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated, for a total of four combinations of atmospheric extrema. Optimised trajectories are developed for each combination of these conditions, with properties summarised in Table \ref{tab:atmunc}. Large variations are observed in the cases where the ground and stratosphere properties are at different extremes, resulting in payload-to-orbit variations of +12.5kg when ground temperature is at a maximum and stratospheric temperature is at a minimum, and -16.8kg when ground temperature is at a minimum and stratospheric temperature is at a maximum. Maximum ground temperature (and minimum density) corresponds to minimum tropopause temperature (and maximum density). This causes the scramjet stage to be able to fly higher, and burn fuel faster at higher altitude. Minimum stratopause temperature (and maximum density) causes the third stage rocket to pull up more rapidly, and spend less time in the atmosphere. The combination of these factors results in a more efficient overall trajectory for the maximum ground temperature, minimum stratosphere temperature case, while the opposite is true for the minimum ground temperature, maximum stratosphere temperature case. For the other two cases, where tropopause density and stratopause density are at alternating extrema (and ground and stratospheric conditions are at the same extrema), these effects counteract one another, and result in little performance variation. A payload-to-orbit variation of only +0.6kg is observed when both temperatures are at a minimum, and -3.8kg when both temperatures are at a maximum.
+The effects of seasonal and solar cycle-based atmospheric variations are quantified by modelling the 1976 U.S Standard Atmosphere model to take into account the maximum and minimum mean monthly variations shown in Figure \ref{fig:AtmosphericVariation}. It is assumed that the conditions at the surface compared to the tropopause vary inversely, as well as the conditions of the stratopause compared to the mesopause, as indicated in Figure \ref{fig:AtmosphericVariation}. The conditions in the stratosphere are assumed to vary linearly between the conditions at the tropopause and stratopause. It is also assumed that density varies inversely to temperature, so that maximum temperature conditions correspond to minimum density. As such, there are two conditions at ground level, and two conditions at stratopause to be investigated, for a total of four combinations of atmospheric extrema. Optimised trajectories are developed for each combination of these conditions, with properties summarised in Table \ref{tab:atmunc}. Large variations are observed in the cases where the ground and stratosphere properties are at different extremes (B \& C), resulting in payload-to-orbit variations of +12.5kg when ground temperature is at a maximum and stratospheric temperature is at a minimum (B), and -16.8kg when ground temperature is at a minimum and stratospheric temperature is at a maximum (C). Maximum ground temperature (and minimum density) corresponds to minimum tropopause temperature (and maximum density). This causes the scramjet stage to be able to fly higher, and burn fuel faster at higher altitude. Minimum stratopause temperature (and maximum density) causes the third stage rocket to pull up more rapidly, and spend less time in the atmosphere. The combination of these factors results in a more efficient overall trajectory for the maximum ground temperature, minimum stratosphere temperature case (B), while the opposite is true for the minimum ground temperature, maximum stratosphere temperature case (C). For the other two cases (A \& D), where tropopause density and stratopause density are at alternating extrema (and ground and stratospheric conditions are at the same extrema), these effects counteract one another, and result in little performance variation. A payload-to-orbit variation of only +0.6kg is observed when both temperatures are at a minimum (A), and -3.8kg when both temperatures are at a maximum (D).
 
-The deviations in payload mass-to-orbit due to seasonal and solar cycle atmospheric variations are considered 'on-the-day' variations, that must be considered in tandem with launch location, direction and date, as well as wind and weather. For the purposes of this study, these atmospheric variations are not included in the uncertainty magnitude of the calculated payload-to-orbit, but are considered variables that must be taken into account when planning a launch mission. 
+The deviations in payload mass-to-orbit due to seasonal and solar cycle atmospheric variations are considered `on-the-day' variations, that must be considered in tandem with launch location, direction and date, as well as wind and weather. For the purposes of this study, these atmospheric variations are not included in the uncertainty magnitude of the calculated payload-to-orbit, but are considered variables that must be taken into account when planning a launch mission. 
 
 \subsection{Localised Variability}
 % Wuilberq covers this well
@@ -945,18 +383,16 @@ The GPOPS-2 solution to the Brachistochrone problem is shown in Figure \ref{fig:
 
 
 
-\textcolor{red}{\section{Example - Space Shuttle Reentry}}
-%\textcolor{red}{XXX I havent been able to find any good trajectories for comparison, that offer me the ability to recreate them..}
-%\textcolor{red}{XXX this is not quite the same as the GPOPS example, more similar to my dynamics}
-
+\textcolor{black}{\section{Example - Space Shuttle Reentry}}
+%\textcolor{black}{XXX this is not quite the same as the GPOPS example, more similar to my dynamics}
+\noindent
 This section describes an optimised shuttle reentry trajectory problem, taken from the textbook 'Practical Methods for Optimal Control and Estimation Using Nonlinear Programming' by Betts\cite{Betts2009}, which has been simulated in GPOPS-2 to illustrate the capabilities of GPOPS-2 when applied to a complex aerodynamic problem of an existing vehicle. The optimisation of the space shuttle reentry is relevant due to the large flight regime and long time period being simulated, which leads to a complex, extremely sensitive optimal control problem\cite{Betts2009}, similar in a simplified manner to the problem being solved in this work. The shuttle reentry problem is highly nonlinear and intractable to simple optimisation methods\cite{Betts2009}, making it suitable for illustrating the robustness of GPOPS-2 for aerospace problems of this type. 
-The space shuttle reentry problem aims to maximise crossrange during reentry, with two cases; unconstrained, and limited by a simple heating rate constraint. The example in this section uses the vehicle model exactly as defined by Betts\cite{Betts2009} for comparison purposes, however the problem is formulated in a simplified version of the coordinate system that is used in the rest of this work. 
+The space shuttle reentry problem aims to maximise crossrange during reentry, with two cases; unconstrained, and limited by a simple heating rate constraint. The example in this section uses the vehicle model exactly as defined by Betts\cite{Betts2009} for comparison purposes, however the problem is formulated in a simplified version of the coordinate system that is used in the rest of the currentwork. 
 
 
 \subsection{Problem Formulation}
 
 The dynamics of the space shuttle are defined exactly similarly to those in the problem designed by Betts\cite{Betts2009}, using a simplified model that neglects the rotation of the Earth and the tangential component of gravity:
-
 \begin{equation}
 \dot{r} = v \sin \gamma,
 \end{equation}
@@ -977,7 +413,6 @@ The dynamics of the space shuttle are defined exactly similarly to those in the 
 \begin{equation}
 \dot{\zeta} = \frac{L  \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta.
 \end{equation}
-
 The aerodynamics of the vehicle are modelled using simple correlations, where $C_L = −0.20704 + 0.029244\alpha$, and $C_D = 0.07854 -0.61592\times10^{-2}\alpha^2 + 0.621408\times10^{-3}\alpha^3$. The density is modelled as exponentially decaying, $\rho = 1.2255708354e^{-h/7254}$, and the gravity is modelled by an inverse square law, $g = \frac{\mu}{r^2}$.
 The space shuttle initial conditions are set as follows\cite{Betts2009}, to simulate the entry of the shuttle into the upper atmosphere:
 \begin{table}[H]
@@ -993,21 +428,15 @@ and the end conditions are set as follows\cite{Betts2009}, to match the terminal
 	\centering
 	\begin{tabular}{ c c c}
 		   $h_f$ =  24384m, &  $v_f$ =762m/s, & $\gamma_f$ =  -5$^\circ$.\\ 
-		
-		
 	\end{tabular} 
 \end{table}
-
 The problem is set to maximise crossrange from the initial point, which in this case is equivalent to maximising latitude:
-
 \begin{equation}
 J = -\phi_f.
 \end{equation}
 
 \subsection{Unconstrained Result}
 The shuttle reentry crossrange maximisation problem is optimised in GPOPS-2, with result time histories shown in Figures \ref{fig:SpaceShuttleNoq1} and \ref{fig:SpaceShuttleNoq2}. The shuttle follows a 'skipping' trajectory, with an initially large bank angle that changes the heading of the vehicle rapidly in the early stages of reentry. The skips serve to maximise the range of the space shuttle's flight, and they are controlled by the angle of attack of the vehicle. The solution computed in GPOPS-2 matches the result computed by Betts\cite{Betts2009}, with the shape of the trajectories being close to identical. A maximum crossrange of 34.18$^\circ$ is achieved, a difference of 0.11\% when compared to the solution computed by Betts\cite{Betts2009}. This result is indicative of the ability of GPOPS-2 to compute highly sensitive optimal control problems for aerospace vehicles. 
-
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleNoq1}
@@ -1021,12 +450,10 @@ The shuttle reentry crossrange maximisation problem is optimised in GPOPS-2, wit
 \label{fig:SpaceShuttleNoq2}
 \end{figure}
 
-
 \subsection{Heating Rate Limited Result}
-%\textcolor{red}{XXX Need to find a way to denote heating rate thats not q}
+%\textcolor{black}{XXX Need to find a way to denote heating rate thats not q}
 The heating rate of the space shuttle is limited during descent, to illustrate the ability of GPOPS-2 to deal with complex inequality constraints. The leading edge heating is approximated using a simplified empirical model, so that $q = q_aq_r$, where $q_r = 17700\sqrt{\rho}(0.0001v)^{3.07}$ and $q_a = 1.0672181 -0.19213774\times10^{-1}
-\alpha + 0.21286289\times10^{-3}\alpha^2 -0.10117249\times10^{-5}\alpha^3$. The trajectory is successfully optimised in the presence of this complex inequality, once again showing a near identical trajectory to the optimised solution calculated by Betts\cite{Betts2009}. The maximum crossrange is reduced to 30.70$^\circ$, a difference of 0.25\% to the solution calculated by Betts\cite{Betts2009}.
-
+\alpha + 0.21286289\times10^{-3}\alpha^2 -0.10117249\times10^{-5}\alpha^3$. The trajectory is successfully optimised in the presence of this complex inequality, and is shown in Figures \ref{fig:SpaceShuttleq1} and \ref{fig:SpaceShuttleq2}. Once again these results show a near identical trajectory to the optimised solution calculated by Betts\cite{Betts2009}. The maximum crossrange is reduced to 30.70$^\circ$, a difference of 0.25\% to the solution calculated by Betts\cite{Betts2009}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/A1_uncertainty-analysis/SpaceShuttleq1}
@@ -1040,27 +467,24 @@ The heating rate of the space shuttle is limited during descent, to illustrate t
 \label{fig:SpaceShuttleq2}
 \end{figure}
 
-
-
 \section{Optimised Trajectory Analysis}
 
 This section presents an example of the convergence and verification of a trajectory optimised using GPOPS-2, within LODESTAR. The convergence and verification of a maximum payload-to-orbit trajectory solution, with scramjet accelerator fly-back (Case 11) is shown. 
 
 \subsection{Mesh History}
-
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{../LODESTAR-revisions/Results/mode11/MeshHistory}
 	\caption{The mesh history of each phase of the optimised, maximum payload-to-orbit trajectory with scramjet accelerator fly-back (Case 11). The phases are shown as follows: a) first stage rocket, b) scramjet accelerator acceleration, c) scramjet accelerator fly-back and d) third stage.}
 	\label{fig:MeshHistory}
 \end{figure}
-The mesh history of the optimal trajectory solution is shown in Figure \ref{fig:MeshHistory}. The mesh is updated by GPOPS-2 in each iteration of the optimal solution. It can be observed that the meshes of the first and third stage rockets contain significantly less node points at the final iteration than the meshes of the scramjet accelerator's acceleration and return. This is due to the relatively simple dynamics and shorter flight time of the first and third stages. The first stage shows a cluster of nodes at the beginning of its trajectory, in the subsonic, transonic and low Mach regimes. In this region, the aerodynamics are changing rapidly, and the nodes are clustered to accurately capture the dynamic behaviour of the vehicle. After transition occurs to supersonic flight, the aerodynamics and engine performance of the vehicle change more slowly, and the nodes become more widely spaced. In contrast, the acceleration of the scramjet accelerator shows significant node density throughout. The operation of the scramjet accelerator is complex, as the dynamics of the vehicle and the performance of the scramjet engines vary significantly, even during relatively level flight. For this reason, the nodes of the return flight show even greater density. The trajectory conditions change significantly as the scramjet accelerator performs skipping manoeuvres, and transitions through the various return phases, necessitating high node density to capture the vehicle dynamics, particularly between powered and unpowered flight. The trajectories of the scramjet accelerator also last for a significantly longer time than the rocket trajectories, requiring more total nodes to accurately capture the vehicle dynamics. The third stage shows the least nodes at the final mesh iteration, as the dynamics of the third stage are relatively simple. Some node  clustering is observed in the first part of the trajectory, where the atmospheric density is still significant. 
+The mesh history of the optimal trajectory solution is shown in Figure \ref{fig:MeshHistory}. The mesh is updated by GPOPS-2 in each iteration of the optimal solution. It can be observed that the meshes of the first and third stage rockets contain significantly less node points at the final iteration than the meshes of the scramjet accelerator's acceleration and return. This is due to the relatively simple dynamics and shorter flight time of the first and third stages. The first stage shows a cluster of nodes at the beginning of its trajectory, in the subsonic, transonic and low Mach regimes. In this region, the aerodynamics are changing rapidly, and the nodes are clustered to accurately capture the dynamic behaviour of the vehicle. After transition occurs to supersonic flight, the aerodynamics and engine performance of the vehicle change more slowly, and the nodes become more widely spaced. In contrast, the acceleration of the scramjet accelerator shows significant node density throughout. The operation of the scramjet accelerator is complex, as the dynamics of the vehicle and the performance of the scramjet engines vary significantly, even during relatively level flight. For this reason, the nodes of the return flight show even greater density. The trajectory conditions change significantly as the scramjet accelerator performs skipping manoeuvres, and transitions through the various return phases, necessitating high node density to capture the vehicle dynamics, particularly between powered and unpowered flight. The trajectories of the scramjet accelerator also last for a significantly longer time than the rocket trajectories, requiring more total nodes to accurately capture the vehicle dynamics. The third stage shows the least nodes at the final mesh iteration, as the dynamics of the third stage are relatively simple. Some node clustering is observed towards the end of the trajectory, as it approaches heat shield release. 
 
 
 
 \subsection{Verification}
-%\textcolor{red}{XXX  this is the section that descibes the error in 'timestep' as requested by reviewer, though there are multiple other factors. 'A Comparison of Accuracy and Computational E ciency of Three Pseudospectral Methods' also uses matlabs ODE45 for error comparison}.
-
+%\textcolor{black}{XXX  this is the section that descibes the error in 'timestep' as requested by reviewer, though there are multiple other factors. 'A Comparison of Accuracy and Computational E ciency of Three Pseudospectral Methods' also uses matlabs ODE45 for error comparison}.
+\noindent
 After a trajectory has been calculated, it must be verified to ensure that the optimal control solver has converged correctly. Details on this verification are provided in Section \ref{sec:verification}. Figure \ref{fig:HamiltonianStandard} shows the Hamiltonian time history for the optimised trajectory solution of Case 11. For an optimal solution to be found, the Hamiltonian should be equal to 0 at all points over every phase. In a practical solution, a Hamiltonian close to 0 is acceptable, which is observable over all phases in the optimised solution. The Hamiltonian is close to 0 at all points of the trajectory, indicating that an optimal solution has been found. 
 \begin{figure}[ht]
 	\centering
@@ -1081,7 +505,7 @@ It can be observed that all errors in the dynamic constraints are very small. Th
 	\label{fig:VerificationStandard}
 \end{figure}
 
-The final verification step is a forward simulation of each phase. This forward simulation compares the solution state with a simulation which is forward integrated using only the controls of each stage. This is the most stringent method of checking the validity of the solution dynamics. However, it is expected that this verification will have significantly higher errors than the check which verifies the dynamics of each state independently, as the interdependencies of each state come into play, and small errors are compounded. Figure \ref{fig:ForwardErrorStandard} shows the error between the forward simulation and the solution states. As described in Section \ref{sec:verification}, the forward simulation of the return flight is separated into three segments, at 1/6th and 1/3rd of the flight time. The errors in the forward simulation of each stage are observed to be acceptably small, significantly under 1\% in all cases, and it is evident that compounding errors are the cause of the most extreme deviations. 
+The final verification step is a forward simulation of each phase. This forward simulation compares the solution state with a simulation which is forward integrated using only the controls of each stage. This is the most stringent method of checking the validity of the solution dynamics. However, it is expected that this verification will have significantly higher errors than the check which verifies the dynamics of each state independently, as the interdependencies of each state come into play, and small errors are compounded. Figure \ref{fig:ForwardErrorStandard} shows the error between the forward simulation (simulates using Matlab's \textit{ODE45} integrator) and the solution states. As described in Section \ref{sec:verification}, the forward simulation of the return flight is separated into three segments, at 1/6th and 1/3rd of the flight time. The errors in the forward simulation of each stage are observed to be acceptably small, significantly under 1\% in all cases, and it is evident that compounding errors are the cause of the most extreme deviations. 
 
 \begin{figure}[ht]
 	\centering
@@ -1102,19 +526,12 @@ The final verification step is a forward simulation of each phase. This forward 
 	\label{fig:interp}
 \end{figure}
 This section describes the interpolation scheme used for the C-RESTM10 database to determine specific impulse.
-The C-RESTM10 engine database consists of a set of engine conditions, including specific impulse, ordered by the inlet Mach number and temperature. This data set must be interpolated, to calculate the performance of the engine at each flight condition. However, no inlet Mach number and temperature values are repeated between any of the C-RESTM10 data points. This makes for a scattered data set which complicates the process of interpolating for specific impulse. It was observed that when interpolating for specific impulse, a scattered interpolation produces particularly poor results, and that fitting splines to the data set is the only way to produce an appropriate interpolation scheme. However, even when splines were fit, and the general trends of the specific impulse were matched, minuscule oscillations were still present in the interpolated values. These oscillations do not significantly affect a forward simulation, however, when using the vehicle model as part of an optimal control calculation, they can affect the convergence process. Consequently, it was necessary to craft a bespoke interpolation scheme in order to accurately interpolate the specific impulse of the vehicle. 
+The C-RESTM10 engine database consists of a set of engine conditions, including specific impulse, ordered by the inlet Mach number and temperature. This data set must be interpolated, to calculate the performance of the engine at each flight condition. However, no inlet Mach number and temperature values are repeated between any of the C-RESTM10 data points. This makes for a scattered data set which complicates the process of interpolating for specific impulse. It was observed that when interpolating for specific impulse, a scattered interpolation produces particularly poor results, and that fitting splines to the data set is the only way to produce an appropriate interpolation scheme. However, even when splines were fitted, and the general trends of the specific impulse were matched, minuscule oscillations were still present in the interpolated values. These oscillations do not significantly affect a forward simulation, however, when using the vehicle model as part of an optimal control calculation, they can affect the convergence process. Consequently, it was necessary to craft a bespoke interpolation scheme in order to accurately interpolate the specific impulse of the vehicle and to obtain smooth relationships for the scramjet accelerator's performance properties. 
 
 This interpolation begins by designating a new coordinate system, normalised to [0 1], running from data point with the lowest inlet temperature [0,0], to the data point with the highest inlet temperature [1,1]. Each data point is then given a set of normalised coordinates, and a cubic spline is fit to this set of normalised points using MATLAB's \textsf{griddedInterpolant} function. The normalised, orderd, data set ensures that this cubic spline is smooth, with no oscillations present. In order to interpolate at a specific location, each data point bounding the interpolation region is set as the corner of a square of data points in normalised coordinates. This is illustrated in Figure \ref{fig:interp}. The distance to each of these bounding data points is calculated, and the location to be interpolated is assigned a set of normalised coordinates. This set of normalised coordinates is used to interpolate for specific impulse. 
 
 This process is accurate, but computationally time consuming, and would increase the computation time of the optimisation process significantly if implemented directly within the vehicle model.
  In order to expedite the interpolation process, interpolations are performed for the specific impulse for every combination of inlet Mach number and temperature present in the C-RESM10 database. This creates a grid of interpolated data points, which includes all of the data points present in the C-RESTM10 database. This grid of interpolated specific impulse values is then used as a new data set, which is now in \textsf{meshgrid} form, by which the specific impulse is interpolated. A bivariate spline is fitted to this grid of data points, using MATLAB's \textsf{griddedInterpolant} function, which is accessed by the vehicle model to determine specific impulse during flight.  
-
-
-
-
-
-
-
 \section{Scramjet Accelerator Flow Results}
 \begin{figure}[ht]
 	\centering
@@ -1128,10 +545,9 @@ This process is accurate, but computationally time consuming, and would increase
 	\caption{CART3D flow result for the scramjet accelerator, at Mach 3, 6$^\circ$ angle of attack.}
 	\label{fig:M3AoA6}
 \end{figure}
+\noindent
 This section shows additional flow results for the scramjet accelerator, calculated using Cart3D.
 Figures \ref{fig:M1} and \ref{fig:M3AoA6} show flow results for the scramjet accelerator, at Mach numbers of 1.1 and 3 respectively. It can be observed that at Mach 1.1, the bow shock is not significant, and the shock structure that is evident at higher speeds has not yet formed. At Mach 3, the unstarted C-REST engines are evident, causing significant amounts of the air entering the inlet to be expelled. Shock-shock interaction structures are evident on the cowl of the engines, causing areas of localised high pressure.
-
-
 \FloatBarrier
 \section{Cart3D Mesh}
 \begin{figure}[ht]
@@ -1149,34 +565,22 @@ Figures \ref{fig:M1} and \ref{fig:M3AoA6} show flow results for the scramjet acc
 \end{figure}
 This section illustrates the converged meshes used by Cart3D.
 Figures \ref{fig:M3AoA6GRID} and \ref{fig:CARTmesh} show adapted meshes for Cart3D solutions of the scramjet accelerator, and the scramjet accelerator and first stage. These meshes have been generated adaptively by Cart3D during the solution process. It can be observed that the mesh clusters around the vehicle, particularly in regions where strong shocks are present, where the mesh clusters at the shock front. 
-
-
-
 \FloatBarrier
 \section{Performance of the Scramjet Accelerator During Fly-Back}
-
 Figure \ref{fig:returnIspStandard} shows the performance of the scramjet accelerator during the boost phase, described in Section \ref{sec:boost}. 
-
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{../LODESTAR-revisions/Results/mode11/returnIspStandard}
-	\caption{The performance of the scramjet accelerator during the boost phase. Light blue indicates that the scramjet engines are turned on.}
+	\caption{The performance of the scramjet accelerator during the boost phase. Light blue indicates that the scramjet engines are turned on. \textcolor{red}{XXXX Update this picture, need to zoom and label}}
 	\label{fig:returnIspStandard}
 \end{figure}
 
-
 		\chapter{Alternate Trajectory Cases}
 		
-		\section{Trajectory With Variation in Return Drag}
-		I should maybe do a variation of just the return drag - "the performance of the launch system may be significantly different on the ascent and return trajectories (in addition to the engine flowpaths)"
-		
-		\section{Maximum Payload-To-Orbit Trajectory With Dynamic Pressure Constraint}\label{sec:Appendix_qconst}
-	
+		\section{Case 21: Maximum Payload-To-Orbit Trajectory With Suppressed Mid-Trajectory Skip}\label{sec:Appendix_qconst}
 		The maximum payload-to-orbit trajectory of the launch system with no scramjet accelerator fly-back (Case 2) was found to involve a significant altitude raising manoeuvre in the middle of the acceleration trajectory of the scramjet accelerator. Discerning the benefits of this altitude raising manoeuvre proved complex, requiring a trajectory to be calculated in which the altitude raising manoeuvre is prevented from occurring. This section describes an optimised trajectory in which the middle section of the scramjet accelerator's acceleration is constrained to flight at maximum dynamic pressure. 
-		
 		 This trajectory was optimised for maximum payload-to-orbit, with a 50kPa dynamic constraint between Mach numbers of 6 and 8, the region in which the altitude raising manoeuvre was observed to occur. This constraint successfully removed the altitude raising manoeuvre from the maximum payload-to-orbit optimised trajectory, allowing for a comparison to be made to quantify the benefits of the altitude raising manoeuvre. This comparison is made in Section \ref{sec:optimisednoreturn}. Figures \ref{fig:FirstStageqConstrained68},  \ref{fig:SecondStageqConstrained68} and \ref{fig:ThirdStageqConstrained68} show the maximum payload-to-orbit trajectory constrained to 50kPa between Mach numbers 6 to 8, and Table \ref{tab:constrained68} details key parameters of the trajectory. 
-		
-	\begin{table}[ht]% updated 12/1/20
+	\begin{table}[!ht]% updated 12/1/20
 	\centering
 \begin{tabular}{l c } 
 	\hline \textbf{Trajectory Condition}
@@ -1233,56 +637,44 @@ Figure \ref{fig:returnIspStandard} shows the performance of the scramjet acceler
 	\\
 	\hline 
 \end{tabular} 
-\caption{A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
+\caption{A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8. (Case 21)}
 \label{tab:constrained68}
-
 	\end{table}
-		
-\begin{figure}[th]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/FirstStageStandard}
-\caption{The first stage trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
+\caption{The first stage trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8 (Case 21).}
 \label{fig:FirstStageqConstrained68}
 \end{figure}
-		
-\begin{figure}[th]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/SecondStageStandard}
-\caption{The scramjet accelerator trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
+\caption{The scramjet accelerator trajectory of the representative launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8 (Case 21).}
 \label{fig:SecondStageqConstrained68}
 \end{figure}
-
-\begin{figure}[th]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/results/mode10-qconstrained/ThirdStageStandard}
-\caption{The third stage trajectory of the launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8.}
+\caption{The third stage trajectory of the launch system flying a maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8 (Case 21).}
 \label{fig:ThirdStageqConstrained68}
 \end{figure}
 
-
-
-
-
-
-\section{Constant Dynamic Pressure Trajectory with Fly-Back}\label{sec:constqReturn}
-A payload-to-orbit optimised trajectory is calculated including scramjet accelerator return, and with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent. This is calculated for the third stage heating comparison performed in Section \ref{sec:TPSredesign}.
-
-\begin{figure}[H]
+\FloatBarrier
+\section{Case 22: Constant Dynamic Pressure Trajectory with Fly-Back}\label{sec:constqReturn}
+In a variation of Case 11, a payload-to-orbit optimised trajectory is calculated including scramjet accelerator return, and with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent. This is calculated for the third stage heating comparison performed in Section \ref{sec:TPSredesign}. It is interesting to note that the scramjet accelerator performs a pull-up after separation of the third stage rocket, in order to begin skipping manoeuvres to maximise the efficiency of the return flight. This illustrates the benefits of the pull-up manoeuvre for the return flight, reinforcing the importance of taking into account all phases of flight furing trajectory optimisation. 
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode901/GroundTrackConstq}
 \caption{The ground track of a payload-to-orbit optimised trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent.}
 \label{fig:GroundTrackConstqReturn}
 \end{figure}
-
-\begin{figure}[H]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode901/ThirdStageConstq}
-\caption{The payload-to-orbit optimised third stage trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent.}
+\caption{The payload-to-orbit optimised third stage trajectory including scramjet accelerator return flight, with the scramjet accelerator constrained to 50kPa dynamic pressure during ascent (Case 22).}
 \label{fig:ThirdStageConstqReturn}
 \end{figure}
-
-
-\begin{table}[H]
+\begin{table}[!h]
 	\centering
 \begin{tabular}{l c } 
 	\hline \textbf{Trajectory Condition}
@@ -1344,51 +736,39 @@ A payload-to-orbit optimised trajectory is calculated including scramjet acceler
 	\\
 	\hline 
 \end{tabular} 
+\caption{Summary of the key results from a maximum payload-to-orbit trajectory with the scramjet accelerator constrained to 50kPa, including fly-back (Case 22).}
 \end{table}
-
+\FloatBarrier
 \section{Sonic Boom Ground Effects}
-
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/6_FlyBack/OverPressureResponse}
 	\caption{The level of population annoyance with increasing overpressure.}
 	\label{fig:OverPressureResponse}
 \end{figure}
-
-The flight of a hypersonic vehicle has the potential to create significant overpressures on the ground due to sonic booms. This section describes the effects of the sonic booms generated by the representative launch system. 
-
-Even when a hypersonic vehicle is flying at high altitudes, the overpressures on the ground may still be large enough to have detrimental effects on any populated areas being overflown. The overpressure from sonic booms can cause significant annoyance to the populace, or in more extreme cases, long term damage to building structures or peoples health. 
-When the representative launch system is launched to a sun synchronous orbit from the Equatorial Launch Australia launch site, it flies over a significant portion of Papua. Fortunately, Papua is sparsely populated, and the number of towns flown over by the representative launch system will be low. However the effects on these population centres may still be significant. In order to assess the impact of the representative launch system's flight, the magnitude of the overpressure from its sonic booms must be calculated. 
-\begin{figure}[ht]
+\noindent
+The flight of a hypersonic vehicle has the potential to create significant overpressures on the ground due to sonic booms. Even when a hypersonic vehicle is flying at high altitudes, the overpressures on the ground may still be large enough to have detrimental effects on any populated areas being overflown. The overpressure from sonic booms can cause significant annoyance to the populace, or in more extreme cases, long term damage to building structures or peoples health. 
+When the representative launch system is launched to a sun synchronous orbit from the Equatorial Launch Australia launch site, it flies over a significant portion of Papua. Although Papua is sparsely populated, and the number of towns flown over by the representative launch system will be low, there may be significant risks to any population that is overflown due to sonic booms. In order to assess the possible impact of the representative launch system's flight, the magnitude of the overpressure from its sonic booms must be calculated, and compared against past sonic boom test results in order to assess the possible impact on overflown population centres. 
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{../LODESTAR-revisions/Results/mode11/OverPressureStandard}
 	\caption{The sonic boom overpressure on the ground, for the optimised trajectory path (Case 11).}
 	\label{fig:OverPressureStandard}
 \end{figure}
-
-The sonic boom overpressures are estimated using the 'first cut' estimation technique \cite{Carlson1972}. This estimation technique can approximate sonic boom overpressures moderately well, and is useful as a first approximation to the sonic boom overpressures generated by an aerospace vehicle. The overpressures generated by the representative launch system are calculated over its trajectory, shown in Figure \ref{fig:OverPressureStandard}. It is found that overpressures of up to 385.1Pa occur during flight over land during the maximum payload-to-orbit trajectory of the representative launch system. These overpressures have a low but significant probability of causing cosmetic damage to structures (~1.5\% for plaster and ~0.4\% for glass)\cite{Hershey1976}. In addition, overpressures of these magnitudes have been rated as unacceptably annoying to the majority populace being overflown, as shown in Figure \ref{fig:OverPressureResponse}. 
-These overpressures indicate that overflight of populated areas may not be reasonable for the representative launch system flying its maximum payload-to-orbit trajectory path, with fly-back (Case 11). 
-
-
+The sonic boom overpressures are estimated using the 'first cut' estimation technique, illustrated in \cite{Carlson1972}. This estimation technique can approximate sonic boom overpressures moderately well, and is useful as a first approximation to the sonic boom overpressures generated by an aerospace vehicle. The overpressures generated by the representative launch system are calculated over a maximum payload-to-orbit trajectory with return (Case 11), and are shown in Figure \ref{fig:OverPressureStandard}. It is found that overpressures of up to 385.1Pa occur during flight over land during the maximum payload-to-orbit trajectory of the representative launch system. When compared to past studies, that have investigated the impact of sonic booms on population centres, it can be estimated that these overpressures have a low but significant probability of causing cosmetic damage to structures (~1.5\% for plaster and ~0.4\% for glass)\cite{Hershey1976}. In addition, overpressures of these magnitudes have been rated as unacceptably annoying to the majority populace being overflown, as shown in Figure \ref{fig:OverPressureResponse}. 
+These overpressures indicate that overflight of populated areas may not be reasonable for the representative launch system flying its maximum payload-to-orbit trajectory path, with fly-back (Case 11). This indicates that the launch site for an airbreathing launch system of this type must be analysed carefully, along with the optimised trajectory of the launch system. Before determining which launch sites and missions may be flown, it must first be determined whether there may be unacceptably large effects on people due to the sonic booms generated by the launch system.
 %http://www.dtic.mil/dtic/tr/fulltext/u2/a028512.pdf
 
-
-
-
-
-\section{Alternate Launch Location}
-
+\FloatBarrier
+\section{Case 23: Alternate Launch Location}
 In this section, an alternate southerly launch is investigated for the rocket-scramjet-rocket launch system, in the case that flight over Papua is not possible. This launch occurs from Streaky Bay, the possible location of a launch site being developed by Southern Launch Australia\cite{Council2016}. The maximum payload-to-orbit has been calculated from this launch site using LODESTAR. Figure \ref{fig:GroundTrackAlternate} shows the ground track of this optimised trajectory, and Table \ref{tab:summaryalternate} details a summary of the key trajectory parameters. The shape of this optimised trajectory is very similar to the optimal trajectory of the launch system launched from the Northern Territory (Case 11). The first stage initially pitches towards the west, separating the scramjet accelerator in a westerly direction. the scramjet accelerator then performs a banking manoeuvre to the south, and a pull-up before third stage release. After separation, the scramjet accelerator exhibits initial turn, boost-skip and approach phases during fly-back, with the scramjet engine igniting three times at the troughs of the first three skips, in the same manner as when launching northerly. A higher payload to orbit is achieved when launching from a southerly location, attaining a total of \PayloadToOrbitAlternate kg of payload-to-orbit, an increase of +2.1\% compared to northerly launch. This payload increase is caused by the rotation of the Earth hindering, rather than assisting, when launching into a retrograde orbit, making launch from a more southerly point desirable. 
-
-
-\begin{figure}[th]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode01/GroundTrackAlternate}
-	\caption{The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay.}
+	\caption{The optimised maximum payload-to-orbit trajectory of the launch system launching onto a southerly orbit, from Streaky Bay (Case 23).}
 	\label{fig:GroundTrackAlternate}
 \end{figure}
-
-\begin{table}
+\begin{table}[!ht]
 	\centering
 	\begin{tabular}{l c} 
 		\hline \textbf{Trajectory Condition}
@@ -1451,31 +831,193 @@ In this section, an alternate southerly launch is investigated for the rocket-sc
 		\\
 		\hline 
 	\end{tabular} 
-	\caption{A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction.}
+	\caption{A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction (Case 23).}
 	\label{tab:summaryalternate}
 \end{table}
+\section{Case 24: Trajectory With Variation in Return Drag}\label{app:returnDrag}
+As discussed in Section \ref{sec:stagingSimp}, this work assumes that the scramjet accelerator stores the third stage within an enclosed cavity on the back of the accelerator, and that the bay doors are closed immediately after third stage release. However; there are a variety of options for the storage of the third stage rocket, including external connections, or an uncovered cavity, as was used in previous designs of the SPARTAN\cite{Preller2017b}. These storage options would certainly result in the aerodynamics of the scramjet accelerator being significantly different during the ascent and the fly-back, possible resulting in adverse effects on the performance of the scramjet accelerator.
+In order to investigate the effects of varying aerodynamic performance during fly-back, maximum payload-to-orbit trajectories were calculated for the Representative Launch System varying the coefficient of drag during fly-back by $\pm10$\%. The maximum payload-to-orbit trajectory data is presented in Table \ref{tab:returndragvar}.
 
+These trajectories indicate a relatively low sensitivity to variance in the drag coefficient during return, of -0.4 $\Delta m_{payload}/\Delta$\%$C_{d,fly-back}$. As the drag during fly-back increases, the scramjet accelerator compensates by banking more heavily during its acceleration phase, in order to reduce the total distance flown during fly-back. This heavier banking reduces the speed at the separation of the third stage, and decreases the efficiency of the third stage rocket.
+The relatively low sensitivity of the launch system to changes in the aerodynamic performance during fly-back indicates that the variance in aerodynamic performance due to an external or uncovered cavity storage method may have only small effects on the performance of the launch system, even if aerodynamic performance decreased significantly after third stage separation. The primary concern when designing the third stage storage then becomes controllability and survivability; ie. ensuring that no adverse moment, structural loading or thermal loading effects are produced by an external or uncovered cavity storage system. 
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{l c c c c c c} 
+		\hline \textbf{Trajectory Condition}   \qquad  $C_{d,fly-back}$:
+		&90\%
+		&95\%
+		&100\%
+		&105\%
+		&110\%
+		& $\Delta/\Delta$\%$C_{d,fly-back}$
+		\\
+		\hline \textbf{Payload to Orbit (kg)}
+		& \textbf{\PayloadToOrbitCdReturnNinety}
+		& \textbf{\PayloadToOrbitCdReturnNinetyFive}
+		& \textbf{\PayloadToOrbitCdReturnStandard}
+		& \textbf{\PayloadToOrbitCdReturnOneHundredFive}
+		& \textbf{\PayloadToOrbitCdReturnOneHundredTen}
+		&\textbf{-0.4}
+		\\
+		\textbf{Payload Variation (\%)}
+		& \PayloadVarCdReturnNinety
+		& \PayloadVarCdReturnNinetyFive
+		& \PayloadVarCdReturnStandard
+		& \PayloadVarCdReturnOneHundredFive
+		& \PayloadVarCdReturnOneHundredTen
+		&-0.28
+		\\
+		\textbf{Total $\eta_{exergy}$ (\%)}
+		& \textbf{\totalExergyEffCdReturnNinety}
+		& \textbf{\totalExergyEffCdReturnNinetyFive}
+		& \textbf{\totalExergyEffCdReturnStandard}
+		& \textbf{\totalExergyEffCdReturnOneHundredFive}
+		& \textbf{\totalExergyEffCdReturnOneHundredTen}
+		& \textbf{-2e-05}
+		\\
+		\hline 
+		\textbf{1$^{st}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\firstExergyEffCdReturnNinety}
+		& \textbf{\firstExergyEffCdReturnNinetyFive}
+		& \textbf{\firstExergyEffCdReturnStandard}
+		& \textbf{\firstExergyEffCdReturnOneHundredFive}
+		& \textbf{\firstExergyEffCdReturnOneHundredTen}
+		& -
+		\\
+		\textbf{Separation Alt, 1$\rightarrow$2 (km)}
+		& \firstsecondSeparationAltCdReturnNinety
+		& \firstsecondSeparationAltCdReturnNinetyFive
+		& \firstsecondSeparationAltCdReturnStandard
+		& \firstsecondSeparationAltCdReturnOneHundredFive
+		& \firstsecondSeparationAltCdReturnOneHundredTen
+		& -
+		\\
+		\textbf{Separation v, 1$\rightarrow$2 (m/s)}
+		& \firstsecondSeparationvCdReturnNinety
+		& \firstsecondSeparationvCdReturnNinetyFive
+		& \firstsecondSeparationvCdReturnStandard
+		& \firstsecondSeparationvCdReturnOneHundredFive
+		& \firstsecondSeparationvCdReturnOneHundredTen
+		& -
+		\\
+		\textbf{Separation $\gamma$, 1$\rightarrow$2 (deg)}
+		& \firstsecondSeparationgammaCdReturnNinety
+		& \firstsecondSeparationgammaCdReturnNinetyFive
+		& \firstsecondSeparationgammaCdReturnStandard
+		& \firstsecondSeparationgammaCdReturnOneHundredFive
+		& \firstsecondSeparationgammaCdReturnOneHundredTen
+		& -
+		\\
+		\hline 
+		\textbf{2$^{nd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\secondExergyEffCdReturnNinety}
+		& \textbf{\secondExergyEffCdReturnNinetyFive}
+		& \textbf{\secondExergyEffCdReturnStandard}
+		& \textbf{\secondExergyEffCdReturnOneHundredFive}
+		& \textbf{\secondExergyEffCdReturnOneHundredTen}
+		& \textbf{-0.01}
+		\\
+		\textbf{Separation Alt, 2$\rightarrow$3 (km)}
+		& \secondthirdSeparationAltCdReturnNinety
+		& \secondthirdSeparationAltCdReturnNinetyFive
+		& \secondthirdSeparationAltCdReturnStandard
+		& \secondthirdSeparationAltCdReturnOneHundredFive
+		& \secondthirdSeparationAltCdReturnOneHundredTen
+		& -
+		\\
+		\textbf{Separation $v$, 2$\rightarrow$3 (m/s)}
+		& \secondthirdSeparationvCdReturnNinety
+		& \secondthirdSeparationvCdReturnNinetyFive
+		& \secondthirdSeparationvCdReturnStandard
+		& \secondthirdSeparationvCdReturnOneHundredFive
+		& \secondthirdSeparationvCdReturnOneHundredTen
+		&-2.16
+		\\
+		\textbf{Separation $\gamma$, 2$\rightarrow$3 (deg)}
+		& \secondthirdSeparationgammaCdReturnNinety
+		& \secondthirdSeparationgammaCdReturnNinetyFive
+		& \secondthirdSeparationgammaCdReturnStandard
+		& \secondthirdSeparationgammaCdReturnOneHundredFive
+		& \secondthirdSeparationgammaCdReturnOneHundredTen
+		& -
+		\\
+		\textbf{2$^{nd}$ Stage Flight Time (s)}
+		& \secondFlightTimeCdReturnNinety
+		& \secondFlightTimeCdReturnNinetyFive
+		& \secondFlightTimeCdReturnStandard
+		& \secondFlightTimeCdReturnOneHundredFive
+		& \secondFlightTimeCdReturnOneHundredTen
+		& -
+		\\
+		\textbf{2$^{nd}$ Stage Distance Flown (km)}
+		& \SecondDistCdReturnNinety
+		& \SecondDistCdReturnNinetyFive
+		& \SecondDistCdReturnStandard
+		& \SecondDistCdReturnOneHundredFive
+		& \SecondDistCdReturnOneHundredTen
+		&-3.11
+		\\
+		\textbf{2$^{nd}$ Stage Return Fuel (kg)}
+		& \returnFuelCdReturnNinety
+		& \returnFuelCdReturnNinetyFive
+		& \returnFuelCdReturnStandard
+		& \returnFuelCdReturnOneHundredFive
+		& \returnFuelCdReturnOneHundredTen
+		&3.4
+		\\
+		\textbf{2$^{nd}$ Stage Return Distance (km)}
+		& \returnDistCdReturnNinety
+		& \returnDistCdReturnNinetyFive
+		& \returnDistCdReturnStandard
+		& \returnDistCdReturnOneHundredFive
+		& \returnDistCdReturnOneHundredTen
+		&-6.06
+		\\
+		\hline 
+		\textbf{3$^{rd}$ Stage $\eta_{exergy}$ (\%)}
+		& \textbf{\thirddExergyEffCdReturnNinety}
+		& \textbf{\thirddExergyEffCdReturnNinetyFive}
+		& \textbf{\thirddExergyEffCdReturnStandard}
+		& \textbf{\thirddExergyEffCdReturnOneHundredFive}
+		& \textbf{\thirddExergyEffCdReturnOneHundredTen}
+		& \textbf{-0.036}
+		\\
+		\textbf{3$^{rd}$ Stage $t$, $q >$ 5kpa (s)}
+		& \thirdqOverFiveCdReturnNinety
+		& \thirdqOverFiveCdReturnNinetyFive
+		& \thirdqOverFiveCdReturnStandard
+		& \thirdqOverFiveCdReturnOneHundredFive
+		& \thirdqOverFiveCdReturnOneHundredTen
+		& -
+		\\
+		\textbf{3$^{rd}$ Stage Fuel Mass (kg)}
+		& \thirdmFuelCdReturnNinety
+		& \thirdmFuelCdReturnNinetyFive
+		& \thirdmFuelCdReturnStandard
+		& \thirdmFuelCdReturnOneHundredFive
+		& \thirdmFuelCdReturnOneHundredTen
+		&0.37
+		
+	\end{tabular}
+	\caption{Comparison of key trajectory parameters with variation in the drag of the scramjet accelerator during fly-back (Case 24).}
+	\label{tab:returndragvar}
+\end{table}
+\FloatBarrier
 
 
 
 		
 		\chapter{Trajectory Plot Comparisons}\label{sec:Appendix_trajectorycomparisons}
-		
-		
 This section contains trajectory plot comparisons for the sensitivity studies performed in Section \ref{sec:sensitivityNoReturn} and \ref{sec:sensitivity}. Comparisons and analyses between these trajectories are performed in the relevant sections. 
 		\clearpage
 		\section{Optimised Ascent Trajectory Comparisons With No Fly-Back}
-		
 		\subsection{Case 3: Maximum Dynamic Pressure Sensitivity Comparison}\label{sec:app_comparison20}
-		
-		
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode20/SecondStageComparison}
 \caption{Comparison of scramjet stage ascent trajectories with variation in the maximum dynamic pressure of the representative launch system.}
 \label{fig:SecondStageComparison1}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode20/ThirdStageComparison}
@@ -1483,18 +1025,14 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \label{fig:ThirdStageComparison1}
 \end{figure}
 \FloatBarrier
-
 \clearpage
-
 \subsection{Case 4: Scramjet Accelerator Drag Sensitivity Comparison}\label{sec:app_comparison40}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode40/SecondStageComparison}
 \caption{Comparison of scramjet stage ascent trajectories with variation in the drag of the scramjet accelerator.}
 \label{fig:SecondStageComparison3}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode40/ThirdStageComparison}
@@ -1504,14 +1042,11 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \FloatBarrier
 \clearpage
 \subsection{Case 5: Scramjet Accelerator Specific Impulse Sensitivity Comparison}\label{sec:app_comparison30}
-
-
 \begin{figure}[!th]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode30/SecondStageComparison}
 	\caption{Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the scramjet accelerator.}
 	\label{fig:SecondStageComparison2}
-	
 \end{figure}
 \begin{figure}[!th]
 	\centering
@@ -1522,14 +1057,12 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \FloatBarrier
 \clearpage
 \subsection{Case 6: Scramjet Accelerator Mass Sensitivity Comparison}\label{sec:app_comparison100}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode100/SecondStageComparison}
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the mass of the scramjet accelerator.}
 \label{fig:SecondStageComparison4}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode100/ThirdStageComparison}
@@ -1545,7 +1078,6 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the fuel mass of the scramjet accelerator.}
 \label{fig:SecondStageComparison5}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode110/ThirdStageComparison}
@@ -1555,33 +1087,27 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \FloatBarrier
 \clearpage
 \subsection{Case 8: Third Stage Mass Sensitivity Comparison}\label{sec:app_comparison80}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode80/SecondStageComparison}
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the mass of the third stage.}
 \label{fig:SecondStageComparison6}
 \end{figure}
-
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode80/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.}
 \label{fig:ThirdStageComparison6}
 \end{figure}
-
 \FloatBarrier
 \clearpage
 \subsection{Case 9: Third Stage Specific Impulse Sensitivity Comparison}\label{sec:app_comparison90}
-
 \begin{figure}[!th]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode90/SecondStageComparison}
 	\caption{Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the third stage.}
 	\label{fig:SecondStageComparison7}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode90/ThirdStageComparison}
@@ -1591,22 +1117,18 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \FloatBarrier
 \clearpage
 \subsection{Case 10:Third Stage Drag Sensitivity Comparison}\label{sec:app_comparison70}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode70/SecondStageComparison}
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the drag of the third stage.}
 \label{fig:SecondStageComparison8}
 \end{figure}
-
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode70/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the third stage.}
 \label{fig:ThirdStageComparison8}
 \end{figure}
-
 \FloatBarrier
 \clearpage
 \section{Optimised Ascent Trajectory Comparisons With Fly-Back}
@@ -1618,23 +1140,18 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.}
 \label{fig:SecondStageComparison9}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode21/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.}
 \label{fig:ThirdStageComparison9}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode21/ReturnComparison}
 \caption{Comparison of scramjet accelerator return trajectories with variation in the maximum dynamic pressure of the scramjet accelerator.}
 \label{fig:ReturnComparison}
 \end{figure}
-
-
-
 \FloatBarrier
 \clearpage
 \subsection{Case 13: Scramjet Accelerator Drag Sensitivity Comparison}\label{sec:app_comparison41}
@@ -1644,21 +1161,18 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the drag of the scramjet accelerator.}
 \label{fig:SecondStageComparison11}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode41/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the drag of the scramjet accelerator.}
 \label{fig:ThirdStageComparison11}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode41/ReturnComparison}
 \caption{Comparison of scramjet accelerator return trajectories with variation in the drag of the scramjet accelerator.}
 \label{fig:ReturnComparison11}
 \end{figure}
-
 \FloatBarrier
 \clearpage
 \subsection{Case 14:scramjet accelerator Specific Impulse Sensitivity Comparison}\label{sec:app_comparison31}
@@ -1668,14 +1182,12 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 	\caption{Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the scramjet accelerator.}
 	\label{fig:SecondStageComparison10}
 \end{figure}
-
 \begin{figure}[!th]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode31/ThirdStageComparison}
 	\caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the scramjet accelerator.}
 	\label{fig:ThirdStageComparison10}
 \end{figure}
-
 \begin{figure}[!th]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode31/ReturnComparison}
@@ -1685,54 +1197,45 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \FloatBarrier
 \clearpage
 \subsection{Case 15: Scramjet Accelerator Mass Sensitivity Comparison}\label{sec:app_comparison101}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode101/SecondStageComparison}
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the mass of the scramjet accelerator.}
 \label{fig:SecondStageComparison12}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode101/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the scramjet accelerator.}
 \label{fig:ThirdStageComparison12}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode101/ReturnComparison}
 \caption{Comparison of scramjet accelerator return trajectories with variation in the mass of the scramjet accelerator.}
 \label{fig:ReturnComparison12}
 \end{figure}
-
 \FloatBarrier
 \clearpage
 \subsection{Case 16: Scramjet Accelerator Fuel Mass Sensitivity Comparison}\label{sec:app_comparison111}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode111/SecondStageComparison}
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the fuel mass of the scramjet accelerator.}
 \label{fig:SecondStageComparison13}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode111/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the fuel mass of the scramjet accelerator.}
 \label{fig:ThirdStageComparison13}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode111/ReturnComparison}
 \caption{Comparison of scramjet accelerator return trajectories with variation in the fuel mass of the scramjet accelerator.}
 \label{fig:ReturnComparison13}
 \end{figure}
-
-
 \FloatBarrier
 \clearpage
 \subsection{Case 17: Third Stage Mass Sensitivity Comparison}\label{sec:app_comparison81}
@@ -1742,16 +1245,12 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the mass of the third stage.}
 \label{fig:SecondStageComparison14}
 \end{figure}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode81/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the mass of the third stage.}
 \label{fig:ThirdStageComparison14}
 \end{figure}
-
-
-
 \begin{figure}[!th]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode81/ReturnComparison}
@@ -1761,38 +1260,51 @@ This section contains trajectory plot comparisons for the sensitivity studies pe
 \FloatBarrier
 \clearpage
 \subsection{Case 18: Third Stage Specific Impulse Sensitivity Comparison}\label{sec:app_comparison91}
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode91/SecondStageComparison}
 \caption{Comparison of scramjet accelerator ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:SecondStageComparison15}
 \end{figure}
-
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode91/ThirdStageComparison}
 \caption{Comparison of third stage rocket ascent trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ThirdStageComparison15}
 \end{figure}
-
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode91/ReturnComparison}
 \caption{Comparison of scramjet accelerator return trajectories with variation in the specific impulse of the third stage.}
 \label{fig:ReturnComparison15}
 \end{figure}
-
-
-\chapter{Viscous Drag Variation}
-%\textcolor{red}{XXX Will need to consider redoing this with variation for all stages}
-
+\FloatBarrier
+\clearpage
+\subsection{Case 24: Trajectory With Variation in Return Drag}
+\begin{figure}[!th]
+	\centering
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode441/SecondStageComparison}
+	\caption{Comparison of scramjet accelerator ascent trajectories with variation in the fly-back drag coefficient of the scramjet stage.}
+	\label{fig:SecondStageComparison16}
+\end{figure}
+\begin{figure}[!th]
+	\centering
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode441/ThirdStageComparison}
+	\caption{Comparison of third stage rocket ascent trajectories with variation in the fly-back drag coefficient of the scramjet stage.}
+	\label{fig:ThirdStageComparison16}
+\end{figure}
+\begin{figure}[!th]
+	\centering
+	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/results/mode441/ReturnComparison}
+	\caption{Comparison of scramjet accelerator return trajectories with variation in the fly-back drag coefficient of the scramjet stage.}
+	\label{fig:ReturnComparison16}
+\end{figure}
+\FloatBarrier
+\clearpage
+\chapter{Case 25: Viscous Drag Variation}
 This section presents the sensitivity of the launch system performance to variations in the viscous drag of the scramjet accelerator. This sensitivity analysis is intended as a reference, to indicate the magnitude of variations in the viscous drag of the scramjet accelerator due to variations in modelling methods, and is unlikely to be indicative of any physical design variations.
 The viscous drag component of the scramjet accelerator's aerodynamics is calculated using flat plate correlations, which require an estimation of the laminar to turbulent transition point on the body of the scramjet accelerator\cite{Ward2018}. This transition point is difficult to estimate to a high degree of accuracy, and can have a significant effect on the viscous drag of an aircraft\cite{Ward2018}.
 The viscous drag component of the scramjet accelerator's aerodynamics is varied, in order to assess the impact of the viscous drag model used. Optimal trajectories are calculated with the viscous drag set at levels of 20\%, 50\%, 107\% and 115\% of the baseline, which correspond to the possible viscous drag range due to transition point variation. Table \ref{tab:viscous} details key trajectory parameters of the optimised trajectories, and Figures \ref{fig:SecondStageComparison-}, \ref{fig:ThirdStageComparison-} and \ref{fig:ReturnComparison-} show comparison plots of the optimised trajectories. The sensitivity of the launch system to the viscous drag of the scramjet accelerator is shown to be relatively low, as the deviations in the viscous drag model are expected to be small, relative to the range tested. This low sensitivity indicating that the modelling process of the viscous drag is unlikely to have a large effect on the accuracy of the maximum payload-to-orbit solution.
-
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{l c c c c c c} 
@@ -1945,28 +1457,24 @@ The viscous drag component of the scramjet accelerator's aerodynamics is varied,
 		\\
 		\hline 
 	\end{tabular} 
-	\caption{Summary of key trajectory parameters with scramjet accelerator viscous drag variation.}
+	\caption{Summary of key trajectory parameters with scramjet accelerator viscous drag variation (Case 25).}
 	\label{tab:viscous}
 \end{table} 
-
-
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode51/SecondStageComparison}
-\caption{Comparison of scramjet accelerator ascent trajectories with variation in the viscous drag of the scramjet accelerator.}
+\caption{Comparison of scramjet accelerator ascent trajectories with variation in the viscous drag of the scramjet accelerator (Case 25).}
 \label{fig:SecondStageComparison-}
 \end{figure}
 \begin{figure}[!th]
 \centering
 \includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode51/ThirdStageComparison}
-\caption{Comparison of third stage ascent trajectories with variation in the viscous drag of the scramjet accelerator.}
+\caption{Comparison of third stage ascent trajectories with variation in the viscous drag of the scramjet accelerator (Case 25).}
 \label{fig:ThirdStageComparison-}
 \end{figure}
-
-
 \begin{figure}[!th]
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode51/ReturnComparison}
-	\caption{Comparison of scramjet accelerator return trajectories with variation in the viscous drag of the scramjet accelerator.}
+	\caption{Comparison of scramjet accelerator return trajectories with variation in the viscous drag of the scramjet accelerator (Case 25).}
 	\label{fig:ReturnComparison-}
 \end{figure}

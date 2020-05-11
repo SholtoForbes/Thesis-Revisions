@@ -7111,28 +7111,30 @@
       {{hash=FE}{%
          family={Fitzer},
          familyi={F\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
+         given={E},
+         giveni={E},
       }}%
       {{hash=ML}{%
          family={Manocha},
          familyi={M\bibinitperiod},
-         given={L.M.},
-         giveni={L\bibinitperiod},
+         given={L},
+         giveni={L},
       }}%
     }
     \list{publisher}{1}{%
-      {Springer Berlin Heidelberg}%
+      {Springer}%
     }
     \strng{namehash}{FEML1}
     \strng{fullhash}{FEML1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{3-642-58745-3}
+    \field{isbn}{9783642637070}
+    \field{pages}{224}
     \field{title}{{Carbon Reinforcements and Carbon/Carbon Composites}}
-    \list{location}{1}{%
-      {Berlin, Heidelberg}%
-    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/1998\_Book\_CarbonR
+    \verb einforcementsAndCarbonC.pdf:pdf
+    \endverb
     \field{year}{1998}
   \endentry
 
@@ -8011,102 +8013,6 @@
     \field{year}{2015}
   \endentry
 
-  \entry{Riggins2019}{article}{}
-    \name{author}{4}{}{%
-      {{hash=RDW}{%
-         family={Riggins},
-         familyi={R\bibinitperiod},
-         given={David\bibnamedelima W},
-         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Abbas},
-         familyi={A\bibinitperiod},
-         given={Mohammad},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Wainwright},
-         familyi={W\bibinitperiod},
-         given={Mitchell},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=FUSA}{%
-         family={Force},
-         familyi={F\bibinitperiod},
-         given={U\bibnamedelima S\bibnamedelima Air},
-         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RDW+1}
-    \strng{fullhash}{RDWAMWMFUSA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/1.A34296
-    \endverb
-    \field{number}{3}
-    \field{title}{{Analysis of Energy Utilization for Chemical Rockets}}
-    \field{volume}{56}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Riggins2019.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2019}
-  \endentry
-
-  \entry{Riggins2013}{article}{}
-    \name{author}{5}{}{%
-      {{hash=RDW}{%
-         family={Riggins},
-         familyi={R\bibinitperiod},
-         given={David\bibnamedelima W},
-         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=CJ}{%
-         family={Camberos},
-         familyi={C\bibinitperiod},
-         given={Jose},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Wolff},
-         familyi={W\bibinitperiod},
-         given={Mitch},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=CTB}{%
-         family={Company},
-         familyi={C\bibinitperiod},
-         given={The\bibnamedelima Boeing},
-         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=BH}{%
-         family={Beach},
-         familyi={B\bibinitperiod},
-         given={Huntington},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RDW+1}
-    \strng{fullhash}{RDWCJWMCTBBH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/1.B34733
-    \endverb
-    \field{number}{3}
-    \field{title}{{Mission-Integrated Exergy Analysis for Hypersonic Vehicles :
-  Methodology and Application}}
-    \field{volume}{29}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Riggins.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Propulsion and Power}
-    \field{year}{2013}
-  \endentry
-
   \entry{HypersonicGas}{book}{}
     \name{author}{1}{}{%
       {{hash=AJ}{%
@@ -8237,6 +8143,126 @@
     \verb{url}
     \verb https://bitbucket.org/uqturbine/htdt/src
     \endverb
+  \endentry
+
+  \entry{Riggins2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RDW}{%
+         family={Riggins},
+         familyi={R\bibinitperiod},
+         given={David\bibnamedelima W},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Abbas},
+         familyi={A\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wainwright},
+         familyi={W\bibinitperiod},
+         given={Mitchell},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FUSA}{%
+         family={Force},
+         familyi={F\bibinitperiod},
+         given={U\bibnamedelima S\bibnamedelima Air},
+         giveni={U\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDW+1}
+    \strng{fullhash}{RDWAMWMFUSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.A34296
+    \endverb
+    \field{number}{3}
+    \field{title}{{Analysis of Energy Utilization for Chemical Rockets}}
+    \field{volume}{56}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Riggins2019.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Riggins2013}{article}{}
+    \name{author}{5}{}{%
+      {{hash=RDW}{%
+         family={Riggins},
+         familyi={R\bibinitperiod},
+         given={David\bibnamedelima W},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Camberos},
+         familyi={C\bibinitperiod},
+         given={Jose},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wolff},
+         familyi={W\bibinitperiod},
+         given={Mitch},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CTB}{%
+         family={Company},
+         familyi={C\bibinitperiod},
+         given={The\bibnamedelima Boeing},
+         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Beach},
+         familyi={B\bibinitperiod},
+         given={Huntington},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RDW+1}
+    \strng{fullhash}{RDWCJWMCTBBH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.B34733
+    \endverb
+    \field{number}{3}
+    \field{title}{{Mission-Integrated Exergy Analysis for Hypersonic Vehicles :
+  Methodology and Application}}
+    \field{volume}{29}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Riggins.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Leonhardt}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LT}{%
+         family={Leonhardt},
+         familyi={L\bibinitperiod},
+         given={Todd},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LT1}
+    \strng{fullhash}{LT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{July}
+    \field{title}{{Properties of tungsten-Rhenium and tungsten-Rhenium with
+  Hafnium carbide}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Leonhardt2009\_Arti
+    \verb cle\_PropertiesOfTungsten-rheniumAn.pdf:pdf
+    \endverb
+    \field{journaltitle}{Refractory Metals Research}
+    \field{year}{2009}
   \endentry
 
   \entry{Kourtides}{article}{}
