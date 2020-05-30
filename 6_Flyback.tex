@@ -22,7 +22,7 @@ A sensitivity analysis is conducted, in a similar fashion to Chapter \ref{chapte
 This sensitivity analysis allows the influence of the fly-back of the scramjet accelerator on the design sensitivities of the launch system to be analysed.
 
 
-\section{Case 11: Optimised Ascent Trajectory with Scramjet Accelerator Return}\label{sec:case11}
+\section{Case 11: Maximum Efficiency Ascent Trajectory with Scramjet Accelerator Return}\label{sec:case11}
 \begin{table}[ht] % upodated 14/8/19
 	\centering
 \begin{tabular}{l c } 
@@ -215,20 +215,24 @@ A Monte-Carlo study is conducted, using the same uncertainty magnitudes as in Se
 
 \section{Energy Usage Analysis}
 
-
 \begin{table}[!ht]% updated 29/12/19
 	\centering
 	\begin{tabular}{l c c} 
 		& \textbf{Case 2} & \textbf{Case 11} \\
-		\textcolor{blue}{Total KE + PE of Payload}
-		& 5.94 GJ
-		& 5.02 GJ
-		\\
 		\hline \textbf{Trajectory Condition}
 		& No Fly-Back
 		& With Fly-Back
 		\\
-		\textbf{First Stage Fuel Exergy} 
+		\textcolor{blue}{Total KE + PE of Payload}
+		& 5.94 GJ
+		& 5.02 GJ
+		\\
+		
+		\textbf{First Stage }  
+		&
+		&
+		\\
+		\textbf{Ascent Fuel Exergy} 
 		&\textbf{\firstEnergyStandardNoReturn} GJ
 		&\textbf{\firstEnergyStandard} GJ
 		\\
@@ -252,7 +256,11 @@ A Monte-Carlo study is conducted, using the same uncertainty magnitudes as in Se
 		\textcolor{red}{Availability Losses}  
 		& \PlossoneCombinedStandardNoReturn \% (180.95 GJ) & \PlossoneCombinedStandard \% (181.00 GJ)
 		\\ 
-		\textbf{Scramjet Accelerator Fuel Exergy} 
+		\textbf{Scramjet Accelerator}  
+		&
+		&
+		\\
+		\textbf{Ascent Fuel Exergy} 
 		& \textbf{\secondEnergyStandardNoReturn} GJ & \textbf{\secondEnergyStandard} GJ
 		\\
 		\textcolor{blue}{KE + PE of Payload}
@@ -1580,7 +1588,7 @@ These similar sensitivities indicate that the fly-back does not considerably eff
 
 
 
-\section{Comparison of Design Parameters with Fly-Back}%0.4 (q)/(50*0.01 (q%))/(1.5 (struct)/(4957*0.01 (%struct))) calculated like this. Do unit analysis if unsure.
+\section{Comparison of Design Parameters with Fly-Back}\label{sec:thermal}%0.4 (q)/(50*0.01 (q%))/(1.5 (struct)/(4957*0.01 (%struct))) calculated like this. Do unit analysis if unsure.
 \begin{figure}[th]
 	\centering
 	\textbf{Payload Variation (kg) Normalised to a 1\% Parameter Variation}\par\medskip
@@ -1608,7 +1616,7 @@ Once again, the payload variation effect of the third stage specific impulse is 
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=0.99\linewidth]{figures/A1_uncertainty-analysis/TNoseReturn}
-		\caption{The temperature time history at the nose (\textcolor{black}{1}.}
+		\caption{The temperature time history at the nose (\textcolor{black}{1}).}
 		
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
@@ -1666,20 +1674,20 @@ Once again, the payload variation effect of the third stage specific impulse is 
 \noindent
 To investigate the TPS thermal response of the representative launch system during flight, a 1-D heat analysis is conducted using the method described Section \ref{sec:therm}.
 This analysis gives an indication of the temperature at the specified points around the representative launch system and third stage throughout their trajectories. 
-Figures \ref{fig:TrajTemp} shows the temperature responses at the specified locations on the scramjet accelerator over the ascent and return trajectories, corresponding to the TPS design specified in Table \ref{tab:thermalprops}. The temperature on the outside of the scramjet accelerator rises throughout the acceleration, as expected, peaking just before third stage release. The temperature then generally decreases during descent, with smaller peaks during the 'skipping' manoeuvres, when the speed and dynamic pressure are raised.
+Figure \ref{fig:TrajTemp} shows the temperature responses at the specified locations on the scramjet accelerator over the ascent and return trajectories in Case 11, corresponding to the TPS design specified in Table \ref{tab:thermalprops}. The temperature on the outside of the scramjet accelerator rises throughout the acceleration, as expected, peaking just before third stage release. The temperature then generally decreases during descent, with smaller peaks during the 'skipping' manoeuvres, when the speed and dynamic pressure are raised.
 
 On the scramjet accelerator, the tungsten nose reaches 2015.1K, and the Carbon-Carbon wing leading edge reaches 1665.8K. 
 At the nose and leading edge it is assumed that there is no direct thermal connection to the internal insulation by the structure or heat shielding at the regions of maximum heat loads. The temperatures that have been observed are within the operational regimes of the external heat shielding materials\cite{Fitzer,Leonhardt}, and the maximum heating in the areas examined are assumed to be limited by the properties of the heat shielding itself. However, these high temperatures at the nose and leading edges must be taken into account when the TPS and internal connectors are designed, so that heat is effectively distributed away from the leading edge during flight. 
 
 On the body of the scramjet accelerator, the interior of the nose cone reaches a maximum of 1363.1K, the cowl 1384.9K, the wing 1326.4K, and the tail 1142.3K.
-These temperatures are well within the operational regime of the heat shielding material, although the internal temperatures are at the limits of the operational regime of the internal multilayer insulation, which is nominally designed for operation in the 900-1100$^\circ$C (1173-1373K) range, although it has been tested at higher temperatures\cite{Kourtides}. These high temperatures may affect the mechanical strength of the internal insulation\cite{Kourtides}, and must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. 
+These temperatures are within the operational regime of the heat shielding material, although the internal temperatures are at the limits of the operational regime of the internal multilayer insulation, which is nominally designed for operation in the 900-1100$^\circ$C (1173-1373K) range, although it has been tested at higher temperatures\cite{Kourtides}. These high temperatures may affect the mechanical strength of the internal insulation\cite{Kourtides}, and must be accounted for in the detailed internal design, so that the internal insulation does not fail when peak temperatures are reached. 
 
 In addition to the temperatures approaching the limits of the multilayer insulation, the high temperatures will affect how the outer skin can be interfaced with the internal structure. 
 In analytical studies based on experimental tests of the internal multilayer insulation at 1273K (1000$^\circ$C) approximate surface temperature, the innermost surface of the insulation has been shown to keep temperatures below 546K (273$^\circ$C)\cite{Kourtides} when the multilayer insulation with best performance (silica felt insulation\cite{Kourtides}) is used. Because the internal temperatures are above the experimentally tested temperature, the innermost surface temperature of the insulation is likely to be above 546K, necessitating complex internal structures and interfaces in order to provide mass-efficient mechanical strength, while distributing the thermal loading effectively.
 
 
 %XXX Note: the temp is still increasing on the nose at the end, but I think this is just due to the equations breaking dopwn.. it is pretty much exoatmospheric by that point
-Figure \ref{fig:TrajTemp3} shows the temperature response at the specified locations over the third stage rocket, while the rocket is accelerating with the heat shield attached. The temperatures on the outside of the third stage rocket increase for most of its acceleration, reducing only at the very end, when the angle of attack is reduced, and the atmosphere is extremely thin. 
+Figure \ref{fig:TrajTemp3} shows the temperature response at the specified locations over the third stage rocket, while the rocket is accelerating with the heat shield attached. The temperature is initially low, due to the third stage being contained within the scramjet accelerator before release. The temperatures on the outside of the third stage rocket increase for most of its acceleration, reducing only at the very end, when the angle of attack is reduced, and the atmosphere is extremely thin. 
 The temperatures on the third stage rocket are significantly lower than those experienced by the scramjet accelerator. The nose tip of the third stage reaches a maximum inner surface temperature of 953.5K, while the nose cone and body reach maximum inner surface temperatures of 475.9K and 779.8K respectively. These relatively low temperatures indicate that the heat shielding design specified in Table \ref{tab:thermalprops} may be over-engineered for a third stage released following a pull-up manoeuvre, and it may be possible to reduce the mass of the heat shield by reducing the thickness of the tungsten and C-C protection on the nose, or by changing the material entirely. 
 
 
@@ -1878,7 +1886,7 @@ If passive TPS is not sufficient, active cooling may be introduced in areas of h
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode151/SecondStageComparison}
-	\caption{Comparison of scramjet accelerator trajectories with varying stagnation point heating limits.}
+	\caption{Comparison of scramjet accelerator trajectories with varying stagnation point heating limits. Maximum heat transfer is shown for each heating limit, with more restrictive heating limits exhibiting flight at maximum heating for long periods. }
 	\label{fig:SecondStageheatlimComparison}
 \end{figure}
 
@@ -2072,7 +2080,7 @@ The payload-to-orbit sensitivity of the launch system to variations in the speci
 
 \textcolor{red}{
 	A 1-D heat conduction analysis was conducted to investigate the aerothermal effects of flying a payload-to-orbit optimised trajectory on the representative launch system. 
-	Various points around the scramjet stage and third stage were investigated, and it was found that the maximum temperatures during flight are predictably high, for the reference TPS design locations defined in Table \ref{tab:thermalprops}. These high temperatures are close to the limits of the internal insulation, reinforcing the need for prioritising detailed thermal analysis and internal design for airbreathing launch systems. 
+	Various points around the scramjet stage and third stage were investigated, and it was found that the maximum temperatures during flight are close to the operable limits of the internal insulation materials, for the reference TPS design locations defined in Table \ref{tab:thermalprops}, reinforcing the need for prioritising detailed thermal analysis and internal design for airbreathing launch systems. 
 	To investigate the TPS design and inform future study direction, the thickness, density and thermal conductivity of the passive heat shielding were varied, and it was found that modification of these properties produces only small effects on the maximum temperatures observed. The addition of active cooling modelled via a constant rate heat sink was tested, and produced significant temperature reductions. 
 	Heating limitations were imposed on the optimal trajectory, which had only a small effect at limits of 1700 and 1600kW/m$^2$ (Compared to a 1770kW/m$^2$ maximum heat loading when unconstrained), requiring manoeuvring of the scramjet accelerator at the beginning of the trajectory. However, heating rate limits of 1500 and 1400kW/m$^2$ produced a distinct cutoff point at which the scramjet accelerator could no longer manoeuvre sufficiently during its acceleration to both reduce heat loads and perform a pull-up manoeuvre, and the performance of the launch system degraded significantly. 
 	Finally, to illustrate the possible design benefits of a pull-up manoeuvre, the third stage heat shielding was reduced in thickness on each segment proportionally to the reduction in temperature caused by a pull-up manoeuvre. A trajectory optimised for payload-to-orbit with this reduced heat shield mass exhibited an increase in payload mass to \PayloadToOrbitTPSreduced kg, a +15.3 (+11.6\%) increase over a trajectory optimised with the standard heat shield mass.}

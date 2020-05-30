@@ -6,14 +6,15 @@
 %	\textcolor{black}{XXX NOTE third stage has very small thrust vector angle, turns out that the force is pretty close to the CG}
 	
 This chapter presents a maximum payload-to-orbit trajectory optimisation for the Representative Launch System described in Chapter \ref{chapter:Design}. 
-This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), and delivers a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectory solutions for this launch system.
-First, a trajectory solution is calculated in which the scramjet accelerator is constrained to flight at a constant dynamic pressure of 50kPa. This trajectory is calculated to serve as a baseline for comparisons, as previous studies have assumed that flying the scramjet accelerator at its maximum allowable dynamic pressure would produce the best overall system performance\cite{Preller2017b}. Next, an optimal payload-to-orbit trajectory not constrained to 50kPa dynamic pressure is developed, and the trajectory shape compared and contrasted to the constant dynamic pressure trajectory. Although all of the trajectories in this work are optimised for payload-to-orbit, the trajectory in which the scramjet accelerator is constrained to flight at a constant dynamic pressure is referred to as the `50kPa dynamic pressure constrained' trajectory, and the trajectory without this constraint is referred to as the `maximum payload-to-orbit optimised trajectory' for convenience. 
-Lastly, a sensitivity study is performed, by varying key performance parameters of the launch system and investigating the effects of each parameter on the performance of the launch system. 
+This launch system is simulated as being launched from the Equatorial Launch Australia launch site in East Arnhem Land (Detailed in Section \ref{sec:mission}), delivering a small satellite into sun synchronous orbit. LODESTAR is used to calculate the maximum payload-to-orbit trajectories for this launch system.
+First (Case 1), a trajectory solution is calculated in which the scramjet accelerator is constrained to flight at a constant dynamic pressure of 50kPa. This trajectory is calculated to serve as a baseline for comparison purposes, to conform with previous studies that have assumed that flying the scramjet accelerator at its maximum allowable dynamic pressure would produce the best overall system performance\cite{Preller2017b}. 
+Next, for Case 2 and all subsequent trajectories, this assumption of constant dynamic pressure flight is removed, allowing the scramjet accelerator to deviate from the constant dynamic pressure flight path that is assumed to result in the best scramjet performance. Here, rather than using a priori assumptions about the optimal path, the pseudo-spectral optimiser is allowed to develop a trajectory shape freely, in order to maximise the performance of the launch system. To ensure that the Representative Launch System operates under the same maximum aerodynamic load in each trajectory study, an upper limit is applied to the dynamic pressure, of 50kPa (this limit is consistent for all cases, except where variations in maximum dynamic pressure are being specifically investigated). 
+Following an analysis of the trajectory optimised without a `flight at constant dynamic pressure' assumption, a sensitivity study is performed, by varying key performance parameters of the launch system and investigating the effects of each parameter on the performance of the launch system. 
 
 The following trajectories are developed: 
 \begin{itemize}
-	\item Case 1: Trajectory optimised for payload-to-orbit with the scramjet accelerator constrained to 50kPa dynamic pressure, $q_2 = $ 50kPa. \newline$\rightarrow$ This trajectory provides a baseline trajectory for comparison purposes.
-	\item Case 2: Trajectory optimised for payload-to-orbit with dynamic pressure limited to a maximum of 50kPa, $q_{max} = $ 50kPa. \newline$\rightarrow$ This trajectory demonstrates improved performance through trajectory optimisation with no hard constraints.
+	\item Case 1: Trajectory optimised for payload-to-orbit with the scramjet accelerator constrained to a predetermined 50kPa dynamic pressure, $q_2 = $ 50kPa. \newline$\rightarrow$ This trajectory provides a baseline trajectory for comparison purposes.
+	\item Case 2: Trajectory optimised for payload-to-orbit, with no assumptions imposed on the trajectory shape, and only an upper limit on the dynamic pressure of 50kPa, $q_{max} = $ 50kPa. \newline$\rightarrow$ This trajectory demonstrates improved performance through trajectory optimisation with no hard constraints.
 	\item Case 3: Variation of maximum allowable dynamic pressure between $q_{max} = $ 45kPa \& $q_{max} = $ 55kPa. 
 	\newline$\rightarrow$ Comparison of optimised trajectories allows the influence of the scramjet accelerator's ability to withstand aerodynamic forces on the launch system performance to be investigated.
 	\item Case 4: Variation of the coefficient of drag of the scramjet accelerator between $C_d = 90\%$ \& $C_d = 110\%$. 
@@ -33,19 +34,21 @@ The following trajectories are developed:
 \end{itemize}
 These optimised trajectory cases allow the benefits of flying an optimised trajectory to be quantified, and allow the impact of key design parameters on the performance of the launch system to be characterised. 
 
- \textcolor{black}{These optimised trajectories are presented in the following sections, along with key performance indicators and their sensitivities. These are presented to a number of significant figures judged necessary to adequately present the trajectory results and sensitivities to the accuracy of the trajectory simulation, with the caveat that the launch system modelling carries with it significant uncertainties as described in Appendix \ref{Appendix:unc}.}
+ \textcolor{black}{These optimised trajectories are presented in the following sections, along with key performance indicators and their sensitivities. These are presented to a number of significant figures judged necessary to adequately present the trajectory results and sensitivities to the accuracy of the trajectory optimisation, with the caveat that the launch system modelling carries with it significant uncertainties as described in Appendix \ref{Appendix:unc}.}
   
 
-\section{Case 1: Constrained Dynamic Pressure Trajectory}\label{sec:constq}
+\section{Case 1: Constant Dynamic Pressure Trajectory}\label{sec:constq}
 \noindent
+Previous studies have assumed that flying the scramjet accelerator of a three-stage airbreathing launch system at constant dynamic pressure will produce the best possible system performance\cite{Preller2017b,Kimura1999}. Because of this assumption, a constant dynamic pressure trajectory is produced to serve as a baseline for comparison with the maximum payload-to-orbit optimised trajectory.
+The first trajectory that is produced using LODESTAR is constrains the scramjet accelerator to flight at along constant dynamic pressure path, at its maximum allowable dynamic pressure of 50kPa. In order to drive the scramjet accelerator towards a constant dynamic pressure path, the cost function detailed in Table \ref{tab:SPARTANascentsetup} is utilised. In addition to the dynamic pressure cost function, the maximum payload-to-orbit cost function is also active on the third stage phase, so that once the scramjet accelerator flies close to 50kPa, the third stage will fly a maximum payload-to-orbit trajectory from the termination of the scramjet accelerator's constant dynamic pressure path.
 \begin{figure}[ht]% updated 15/8/19
 	\centering
 	\includegraphics[width=1\linewidth]{H:/github-home/LODESTAR-revisions/Results/mode900/GroundTrackConstq}
 	\caption{Maximum payload-to-orbit trajectory path with the scramjet accelerator constrained to flight at a constant 50kPa dynamic pressure (Case 1).}
 	\label{fig:GroundTrackConstq}
 \end{figure}
-The first trajectory that is produced using LODESTAR is a maximum payload-to-orbit trajectory in which the scramjet accelerator flies a constant dynamic pressure path, at its maximum allowable dynamic pressure of 50kPa. In order to drive the scramjet accelerator towards a constant dynamic pressure path, the cost function detailed in Table \ref{tab:SPARTANascentsetup} is utilised. In addition to the dynamic pressure cost function, the maximum payload-to-orbit cost function is also active on the third stage phase, so that once the scramjet accelerator flies close to 50kPa, the third stage will fly a maximum payload-to-orbit trajectory from the termination of the scramjet accelerator's constant dynamic pressure path.
-Previous studies have assumed that flying the scramjet accelerator at constant dynamic pressure will produce the best possible system performance\cite{Preller2017b}. Because of this assumption, a constant dynamic pressure trajectory is produced to serve as a baseline for comparison with the maximum payload-to-orbit optimised trajectory. Producing a constant dynamic pressure trajectory also serves to verify that LODESTAR is able to calculate a trajectory in which the scramjet accelerator flies at a fixed dynamic pressure for the duration of its flight. 
+
+Producing a constant dynamic pressure trajectory also serves to verify that LODESTAR is able to calculate a trajectory in which the scramjet accelerator flies at a fixed dynamic pressure for the duration of its flight. 
 In addition, the designs and aerodynamic simulations of each vehicle of the launch system have been improved in this work, compared to previous studies\cite{Preller2017b}. In this work, the internal design of the scramjet accelerator has been modified (as described in Section \ref{sec:SPARTAN}), the third stage design has been modified significantly (as described in Section \ref{sec:ThirdStageBaseline}), the first stage is included (as described in Section \ref{sec:firststage}), and Cart3D\cite{CART3D} is used for aerodynamic calculations (as detailed in Section \ref{sec:aero}). Simulating a constant dynamic pressure verifies that the first stage is able to reach the maximum dynamic pressure of the scramjet accelerator, and that the scramjet accelerator is able to fly at its maximum dynamic pressure within its control and aerodynamic limits. This verification ensures that any deviations from the scramjet accelerator's maximum dynamic pressure in subsequent optimised trajectories serve to improve the performance of the system, rather than being a result of the problem setup or design constraints. 
 
 \begin{table}[ht]% updated 14/8/19
@@ -150,7 +153,7 @@ When this altitude is reached, the trajectory is circularised and a Hohmann tran
 
 
 
-\section{Case 2: Optimised Ascent Trajectory}\label{sec:optimisednoreturn}
+\section{Case 2: Maximum Efficiency Ascent Trajectory}\label{sec:optimisednoreturn}
 
 This section presents the maximum payload-to-orbit trajectory for the rocket-scramjet-rocket launch system, with the scramjet accelerator able to deviate from its maximum dynamic pressure. 
 The optimal trajectory shape for a 50kPa dynamic pressure limited trajectory is shown in Figure \ref{fig:GroundTrackStandardNoReturn}, with detailed trajectory information for each stage shown in Figures \ref{fig:FirstStageStandardNoReturn} - \ref{fig:ThirdStageStandardNoReturn}, and key results summarised in Table \ref{tab:summaryStandardNoReturn}. The maximum payload-to-orbit trajectory shape involves the scramjet accelerator deviating from maximum dynamic pressure at multiple points. These manoeuvres serve either to increase the net specific impulse of the scramjet accelerator, or to trade-off the efficiency of the scramjet accelerator in order to increase the efficiency of the first and third stages. 
@@ -358,7 +361,8 @@ Analysis using the percentile method yields a 97.5\% confidence interval for Cas
 		& 3.74 GJ
 		& 5.94 GJ
 		\\
-		\textbf{First Stage Fuel Exergy} 
+		\textbf{First Stage}& & \\
+		\textbf{Ascent Fuel Exergy} 
 		&\textbf{\firstEnergyConstqNoReturn} GJ
 		&\textbf{\firstEnergyStandardNoReturn} GJ
 		\\
@@ -383,7 +387,8 @@ Analysis using the percentile method yields a 97.5\% confidence interval for Cas
 		\textcolor{red}{Availability Losses}  
 		& \PlossoneConstqNoReturn \% (176.83 GJ) & \PlossoneStandardNoReturn \% (175.56 GJ)
 		\\ 
-		\textbf{Scramjet Accelerator Fuel Exergy} 
+		\textbf{Scramjet Accelerator}& & \\
+		\textbf{Ascent Fuel Exergy} 
 		& \textbf{\secondEnergyConstqNoReturn} GJ & \textbf{\secondEnergyStandardNoReturn} GJ
 		\\
 		\textcolor{blue}{KE + PE of Payload}

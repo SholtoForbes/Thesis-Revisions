@@ -20,22 +20,22 @@
 \contentsline {subsection}{\numberline {3.4.1}Shooting Methods}{52}{subsection.3.4.1}
 \contentsline {subsubsection}{The Single Shooting Method}{52}{section*.41}
 \contentsline {subsubsection}{The Multiple Shooting Method}{53}{section*.42}
-\contentsline {subsection}{\numberline {3.4.2}Collocation Methods}{53}{subsection.3.4.2}
-\contentsline {subsubsection}{The Pseudospectral Method}{54}{section*.45}
+\contentsline {subsection}{\numberline {3.4.2}Collocation Methods}{54}{subsection.3.4.2}
+\contentsline {subsubsection}{The Pseudospectral Method}{55}{section*.45}
 \contentsline {section}{\numberline {3.5}Available Optimal Control Solvers}{57}{section.3.5}
 \contentsline {section}{\numberline {3.6}Aerodynamic Analysis}{58}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Cart3D}{60}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}Summary}{60}{section.3.7}
+\contentsline {section}{\numberline {3.7}Summary}{61}{section.3.7}
 \contentsline {chapter}{\numberline {4}Launch System Design and Modelling}{63}{chapter.4}
 \contentsline {section}{\numberline {4.1}The Second Stage Scramjet Accelerator}{65}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}The Scramjet Accelerator}{65}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Thermal Protection}{67}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Propulsion}{67}{subsection.4.1.3}
-\contentsline {subsubsection}{Propulsion Modelling}{67}{section*.52}
+\contentsline {subsubsection}{Propulsion Modelling}{68}{section*.52}
 \contentsline {subsection}{\numberline {4.1.4}Aerodynamics}{71}{subsection.4.1.4}
-\contentsline {subsubsection}{Cart3D Simulations}{73}{section*.59}
-\contentsline {subsubsection}{Engine Exhaust Contributions}{74}{section*.62}
-\contentsline {subsubsection}{Viscous Correction}{76}{section*.66}
+\contentsline {subsubsection}{Cart3D Simulations}{74}{section*.59}
+\contentsline {subsubsection}{Engine Exhaust Contributions}{75}{section*.62}
+\contentsline {subsubsection}{Viscous Correction}{77}{section*.66}
 \contentsline {subsubsection}{Centre of Gravity Analysis}{77}{section*.68}
 \contentsline {subsubsection}{Calculation of Trimmed Flap Deflections}{78}{section*.70}
 \contentsline {subsection}{\numberline {4.1.5}Trimmed Aerodynamic Database of the Scramjet Accelerator with Engine-On}{81}{subsection.4.1.5}
@@ -55,34 +55,36 @@
 \contentsline {subsection}{\numberline {4.4.1}Control}{96}{subsection.4.4.1}
 \contentsline {subsubsection}{Control Surface Design}{96}{section*.88}
 \contentsline {subsubsection}{Control Modelling}{97}{section*.89}
-\contentsline {subsection}{\numberline {4.4.2}Staging Effects}{98}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Mass Model Simplifications}{100}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Summary}{100}{section.4.5}
+\contentsline {subsection}{\numberline {4.4.2}Scramjet Engine Design}{98}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Staging Effects}{99}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Mass Model Simplifications}{100}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Summary}{101}{section.4.5}
 \contentsline {chapter}{\numberline {5}Trajectory Modelling and Optimisation}{103}{chapter.5}
 \contentsline {section}{\numberline {5.1}Mission Definition}{104}{section.5.1}
 \contentsline {section}{\numberline {5.2}Vehicle Simulation}{105}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Equations of Motion}{106}{subsection.5.2.1}
 \contentsline {section}{\numberline {5.3}Optimal Control Problem Structure}{107}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Trajectory Connection Points}{109}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}\leavevmode {\color {red}I.} First Stage Vertical Ascent}{110}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}\leavevmode {\color {red}I.} First Stage Vertical Ascent}{111}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}\leavevmode {\color {red}II.} First Stage Pitching Ascent}{111}{subsection.5.3.3}
 \contentsline {subsection}{\numberline {5.3.4}\leavevmode {\color {red}III.} Second Stage Ascent Trajectory}{112}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}\leavevmode {\color {red}IV.} Second Stage Return Trajectory}{114}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.5}\leavevmode {\color {red}IV.} Second Stage Return Trajectory}{113}{subsection.5.3.5}
 \contentsline {subsection}{\numberline {5.3.6}\leavevmode {\color {red}V.} Third Stage Powered Ascent}{115}{subsection.5.3.6}
 \contentsline {subsection}{\numberline {5.3.7}\leavevmode {\color {red}VI.} Third Stage Unpowered Ascent}{116}{subsection.5.3.7}
 \contentsline {subsection}{\numberline {5.3.8}\leavevmode {\color {red}VII.} Third Stage Hohmann Transfer}{116}{subsection.5.3.8}
 \contentsline {section}{\numberline {5.4}Optimal Solution Analysis}{118}{section.5.4}
-\contentsline {section}{\numberline {5.5}The Optimisation Process in LODESTAR}{120}{section.5.5}
-\contentsline {section}{\numberline {5.6}Trajectory and Performance Analysis}{122}{section.5.6}
-\contentsline {section}{\numberline {5.7}Thermal Analysis}{123}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Heat Transfer Calculation}{123}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Transient Thermal Analysis and Boundary Conditions}{125}{subsection.5.7.2}
-\contentsline {section}{\numberline {5.8}Summary}{127}{section.5.8}
+\contentsline {section}{\numberline {5.5}The Optimisation Process in LODESTAR}{121}{section.5.5}
+\contentsline {section}{\numberline {5.6}Trajectory and Performance Analysis}{121}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Exergy Analysis}{122}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Thermal Analysis}{122}{subsection.5.6.2}
+\contentsline {subsubsection}{Heat Transfer Calculation}{123}{section*.96}
+\contentsline {subsubsection}{Transient Thermal Analysis and Boundary Conditions}{124}{section*.98}
+\contentsline {section}{\numberline {5.7}Summary}{125}{section.5.7}
 \contentsline {chapter}{\numberline {6}Optimised Ascent Trajectory}{129}{chapter.6}
-\contentsline {section}{\numberline {6.1}Case 1: Constrained Dynamic Pressure Trajectory}{131}{section.6.1}
-\contentsline {section}{\numberline {6.2}Case 2: Optimised Ascent Trajectory}{136}{section.6.2}
+\contentsline {section}{\numberline {6.1}Case 1: Constant Dynamic Pressure Trajectory}{131}{section.6.1}
+\contentsline {section}{\numberline {6.2}Case 2: Maximum Efficiency Ascent Trajectory}{136}{section.6.2}
 \contentsline {section}{\numberline {6.3}Case 2: Modelling of Uncertainties}{143}{section.6.3}
-\contentsline {section}{\numberline {6.4}Energy Usage Analysis}{144}{section.6.4}
+\contentsline {section}{\numberline {6.4}Energy Usage Analysis}{145}{section.6.4}
 \contentsline {section}{\numberline {6.5}Sensitivity Analysis}{147}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Case 3: Maximum Dynamic Pressure Sensitivity}{148}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Case 4: Scramjet Accelerator Drag Sensitivity}{149}{subsection.6.5.2}
@@ -95,12 +97,12 @@
 \contentsline {section}{\numberline {6.6}Comparison of Design Parameters}{158}{section.6.6}
 \contentsline {section}{\numberline {6.7}Summary}{160}{section.6.7}
 \contentsline {chapter}{\numberline {7}Optimised Trajectory Including Fly-Back}{163}{chapter.7}
-\contentsline {section}{\numberline {7.1}Case 11: Optimised Ascent Trajectory with Scramjet Accelerator Return}{164}{section.7.1}
+\contentsline {section}{\numberline {7.1}Case 11: Maximum Efficiency Ascent Trajectory with Scramjet Accelerator Return}{164}{section.7.1}
 \contentsline {section}{\numberline {7.2}Ascent Trajectory}{165}{section.7.2}
 \contentsline {section}{\numberline {7.3}Fly-Back Trajectory}{171}{section.7.3}
-\contentsline {subsubsection}{ Initial Turn}{171}{section*.114}
-\contentsline {subsubsection}{ Boost-Skip}{172}{section*.115}
-\contentsline {subsubsection}{Approach}{172}{section*.116}
+\contentsline {subsubsection}{ Initial Turn}{171}{section*.116}
+\contentsline {subsubsection}{ Boost-Skip}{172}{section*.117}
+\contentsline {subsubsection}{Approach}{172}{section*.118}
 \contentsline {section}{\numberline {7.4}Case 11: Modelling of Uncertainties}{173}{section.7.4}
 \contentsline {section}{\numberline {7.5}Energy Usage Analysis}{173}{section.7.5}
 \contentsline {section}{\numberline {7.6}Design Sensitivity Analysis}{175}{section.7.6}
@@ -114,28 +116,28 @@
 \contentsline {section}{\numberline {7.7}Comparison of Design Parameters with Fly-Back}{184}{section.7.7}
 \contentsline {section}{\numberline {7.8}Thermal Analysis of the Optimised Trajectory With Fly-Back}{185}{section.7.8}
 \contentsline {subsection}{\numberline {7.8.1}Thermal Protection Exploration}{188}{subsection.7.8.1}
-\contentsline {subsubsection}{Scramjet Accelerator TPS Design Exploration}{188}{section*.120}
+\contentsline {subsubsection}{Scramjet Accelerator TPS Design Exploration}{188}{section*.122}
 \contentsline {subsection}{\numberline {7.8.2}Case 19: Heating limited Trajectory}{189}{subsection.7.8.2}
-\contentsline {subsection}{\numberline {7.8.3}Third Stage Heat Shielding Design Exploration}{191}{subsection.7.8.3}
+\contentsline {subsection}{\numberline {7.8.3}Third Stage Heat Shielding Design Exploration}{192}{subsection.7.8.3}
 \contentsline {subsection}{\numberline {7.8.4}Case 20: The Effects of a Pull-Up on the Third Stage Heat Shield Design}{192}{subsection.7.8.4}
 \contentsline {section}{\numberline {7.9}Summary}{193}{section.7.9}
 \contentsline {chapter}{\numberline {8}Conclusions}{199}{chapter.8}
-\contentsline {subsubsection}{Ascent-Only Trajectory}{199}{section*.122}
-\contentsline {subsubsection}{Ascent and Fly-Back Trajectory}{201}{section*.123}
-\contentsline {subsubsection}{Design and Performance Investigation}{202}{section*.124}
+\contentsline {subsubsection}{Ascent-Only Trajectory}{199}{section*.124}
+\contentsline {subsubsection}{Ascent and Fly-Back Trajectory}{201}{section*.125}
+\contentsline {subsubsection}{Design and Performance Investigation}{202}{section*.126}
 \contentsline {chapter}{\numberline {9}Recommendations for future work}{205}{chapter.9}
-\contentsline {chapter}{References}{207}{chapter*.125}
-\contentsline {chapter}{Glossary of Key Terms}{227}{section*.126}
+\contentsline {chapter}{References}{207}{chapter*.127}
+\contentsline {chapter}{Glossary of Key Terms}{227}{section*.128}
 \contentsline {chapter}{\numberline {A}Modelling Uncertainties}{233}{appendix.A}
 \contentsline {section}{\numberline {A.1}Aerodynamic and Propulsion Simulation Uncertainties}{234}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}Aerodynamic Uncertainty}{234}{subsection.A.1.1}
-\contentsline {subsubsection}{Abeynayake \& Agon}{235}{section*.128}
-\contentsline {subsubsection}{Kiris et al.}{235}{section*.129}
-\contentsline {subsubsection}{Ward et al.}{236}{section*.130}
-\contentsline {subsubsection}{Summary}{236}{section*.131}
+\contentsline {subsubsection}{Abeynayake \& Agon}{235}{section*.130}
+\contentsline {subsubsection}{Kiris et al.}{235}{section*.131}
+\contentsline {subsubsection}{Ward et al.}{236}{section*.132}
+\contentsline {subsubsection}{Summary}{236}{section*.133}
 \contentsline {subsection}{\numberline {A.1.2}Propulsion System Uncertainties}{237}{subsection.A.1.2}
-\contentsline {subsubsection}{The Rocket Engines}{237}{section*.132}
-\contentsline {subsubsection}{The Scramjet Engine}{238}{section*.133}
+\contentsline {subsubsection}{The Rocket Engines}{237}{section*.134}
+\contentsline {subsubsection}{The Scramjet Engine}{238}{section*.135}
 \contentsline {subsection}{\numberline {A.1.3}Quantification of Aerodynamic and Propulsion Uncertainty Effects}{238}{subsection.A.1.3}
 \contentsline {section}{\numberline {A.2}Atmospheric Variations}{239}{section.A.2}
 \contentsline {subsection}{\numberline {A.2.1}Seasonal and Solar Cycle Based Variations}{239}{subsection.A.2.1}

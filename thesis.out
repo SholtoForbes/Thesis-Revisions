@@ -41,32 +41,32 @@
 \BOOKMARK [2][-]{subsection.4.3.6}{Thrust Vectoring}{section.4.3}% 41
 \BOOKMARK [1][-]{section.4.4}{Modelling and Design Simplifications}{chapter.4}% 42
 \BOOKMARK [2][-]{subsection.4.4.1}{Control}{section.4.4}% 43
-\BOOKMARK [2][-]{subsection.4.4.2}{Staging Effects}{section.4.4}% 44
-\BOOKMARK [2][-]{subsection.4.4.3}{Mass Model Simplifications}{section.4.4}% 45
-\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Trajectory Modelling and Optimisation}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Mission Definition}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.2}{Vehicle Simulation}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.2.1}{Equations of Motion}{section.5.2}% 50
-\BOOKMARK [1][-]{section.5.3}{Optimal Control Problem Structure}{chapter.5}% 51
-\BOOKMARK [2][-]{subsection.5.3.1}{Trajectory Connection Points}{section.5.3}% 52
-\BOOKMARK [2][-]{subsection.5.3.2}{I. First Stage Vertical Ascent}{section.5.3}% 53
-\BOOKMARK [2][-]{subsection.5.3.3}{II. First Stage Pitching Ascent}{section.5.3}% 54
-\BOOKMARK [2][-]{subsection.5.3.4}{III. Second Stage Ascent Trajectory}{section.5.3}% 55
-\BOOKMARK [2][-]{subsection.5.3.5}{IV. Second Stage Return Trajectory}{section.5.3}% 56
-\BOOKMARK [2][-]{subsection.5.3.6}{V. Third Stage Powered Ascent}{section.5.3}% 57
-\BOOKMARK [2][-]{subsection.5.3.7}{VI. Third Stage Unpowered Ascent}{section.5.3}% 58
-\BOOKMARK [2][-]{subsection.5.3.8}{VII. Third Stage Hohmann Transfer}{section.5.3}% 59
-\BOOKMARK [1][-]{section.5.4}{Optimal Solution Analysis}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.5}{The Optimisation Process in LODESTAR}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.6}{Trajectory and Performance Analysis}{chapter.5}% 62
-\BOOKMARK [1][-]{section.5.7}{Thermal Analysis}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.7.1}{Heat Transfer Calculation}{section.5.7}% 64
-\BOOKMARK [2][-]{subsection.5.7.2}{Transient Thermal Analysis and Boundary Conditions}{section.5.7}% 65
-\BOOKMARK [1][-]{section.5.8}{Summary}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.4.4.2}{Scramjet Engine Design}{section.4.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.3}{Staging Effects}{section.4.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.4}{Mass Model Simplifications}{section.4.4}% 46
+\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{Trajectory Modelling and Optimisation}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Mission Definition}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Vehicle Simulation}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.2.1}{Equations of Motion}{section.5.2}% 51
+\BOOKMARK [1][-]{section.5.3}{Optimal Control Problem Structure}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.3.1}{Trajectory Connection Points}{section.5.3}% 53
+\BOOKMARK [2][-]{subsection.5.3.2}{I. First Stage Vertical Ascent}{section.5.3}% 54
+\BOOKMARK [2][-]{subsection.5.3.3}{II. First Stage Pitching Ascent}{section.5.3}% 55
+\BOOKMARK [2][-]{subsection.5.3.4}{III. Second Stage Ascent Trajectory}{section.5.3}% 56
+\BOOKMARK [2][-]{subsection.5.3.5}{IV. Second Stage Return Trajectory}{section.5.3}% 57
+\BOOKMARK [2][-]{subsection.5.3.6}{V. Third Stage Powered Ascent}{section.5.3}% 58
+\BOOKMARK [2][-]{subsection.5.3.7}{VI. Third Stage Unpowered Ascent}{section.5.3}% 59
+\BOOKMARK [2][-]{subsection.5.3.8}{VII. Third Stage Hohmann Transfer}{section.5.3}% 60
+\BOOKMARK [1][-]{section.5.4}{Optimal Solution Analysis}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.5}{The Optimisation Process in LODESTAR}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.6}{Trajectory and Performance Analysis}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.6.1}{Exergy Analysis}{section.5.6}% 64
+\BOOKMARK [2][-]{subsection.5.6.2}{Thermal Analysis}{section.5.6}% 65
+\BOOKMARK [1][-]{section.5.7}{Summary}{chapter.5}% 66
 \BOOKMARK [0][-]{chapter.6}{Optimised Ascent Trajectory}{}% 67
-\BOOKMARK [1][-]{section.6.1}{Case 1: Constrained Dynamic Pressure Trajectory}{chapter.6}% 68
-\BOOKMARK [1][-]{section.6.2}{Case 2: Optimised Ascent Trajectory}{chapter.6}% 69
+\BOOKMARK [1][-]{section.6.1}{Case 1: Constant Dynamic Pressure Trajectory}{chapter.6}% 68
+\BOOKMARK [1][-]{section.6.2}{Case 2: Maximum Efficiency Ascent Trajectory}{chapter.6}% 69
 \BOOKMARK [1][-]{section.6.3}{Case 2: Modelling of Uncertainties}{chapter.6}% 70
 \BOOKMARK [1][-]{section.6.4}{Energy Usage Analysis}{chapter.6}% 71
 \BOOKMARK [1][-]{section.6.5}{Sensitivity Analysis}{chapter.6}% 72
@@ -81,7 +81,7 @@
 \BOOKMARK [1][-]{section.6.6}{Comparison of Design Parameters}{chapter.6}% 81
 \BOOKMARK [1][-]{section.6.7}{Summary}{chapter.6}% 82
 \BOOKMARK [0][-]{chapter.7}{Optimised Trajectory Including Fly-Back}{}% 83
-\BOOKMARK [1][-]{section.7.1}{Case 11: Optimised Ascent Trajectory with Scramjet Accelerator Return}{chapter.7}% 84
+\BOOKMARK [1][-]{section.7.1}{Case 11: Maximum Efficiency Ascent Trajectory with Scramjet Accelerator Return}{chapter.7}% 84
 \BOOKMARK [1][-]{section.7.2}{Ascent Trajectory}{chapter.7}% 85
 \BOOKMARK [1][-]{section.7.3}{Fly-Back Trajectory}{chapter.7}% 86
 \BOOKMARK [1][-]{section.7.4}{Case 11: Modelling of Uncertainties}{chapter.7}% 87
@@ -103,8 +103,8 @@
 \BOOKMARK [1][-]{section.7.9}{Summary}{chapter.7}% 103
 \BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 104
 \BOOKMARK [0][-]{chapter.9}{Recommendations for future work}{}% 105
-\BOOKMARK [0][-]{chapter*.125}{References}{}% 106
-\BOOKMARK [0][-]{section*.126}{Glossary of Key Terms}{}% 107
+\BOOKMARK [0][-]{chapter*.127}{References}{}% 106
+\BOOKMARK [0][-]{section*.128}{Glossary of Key Terms}{}% 107
 \BOOKMARK [0][-]{appendix.A}{Modelling Uncertainties}{}% 108
 \BOOKMARK [1][-]{section.A.1}{Aerodynamic and Propulsion Simulation Uncertainties}{appendix.A}% 109
 \BOOKMARK [2][-]{subsection.A.1.1}{Aerodynamic Uncertainty}{section.A.1}% 110

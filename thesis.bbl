@@ -1144,6 +1144,48 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Mcclinton2008}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MCR}{%
+         family={Mcclinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCR1}
+    \strng{fullhash}{MCR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    H. Julian Allen made an important observation in the 1958 21st Wright
+  Brothers Lecture 1: Progress in aeronautics has been brought about more by
+  revolutionary than evolutionary changes in methods of propulsion. Numerous
+  studies performed over the past 50 years show potential benefits of higher
+  speed flight systems for aircraft, missiles and spacecraft. These vehicles
+  will venture past classical supersonic speed, into hypersonic speed, where
+  perfect gas laws no longer apply. The revolutionary method of propulsion
+  which makes this possible is the Supersonic Combustion RAMJET, or SCRAMJET
+  engine. Will revolutionary applications of air-breathing propulsion in the
+  21st century make space travel routine and intercontinental travel as easy as
+  intercity travel is today? This presentation will reveal how this high speed
+  propulsion system works, what type of aerospace systems will benefit,
+  highlight challenges to development, discuss historic development (in the US
+  as an example), highlight accomplishments of the X-43 scramjet-powered
+  aircraft, and present what needs to be done next to complete this technology
+  development.%
+    }
+    \field{pages}{1\bibrangedash 1\bibrangedash 1\bibrangedash 32}
+    \field{title}{{High Speed / Hypersonic Aircraft Propulsion Technology
+  Development}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/McClinton2.pdf:pdf
+    \endverb
+    \field{journaltitle}{Advances on Propulsion Technology for High-Speed
+  Aircraft}
+    \field{year}{2008}
+  \endentry
+
   \entry{Wilhite1991}{article}{}
     \name{author}{4}{}{%
       {{hash=WAW}{%
@@ -1637,48 +1679,6 @@
     \endverb
     \field{type}{Ph.D Dissertation}
     \field{year}{2018}
-  \endentry
-
-  \entry{Mcclinton2008}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MCR}{%
-         family={Mcclinton},
-         familyi={M\bibinitperiod},
-         given={Charles\bibnamedelima R},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCR1}
-    \strng{fullhash}{MCR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    H. Julian Allen made an important observation in the 1958 21st Wright
-  Brothers Lecture 1: Progress in aeronautics has been brought about more by
-  revolutionary than evolutionary changes in methods of propulsion. Numerous
-  studies performed over the past 50 years show potential benefits of higher
-  speed flight systems for aircraft, missiles and spacecraft. These vehicles
-  will venture past classical supersonic speed, into hypersonic speed, where
-  perfect gas laws no longer apply. The revolutionary method of propulsion
-  which makes this possible is the Supersonic Combustion RAMJET, or SCRAMJET
-  engine. Will revolutionary applications of air-breathing propulsion in the
-  21st century make space travel routine and intercontinental travel as easy as
-  intercity travel is today? This presentation will reveal how this high speed
-  propulsion system works, what type of aerospace systems will benefit,
-  highlight challenges to development, discuss historic development (in the US
-  as an example), highlight accomplishments of the X-43 scramjet-powered
-  aircraft, and present what needs to be done next to complete this technology
-  development.%
-    }
-    \field{pages}{1\bibrangedash 1\bibrangedash 1\bibrangedash 32}
-    \field{title}{{High Speed / Hypersonic Aircraft Propulsion Technology
-  Development}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/McClinton2.pdf:pdf
-    \endverb
-    \field{journaltitle}{Advances on Propulsion Technology for High-Speed
-  Aircraft}
-    \field{year}{2008}
   \endentry
 
   \entry{Bulirsch1995}{article}{}
@@ -2178,27 +2178,6 @@
     \field{urlyear}{2018}
   \endentry
 
-  \entry{Vector}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=V}{%
-         family={{Vector Space}},
-         familyi={V\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{V1}
-    \strng{fullhash}{V1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Vector Launch Vehicle Family}}
-    \verb{url}
-    \verb https://vectorspacesystems.com/technology/
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{01}
-    \field{urlmonth}{12}
-    \field{urlyear}{2017}
-  \endentry
-
   \entry{Kuhn2017}{article}{}
     \name{author}{8}{}{%
       {{hash=KM}{%
@@ -2274,10 +2253,10 @@
     \field{year}{2017}
   \endentry
 
-  \entry{firefly}{misc}{}
+  \entry{firefly}{report}{}
     \name{author}{1}{}{%
       {{hash=F}{%
-         family={Firefly},
+         family={{Firefly Aerospace}},
          familyi={F\bibinitperiod},
       }}%
     }
@@ -2285,14 +2264,17 @@
     \strng{fullhash}{F2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{Firefly}}
-    \verb{url}
-    \verb http://www.fireflyspace.com/
+    \field{number}{April}
+    \field{title}{{Payload User's Guide}}
+    \list{location}{1}{%
+      {Cedar Park, TX}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Firefly Aerospace P
+    \verb ayload User's Guide.pdf:pdf
     \endverb
-    \field{year}{2017}
-    \field{urlday}{30}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
+    \field{type}{techreport}
+    \field{year}{2018}
   \endentry
 
   \entry{Virgin}{misc}{}
@@ -2302,8 +2284,8 @@
          familyi={V\bibinitperiod},
       }}%
     }
-    \strng{namehash}{V2}
-    \strng{fullhash}{V2}
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{{LauncherOne}}
@@ -2316,29 +2298,6 @@
     \field{urlyear}{2017}
   \endentry
 
-  \entry{DARPA2017}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=OD}{%
-         family={Outreach},
-         familyi={O\bibinitperiod},
-         given={DARPA},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OD1}
-    \strng{fullhash}{OD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{DARPA Picks Design for Next-Generation Spaceplane}}
-    \verb{url}
-    \verb https://www.darpa.mil/news-events/2017-05-24
-    \endverb
-    \field{year}{2017}
-    \field{urlday}{16}
-    \field{urlmonth}{11}
-    \field{urlyear}{2017}
-  \endentry
-
   \entry{500R}{misc}{}
     \name{author}{1}{}{%
       {{hash=O}{%
@@ -2346,8 +2305,8 @@
          familyi={O\bibinitperiod},
       }}%
     }
-    \strng{namehash}{O1}
-    \strng{fullhash}{O1}
+    \strng{namehash}{O2}
+    \strng{fullhash}{O2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{{The Orbital 500R}}
@@ -2547,8 +2506,8 @@
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SMK1}
-    \strng{fullhash}{SMK1}
+    \strng{namehash}{SMK2}
+    \strng{fullhash}{SMK2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{abstract}{%
@@ -3089,6 +3048,145 @@
     \endverb
   \endentry
 
+  \entry{WCC}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJD}{%
+         family={Shaughnessy},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PSZ}{%
+         family={Pinckney},
+         familyi={P\bibinitperiod},
+         given={S\bibnamedelima Zane},
+         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MJD}{%
+         family={Mcminn},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJDPSZMJD1}
+    \strng{fullhash}{SJDPSZMJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
+  Configuration Model :}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
+    \endverb
+    \field{journaltitle}{Simulation}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Lu1993}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LP}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    An inverse dynamics approach for trajectory optimization is proposed. This
+  technique can be useful in many difficult trajectory optimization and control
+  problems. The application of the approach is exemplified by ascent trajectory
+  optimization for an aerospace plane. Both minimum-fuel and minimax types of
+  performance indices are considered. When rocket augmentation is available for
+  ascent, it is shown that accurate orbital insertion can be achieved through
+  the inverse control of the rocket in the presence of disturbances.%
+    }
+    \verb{doi}
+    \verb 10.2514/3.21073
+    \endverb
+    \field{issn}{0731-5090}
+    \field{number}{4}
+    \field{pages}{726\bibrangedash 732}
+    \field{title}{{Inverse dynamics approach to trajectory optimization for an
+  aerospace plane}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
+    \endverb
+    \field{volume}{16}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
+    \field{year}{1993}
+  \endentry
+
+  \entry{HyperX}{article}{}
+    \name{author}{5}{}{%
+      {{hash=MCR}{%
+         family={McClinton},
+         familyi={M\bibinitperiod},
+         given={Charles\bibnamedelima R.},
+         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RVL}{%
+         family={Rausch},
+         familyi={R\bibinitperiod},
+         given={Vincent\bibnamedelima L.},
+         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SRJ}{%
+         family={Shaw},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MU}{%
+         family={Metha},
+         familyi={M\bibinitperiod},
+         given={Unmeel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Naftel},
+         familyi={N\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MCR+1}
+    \strng{fullhash}{MCRRVLSRJMUNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
+  provided a major, essential demonstration of the capability of the
+  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
+  design tools and vision vehicles. This flight was a crucial step toward
+  establishing air-breathing hypersonic propulsion for application to
+  space-launch vehicles and other hypersonic systems. This paper examines the
+  significance of the flight test in advancing the state-of-the science and
+  provides a strategic vision for achieving the dream for safe, efficient and
+  reliable space access with air-breathing propulsion in the near future,
+  through use of more near term approaches. Published by Elsevier Ltd.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.actaastro.2005.03.061
+    \endverb
+    \field{issn}{00945765}
+    \field{number}{2-8}
+    \field{pages}{614\bibrangedash 622}
+    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
+    \field{volume}{57}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
+    \endverb
+    \field{journaltitle}{Acta Astronautica}
+    \field{year}{2005}
+  \endentry
+
   \entry{Olds1998}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=OJ}{%
@@ -3173,145 +3271,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{Lu1993}{article}{}
-    \name{author}{1}{}{%
-      {{hash=LP}{%
-         family={Lu},
-         familyi={L\bibinitperiod},
-         given={Ping},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LP1}
-    \strng{fullhash}{LP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    An inverse dynamics approach for trajectory optimization is proposed. This
-  technique can be useful in many difficult trajectory optimization and control
-  problems. The application of the approach is exemplified by ascent trajectory
-  optimization for an aerospace plane. Both minimum-fuel and minimax types of
-  performance indices are considered. When rocket augmentation is available for
-  ascent, it is shown that accurate orbital insertion can be achieved through
-  the inverse control of the rocket in the presence of disturbances.%
-    }
-    \verb{doi}
-    \verb 10.2514/3.21073
-    \endverb
-    \field{issn}{0731-5090}
-    \field{number}{4}
-    \field{pages}{726\bibrangedash 732}
-    \field{title}{{Inverse dynamics approach to trajectory optimization for an
-  aerospace plane}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/abs/10.2514/3.21073
-    \endverb
-    \field{volume}{16}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Lu.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Guidance, Control, and Dynamics}
-    \field{year}{1993}
-  \endentry
-
-  \entry{WCC}{article}{}
-    \name{author}{3}{}{%
-      {{hash=SJD}{%
-         family={Shaughnessy},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=PSZ}{%
-         family={Pinckney},
-         familyi={P\bibinitperiod},
-         given={S\bibnamedelima Zane},
-         giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
-      }}%
-      {{hash=MJD}{%
-         family={Mcminn},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJDPSZMJD1}
-    \strng{fullhash}{SJDPSZMJD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{NASA Technical Memorandum Hypersonic Vehicle Simulation
-  Configuration Model :}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WCC.pdf:pdf
-    \endverb
-    \field{journaltitle}{Simulation}
-    \field{year}{1990}
-  \endentry
-
-  \entry{HyperX}{article}{}
-    \name{author}{5}{}{%
-      {{hash=MCR}{%
-         family={McClinton},
-         familyi={M\bibinitperiod},
-         given={Charles\bibnamedelima R.},
-         giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=RVL}{%
-         family={Rausch},
-         familyi={R\bibinitperiod},
-         given={Vincent\bibnamedelima L.},
-         giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SRJ}{%
-         family={Shaw},
-         familyi={S\bibinitperiod},
-         given={Robert\bibnamedelima J.},
-         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MU}{%
-         family={Metha},
-         familyi={M\bibinitperiod},
-         given={Unmeel},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=NC}{%
-         family={Naftel},
-         familyi={N\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MCR+1}
-    \strng{fullhash}{MCRRVLSRJMUNC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The successful Mach-7 flight test of the Hyper-X/X-43A research vehicle has
-  provided a major, essential demonstration of the capability of the
-  airframe-integrated scramjet engine and hypersonic airbreathing vehicle
-  design tools and vision vehicles. This flight was a crucial step toward
-  establishing air-breathing hypersonic propulsion for application to
-  space-launch vehicles and other hypersonic systems. This paper examines the
-  significance of the flight test in advancing the state-of-the science and
-  provides a strategic vision for achieving the dream for safe, efficient and
-  reliable space access with air-breathing propulsion in the near future,
-  through use of more near term approaches. Published by Elsevier Ltd.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.actaastro.2005.03.061
-    \endverb
-    \field{issn}{00945765}
-    \field{number}{2-8}
-    \field{pages}{614\bibrangedash 622}
-    \field{title}{{Hyper-X: Foundation for future hypersonic launch vehicles}}
-    \field{volume}{57}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/HyperX.pdf:pdf
-    \endverb
-    \field{journaltitle}{Acta Astronautica}
-    \field{year}{2005}
-  \endentry
-
   \entry{Tsuchiya2005}{article}{}
     \name{author}{2}{}{%
       {{hash=TT}{%
@@ -3365,6 +3324,34 @@
     \endverb
     \field{journaltitle}{Journal of Spacecraft and Rockets}
     \field{year}{2005}
+  \endentry
+
+  \entry{Faa&Ast&Comstac2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{Office of Commercial Space Transportation (AST) and the
+  Commercial Space Transportation Advisory Committee (COMSTAC)}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Office of Commercial Space Transportation}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{May}
+    \field{pages}{94}
+    \field{title}{{2015 Commercial Space Transportation Forecasts}}
+    \list{location}{1}{%
+      {Washington, DC}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Commercial\_Space\_
+    \verb Transportation\_Forecasts\_2015.pdf:pdf
+    \endverb
+    \field{year}{2015}
   \endentry
 
   \entry{Jazra2013}{article}{}
@@ -6342,14 +6329,225 @@
     \field{year}{2011}
   \endentry
 
-  \entry{Suraweera2009}{article}{}
-    \name{author}{2}{}{%
-      {{hash=SM}{%
-         family={Suraweera},
-         familyi={S\bibinitperiod},
-         given={M},
-         giveni={M},
+  \entry{Preller2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={Preller},
+         familyi={P\bibinitperiod},
+         given={Dawid},
+         giveni={D\bibinitperiod},
       }}%
+    }
+    \strng{namehash}{PD1}
+    \strng{fullhash}{PD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
+  Hypersonic Airbreathing Accelerating Vehicle}}
+    \list{institution}{1}{%
+      {University of Queensland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/Preller-2017-
+    \verb Multidisciplinary-Design-and-Optimisation-of-a-Pitch-Trimmed-Hyperson
+    \verb ic-Airbreathing-Accelerating-Vehicle.pdf:pdf
+    \endverb
+    \field{type}{phdthesis}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Whitside2020}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WRW}{%
+         family={Whitside},
+         familyi={W\bibinitperiod},
+         given={Ryan\bibnamedelima W},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WRWSMK1}
+    \strng{fullhash}{WRWSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Space Planes and Hypersonic Systems and
+  Technologies Conferences}
+    \verb{doi}
+    \verb 10.2514/6.2020-2435
+    \endverb
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{{Low Mach Number Testing of a Scramjet for Access to Space}}
+    \list{location}{3}{%
+      {Whitside, R.W. \& Smart, M.K., 2020. Low Mach Number Testing of a
+  Scramjet for Access to Space. In International Space Planes}%
+      {Hypersonic Systems}%
+      {Technologies Conferences}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Whitside2020.pdf:pd
+    \verb f
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{Whitside}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WRW}{%
+         family={Whitside},
+         familyi={W\bibinitperiod},
+         given={Ryan\bibnamedelima W},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WRWSMK1}
+    \strng{fullhash}{WRWSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Space Planes and Hypersonic Systems and
+  Technoligies Conference}
+    \verb{doi}
+    \verb 10.2514/6.2020-2435
+    \endverb
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{{Low Mach Number Testing of a Scramjet for Access to Space}}
+    \list{location}{1}{%
+      {Quebec, Canada}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Whitside.pdf:pdf
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{Turner}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TJC}{%
+         family={Turner},
+         familyi={T\bibinitperiod},
+         given={James\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TJCSMK1}
+    \strng{fullhash}{TJCSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.J050052
+    \endverb
+    \field{number}{4}
+    \field{title}{{Application of Inlet Injection to a Three-Dimensional
+  Scramjet at Mach 8}}
+    \field{volume}{48}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Turner.pdf:pdf
+    \endverb
+    \field{journaltitle}{AIAA}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Barth}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJE}{%
+         family={Barth},
+         familyi={B\bibinitperiod},
+         given={James\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WV}{%
+         family={Wheatley},
+         familyi={W\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJEWVSMK1}
+    \strng{fullhash}{BJEWVSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.J053819
+    \endverb
+    \field{number}{10}
+    \field{title}{{Effects of Hydrogen Fuel Injection in a Mach 12 Scramjet
+  Inlet}}
+    \field{volume}{53}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Barth.pdf:pdf
+    \endverb
+    \field{journaltitle}{AIAA}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Curran}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SSt}{%
+         family={Scramjet},
+         familyi={S\bibinitperiod},
+         given={Shape-transitioning},
+         giveni={S\bibinitperiod-t\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Curran},
+         familyi={C\bibinitperiod},
+         given={Damian},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WV}{%
+         family={Wheatley},
+         familyi={W\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSt+1}
+    \strng{fullhash}{SStCDWVSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.J057999
+    \endverb
+    \field{number}{7}
+    \field{title}{{Investigation of Combustion Mode Control in a Mach 8}}
+    \field{volume}{57}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Curran.pdf:pdf
+    \endverb
+    \field{journaltitle}{AIAA}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Smart1999}{article}{}
+    \name{author}{1}{}{%
       {{hash=SMK}{%
          family={Smart},
          familyi={S\bibinitperiod},
@@ -6357,51 +6555,22 @@
          giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
-    \keyw{Scramjet engine}
-    \strng{namehash}{SMSMK1}
-    \strng{fullhash}{SMSMK1}
+    \strng{namehash}{SMK1}
+    \strng{fullhash}{SMK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    A shock tunnel investigation of a scramjet with a
-  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
-  elliptical combustor has been$\backslash$nconducted at conditions simulating
-  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
-  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
-  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
-  began with a rearward facing step around its perimeter,$\backslash$nand was
-  followed by a constant area and diverging section. The
-  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
-  fuel was$\backslash$ninjected either through multiple portholes on the
-  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
-  at the combustor entrance,$\backslash$nor a combination of the two. All
-  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
-  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
-  Fuel injection in the intake produced$\backslash$nrobust combustion and good
-  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
-  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
-  was observed for fuel injection at the step at all
-  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
-  injection$\backslash$nwas observed to have the best performance. These
-  experimental results$\backslash$ndemonstrate that REST scramjets, designed
-  for access-to-space applications,$\backslash$ncan operate efficiently at
-  conditions below the design Mach number.%
-    }
     \verb{doi}
-    \verb 10.2514/1.37946
+    \verb 10.2514/2.5459
     \endverb
-    \field{issn}{0748-4658}
     \field{number}{3}
-    \field{pages}{555\bibrangedash 564}
-    \field{title}{{Shock Tunnel Experiments with a Mach 12 \{REST\} Scramjet at
-  Off-Design Conditions}}
-    \field{volume}{25}
+    \field{title}{{Design of Three-Dimensional Hypersonic Inlets with
+  Rectangular-to-Elliptical Shape Transition}}
+    \field{volume}{15}
     \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Suraweera2009.pdf:p
-    \verb df
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart1999.pdf:pdf
     \endverb
     \field{journaltitle}{Journal of Propulsion and Power}
-    \field{year}{2009}
+    \field{year}{1999}
   \endentry
 
   \entry{Smart2006}{article}{}
@@ -6524,6 +6693,68 @@
     \field{year}{2009}
   \endentry
 
+  \entry{Suraweera2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={Suraweera},
+         familyi={S\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={M\bibnamedelima K},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \keyw{Scramjet engine}
+    \strng{namehash}{SMSMK1}
+    \strng{fullhash}{SMSMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A shock tunnel investigation of a scramjet with a
+  rectangular-to-elliptical$\backslash$nshape transition (REST) inlet and an
+  elliptical combustor has been$\backslash$nconducted at conditions simulating
+  flight at Mach 8.7. The inlet$\backslash$nwas designed using a
+  quasi-streamline-tracing method to have a design$\backslash$npoint of Mach
+  12.0 and operation down to Mach 6.0. The elliptical$\backslash$ncombustor
+  began with a rearward facing step around its perimeter,$\backslash$nand was
+  followed by a constant area and diverging section. The
+  flowpath$\backslash$nwas completed by a short thrust nozzle. Gaseous hydrogen
+  fuel was$\backslash$ninjected either through multiple portholes on the
+  intake, or a series$\backslash$nof 48 portholes on the rearward facing step
+  at the combustor entrance,$\backslash$nor a combination of the two. All
+  fuelling configurations resulted$\backslash$nin a positive thrust coefficient
+  at equivalence ratios above 0.3$\backslash$nwithout the use of ignition aids.
+  Fuel injection in the intake produced$\backslash$nrobust combustion and good
+  internal thrust levels, but led to inlet$\backslash$nunstart at fuel
+  equivalence ratios above 0.61. Stable, mixing limited$\backslash$ncombustion
+  was observed for fuel injection at the step at all
+  fuel$\backslash$nequivalence ratios up to 1.23. Combined intake and step
+  injection$\backslash$nwas observed to have the best performance. These
+  experimental results$\backslash$ndemonstrate that REST scramjets, designed
+  for access-to-space applications,$\backslash$ncan operate efficiently at
+  conditions below the design Mach number.%
+    }
+    \verb{doi}
+    \verb 10.2514/1.37946
+    \endverb
+    \field{issn}{0748-4658}
+    \field{number}{3}
+    \field{pages}{555\bibrangedash 564}
+    \field{title}{{Shock Tunnel Experiments with a Mach 12 \{REST\} Scramjet at
+  Off-Design Conditions}}
+    \field{volume}{25}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Suraweera2009.pdf:p
+    \verb df
+    \endverb
+    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{year}{2009}
+  \endentry
+
   \entry{Administration1976}{book}{}
     \name{author}{1}{}{%
       {{hash=N}{%
@@ -6583,6 +6814,33 @@
     \field{journaltitle}{Proceedings of the Royal Society A: Mathematical,
   Physical and Engineering Sciences}
     \field{year}{1937}
+  \endentry
+
+  \entry{Curran2016}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=CD}{%
+         family={Curran},
+         familyi={C\bibinitperiod},
+         given={Damian},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CD1}
+    \strng{fullhash}{CD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{October}
+    \field{title}{{Investigation of the Performance of an Accelerator Scramjet
+  with CRESTInlet and Expansion Ramp Combustor}}
+    \list{institution}{1}{%
+      {University of Queensland}%
+    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/CURRAN\_Damian\_the
+    \verb sis.pdf:pdf
+    \endverb
+    \field{type}{phdthesis}
+    \field{year}{2016}
   \endentry
 
   \entry{Pointwise}{misc}{}
@@ -6954,6 +7212,31 @@
     \field{year}{2015}
   \endentry
 
+  \entry{CREO}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={PTC},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{P2}
+    \strng{fullhash}{P2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{www.ptc.com}
+    \verb{url}
+    \verb http://www.ptc.com/cad/creo/parametric
+    \endverb
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/AppData/Local/Mendeley Ltd./Mendeley D
+    \verb esktop/Downloaded/6630bf8d42419a799b466859ad8ed8eb24e3256c.html:html
+    \endverb
+    \field{year}{2017}
+    \field{urlday}{01}
+    \field{urlmonth}{02}
+    \field{urlyear}{2017}
+  \endentry
+
   \entry{Vehicle2008}{report}{}
     \name{author}{1}{}{%
       {{hash=S}{%
@@ -7111,30 +7394,28 @@
       {{hash=FE}{%
          family={Fitzer},
          familyi={F\bibinitperiod},
-         given={E},
-         giveni={E},
+         given={E.},
+         giveni={E\bibinitperiod},
       }}%
       {{hash=ML}{%
          family={Manocha},
          familyi={M\bibinitperiod},
-         given={L},
-         giveni={L},
+         given={L.M.},
+         giveni={L\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Springer}%
+      {Springer Berlin Heidelberg}%
     }
     \strng{namehash}{FEML1}
     \strng{fullhash}{FEML1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{9783642637070}
-    \field{pages}{224}
+    \field{isbn}{3-642-58745-3}
     \field{title}{{Carbon Reinforcements and Carbon/Carbon Composites}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/1998\_Book\_CarbonR
-    \verb einforcementsAndCarbonC.pdf:pdf
-    \endverb
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
     \field{year}{1998}
   \endentry
 
@@ -7279,6 +7560,38 @@
     \field{year}{2001}
   \endentry
 
+  \entry{Hadjaj2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HA}{%
+         family={Hadjadj},
+         familyi={H\bibinitperiod},
+         given={Abdellah},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Onofri},
+         familyi={O\bibinitperiod},
+         given={Marcello},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HAOM1}
+    \strng{fullhash}{HAOM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s00193-009-0209-7
+    \endverb
+    \field{pages}{163\bibrangedash 169}
+    \field{title}{{Nozzle flow separation}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Nozzle\_flow\_separ
+    \verb ation.pdf:pdf
+    \endverb
+    \field{journaltitle}{Shock Waves}
+    \field{year}{2009}
+  \endentry
+
   \entry{mochammad}{thesis}{}
     \name{author}{1}{}{%
       {{hash=AM}{%
@@ -7420,33 +7733,6 @@
     \field{journaltitle}{19th AIAA International Space Planes and Hypersonic
   Systems and Technologies Conference}
     \field{year}{2014}
-  \endentry
-
-  \entry{Preller2018}{thesis}{}
-    \name{author}{1}{}{%
-      {{hash=PD}{%
-         family={Preller},
-         familyi={P\bibinitperiod},
-         given={Dawid},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PD1}
-    \strng{fullhash}{PD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Multidisciplinary Design and Optimisation of a Pitch Trimmed
-  Hypersonic Airbreathing Accelerating Vehicle}}
-    \list{institution}{1}{%
-      {University of Queensland}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/Dawids Stuff/Preller-2017-
-    \verb Multidisciplinary-Design-and-Optimisation-of-a-Pitch-Trimmed-Hyperson
-    \verb ic-Airbreathing-Accelerating-Vehicle.pdf:pdf
-    \endverb
-    \field{type}{phdthesis}
-    \field{year}{2018}
   \endentry
 
   \entry{Patterson2015}{report}{}
