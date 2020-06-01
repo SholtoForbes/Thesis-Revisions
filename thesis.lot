@@ -20,22 +20,22 @@
 \contentsline {table}{\numberline {5.3}{\ignorespaces Optimisation setup of the second stage ascent.\relax }}{113}{table.5.3}
 \contentsline {table}{\numberline {5.4}{\ignorespaces Optimisation setup of the second stage return.\relax }}{114}{table.5.4}
 \contentsline {table}{\numberline {5.5}{\ignorespaces Optimisation setup of the third stage powered ascent.\relax }}{115}{table.5.5}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Material Properties, geometries, and and Boundary Conditions used for thermal analysis. \relax }}{126}{table.5.6}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Material Properties, geometries, and and Boundary Conditions used for thermal analysis. \relax }}{125}{table.5.6}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces Selected trajectory conditions for a maximum payload-to-orbit trajectory with the scramjet accelerator constrained to 50kPa (Case 1).\relax }}{133}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Selected trajectory conditions for a maximum payload-to-orbit trajectory (Case 2).\relax }}{139}{table.6.2}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Selected trajectory conditions for an maximum efficiency optimal payload-to-orbit trajectory (Case 2).\relax }}{139}{table.6.2}
 \contentsline {table}{\numberline {6.3}{\ignorespaces The uncertainty margins associated with the aerodynamic and propulsive modelling (copy of Table \ref {tab:AppendixUncertainty}, see Appendix \ref {tab:AppendixUncertaintyCopy} for details).\relax }}{144}{table.6.3}
-\contentsline {table}{\numberline {6.4}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, the scramjet accelerator constrained to constant dynamic pressure (Cases 1 \& 2). The energy expenditures of each phase are shown, with blue indicating a 'productive' energy usage, whereas red indicates energy 'wastage'.\relax }}{145}{table.6.4}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the scramjet accelerator (Case 3).\relax }}{148}{table.6.5}
+\contentsline {table}{\numberline {6.4}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, the scramjet accelerator constrained to constant dynamic pressure (Cases 1 \& 2). The energy expenditures of each phase are shown, with blue indicating a 'productive' energy usage, whereas red indicates energy 'wastage'.\relax }}{146}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the scramjet accelerator (Case 3).\relax }}{149}{table.6.5}
 \contentsline {table}{\numberline {6.6}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the scramjet accelerator (Case 4).\relax }}{150}{table.6.6}
 \contentsline {table}{\numberline {6.7}{\ignorespaces Comparison of key trajectory parameters with variations in the specific impulse of the C-REST engines (Case 5).\relax }}{151}{table.6.7}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Comparison of key trajectory parameters with variation in the structural mass of the scramjet accelerator (Case 6).\relax }}{152}{table.6.8}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Comparison of key trajectory parameters with variation in the structural mass of the scramjet accelerator (Case 6).\relax }}{153}{table.6.8}
 \contentsline {table}{\numberline {6.9}{\ignorespaces Comparison of key trajectory parameters with variation in the fuel mass of the scramjet accelerator (Case 7).\relax }}{154}{table.6.9}
 \contentsline {table}{\numberline {6.10}{\ignorespaces Comparison of key trajectory parameters with variation in the mass of the third stage (Case 8).\relax }}{155}{table.6.10}
-\contentsline {table}{\numberline {6.11}{\ignorespaces Comparison of key trajectory parameters with variation in the third stage specific impulse (Case 9).\relax }}{156}{table.6.11}
-\contentsline {table}{\numberline {6.12}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the third stage (Case 10).\relax }}{157}{table.6.12}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Comparison of key trajectory parameters with variation in the third stage specific impulse (Case 9).\relax }}{157}{table.6.11}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the third stage (Case 10).\relax }}{158}{table.6.12}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Selected trajectory conditions for a maximum payload-to-orbit trajectory including scramjet accelerator fly-back (Case 11).\relax }}{165}{table.7.1}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Selected trajectory conditions for a maximum efficiency, optimal payload-to-orbit trajectory including scramjet accelerator fly-back (Case 11).\relax }}{165}{table.7.1}
 \contentsline {table}{\numberline {7.2}{\ignorespaces An energy usage breakdown of the ascent trajectories, both with, and without, scramjet accelerator fly-back (Cases 11 \& 2). Blue indicates a 'productive' energy usage, whereas red indicates energy 'wastage'. Negative energy indicates energy being supplied.\relax }}{174}{table.7.2}
 \contentsline {table}{\numberline {7.3}{\ignorespaces Comparison of key trajectory parameters with variation in the maximum dynamic pressure of the scramjet accelerator, with fly-back (Case 12).\relax }}{176}{table.7.3}
 \contentsline {table}{\numberline {7.4}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the scramjet accelerator, with fly-back (Case 13).\relax }}{177}{table.7.4}
@@ -52,16 +52,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces The uncertainty margins associated with the aerodynamic and propulsive modelling of the representative launch system in this study. Values are shown to the significant figure accuracy reported by their source.\relax }}{238}{table.A.1}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Optimised trajectory properties with atmospheric uncertainty variations.\relax }}{241}{table.A.2}
+\contentsline {table}{\numberline {A.1}{\ignorespaces The uncertainty margins associated with the aerodynamic and propulsive modelling of the Representative Launch System in this study. Values are shown to the significant figure accuracy reported by their source.\relax }}{240}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Optimised trajectory properties with atmospheric uncertainty variations.\relax }}{243}{table.A.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Optimisation setup of the Brachistochrone problem. \relax }}{244}{table.B.1}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8. (Case 21)\relax }}{262}{table.D.1}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Summary of the key results from a maximum payload-to-orbit trajectory with the scramjet accelerator constrained to 50kPa, including fly-back (Case 22).\relax }}{268}{table.D.2}
-\contentsline {table}{\numberline {D.3}{\ignorespaces A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction (Case 23).\relax }}{272}{table.D.3}
-\contentsline {table}{\numberline {D.4}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the scramjet accelerator during fly-back (Case 24).\relax }}{273}{table.D.4}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Optimisation setup of the Brachistochrone problem. \relax }}{246}{table.B.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Summary of key trajectory parameters with scramjet accelerator viscous drag variation (Case 25).\relax }}{318}{table.F.1}
+\contentsline {table}{\numberline {D.1}{\ignorespaces A summary of key results from the maximum payload-to-orbit trajectory, constrained to 50kPa between Mach numbers 6 to 8. (Case 21)\relax }}{264}{table.D.1}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Summary of the key results from a maximum payload-to-orbit trajectory with the scramjet accelerator constrained to 50kPa, including fly-back (Case 22).\relax }}{270}{table.D.2}
+\contentsline {table}{\numberline {D.3}{\ignorespaces A summary of key trajectory parameters of the maximum payload-to-orbit trajectory launched in a southerly direction (Case 23).\relax }}{274}{table.D.3}
+\contentsline {table}{\numberline {D.4}{\ignorespaces Comparison of key trajectory parameters with variation in the drag of the scramjet accelerator during fly-back (Case 24).\relax }}{275}{table.D.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {F.1}{\ignorespaces Summary of key trajectory parameters with scramjet accelerator viscous drag variation (Case 25).\relax }}{320}{table.F.1}

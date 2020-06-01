@@ -26,7 +26,7 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
   \vfill
 
-  {\large A thesis submitted for the degree of Doctor of Philosophy at\\ The University of Queensland in 2018}
+  {\large A thesis submitted for the degree of Doctor of Philosophy at\\ The University of Queensland in 2020}
 
   \vspace{20pt}
 
@@ -43,33 +43,33 @@
 }
 \noindent
  The small satellite industry is expanding rapidly, driving a need for dedicated and cost effective small satellite launchers.  
-These small satellite launchers are currently designed to be single-use and low-cost, however, significant improvements in cost effectiveness and responsiveness may be achieved via the introduction of reusability. Unfortunately, the inclusion of reusability into small launch system designs is significantly more challenging than for larger launchers, and novel design methods may be necessary to achieve reliable and efficient re-use. One possibility for accomplishing reusability in a small launch system is the inclusion of airbreathing propulsion systems.
+These small satellite launchers are currently designed to be single-use and low-cost, however; significant improvements in cost effectiveness and responsiveness may be achieved via the introduction of reusability. Unfortunately, the inclusion of reusability into small launch system designs is significantly more challenging than for larger launchers, and novel design methods may be necessary to achieve reliable and efficient re-use. One possibility for accomplishing reusability in a small launch system is the inclusion of airbreathing propulsion systems.
 
 Airbreathing propulsion systems are extremely efficient, and do not require oxidiser to be carried on-board a launch system, bringing considerable operational and design advantages. 
-However, airbreathing engines also add complexity to a launch system, with intricate subsystems and limited flight regimes. Because of this complexity, and the relative immaturity of airbreathing engine development, airbreathing launch systems are still in the early stages of design, with various configurations being investigated. Of these configurations, multi-stage systems are likely to be the most applicable to small launch systems, due to the favourable effects of stage separation with the restricted mass margins of small launchers. However, a multi-stage design compounds on the complexity of airbreathing launch systems, and the efficiency trade-offs between the stages of multi-stage airbreathing launch systems, particularly for three-stage systems with a fly-back component, are not well understood. This work aims to aid in the development of multi-stage airbreathing launch systems by developing and studying optimal payload-to-orbit trajectories for a three-stage airbreathing launcher, in order to understand the capabilities of the system and analyse the performance trade-offs between the stages during flight of a maximum payload-to-orbit trajectory with a fly-back of the airbreathing stage.
+However; airbreathing engines also add complexity to a launch system, with intricate subsystems and limited flight regimes. 
+Multi-stage systems are likely to be the most applicable to small launch systems, but these designs compound on the complexity of airbreathing launch systems, and the efficiency trade-offs between the stages, particularly for three-stage systems, are not well understood. This work develops and analyses optimal payload-to-orbit trajectories for a three-stage airbreathing launcher, in order to understand the capabilities of the system and investigate the performance trade-offs between the stages during flight.
 
 
 
  A representative launch system is developed, consisting of two rocket stages and scramjet-powered accelerator stage.
 This launch system is based on the SPARTAN scramjet-powered accelerator, being developed by the University of Queensland and Hypersonix, with a first stage based on the Falcon-1e, and a bespoke third stage. These stages are designed to the detail required for preliminary analysis, along with aerodynamic, mass and propulsive models.
-During the launch of this system, there are complex trade-offs between the performance of each stage that must be accounted for, requiring a robust and accurate trajectory optimisation methodology. 
- A package is developed to calculate the maximum payload-to-orbit trajectory of the representative launch system, designated LODESTAR, which uses optimal control theory to design flight paths. LODESTAR utilises GPOPS-2, a pseudospectral method optimal control software, configured to calculate maximum payload-to-orbit trajectory profiles. Along with the configuration of GPOPS-2, LODESTAR provides a 3 degree-of-freedom simulation of each stage, and tools to verify and examine the optimised solutions produced by GPOPS-2.
+ A package is developed to calculate the maximum payload-to-orbit trajectory of airbreathing launch systems, designated LODESTAR. LODESTAR utilises GPOPS-2, a pseudospectral method optimal control software, configured to calculate maximum payload-to-orbit trajectory profiles. Along with the configuration of GPOPS-2, LODESTAR provides a three degree-of-freedom simulation of each stage, and tools to verify and examine the optimised solutions produced by GPOPS-2.
 
 
  
-Launch trajectories are initially simulated assuming that the scramjet accelerator lands at some position downrange. A launch trajectory is simulated in which the scramjet accelerator flies at maximum dynamic pressure as a reference and verification case, as flight at this limit during airbreathing engine operation is often assumed in previous studies to produce a maximum efficiency trajectory. This trajectory achieves a payload-to-orbit of \PayloadToOrbitConstqNoReturn kg, launching to sun synchronous orbit.  
-The maximum payload-to-orbit trajectory of the launch system is calculated, and is found to differ significantly from the trajectory in which the scramjet accelerator is constrained to constant dynamic pressure. 
+Launch trajectories are initially simulated assuming that the scramjet accelerator lands at some position downrange. A launch trajectory is simulated in which the scramjet accelerator is constrained to flight at maximum dynamic pressure for reference and verification, as flight at this limit during airbreathing engine operation is often assumed in previous studies to produce a maximum efficiency launch trajectory. This trajectory achieves a payload-to-orbit of \PayloadToOrbitConstqNoReturn kg, launching to sun synchronous orbit.  
+The optimised maximum efficiency trajectory of the launch system is then calculated, and is found to differ significantly from the trajectory in which the scramjet accelerator is constrained to constant dynamic pressure. 
  The scramjet accelerator is found to deviate from its maximum dynamic pressure at both stage separation points, and for a segment in the middle of its trajectory.
  The higher separation points result in the efficiency of the scramjet accelerator reducing, but increase the efficiency of the rocket stages, improving the overall efficiency of the system. 
-  Additionally, an altitude raising manoeuvre is performed in a region where the specific impulse of the scramjet engines is relatively homogeneous with varied flight conditions, resulting in a further small performance increase. Overall, flying an optimal trajectory increases the payload-to-orbit of the system launching to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg, an increase of 59.1\% compared to a trajectory in which the scramjet accelerator flies at maximum dynamic pressure.  
+  Additionally, an altitude raising manoeuvre is performed in a region where the specific impulse of the scramjet engines is relatively homogeneous with varied flight conditions, resulting in a further small performance increase. Overall, flying an optimal maximum efficiency trajectory increases the payload-to-orbit of the system launching to sun synchronous orbit to \PayloadToOrbitStandardNoReturn kg, an increase of 59.1\% compared to a trajectory in which the scramjet accelerator flies at a constant dynamic pressure.  
  
  
- Next, the fly-back of the scramjet accelerator is included within the trajectory optimisation, and simulated to produce a non-intuitive maximum payload-to-orbit flight profile. 
+ Next, the fly-back of the scramjet accelerator is included within the trajectory optimisation, and a maximum payload-to-orbit flight profile is calculated. 
  It is found that the scramjet accelerator is able to achieve fly-back, but that it must ignite its scramjet engines during its return flight, causing the fly-back to become an important consideration in the optimal trajectory design. When the fly-back is included, the first stage pitches easterly, rather than northerly. The scramjet accelerator banks heavily throughout its acceleration to manoeuvre to polar inclination, decreasing the performance of the scramjet accelerator, but also reducing the amount of fuel used during fly-back, for a net performance gain. 
 The fly-back is found to exhibit multiple `skipping' manoeuvres, which serve to increase the range of the scramjet accelerator, minimising the fuel necessary during the return flight. In addition, the scramjet engines are powered on at the troughs of the first three skips, corresponding to the points of highest possible specific impulse. This optimal trajectory for the launch system is able to deliver \PayloadToOrbitStandard kg of payload to sun synchronous orbit while successfully returning the scramjet accelerator to its initial launch site.  
 
 Finally, a study is conducted to quantify the sensitivity of the launch system to variations in key design parameters. 
-The sensitivities of coupled design parameters are compared, to quantify their relative impacts on the performance of the launch system. The magnitudes of these relative impacts are assessed, and the behaviour of the maximum payload-to-orbit trajectory is investigated as the physical characteristics of the launch system are modified, to provide insights into both the optimised trajectory and the launch vehicle design. 
+The sensitivities of coupled design parameters are compared, to quantify their relative impacts on the performance of the launch system. The magnitudes of these relative impacts are assessed, and the behaviour of the maximum payload-to-orbit trajectory is investigated as the performance characteristics of the launch system are modified, to provide insights into both the optimised trajectory and the launch vehicle performance. 
 
  
 
@@ -105,6 +105,7 @@ The sensitivities of coupled design parameters are compared, to quantify their r
 This thesis comprises partly of publications, as allowed by University of Queensland Policy PPL 4.60.07. The papers that have been included have all been published in peer reviewed journals at the time of submission. 
 
 \vspace{\baselineskip}
+\noindent
 \AtNextCite{\defcounter{maxnames}{99}}\fullcite{ForbesSpyratos2018}
 
 \begin{center}
@@ -163,14 +164,14 @@ This research was supported by an Australian Government Research Training Progra
 
 
 \section*{Acknowledgements} 
-  For Kaitlin, with love to my family and friends, and utmost gratitude to my advisors; Ingo Jahn, Michael Kearney, and Michael Smart. 
+  For Kaitlin, with love to my parents Alexandra and Tony, and utmost gratitude to my family and friends, as well as to my advisors; Ingo Jahn, Michael Kearney, and Michael Smart. 
 
       \vspace*{\fill}
 
 
 \clearpage
 \subsection*{Keywords}
-  airbreathing propulsion, scramjets, hypersonics, access-to-space, small satellite launchers, airbreathing launch systems
+  airbreathing propulsion, scramjets, hypersonics, access-to-space, small satellite launchers, airbreathing launch systems, trajectory optimisation
 
 \subsection*{Australian and New Zealand Standard Research Classification (ANZSRC)}
 
@@ -308,11 +309,9 @@ ANZSRC code: 010303 Optimisation, 30\% \newline
 	$J$ & $=$ & Total Cost Functional\\
 \end{tabular}
 \newline  	
-\vspace{0.5in}
-\begin{tabular}{p{5.2cm}p{1cm}p{5cm}}
+\begin{tabular}{p{5.2cm}p{1cm}p{10cm}}
 	\textit{Subscripts} & & \\
 \end{tabular} 
-\newline
 \begin{tabular}{p{0.8cm}p{0.8cm}p{5.6cm}}
 	$1$ & $=$ & $1^{st}$ Stage Rocket\\
 \end{tabular} 

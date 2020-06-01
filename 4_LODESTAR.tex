@@ -517,24 +517,6 @@ k_2 = 3.35 \times 10^{-4} \cos^{1.78}(\theta) \sin^{1.6}(\theta) x_T^{-1/5} (\fr
 \end{equation}
 where $\theta$ is the flow incidence angle and $x_T$ is the distance along the body from the transition point\cite{Dirkx,Tauber2008}. For the purposes of the leading edge heating the transition point is assumed to be half the distance along the nose cone, and the transitional boundary layer length is assumed to be equal to the preceding laminar flow distance. Along with this assumption, in this study the aeroheating is calculated at the start of the wing, providing a worst case scenario for the heating rate on the leading edge. 
 
-
-\subsubsection{Transient Thermal Analysis and Boundary Conditions}
-\noindent
-In order to determine the temperatures reached at the locations defined in Figure \ref{fig:Q_pos}, for the nominal TPS geometries defined in Table \ref{tab:thermalprops}, the outer heat shielding layer is analysed using the one-dimensional transient heat equation. Utilising the time varying heat flux on the outside of the vehicle and the thermal boundary conditions, the evolution of the temperature profile of the vehicle skin is calculated. 
-This one-dimensional thermal analysis is performed using a modified version of the code {\it SurfaceTemp} distributed as part of the {\it htdt} code repository\cite{htdt}. {\it SurfaceTemp} uses time-marching to solve the transient heat equation, with Heat flux boundary conditions for the outside surface calculated using the instantaneous wall temperatures and the correlations described in the preceding section with the inner surface heat flux conditions set as adiabatic. For flat plate locations the solved equation is:  
-\begin{equation}
-\frac{\delta T^2}{\delta x^2} = \frac{\rho \, c}{k} \, \frac{\delta T}{\delta t} \\
-\end{equation}
-with
-\begin{eqnarray}
-q_{outside} &=& \text{Calculated using Eqn. A1.} \\
-q_{inside} &=& 0. 
-\end{eqnarray}
-Corresponding equations in spherical and cylindrical one-dimensional coordinates are solved for the nose stagnation and leading edge regions respectively. 
-
-Setting the inner boundary conditions as adiabatic results in a conservative estimate, because the heat load needs to be sustained using the latent heat capacity of the material. This results in the highest temperatures in the heat shielding material, which is particularly relevant to the survivability of the material. If more sophisticated cooling systems are implemented, more detailed analysis is essential as the reduced material temperatures will increase heat transfer. 
-
-Table \ref{tab:thermalprops}, summarises the parameters and modelling assumptions used for the analysis of points shown in Figure A1. For all cases the standard optimised trajectory with fly-back is used (Case 11, Section \ref{sec:case11}). 
 \afterpage{
 	\begin{landscape}
 		\begin{table}
@@ -554,6 +536,24 @@ Table \ref{tab:thermalprops}, summarises the parameters and modelling assumption
 		\end{table}
 	\end{landscape}
 }
+\subsubsection{Transient Thermal Analysis and Boundary Conditions}
+\noindent
+In order to determine the temperatures reached at the locations defined in Figure \ref{fig:Q_pos}, for the nominal TPS geometries defined in Table \ref{tab:thermalprops}, the outer heat shielding layer is analysed using the one-dimensional transient heat equation. Utilising the time varying heat flux on the outside of the vehicle and the thermal boundary conditions, the evolution of the temperature profile of the vehicle skin is calculated. 
+This one-dimensional thermal analysis is performed using a modified version of the code {\it SurfaceTemp} distributed as part of the {\it htdt} code repository\cite{htdt}. {\it SurfaceTemp} uses time-marching to solve the transient heat equation, with Heat flux boundary conditions for the outside surface calculated using the instantaneous wall temperatures and the correlations described in the preceding section with the inner surface heat flux conditions set as adiabatic. For flat plate locations the solved equation is:  
+\begin{equation}
+\frac{\delta T^2}{\delta x^2} = \frac{\rho \, c}{k} \, \frac{\delta T}{\delta t} \\
+\end{equation}
+with
+\begin{eqnarray}
+q_{outside} &=& \text{Calculated using Eqn. A1.} \\
+q_{inside} &=& 0. 
+\end{eqnarray}
+Corresponding equations in spherical and cylindrical one-dimensional coordinates are solved for the nose stagnation and leading edge regions respectively. 
+
+Setting the inner boundary conditions as adiabatic results in a conservative estimate, because the heat load needs to be sustained using the latent heat capacity of the material. This results in the highest temperatures in the heat shielding material, which is particularly relevant to the survivability of the material. If more sophisticated cooling systems are implemented, more detailed analysis is essential as the reduced material temperatures will increase heat transfer. 
+
+Table \ref{tab:thermalprops}, summarises the parameters and modelling assumptions used for the analysis of points shown in Figure A1. For all cases the standard optimised trajectory with fly-back is used (Case 11, Section \ref{sec:case11}). 
+
 
 
 

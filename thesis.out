@@ -67,9 +67,9 @@
 \BOOKMARK [0][-]{chapter.6}{Optimised Ascent Trajectory}{}% 67
 \BOOKMARK [1][-]{section.6.1}{Case 1: Constant Dynamic Pressure Trajectory}{chapter.6}% 68
 \BOOKMARK [1][-]{section.6.2}{Case 2: Maximum Efficiency Ascent Trajectory}{chapter.6}% 69
-\BOOKMARK [1][-]{section.6.3}{Case 2: Modelling of Uncertainties}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.3}{Modelling of Uncertainties}{chapter.6}% 70
 \BOOKMARK [1][-]{section.6.4}{Energy Usage Analysis}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.5}{Sensitivity Analysis}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.5}{Design Sensitivity Analysis}{chapter.6}% 72
 \BOOKMARK [2][-]{subsection.6.5.1}{Case 3: Maximum Dynamic Pressure Sensitivity}{section.6.5}% 73
 \BOOKMARK [2][-]{subsection.6.5.2}{Case 4: Scramjet Accelerator Drag Sensitivity}{section.6.5}% 74
 \BOOKMARK [2][-]{subsection.6.5.3}{Case 5: C-REST Specific Impulse Sensitivity}{section.6.5}% 75
@@ -84,7 +84,7 @@
 \BOOKMARK [1][-]{section.7.1}{Case 11: Maximum Efficiency Ascent Trajectory with Scramjet Accelerator Return}{chapter.7}% 84
 \BOOKMARK [1][-]{section.7.2}{Ascent Trajectory}{chapter.7}% 85
 \BOOKMARK [1][-]{section.7.3}{Fly-Back Trajectory}{chapter.7}% 86
-\BOOKMARK [1][-]{section.7.4}{Case 11: Modelling of Uncertainties}{chapter.7}% 87
+\BOOKMARK [1][-]{section.7.4}{Modelling of Uncertainties}{chapter.7}% 87
 \BOOKMARK [1][-]{section.7.5}{Energy Usage Analysis}{chapter.7}% 88
 \BOOKMARK [1][-]{section.7.6}{Design Sensitivity Analysis}{chapter.7}% 89
 \BOOKMARK [2][-]{subsection.7.6.1}{Case 12: Maximum Dynamic Pressure Sensitivity with Fly-Back}{section.7.6}% 90
@@ -103,8 +103,8 @@
 \BOOKMARK [1][-]{section.7.9}{Summary}{chapter.7}% 103
 \BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 104
 \BOOKMARK [0][-]{chapter.9}{Recommendations for future work}{}% 105
-\BOOKMARK [0][-]{chapter*.127}{References}{}% 106
-\BOOKMARK [0][-]{section*.128}{Glossary of Key Terms}{}% 107
+\BOOKMARK [0][-]{chapter*.128}{References}{}% 106
+\BOOKMARK [0][-]{section*.129}{Glossary of Key Terms}{}% 107
 \BOOKMARK [0][-]{appendix.A}{Modelling Uncertainties}{}% 108
 \BOOKMARK [1][-]{section.A.1}{Aerodynamic and Propulsion Simulation Uncertainties}{appendix.A}% 109
 \BOOKMARK [2][-]{subsection.A.1.1}{Aerodynamic Uncertainty}{section.A.1}% 110
@@ -146,7 +146,7 @@
 \BOOKMARK [1][-]{section.E.2}{Optimised Ascent Trajectory Comparisons With Fly-Back}{appendix.E}% 146
 \BOOKMARK [2][-]{subsection.E.2.1}{Case 12: Dynamic Pressure Sensitivity Comparison}{section.E.2}% 147
 \BOOKMARK [2][-]{subsection.E.2.2}{Case 13: Scramjet Accelerator Drag Sensitivity Comparison}{section.E.2}% 148
-\BOOKMARK [2][-]{subsection.E.2.3}{Case 14:scramjet accelerator Specific Impulse Sensitivity Comparison}{section.E.2}% 149
+\BOOKMARK [2][-]{subsection.E.2.3}{Case 14: Scramjet accelerator Specific Impulse Sensitivity Comparison}{section.E.2}% 149
 \BOOKMARK [2][-]{subsection.E.2.4}{Case 15: Scramjet Accelerator Mass Sensitivity Comparison}{section.E.2}% 150
 \BOOKMARK [2][-]{subsection.E.2.5}{Case 16: Scramjet Accelerator Fuel Mass Sensitivity Comparison}{section.E.2}% 151
 \BOOKMARK [2][-]{subsection.E.2.6}{Case 17: Third Stage Mass Sensitivity Comparison}{section.E.2}% 152

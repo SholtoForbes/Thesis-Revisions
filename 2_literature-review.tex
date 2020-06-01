@@ -559,7 +559,7 @@ However, the trajectory features of TSTO systems are inconsistent between studie
 
 The trajectory considered to produce maximum efficiency for a TSTO system is still unclear, and differs between studies and designs, in major part because of assumptions made during trajectory design. 
 The features that are observed in the studies of TSTO launch systems (particularly the pull-up manoeuvre before separation) occur to significantly different extents between studies, and for distinctly different reasons. 
-In the launch vehicles that have been studied, maximum dynamic pressure flight followed by a pull-up under airbreathing operation often conducted\cite{Wilhite1991, Mehta2001, Takahashi1997, Eklund2012}, and is sometimes considered the `optimal', or maximum efficiency flight path\cite{Bulirsch1995,Fujikawa2017,Mehta2001}. However, this pull-up and the reasoning behind it is inconsistent between studies.
+In the launch vehicles that have been studied, maximum dynamic pressure flight followed by a pull-up under airbreathing operation is often conducted\cite{Wilhite1991, Mehta2001, Takahashi1997, Eklund2012}, and is sometimes considered the `optimal', or maximum efficiency flight path\cite{Bulirsch1995,Fujikawa2017,Mehta2001}.
 The optimal trajectory of a TSTO spaceplane has been investigated in isolation by Bulirsch and Chudej\cite{Bulirsch1995}, who indicate that a small pull-up under airbreathing power maximises payload-to-orbit, but also that flight at constant dynamic pressure is not payload-optimal at any point of the airbreathing trajectory. Similarly, in the study of the JAXA TSTO Spaceplane\cite{Fujikawa2017}, a pull-up is indicated to be optimal, again after flight at off-maximum dynamic pressure. However, in this case it is indicated that the pull-up may be performed in order to improve the performance of the airbreathing engines, which is not generally indicated as the result of off-maximum dynamic pressure flight. 
 Mehta \& Bowles\cite{Mehta2001} prescribe a 2g pull-up off of maximum dynamic pressure in order to ``lower dynamic pressures and to achieve the optimal launching flight path angle for the orbiter vehicle", indicating that a pull-up before airbreathing-rocket transition is considered the optimal trajectory in isolation. However; this pull-up is also specifically done to reduce the maximum dynamic pressure of the orbiter stage (reaching the maximum allowable dynamic pressure for the orbiter stage at separation), and the specific optimal conditions are not investigated. 
 
@@ -582,7 +582,7 @@ In particular, there is disparity between whether maximum efficiency flight is c
 	\item the energy necessary to increase the altitude of the booster stage;
 	\item and the aerodynamic efficiency when performing the required direction change.
 \end{itemize}
-It is certain that the trajectory and the design of multi-stage launch systems are heavily coupled, and that both must be understood well before a detailed design is able to be achieved. However, there has been no studies that have thoroughly investigated the trajectory shapes or inter-stage trade-offs unique to multi-stage systems. 
+It is certain that the trajectory and the design of multi-stage launch systems are heavily coupled, and that both must be understood well before a detailed design is able to be achieved. However, there has been no studies that have thoroughly investigated the trajectory shapes or inter-stage trade-offs unique to multi-stage airbreathing launch systems. 
 
 
 
@@ -664,8 +664,8 @@ It is certain that the trajectory and the design of multi-stage launch systems a
 \end{landscape}
 }
 \noindent
-The lesser investigated configuration of multi-stage airbreathing launch systems is the three-stage-to-orbit (3STO) airbreathing launch systems. Three-stage configurations have recently been advocated as an efficient configuration for dedicated small satellite launch, a payload profile that has lately garnered a large amount of interest\cite{Preller2017b,Faa&Ast&Comstac2015}. A three-stage configuration allows for cost-efficient partial-reusability in small launchers, enabling the acceleration of a small, disposable third stage, with reusable first and second stages\cite{Preller2017b,Kimura1999}. 
-Three-stage systems are likely to be most applicable to smaller launch systems, where any 'dead' weight from unused propulsion systems at hypersonic speeds carries relatively larger mass penalties when compared to more massive systems. Three-stage systems allow the propulsion systems to be segmented further than two-stage systems, enabling separation between flight regimes and the mass-efficient utilisation of each engine mode\cite{Preller2017b}.
+The less investigated configuration of multi-stage airbreathing launch systems is the three-stage-to-orbit (3STO) airbreathing launch systems. Three-stage configurations have recently been advocated as an efficient configuration for dedicated small satellite launch, a payload profile that has lately garnered a large amount of interest\cite{Preller2017b,Faa&Ast&Comstac2015}. A three-stage configuration allows for cost-efficient partial-reusability in small launchers, enabling the acceleration of a small, disposable third stage, with reusable first and second stages\cite{Preller2017b,Kimura1999}. 
+Three-stage systems are likely to be most applicable to smaller launch systems, where any `dead' weight from unused propulsion systems at hypersonic speeds carries relatively larger mass penalties when compared to more massive systems. Three-stage systems allow the propulsion systems to be segmented further than two-stage systems, enabling separation between flight regimes and the mass-efficient utilisation of each engine mode\cite{Preller2017b}.
 
 The three-stage airbreathing launchers that have been or are being investigated are summarised in Table \ref{tab:threestage}. Only two such systems have been identified; the Tohoku University 3STO launch system investigated by Kimura and Sawada in 1999\cite{Kimura1999}, and the SPARTAN, a rocket-scramjet-rocket launch system currently under development by the University of Queensland and Hypersonix\cite{Preller2017b,Hypersonix}. Both of these systems are designed to be a cost effective near-term solution to airbreathing access to space, using a disposable third stage rocket along with reusable first and second stages. Both systems use second stages powered by scramjets, with the SPARTAN utilising a rocket-powered first stage along with vertical launch for a low complexity and relatively high technology readiness level (TRL) first stage design, while the Tohoku University launcher utilises turboramjets along with a horizontal launch and a large, winged first stage\cite{Kimura1999}. 
 
@@ -696,7 +696,7 @@ These boosters fly to a downrange distance of 600-625km from the launch site pri
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\linewidth]{"figures/2_literature-review/chai-boost skip"}
-	\caption{\textcolor{black}{An illustration of }the optimised maximum range trajectory of a hypersonic vehicle\cite{Chai2015}.}
+	\caption{An illustration of the optimised maximum range trajectory of a hypersonic vehicle\cite{Chai2015}.}
 	\label{fig:chai-boostskip}
 \end{figure}
 
@@ -968,7 +968,12 @@ Medium fidelity methods consist of inviscid Euler solvers such as Cart3D\cite{CA
 
 High fidelity methods consist of Navier-Stokes CFD solvers such as Eilmer3/4\cite{Gollan2013b}, Fluent\cite{Ansys2014}, CFX\cite{CFX}, COMSOL\cite{comsol}, TAU\cite{Schwamborn2006}, and OpenFOAM\cite{openfoam}. These solvers will resolve the fluid flow and aerodynamic forces to a high level of accuracy, including viscous effects. However, bespoke high quality meshes for the problem must be generated prior to the calculation of the solution, which increases the working time significantly. Additionally, the computation times are much longer, and require significantly more computational resources than lower fidelity methods. These factors make the generation of an aerodynamic database using high fidelity CFD an extremely time consuming process. As such, high fidelity CFD is suited for use on mature vehicle designs, or when accurate flow simulation is judged to be necessary to \textcolor{black}{capture the behaviour of all or part of a vehicle. This is generally applied when the behaviour of the flow is particularly complex, or when the accurate calculation of the flow properties is necessary to assess aerodynamics or engine performance.}
 
-
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/2_literature-review/Skylon-Cart3D}
+	\caption{The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha=7.512^\circ$\cite{Mehta2016}. Cell distribution produced by mesh adaptation is shown.}
+	\label{fig:Skylon-Cart3D}
+\end{figure}
 
 \textcolor{black}{
 \subsection{Cart3D}\label{sec:Cart3d}
@@ -976,12 +981,6 @@ High fidelity methods consist of Navier-Stokes CFD solvers such as Eilmer3/4\cit
 \noindent
 Cart3D is an inviscid Euler solver CFD package, designed for use during preliminary vehicle design and analysis\cite{Almosnino2016}. Cart3D is computationally efficient and requires only a surface triangulation of the vehicle being analysed to initiate a simulation. Cart3D is utilised in this study due to its balance of efficiency and ease of use, along with its reasonable accuracy for hypersonic flow calculations\cite{Abeynayake2013a,Ward2018,Kiris2011}. Cart3D features adjoint mesh adaptation, and uses cartesian `cut-cells' that intersect the surface, allowing complex geometries to be analysed automatically. The mesh automatically refines as the simulation progresses, adaptively reducing error. The absence of a requirement for a user generated mesh allows Cart3D to be easily applied to complex launch vehicle designs, as well as allowing for simple modification of control surface deflections and flight conditions. 
 Cart3D has been used extensively for aerodynamic simulations in preliminary design, including analysis of the plumes of the Skylon spaceplane\cite{Mehta2016}, HIFiRE-5\cite{Kimmel2010}, and in low sonic boom shape optimisations\cite{Aftosmis2011}. 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.6\linewidth]{figures/2_literature-review/Skylon-Cart3D}
-\caption{The Skylon spaceplane, simulated using Cart3D at Mach 12.189, $\alpha=7.512^\circ$\cite{Mehta2016}. Cell distribution produced by mesh adaptation is shown.}
-\label{fig:Skylon-Cart3D}
-\end{figure}
 Cart3D has shown fair agreement when compared to experimental and high-fidelity CFD results\cite{Abeynayake2013a,Ward2018,Kiris2011}, particularly in the hypersonic regime. Cart3D's comparative performance is analysed in detail in Appendix \ref{sec:aerounc}, utilising previous studies that compare Cart3D with experimental data and high fidelity CFD computations. 
 
 

@@ -1567,7 +1567,7 @@
     \field{year}{2012}
   \endentry
 
-  \entry{Bradford2002}{article}{}
+  \entry{Bradford2002}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=BJE}{%
          family={Bradford},
@@ -1575,11 +1575,11 @@
          given={J\bibnamedelima E},
          giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
-      {{hash=Ca}{%
+      {{hash=CA}{%
          family={Charania},
          familyi={C\bibinitperiod},
-         given={a},
-         giveni={a},
+         given={A},
+         giveni={A},
       }}%
       {{hash=OJR}{%
          family={Olds},
@@ -1608,16 +1608,19 @@
       }}%
     }
     \strng{namehash}{BJE+1}
-    \strng{fullhash}{BJECaOJRGMESGUSa1}
+    \strng{fullhash}{BJECAOJRGMESGUSa1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{{XCALIBUR : A VERTICAL TAKEOFF TSTO RLV CONCEPT WITH A HEDM
-  UPPERSTAGE AND A SCRAM-ROCKET BOOSTER 53rd International Astronautical
-  Congress The World Space Congress - 2002 10-19 Oct 2002 / Houston , Texas}}
+    \field{booktitle}{3rd International Astronautical Congress The World Space
+  Congress - 2002}
+    \field{title}{{Xcalibur : A Vertical Takeoff TSTO RLV Concept With A HEDM
+  Upperstage snd a Scram-Rocket Booster}}
+    \list{location}{1}{%
+      {Houston, TX}%
+    }
     \verb{file}
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Xcalibur.pdf:pdf
     \endverb
-    \field{journaltitle}{Director}
     \field{year}{2002}
   \endentry
 
@@ -2766,10 +2769,12 @@
     \field{labeltitlesource}{title}
     \field{number}{3219}
     \field{title}{{Scramjets}}
+    \field{volume}{October}
     \verb{file}
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/scramjets(1).pdf:pd
     \verb f
     \endverb
+    \field{journaltitle}{The Aeronautical Journal}
     \field{year}{2007}
   \endentry
 
