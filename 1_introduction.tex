@@ -132,24 +132,26 @@ Maximum payload-to-orbit optimised trajectories for the Representative Launch Sy
       
       
       \chapter{Background}
-   Launch system technologies have progressed rapidly over the last 60 years has been rapid. From the early vehicles based on intercontinental ballistic missile technology such as the Thor based launch systems, capable of launching 40-400kg to LEO in the 1950s, to the more modern Atlas V based systems of the 2000s capable of launching 9750-18500kg to LEO\cite{Kendall2010}. 
-         \begin{figure}[ht]
-         	\centering
-         	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/LaunchVehicles}
-         	\caption{Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite{BlueOrigin}.}
-         	\label{fig:LaunchVehicles}
-         \end{figure}
-    The materials, propulsion technology, aerodynamics and guidance algorithms have all improved significantly, enabling  rockets to become more efficient, cheaper to produce, and more reliable. As the demand for satellite launches grows, and the cost of development of launchers becomes cheaper, the potential for profiting from space launches increases. 
-    This has driven a large portion of the space flight industry to move towards privatisation, with a heavy focus on reusable technology. 
-        \begin{figure}[ht]
-        	\centering
-        	\includegraphics[width=1\linewidth]{"figures/2_literature-review/FalconTrajectory"}
-        	\caption{The trajectory of the Falcon Heavy\cite{FalconHeavy}.}
-        	\label{fig:FalconTrajectory}
-        \end{figure}
-
+      
+  Launch system technologies have progressed rapidly over the last 60 years. The materials, propulsion technology, aerodynamics and guidance algorithms have all improved significantly, enabling  rockets to become more efficient, cheaper to produce, and more reliable.          
+  As the demand for satellite launches grows, and the cost of development of launchers becomes cheaper, the potential for profiting from space launches increases. 
+  \begin{figure}[ht]
+  	\centering
+  	\includegraphics[width=0.9\linewidth]{figures/2_literature-review/LaunchVehicles}
+  	\caption{Comparison of Blue Origin and SpaceX partially-reusable launch systems with existing and historic launch systems\cite{BlueOrigin}.}
+  	\label{fig:LaunchVehicles}
+  \end{figure}
+  This has driven a large portion of the space flight industry to move towards privatisation, with a heavy focus on reusable technologies. 
+         
     
-    Launch vehicles with reusable elements have been in service for many years, in the form of the space shuttle. However, the space shuttle was weighed down by large launch costs and operational complexity, and was not a commercial success\cite{Launius2006}. Recently, reusable launchers have become the focus of many of the largest private launch companies, as reusability becomes more achievable due to technological advances\cite{Foust2018,Mosher2018}. The SpaceX Falcon 9 and Falcon Heavy have been demonstrated on multiple occasions, landing booster stages successfully, and re-flying reused boosters multiple times\cite{Foust2018}. In the near future the Blue Origin New Glenn is planned\cite{Foust2018}, with potentially the Airbus Adeline to follow (to be used on the Ariane 6)\cite{Adeline}. The Falcon and New Glenn launchers are large rockets, and are shown in Figure \ref{fig:LaunchVehicles} in a size comparison with other, expendable rocket systems, including the Ariane 5, which is projected to be similarly sized to the Ariane 6. 
+    Launch vehicles with reusable elements have been in service for many years, in the form of the space shuttle. However, the space shuttle program was hindered by large launch costs and operational complexity, and was not a commercial success\cite{Launius2006}. 
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=1\linewidth]{"figures/2_literature-review/FalconTrajectory"}
+    	\caption{The trajectory of the Falcon Heavy\cite{FalconHeavy}.}
+    	\label{fig:FalconTrajectory}
+    \end{figure}
+    Recently, reusable launchers have become the focus of many of the largest private launch companies, as reusability becomes more achievable due to technological advances\cite{Foust2018,Mosher2018}. The SpaceX Falcon 9 and Falcon Heavy have been demonstrated on multiple occasions, landing booster stages successfully, and re-flying reused boosters multiple times\cite{Foust2018}. In the near future the Blue Origin New Glenn is planned\cite{Foust2018}, with potentially the Airbus Adeline to follow (to be used on the Ariane 6)\cite{Adeline}. The Falcon and New Glenn launchers are large rockets, and are shown in Figure \ref{fig:LaunchVehicles} in a size comparison with other, expendable rocket systems, including the Ariane 5, which is projected to be similarly sized to the Ariane 6. 
      
 
     
@@ -189,12 +191,12 @@ Maximum payload-to-orbit optimised trajectories for the Representative Launch Sy
     				\hline Eris\cite{Gilmour} & Gilmour Space Technologies & Aus& 305kg to LEO  &\$23,000-38,000   & 2022 && No\\ 
     				\hline Intrepid-1\cite{Intrepid} & Rocket Crafters  & USA & 376kg to SSO & \$14400 & Q1 2019 & Rocket-rocket & No \\ 
     				\hline KZ-1A\cite{FT1} & CASIC  &  China & 250kg to SSO  & - & - & Rocket-rocket & No \\ 
-    				\hline  Blue Whale & Perigee & Korea & 50kg to LEO & \$4000 & 2021 &  Rocket-Rocket & No\\ 
+    				\hline  Blue Whale \cite{Perigee}& Perigee & Korea & 50kg to LEO & \$4000 & 2021 &  Rocket-Rocket & No\\ 
     				\hline SMILE\cite{Kuhn2017} & NLR &  EU & 50kg & $<$\$50,000 & -  & -& -\\ 
     				\hline 
     				Firefly $\alpha$\cite{firefly}& Firefly Aerospace &  USA & 630kg to SSO & \$9000 & 2020  & Rocket-Rocket& No\\ 
     				\hline 
-    				LauncherOne\cite{Virgin} & Virgin Orbit & UK & 200kg to SSO & \$50,000 & 2020 & Aircraft-rocket-rocket & Aircraft\\ 
+    				LauncherOne \cite{Virgin} & Virgin Orbit & UK & 200kg to SSO & \$50,000 & 2020 & Aircraft-rocket-rocket & Aircraft\\ 
     				\hline 
     				500R\cite{500R} & Orbital Access  & UK & 500kg to SSO & - & - & Aircraft-Rocket & Fully Reusable \\ 
     				\hline
@@ -218,7 +220,6 @@ Maximum payload-to-orbit optimised trajectories for the Representative Launch Sy
     
     A Scramjet, or supersonic combustion ramjet, is an airbreathing engine design that combusts air at supersonic speeds and is capable of high Mach number operation. 
     Across their operating range, scramjets offer much higher specific impulse than rockets, and require significantly less propellant mass\cite{Billig1993,Cook2003}.
-    Scramjets compress air without moving parts, using geometry changes within the engine\cite{Curran2001a}, as well as on the forebody of the vehicle, to create inlet shocks which provide the compression required for combustion\cite{Smart2012}. After combustion, the combustion products are expanded through a thrust nozzle, schematically shown in Figure \ref{fig:scramjet}. This is similar in operation to a ramjet engine, though a scramjet does not generate a normal shock, allowing supersonic air to enter the combustor. Maintaining supersonic speeds throughout the engine allows scramjets to operate efficiently at Mach numbers of 5 and greater. 
     Scramjets were proposed in the 1940's\cite{Curran2001} and found to be capable of positive net thrust in 1993\cite{Paull1993}, but the engines and support systems necessary for commercial applications have yet to be developed. 
     Though scramjets are still in-development, the potential advantages which they offer over rockets for certain applications are driving their development in a number of institutions\cite{Curran2001b}.
     \begin{figure}[ht]
@@ -228,9 +229,10 @@ Maximum payload-to-orbit optimised trajectories for the Representative Launch Sy
     	\label{fig:scramjet}
     \end{figure}
     
-    Scramjet engines are suitable for a number of applications where sustained flight or acceleration is desired at high Mach numbers. 
-    The high efficiency of scramjet engines, and the lack oxidiser on-board, means that significantly less propellant is used during flight compared to rocket engines, and consequently, that a much smaller fraction of a scramjet-powered vehicle consists of propellant mass\cite{Curran2003}. 
-    The smaller fuel mass fraction of a vehicle powered by scramjet engines mitigates the mass of the vehicle systems, allowing features such as wings, control surfaces, landing gear, and passenger transport capabilities to be included in the vehicle design\cite{Curran2003}. 
+    Scramjets compress air without moving parts, using geometry changes within the engine\cite{Curran2001a}, as well as on the forebody of the vehicle, to create inlet shocks which provide the compression required for combustion\cite{Smart2012}. After combustion, the combustion products are expanded through a thrust nozzle, schematically shown in Figure \ref{fig:scramjet}. This is similar in operation to a ramjet engine, though a scramjet does not generate a normal shock, allowing supersonic air to enter the combustor. Maintaining supersonic speeds throughout the engine allows scramjets to operate with high specific impulse at Mach numbers of 5 and greater. This high specific impulse, along with the usage of atmospheric air as oxidiser, means that a much smaller fraction of a scramjet-powered vehicle consists of propellant mass, when compared to a rocket-powered vehicle\cite{Curran2003}. The smaller fuel mass fraction of a scramjet-powered vehicle mitigates the run-on mass penalties of the vehicle subsystems, allowing features such as wings, control surfaces, landing gear, and passenger transport capabilities to be included in the vehicle design\cite{Curran2003}.  
+    
+    
+    
     
     \begin{figure}[ht]
     	\centering
@@ -261,14 +263,9 @@ Maximum payload-to-orbit optimised trajectories for the Representative Launch Sy
     \noindent
     The design of any launch system is a complex, multi-faceted process, that involves many areas of engineering and scientific expertise. Understanding the maximum efficiency trajectory of a launch system and how this interacts with the design is an integral step in the early launch vehicle design. The analysis of a launch system's trajectory enables the designers to understand the performance characteristics and design-trajectory coupling of the launch system, and drives design decisions that are made throughout the development process. 
     
+    
      Figure \ref{fig:DesignFlow} illustrates the general design process flow for a launch system as defined by NASA\cite{Blair2001}, in which the design stages involve a repeated iterative process between the overall launch system design and compartmentalised design tasks. This compartmentalisation takes place firstly by separating the
     launch system into its hardware and software subsystems, and then into general areas that define the specifications of the subsystem design (design functions). These areas include;
-    \begin{figure}[ht]
-    	\centering
-    	\includegraphics[width=0.7\linewidth]{figures/2_literature-review/DesignFlow}
-    	\caption{The general design process flow for a launch vehicle, adapted from Blair et al\cite{Blair2001}}.
-    	\label{fig:DesignFlow}
-    \end{figure}
     \begin{itemize}
     	\setlength\itemsep{.2em}
     	\item aerodynamics;
@@ -290,6 +287,12 @@ Maximum payload-to-orbit optimised trajectories for the Representative Launch Sy
     
     For an airbreathing launch system, this compartmentalisation is much more difficult, because the design of an airbreathing launch system is much more complex, with significant inter-stage design coupling, and heavy dependencies and trade-offs between the way in which an airbeathing launch system is flown, and its optimal design and performance characteristics. Atmospheric flight of airbreathing stages requires aircraft-style designs for control and stability, and results in complex trade-offs between the performance of the airbreathing engines, and the structural and thermal limitations of each stage. In addition, there is trade-offs between the performance of the various engines that are utilised by airbreathing launch systems, which generally mix airbreathing and rocket engines that have significantly different performance regimes.
     These trade-offs are specific to the types of engines and number of stages being employed by the launch system, and are closely coupled to the trajectory being flown. The investigation of the ideal launch trajectory of an airbreathing launch system, utilising subsystem models of appropriate fidelities, is an integral step in the early design process. Early trajectory analysis is important for the design of the launcher and its subsystems to be investigated, and for significant performance drivers to be identified early on. 
+    \begin{figure}[ht]
+    	\centering
+    	\includegraphics[width=0.6\linewidth]{figures/2_literature-review/DesignFlow}
+    	\caption{The general design process flow for a launch vehicle, adapted from Blair et al\cite{Blair2001}}.
+    	\label{fig:DesignFlow}
+    \end{figure}
   This is particularly true because many of the subsystems and technologies necessary to achieve airbreathing space access are in development at an academic level, and advances are necessary in multiple fields before the flight of an airbreathing launch vehicle becomes a reality. The investigation of the trajectory of an airbreathing launch system gives key insights into the design requirements of the launcher and it subsystems, and can drive academic study on the subsystems of airbreathing launchers, such as their propulsion, control, and thermal protection systems, as well as their overall designs. This can be used by designers to inform early designs, and to reduce the number of iterative cycles required during the design process. 
     
   

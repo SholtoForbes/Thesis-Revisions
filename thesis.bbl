@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.8 $
+% $ biblatex bbl format version 3.0 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,12 +16,12 @@
   {}
 \endgroup
 
-\sortlist[entry]{none/global/}
+\datalist[entry]{none/global//global/global}
   \entry{ForbesSpyratos2018}{article}{}
     \name{author}{4}{}{%
       {{hash=FSSO}{%
          family={Forbes-Spyratos},
-         familyi={F\bibinitperiod-S\bibinitperiod},
+         familyi={F\bibinithyphendelim S\bibinitperiod},
          given={Sholto\bibnamedelima O.},
          giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod},
       }}%
@@ -61,7 +61,7 @@
     \name{author}{4}{}{%
       {{hash=FSS}{%
          family={Forbes-Spyratos},
-         familyi={F\bibinitperiod-S\bibinitperiod},
+         familyi={F\bibinithyphendelim S\bibinitperiod},
          given={S.O.},
          giveni={S\bibinitperiod},
       }}%
@@ -107,7 +107,7 @@
     \name{author}{4}{}{%
       {{hash=FSSO}{%
          family={Forbes-Spyratos},
-         familyi={F\bibinitperiod-S\bibinitperiod},
+         familyi={F\bibinithyphendelim S\bibinitperiod},
          given={S\bibnamedelima O.},
          giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod},
       }}%
@@ -165,7 +165,7 @@
       }}%
       {{hash=FSS}{%
          family={Forbes-Spyratos},
-         familyi={F\bibinitperiod-S\bibinitperiod},
+         familyi={F\bibinithyphendelim S\bibinitperiod},
          given={Sholto},
          giveni={S\bibinitperiod},
       }}%
@@ -1779,37 +1779,6 @@
     \field{year}{1998}
   \endentry
 
-  \entry{Kendall2010}{misc}{}
-    \name{author}{2}{}{%
-      {{hash=KR}{%
-         family={Kendall},
-         familyi={K\bibinitperiod},
-         given={Randy},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=PP}{%
-         family={Portanova},
-         familyi={P\bibinitperiod},
-         given={Pete},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KRPP1}
-    \strng{fullhash}{KRPP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Aerospace.org}
-    \field{title}{{Launch Vehicles Then and Now: 50 Years of Evolution}}
-    \verb{url}
-    \verb http://www.aerospace.org/crosslinkmag/spring-2010/launch-vehicles-the
-    \verb n-and-now-50-years-of-evolution/
-    \endverb
-    \field{year}{2010}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
   \entry{BlueOrigin}{misc}{}
     \name{author}{1}{}{%
       {{hash=LS}{%
@@ -1831,31 +1800,6 @@
     \verb es-people.html
     \endverb
     \field{year}{2016}
-    \field{urlday}{21}
-    \field{urlmonth}{06}
-    \field{urlyear}{2018}
-  \endentry
-
-  \entry{FalconHeavy}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=PH}{%
-         family={Pettit},
-         familyi={P\bibinitperiod},
-         given={Harry},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{PH1}
-    \strng{fullhash}{PH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Daily Mail}
-    \field{title}{{The galaxy's fastest car}}
-    \verb{url}
-    \verb http://www.dailymail.co.uk/sciencetech/article-5361789/Ride-Elon-Musk
-    \verb s-Starman-travels-space.html
-    \endverb
-    \field{year}{2018}
     \field{urlday}{21}
     \field{urlmonth}{06}
     \field{urlyear}{2018}
@@ -1905,6 +1849,31 @@
     \endverb
     \field{journaltitle}{Space Policy}
     \field{year}{2006}
+  \endentry
+
+  \entry{FalconHeavy}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PH}{%
+         family={Pettit},
+         familyi={P\bibinitperiod},
+         given={Harry},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PH1}
+    \strng{fullhash}{PH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Daily Mail}
+    \field{title}{{The galaxy's fastest car}}
+    \verb{url}
+    \verb http://www.dailymail.co.uk/sciencetech/article-5361789/Ride-Elon-Musk
+    \verb s-Starman-travels-space.html
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{21}
+    \field{urlmonth}{06}
+    \field{urlyear}{2018}
   \endentry
 
   \entry{Foust2018}{misc}{}
@@ -2049,13 +2018,13 @@
     \name{author}{2}{}{%
       {{hash=SKM}{%
          family={Sarigul-Klijn},
-         familyi={S\bibinitperiod-K\bibinitperiod},
+         familyi={S\bibinithyphendelim K\bibinitperiod},
          given={Marti},
          giveni={M\bibinitperiod},
       }}%
       {{hash=SKN}{%
          family={Sarigul-Klijn},
-         familyi={S\bibinitperiod-K\bibinitperiod},
+         familyi={S\bibinithyphendelim K\bibinitperiod},
          given={Nesrin},
          giveni={N\bibinitperiod},
       }}%
@@ -2181,6 +2150,18 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Perigee}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{{Perigee Aerospace}}
+    \verb{url}
+    \verb http://perigee.kr/
+    \endverb
+    \field{year}{2019}
+    \field{urlday}{09}
+    \field{urlmonth}{10}
+    \field{urlyear}{2020}
+  \endentry
+
   \entry{Kuhn2017}{article}{}
     \name{author}{8}{}{%
       {{hash=KM}{%
@@ -2256,10 +2237,10 @@
     \field{year}{2017}
   \endentry
 
-  \entry{firefly}{report}{}
+  \entry{firefly}{misc}{}
     \name{author}{1}{}{%
       {{hash=F}{%
-         family={{Firefly Aerospace}},
+         family={Firefly},
          familyi={F\bibinitperiod},
       }}%
     }
@@ -2267,17 +2248,14 @@
     \strng{fullhash}{F2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{number}{April}
-    \field{title}{{Payload User's Guide}}
-    \list{location}{1}{%
-      {Cedar Park, TX}%
-    }
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Firefly Aerospace P
-    \verb ayload User's Guide.pdf:pdf
+    \field{title}{{Firefly}}
+    \verb{url}
+    \verb http://www.fireflyspace.com/
     \endverb
-    \field{type}{techreport}
-    \field{year}{2018}
+    \field{year}{2017}
+    \field{urlday}{30}
+    \field{urlmonth}{11}
+    \field{urlyear}{2017}
   \endentry
 
   \entry{Virgin}{misc}{}
@@ -2457,113 +2435,6 @@
     \field{year}{2003}
   \endentry
 
-  \entry{Curran2001a}{article}{}
-    \name{author}{1}{}{%
-      {{hash=CET}{%
-         family={Curran},
-         familyi={C\bibinitperiod},
-         given={Edward\bibnamedelima T.},
-         giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CET1}
-    \strng{fullhash}{CET1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Ageneral review of the emergence andmaturingof supersoniccombustionramjet
-  (scramjet) enginetechnologies over the last 40 years is presented. The review
-  is given in terms of the efforts completed or proceeding in theUnited States,
-  Russia, France, Germany, Japan, Australia, and other countries. A brief
-  account of the challenges of scramjet combustor development is given, and
-  attention is directed toward other source references for more detailed
-  accounts of technology evolution. Two emerging scramjet applications are
-  identi? ed, namely, hydrogen- fueled high-speed engines for access to space
-  and hydrocarbon-fueledengines for hypersonic air-launchedmissiles.%
-    }
-    \verb{doi}
-    \verb 10.2514/2.5875
-    \endverb
-    \field{isbn}{0748-4658}
-    \field{issn}{0748-4658}
-    \field{number}{6}
-    \field{pages}{1138\bibrangedash 1148}
-    \field{title}{{Scramjet Engines: The First Forty Years}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/2.5875
-    \endverb
-    \field{volume}{17}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Curran2001.pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Propulsion and Power}
-    \field{year}{2001}
-  \endentry
-
-  \entry{Smart2012}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SMK}{%
-         family={Smart},
-         familyi={S\bibinitperiod},
-         given={Michael\bibnamedelima K.},
-         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SMK2}
-    \strng{fullhash}{SMK2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The supersonic combustion ramjet, or scramjet, is the engine
-  cycle$\backslash$nmost suitable for sustained hypersonic flight
-  in$\backslash$n$\backslash$nthe atmosphere. This paper examines a key
-  decision in the design of$\backslash$nthe inlet or intake of these
-  hypersonic$\backslash$n$\backslash$nairbreathing engines, namely, the level
-  of compression to be performed.$\backslash$nToo much compression can lead to
-  onerous$\backslash$n$\backslash$nsystem level issues including the need for
-  bleed or variable geometry,$\backslash$nwhile too little compression can
-  result in low$\backslash$n$\backslash$ncycle efficiency and poor combustion
-  of fuel. An analysis of the important$\backslash$nfactors that affect the
-  choice of scramjet$\backslash$n$\backslash$ninlet compression ratio has been
-  performed for hydrogen-fueled scramjets$\backslash$nat Mach 6, 8, 10, and 12.
-  It was found that$\backslash$n$\backslash$ncontrary to classical
-  thermodynamic analyses, scramjet cycle efficiency$\backslash$nreaches an
-  optimum at a relatively low$\backslash$n$\backslash$ncompression ratio
-  between 50 and 100 for all Mach numbers. Practical$\backslash$nconstraints
-  related to nonequilibrium flow$\backslash$n$\backslash$neffects, inlet
-  starting, and boundary-layer separation were also shown$\backslash$nto prompt
-  a desire for low compression ratio.$\backslash$n$\backslash$nThe lower limit
-  on compression was found to be set by the need to$\backslash$ncomplete the
-  combustion reaction in the available$\backslash$n$\backslash$nengine length
-  and is therefore dependent on engine scale. On the basis$\backslash$nof these
-  factors it is recommended that$\backslash$n$\backslash$nscramjet inlet
-  compression ratio be set to the minimum that satisfies$\backslash$nthe robust
-  combustion requirement, with the$\backslash$n$\backslash$ncaveat that it not
-  be below 50 in order to maintain high cycle efficiency.$\backslash$nFor
-  typical wind-tunnel-scale engines, this$\backslash$n$\backslash$nresults in a
-  requirement for the inlet to compress airflow entering$\backslash$nthe
-  combustor to a pressure of approximately 1
-  atm,$\backslash$n$\backslash$n2$\backslash$n$\backslash$nregardless of the
-  flight Mach number.%
-    }
-    \verb{doi}
-    \verb 10.2514/1.J051281
-    \endverb
-    \field{issn}{0001-1452}
-    \field{number}{3}
-    \field{pages}{610\bibrangedash 619}
-    \field{title}{{How Much Compression Should a Scramjet Inlet Do?}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/1.J051281
-    \endverb
-    \field{volume}{50}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2012.pdf:pdf
-    \endverb
-    \field{journaltitle}{AIAA Journal}
-    \field{year}{2012}
-  \endentry
-
   \entry{Curran2001}{article}{}
     \name{author}{1}{}{%
       {{hash=CET}{%
@@ -2702,6 +2573,113 @@
     \field{isbn}{978-1-56347-035-6}
     \field{title}{{Hypersonic Airbreathing Propulsion}}
     \field{year}{1994}
+  \endentry
+
+  \entry{Curran2001a}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CET}{%
+         family={Curran},
+         familyi={C\bibinitperiod},
+         given={Edward\bibnamedelima T.},
+         giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CET1}
+    \strng{fullhash}{CET1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Ageneral review of the emergence andmaturingof supersoniccombustionramjet
+  (scramjet) enginetechnologies over the last 40 years is presented. The review
+  is given in terms of the efforts completed or proceeding in theUnited States,
+  Russia, France, Germany, Japan, Australia, and other countries. A brief
+  account of the challenges of scramjet combustor development is given, and
+  attention is directed toward other source references for more detailed
+  accounts of technology evolution. Two emerging scramjet applications are
+  identi? ed, namely, hydrogen- fueled high-speed engines for access to space
+  and hydrocarbon-fueledengines for hypersonic air-launchedmissiles.%
+    }
+    \verb{doi}
+    \verb 10.2514/2.5875
+    \endverb
+    \field{isbn}{0748-4658}
+    \field{issn}{0748-4658}
+    \field{number}{6}
+    \field{pages}{1138\bibrangedash 1148}
+    \field{title}{{Scramjet Engines: The First Forty Years}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/2.5875
+    \endverb
+    \field{volume}{17}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Curran2001.pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Propulsion and Power}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Smart2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SMK}{%
+         family={Smart},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMK2}
+    \strng{fullhash}{SMK2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The supersonic combustion ramjet, or scramjet, is the engine
+  cycle$\backslash$nmost suitable for sustained hypersonic flight
+  in$\backslash$n$\backslash$nthe atmosphere. This paper examines a key
+  decision in the design of$\backslash$nthe inlet or intake of these
+  hypersonic$\backslash$n$\backslash$nairbreathing engines, namely, the level
+  of compression to be performed.$\backslash$nToo much compression can lead to
+  onerous$\backslash$n$\backslash$nsystem level issues including the need for
+  bleed or variable geometry,$\backslash$nwhile too little compression can
+  result in low$\backslash$n$\backslash$ncycle efficiency and poor combustion
+  of fuel. An analysis of the important$\backslash$nfactors that affect the
+  choice of scramjet$\backslash$n$\backslash$ninlet compression ratio has been
+  performed for hydrogen-fueled scramjets$\backslash$nat Mach 6, 8, 10, and 12.
+  It was found that$\backslash$n$\backslash$ncontrary to classical
+  thermodynamic analyses, scramjet cycle efficiency$\backslash$nreaches an
+  optimum at a relatively low$\backslash$n$\backslash$ncompression ratio
+  between 50 and 100 for all Mach numbers. Practical$\backslash$nconstraints
+  related to nonequilibrium flow$\backslash$n$\backslash$neffects, inlet
+  starting, and boundary-layer separation were also shown$\backslash$nto prompt
+  a desire for low compression ratio.$\backslash$n$\backslash$nThe lower limit
+  on compression was found to be set by the need to$\backslash$ncomplete the
+  combustion reaction in the available$\backslash$n$\backslash$nengine length
+  and is therefore dependent on engine scale. On the basis$\backslash$nof these
+  factors it is recommended that$\backslash$n$\backslash$nscramjet inlet
+  compression ratio be set to the minimum that satisfies$\backslash$nthe robust
+  combustion requirement, with the$\backslash$n$\backslash$ncaveat that it not
+  be below 50 in order to maintain high cycle efficiency.$\backslash$nFor
+  typical wind-tunnel-scale engines, this$\backslash$n$\backslash$nresults in a
+  requirement for the inlet to compress airflow entering$\backslash$nthe
+  combustor to a pressure of approximately 1
+  atm,$\backslash$n$\backslash$n2$\backslash$n$\backslash$nregardless of the
+  flight Mach number.%
+    }
+    \verb{doi}
+    \verb 10.2514/1.J051281
+    \endverb
+    \field{issn}{0001-1452}
+    \field{number}{3}
+    \field{pages}{610\bibrangedash 619}
+    \field{title}{{How Much Compression Should a Scramjet Inlet Do?}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/1.J051281
+    \endverb
+    \field{volume}{50}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Smart2012.pdf:pdf
+    \endverb
+    \field{journaltitle}{AIAA Journal}
+    \field{year}{2012}
   \endentry
 
   \entry{Fry2004}{article}{}
@@ -2971,7 +2949,7 @@
       }}%
       {{hash=SoUM}{%
          family={Sch-ograve},
-         familyi={S\bibinitperiod-o\bibinitperiod},
+         familyi={S\bibinithyphendelim o\bibinitperiod},
          given={U\bibnamedelima M},
          giveni={U\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
@@ -3040,7 +3018,8 @@
          family={Plane},
          familyi={P\bibinitperiod},
          given={National Aero-space},
-         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod-s\bibinitperiod},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinithyphendelim
+  s\bibinitperiod},
       }}%
     }
     \strng{namehash}{PNAs1}
@@ -4245,7 +4224,7 @@
          family={Kreiss},
          familyi={K\bibinitperiod},
          given={Heinz-Otto},
-         giveni={H\bibinitperiod-O\bibinitperiod},
+         giveni={H\bibinithyphendelim O\bibinitperiod},
       }}%
       {{hash=OJ}{%
          family={Oliger},
@@ -4811,7 +4790,7 @@
          family={Rizvi},
          familyi={R\bibinitperiod},
          given={S.\bibnamedelima Tauqeer Ul\bibnamedelima Islam},
-         giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod
+         giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
   U\bibinitperiod\bibinitdelim I\bibinitperiod},
       }}%
       {{hash=HLS}{%
@@ -5022,6 +5001,35 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Ross2002}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RIM}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={I\bibnamedelima M},
+         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Fahroo},
+         familyi={F\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+    }
+    \keyw{discontinuities,discretization,nonlinear programming,optimal control}
+    \strng{namehash}{RIMFF1}
+    \strng{fullhash}{RIMFF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{A direct method for solving nonsmooth optimal control
+  problems}}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/IRoss2002.pdf:pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the 2002 \{IFAC World Congress\}}
+    \field{year}{2002}
+  \endentry
+
   \entry{Rao2010}{article}{}
     \name{author}{7}{}{%
       {{hash=RAV}{%
@@ -5102,6 +5110,36 @@
     \field{year}{2010}
   \endentry
 
+  \entry{Rutquist2010}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RPE}{%
+         family={Rutquist},
+         familyi={R\bibinitperiod},
+         given={P\bibnamedelima E},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=EMM}{%
+         family={Edvall},
+         familyi={E\bibinitperiod},
+         given={M\bibnamedelima M},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RPEEMM1}
+    \strng{fullhash}{RPEEMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{\bibrangedash }
+    \field{title}{{PROPT - Matlab Optimal Control Software}}
+    \field{volume}{260}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/TOMLAB\_PROPT.pdf:p
+    \verb df
+    \endverb
+    \field{journaltitle}{Tomlab Optimization Inc}
+    \field{year}{2010}
+  \endentry
+
   \entry{iclocs}{misc}{}
     \name{author}{3}{}{%
       {{hash=NY}{%
@@ -5135,141 +5173,6 @@
     \field{urlday}{24}
     \field{urlmonth}{07}
     \field{urlyear}{2018}
-  \endentry
-
-  \entry{Wachter2006}{book}{}
-    \name{author}{2}{}{%
-      {{hash=Wa}{%
-         family={W\"{a}chter},
-         familyi={W\bibinitperiod},
-         given={a},
-         giveni={a},
-      }}%
-      {{hash=BLT}{%
-         family={Biegler},
-         familyi={B\bibinitperiod},
-         given={L\bibnamedelima T},
-         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \keyw{barrier method,filter method,interior-point method,line
-  search,nonconvex constrained optimization,nonlinear programming}
-    \strng{namehash}{WaBLT1}
-    \strng{fullhash}{WaBLT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{1010700405}
-    \field{number}{1}
-    \field{pages}{25\bibrangedash 57}
-    \field{title}{{On the Implementation of a Primal-Dual Interior Point Filter
-  Line Search Algorithm for Large-Scale Nonlinear Programming}}
-    \field{volume}{106}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/W\"{a}chter-Biegler
-    \verb 2006\_Article\_OnTheImplementationOfAnInterio.pdf:pdf
-    \endverb
-    \field{year}{2006}
-  \endentry
-
-  \entry{Lipp2014}{article}{}
-    \name{author}{2}{}{%
-      {{hash=LT}{%
-         family={Lipp},
-         familyi={L\bibinitperiod},
-         given={Thomas},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=BS}{%
-         family={Boyd},
-         familyi={B\bibinitperiod},
-         given={Stephen},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \keyw{convex optimisation,interior point method,minimum-time trajectory
-  generation,minimum-time trajectory generation,optimal speed c,optimal speed
-  control}
-    \strng{namehash}{LTBS1}
-    \strng{fullhash}{LTBS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1080/00207179.2013.875224
-    \endverb
-    \field{issn}{0020-7179}
-    \field{number}{January 2015}
-    \field{pages}{1297\bibrangedash 1311}
-    \field{title}{{Minimum-time speed optimisation over a fixed path}}
-    \verb{url}
-    \verb http://www.tandfonline.com/doi/abs/10.1080/00207179.2013.875224
-    \endverb
-    \field{volume}{87}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/AppData/Local/Mendeley Ltd./Mendeley D
-    \verb esktop/Downloaded/Lipp, Boyd - 2014 - Minimum-time speed optimisation
-    \verb  over a fixed path.pdf:pdf
-    \endverb
-    \field{journaltitle}{International Journal of Control}
-    \field{year}{2014}
-  \endentry
-
-  \entry{Ross2002}{article}{}
-    \name{author}{2}{}{%
-      {{hash=RIM}{%
-         family={Ross},
-         familyi={R\bibinitperiod},
-         given={I\bibnamedelima M},
-         giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=FF}{%
-         family={Fahroo},
-         familyi={F\bibinitperiod},
-         given={F},
-         giveni={F},
-      }}%
-    }
-    \keyw{discontinuities,discretization,nonlinear programming,optimal control}
-    \strng{namehash}{RIMFF1}
-    \strng{fullhash}{RIMFF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{A direct method for solving nonsmooth optimal control
-  problems}}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/IRoss2002.pdf:pdf
-    \endverb
-    \field{journaltitle}{Proceedings of the 2002 \{IFAC World Congress\}}
-    \field{year}{2002}
-  \endentry
-
-  \entry{Rutquist2010}{article}{}
-    \name{author}{2}{}{%
-      {{hash=RPE}{%
-         family={Rutquist},
-         familyi={R\bibinitperiod},
-         given={P\bibnamedelima E},
-         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=EMM}{%
-         family={Edvall},
-         familyi={E\bibinitperiod},
-         given={M\bibnamedelima M},
-         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RPEEMM1}
-    \strng{fullhash}{RPEEMM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{\bibrangedash }
-    \field{title}{{PROPT - Matlab Optimal Control Software}}
-    \field{volume}{260}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/TOMLAB\_PROPT.pdf:p
-    \verb df
-    \endverb
-    \field{journaltitle}{Tomlab Optimization Inc}
-    \field{year}{2010}
   \endentry
 
   \entry{WilliamColson}{misc}{}
@@ -5419,6 +5322,82 @@
     \field{urlday}{24}
     \field{urlmonth}{07}
     \field{urlyear}{2018}
+  \endentry
+
+  \entry{Wachter2006}{book}{}
+    \name{author}{2}{}{%
+      {{hash=Wa}{%
+         family={W\"{a}chter},
+         familyi={W\bibinitperiod},
+         given={a},
+         giveni={a},
+      }}%
+      {{hash=BLT}{%
+         family={Biegler},
+         familyi={B\bibinitperiod},
+         given={L\bibnamedelima T},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{barrier method,filter method,interior-point method,line
+  search,nonconvex constrained optimization,nonlinear programming}
+    \strng{namehash}{WaBLT1}
+    \strng{fullhash}{WaBLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{1010700405}
+    \field{number}{1}
+    \field{pages}{25\bibrangedash 57}
+    \field{title}{{On the Implementation of a Primal-Dual Interior Point Filter
+  Line Search Algorithm for Large-Scale Nonlinear Programming}}
+    \field{volume}{106}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/W\"{a}chter-Biegler
+    \verb 2006\_Article\_OnTheImplementationOfAnInterio.pdf:pdf
+    \endverb
+    \field{year}{2006}
+  \endentry
+
+  \entry{Lipp2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LT}{%
+         family={Lipp},
+         familyi={L\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Boyd},
+         familyi={B\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{convex optimisation,interior point method,minimum-time trajectory
+  generation,minimum-time trajectory generation,optimal speed c,optimal speed
+  control}
+    \strng{namehash}{LTBS1}
+    \strng{fullhash}{LTBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1080/00207179.2013.875224
+    \endverb
+    \field{issn}{0020-7179}
+    \field{number}{January 2015}
+    \field{pages}{1297\bibrangedash 1311}
+    \field{title}{{Minimum-time speed optimisation over a fixed path}}
+    \verb{url}
+    \verb http://www.tandfonline.com/doi/abs/10.1080/00207179.2013.875224
+    \endverb
+    \field{volume}{87}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/AppData/Local/Mendeley Ltd./Mendeley D
+    \verb esktop/Downloaded/Lipp, Boyd - 2014 - Minimum-time speed optimisation
+    \verb  over a fixed path.pdf:pdf
+    \endverb
+    \field{journaltitle}{International Journal of Control}
+    \field{year}{2014}
   \endentry
 
   \entry{Rosema2011}{report}{}
@@ -5656,7 +5635,7 @@
       }}%
       {{hash=LrEM}{%
          family={Lee-rausch},
-         familyi={L\bibinitperiod-r\bibinitperiod},
+         familyi={L\bibinithyphendelim r\bibinitperiod},
          given={Elizabeth\bibnamedelima M},
          giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
@@ -6015,6 +5994,56 @@
     \field{urlyear}{2018}
   \endentry
 
+  \entry{Mehta2016}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MU}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={Unmeel},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Aftosmis},
+         familyi={A\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bowles},
+         familyi={B\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pandya},
+         familyi={P\bibinitperiod},
+         given={Shishir},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MU+1}
+    \strng{fullhash}{MUAMBJPS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.2514/1.A33408
+    \endverb
+    \field{issn}{0022-4650}
+    \field{number}{2}
+    \field{pages}{340\bibrangedash 353}
+    \field{title}{{Skylon Aerospace Plane and Its Aerodynamics and Plumes}}
+    \verb{url}
+    \verb http://arc.aiaa.org/doi/10.2514/1.A33408
+    \endverb
+    \field{volume}{53}
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MehtaSkylonJournal.
+    \verb pdf:pdf
+    \endverb
+    \field{journaltitle}{Journal of Spacecraft and Rockets}
+    \field{year}{2016}
+  \endentry
+
   \entry{Abeynayake2013a}{article}{}
     \name{author}{2}{}{%
       {{hash=AD}{%
@@ -6085,7 +6114,7 @@
       }}%
       {{hash=AHK}{%
          family={Abdol-Hamid},
-         familyi={A\bibinitperiod-H\bibinitperiod},
+         familyi={A\bibinithyphendelim H\bibinitperiod},
          given={Khaled},
          giveni={K\bibinitperiod},
       }}%
@@ -6154,56 +6183,6 @@
     \field{journaltitle}{49th AIAA Aerospace Sciences Meeting Including the New
   Horizons Forum and Aerospace Exposition}
     \field{year}{2011}
-  \endentry
-
-  \entry{Mehta2016}{article}{}
-    \name{author}{4}{}{%
-      {{hash=MU}{%
-         family={Mehta},
-         familyi={M\bibinitperiod},
-         given={Unmeel},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Aftosmis},
-         familyi={A\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=BJ}{%
-         family={Bowles},
-         familyi={B\bibinitperiod},
-         given={Jeffrey},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Pandya},
-         familyi={P\bibinitperiod},
-         given={Shishir},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MU+1}
-    \strng{fullhash}{MUAMBJPS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.2514/1.A33408
-    \endverb
-    \field{issn}{0022-4650}
-    \field{number}{2}
-    \field{pages}{340\bibrangedash 353}
-    \field{title}{{Skylon Aerospace Plane and Its Aerodynamics and Plumes}}
-    \verb{url}
-    \verb http://arc.aiaa.org/doi/10.2514/1.A33408
-    \endverb
-    \field{volume}{53}
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/MehtaSkylonJournal.
-    \verb pdf:pdf
-    \endverb
-    \field{journaltitle}{Journal of Spacecraft and Rockets}
-    \field{year}{2016}
   \endentry
 
   \entry{Kimmel2010}{article}{}
@@ -6513,7 +6492,7 @@
          family={Scramjet},
          familyi={S\bibinitperiod},
          given={Shape-transitioning},
-         giveni={S\bibinitperiod-t\bibinitperiod},
+         giveni={S\bibinithyphendelim t\bibinitperiod},
       }}%
       {{hash=CD}{%
          family={Curran},
@@ -7399,28 +7378,30 @@
       {{hash=FE}{%
          family={Fitzer},
          familyi={F\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
+         given={E},
+         giveni={E},
       }}%
       {{hash=ML}{%
          family={Manocha},
          familyi={M\bibinitperiod},
-         given={L.M.},
-         giveni={L\bibinitperiod},
+         given={L},
+         giveni={L},
       }}%
     }
     \list{publisher}{1}{%
-      {Springer Berlin Heidelberg}%
+      {Springer}%
     }
     \strng{namehash}{FEML1}
     \strng{fullhash}{FEML1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{3-642-58745-3}
+    \field{isbn}{9783642637070}
+    \field{pages}{224}
     \field{title}{{Carbon Reinforcements and Carbon/Carbon Composites}}
-    \list{location}{1}{%
-      {Berlin, Heidelberg}%
-    }
+    \verb{file}
+    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/1998\_Book\_CarbonR
+    \verb einforcementsAndCarbonC.pdf:pdf
+    \endverb
     \field{year}{1998}
   \endentry
 
@@ -7452,28 +7433,6 @@
     \endverb
     \field{type}{techreport}
     \field{year}{2018}
-  \endentry
-
-  \entry{rutherford}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Rocket lab USA}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{R3}
-    \strng{fullhash}{R3}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
-    \verb{url}
-    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
-    \verb erford-engine-test-fires/
-    \endverb
-    \field{year}{2018}
-    \field{urlday}{12}
-    \field{urlmonth}{08}
-    \field{urlyear}{2019}
   \endentry
 
   \entry{Huzel1967}{book}{}
@@ -7512,6 +7471,28 @@
     \verb f:pdf
     \endverb
     \field{year}{1992}
+  \endentry
+
+  \entry{rutherford}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Rocket lab USA}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R3}
+    \strng{fullhash}{R3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Rocket Lab reaches 500 Rutherford engine test fires}}
+    \verb{url}
+    \verb https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-500-ruth
+    \verb erford-engine-test-fires/
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{12}
+    \field{urlmonth}{08}
+    \field{urlyear}{2019}
   \endentry
 
   \entry{Marini2001}{article}{}
@@ -7920,111 +7901,6 @@
     \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/WGS84.pdf:pdf
     \endverb
     \field{year}{2002}
-  \endentry
-
-  \entry{Maddock2017}{article}{}
-    \name{author}{11}{}{%
-      {{hash=MC}{%
-         family={Maddock},
-         familyi={M\bibinitperiod},
-         given={Christie},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=TF}{%
-         family={Toso},
-         familyi={T\bibinitperiod},
-         given={Federico},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=RL}{%
-         family={Ricciardi},
-         familyi={R\bibinitperiod},
-         given={Lorenzo},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Mogavero},
-         familyi={M\bibinitperiod},
-         given={Alessandro},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=LKH}{%
-         family={Lo},
-         familyi={L\bibinitperiod},
-         given={Kin\bibnamedelima Hing},
-         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=RS}{%
-         family={Rengarajan},
-         familyi={R\bibinitperiod},
-         given={Sriram},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KK}{%
-         family={Kontis},
-         familyi={K\bibinitperiod},
-         given={Konstantinos},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Milne},
-         familyi={M\bibinitperiod},
-         given={Andy},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ED}{%
-         family={Evans},
-         familyi={E\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={West},
-         familyi={W\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={McIntyre},
-         familyi={M\bibinitperiod},
-         given={Stuart},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MC+1}
-    \strng{fullhash}{MCTFRLMALKHRSKKMAEDWMMS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper presents the conceptual design and performance analysis of a
-  partially reusa- ble space launch vehicle for small payloads. The system uses
-  a multi-stage vehicle with rocket engines, with a reusable first stage
-  capable of glided or powered flight, and expen- dable upper stage(s) to
-  inject a 500 kg payload in different low Earth orbits. The space access
-  vehicle is designed to be air-launched from a modified aircraft carrier. The
-  aim of the system design is to develop a commercially viable launch system
-  for near-term opera- tion, thus emphasis is placed on the efficient use of
-  high TRL technologies. The vehicle design are analysed using a
-  multi-disciplinary design optimisation approach to evaluate the performance,
-  operational capabilities and design trade-offs.%
-    }
-    \verb{doi}
-    \verb 10.2514/6.2017-2224
-    \endverb
-    \field{isbn}{978-1-62410-463-3}
-    \field{number}{March}
-    \field{pages}{1\bibrangedash 20}
-    \field{title}{{Vehicle and Mission Design of a Future Small Payload
-  Launcher}}
-    \verb{url}
-    \verb https://arc.aiaa.org/doi/10.2514/6.2017-2224
-    \endverb
-    \verb{file}
-    \verb :C$\backslash$:/Users/uqsforb1/Dropbox/phd/papers/Maddock2017.pdf:pdf
-    \endverb
-    \field{journaltitle}{21st AIAA International Space Planes and Hypersonics
-  Technologies Conference}
-    \field{year}{2017}
   \endentry
 
   \entry{Tewari2007}{book}{}
@@ -8842,5 +8718,5 @@
     \field{urlmonth}{10}
     \field{urlyear}{2018}
   \endentry
-\endsortlist
+\enddatalist
 \endinput

@@ -1,5 +1,3 @@
-% proci.tex
-
 \cleardoublepage
 \chapter{Trajectory Modelling and Optimisation}\label{chapter:LODESTAR}
 			
@@ -54,41 +52,37 @@ Discontinuities within the aerodynamics or engine properties of a particular veh
 \textcolor{black}{
 \subsection{Equations of Motion}
 }
-\noindent
-The motion dynamics of the launch system are calculated in \textcolor{black}{three} degrees-of-freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. The Earth is modelled as an oblate spheroid using the World Geodetic System 1984\cite{Icao2002} (WGS-84) shape and gravity model. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, speed (velocity magnitude) $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Maddock2017,Tewari2007}:
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/4_LODESTAR/global}
+	\includegraphics[width=0.8\linewidth]{figures/4_LODESTAR/global}
 	\caption{The Earth-fixed components of the geodetic rotational coordinate system.}
 	\label{fig:global}
 \end{figure}
-
+\noindent
+The motion dynamics of the launch system are calculated in \textcolor{black}{three} degrees-of-freedom, in a geodetic rotational reference frame, illustrated in Figure \ref{fig:global}. The Earth is modelled as an oblate spheroid using the World Geodetic System 1984\cite{Icao2002} (WGS-84) shape and gravity model. In this reference frame, the dynamics of each vehicle are expressed in terms of the angle of attack $\alpha$, bank angle $\eta$, radius from centre of Earth $r$, longitude $\xi$, latitude $\phi$, flight path angle $\gamma$, speed (velocity magnitude) $v$ and heading angle $\zeta$. The equations of motion are given by\cite{Tewari2007}:
 
 \begin{equation}
 \dot{r} = v \sin \gamma
 \end{equation}
-
 \begin{equation}
 \dot{\xi} = \frac{v\cos \gamma \cos \zeta}{r \cos \phi}
 \end{equation}
-
 \begin{equation}
 \dot{\phi} = \frac{v\cos\gamma\sin\zeta}{r}
 \end{equation}
 \begin{equation}
 \begin{split}
-\dot{\gamma} = \frac{(L + T\sin\alpha) \cos\eta}{mv} + (\frac{v}{r}-\frac{g_r}{v})\cos\gamma -\frac{g_t}{v}\sin\gamma\cos\zeta
- \\ + \cos\phi[2\omega_E \cos\zeta + \frac{\omega_E^2 r}{v}(\cos\phi\cos\gamma+\sin\phi\sin\gamma\sin\zeta)]
+\dot{\gamma} = \frac{(L + T\sin\alpha) \cos\eta}{mv} + (\frac{v}{r}-\frac{g_r}{v})\cos\gamma -\frac{g_t}{v}\sin\gamma\sin\zeta\\ + \cos\phi[2\omega_E \cos\zeta + \frac{\omega_E^2 r}{v}(\cos\phi\cos\gamma+\sin\phi\sin\gamma\sin\zeta)]
 \end{split}
 \end{equation}
 \begin{equation}
-\dot{v} = \frac{T\cos\alpha - D}{m}-g_r\sin\gamma +g_t\cos\gamma\cos\zeta
+\dot{v} = \frac{T\cos\alpha - D}{m}-g_r\sin\gamma +g_t\cos\gamma\sin\zeta
 + \omega_E^2 r\cos\phi(\cos\phi\sin\gamma-\sin\phi\cos\gamma\sin\zeta)
 \end{equation}
 \begin{equation}\label{eq:heading}
 \begin{split}
-\dot{\zeta} = \frac{(L + T\sin\alpha) \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta +2\omega_E\cos\phi\tan\gamma\sin\zeta 
-\\ - \frac{\omega_E^2 r}{v\cos\gamma}\sin\gamma\cos\phi\cos\zeta-2\omega_E\sin\phi -g_t\sin\zeta
+\dot{\zeta} = \frac{(L + T\sin\alpha) \sin\eta}{mv \cos \gamma}-\frac{v}{r}\tan\phi\cos\gamma\cos\zeta +2\omega_E\cos\phi\tan\gamma\sin\zeta
+\\ - \frac{\omega_E^2 r}{v\cos\gamma}\sin\phi\cos\phi\cos\zeta-2\omega_E\sin\phi +\frac{g_t\cos\zeta}{v\cos\gamma}
 \end{split}
 \end{equation}
 \noindent
@@ -454,12 +448,11 @@ This exergy efficiency expresses how efficiently each stage utilises its availab
 This exergy efficiency expresses how efficiently the launch system as a whole is able to accelerate the payload to orbit. 
 Within this work, exergy efficiency is expressed as the percentage of total exergy utilised, \%$\eta$, ie. $\eta_{exergy} \times 100$.
 
-
+\newpage
 \textcolor{black}{
 	\subsection{Thermal Analysis}\label{sec:therm}
 }
 %\textcolor{black}{XXX note: layers might be at different temps, tested temps may not be exceeded.}
-
 \noindent
 The thermal protection of a hypersonic launch system is essential to its operation, and managing the aerothermal loading produced during sustained hypersonic flight is one of the most significant challenges that must be overcome before airbreathing launch systems can become a reality. The Representative Launch System in this study uses a thermal protection system that is based on the thermal protection system designed for the SPARTAN\cite{Preller2018a}, with no changes except for some minor modifications to geometry of the nose tip and a more detailed specification of materials. In this work, this thermal protection system is assumed to be sufficient for the nominal operation of the Representative Launch System due to its use on the current iteration of the SPARTAN, however, no detailed thermal analysis of the SPARTAN has been carried out to date\cite{Preller2018a}. To provide an indication of the temperatures on the surface of the vehicles during flight, an assessment of the heat shielding of the Representative Launch System is performed. In order to investigate the thermal loading during flight, the heat flux over the trajectory is modelled at various locations on the scramjet accelerator and third stage, and analysed transiently for the duration of the flight using 1-D heat conduction analysis. The temperatures on both sides of the external heat shield are analysed, to provide a reference for future thermal protection system designs. In addition, some aspects of the design of the Representative Launch System's thermal protection system are investigated to provide an indication of the sensitivity of the temperatures produced during flight to critical TPS design parameters. 
 
@@ -470,13 +463,7 @@ The thermal protection of a hypersonic launch system is essential to its operati
 
 \subsubsection{Heat Transfer Calculation}
 \noindent
-The heat transfer coefficients on the body of the vehicle are computed using Reynolds analogy: 
-\begin{equation}
-c_h = \frac{c_f}{2s},
-\end{equation}
-where $c_f$ is the coefficient of friction and $s$ is the Reynold's analogy factor, assumed to be 1.16\cite{Ward2018}. 
-The value of $c_f$ is determined using the viscous solver VC3D, at nine specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are selected as locations of potential high heat loads on the vehicles, and are examined as likely worst-case examples for thermal analysis. 
-
+Aerothermal effects are analysed at nine specific locations around the body of the scramjet accelerator and third stage, as shown in Figure \ref{fig:Q_pos}. On the scramjet accelerator, the nose stagnation point (\textcolor{red}{1}) and wing leading edges (\textcolor{red}{2}) are examined, along with a point midway along the nose (\textcolor{red}{3}), as well as midway along the cowl front (\textcolor{red}{4}), one-quarter of the length along the wing (\textcolor{red}{5}), and on the tip of the tail (\textcolor{red}{6}) on the windward side. On the third stage, the stagnation point on the nose (\textcolor{red}{1}) is examined, along with a point half way along the nose cone (\textcolor{red}{2}), and a point half way along the cylindrical cowl (\textcolor{red}{3}) on the windward side. These points are selected as locations of potential high heat loads on the vehicles, and are examined as likely worst-case examples for thermal analysis. 
 \begin{figure}[!ht]
 	
 	\begin{subfigure}{.5\textwidth}
@@ -493,7 +480,23 @@ The value of $c_f$ is determined using the viscous solver VC3D, at nine specific
 	\label{fig:Q_pos}
 \end{figure}
 
-The heat transfer at the stagnation point and leading edge of the wings, where Reynold's analogy is not valid due to large pressure gradients in the flow\cite{HypersonicGas}, is estimated using semi-empirical correlations\cite{Dirkx}. At the stagnation point, the heat transfer is given by\cite{Dirkx}:
+The rate of heat transfer on the body of the vehicle is computed by initially using Reynolds analogy to determine a Stanton number at each location and flight condition: 
+\begin{equation}
+c_h = \frac{c_f}{2s},
+\end{equation}
+where $c_h$ is the Stanton number, $c_f$ is the coefficient of friction and $s$ is the Reynold's analogy factor, assumed to be 1.16\cite{Ward2018}. The Stanton number is then used to calculate the heat transfer coefficient:
+\begin{equation}
+h = c_h \rho V c_p,
+\end{equation}
+where $\rho, V$ and $c_p$ are the density, velocity and specific heat of the air respectively. The rate of heat transfer is then calculated as follows:
+\begin{equation}
+q = h(T_{air}-T_w),
+\end{equation}
+where $T_{air}$ is the air temperature and $T_w$ is the wall temperature. 
+The value of $c_f$ is determined using the viscous solver VC3D\cite{Ward2018}, at a range of flight conditions. Tabulated $c_f$ values were provided for this study by Mr Alexander Ward. 
+
+
+Reynold's analogy is not valid at the stagnation point and leading edge of the wings due to large pressure gradients in the flow\cite{HypersonicGas}. At these points, the heat transfer is estimated using semi-empirical correlations\cite{Dirkx}. At the stagnation point, the heat transfer is given by\cite{Dirkx}:
 \begin{equation}
 q_s = k_1\rho^{N_1}V^{N_2},
 \end{equation}
@@ -501,7 +504,7 @@ where $N_1 = 0.5$ and $N_2 = 3$, and the constant $k$ is\cite{Dirkx}:
 \begin{equation}
 k_1 = \frac{1.83 \times 10^{-4}}{\sqrt{R_n}}(1-\frac{T_w}{T_{aw}}),
 \end{equation}
-where $R_n$ is the nose radius, $T_w$ is the wall temperature, and $T_{aw}$ is the adiabatic wall temperature.
+where $R_n$ is the nose radius, and $T_{aw}$ is the adiabatic wall temperature.
 
 The heating at the leading edge is given by a weighted average correlation between a stagnation point and a flat plate\cite{Dirkx,Tauber2008}:
 \begin{equation}
@@ -552,7 +555,7 @@ Corresponding equations in spherical and cylindrical one-dimensional coordinates
 
 Setting the inner boundary conditions as adiabatic results in a conservative estimate, because the heat load needs to be sustained using the latent heat capacity of the material. This results in the highest temperatures in the heat shielding material, which is particularly relevant to the survivability of the material. If more sophisticated cooling systems are implemented, more detailed analysis is essential as the reduced material temperatures will increase heat transfer. 
 
-Table \ref{tab:thermalprops}, summarises the parameters and modelling assumptions used for the analysis of points shown in Figure A1. For all cases the standard optimised trajectory with fly-back is used (Case 11, Section \ref{sec:case11}). 
+Table \ref{tab:thermalprops}, summarises the parameters and modelling assumptions used for the analysis of points shown in Figure \ref{fig:Q_pos}. For all cases the standard optimised trajectory with fly-back is used (Case 11, Section \ref{sec:case11}). 
 
 
 
